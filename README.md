@@ -1,6 +1,9 @@
 # wiki
 
+To install MkDocs, run the following command from the command line:
 
+`pip install mkdocs`
+For more details, see the Installation Guide.
 
 ## Getting started
 
