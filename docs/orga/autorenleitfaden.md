@@ -1,5 +1,15 @@
 # Autorenleitfaden
 
+- [ ] Buch hochladen
+- [ ] Buch verlinken
+- [ ] Welche Mail bei Bene?
+- [ ] Robotik besprechen?
+- [ ] altes Python Skript hochladen
+- [ ] mit git von Oli verknüpfen (submodul?)
+- [ ] Ordnerstruktur für Unterlagen vorbereiten
+- [ ] Lehrplan zusammenstellen
+- [ ] Uhrzeigen Unterricht notieren
+
 ## Ansprechpartner
 
 | Aufgabe    | Ansprechpartner            | Mail                                                   |
