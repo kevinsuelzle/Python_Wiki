@@ -1,1 +1,6 @@
 site_name: My Docs
+
+nav:
+  - Home: index.md
+  - Lehrplan: lehrplan.md
+  - Für Autoren: orga/autorenleitfaden.md
