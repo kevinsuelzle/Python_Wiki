@@ -10,7 +10,8 @@
 - [ ] Lehrplan zusammenstellen
 - [ ] Uhrzeiten Unterricht notieren
 - [ ] Wo werden die Videos gehostet?
-- [ ] Matheskript als beispiel hochladen
+- [x] Matheskript als beispiel hochladen
+- [ ] Videoaufnahme für Orells Part Ersatz finden
 
 ## Ansprechpartner
 
@@ -56,7 +57,6 @@ Das große Vorbild ist das Matheskript von Qualidy.
 
 ## Zum Hauptblock
 
-* Unterricht geht von 8:30 bis 16:15 min 45 Minuten Mittagspause (insg. 6,75 h)
 * Bei jedem Erklärtext ungefähre Zeit im Unterricht schätzen
 * Bei jeder Übungsaufgabe ungefähre Bearbeitungs- und Korrekturzeit.
 * Erklärtexte in einfacher Sprache formulieren und ansprechend gestalten (keine Textwüsten, kurze Absätze, wenig Nebensätze, Tabellen & Auflistungen verwenden).
@@ -69,6 +69,15 @@ Das große Vorbild ist das Matheskript von Qualidy.
 * Wenn aus einer Quelle übernommen, diese angeben.
 * Chillis (1-4) verwenden, um Schwierigkeit anzuzeigen. Dabei ist 1 bis 3 Chillis klausurrelevant, 4 Chillis gehen über Klausurniveau hinaus.
   Immer eine ausprogrammierte Lösung mit einreichen
+
+### Zeiten
+
+| Start | Zeit bis MP | Mittagspause  | Zeit bis Ende | Ende  |
+|-------|-------------|---------------|---------------|-------|
+| 8:15  | **3h**      | 11:15 - 12:30 | **3h 45min**  | 16:15 |
+
+* Der Unterricht sollte auf max. 6h 15 min ausgelegt werden.
+* In der letzten halben Stunde geht normalerweise nicht mehr viel bei den Teilnehmern.
 
 ## Wer macht was?
 
