@@ -1,6 +1,6 @@
 # Autorenleitfaden
 
-- [ ] Buch hochladen
+- [x] Buch hochladen
 - [ ] Buch verlinken
 - [ ] Welche Mail bei Bene?
 - [ ] Robotik besprechen?
@@ -8,7 +8,9 @@
 - [ ] mit git von Oli verknüpfen (submodul?)
 - [ ] Ordnerstruktur für Unterlagen vorbereiten
 - [ ] Lehrplan zusammenstellen
-- [ ] Uhrzeigen Unterricht notieren
+- [ ] Uhrzeiten Unterricht notieren
+- [ ] Wo werden die Videos gehostet?
+- [ ] Matheskript als beispiel hochladen
 
 ## Ansprechpartner
 
@@ -95,13 +97,11 @@ Das große Vorbild ist das Matheskript von Qualidy.
 * Debugger
 * Boolean & Verzweigungen (if, else, elif)
 
-
 * Listen, Tupel, Strings
 * f-String und dazugehörige methoden
 * Schleifen (for, while)
 * Dictionaries und Sets
 * Bytecode & Maschinencode
-
 
 * Funktionen
 * Type-Hints (Pep 484)
@@ -123,6 +123,7 @@ Das große Vorbild ist das Matheskript von Qualidy.
 
 
 * Objektorientierte Programmierung
+* 
   * Einführung
   * Self
   * Attribute
@@ -141,6 +142,7 @@ Das große Vorbild ist das Matheskript von Qualidy.
 
 
 **Woche 3-5 je 1 Tag git**
+
 * wozu Git?
 * Ziele eines VCS?
 * Terminologie
@@ -158,10 +160,12 @@ Das große Vorbild ist das Matheskript von Qualidy.
 
 
 **Projekt 1**
+
 * Lokale Applikation
 
 
 **Woche 6-7 DB + Clean Code**
+
 * Clean Code
 * Einführung
   * Aufgreifen von sql aus Nebenfächern
@@ -174,6 +178,7 @@ Das große Vorbild ist das Matheskript von Qualidy.
 * SQL Alchemy oder Datenbanken mit Django
 
 **Woche 8-10 Web + Azure**
+
 * Domain Driven Design
 * Request library
 * Was ist eine API
@@ -213,10 +218,12 @@ Das große Vorbild ist das Matheskript von Qualidy.
 
 
 **Projekt 2**
-Webanwendung
+
+* Webanwendung
 
 
 **Woche 11-12.5 Docker + DB2**
+
 * Docker
   * Motivation
   * Was sind Docker Container
@@ -244,6 +251,7 @@ Webanwendung
   * SQL-Injection
 
 **Woche 12.5-13 Pandas+matplot**
+
 * numpy
 * pandas
 * matplotlib
@@ -254,6 +262,7 @@ Webanwendung
 * Naive Bayes Classifier
 
 **Woche 14 Python Fortgeschritten**
+
 * Generatoren und Iteratoren
 * Dekoratoren (Memoisation)
 * args & kwargs
@@ -263,6 +272,7 @@ Webanwendung
 
 
 **Woche 15 Robotik**
+
 * Gezebo?
 * Was ist ein SBC
 * Hardware über SBC Ansprechen
