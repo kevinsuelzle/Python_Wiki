@@ -3,4 +3,8 @@ site_name: My Docs
 nav:
   - Home: index.md
   - Lehrplan: lehrplan.md
-  - Für Autoren: orga/autorenleitfaden.md
+  - Für Autoren:
+      - Ansprechpartner: orga/ansprechpartner.md
+      - Leitfaden: orga/leitfaden.md
+      - Inhalte: orga/inhalte.md
+      - Viktors ToDo's: orga/todo.md
