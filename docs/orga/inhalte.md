@@ -49,9 +49,7 @@
   * Testhirarchie
 * Dateioperationen
 
-
 * Objektorientierte Programmierung
-* 
   * Einführung
   * Self
   * Attribute

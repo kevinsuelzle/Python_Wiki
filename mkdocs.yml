@@ -2,7 +2,16 @@ site_name: My Docs
 
 nav:
   - Home: index.md
-  - Lehrplan: lehrplan.md
+  - Block 1: lehrplan/block1.md
+  - Block 2: lehrplan/block2.md
+  - Block 3: lehrplan/block3.md
+  - Projekte:
+      - Projekt 1 A: projekt/projekt1a.md
+      - Projekt 1 B: projekt/projekt1b.md
+      - Projekt 2 A: projekt/projekt2a.md
+      - Projekt 2 B: projekt/projekt2b.md
+      - Projekt 3 A: projekt/projekt3a.md
+      - Projekt 3 B: projekt/projekt3b.md
   - Für Autoren:
       - Ansprechpartner: orga/ansprechpartner.md
       - Leitfaden: orga/leitfaden.md
