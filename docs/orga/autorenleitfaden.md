@@ -14,15 +14,15 @@
 
 ## Autoren
 
-| Name      | Mail                                                  |
-|-----------|-------------------------------------------------------|
-| Bene      | benedikt@co-dex.de / benedikt.boehm-extern@qualidy.de |
-| Christian | chris@christian-marek-analytics.de                    |
-| David     | david.kiss@qualidy.de                                 |
-| Felix     | felix.tillmann@qualidy.de                             |
-| Joachim   | waltherj@web.de                                       |
-| Jürgen    | dr.juergen.brauer@gmail.com                           |
-| Orell     | orell.garten-extern@qualidy.de                        |
+| Name      | Mail                                                   |
+|-----------|--------------------------------------------------------|
+| Bene      | benedikt@co-dex.de / benedikt.boehm-extern@qualidy.de  |
+| Christian | chris@christian-marek-analytics.de                     |
+| David     | david.kiss@qualidy.de                                  |
+| Felix     | felix.tillmann@qualidy.de                              |
+| Joachim   | waltherj@web.de                                        |
+| Jürgen    | dr.juergen.brauer@gmail.com                            |
+| Orell     | hello@orellgarten.com / orell.garten-extern@qualidy.de |
 
 
 ## Das Skript
