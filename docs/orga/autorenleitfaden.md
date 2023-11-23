@@ -2,14 +2,15 @@
 
 ## Ansprechpartner
 
-| Aufgabe   | Ansprechpartner  | Mail                                                  |
-|-----------|------------------|-------------------------------------------------------|
-| Allgemein | Viktor Reichert  | viktor.reichert@qualidy.de                            |
-| Fachlich  | *Bene*dikt Boehm | benedikt@co-dex.de / benedikt.boehm-extern@qualidy.de |
-| Buchungen | Daniel Schmidt   | daniel.schmidt@qualidy.de                             |
-| Git       | Benedikt Boehm   | benedikt@co-dex.de / benedikt.boehm-extern@qualidy.de |
-| Markdown  | Yoshi Kiel       | yoshi.kiel@qualidy.de                                 |
-| Styling   |                  |                                                       |
+| Aufgabe    | Ansprechpartner            | Mail                                                   |
+|------------|----------------------------|--------------------------------------------------------|
+| Allgemein  | Viktor Reichert            | viktor.reichert@qualidy.de                             |
+| Fachlich   | *Bene*dikt Boehm           | benedikt@co-dex.de / benedikt.boehm-extern@qualidy.de  |
+| Buchungen  | Daniel Schmidt             | daniel.schmidt@qualidy.de                              |
+| Git        | Benedikt Boehm             | benedikt@co-dex.de / benedikt.boehm-extern@qualidy.de  |
+| Markdown   | Yoshi Kiel                 | yoshi.kiel@qualidy.de                                  |
+| Styling    |                            |                                                        |
+| Technik VW | Christian Milbrand (Mille) | chrisitan.milbrand@volkswagen.de<br/>+49-5361-9-124850 |
 
 ## Autoren
 
