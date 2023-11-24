@@ -2,7 +2,12 @@ site_name: My Docs
 
 nav:
   - Home: index.md
-  - Lehrplan: lehrplan/lehrplan.md
+  - Lehrplan:
+    - Allgemein: lehrplan/lehrplan.md
+    - Clean Code:
+        - Für Lehrer: lehrplan/clean_code/clean-code-lehrer.md
+        - Einführung: lehrplan/clean_code/einführung/Einführung.md
+        - Best Practices: lehrplan/clean_code/best_practices/kamele_und_schlangen.md
   - Checkliste: lehrplan/checkliste.md
   - Begriffssammlung: lehrplan/begriffssammlung.md
   - Projekte:
