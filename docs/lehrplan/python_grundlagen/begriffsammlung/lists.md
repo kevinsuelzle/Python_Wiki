@@ -1,0 +1,165 @@
+# Listen in Python
+
+Listen in Python sind eine der grundlegendsten und nützlichsten Datentypen. Sie ermöglichen es uns, mehrere Elemente in
+einer einzigen Struktur zu speichern, auf die dann über ihre Indizes zugegriffen werden kann. Ein wichtiges Merkmal von
+Listen ist, dass sie **mutabel** sind. Das bedeutet, dass Listen nach ihrer Erstellung verändert werden können.
+
+## Mutabilität und Immunität
+
+- **Mutabilität** bedeutet, dass ein Objekt nach seiner Erstellung verändert werden kann. Listen sind mutable; daher
+  können wir Elemente hinzufügen, entfernen oder ändern.
+- **Immunität** bezieht sich darauf, wenn ein Objekt nach seiner Erstellung nicht verändert werden kann. Ein Beispiel
+  für einen immutablen Datentyp in Python ist ein Tupel.
+
+## Listenoperationen
+
+Schauen wir uns kurz ein paar Beispiele an wie man mit Listen arbeiten kann. Das wichtigste zuerst, nämlich die
+Erstellung
+Listen.
+
+1. Erstellung einer Liste: `meine_liste = [1, 2, 3]`
+2. Zugriff auf Listenelemente: `meine_liste[1]` - Greift auf das Element am Index 1 zu. Die Zählung startet bei 0!
+2. Hinzufügen eines Elements: `meine_liste.append(4)` - Fügt `4` am Ende der Liste hinzu.
+3. Entfernen eines Elements: `meine_liste.remove(2)` - Entfernt das erste Vorkommen von `2` aus der Liste.
+
+Im Folgenden sehen wir weitere Beispiele.
+
+### Tabelle der häufigsten Listenmethoden
+
+| Methode               | Beschreibung                                                 | Beispiel                                                                   |
+|-----------------------|--------------------------------------------------------------|----------------------------------------------------------------------------|
+| `append(x)`           | Fügt ein Element am Ende der Liste hinzu                     | `lst.append(5)` - Fügt `5` zu `lst` hinzu                                  |
+| `extend([x, y, ...])` | Erweitert die Liste um die Elemente in der angegebenen Liste | `lst.extend([6, 7])` - Fügt `6` und `7` zu `lst` hinzu                     |
+| `insert(i, x)`        | Fügt an Position `i` das Element `x` ein                     | `lst.insert(2, 'a')` - Fügt `'a'` an der Position 2 in `lst` ein           |
+| `remove(x)`           | Entfernt das erste Vorkommen von `x` aus der Liste           | `lst.remove('a')` - Entfernt das erste Vorkommen von `'a'` aus `lst`       |
+| `pop(i)`              | Entfernt und gibt das Element an der Position `i` zurück     | `lst.pop(3)` - Entfernt und gibt das Element an Position 3 in `lst` zurück |
+| `clear()`             | Entfernt alle Elemente aus der Liste                         | `lst.clear()` - Entfernt alle Elemente aus `lst`                           |
+| `index(x)`            | Gibt den Index des ersten Vorkommens von `x` zurück          | `lst.index('a')` - Gibt den Index von `'a'` in `lst` zurück                |
+| `count(x)`            | Zählt, wie oft `x` in der Liste vorkommt                     | `lst.count(5)` - Zählt, wie oft `5` in `lst` vorkommt                      |
+| `sort()`              | Sortiert die Elemente der Liste                              | `lst.sort()` - Sortiert die Elemente in `lst`                              |
+| `reverse()`           | Kehrt die Reihenfolge der Elemente in der Liste um           | `lst.reverse()` - Kehrt die Reihenfolge der Elemente in `lst`              
+
+Listen in Python sind vielseitig und ein wesentlicher Bestandteil der meisten Python-Programme. Durch die
+Verwendung dieser Methoden können Listen effektiv zur Verarbeitung von Daten in einer Vielzahl von Anwendungen
+genutzt werden.
+
+### Beispiel
+
+Stellen wir uns vor, wir haben eine Aufgabe, bei der wir eine Liste von Zahlen verwalten und verschiedene Operationen
+darauf durchführen müssen. Wir werden:
+
+1. Eine Liste erstellen
+2. Elemente hinzufügen und entfernen
+3. Die Liste sortieren
+5. Elemente durchsuchen
+
+```python
+# 1. Eine Liste erstellen
+zahlen = [3, 1, 4, 1, 5, 9, 2]
+
+# 2. Elemente hinzufügen und entfernen
+zahlen.append(6)  # Fügt die Zahl 6 am Ende der Liste hinzu
+zahlen.insert(2, 7)  # Fügt die Zahl 7 an der Position 2 ein
+zahlen.remove(1)  # Entfernt das erste Vorkommen der Zahl 1
+
+# 3. Die Liste sortieren
+zahlen.sort()  # Sortiert die Liste in aufsteigender Reihenfolge
+
+# 4. Elemente durchsuchen
+position = zahlen.index(5)  # Findet die Position von 5 in der Liste
+anzahl_von_4 = zahlen.count(4)  # Zählt, wie oft die Zahl 4 in der Liste vorkommt
+
+# Ergebnisse ausgeben
+print("Sortierte Liste:", zahlen)
+print("Position von 5:", position)
+print("Anzahl von 4:", anzahl_von_4)
+```
+
+In diesem Beispiel:
+
+- Beginnen wir mit einer Liste von Zahlen.
+- Fügen dann die Zahl 6 hinzu, fügen die Zahl 7 an der zweiten Position ein und entfernen das erste Vorkommen der Zahl
+  1.
+- Danach sortieren wir die Liste.
+- Und schließlich suchen wir nach spezifischen Elementen (z.B. der Position von 5 und der Anzahl der 4 in der Liste).
+
+## Aufgaben
+
+1. **Erstellen einer Liste:** Erstelle eine Liste mit den Zahlen 1 bis 5.
+2. **Hinzufügen von Elementen:** Füge die Zahl 6 zur Liste `zahlen` hinzu.
+3. **Entfernen von Elementen:** Entferne die Zahl 3 aus der Liste `zahlen`.
+4. **Zugreifen auf ein Listenelement:** Greife auf das dritte Element in der Liste `zahlen` zu.
+5. **Listenlänge:** Finde heraus, wie lang die Liste `zahlen` ist.
+6. **Slicing:** Erstelle eine neue Liste, die die ersten drei Elemente von `zahlen` enthält.
+7. **Elemente zählen:** Zähle, wie oft die Zahl 2 in der Liste `zahlen` vorkommt.
+8. **Liste umkehren:** Kehre die Reihenfolge der Elemente in der Liste `zahlen` um.
+9. **Liste sortieren:** Sortiere die Liste `zahlen` in absteigender Reihenfolge.
+10. **Listen verschachteln:** Erstelle eine neue Liste `verschachtelt`, die zwei Listen enthält: die ursprüngliche
+    Liste `zahlen` und eine Liste mit den Buchstaben ['a', 'b', 'c'].
+
+## Diskussionen
+
+1. Recherchiere im Internet, welche Informationen du zu Listen in Python findest. Gibt es Alternativen zu Listen?
+
+## Lösungen
+
+1.
+
+```python
+zahlen = [1, 2, 3, 4, 5]
+```
+
+2.
+
+```python
+zahlen.append(6)
+```
+
+3.
+
+```python
+zahlen.remove(3)
+```
+
+4.
+
+```python
+drittes_element = zahlen[2]
+```
+
+5.
+
+```python
+laenge = len(zahlen)
+```
+
+6.
+
+```python
+erste_drei = zahlen[:3]
+```
+
+7.
+
+```python
+anzahl_zwei = zahlen.count(2)
+```
+
+8.
+
+```python
+zahlen.reverse()
+```
+
+9.
+
+```python
+zahlen.sort(reverse=True)
+```
+
+10.
+
+```python
+verschachtelt = [zahlen, ['a', 'b', 'c']]
+```
+
