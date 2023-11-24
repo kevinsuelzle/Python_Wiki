@@ -316,3 +316,34 @@ Ein häufiger Anwendungsfall für Tupel ist die Rückgabe mehrerer Elemente aus 
 | List     | Veränderliche Kollektion verschiedener Elemente    | [Referenz](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range) |
 | Tupel    | Unveränderliche Kollektion verschiedener Elementen | [Referenz](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range) |
 
+## Lösungen
+
+1. `a = 5`
+2. `begrüßung = "Hallo Python"`
+3. `a = 10`
+4. `name = "Dein Name"; alter = Dein Alter`
+5. `anzahl_aepfel = 5`
+6. 
+```python 
+vorname = "Max"
+nachname = "Mustermann"
+voller_name = vorname + " " + nachname
+print(voller_name)
+```
+7. 
+```python
+meine_variable = 15.5
+print(type(meine_variable))
+```
+8. `ist_schüler = True`
+9.`farben = ["Rot", "Grün", "Blau"]`
+10`print(farben[1])`
+11`koordinaten = (4, 5)`
+12`print(koordinaten[0])`
+13.
+```python
+zahl_string = "10"
+zahl_int = int(zahl_string)
+print(zahl_int)
+```
+14. `farben.append("Gelb")`

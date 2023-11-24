@@ -94,4 +94,89 @@ Aufgabenstellung:
 | `input`  | Funktion, um Nutzereingaben von der Konsole zu lesen                  | [Referenz](https://docs.python.org/3/library/functions.html?highlight=input#input)                  |
 | f-String | Möglichkeit, Strings zu formatieren                                   | [Referenz](https://docs.python.org/3/tutorial/inputoutput.html?highlight=f%20strings#tut-f-strings) |
 | `int`    | Funktion, um Strings, die nur Zahlen enthalten in Integer umzuwandlen | [Referenz](https://docs.python.org/3/library/functions.html?highlight=int#int)                      |
-----------------------------
+
+
+## Lösungen
+
+1. `print("Hallo Welt")`
+2. `text = "Python"; print(text)`
+3. `print(100)`
+4. `print("Hallo", "Welt")`
+5. `print("Hallo!", end="")`
+6. `name = input("Wie heißt du? ")`
+7. 
+```python
+name = input("Wie heißt du? ")
+print(f"Hallo, {name}!")
+```
+8. 
+```python
+alter = int(input("Wie alt bist du? "))
+print(alter)
+```
+9. 
+```python
+`essen = input("Was ist dein Lieblingsessen? ")
+print(f"Ich mag auch {essen}!")
+```
+10. 
+```python
+name = input("Wie heißt du? ")
+alter = input("Wie alt bist du? ")
+print(f"Name: {name}, Alter: {alter}")
+```
+11. 
+```python
+vorname = input("Vorname: ")
+nachname = input("Nachname: ")
+print(f"Vollständiger Name: {vorname} {nachname}")
+```
+12. 
+```python
+zahl1 = int(input("Erste Zahl: "))
+zahl2 = int(input("Zweite Zahl: "))
+print(f"Ergebnis: {zahl1 + zahl2}")
+```
+13. 
+```python
+try: 
+    zahl = int(input("Gib eine Zahl ein: "))
+    print(zahl) 
+except ValueError: 
+    print("Das war keine gültige Zahl!")
+```
+14. 
+```python
+farben = [input("Erste Farbe: "), input("Zweite Farbe: "), input("Dritte Farbe: ")]
+print(farben)
+```
+15. 
+```python 
+passwort1 = input("Passwort: ")
+passwort2 = input("Passwort wiederholen: ")
+if passwort1 == passwort2:
+    print("Erfolg")
+else:
+    print("Die Passwörter stimmen nicht überein!")
+```
+
+### **Persönliche Statistik**
+
+```python
+# Eingabe der persönlichen Informationen
+name = input("Gib deinen Namen ein: ")
+alter = int(input("Gib dein Alter ein: "))
+groesse = float(input("Gib deine Größe in Metern ein (z.B. 1.75): "))
+lieblingsfarben = input("Gib deine Lieblingsfarben ein, getrennt durch Kommas: ").split(',')
+
+# Berechnung der Anzahl der Lieblingsfarben
+anzahl_farben = len(lieblingsfarben)
+
+# Ausgabe der Informationen
+print("\n--- Persönliche Statistiken ---")
+print(f"Name: {name}")
+print(f"Alter: {alter} Jahre")
+print(f"Größe: {groesse} Meter")
+print(f"Anzahl der Lieblingsfarben: {anzahl_farben}")
+print(f"Lieblingsfarben: {', '.join(lieblingsfarben)}")
+```

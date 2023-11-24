@@ -146,6 +146,7 @@ Jahren abfragen.
 Zeit: 40 min
 
 Aufgabenstellung:
+
 - Erstelle ein Python-Programm zur Umrechnung von Temperaturen zwischen Celsius und Fahrenheit. 
 - Das Programm soll zuerst nach der Eingabetemperatur (als Zahl) fragen und dann, ob diese in Celsius oder Fahrenheit ist. 
 - Führe die entsprechende Umrechnung durch: Von Celsius nach Fahrenheit (`F = C * 9/5 + 32`) oder von Fahrenheit nach 
@@ -167,3 +168,60 @@ Aufgabenstellung:
 | `math.exp`  | Exponentailfunktion                 | [Referenz](https://docs.python.org/3/library/math.html?highlight=math%20sqrt#math.exp)  |
 | `math.log`  | Logartihmus zur angegeben Basis     | [Referenz](https://docs.python.org/3/library/math.html?highlight=math%20sqrt#math.log)  |
 
+## Lösungen
+1. `print(5 + 3)  # 8`
+2. `print(10 - 2)  # 8`
+3. `print(4 * 2)  # 8`
+4. `print(16 / 2)  # 8.0`
+5. `print(17 // 2)  # 8`
+6. `print(18 % 10)  # 8`
+7. `print(2 ** 3)  # 8`
+8. `import math; print(math.sqrt(64))  # 8.0`
+9. `import math; print(math.exp(3))  # etwa 20.085`
+10. `import math; print(math.log(8, math.e))  # etwa 2.079`
+
+11. `print((3 + 4) * 5)  # 35`
+12. `print(2 * 3 == 6)  # True`
+13. `print(round(2.7))  # 3`
+14. `print(-3 * 3)  # -9`
+15. `x = 5; print(x * x)  # 25`
+16. `print(2 + 3 * 5)  # 17, da die Multiplikation zuerst ausgeführt wird`
+17. `print((2 + 3) * 5)  # 25, da die Klammer zuerst ausgewertet wird`
+18. `print(4 ** 2 / 8)  # 2.0, da zuerst potenziert und dann dividiert wird`
+19. `print(3 + 4 * 2 - 1)  # 10, da Multiplikation vor Addition und Subtraktion ausgeführt wird`
+20. `print((3 + 4) * (5 - 2) ** 2)  # 49, da zuerst die Klammern, dann die Potenzierung und zuletzt die Multiplikation ausgeführt wird`
+
+### **Zinsrechner**
+```python
+# Benutzereingaben
+anfangskapital = float(input("Gib das Anfangskapital ein: "))
+zinssatz = float(input("Gib den Zinssatz in Prozent ein: "))
+jahre = float(input("Gib die Anlagedauer in Jahren ein: "))
+
+# Berechnung der Endsumme
+endsumme = anfangskapital * (1 + zinssatz/100 * jahre)
+
+# Ausgabe
+print(f"Die Endsumme nach {jahre} Jahren beträgt: {endsumme:.2f} Euro")
+
+```
+
+### **Umrechner für Temperaturen**
+
+```python
+# Benutzereingaben
+temperatur = float(input("Gib die Temperatur ein: "))
+einheit = input("Ist die Temperatur in Celsius (C) oder Fahrenheit (F)? ")
+
+# Umrechnung
+if einheit.lower() == 'c':
+    umgerechnet = temperatur * 9/5 + 32
+    zieleinheit = "Fahrenheit"
+elif einheit.lower() == 'f':
+    umgerechnet = (temperatur - 32) * 5/9
+    zieleinheit = "Celsius"
+
+# Ausgabe
+print(f"Die Temperatur in {zieleinheit} beträgt: {umgerechnet:.2f}°")
+
+```
