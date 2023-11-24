@@ -17,7 +17,7 @@
 | Christian | chris@christian-marek-analytics.de                     |
 | David     | david.kiss@qualidy.de                                  |
 | Felix     | felix.tillmann@qualidy.de                              |
-| Joachim   | waltherj@web.de                                        |
+| Joachim   | waltherj@web.de / joachim.walther-extern@qualidy.de    |
 | Jürgen    | dr.juergen.brauer@gmail.com                            |
 | Orell     | hello@orellgarten.com / orell.garten-extern@qualidy.de |
 
