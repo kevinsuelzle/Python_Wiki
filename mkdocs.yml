@@ -2,9 +2,9 @@ site_name: My Docs
 
 nav:
   - Home: index.md
-  - Block 1: lehrplan/block1.md
-  - Block 2: lehrplan/block2.md
-  - Block 3: lehrplan/block3.md
+  - Lehrplan: lehrplan/lehrplan.md
+  - Checkliste: lehrplan/checkliste.md
+  - Begriffssammlung: lehrplan/begriffssammlung.md
   - Projekte:
       - Projekt 1 A: projekt/projekt1a.md
       - Projekt 1 B: projekt/projekt1b.md
@@ -17,6 +17,3 @@ nav:
       - Leitfaden: orga/leitfaden.md
       - Inhalte: orga/inhalte.md
       - Viktors ToDo's: orga/todo.md
-  - Videos:
-  - Tools:
-  - git:
