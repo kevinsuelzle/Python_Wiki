@@ -2,5 +2,18 @@ site_name: My Docs
 
 nav:
   - Home: index.md
-  - Lehrplan: lehrplan.md
-  - Für Autoren: orga/autorenleitfaden.md
+  - Lehrplan: lehrplan/lehrplan.md
+  - Checkliste: lehrplan/checkliste.md
+  - Begriffssammlung: lehrplan/begriffssammlung.md
+  - Projekte:
+      - Projekt 1 A: projekt/projekt1a.md
+      - Projekt 1 B: projekt/projekt1b.md
+      - Projekt 2 A: projekt/projekt2a.md
+      - Projekt 2 B: projekt/projekt2b.md
+      - Projekt 3 A: projekt/projekt3a.md
+      - Projekt 3 B: projekt/projekt3b.md
+  - Für Autoren:
+      - Ansprechpartner: orga/ansprechpartner.md
+      - Leitfaden: orga/leitfaden.md
+      - Inhalte: orga/inhalte.md
+      - Viktors ToDo's: orga/todo.md
