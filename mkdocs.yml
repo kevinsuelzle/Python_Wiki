@@ -3,7 +3,7 @@ site_name: My Docs
 nav:
   - Home: index.md
   - Lehrplan: lehrplan/lehrplan.md
-  - Checkliste: lehrplan/checkliste.md
+  - Lernziele: lehrplan/lernziele.md
   - Begriffssammlung: lehrplan/begriffssammlung.md
   - Projekte:
       - Projekt 1 A: projekt/projekt1a.md
