@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Python Kurs - 15 Wochen
 
 nav:
   - Home: index.md
@@ -17,3 +17,4 @@ nav:
       - Leitfaden: orga/leitfaden.md
       - Inhalte: orga/inhalte.md
       - Viktors ToDo's: orga/todo.md
+
