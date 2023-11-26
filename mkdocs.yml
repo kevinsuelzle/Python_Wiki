@@ -1,13 +1,20 @@
 site_name: My Docs
 
+extra_css:
+  - custom.css
+
 nav:
   - Home: index.md
   - Lehrplan:
     - Allgemein: lehrplan/lehrplan.md
     - Clean Code:
-        - Für Lehrer: lehrplan/clean_code/clean-code-lehrer.md
-        - Einführung: lehrplan/clean_code/einführung/Einführung.md
-        - Best Practices: lehrplan/clean_code/best_practices/kamele_und_schlangen.md
+        - Einführung: lehrplan/clean_code/Introduction.md
+        - Grundlagen: lehrplan/clean_code/Basics.md
+        - Schlechten Code erkennen: lehrplan/clean_code/DetectingBadCode.md
+        - Besseren Code schreiben: lehrplan/clean_code/TheGoodPractices.md
+        - Namenskonventionen: lehrplan/clean_code/Conventoons.md
+        - Best Practices: lehrplan/clean_code/CamelsAndSnakes.md
+        - DRY: lehrplan/clean_code/DRY.md
   - Checkliste: lehrplan/checkliste.md
   - Begriffssammlung: lehrplan/begriffssammlung.md
   - Projekte:

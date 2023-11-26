@@ -1,4 +1,7 @@
 # Kamele und Schlangen
+
+![Fundammentals](pictures/CamelCase.jpg "CamelCase")
+
 Ein Ausflug in Benennungskonventionen.
 
 ## CamelCase
@@ -34,6 +37,8 @@ Kebab-Case ist eine Variante, bei der Wörter durch Bindestriche getrennt werden
 - **C#**: Ähnlich wie Java, UpperCamelCase für Klassen und lowerCamelCase für Methoden und Variablen.
 - **Python**: Verwenden Sie snake_case für fast alles, außer Klassennamen, die UpperCamelCase folgen.
 - **JavaScript**: Tendiert zu lowerCamelCase, aber manchmal sieht man auch snake_case.
+
+Ganz allgemein kann die Benennung auch nach Firmenvorschrift erfolgen.
 
 ## Diskussion und Übungen
 

@@ -1,5 +1,7 @@
 # Einführung in Clean Code
 
+![Cleaning the code](pictures/CleaningTheCode.jpg "Cleaning the code")
+
 ## Lernziele: Einführung
 
 - **Grobziel**: Verstehen, was Clean Code ist und warum er wichtig ist.
@@ -10,7 +12,9 @@
 
 ## Was ist Clean Code?
 
-Clean Code bezieht sich auf einen Software-Code, der leicht zu verstehen und zu ändern ist. Der Code sollte klar, präzise und so einfach wie möglich sein. Ein gut geschriebener Code kann von anderen Entwicklern leicht gelesen und bearbeitet werden, was für die langfristige Wartbarkeit und Skalierbarkeit von Softwareprojekten entscheidend ist.
+Clean Code bezieht sich auf einen Software-Code, der leicht zu verstehen und zu ändern ist. Der Code sollte klar,
+präzise und so einfach wie möglich sein. Ein gut geschriebener Code kann von anderen Entwicklern leicht gelesen und
+bearbeitet werden, was für die langfristige Wartbarkeit und Skalierbarkeit von Softwareprojekten entscheidend ist.
 
 ### Merkmale von Clean Code:
 
@@ -21,7 +25,8 @@ Clean Code bezieht sich auf einen Software-Code, der leicht zu verstehen und zu 
 
 ## Warum ist Clean Code wichtig?
 
-1. **Wartung**: Der Großteil der Kosten eines Softwareprojekts entsteht in der Wartungsphase. Sauberer Code erleichtert die Wartung erheblich.
+1. **Wartung**: Der Großteil der Kosten eines Softwareprojekts entsteht in der Wartungsphase. Sauberer Code erleichtert
+   die Wartung erheblich.
 2. **Teamarbeit**: In einem Team ist es wichtig, dass jeder den Code der anderen verstehen und daran arbeiten kann.
 3. **Qualität**: Sauberer Code führt zu weniger Fehlern und höherer Softwarequalität.
 4. **Skalierbarkeit**: Projekte sind einfacher zu erweitern und anzupassen, wenn der zugrunde liegende Code sauber ist.
@@ -29,7 +34,8 @@ Clean Code bezieht sich auf einen Software-Code, der leicht zu verstehen und zu 
 ## Diskussion: Bedeutung von Clean Code
 
 - **Frage**: Warum glauben Sie, ist Clean Code besonders in großen Projekten wichtig?
-- **Aktivität**: Finden Sie Beispiele für schlechten Code in Ihrem eigenen Projekt und diskutieren Sie, wie dieser verbessert werden könnte.
+- **Aktivität**: Finden Sie Beispiele für schlechten Code in Ihrem eigenen Projekt und diskutieren Sie, wie dieser
+  verbessert werden könnte.
 
 ### Beispiel für Schlechten und Guten Code in Python
 
@@ -39,11 +45,13 @@ Betrachten Sie das folgende Python-Beispiel, das einige typische Merkmale von sc
 
 ```python
 def f(a, b):
-    if a > 10 and b > 10: return a + b
+    if a > 10 and b > 10:
+        return a + b
     else:
         if a <= 10: return a * 2
         if b <= 10: return b * 2
 ```
+
 Probleme in diesem Code:
 
 1. Funktion und Variablennamen: Die Funktion f und die Variablen a und b sind nicht aussagekräftig.
@@ -64,9 +72,11 @@ def sum_or_double(a, b):
     else:
         return b * 2
 ```
+
 Verbesserungen:
 
-1. Klare Funktions- und Variablennamen: Die Funktion sum_or_double und die Variablen a und b sind jetzt aussagekräftiger.
+1. Klare Funktions- und Variablennamen: Die Funktion sum_or_double und die Variablen a und b sind jetzt
+   aussagekräftiger.
 2. Lesbarkeit: Die if-Anweisungen sind klar und konsistent formatiert.
 3. Konsistenz: Einheitliche Einrückungen und Leerzeichen verbessern die Lesbarkeit.
 4. Logik: Die Logik ist jetzt einfacher und direkter.
@@ -79,7 +89,7 @@ Diskussion: Vergleich der Beispiele
 
 ## Zusammenfassung
 
-In dieser Einführung haben wir die Grundlagen von Clean Code und seine Bedeutung in der Softwareentwicklung besprochen. Die Fähigkeit, sauberen und effizienten Code zu schreiben, ist eine wesentliche Fähigkeit für jeden Entwickler.
+In dieser Einführung haben wir die Grundlagen von Clean Code und seine Bedeutung in der Softwareentwicklung besprochen.
+Die Fähigkeit, sauberen und effizienten Code zu schreiben, ist eine wesentliche Fähigkeit für jeden Entwickler.
 
----
 
