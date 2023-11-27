@@ -1,5 +1,6 @@
 # Beispiele für schlechten Code in Python
 
+
 ```python
 x = 10
 
@@ -43,6 +44,41 @@ quadrat_num3 = num3 * num3
 print(quadrat_num1, quadrat_num2, quadrat_num3)
 ```
 
+```python
+def f(a, b):
+    if a > 10 and b > 10:
+        return a + b
+    else:
+        if a <= 10: return a * 2
+        if b <= 10: return b * 2
+```
+
+Probleme in diesem Code:
+
+1. Funktion und Variablennamen: Die Funktion f und die Variablen a und b sind nicht aussagekräftig.
+2. Einzeilige if-Anweisung: Die Verwendung einer einzeiligen if-Anweisung reduziert die Lesbarkeit.
+3. Keine Konsistenz: Inkonsistente Verwendung von Einrückungen und Leerzeichen.
+4. Logik: Die Logik könnte klarer und effizienter gestaltet werden.
+
+#### Verbesserter Code: Beispiel
+
+Jetzt sehen wir uns eine verbesserte Version des obigen Codes an:
+
+```python
+def sum_or_double(a, b):
+    if a > 10 and b > 10:
+        return a + b
+    elif a <= 10:
+        return a * 2
+    else:
+        return b * 2
+```
+
+Diskussion: Vergleich der Beispiele
+
+**Frage**: Welche weiteren Verbesserungen könnten an dem verbesserten Code vorgenommen werden?
+**Aktivität**: Versuchen Sie, den verbesserten Code weiter zu optimieren und diskutieren Sie Ihre Änderungen.
+
 ### Aufgabe: Umwandeln in sauberen Code.
 
 ```python
@@ -58,86 +94,72 @@ def copyarr():
 
 ### Aufgabe: Versuche innerhalb von 3 Minuten eine grobe Vorstellung von der Funktion des folgenden Codes zu bekommen.
 
-Entnommen aus Clean Code von Robert C. Martin
+Entnommen aus Clean Code von Robert C. Martin und von Java nach Python übersetzt.
 
-```java
-    public static String testableHtml(PageData pageData, boolean includeSuiteSetup) throws Exception {
-        WikiPage wikiPage = pageData.getwikiPage();
-        StringBuffer buffer = new StringBuffer();
-        if (pageData.hasAttribute("Test")) {
-            if (includeSuiteSetup)
-                WikiPage suiteSetup = PageCrawlerImpl.getInheritedPage(SuiteResponder.SUITE_SETUP_NAME, wikiPage);
-            if (suiteSetup != null) {
-                WikiPagePath pagePath = suitesetup.getPageCrawler().getFullPath(suiteSetup);
-                String pagePathName = PathParser.render(pagePath);
-                buffer.append("!include -setup .")
-                        .append(pagePathName)
-                        .append("\n");
-            }
-        }
+```python
+def testable_html(page_data, include_suite_setup):
+    wiki_page = page_data.get_wiki_page()
+    buffer = []
 
-        WikiPage setup = PageCrawlerImpl.getInheritedPage("SetUp", wikiPage);
-        if (setup != null) {
-            WikiPagePath setupPath = wikiPage.getPageCrawler().getFullPath(setup);
-            String setupPathName = PathParser.render(setupPath);
-            buffer.append("!include -setup.")
-                    .append(setupPathName)
-                    .append("\n");
-        }
-    
-        buffer.append(pageData.getContent());
-        if (pageData.hasAttribute("Test")) {
-            WikiPage teardown = PageCrawlerImpl.getInheritedPage("TearDown", wikiPage);
-            if (teardown != null) {
-                WikiPagePath tearDownPath = wikiPage.getPageCrawler().getFullPath(teardown);
-                String tearDownPathName = PathParser.render(tearDownPath);
-                buffer.append("\n")
-                        .append(" !include -teardown .")
-                        .append(tearDownPathName).append("/n");
-            }
+    if page_data.has_attribute("Test"):
+        if include_suite_setup:
+            suite_setup = PageCrawlerImpl.get_inherited_page(SuiteResponder.SUITE_SETUP_NAME, wiki_page)
+            if suite_setup is not None:
+                page_path = suite_setup.get_page_crawler().get_full_path(suite_setup)
+                page_path_name = PathParser.render(page_path)
+                buffer.append(f"!include -setup .{page_path_name}\n")
 
-            if (includeSuiteSetup) {
-                WikiPage suiteTeardown = PageCrawlerImpl.getInheritedPage(SuiteResponder.SUITE_TEARDOWN_NAME, wikiPage);
-                if (suiteTeardown != null) (WikiPagePath
-                pagePath = suiteTeardown.getPageCrawler().getFullPath(suiteTeardown);
-                String pagePathName = PathParser.render(pagePath);
-                buffer.append(" !include -teardown .")
-                        .append(pagePathName)
-                        .append("/a");
-            }
-        }
+    setup = PageCrawlerImpl.get_inherited_page("SetUp", wiki_page)
+    if setup is not None:
+        setup_path = wiki_page.get_page_crawler().get_full_path(setup)
+        setup_path_name = PathParser.render(setup_path)
+        buffer.append(f"!include -setup.{setup_path_name}\n")
 
-        pageData.setContent(buffer.tostring());
-        return pageData.getHtml();
-    }
+    buffer.append(page_data.get_content())
+
+    if page_data.has_attribute("Test"):
+        teardown = PageCrawlerImpl.get_inherited_page("TearDown", wiki_page)
+        if teardown is not None:
+            tear_down_path = wiki_page.get_page_crawler().get_full_path(teardown)
+            tear_down_path_name = PathParser.render(tear_down_path)
+            buffer.append(f"\n !include -teardown .{tear_down_path_name}\n")
+
+        if include_suite_setup:
+            suite_teardown = PageCrawlerImpl.get_inherited_page(SuiteResponder.SUITE_TEARDOWN_NAME, wiki_page)
+            if suite_teardown is not None:
+                page_path = suite_teardown.get_page_crawler().get_full_path(suite_teardown)
+                page_path_name = PathParser.render(page_path)
+                buffer.append(f" !include -teardown .{page_path_name}\n")
+
+    page_data.set_content(''.join(buffer))
+    return page_data.get_html()
 ```
 
 Zitat (übersetzt): Mit nur ein paar einfachen Methodenextraktionen, etwas Umbenennung und einer kleinen Umstrukturierung
-konnte ich jedoch die Absicht der Funktion in den neun Zeilen [des folgenden Codes] erfassen.
+konnte ich jedoch die Absicht der Funktion in den neun Zeilen [des folgenden von Java nach Python übersetzten Codes] erfassen.
 Sehen Sie, ob Sie das in den nächsten 3 Minuten verstehen können.
 
-```java
-  public static String renderPageWithSetupsAndTeardowns ( 
-            Pagedata pageData, boolean isSuite
-    ) throws Exception {
-        boolean isTestPage = pageData.hasAttribute("Test");
-        if (isTestPage) {
-            WikiPage testPage = pageData.getWikiPage();
-            StringBuffer newPageContent = new StringBuffer();
-            includeSetupPages(testPage, newPageContent, isSuite);
-            newPageContent.append(pageData.getContent());
-            includeTeardownPages(testPage, newPageContent, isSuite);
-            pageData.setContent(newPageContent.toString());
-        }
-        return pageData.getHtmal();
-    }
+```python
+def render_page_with_setups_and_teardowns(page_data, is_suite):
+    is_test_page = page_data.has_attribute("Test")
+    if is_test_page:
+        test_page = page_data.get_wiki_page()
+        new_page_content = []
+
+        include_setup_pages(test_page, new_page_content, is_suite)
+        new_page_content.append(page_data.get_content())
+        include_teardown_pages(test_page, new_page_content, is_suite)
+
+        page_data.set_content(''.join(new_page_content))
+
+    return page_data.get_html()
 ```
 
 Auch wenn dieses Beispiel, ganz bewusst aus einer fremden Programmiersprache gewählt, keinen tieferen Sinn ergibt, so
 ist doch klar ersichtlich,
 wie viel eine gute Benennung und Gliederung von Funktionalität ausmacht.
 
-Daraus ergeben sich folgende Erkenntnisse bezüglich der Gestaltung von Funktionen:
+### Erkenntnisse bezüglich der Gestaltung von Funktionen:
 
 1. sie sollten kurz sein
 2. sie sollten sich nur um eine einzige Sache kümmern: "Do One Thing!"

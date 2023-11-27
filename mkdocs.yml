@@ -10,7 +10,7 @@ nav:
     - Clean Code:
         - Einführung: lehrplan/clean_code/Introduction.md
         - Grundlagen: lehrplan/clean_code/Basics.md
-        - Schlechten Code erkennen: lehrplan/clean_code/DetectingBadCode.md
+        - Schlechten Code erkennen: lehrplan/clean_code/GoodCodeBadCode.md
         - Besseren Code schreiben: lehrplan/clean_code/TheGoodPractices.md
         - Namenskonventionen: lehrplan/clean_code/Conventoons.md
         - Best Practices: lehrplan/clean_code/CamelsAndSnakes.md

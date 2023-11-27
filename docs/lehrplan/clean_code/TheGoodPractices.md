@@ -32,7 +32,9 @@ for x in range(20):
         my_list.append(x**2)
 ```
 
-##
+### Benennung von Variablen
+Bezeichner sollten klar und eindeutig sein. 
+
 ```python
 basispreis = 50
 steuer = 100
@@ -49,6 +51,9 @@ def calculate_adjusted_value(x):
     # Der Offset von 5 Bytes ist technisch erforderlich. Quelle ...
     return x * 2 + 5
 ```
+
+### DRY Don't repeat yourself
+Funktionen reduzieren die Code Menge und erhöhen die Wartbarkeit.
 
 ```python
 def quadrat(zahl):

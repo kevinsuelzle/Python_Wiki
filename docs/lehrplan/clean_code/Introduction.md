@@ -37,56 +37,6 @@ bearbeitet werden, was für die langfristige Wartbarkeit und Skalierbarkeit von 
 - **Aktivität**: Finden Sie Beispiele für schlechten Code in Ihrem eigenen Projekt und diskutieren Sie, wie dieser
   verbessert werden könnte.
 
-### Beispiel für Schlechten und Guten Code in Python
-
-#### Schlechter Code: Beispiel
-
-Betrachten Sie das folgende Python-Beispiel, das einige typische Merkmale von schlechtem Code aufweist:
-
-```python
-def f(a, b):
-    if a > 10 and b > 10:
-        return a + b
-    else:
-        if a <= 10: return a * 2
-        if b <= 10: return b * 2
-```
-
-Probleme in diesem Code:
-
-1. Funktion und Variablennamen: Die Funktion f und die Variablen a und b sind nicht aussagekräftig.
-2. Einzeilige if-Anweisung: Die Verwendung einer einzeiligen if-Anweisung reduziert die Lesbarkeit.
-3. Keine Konsistenz: Inkonsistente Verwendung von Einrückungen und Leerzeichen.
-4. Logik: Die Logik könnte klarer und effizienter gestaltet werden.
-
-#### Verbesserter Code: Beispiel
-
-Jetzt sehen wir uns eine verbesserte Version des obigen Codes an:
-
-```python
-def sum_or_double(a, b):
-    if a > 10 and b > 10:
-        return a + b
-    elif a <= 10:
-        return a * 2
-    else:
-        return b * 2
-```
-
-Verbesserungen:
-
-1. Klare Funktions- und Variablennamen: Die Funktion sum_or_double und die Variablen a und b sind jetzt
-   aussagekräftiger.
-2. Lesbarkeit: Die if-Anweisungen sind klar und konsistent formatiert.
-3. Konsistenz: Einheitliche Einrückungen und Leerzeichen verbessern die Lesbarkeit.
-4. Logik: Die Logik ist jetzt einfacher und direkter.
-
-Diskussion: Vergleich der Beispiele
-
-**Frage**: Welche weiteren Verbesserungen könnten an dem verbesserten Code vorgenommen werden?
-
-**Aktivität**: Versuchen Sie, den verbesserten Code weiter zu optimieren und diskutieren Sie Ihre Änderungen.
-
 ## Zusammenfassung
 
 In dieser Einführung haben wir die Grundlagen von Clean Code und seine Bedeutung in der Softwareentwicklung besprochen.
