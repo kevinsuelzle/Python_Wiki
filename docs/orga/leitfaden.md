@@ -22,6 +22,7 @@ Das große Vorbild ist das Matheskript von Qualidy.
 * Ganze Sätze schreiben und nicht kryptische Stichpunkte. Der Teilnehmer muss bei Fehlen im Unterricht auch mit dem Skript nacharbeiten können.
 * Im Video kann mehr und ausführlicher erklärt werden.
 * **Übungsaufgaben können gerne so konzipiert werden, dass die Inhalte über diese beigebracht werden**
+* Auch gerne Aufgaben einbauen, die schriftliche mit Zettel und Papier gelöst werden sollen.
 
 ### Bei allen Übungsaufgaben gilt
 
