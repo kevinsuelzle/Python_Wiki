@@ -73,9 +73,7 @@ b = 100
 c = a + b
 ```
 
-Bezeichner sollten klar und eindeutig sein. Nutzt man Begriffe aus der fachlichen Domain des Anwenders, so entsteht ein
-Teil einer problemspezifischen Sprache. Jedes Programm tendiert dazu, eine Sprache zu entwickeln, die das Problem oder
-die Aufgabe löst.
+[Bezeichner](Conventions.md) sollten klar und eindeutig sein und [Regeln](CamelsAndSnakes.md) folgen. 
 
 ```python
 basispreis = 50
@@ -147,7 +145,11 @@ print(quadrat_num1, quadrat_num2, quadrat_num3)
 
 **Frage**: Das obige Beispiel ist sehr trivial. Man könnte sagen: "Ist doch klar, was soll das?". Also warum wird dieser
 Punkt hier aufgelistet?
+
 **Aufgabe**: Finde komplexere Beispiele.
+
+**Frage**: Gibt es [Ausnahmen](DRY.md) zu dieser Regel?
+
 
 ### Beispiel mit Analyse
 

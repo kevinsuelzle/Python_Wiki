@@ -2,16 +2,22 @@
 
 ![Fundammentals](pictures/Conventions.jpg "Konventionen")
 
-
 Variablennamen und Funktionsnamen sollten
 
 - aussagekräftig und 
 - beschreibend sein, um die Lesbarkeit und Wartbarkeit des Codes zu verbessern.
-- Sie sollten auch gut auszusprechen sein und nicht in die Irre führen. 
-- Bezeichner sollten durchsuchbar sein.
-- Die Bezeichnungen sollten nichts kodiertes enthalten.
-- Es sollte einfach sein die Bedeutung zu erfassen.
-- Klassennamen sollten Nomen sein, während Methoden oder Funktionen eher als Anweisungen zu etwas verstanden werden. 
-- verwende lieber List.delete("Hello") anstatt List.wechdamit("Hello"). Ja, es ist lustiger, aber macht später Ärger.
-- Bezeichner sollten nicht doppelt verwendet werden oder mit einem Prefix versehen sein. Das hilft auch der IDE, bessere Vorschläge zu machen.
-- Bezeichner sollten aus dem Fachgebiet übernommen werden, um das es gerade geht.
+- gut auszusprechen sein und nicht in die Irre führen. 
+- durchsuchbar sein.
+- nichts kodiertes enthalten.
+- einfach zu verstehen sein.
+- sich an Normen halten (PEP 8). 
+- nicht schwafelig sein, keine Mundart wiedergeben oder sonstiges kulturelles Gut enthalten.
+- nicht doppelt verwendet werden oder mit einem Prefix versehen sein.
+- us dem Fachgebiet übernommen werden, um das es gerade geht.
+
+Nutzt man Begriffe aus der fachlichen Domain des Anwenders, so entsteht ein
+eine problemspezifische Sprache, die eventuall sogar genügt, um mit Nicht-Programmierern zu diskutieren. 
+Hier kommen wir in den Bereich de Domain Designs.
+
+Jedes Programm tendiert dazu, eine eigene Sprache zu entwickeln, die das Problem oder
+die Aufgabe löst.
