@@ -7,9 +7,9 @@
 | Woche 3-5 je 1 Tag | git                    | Christian | Viktor    | 6.12.      |
 | Projekt 1          | Lokale Applikation     | Christian | Felix     | 6.12.      |
 | Woche 6-7          | DB + Clean Code        | Joachim   | Bene      | 13.12.     |
-| Woche 8-10         | Web + Azure            | Joachim   | Bene      | 13.12.     |
-| Projekt 2          | Webanwendung           | Joachim   | Bene      | 13.12.     |
-| Woche 11-12.5      | DB2                    | Joachim   | Bene      | 22.12.     |
+| Woche 8-10         | Web + Azure            | Tim       | Bene      | 13.12.     |
+| Projekt 2          | Webanwendung           | Tim       | Bene      | 13.12.     |
+| Woche 11-12.5      | Docker + DB2           | Bene      |           | 22.12.     |
 | Woche 12.5-13      | Pandas+matplot         | Jürgen    | David     | 22.12.     |
 | Woche 14           | Python Fortgeschritten | Christian | David     | 22.12.     |
 | Woche 15           | Robotik                | Jürgen    | Bene      | 22.12.     |
