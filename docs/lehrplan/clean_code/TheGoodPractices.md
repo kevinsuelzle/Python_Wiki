@@ -26,7 +26,7 @@ def increment(x):
     return x + 1
 ```
 
-**Frage**: Warum ist das ein schlechter Stil und kann es unter diesem Aspekt Funktionen ohne Argumente überhaupt gebeN?
+**Frage**: Warum ist das ein schlechter Stil und kann es unter diesem Aspekt Funktionen ohne Argumente überhaupt geben?
 
 ### Fehlerbehandlung
 
@@ -47,7 +47,7 @@ def divide(a, b):
         return None
 ```
 
-**Frage**:
+**Frage**: Gibt es noch weitere Verbesserungen an dieser Funktion? 
 
 ### Vereinfachung von List Comprehensions
 
