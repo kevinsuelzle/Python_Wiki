@@ -1,7 +1,5 @@
 # Aufgaben
 
-![Aufgaben](../clean_code/pictures/GoingToWork.jpg)
-
 ## Aufgabe: Umwandeln in sauberen Code.
 
 ```python

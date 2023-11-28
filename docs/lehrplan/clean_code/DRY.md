@@ -1,7 +1,5 @@
 # DRY - Don't Repeat Yourself
 
-![DRY](pictures/DRY.jpg "Don't repeat yourself")
-
 ```python
 # Berechnung des Quadrats von Zahlen
 num1 = 4

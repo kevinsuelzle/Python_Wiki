@@ -1,7 +1,5 @@
 # List Comprehension
 
-![List Comprehension](../clean_code/pictures/ListComprehension.jpg)
-
 Man kann sehr komplexe und verklausulierte Code-Sequenzen schreiben.
 
 ```python

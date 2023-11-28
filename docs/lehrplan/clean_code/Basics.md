@@ -1,7 +1,5 @@
 # Grundlegende Prinzipien
 
-![Basics](pictures/Fundamentals.jpg "Grundlegendes")
-
 ### Grobziele
 
 - **Verständnis der Bedeutung von Clean Code:** Die Lernenden sollen ein grundlegendes Verständnis dafür entwickeln, was Clean Code ist und warum er in der Softwareentwicklung wichtig ist.

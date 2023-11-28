@@ -1,7 +1,5 @@
 # Kommentare
 
-![Fundammentals](pictures/Comments.jpg "Kommentare")
-
 ```python
 def calc(x):
     return x * 2 + 5

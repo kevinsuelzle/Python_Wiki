@@ -1,8 +1,5 @@
 site_name: My Docs
 
-extra_css:
-  - custom.css
-
 nav:
   - Home: index.md
   - Lehrplan:

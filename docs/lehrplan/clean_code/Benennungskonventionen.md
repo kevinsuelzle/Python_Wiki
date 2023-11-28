@@ -1,7 +1,5 @@
 # Benennungskonventionen
 
-![Names for the baby](../clean_code/pictures/Names.jpg)
-
 siehe auch [PEP 8](https://peps.python.org/pep-0008/) 
 
 ## Variablen

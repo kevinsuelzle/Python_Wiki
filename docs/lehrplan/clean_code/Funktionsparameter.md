@@ -1,7 +1,5 @@
 # Funktionsparameter
 
-![Parameter](../clean_code/pictures/LeastAmountOfParams.jpg)
-
 Man unterscheidet aufgrund der Anzahl der Parameter:
 
 1. **nyladic**: Funktionen ohne Argumente sind am einfachsten zu testen.

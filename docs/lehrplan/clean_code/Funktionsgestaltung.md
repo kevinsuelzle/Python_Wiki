@@ -1,7 +1,5 @@
 # Funktionsgestaltung
 
-![Funktionsgestaltung](../clean_code/pictures/Sculpuring.jpg)
-
 ## Gestaltung von Funktionen
 
 Funktionen sollten

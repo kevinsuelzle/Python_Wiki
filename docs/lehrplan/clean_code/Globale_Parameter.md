@@ -1,7 +1,5 @@
 # Verwendung von Funktionsparametern statt globaler Variablen
 
-![Globale Variable](../clean_code/pictures/GlobalVariables.jpg)
-
 ## Beispiel
 
 ```python

@@ -134,7 +134,6 @@ Dokumentation der Gründe erscheint angebracht.
 
 **Aufgabe:** Reduktion von Parametern
 
-
 1. **Verwendung von Objekten:**
     - Anstatt mehrere Parameter zu übergeben, können diese in einem Objekt zusammengefasst werden. Dies ist besonders
       nützlich, wenn mehrere Funktionen ähnliche Parameter benötigen.
@@ -210,6 +209,84 @@ In diesem Kapitel werden praktische Übungen und Beispiele bereitgestellt, um da
 vertiefen. Die Schüler werden ermutigt, Code zu analysieren und zu verbessern.
 
 ---
+
+## Was aus dem Code von Robert C. Martin am Ende wurde
+
+Nach einigen Überlegungen und Aufräumarbeiten wird aus dem ehemals schwer verständlichen Code eine Geschichte, die gut
+zu lesen und schneller zu verstehen ist.
+
+```python
+class SetupTeardownIncluder:
+    def __init__(self, page_data):
+        self.page_data = page_data
+        self.test_page = page_data.get_wiki_page()
+        self.page_crawler = self.test_page.get_page_crawler()
+        self.new_page_content = []
+
+    @staticmethod
+    def render(page_data, is_suite=False):
+        includer = SetupTeardownIncluder(page_data)
+        return includer._render(is_suite)
+
+    def _render(self, is_suite):
+        self.is_suite = is_suite
+        if self._is_test_page():
+            self._include_setup_and_teardown_pages()
+        return self.page_data.get_html()
+
+    def _is_test_page(self):
+        return self.page_data.has_attribute("Test")
+
+    def _include_setup_and_teardown_pages(self):
+        self._include_setup_pages()
+        self._include_page_content()
+        self._include_teardown_pages()
+        self._update_page_content()
+
+    def _include_setup_pages(self):
+        if self.is_suite:
+            self._include_suite_setup_page()
+        self._include_setup_page()
+
+    def _include_suite_setup_page(self):
+        self._include(SuiteResponder.SUITE_SETUP_NAME, "-setup")
+
+    def _include_setup_page(self):
+        self._include("SetUp", "-setup")
+
+    def _include_page_content(self):
+        self.new_page_content.append(self.page_data.get_content())
+
+    def _include_teardown_pages(self):
+        self._include_teardown_page()
+        if self.is_suite:
+            self._include_suite_teardown_page()
+
+    def _include_teardown_page(self):
+        self._include("TearDown", "-teardown")
+
+    def _include_suite_teardown_page(self):
+        self._include(SuiteResponder.SUITE_TEARDOWN_NAME, "-teardown")
+
+    def _update_page_content(self):
+        self.page_data.set_content(''.join(self.new_page_content))
+
+    def _include(self, page_name, arg):
+        inherited_page = self._find_inherited_page(page_name)
+        if inherited_page is not None:
+            page_path_name = self._get_path_name_for_page(inherited_page)
+            self._build_include_directive(page_path_name, arg)
+
+    def _find_inherited_page(self, page_name):
+        return PageCrawlerImpl.get_inherited_page(page_name, self.test_page)
+
+    def _get_path_name_for_page(self, page):
+        page_path = self.page_crawler.get_full_path(page)
+        return PathParser.render(page_path)
+
+    def _build_include_directive(self, page_path_name, arg):
+        self.new_page_content.append(f"\n!include {arg} .{page_path_name}\n")
+```
 
 ## Zusätzliche Ressourcen
 

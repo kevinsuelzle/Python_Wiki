@@ -1,7 +1,5 @@
 # Abstraktionsebenen
 
-![Abstraktionsebenen](../clean_code/pictures/LevelOfAbstraction.jpg)
-
 ## Code von oben nach unten lesen: die Stepdown-Regel
 
 Wir wollen, dass der Code wie eine Top-Down-Erzählung gelesen wird. Wir möchten, dass jede Funktion von denen auf der

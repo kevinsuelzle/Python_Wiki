@@ -1,7 +1,5 @@
 # Kamele und Schlangen
 
-![Fundammentals](pictures/CamelCase.jpg "CamelCase")
-
 Ein Ausflug in Benennungskonventionen.
 
 ## CamelCase

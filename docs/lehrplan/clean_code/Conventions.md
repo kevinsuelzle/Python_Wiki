@@ -1,7 +1,5 @@
 # Aussagekräftige Namen
 
-![Fundammentals](pictures/Conventions.jpg "Konventionen")
-
 Variablennamen und Funktionsnamen sollten
 
 - aussagekräftig und

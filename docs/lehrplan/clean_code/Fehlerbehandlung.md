@@ -1,7 +1,5 @@
 # Fehlerbehandlung
 
-![Fehlerbehandlung](../clean_code/pictures/BrokenDishes.jpg)
-
 ```python
 def divide(a, b):
     return a / b

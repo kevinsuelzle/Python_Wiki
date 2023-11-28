@@ -2,11 +2,6 @@
 
 ## Ergänzungen und Beispiele zu [PEP 8](https://peps.python.org/pep-0008/) und [Zen of Python](https://gist.github.com/corysimmons/8b94c08421dec18bbaa4)
 
-<div style="display: flex; justify-content: space-between;">
-    <img src="../pictures/HurraSuccess.jpg" alt="Hurra! Clean Code" style="width: 35%; height: auto;">
-    <img src="../pictures/ThrowAwayBadCode.jpg" alt="Throw away bad code" style="width: 35%; height: auto;">
-</div>
-
 ## Feinziele
 
 - **Erkennen und Vermeiden von schlechtem Code** 
