@@ -71,3 +71,45 @@ print(bedarfe)
 
 ### Aufgabe:
 # Lade das Projekt wieder in git hoch.
+
+
+
+### Weiter gehts: Lagerbestand abfragen:
+
+# Mit folgender Funktion kannst du auf eine Datei zugreifen und den aktuellen Lagerbestand abfragen.
+
+def lagerbestand():
+    # read csv
+    # transform to lists
+    
+    bestand_A = 5 
+    bestand_B = 3 
+    bestand_C = 7 
+    bestand_D = 1 
+    bestand_E = 200 
+    bestand_F = 7000
+
+    return bestand_A, bestand_B, bestand_C, bestand_D, bestand_E, bestand_F
+
+
+
+
+### Aufgabe
+# Beschreibe was sie macht und prüfe die Funktion, ob sie richtig arbeitet. Korrigiere ggf vorhandene Fehler.
+
+### Aufgabe:
+# Stelle den aktuellen Lagerbestand visuell dar und verwende gerne deine Bilder und Bezeichungen aus dem Aufgabenteil davor.
+
+### Aufgabe 
+# Schreibe eine Funktion, mit der du die benötigten Bauteile aus der Stücklistenauflösung mit dem Lagerbestand abgleichst und ermittelts, wie viele Bauteile jeweils
+# nachbestellt werden müssen. Du kannst davon ausgehen, dass die Datei mit dem Lagerbestand immer in demselben Format bereitgestellt wird.
+
+### Aufgabe
+# Schreibe und Präsentiere ein Programm, das beide Funktionen in einer netten Anwendung vereint. 
+# Der Nutzer soll wieder seine Bestellung eingeben können und nach Betätigung eines Buttons folgende Angaben angezeigt bekommen:
+# Wie viele Bauteile werden jeweils für die Bestellung benötigt?
+# Wie viele Bauteile sind bereits im Lagerbestand vorhanden?
+# Wie viele Bauteile müssen jeweils nachbestellt werden?
+# Verwende gerne eine Farbliche Kodierung der Zahlen, falls der Lagerbestand nicht ausreicht.
+
+
