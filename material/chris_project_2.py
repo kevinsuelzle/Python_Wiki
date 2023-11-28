@@ -36,7 +36,7 @@ def stuecklistenaufloesung(bestellungen):
     return bedarf_A, bedarf_B, bedarf_C, bedarf_D, bedarf_E, bedarf_F 
 
 
-bestellungen = [ "30 mal Modul_A", "50 mal Modul_B" , "70 mal Modul_C"]
+bestellungen = [ "345 mal Modul_A", "123 mal Modul_B" , "456 mal Modul_C"]
 
 bedarfe = stuecklistenaufloesung(bestellungen)
 
@@ -79,7 +79,7 @@ print(bedarfe)
 # Mit folgender Funktion kannst du auf eine Datei zugreifen und den aktuellen Lagerbestand abfragen.
 
 def lagerbestand():
-    # read csv
+    # read txt
     # transform to lists
     
     bestand_A = 5 
@@ -91,8 +91,8 @@ def lagerbestand():
 
     return bestand_A, bestand_B, bestand_C, bestand_D, bestand_E, bestand_F
 
-
-
+werte = lagerbestand()
+print(werte)
 
 ### Aufgabe
 # Beschreibe was sie macht und prüfe die Funktion, ob sie richtig arbeitet. Korrigiere ggf vorhandene Fehler.
