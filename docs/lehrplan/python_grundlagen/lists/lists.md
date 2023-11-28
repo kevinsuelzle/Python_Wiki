@@ -1,11 +1,12 @@
 # Listen in Python
 
 Listen in Python sind eine der grundlegendsten und nützlichsten Datentypen. Sie ermöglichen es uns, mehrere Elemente in
-einer einzigen Struktur zu speichern, auf die dann über ihre Indizes zugegriffen werden kann.
+einer einzigen Struktur zu speichern, auf die wir dann über ihre Indizes zugreifen können.
 
-Ein wichtiges Merkmal von Listen ist, dass sie **mutabel** sind. Das bedeutet, dass Listen nach ihrer Erstellung
-verändert werden können. Listen in Python sind eine der vielseitigsten Datenstrukturen und werden verwendet, 
-um eine geordnete Sammlung von Elementen zu speichern. Hier sind einige Schlüsseleigenschaften:
+Listen können nach ihrer Erstellung verändert werden, das heißt, dass sie *mutabel* sind. 
+
+Listen in Python sind eine der vielseitigsten Datenstrukturen und werden verwendet, 
+um eine Sammlung von Elementen zu speichern. Hier sind einige Schlüsseleigenschaften:
 
 ## Eigenschaften von Listen
 
@@ -30,19 +31,18 @@ um eine geordnete Sammlung von Elementen zu speichern. Hier sind einige Schlüss
 
 ## Mutabilität und Immunität
 
-- **Mutabilität** bedeutet, dass ein Objekt nach seiner Erstellung verändert werden kann. Listen sind mutable; daher
-  können wir Elemente hinzufügen, entfernen oder ändern.
+- **Mutability** bedeutet, dass ein Objekt nach seiner Erstellung verändert werden kann, ohne dabei ein anderes Objekt 
+  zu werden. Listen sind mutable; daher können wir Elemente hinzufügen, entfernen oder ändern.
 - **Immunität** bezieht sich darauf, wenn ein Objekt nach seiner Erstellung nicht verändert werden kann. Ein Beispiel
-  für einen immutablen Datentyp in Python ist ein Tupel.
+  für einen immutablen Datentyp in Python ist ein Tupel, welches wir auch bald kennenlernen.
 
 ## Listenoperationen
 
 Schauen wir uns kurz ein paar Beispiele an wie man mit Listen arbeiten kann. Das wichtigste zuerst, nämlich die
-Erstellung
-Listen.
+Erstellung von Listen.
 
 1. Erstellung einer Liste: `meine_liste = [1, 2, 3]`
-2. Zugriff auf Listenelemente: `meine_liste[1]` - Greift auf das Element am Index 1 zu. Die Zählung startet bei 0!
+2. Zugriff auf Listenelemente: `meine_liste[1]` (Zugriff auf Element an Index 1). Indices starten bei 0!
 2. Hinzufügen eines Elements: `meine_liste.append(4)` - Fügt `4` am Ende der Liste hinzu.
 3. Entfernen eines Elements: `meine_liste.remove(2)` - Entfernt das erste Vorkommen von `2` aus der Liste.
 

@@ -1,11 +1,11 @@
 # Verzweigungen
 
 Verzweigungen sind ein wesentlicher Bestandteil der Programmierung. Sie ermöglichen es, Entscheidungen auf Basis 
-bestimmter Bedingungen zu treffen. Python verwendet `if`, `elif` (else if) und `else` zur Steuerung des Programmflusses.
+bestimmter Bedingungen zu treffen. 
 
-## Einfache if-else-Abfragen
+In Python verwenden wir dafür `if`, `elif` (else if) und `else` zur Steuerung des Programmflusses:
 
-### Grundstruktur
+## Grundstruktur
 
 Die grundlegende Struktur einer `if-else`-Verzweigung in Python sieht folgendermaßen aus:
 
@@ -18,8 +18,7 @@ else:
 
 Die `bedingung` ist ein Ausdruck, der entweder wahr (`True`) oder falsch (`False`) ergibt.
 
-#### Bedingungen
-
+### Bedingungen
 
 In Python werden Bedingungen in `if`-Abfragen verwendet, um zu bestimmen, ob bestimmte Anweisungen ausgeführt werden 
 sollen oder nicht. Diese Bedingungen können auf unterschiedliche Weise formuliert werden, um die Logik des Programms 
@@ -35,7 +34,8 @@ wird, wenn die Person 18 Jahre oder älter ist und gleichzeitig ein Student ist.
 
 Python ermöglicht auch die Überprüfung von Mitgliedschaften mit dem `in`-Operator in Bedingungen. Ein Beispiel wäre 
 `if frucht in ['Apfel', 'Banane', 'Kirsche']:`. Diese Bedingung prüft, ob der Wert der Variablen `frucht` in der 
-angegebenen Liste enthalten ist.
+angegebenen Liste enthalten ist. Dies ist eine sehr mächtige Bedingung, die man häufig praktisch verwenden kann 
+und ein gutes Beispiel für 'pythonic' Code sind.
 
 Bedingungen können auch komplexere Ausdrücke beinhalten, wie z.B. Funktionsaufrufe oder kombinierte Vergleiche. Zum 
 Beispiel kann `if ist_regnerisch() and temperatur < 20:` eine Bedingung sein, die wahr ist, wenn die Funktion 
@@ -48,7 +48,7 @@ Die Bausteine dafür sehen wir hier:
 
 - Vergleichsoperatoren: ==, !=, >, <, >=, <=
 - Logische Operatoren: and, or, not
-- Überprüfung auf Null/None: is None, is not None
+- Überprüfung auf Null/None: `is None`, `is not None`
 
 **Beispiel**:
 ```python
@@ -60,6 +60,9 @@ else:
 ```
 
 ##  if-elif-else-Abfragen
+
+Oft benötigen wir mehr als zwei Zweige, zum Beispiel wenn wir für verschiedene Altersklassen andere Aktionen ausführen 
+müssen oder wollen.
 
 `elif` erlaubt es, mehrere Bedingungen nacheinander zu überprüfen.
 
@@ -87,9 +90,9 @@ else:
     print("Die Zahl ist kleiner als 10.")
 ```
 
-Die Verwendung von if, elif und else in Python ermöglicht es, auf Basis von Bedingungen unterschiedliche Wege im 
-Programm einzuschlagen. Es ist wichtig, die Struktur dieser Anweisungen zu verstehen und korrekt zu verwenden, um 
-logische Entscheidungen in einem Programm zu implementieren.
+Die Verwendung von if, elif und else in Python ermöglicht es, basierend auf Bedingungen unterschiedliche Wege im 
+Programm einzuschlagen. Das findet man eigentlich in jedem Programm, da die Unterscheidung von Aktionen basierend auf
+einer oder mehrere Bedingungen ein zentraler Bestandteil der Softwareentwicklung ist.
 
 ## Aufgaben
 1. **Einfache if-Abfrage**: Schreibe ein Programm, das überprüft, ob eine Variable `x` größer als 10 ist. Gib eine 
@@ -132,11 +135,6 @@ die Eingabe bei Eingabe von "fertig".
 - Filtere die Daten, um nur Kunden über 30 Jahre in die Ausgabe einzuschließen.
 - Gib die gefilterten Daten auf der Konsole aus, sortiert nach dem Alter in absteigender Reihenfolge.
 
-## Neue Begriffe
-
-| Begriff     | Kurzerklärung                          | Link zur Referenz                                                                              |
-|-------------|----------------------------------------|------------------------------------------------------------------------------------------------|
-| `if`, `else` | Verzweigungen aufgrund von Bedingungen | [Referenz](https://docs.python.org/3/tutorial/controlflow.html?highlight=else#if-statements)   |
 
 ## Lösungen
 

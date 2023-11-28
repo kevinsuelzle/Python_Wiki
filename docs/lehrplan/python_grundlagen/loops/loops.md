@@ -1,9 +1,9 @@
 # Schleifen
 
-In der Programmierung sind **Schleifen** ein grundlegendes Konzept, das verwendet wird, um einen bestimmten Block von
-Anweisungen wiederholt auszuführen. Schleifen sind besonders nützlich, wenn Sie denselben Code mehrmals ausführen
-möchten, ohne ihn jedes Mal manuell zu wiederholen. Sie ermöglichen die Automatisierung von Aufgaben und die
-Verarbeitung von großen Datenmengen.
+In der Programmierung sind **Schleifen** ein grundlegendes Konzept, welches verwendet wird, um einen bestimmten Block
+von
+Anweisungen wiederholt auszuführen. Man sagt auch, dass Schleifen über etwas iterieren. Dies kann zum Beispiel ein
+Zahlenbereich sein oder auch eine Menge an Elementen in einer Liste.
 
 ## Die Bedeutung von Schleifen
 
@@ -11,14 +11,14 @@ Schleifen sind ein wesentlicher Bestandteil der Programmierung und haben eine br
 Situationen:
 
 1. **Wiederholung:** Schleifen ermöglichen es, einen Satz von Anweisungen mehrmals auszuführen, bis eine bestimmte
-   Bedingung erfüllt ist oder solange eine Bedingung wahr ist. Dies ist besonders nützlich für wiederkehrende Aufgaben.
+   Bedingung erfüllt ist oder solange eine Bedingung wahr ist.
 
 2. **Datenverarbeitung:** In vielen Fällen müssen Sie alle Elemente einer Datenstruktur (wie eine Liste oder ein Array)
    durchgehen und auf jedes Element eine bestimmte Operation anwenden. Schleifen erleichtern diese Iteration und
    Verarbeitung.
 
-3. **Benutzereingabe:** Schleifen ermöglichen die Interaktion mit Benutzern, indem sie auf Eingaben warten und je nach
-   Eingabe unterschiedliche Aktionen ausführen.
+3. **Benutzereingabe:** Schleifen ermöglichen eine dauerhafte Interaktion mit Benutzern, indem sie auf Eingaben warten
+   und je nach Eingabe unterschiedliche Aktionen ausführen.
 
 ## Arten von Schleifen in Python
 
@@ -40,7 +40,8 @@ for frucht in fruechte:
     print(frucht)
 ```
 
-Diese Schleife iteriert über die Liste `fruechte` und gibt jede Frucht nacheinander aus.
+Diese Schleife iteriert über die Liste `fruechte` und gibt jede Frucht nacheinander aus. Für jeden Durchlauf der
+Schleife nimmt `frucht` ein anderes Element der Liste an und steht im Schleifenkörper zur Verfügungn.
 
 ## Beispiel einer `while`-Schleife
 
@@ -59,8 +60,6 @@ von der aktuellen Schleifennummer aus.
 Schleifen sind ein mächtiges Werkzeug in der Programmierung und ermöglichen die Automatisierung von Aufgaben und die
 effiziente Verarbeitung von Daten. Es ist wichtig, Schleifen mit Bedacht zu verwenden, um Endlosschleifen und
 unerwünschte Ergebnisse zu vermeiden.
-
-**Thema: `for`-Schleifen in Python**
 
 # Einführung in `for`-Schleifen
 
@@ -118,9 +117,6 @@ In diesem Beispiel durchläuft die `for`-Schleife die Liste `zahlen` und gibt je
 - Ausführung von Code für eine feste Anzahl von Durchläufen.
 - Automatisierung von Aufgaben, bei denen eine wiederholte Aktion erforderlich ist.
 
-`for`-Schleifen sind ein wichtiger Bestandteil der Python-Programmierung und ein Werkzeug, das Ihnen hilft, effizienten
-und wiederholbaren Code zu schreiben.
-
 ## Aufgaben
 
 1. Schreibe eine `for`-Schleife, die die Zahlen von 1 bis 10 ausgibt.
@@ -144,7 +140,8 @@ und wiederholbaren Code zu schreiben.
 
 While-Schleifen sind eine grundlegende Kontrollstruktur in Python, die es ermöglicht, einen Block von Anweisungen
 wiederholt auszuführen, solange eine bestimmte Bedingung erfüllt ist. Sie sind besonders nützlich, wenn die Anzahl der
-Wiederholungen nicht im Voraus bekannt ist.
+Wiederholungen nicht im Voraus bekannt ist. Dies ist zum Beispiel bei einer wiederholten Eingabeaufforderung an den
+Nutzer der Fall.
 
 ## Eigenschaften von While-Schleifen
 
@@ -178,6 +175,18 @@ while i <= 5:
     i += 1  # Wichtig, um die Schleife zu beenden
 ```
 
+Natürlich können wir auch sehr einfach Endlosschleifen erzeugen in dem wir die Bedingung einfach immer auf `True`
+lassen:
+
+```python
+# Frage endlos nach Nutzereingaben
+while True:
+    eingabe = input()
+    # Mache etwas mit der Nutzereingabe
+```
+
+Wie wir die Endlosschleife doch verlassen können, lernen wir dann gleich.
+
 ## Aufgaben
 
 ### Übungsaufgaben zu While-Schleifen in Python
@@ -197,13 +206,93 @@ while i <= 5:
 10. Erstelle eine Schleife, die eine Liste durchläuft und bei Erreichen eines bestimmten Wortes (z.B. "
     Stopp") beendet wird.
 
-# Else-Zweig bei While- und For-Schleifen in Python
+# Vorzeitiges Abbrechen einer Schleife
+
+In vielen Fällen sucht man einfach einen Wert in einem Bereich oder ein bestimmtes Element in einer List. Sobald man
+dieses gefunden hat, kann man die Schleife eigentlich abbrechen. Dafür nutzt man das Keyword `break`:
+
+```python
+for i in range(0, 10):
+    if i == 5:
+        break
+
+    print(i)
+```
+
+Dieser Code gibt folgendes aus:
+
+```bash
+0
+1
+2
+3
+4
+```
+
+Sobald die Bedingung `i == 5` wahr wird, sorgt `break` dafür, dass wir die Schleifen verlassen. Damit sparen wir uns 5
+weitere Durchläufe. Bei kompexen Problemstellungen kann man damit sehr viel Zeit und damit auch Energie sparen.
+
+Auf der anderen Seite gibt es aber auch Fälle in denen man nicht die ganze Schleife beenden will, sondern nur den
+aktuellen Durchlauf. Dafür nutzt man das Keyword `continue`.
+
+```python
+for i in range(0, 10):
+    if i != 5:
+        continue
+
+    print(i)
+```
+
+Im Gegesatz dazu ist die Ausgabe hier:
+
+```bash
+5
+```
+
+Wieso? Für jeder Zahl zwischen 0 und 10 wird überprüft, ob diese Zahl ungleich 5 ist. Ist sie ungleich 5, springen wir
+direkt zum nächsten Durchlauf. Nur für den Fall, das die Zahl gleich 5 ist, erreichen wir die print-Funktion überhaupt.
+
+Sehr häufig wird break in Kombination mit while-Schleifen verwendet. Wieso? Weil es sehr einach ist damit
+Endlosschleifen zu erzeugen, die man unter bestimmten Bedinungen beenden will.
+
+Zum Beispiel:
+
+```python
+while True:
+    eingabe = input()
+    if eingabe == "C":
+        break
+
+    # irgendwas mit der Eingabe machen
+```
+
+Durch `while True:` läuft diese Schleife theoretisch endlos lange, weil die Bedingung immer wahr ist. Bei jedem
+Schleifen durchlauf wird der Nutzer nach einer Eingabe gefragt. Sobald der Nutzer "C" eingibt, wird die Schleife durch
+den Befehl `break` verlassen und das Programm kann normal weiterlaufen.
+
+## Else-Zweig bei While- und For-Schleifen in Python
 
 In Python können sowohl `while`- als auch `for`-Schleifen mit einem optionalen `else`-Zweig versehen werden. Dieser Teil
 der Schleife wird ausgeführt, wenn die Schleife auf normale Weise beendet wird, d.h., nicht durch ein `break`-Statement
 unterbrochen wird.
 
-## Else-Zweig bei While-Schleifen
+### Else-Zweig bei For-Schleifen
+
+Ähnlich wie bei `while`-Schleifen wird der `else`-Zweig einer `for`-Schleife ausgeführt, wenn die Schleife alle Elemente
+der Sequenz durchlaufen hat, ohne durch ein `break`-Statement unterbrochen zu werden.
+
+**Beispiel:**
+
+```python
+for i in range(1, 5):
+    print(i)
+else:
+    print("Die Schleife ist regulär beendet worden")
+```
+
+Hier wird der `else`-Zweig ausgeführt, da die Schleife alle Elemente der Sequenz durchläuft.
+
+### Else-Zweig bei While-Schleifen
 
 Der `else`-Zweig einer `while`-Schleife wird ausgeführt, nachdem die Bedingung der Schleife zu `False` wird. Wenn die
 Schleife durch ein `break`-Statement verlassen wird, wird der `else`-Zweig nicht ausgeführt.
@@ -221,22 +310,6 @@ else:
 
 In diesem Beispiel wird der `else`-Zweig ausgeführt, da die Schleife durch das Erreichen des Endes der
 Schleifenbedingung beendet wird.
-
-## Else-Zweig bei For-Schleifen
-
-Ähnlich wie bei `while`-Schleifen wird der `else`-Zweig einer `for`-Schleife ausgeführt, wenn die Schleife alle Elemente
-der Sequenz durchlaufen hat, ohne durch ein `break`-Statement unterbrochen zu werden.
-
-**Beispiel:**
-
-```python
-for i in range(1, 5):
-    print(i)
-else:
-    print("Die Schleife ist regulär beendet worden")
-```
-
-Auch hier wird der `else`-Zweig ausgeführt, da die Schleife alle Elemente der Sequenz durchläuft.
 
 ## Anwendungsfälle
 

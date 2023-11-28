@@ -7,13 +7,14 @@ die sie haben können.
 ### Gründe für Programmierfehler
 
 1. **Komplexität des Codes**: 
-   - Je komplexer ein Programm ist, desto schwieriger ist es, alle Aspekte zu überblicken und Fehler zu vermeiden.
+   Je komplexer ein Programm ist, desto schwieriger ist es, alle Aspekte zu überblicken und Fehler zu vermeiden.
 
 2. **Menschliche Fehler**: 
-   - Programmierer sind Menschen und können Übersehen, Missverständnisse oder Irrtümer begehen.
+   Programmierer sind Menschen und können deswegen wie alle Menschen auch Fehler machen. Von simplen Übersehen 
+   bis zu Missverständnissen.
 
 3. **Zeitdruck und Arbeitsbelastung**: 
-   - Unter Zeitdruck oder bei hoher Arbeitsbelastung können wichtige Details leicht übersehen werden.
+   Unter Zeitdruck oder bei hoher Arbeitsbelastung können wichtige Details leicht übersehen werden.
 
 Fehler sind beim Programmieren unvermeidbar. Es gibt keine Software auf der Welt, die fehlerfrei ist. Dafür gibt es zu
 viele potentielle Fehlerquellen. 
@@ -30,11 +31,14 @@ die Firma ein.
 
 Als Debugging bezeichnet man das Finden und Beseitigen von Fehlern.
 
-Wieso nennt sich das Debugging? Früher, als Computer noch mit Röhren funktioniert haben, haben es sich wohl ab und an
+Wieso nennt sich das eigentlich Debugging? 
+
+Früher, als Computer noch mit Röhren funktioniert haben, haben es sich wohl ab und an
 echte Käfer (engl. Bugs) in diesen Röhren gemütlich gemacht und zu Fehlern geführt. Dementsprechend hat man diese dann 
 'entkäfert'.
 
-Effizientes Debuggen besteht aus einer Mischung aus Erfahrung, Nutzen der vorhandenen Tools und systematischen Vorgehen.
+Effizientes Debuggen besteht aus einer Mischung aus Erfahrung, systematischem Vorgehen und dem Nutzen der vorhandenen 
+Tools.
 
 ### Nutzen der `print`-Funktion
 
@@ -42,12 +46,13 @@ Die einfachste Form des Debuggings kann durch das Einfügen von `print`-Anweisun
 Variablen zu einem bestimmten Zeitpunkt auszugeben. Dies wird sehr häufig verwendet, ist jedoch nicht optimal. Deswegen
 gehen wir hier auch nicht weiter darauf ein.
 
-### Nutzen von Logging-Funktionen
+### Nutzen von Logs zur Fehlersuche
 
-Logging spielt eine entscheidende Rolle im Debugging-Prozess, indem es Entwicklern Einblicke in den 
-Ablauf eines Programms bietet. 
+Die meisten Programme, erzeugen sogenannte Logs. Das sind meist Textdateien die während der Programmausführung angelegt
+werden und darüber Auskunft geben, welche Abläufe im Programm passiert sind. Geschieht ein Fehler, kann in den Logs
+verhältnismäßig einfach nachvollzogen werden, was vorher passiert ist.
 
-Oftmals sind Logs ein erster Hinweis darauf in welchen Programmteilen bestimmte Fehler passiert sind und welche
+Oftmals sind Logs aber nur ein erster Hinweis darauf in welchen Programmteilen bestimmte Fehler passiert sind und welche
 Auswirkungen sie auf das Programm hatten. 
 
 Software, die für einen Produktiveinsatz entwickelt wird, sollte immer eine Form von Logging beinhalten.
@@ -109,11 +114,14 @@ Debugger haben alle ähnliche Funktionen:
 
 #### Verwendung von `pdb`
 
-Für eine umfassendere Fehlersuche bietet Python jedoch eingebaute Tools wie das `pdb`-Modul, einen interaktiven 
-Debugger. 
+Python bietet mit `pdb` einen Debugger, der mit Python direkt mitgeliefert wird. `pdb` ist ein interaktives Tool.
 
 Das `pdb`-Modul (Python Debugger) ermöglicht es, den Code interaktiv zu durchlaufen, Haltepunkte zu setzen und den 
-Zustand des Programms zu inspizieren. Hier sind einige grundlegende Befehle:
+Zustand des Programms zu inspizieren. Dadurch können wir während der Entwicklung Einblick in den Zustand des Programms
+erhalten und Befehle Schritt für Schritt ausführen. Das ermöglicht es uns sehr gut nachvollzuziehen, was im Programm 
+passiert. 
+
+Hier sind einige grundlegende Befehle:
 
 - `import pdb`: Importiert das pdb-Modul.
 - `pdb.set_trace()`: Setzt einen Haltepunkt im Code.
@@ -137,9 +145,9 @@ ergebnis = berechne_summe(3, 4)
 print(ergebnis)
 ```
 
-In diesem Beispiel wird pdb.set_trace() verwendet, um einen Haltepunkt zu setzen. Wenn das Programm diesen Punkt 
+In diesem Beispiel wird `pdb.set_trace()` verwendet, um einen Haltepunkt zu setzen. Wenn das Programm diesen Punkt 
 erreicht, wird die Ausführung pausiert und der Benutzer kann mit den pdb-Befehlen den Zustand des Programms 
-inspizieren und steuern.
+inspizieren und steuern. 
 
 ### Übungsaufgaben
 
@@ -194,7 +202,7 @@ print(ergebnis)
 ```
 
 5. **Haltepunkte dynamisch setzen**: Anstatt pdb.set_trace() direkt im Code zu verwenden, starte das folgende Programm mit 
-dem Python-Interpreter im Debug-Modus (python -m pdb script.py). Setze dann einen Haltepunkt bei der Zeile, die die 
+dem Python-Interpreter im Debug-Modus (`python -m pdb script.py`). Setze dann einen Haltepunkt bei der Zeile, die die 
 Multiplikation ausführt. Führe das Programm bis zu diesem Haltepunkt aus und überprüfe die Werte von x und y.
 ```python
 def multipliziere(x, y):
@@ -205,12 +213,6 @@ ergebnis = multipliziere(3, 3)
 print(ergebnis)
 ```
 
-## Neue Begriffe
-
-| Begriff | Kurzerklärung                                        | Link zur Referenz                                                                           |
-|---------|------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| `pdb`   | Python Debugger                                      | [Referenz](https://docs.python.org/3/library/pdb.html?highlight=pdb)                        |
-| Logging | Ausgaben zur Nachvollziehbarkeit des Programmablaufs | [Referenz](https://docs.python.org/3/library/logging.html?highlight=logging#module-logging) |
 
 ## Lösungen
 Die Lösungen beziehen sich auf die Aktionen, die ausgeführt werden sollen, um mit dem Debugger zu interagieren:

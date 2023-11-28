@@ -101,7 +101,7 @@ Es ist wichtig, sich die Reihenfolge der Operationen zu merken, um Fehler in Ber
 klar und präzise zu gestalten. Die gute Nachricht: Die Reihenfolge entspricht exakt dem was wir aus der normalen 
 Mathematik kennen!
 
-Üben wir das Ganz:
+Üben wir das Ganze:
 
 
 ## Aufgabe
