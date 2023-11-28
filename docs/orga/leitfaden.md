@@ -32,9 +32,9 @@ Das große Vorbild ist das Matheskript von Qualidy.
 
 ### Zeiten
 
-| Start | Zeit bis MP | Mittagspause  | Zeit bis Ende | Ende  |
-|-------|-------------|---------------|---------------|-------|
-| 8:15  | **3h**      | 11:15 - 12:30 | **3h 45min**  | 16:15 |
+| Start | Zeit bis MP  | Mittagspause  | Zeit bis Ende | Ende  |
+|-------|--------------|---------------|---------------|-------|
+| 8:30  | **2h 45min** | 11:15 - 12:30 | **3h 45min**  | 16:15 |
 
 * Der Unterricht sollte auf max. 6h 15 min ausgelegt werden.
 * In der letzten halben Stunde geht normalerweise nicht mehr viel bei den Teilnehmern.
