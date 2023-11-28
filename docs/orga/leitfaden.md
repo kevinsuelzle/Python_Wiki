@@ -22,6 +22,7 @@ Das große Vorbild ist das Matheskript von Qualidy.
 * Ganze Sätze schreiben und nicht kryptische Stichpunkte. Der Teilnehmer muss bei Fehlen im Unterricht auch mit dem Skript nacharbeiten können.
 * Im Video kann mehr und ausführlicher erklärt werden.
 * **Übungsaufgaben können gerne so konzipiert werden, dass die Inhalte über diese beigebracht werden**
+* Auch gerne Aufgaben einbauen, die schriftliche mit Zettel und Papier gelöst werden sollen.
 
 ### Bei allen Übungsaufgaben gilt
 
@@ -31,9 +32,9 @@ Das große Vorbild ist das Matheskript von Qualidy.
 
 ### Zeiten
 
-| Start | Zeit bis MP | Mittagspause  | Zeit bis Ende | Ende  |
-|-------|-------------|---------------|---------------|-------|
-| 8:15  | **3h**      | 11:15 - 12:30 | **3h 45min**  | 16:15 |
+| Start | Zeit bis MP  | Mittagspause  | Zeit bis Ende | Ende  |
+|-------|--------------|---------------|---------------|-------|
+| 8:30  | **2h 45min** | 11:15 - 12:30 | **3h 45min**  | 16:15 |
 
 * Der Unterricht sollte auf max. 6h 15 min ausgelegt werden.
 * In der letzten halben Stunde geht normalerweise nicht mehr viel bei den Teilnehmern.

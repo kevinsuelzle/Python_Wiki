@@ -22,16 +22,16 @@
 
 # Block 2
 
-| KW | Unterricht | Weitere Übungen | Checkliste | Begriffssammlung |
-|----|------------|-----------------|------------|------------------|
-|    |            |                 |            |                  |
-|    |            |                 |            |                  |
+| KW  | Unterricht | Weitere Übungen | Checkliste | Begriffssammlung |
+|-----|------------|-----------------|------------|------------------|
+|     |            |                 |            |                  |
+|     |            |                 |            |                  |
 
 # Block 3
 
-| KW | Unterricht | Weitere Übungen | Checkliste | Begriffssammlung |
-|----|------------|-----------------|------------|------------------|
-|    |            |                 |            |                  |
-|    |            |                 |            |                  |
+| KW  | Unterricht | Weitere Übungen | Checkliste | Begriffssammlung |
+|-----|------------|-----------------|------------|------------------|
+|     |            |                 |            |                  |
+|     |            |                 |            |                  |
 
 

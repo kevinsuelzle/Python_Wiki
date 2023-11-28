@@ -20,6 +20,7 @@
 | Joachim   | waltherj@web.de                                        |
 | Jürgen    | dr.juergen.brauer@gmail.com                            |
 | Orell     | hello@orellgarten.com / orell.garten-extern@qualidy.de |
+| Tim       | contact.timgrossmann@gmail.com                         |
 
 # Timeline
 
