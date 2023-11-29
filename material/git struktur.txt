@@ -3,6 +3,17 @@
 # Wofür braucht man git?
 # Was ist git?
 # Beispiel ohne code
+    # Ein Bild malen.
+        # Leeres Canvas nehmen... drauf malen.... wenns gefällt zwischenspeichern.
+        # Später woanders rummalen.
+        # Eventuell eine Änderung wieder zurück nehmen.
+        # Verschiedene Versionen malen und nebeneinander Zwischenspeichern.
+        # Mit mehreren Personen malen.
+            # Jeder malt in seinem Bereich.
+            # Jeder mal wie er will.... Die Kunstwerke überschneiden sich. Danach müssen die Bilder zusammengeführt werden. 
+                # Aber wie? Bitte keine Konflikte untereinander! :)
+            
+
 # git setup
     # installation, erste befehle usw
     # lokal vs remote
@@ -15,7 +26,9 @@
     # programmieren -> änderungen auswählen -> änderungen commiten
     # im großen Bild
 
+# gitignore
 # weitere git Befehle
 # git cheat sheet
+# tools und addons
 
 # beliebte Fehler und Vollkatastrophen
