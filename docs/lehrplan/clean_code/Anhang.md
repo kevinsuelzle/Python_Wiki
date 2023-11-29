@@ -38,6 +38,19 @@ print(random_numbers)
 
 ## ListComprehension
 
+**Frage:** Was macht der Code
+
+```python
+words = ["apple", "banana", "cherry", "date", "fig", "grape", "apple", "kiwi", "jamberry"]
+
+print([(word.upper(), len(word)) for word in set(words) if len(word) > 3])
+```
+
+1. Es wird eine Liste von Worten verarbeitet.
+2. Die `print` Anweisung gibt ein Array mit Tupeln aus Wörtern in Großbuchstaben und deren Länge aus.
+3. `set(words)` erstellt ein neues Array aus dem words Array und stellt sicher, dass es keine Duplikate gibt.
+4. `ìf` begrenzt die Ausgabe auf Wörter mit einer Länge größer als 3.
+
 **Aufgabe:** Code umschreiben
 
 ```python
@@ -130,6 +143,113 @@ DRY ist ein Leitprinzip und sollte nicht als unumstößliches Gesetz angesehen w
 angewendet wird, sollte auf einem Gleichgewicht zwischen Code-Effizienz, Lesbarkeit und Wartbarkeit basieren. Eine
 Dokumentation der Gründe erscheint angebracht.
 
+## Funktionsgestaltung
+
+**Diskussion:** Welche Funktionen sind denkbar, die den Regeln nicht entsprechen können?
+
+### Allgemeine Ausnahmen
+
+Die Regel des Clean Code, dass Funktionen nur eine Sache tun sollten, ist ein Leitprinzip, das darauf abzielt, die
+Lesbarkeit, Wartbarkeit und Testbarkeit des Codes zu verbessern. Es gibt jedoch Situationen, in denen es schwierig sein
+kann, diese Regel strikt zu befolgen:
+
+1. **Legacy-Code:** In bestehenden Systemen, insbesondere in älteren oder Legacy-Codebasen, gibt es oft Funktionen, die
+   aus historischen Gründen mehrere Aufgaben erfüllen. Das Refactoring solcher Funktionen kann riskant sein, besonders
+   wenn es keine ausreichenden Tests gibt.
+
+2. **Performance-Optimierungen:** In einigen Fällen kann das Zusammenfassen mehrerer Aufgaben in einer Funktion aus
+   Performance-Gründen sinnvoll sein, insbesondere in zeitkritischen Anwendungen. Hierbei ist jedoch Vorsicht geboten,
+   da dies die Lesbarkeit und Wartbarkeit beeinträchtigen kann.
+
+3. **Framework- oder API-Beschränkungen:** Manchmal erfordern bestimmte Frameworks oder APIs, dass eine Funktion mehrere
+   Dinge tut, insbesondere wenn sie als Callbacks oder Event-Handler fungieren.
+
+4. **Komplexe Geschäftslogik:** In einigen Fällen kann die Geschäftslogik so komplex sein, dass eine Aufteilung in
+   kleinere Funktionen die Verständlichkeit nicht unbedingt verbessert. In solchen Fällen kann es sinnvoller sein, die
+   Funktion gut zu dokumentieren, anstatt sie künstlich aufzuteilen.
+
+5. **Praktikabilität:** In der Praxis kann es manchmal pragmatischer sein, eine Funktion zu haben, die mehrere Dinge
+   tut, besonders in kleineren oder weniger kritischen Anwendungen, wo die strikte Einhaltung von Clean Code-Prinzipien
+   möglicherweise nicht gerechtfertigt ist.
+
+In allen diesen Fällen ist es wichtig, einen ausgewogenen Ansatz zu wählen. Die Einhaltung von Clean Code-Prinzipien
+sollte das Ziel sein, aber es ist auch wichtig, pragmatisch zu sein und den Kontext zu berücksichtigen, in dem der Code
+geschrieben wird.
+
+### Spezielle Ausnahme **switch**
+
+#### Switch in Python mit `ìf`
+
+```python
+def switch_example(value):
+    if value == 1:
+        return "Eins"
+    elif value == 2:
+        return "Zwei"
+    elif value == 3:
+        return "Drei"
+    else:
+        return "Anderer Wert"
+
+print(switch_example(2))  # Gibt "Zwei" aus
+```
+
+#### Switch in Python mit dictionary
+
+```python
+def switch_example(value):
+    switcher = {
+        1: "Eins",
+        2: "Zwei",
+        3: "Drei"
+    }
+    return switcher.get(value, "Anderer Wert")
+
+
+print(switch_example(3))  # Gibt "Drei" aus
+```
+
+In beiden Varianten ist klar, dass diese Funktionen in der dargestellten Art nur eine Sache erledigen: sie geben einen
+Wert zurück. In den meisten Fällen ist es aber so, dass im jeweiligen `ìf` oder dictionary Teil eine Funktion aufgerufen
+wird. Damit ist die Do-One-Thing Regel umgangen.
+
+Die Verwendung von `switch`-Anweisungen in der Programmierung, insbesondere im Kontext von Clean Code, ist ein Thema,
+das oft diskutiert wird. Hier sind einige Überlegungen dazu:
+
+1. **Komplexität:** `switch`-Anweisungen können schnell komplex und schwer zu warten werden, besonders wenn sie
+   viele `case`-Zweige enthalten. Dies steht im Widerspruch zu den Clean Code-Prinzipien, die Einfachheit und Klarheit
+   betonen.
+
+2. **Verletzung des Open/Closed-Prinzips:** Jedes Mal, wenn ein neuer Fall hinzugefügt wird, muss die `switch`-Anweisung
+   geändert werden. Dies verstößt gegen das Open/Closed-Prinzip, eines der SOLID-Prinzipien, das besagt, dass
+   Software-Entitäten (Klassen, Module, Funktionen usw.) für Erweiterung offen, aber für Modifikation geschlossen sein
+   sollten.
+
+3. **Wiederholung und DRY-Prinzip:** `switch`-Anweisungen neigen dazu, Code zu wiederholen, insbesondere wenn ähnliche
+   Aktionen in verschiedenen `case`-Zweigen ausgeführt werden. Dies kann gegen das DRY-Prinzip (Don't Repeat Yourself)
+   verstoßen.
+
+4. **Alternative Design-Patterns:** In vielen Fällen, in denen `switch`-Anweisungen verwendet werden, können
+   Design-Patterns wie Strategy, State oder Command effektivere Lösungen bieten. Diese Patterns ermöglichen es, das
+   Verhalten dynamisch zu ändern, ohne die `switch`-Anweisung zu modifizieren, und unterstützen eine sauberere und
+   modularere Code-Struktur.
+
+5. **Sprachspezifische Alternativen:** Einige moderne Programmiersprachen bieten fortgeschrittenere Konstrukte,
+   die `switch`-Anweisungen ersetzen können, wie z.B. Pattern Matching in funktionalen Sprachen.
+
+6. **Einsatz in begrenztem Umfang:** In einfachen Fällen, wo eine `switch`-Anweisung nur wenige `case`-Zweige hat und
+   nicht oft geändert wird, kann ihr Einsatz gerechtfertigt sein. Wichtig ist, dass der Code klar und gut verständlich
+   bleibt.
+
+Insgesamt empfiehlt Clean Code, die Verwendung von `switch`-Anweisungen zu vermeiden oder zu minimieren, insbesondere in
+komplexen oder sich häufig ändernden Systemen. Stattdessen sollten alternative Ansätze in Betracht gezogen werden, die
+eine bessere Modularität, Erweiterbarkeit und Wartbarkeit des Codes ermöglichen.
+
+**Begriffserklärung:** SOLID
+
+Die SOLID-Prinzipien sind ein Satz von Design-Prinzipien in der objektorientierten Programmierung, die dazu dienen,
+Softwareentwicklungen verständlicher, flexibler und wartbarer zu machen. Sie wurden von Robert C. Martin formuliert.
+
 ## Funktionsparameter
 
 **Aufgabe:** Reduktion von Parametern
@@ -175,40 +295,6 @@ Dokumentation der Gründe erscheint angebracht.
 8. **Currying und partielle Anwendung:**
     - In funktionalen Programmiersprachen können Sie Currying oder partielle Anwendung verwenden, um Funktionen zu
       erstellen, die einige Parameter vorab festlegen.
-
-## Refactoring
-
-### Lernziele: Refactoring
-
-- **Grobziel**: Verstehen des Refactoring-Prozesses.
-- **Richtziel**: Fähigkeit, Refactoring in bestehendem Code durchzuführen.
-- **Feinziele**:
-    - Identifizieren von "Code Smells".
-    - Erlernen von Techniken zum Refactoring von Code.
-
-### Inhalt
-
-Dieser Abschnitt behandelt das Thema Refactoring, einschließlich der Identifizierung von Code Smells und der Schritte,
-die erforderlich sind, um Code zu verbessern und zu optimieren.
-
----
-
-## Beispiele und Übungen
-
-### Lernziele: Beispiele und Übungen
-
-- **Grobziel**: Anwendung des Gelernten in praktischen Beispielen.
-- **Richtziel**: Selbstständige Verbesserung und Bewertung von Code.
-- **Feinziele**:
-    - Analyse und Verbesserung von Beispielcode.
-    - Durchführung von Übungen zur Festigung des Gelernten.
-
-### Inhalt
-
-In diesem Kapitel werden praktische Übungen und Beispiele bereitgestellt, um das Verständnis von Clean Code zu
-vertiefen. Die Schüler werden ermutigt, Code zu analysieren und zu verbessern.
-
----
 
 ## Was aus dem Code von Robert C. Martin am Ende wurde
 

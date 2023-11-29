@@ -14,6 +14,8 @@ Funktionen sollten
    die Wartung, da man sich sofort bewusst ist, wo das Problem aufgetaucht ist. Zudem bleibt der übergeordnete Code frei
    von der Fehlerverarbeitung und damit lesbarer.
 
+**Diskussion:** Welche Funktionen sind vorstellbar, die diesen Vorgaben nicht entsprechen können?
+
 ## Testen von Funktionen
 
 Tests sollen zuerst da sein und damit zunächst scheitern.
