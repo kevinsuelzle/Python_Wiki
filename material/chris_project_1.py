@@ -153,7 +153,7 @@ registration_dates = [datetime.date(2020, 10, 30),
 
 
 
-service_contract_durtions = [1,
+service_contract_durations = [1,
  3,
  3,
  2,
@@ -334,10 +334,40 @@ last_workshop_visit = [datetime.datetime(2021, 3, 28, 7, 50, 47, 57267),
  datetime.datetime(2015, 5, 15, 19, 43, 18, 903298),
  datetime.datetime(2016, 11, 5, 19, 43, 18, 903298)]
 
+kilometerstand = [96385,
+ 89285,
+ 75333,
+ 27021,
+ 143362,
+ 16366,
+ 101869,
+ 31781,
+ 77094,
+ 153987,
+ 52507,
+ 46249,
+ 51554,
+ 382,
+ 157602,
+ 73151,
+ 16475,
+ 100656,
+ 129224,
+ 2394,
+ 9841,
+ 130475,
+ 60711,
+ 3953,
+ 48196,
+ 85954,
+ 74108,
+ 144629,
+ 30793]
+
 Service_Pauschale = "30 Euro"
 
 ### Aufgabe:
-# Du findest ein Codebook im Repository, welches die Bedeutung der verschiedenen Listen beschreibt. Erkläre jede einzelne Liste in deinen eigenen Worten zusammen.
+# Du findest eine readme.txt Datei im Repository, welche die Bedeutung der verschiedenen Listen beschreibt. Erkläre jede einzelne Liste in deinen eigenen Worten zusammen.
 # Schreibe eine kurze Einleitung über die Bedeutung des Qualitätsmanagements im Aftersales für Werkstattbesuche.
 
 ### Aufgabe:
@@ -350,7 +380,15 @@ Service_Pauschale = "30 Euro"
 
 ### Aufgabe: 
 # Folgende Funktion produziert Fehler. Woran liegt es? 
-# Kannst du den Bug fixen indem du eine neue Funktion schreibst, die das Problem ein für alle Mal löst?
+# Kannst du den Bug fixen? 
+# Du findest eine test_.py Datei im selben Ordner, die einen Unittest ausführt, und dir sagt, wann du fertig bist.
+
+def function_mit_fehler(input):
+
+    result = 50
+
+    return result
+
 
 ### Aufgabe:
 #Berechne die Servicekosten, welche sich aus der Servicegebühr und der Servicepauschale zusammensetzt. 
