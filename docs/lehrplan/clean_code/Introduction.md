@@ -1,7 +1,5 @@
 # Einführung in Clean Code
 
-![Cleaning the code](pictures/CleaningTheCode.jpg "Cleaning the code")
-
 ## Lernziele: Einführung
 
 - **Grobziel**: Verstehen, was Clean Code ist und warum er wichtig ist.
@@ -42,4 +40,4 @@ bearbeitet werden, was für die langfristige Wartbarkeit und Skalierbarkeit von 
 In dieser Einführung haben wir die Grundlagen von Clean Code und seine Bedeutung in der Softwareentwicklung besprochen.
 Die Fähigkeit, sauberen und effizienten Code zu schreiben, ist eine wesentliche Fähigkeit für jeden Entwickler.
 
-
+[weiter](../Basics)

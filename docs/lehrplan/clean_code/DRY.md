@@ -1,59 +1,95 @@
 # DRY - Don't Repeat Yourself
 
-![DRY](pictures/DRY.jpg "Don't repeat yourself")
+```python
+# Berechnung des Quadrats von Zahlen
+num1 = 4
+quadrat_num1 = num1 * num1
 
-Funktionen und Prozeduren sind dazu da, sich wiederholende Codeabschnitte zu vermeiden. Sie gehören zu den ältesten
-Programmierparadigmen, die es gibt. Daher ist ihre Funktionsweise schon auf der Prozessorebene angelegt. Beim Aufruf
-einer Funktion wird nämlich die Speicheradresse, zu man zurückkehrt, wenn die Funktion endet, in einen besonderen
-Speicherbereich geschrieben. Somit kann ohne Zeitverlust das Programm fortgesetzt werden.
+num2 = 5
+quadrat_num2 = num2 * num2
 
-Einer der größten Vorteile davon ist es, dass man bei Änderungen nur in diesem einen Teil des Programmes arbeiten muss.
+num3 = 6
+quadrat_num3 = num3 * num3
 
-Die Schwierigkeit besteht heute darin, dass sich wiederholender Code nicht immer offen zeigt. In einer vielschichtigen
-Anwendung ist es eher so, dass verschiedene Programmierer den gleichen Code produzieren, ohne es zu merken. Hier helfen
-Code-Bibliotheken und der Blick über den eigenen Tellerrand und eine übergeordnete Software Architektur.
+print(quadrat_num1, quadrat_num2, quadrat_num3)
+```
 
-## Argumente gegen die strikte Anwendung des DRY-Prinzips
+Funktionen reduzieren die Code-Menge und erhöhen die Wartbarkeit.
 
-1. Über-Abstraktion
-   Obwohl das DRY-Prinzip (Don't Repeat Yourself) generell als gute Praxis im Software-Engineering gilt, gibt es
-   Situationen, in denen eine strikte Anwendung nicht ideal oder sogar kontraproduktiv sein kann. Hier sind einige
-   Argumente, die gegen eine strikte Anwendung von DRY sprechen:
-    - **Beschreibung:** Versuche, Wiederholungen zu vermeiden, können zu übermäßiger Abstraktion führen.
-    - **Folge:** Der Code wird komplizierter und schwerer verständlich, besonders wenn die Abstraktionen nicht intuitiv
-      oder schlecht dokumentiert sind.
+```python
+def quadrat(zahl):
+    return zahl * zahl
 
-2. Vorzeitige Optimierung
 
-    - **Beschreibung:** Das vorzeitige Zusammenführen von Code in Funktionen oder Module kann problematisch sein.
-    - **Folge:** Es entstehen starre Strukturen, die spätere Anpassungen erschweren.
+num1 = 4
+num2 = 5
+num3 = 6
 
-3. Leichte Veränderungen in der Logik
+quadrat_num1 = quadrat(num1)
+quadrat_num2 = quadrat(num2)
+quadrat_num3 = quadrat(num3)
 
-    - **Beschreibung:** Ähnlicher, aber nicht identischer Code kann die Zusammenfassung komplex machen.
-    - **Folge:** Es kann sinnvoller sein, ähnlichen Code separat zu halten, um Lesbarkeit und Wartbarkeit zu bewahren.
+print(quadrat_num1, quadrat_num2, quadrat_num3)
+```
 
-4. Leistungseinbußen
+Das obige Beispiel ist sehr trivial. Man könnte sagen: "Ist doch klar, was soll das?". Also warum wird dieser
+Punkt hier aufgelistet?
 
-    - **Beschreibung:** In einigen Fällen kann die Vermeidung von Code-Duplikation zu Leistungseinbußen führen.
-    - **Folge:** Ersetzen von Inline-Code durch Funktionsaufrufe kann Overhead verursachen, was in performancekritischen
-      Anwendungen problematisch ist.
+Funktionen und Prozeduren sind zentrale Elemente in der Programmierung, um wiederholten Code zu vermeiden und gehören zu
+den ältesten Programmierparadigmen. Ihre Effizienz ist sogar auf Prozessorebene verankert: Wenn eine Funktion aufgerufen
+wird, speichert der Prozessor die Adresse, an die nach Beendigung der Funktion zurückgekehrt wird, in einem speziellen
+Speicherbereich. Dies ermöglicht eine nahtlose und zeiteffiziente Fortsetzung des Programms.
 
-5. Erhöhte Kopplung
+Einer der Hauptvorteile dieses Ansatzes ist, dass Änderungen nur an einer Stelle im Code vorgenommen werden müssen, was
+die Wartung und Aktualisierung von Software erheblich vereinfacht.
 
-    - **Beschreibung:** Übermäßige Vermeidung von Duplikation kann zu einer erhöhten Kopplung zwischen Programmteilen
-      führen.
-    - **Folge:** Die Modularität kann beeinträchtigt werden, was den Code anfälliger für Fehler bei Änderungen macht.
+Allerdings ist es in der modernen Softwareentwicklung oft eine Herausforderung, redundante Codeabschnitte zu
+identifizieren, da diese nicht immer offensichtlich sind. Dies kann in der Komplexität des eigenen Codeabschnitts oder
+in umfangreichen Projekten mit mehreren Entwicklern begründet sein, die möglicherweise denselben Code schreiben, ohne es
+zu bemerken. Hier sind Code-Bibliotheken, ein bewusster Blick über den eigenen Code hinaus und eine durchdachte
+Softwarearchitektur hilfreich.
 
-6. Schwierigkeiten bei der Fehlerbehebung
+Es erfordert jedoch auch einiges an Erfahrung, effektive Lösungen zur Vermeidung von Redundanz zu entwickeln und
+anzuwenden. Das Erkennen und Umstrukturieren von wiederholtem Code in effizientere, modulare Strukturen ist eine
+Fähigkeit, die sich Entwickler im Laufe der Zeit aneignen und die für die Erstellung wartbarer, skalierbarer und
+effizienter Software unerlässlich ist.
 
-    - **Beschreibung:** Wenn eine DRY-umsetzende Funktion einen Fehler aufweist, kann sich dieser auf mehrere
-      Systemteile auswirken.
-    - **Folge:** In manchen Fällen kann es sicherer sein, bestimmte Funktionalitäten zu duplizieren, besonders wenn sie
-      kritisch sind und isoliert bleiben sollten.
+**Aufgabe**: Löse die Code Duplikationen auf.
 
-### Zusammenfassung
+```python
+def verarbeite_kundendaten(kunden_liste):
+    # Verarbeite Kundendaten
+    verarbeitete_daten = []
+    for kunde in kunden_liste:
+        # Nehmen wir an, es gibt einige komplexe Logiken
+        verarbeitete_daten.append({
+            "name": kunde["name"],
+            "email": kunde["email"],
+            # Weitere spezifische Logik für Kunden
+        })
+    return verarbeitete_daten
 
-DRY ist ein Leitprinzip und sollte nicht als unumstößliches Gesetz angesehen werden. Die Entscheidung, wann und wie DRY
-angewendet wird, sollte auf einem Gleichgewicht zwischen Code-Effizienz, Lesbarkeit und Wartbarkeit basieren. Eine
-Dokumentation der Gründe erscheint angebracht.
+
+def verarbeite_mitarbeiterdaten(arbeiter_liste):
+    # Verarbeite Mitarbeiterdaten
+    verarbeitete_daten = []
+    for arbeiter in arbeiter_liste:
+        # Ähnliche Logik wie bei Kunden, aber leicht unterschiedlich
+        verarbeitete_daten.append({
+            "name": arbeiter["name"],
+            "email": arbeiter["email"],
+            # Weitere spezifische Logik für Mitarbeiter
+        })
+    return verarbeitete_daten
+
+
+# Beispielaufrufe
+kunden = [{"name": "Kunde1", "email": "kunde1@example.com"}, ...]
+mitarbeiter = [{"name": "Mitarbeiter1", "email": "mitarbeiter1@example.com"}, ...]
+```
+
+**Aufgabe**: Finde Ausnahmen zur DRY-Regel
+
+**Diskussion und Fazit**
+
+[zurück](../TheGoodPractices)

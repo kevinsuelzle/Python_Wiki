@@ -1,8 +1,5 @@
 site_name: My Docs
 
-extra_css:
-  - custom.css
-
 nav:
   - Home: index.md
   - Lehrplan:
@@ -10,10 +7,20 @@ nav:
     - Clean Code:
         - Einführung: lehrplan/clean_code/Introduction.md
         - Grundlagen: lehrplan/clean_code/Basics.md
-        - Besseren Code schreiben: lehrplan/clean_code/TheGoodPractices.md
-        - Namenskonventionen: lehrplan/clean_code/Conventions.md
-        - Best Practices: lehrplan/clean_code/CamelsAndSnakes.md
-        - DRY: lehrplan/clean_code/DRY.md
+        - Besseren Code schreiben:
+            - Methoden: lehrplan/clean_code/TheGoodPractices.md
+            - Globale Variable: lehrplan/clean_code/GlobaleParameter.md
+            - Fehlerbehandlung: lehrplan/clean_code/Fehlerbehandlung.md
+            - List Comprehension: lehrplan/clean_code/ListComprehension.md
+            - Namenskonventionen: lehrplan/clean_code/Benennungskonventionen.md
+            - Kommentare: lehrplan/clean_code/Kommentare.md
+            - DRY: lehrplan/clean_code/DRY.md
+            - Funktionsgestaltung: lehrplan/clean_code/Funktionsgestaltung.md
+            - Funktionsparameter: lehrplan/clean_code/Funktionsparameter.md
+            - Abstraktionsebenen: lehrplan/clean_code/Abstraktionsebene.md
+            - Refactoring: lehrplan/clean_code/Refactoring.md
+            - Aufgaben: lehrplan/clean_code/Aufgaben.md
+        - Anhang: lehrplan/clean_code/Anhang.md
   - Checkliste: lehrplan/checkliste.md
   - Begriffssammlung: lehrplan/begriffssammlung.md
   - Projekte:

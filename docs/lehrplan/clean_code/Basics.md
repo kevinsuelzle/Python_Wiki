@@ -1,7 +1,5 @@
 # Grundlegende Prinzipien
 
-![Basics](pictures/Fundamentals.jpg "Grundlegendes")
-
 ### Grobziele
 
 - **Verständnis der Bedeutung von Clean Code:** Die Lernenden sollen ein grundlegendes Verständnis dafür entwickeln, was Clean Code ist und warum er in der Softwareentwicklung wichtig ist.
@@ -22,3 +20,6 @@
 - **Anwendung von Kommentaren und Dokumentation:** Die Teilnehmer sollen lernen, wann und wie Kommentare und Dokumentation im Code sinnvoll eingesetzt werden.
 - **Einhalten eines konsistenten Codierungsstils:** Die Lernenden sollen die Bedeutung eines konsistenten Codierungsstils erkennen und diesen in der Praxis umsetzen.
 - **Refactoring-Kompetenz:** Die Teilnehmer sollen Grundkenntnisse im Refactoring erlangen, um die Lesbarkeit und Wartbarkeit des Codes zu verbessern.
+- **Verständnis für Funktionen und Klassen**: Die Teilnehmer lernen, wie Funktionen und Klassen strukturiert werden können, um den Anforderungen von guter Programmierung zu genügen.
+
+[weiter](TheGoodPractices.md)
