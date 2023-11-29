@@ -1,0 +1,21 @@
+# git Struktur
+
+# Wofür braucht man git?
+# Was ist git?
+# Beispiel ohne code
+# git setup
+    # installation, erste befehle usw
+    # lokal vs remote
+# Zwei Workflows: Alleine arbeiten vs Zusammen arbeiten
+# Workflow 1 - alleine arbeiten:
+    # programmieren -> änderungen auswählen -> änderungen commiten
+    # im großen Bild
+
+# Workflow 2 - zusammen arbeiten:
+    # programmieren -> änderungen auswählen -> änderungen commiten
+    # im großen Bild
+
+# weitere git Befehle
+# git cheat sheet
+
+# beliebte Fehler und Vollkatastrophen
