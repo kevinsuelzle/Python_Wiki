@@ -80,19 +80,20 @@ print(bedarfe)
 
 def lagerbestand():
     # read txt
-    # transform to lists
+    with open("../wiki/material/bestand.txt") as f:
+        lines = f.readlines()
     
-    bestand_A = 5 
-    bestand_B = 3 
-    bestand_C = 7 
-    bestand_D = 1 
-    bestand_E = 200 
-    bestand_F = 7000
+    # extract values
+    bestand_A = lines[0].split(" ")[2]
+    bestand_B = lines[1].split(" ")[2]
+    bestand_C = lines[2].split(" ")[2]
+    bestand_D = lines[3].split(" ")[2]
+    bestand_E = lines[4].split(" ")[2]
+    bestand_F = lines[5].split(" ")[2]
 
-    return bestand_A, bestand_B, bestand_C, bestand_D, bestand_E, bestand_F
+    return bestand_A, bestand_B, bestand_C, bestand_C, bestand_E, bestand_F
 
-werte = lagerbestand()
-print(werte)
+
 
 ### Aufgabe
 # Beschreibe was sie macht und prüfe die Funktion, ob sie richtig arbeitet. Korrigiere ggf vorhandene Fehler.
@@ -113,3 +114,8 @@ print(werte)
 # Verwende gerne eine Farbliche Kodierung der Zahlen, falls der Lagerbestand nicht ausreicht.
 
 
+if __name__ == "__main__":
+    print(lagerbestand())
+
+    import os  
+    print ("Updated directory:" , os.getcwd())

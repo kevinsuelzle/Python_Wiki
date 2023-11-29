@@ -92,6 +92,11 @@ Wenn sich nichts verändert, wird auch nichts neues gespeichert, sondern einfach
     # programmieren -> änderungen auswählen -> änderungen commiten
     # im großen Bild
 
+Es gibt verschiedene Möglichkeiten verschiedene Commits zusammenzuführen:
+git merge
+git cherry-pick
+git rebase
+
 ÜBUNGSBLOCK:
 Szenario 1: alleine arbeiten
 Szenario 2: gemeinsam arbeiten

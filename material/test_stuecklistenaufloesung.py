@@ -10,7 +10,7 @@ class TestScript(unittest.TestCase):
 
 
     def test_lagerbestand(self):
-        self.assertEqual(chris_project_2.lagerbestand() , (5, 3, 7, 1, 200, 7000))
+        self.assertEqual(chris_project_2.lagerbestand() , (5, 3, 7, 1, 200, 7000) )
 
 if __name__ == "__main__":
     unittest.main()
