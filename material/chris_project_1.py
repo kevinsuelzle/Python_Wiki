@@ -227,14 +227,14 @@ service_partner_ids = [1331,
  4698,
  8345,
  5855,
- 6423,
+ "Kunde verzogen",
  1711,
  2928,
  5113,
  1250,
  4820,
  2306,
- 8471,
+ "Werkstatt dauerhaft geschlossen",
  5145,
  7359,
  6649,
@@ -334,35 +334,37 @@ last_workshop_visit = [datetime.datetime(2021, 3, 28, 7, 50, 47, 57267),
  datetime.datetime(2015, 5, 15, 19, 43, 18, 903298),
  datetime.datetime(2016, 11, 5, 19, 43, 18, 903298)]
 
-kilometerstand = [96385,
- 89285,
- 75333,
- 27021,
- 143362,
- 16366,
- 101869,
- 31781,
- 77094,
- 153987,
- 52507,
- 46249,
- 51554,
- 382,
- 157602,
- 73151,
- 16475,
- 100656,
- 129224,
- 2394,
- 9841,
- 130475,
- 60711,
- 3953,
- 48196,
- 85954,
- 74108,
- 144629,
- 30793]
+kilometerstand = ["96385.3",
+ "89285.5",
+ "75333.1",
+ "27021.8",
+ "143362.2",
+ "16366",
+ "101869.6",
+ "31781.8",
+ "770943",
+ "153987.8",
+ "52507.7",
+ "46249.2",
+ "51554.6",
+ "382.7",
+ "157602.1",
+ "73151.8",
+ "16475.3",
+ "100656,6",
+ "129224.7",
+ "2394.3",
+ "9841.1",
+ "130475.0",
+ "60711.8",
+ "3953.2",
+ "48196.9",
+ "85954.1",
+ "74108.5",
+ "144629.8",
+ "30793.3"]
+
+kilometerstand_letzer_besuch = []
 
 Service_Pauschale = "30 Euro"
 
@@ -381,7 +383,7 @@ Service_Pauschale = "30 Euro"
 ### Aufgabe: 
 # Folgende Funktion produziert Fehler. Woran liegt es? 
 # Kannst du den Bug fixen? 
-# Du findest eine test_.py Datei im selben Ordner, die einen Unittest ausführt, und dir sagt, wann du fertig bist.
+# Du findest eine test_aftersales.py Datei im selben Ordner, die einen Unittest ausführt, und dir sagt, wann du fertig bist.
 
 def function_mit_fehler(input):
 
@@ -396,14 +398,13 @@ def function_mit_fehler(input):
 
 
 ### Aufgabe: 
-#gefahrene Kilometer, Schreibweise sowohl mit Komma als auch mit Punkt. Dadurch kein float mehr und Rechnung geht kaputt.
-#Funktion testst, ob gefahrene Kilometer 50.000 übersteigen.
-# -> Bremsbeläge
+# Schreibe eine Funktion, die pro Fahrzeug ausspuckt, ob der Kunde für einen Bremsbelagwechsel in die Werkstatt eingeladen werden soll.
+# Sofern seit dem letzten Besuch mindestens 30.000km zurückgelegt wurden, soll dies geschehen. (Output wieder als Liste)
 
 
 ### Aufgabe:
 # Prüfe das Format aller Telefonnummern (sie sollen mit +49 anfangen und die Führende 0 soll weggelassen werden.
-# Schreibe eine funktion, die das Prüft bzw in den Standard überführt.
+# Schreibe eine funktion, die das Prüft bzw in den Standard überführt. Schreibe auch einen Unittest für deine Funktion in die bereits vorhandene Datei test_aftersales.py
 
 
 ### Aufgabe:
@@ -414,7 +415,7 @@ def function_mit_fehler(input):
 ### Aufgabe:
 # Stelle die VIN mit der längsten Werkstattabwesenheit exemplarisch in einem Steckbrief dar. Verwende hierzu ein Foto des Fahrzeugmodells aus dem Internet und stelle mit einer Text-Bild-Kombination eine schöne Darstellung für deine Präsentation zusammen.
 # Leite eine Handlungsempfehlung für das Qualitätsmanagement dafür ab. Kann man hier den Service oder das System etwas verbessern?
-
+# Notiz: welches module dafür verwenden????
 ### Zusatzaufgabe:
 # Mit dem Modul XXXXX kannst du die vorherige Aufgabe gerne bearbeiten und hier deiner Kreativität freien Lauf lassen.
 
@@ -423,12 +424,17 @@ def function_mit_fehler(input):
 # Du wirst sicherlich schon bemerkt haben, dass die einzelen Listen sehr unpraktisch oder unbequem sind. Es wäre doch toll, alle Information in einem Objekt zu haben. Später wirst du lernen wie das geht.
 # Heute solst du noch für die Fachabteilung eine Datei erstellen, in der die Informationen geordnet zusammengestellt sind. Verwende hierzu bitte ein JSON/DICTIONARY/... und gebe die Ergebnisse in einer .txt Datei aus.
 
+#import json
+#with open('data.json', 'w', encoding='utf-8') as f:
+#    json.dump(data, f, ensure_ascii=False, indent=4)
 
 ### Aufgabe:
-# Aus den gefahrenen Kilometern kannst du die Gesamtkilometerleistung der Flotte bestimmen. Mal angenommen die Flotte gehört zu einem Unternehmen, welches seinen Mitarbeitern die Fahrzeuge zur Verfügung gestellt hat. 
-# Der Kunde überlegt seinen Mitarbeitern freies Tanken mit diesen Fahrzeugen zu als Benefit zu schenken. Stell eine plausible Rechnung auf, mit der du die ungefähren Jahreskosten für die Flotte ausrechnest und dem Kunden präsentierst.
+# Aus den gefahrenen Kilometern kannst du die Gesamtkilometerleistung der Flotte bestimmen. Mal angenommen die Flotte gehört zu einem Unternehmen, 
+# welches seinen Mitarbeitern die Fahrzeuge zur Verfügung gestellt hat. 
+# Der Kunde überlegt seinen Mitarbeitern freies Tanken mit diesen Fahrzeugen als Benefit zu schenken. 
+# Stell eine plausible Rechnung auf, mit der du die ungefähren Jahreskosten für die Flotte ausrechnest und dem Kunden präsentierst.
 # Was kostet es pro Mitarbeiter und Jahr in etwa? Würdest du dem Unternehmen diese Maßnahme empfehlen?
 
 
 ### Aufgabe:
-# Lade deinen Code ins GIT Repository.
+# Lade deine Ergebnisse ins remote GIT Repository hoch.
