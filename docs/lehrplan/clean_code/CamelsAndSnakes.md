@@ -31,6 +31,8 @@ Kebab-Case ist eine Variante, bei der Wörter durch Bindestriche getrennt werden
 
 ## Wann welche Konvention verwenden?
 
+$$$ Den folgenden Teil bitte durch die PEP Namenskonventionen ersetzen
+
 - **Java**: Verwenden Sie UpperCamelCase für Klassennamen und lowerCamelCase für Methoden und Variablen.
 - **C#**: Ähnlich wie Java, UpperCamelCase für Klassen und lowerCamelCase für Methoden und Variablen.
 - **Python**: Verwenden Sie snake_case für fast alles, außer Klassennamen, die UpperCamelCase folgen.

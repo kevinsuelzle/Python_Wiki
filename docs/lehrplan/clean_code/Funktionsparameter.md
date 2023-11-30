@@ -1,3 +1,6 @@
+$$$ Ist das hier im Pythonkontext wichtig?
+$$$ Mir fallen im Pythonkontext vor allem dinge wie *args und **kwargs ein, die besonders sind, wenn es um Parameterübergabe geht.
+
 # Funktionsparameter
 
 Man unterscheidet aufgrund der Anzahl der Parameter:

@@ -44,6 +44,7 @@ def divide(a, b):
   ist besonders hilfreich bei der Arbeit mit Ressourcen wie Dateien oder Netzwerkverbindungen, die ordnungsgemäß
   geschlossen oder freigegeben werden müssen, um Ressourcenlecks zu vermeiden.
 
+* Das würde man mit `with` lösen
 ```python
 def datei_bearbeiten(dateipfad):
     try:

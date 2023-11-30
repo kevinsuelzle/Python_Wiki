@@ -27,7 +27,8 @@ Schlüsselpunkte dazu:
 In der Praxis bedeutet die Anwendung des Prinzips der Trennung von Bedenken, dass Entwickler darauf achten, dass
 verschiedene Aspekte der Anwendung klar voneinander getrennt sind und nicht miteinander vermischt werden, was zu einem
 saubereren, besser organisierten und wartbaren Code führt.
-
+$$$ Ich finde dieses Kapitel noch so allgemein, dass ich ger nicht verstehe, wie das praktisch umgesetzt wird.
+$$$ Sollte man vllt MVC als beispiel bringen
 **Hinweis**:
 
 Das Prinzip der Trennung von Bedenken (Separation of Concerns) ist eng mit den Ansätzen von Domain-Driven Design (DDD)

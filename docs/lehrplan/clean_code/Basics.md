@@ -1,3 +1,5 @@
+$$$ Datei im Checkliste umwandeln? Vielleicht?
+
 # Grundlegende Prinzipien
 
 ### Grobziele

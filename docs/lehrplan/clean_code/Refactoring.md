@@ -1,6 +1,6 @@
 # Refactoring
 
-Clean Code spielt eine entscheidende Rolle beim Refactoring von Software. Refactoring bezieht sich auf den Prozess der
+Clean Code spielt eine entscheidende Rolle beim Refactoring von Software. Refactoring bezeichnet den Prozess der
 Umstrukturierung bestehenden Codes, um seine interne Struktur zu verbessern, ohne dabei sein externes Verhalten zu
 ändern. Clean Code-Prinzipien sind dabei zentral, da sie helfen, den Code wartbarer, lesbarer und effizienter zu
 gestalten. Hier sind einige Schlüsselaspekte, wie Clean Code das Refactoring beeinflusst:

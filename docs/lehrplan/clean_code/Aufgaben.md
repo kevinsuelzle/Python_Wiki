@@ -26,7 +26,7 @@ def sort_and_format_words(word_list):
     str: Ein formatierter String, der die sortierten Wörter enthält.
     """
     # Sortieren
-    sorted_words: list[Sized] = sorted(word_list, key=len)
+    sorted_words: list[Sized] = sorted(word_list, key=len) * FEHLER
     
     # Erstellen
     formatted_output = "Sortierte Wörter: " + ", ".join(sorted_words)

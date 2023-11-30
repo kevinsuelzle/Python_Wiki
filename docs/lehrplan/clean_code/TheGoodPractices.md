@@ -2,22 +2,34 @@
 
 ## Ergänzungen und Beispiele zu [PEP 8](https://peps.python.org/pep-0008/) und [Zen of Python](https://gist.github.com/corysimmons/8b94c08421dec18bbaa4)
 
-## Feinziele
+[//]: # (## Feinziele)
 
-- **Erkennen und Vermeiden von schlechtem Code** 
-- **Praktische Anwendung von Namenskonventionen** 
-- **Implementierung des DRY-Prinzips** 
-- **Verständnis für Testbarkeit** 
-- **Anwendung von Kommentaren und Dokumentation** 
-- **Einhalten eines konsistenten Codierungsstils** 
-- **Refactoring-Kompetenz**
-- **Verständnis für die Struktur von Funktionen und Klassen**
+[//]: # ()
+[//]: # (- **Erkennen und Vermeiden von schlechtem Code** )
 
-In diesem Abschnitt werden wir die wesentlichen Prinzipien des Clean Code detailliert betrachten. Dazu gehören Aspekte
-wie Lesbarkeit, Einfachheit und Wartbarkeit des Codes. Die Feinziele geben einen detaillierten Einblick in die
-spezifischen Fähigkeiten und Kenntnisse, die die Lernenden erwerben werden, um Clean Code effektiv in der Praxis
-anzuwenden. Dies bildet die Grundlage für die folgenden Abschnitte, in denen diese Prinzipien weiter vertieft und durch
-praktische Beispiele illustriert werden.
+[//]: # (- **Praktische Anwendung von Namenskonventionen** )
+
+[//]: # (- **Implementierung des DRY-Prinzips** )
+
+[//]: # (- **Verständnis für Testbarkeit** )
+
+[//]: # (- **Anwendung von Kommentaren und Dokumentation** )
+
+[//]: # (- **Einhalten eines konsistenten Codierungsstils** )
+
+[//]: # (- **Refactoring-Kompetenz**)
+
+[//]: # (- **Verständnis für die Struktur von Funktionen und Klassen**)
+
+[//]: # (In diesem Abschnitt werden wir die wesentlichen Prinzipien des Clean Code detailliert betrachten. Dazu gehören Aspekte)
+
+[//]: # (wie Lesbarkeit, Einfachheit und Wartbarkeit des Codes. Die Feinziele geben einen detaillierten Einblick in die)
+
+[//]: # (spezifischen Fähigkeiten und Kenntnisse, die die Lernenden erwerben werden, um Clean Code effektiv in der Praxis)
+
+[//]: # (anzuwenden. Dies bildet die Grundlage für die folgenden Abschnitte, in denen diese Prinzipien weiter vertieft und durch)
+
+[//]: # (praktische Beispiele illustriert werden.)
 
 Um ein Gefühl dafür zu bekommen, worum es geht, hier ein Passus entnommen aus Clean Code von Robert C. Martin und von Java nach Python übersetzt.
 

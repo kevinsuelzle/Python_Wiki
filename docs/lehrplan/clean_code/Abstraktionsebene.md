@@ -1,3 +1,5 @@
+* Das beispiel scheint mir zu kompliziert, bzw. muss anders aufgezogen werden.
+
 # Abstraktionsebenen
 
 ## Code von oben nach unten lesen: die Stepdown-Regel
@@ -8,6 +10,9 @@ absteigen, während wir die Liste der Funktionen lesen. Man nennt das die Step-d
 möchten wir in der Lage sein, das Programm so zu lesen, als wäre es eine Reihe von "Um zu"-Absätzen, von denen jeder die
 aktuelle Abstraktionsebene beschreibt und auf nachfolgende "Um zu"-Absätze auf der nächsten Ebene nach unten verweist.
 
+$$$ Die Teilnehmer haben ncoh gar keine Ahnung von Webseitenprogrammeriung. Ich fürchte dieses Beispiel fliegt ihnen komplett über den Kopf
+
+$$$ Den folgenden Teil verstehe ich schlecht
 - **Um die Setups und Teardowns einzubeziehen**, schließen wir Setups ein, dann schließen wir den Testseiten-Content
   und dann die Teardowns ein.
 - **Um die Setups einzubeziehen**, schließen wir das Suite-Setup ein, wenn es sich um eine Suite handelt, dann
@@ -24,6 +29,7 @@ Es ist der Schlüssel, um Funktionen kurzzuhalten und sicherzustellen, dass sie 
 Top-Down-Satz von "Um zu"-Absätzen lesen zu lassen, ist eine effektive Technik, um die Abstraktionsebene konsistent zu
 halten.
 
+$$$ Aufgabe zu schwer
 **Aufgabe**: Suchen sie Beispiele für Abstraktionsebenen in der Funktion testable_html.
 
 ```python
