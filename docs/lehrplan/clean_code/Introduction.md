@@ -2,7 +2,7 @@ $$$ Task 15: Uhrzeiten und Chillis bei den Aufgaben und Texten hinzufügen.
 
 # Einführung in Clean Code
 
-## Was ist Clean Code? [5 min]
+## Was ist Clean Code? [10 min]
 
 **Clean Code** bezeichnet einen Programmierstil, bei dem der resultierende Software-Code, leicht zu verstehen und zu
 ändern ist.
@@ -53,3 +53,7 @@ zu öffnen. Liese dir durch was du siehst und diskutiere darüber.
 ### [Benennungskonventionen](Benennungskonventionen.md)  [30 min]
 
 ### [Kommentaren und docstrings](Kommentare.md) [75 min]
+
+$$$ Task 20 Große Übungsaufgabe definieren
+$$$ Task 21 Begriffsliste definieren
+$$$ Task 22 "zurück" buttons bei allen Unterseiten oben und unten eifnügen
