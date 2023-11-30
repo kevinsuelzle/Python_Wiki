@@ -1,4 +1,4 @@
-$$$ Task 15: Uhrzeiten und Chillis bei den Aufgaben und Texten hinzufügen.
+$$$ TODO 15: Uhrzeiten und Chillis bei den Aufgaben und Texten hinzufügen.
 
 # Einführung in Clean Code
 
@@ -54,6 +54,6 @@ zu öffnen. Liese dir durch was du siehst und diskutiere darüber.
 
 ### [Kommentaren und docstrings](Kommentare.md) [75 min]
 
-$$$ Task 20 Große Übungsaufgabe definieren
-$$$ Task 21 Begriffsliste definieren
-$$$ Task 22 "zurück" buttons bei allen Unterseiten oben und unten eifnügen
+$$$ TODO: 20 Große Übungsaufgabe definieren
+$$$ TODO 21 Begriffsliste definieren
+$$$ TODO 22 "zurück" buttons bei allen Unterseiten oben und unten eifnügen

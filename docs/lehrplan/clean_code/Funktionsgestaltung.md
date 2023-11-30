@@ -14,10 +14,10 @@ Funktionen sollten
    von der Fehlerverarbeitung und damit lesbarer.
 7. Keine Seiteneffekte haben. (*Seiteneffekt* ist der Fachbegriff für eine Änderung des Speichers.)
 
-$$$ Task 11: Füge eine Übungsaufgabe ein, bei der Code aufgesplittet werden soll.
+$$$ TODO 11: Füge eine Übungsaufgabe ein, bei der Code aufgesplittet werden soll.
 
 # Aufgabe: Versuche innerhalb von 3 Minuten eine grobe Vorstellung von der Funktion des folgenden Codes zu bekommen.
-$$$ TASK 1 START: anderes Beispiel finden, dass nachvollziebarer ist.
+$$$ TODO 1 START: anderes Beispiel finden, dass nachvollziebarer ist.
 $$$ Neue Aufgabenstellung: Code in 45 Minuten selbst lesbarer machen z.B. durch einführen neuer funktionen.
 $$$ Dabei darauf achten, dass auch einige triviale Fehler gemacht werden, wie kein camelcase, doofe Variablennamen etc.
 ```python

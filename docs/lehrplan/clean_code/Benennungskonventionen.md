@@ -25,7 +25,7 @@ Variablennamen und Funktionsnamen sollten
 - beschreibend sein, um die Lesbarkeit und Wartbarkeit des Codes zu verbessern.
 - gut auszusprechen sein und nicht in die Irre führen.
 - durchsuchbar sein.
-- nichts kodiertes enthalten. $$$ Task 17: was heißt das genau?
+- nichts kodiertes enthalten. $$$ TODO 17: was heißt das genau?
 - einfach zu verstehen sein.
 - nicht schwafelig sein, keine Mundart wiedergeben oder sonstiges kulturelles Gut enthalten.
 - nicht doppelt verwendet werden oder mit einem Prefix versehen sein.
@@ -45,7 +45,7 @@ def calc(x):
 Eine sehr allgemein formulierte Namensgebung trägt nichts zum Verständnis der Aufgabe der Funktion bei. Da sie nur eine
 Sache tun soll, kann man sich gut auf dieses Tun beziehen.
 
-$$$ Task 7 hier ein anderes Beispiel verwenden. Und Satz nachvollziehbarer formulieren.
+$$$ TODO 7 hier ein anderes Beispiel verwenden. Und Satz nachvollziehbarer formulieren.
 
 ```python
 def calculate_adjusted_value(x):

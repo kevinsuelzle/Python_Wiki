@@ -1,4 +1,4 @@
-$$$ TASK 2 START: stattddessen mit GUARDS arbeiten: 
+$$$ TODO 2 START: stattddessen mit GUARDS arbeiten: 
 $$$ Beispiel für Code mit zu vielen if-schachtelunge und gegenbeispiel mit Guard definieren.
 $$$ dann 3 Übungsaufgaben, so man verschachtelte if-schahtelungen (gerne auch mit for schleife drinne) in 
 guard form bring. hier sollen sie merken, wie nütlich boolsche Algebra ist (z.B. de morgan)
@@ -40,5 +40,3 @@ def sum_or_double(a, b):
 **Frage**: Welche weiteren Verbesserungen könnten an dem verbesserten Code vorgenommen werden?
 
 **Aktivität**: Versuchen Sie, den verbesserten Code weiter zu optimieren und diskutieren Sie Ihre Änderungen.
-
-$$$ End Task 2

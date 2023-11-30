@@ -1,4 +1,4 @@
-$$$ Task 4: Erweiteres Beispiel statt dem jetzigen ausdenken, bei dem eine Globale Variable in einem anderen skript für probleme sorgt.
+$$$ TODO 4: Erweiteres Beispiel statt dem jetzigen ausdenken, bei dem eine Globale Variable in einem anderen skript für probleme sorgt.
 
 # Verwendung von Funktionsparametern statt globaler Variablen
 

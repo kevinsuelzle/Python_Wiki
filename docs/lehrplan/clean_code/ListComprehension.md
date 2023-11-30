@@ -1,4 +1,4 @@
-$$$ Task 6:
+$$$ TODO 6:
 Komplexeres Beispiel definieren, bei dem man man sieht, dass zwei wege besser sind (diese auch zeigen):
 1. list-comprehension in schleife verwandeln
 2. list-comprehension in methoden auslagern und klüger verbinden

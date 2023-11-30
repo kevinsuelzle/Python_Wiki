@@ -63,7 +63,7 @@ print(datei_bearbeiten("beispieldatei.txt"))
 ## Aufgabe: 
 Was würde passieren, wenn man den Code im `finally`-Block nach dem `except`-Block schreibt, also ohne den die `finally`-Zeile
 
-$$$ Task 5:
+$$$ TODO 5:
 * Erinnern, dass man das in Python mit `with` macht.
 * Zeige, wie man Klassen so definiert, dass sie mit `with` arbeiten können.
 * Überarbeite den bestehenden Text der Datei, damit das flüssig wird.
