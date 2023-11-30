@@ -1,3 +1,5 @@
+$$$ Task 4: Erweiteres Beispiel statt dem jetzigen ausdenken, bei dem eine Globale Variable in einem anderen skript für probleme sorgt.
+
 # Verwendung von Funktionsparametern statt globaler Variablen
 
 ## Beispiel
@@ -41,37 +43,4 @@ def increment(x):
 - **Risiko von Seiteneffekten:** 
 
     Änderungen an globalen Variablen können unerwartete Auswirkungen auf andere Teile des Programms haben, was die Fehlersuche und -behebung erschwert.
-
-**Frage**: Kann es unter diesem Aspekt Funktionen ohne Argumente ([nyladische Funktionen](../Funktionsparameter)) überhaupt geben?
-
-**Antwort**:
-
-- **Nutzung von Umgebungsvariablen:**
-
-    Nyladische Funktionen können auf Umgebungsvariablen zugreifen, die außerhalb der Funktion definiert sind, aber nicht als globale Variablen im Code selbst. Dies ermöglicht den Zugriff auf Konfigurationen oder Systemeigenschaften.
-
-- **Rückgriff auf statische Daten:** 
-
-    Solche Funktionen können auch statische Daten verwenden, die innerhalb ihrer Klasse oder Moduls definiert sind. Diese Daten sind zwar global zugänglich, aber im Kontext der Klasse oder des Moduls gekapselt.
-
-- **Einsatz von Singleton-Mustern:** 
-
-    In objektorientierten Sprachen können nyladische Funktionen Teil eines Singleton-Objekts sein, das globalen Zustand in einer kontrollierten Weise verwaltet.
-
-- **Verwendung von Diensten oder Ressourcen:** 
-
-    Sie können auf externe Dienste oder Ressourcen zugreifen, wie z.B. Datenbankverbindungen oder Dateisysteme, die außerhalb des Funktionsumfangs definiert sind.
-
-- **Erzeugung von Daten basierend auf internem Zustand:** 
-
-    In einigen Fällen können nyladische Funktionen Daten generieren oder verarbeiten, die auf ihrem internen Zustand basieren, wie z.B. ein Zufallszahlengenerator.
-
-- **Ausführung von Operationen ohne externe Abhängigkeiten:** 
-
-    Manchmal führen solche Funktionen Operationen aus, die keine externen Daten benötigen, wie das Zurücksetzen eines internen Zustands oder das Ausführen einer festgelegten Routine.
-
-**Aufgabe**: Geben sie Beispiele von nyladischen Funktionen.
-
-**Aufgabe**: Schreiben sie eine sinnvolle Funktion, die ohne Parameter auskommt.
-
 [zurück](../TheGoodPractices)

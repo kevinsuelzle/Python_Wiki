@@ -1,3 +1,5 @@
+$$$ Task 13: Prüfe ob etwas hiervon für dich nutzbar ist und füge es direkt ins skript ein, der rest weg.
+
 # Anhang
 
 ## Globale Parameter

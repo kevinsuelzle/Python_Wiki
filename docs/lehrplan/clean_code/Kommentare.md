@@ -1,30 +1,11 @@
 # Kommentare
 
-```python
-def calc(x):
-    return x * 2 + 5
-```
+$$$ Task 8: Über ein Beispiel deutlich machen, dass  Kommentare im Code sind ein Valides, aber letztes Mittel zur Dokumentation des Codes.
+[PEP 8](https://peps.python.org/pep-0008/#comments)
 
-Mal abgesehen von der [Benennung](../Benennungskonventionen) sind Kommentare sehr wichtig, um die Absicht hinter dem
-Code zu erklären, insbesondere in Fällen, in denen die Logik nicht offensichtlich ist.
-Allerdings sollte man offensichtliches nicht dokumentieren.
-
-```python
-"""
-Sammlung von Funktionen um ....    
-"""
-
-
-def calculate_adjusted_value(x):
-    """
-    Berechnet den angepassten Wert durch Verdopplung und Addition von 5   !!offensichtlich -> weglassen
-    
-    oder
-    
-    Die binäre Verschiebung um ein Bit nach links wird hier durch die Multiplikation mit 2 erreicht. 
-    Der Offset von 5 Bytes ist technisch erforderlich weil ...
-    """
-    return x * 2 + 5
-```
+$$$ Task 9: Beispiel geben, für guten Docstring und betonen, dass IDEs das letzen und dir anzeigen können✨😲
+[PEP 257](https://peps.python.org/pep-0257/)
+Weiterhin eine Aufgabe, in der man einen schön großen Docstring schreiben soll, also mit argumenten, rückgabe und exceptions (2 verschiedene)
+und bei der man auch richtig beschreiben soll, was der Code tut.
 
 [zurück](../TheGoodPractices)

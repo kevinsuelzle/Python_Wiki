@@ -90,6 +90,6 @@ mitarbeiter = [{"name": "Mitarbeiter1", "email": "mitarbeiter1@example.com"}, ..
 
 **Aufgabe**: Finde Ausnahmen zur DRY-Regel
 
-**Diskussion und Fazit**
+$$$ Task 10: Lösung hinzufügen für die beiden Aufgaben hinzufügen
 
 [zurück](../TheGoodPractices)

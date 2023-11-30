@@ -1,17 +1,6 @@
+$$$ Task 15: Uhrzeiten und Chillis bei den Aufgaben und Texten hinzufügen.
+
 # Einführung in Clean Code
-
-[//]: # (## Lernziele: Einführung)
-
-[//]: # ()
-[//]: # (- **Grobziel**: Verstehen, was Clean Code ist und warum er wichtig ist.)
-
-[//]: # (- **Richtziel**: Erkennen der Merkmale von Clean Code.)
-
-[//]: # (- **Feinziele**:)
-
-[//]: # (    - Definieren von Clean Code.)
-
-[//]: # (    - Diskutieren der Bedeutung von Clean Code in der Softwareentwicklung.)
 
 ## Was ist Clean Code? [5 min]
 
@@ -20,6 +9,14 @@
 Clean Code ist dabei nicht begrenzt auf eine Programmiersprache, sondern lässt sich auf jede Sprache übertragen.
 Es gilt immer: Der Code sollte klar, präzise und so einfach wie möglich sein.
 Ziel ist eine langfristige Wartbarkeit und Skalierbarkeit des Softwareprojekts mit Clean Code sicherzustellen.
+
+## Warum ist Clean Code wichtig?
+
+1. **Wartung**: Der Großteil der Kosten eines Softwareprojekts entsteht in der Wartungsphase. Sauberer Code erleichtert
+   die Wartung erheblich.
+2. **Teamarbeit**: In einem Team ist es wichtig, dass jeder den Code der anderen verstehen und daran arbeiten kann.
+3. **Qualität**: Sauberer Code führt zu weniger Fehlern und höherer Softwarequalität.
+4. **Skalierbarkeit**: Projekte sind einfacher zu erweitern und anzupassen, wenn der zugrunde liegende Code sauber ist.
 
 ## Disskussionsaufgabe: [15 min]
 Überlege dir für jeden der folgenden 4 Merkmale von Clean Code jeweils eine Verabredung du in deinem
@@ -30,29 +27,29 @@ Entwicklerteam treffen kannst, umd diese Ziele zu erfüllen:
 - **Wartbarkeit**: Leicht zu ändern und zu erweitern.
 - **Effizienz**: Der Code sollte nicht nur funktionieren, sondern auch effizient sein.
 
-## Warum ist Clean Code wichtig?
+# Zen of Python [30 min]
 
-1. **Wartung**: Der Großteil der Kosten eines Softwareprojekts entsteht in der Wartungsphase. Sauberer Code erleichtert
-   die Wartung erheblich.
-2. **Teamarbeit**: In einem Team ist es wichtig, dass jeder den Code der anderen verstehen und daran arbeiten kann.
-3. **Qualität**: Sauberer Code führt zu weniger Fehlern und höherer Softwarequalität.
-4. **Skalierbarkeit**: Projekte sind einfacher zu erweitern und anzupassen, wenn der zugrunde liegende Code sauber ist.
+Öffne deine Console und führe `import this` aus , um das [Zen of Python](https://gist.github.com/corysimmons/8b94c08421dec18bbaa4)
+zu öffnen. Liese dir durch was du siehst und diskutiere darüber.
 
-[//]: # (## Diskussion: Bedeutung von Clean Code)
+## Beispiele für gute Code Konventionen 
 
-[//]: # ()
-[//]: # (- **Frage**: Warum glauben Sie, ist Clean Code besonders in großen Projekten wichtig?)
+### [Gestaltung und Testen von Funktionen](Funktionsgestaltung.md) [100 min]
 
-[//]: # (- **Aktivität**: Finden Sie Beispiele für schlechten Code in Ihrem eigenen Projekt und diskutieren Sie, wie dieser)
+### [DRY Don't repeat yourself](DRY.md) [20 min]
 
-[//]: # (  verbessert werden könnte.)
+### [Typehints](Typehints.md) [50 min]
 
-[//]: # (## Zusammenfassung)
+### [GuardClauses](GuardClauses.md) [45 min]
 
-[//]: # ()
-[//]: # (In dieser Einführung haben wir die Grundlagen von Clean Code und seine Bedeutung in der Softwareentwicklung besprochen.)
+### [Variablenbenennung](Variablenbenennung.md) [35 min]
 
-[//]: # (Die Fähigkeit, sauberen und effizienten Code zu schreiben, ist eine wesentliche Fähigkeit für jeden Entwickler.)
+### [Globaler Variablen sind böse](Globale_Parameter.md) [30 min]
 
+### [Fehlerbehandlung](Fehlerbehandlung.md) [50 min]
 
-[weiter](../Basics)
+### [List Comprehensions](ListComprehension.md) [45 min]
+
+### [Benennungskonventionen](Benennungskonventionen.md)  [30 min]
+
+### [Kommentaren und docstrings](Kommentare.md) [75 min]

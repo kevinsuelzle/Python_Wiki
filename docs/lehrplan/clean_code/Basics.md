@@ -1,4 +1,4 @@
-$$$ Datei im Checkliste umwandeln? Vielleicht?
+$$$ Task 14: Das hier in eine Checkliste verwandeln
 
 # Grundlegende Prinzipien
 
@@ -23,5 +23,3 @@ $$$ Datei im Checkliste umwandeln? Vielleicht?
 - **Einhalten eines konsistenten Codierungsstils:** Die Lernenden sollen die Bedeutung eines konsistenten Codierungsstils erkennen und diesen in der Praxis umsetzen.
 - **Refactoring-Kompetenz:** Die Teilnehmer sollen Grundkenntnisse im Refactoring erlangen, um die Lesbarkeit und Wartbarkeit des Codes zu verbessern.
 - **Verständnis für Funktionen und Klassen**: Die Teilnehmer lernen, wie Funktionen und Klassen strukturiert werden können, um den Anforderungen von guter Programmierung zu genügen.
-
-[weiter](TheGoodPractices.md)
