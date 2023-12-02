@@ -11,7 +11,11 @@ mehrere wichtige Funktionen:
 
 1. **Daten speichern**:
    Variablen dienen als Speicherorte im Arbeitsspeicher eines Computers, in denen Daten gespeichert werden können.
-   Diese Daten können Zahlen, Texte, Listen, Objekte oder andere Datentypen sein.
+   Diese Daten können Zahlen, Texte, und andere möglichen anderen Objekte sein.
+    ```python
+    sum = 10 + 13
+    print(sum)
+    ```
 
 2. **Lesbarkeit und Wartbarkeit**:
    Variablen helfen, den Code verständlicher zu machen. Durch sinnvolle Namen wird der Zweck des Codes klarer, was die
@@ -20,13 +24,26 @@ mehrere wichtige Funktionen:
 3. **Berechnungen durchführen und Ergebnisse speichern**:
    Variablen ermöglichen die Durchführung von Berechnungen mit gespeicherten Werten. So können beispielsweise
    mathematische Operationen ausgeführt und das Ergebnis in einer anderen Variablen gespeichert werden.
-
+```python
+nominator = 3
+denominator = 6
+result = nominator / denominator
+print(result)
+```
 4. **Daten wiederverwenden**:
    Variablen werden eingesetzt, um Daten in verschiedenen Teilen eines Programms zu nutzen.
 
 5. **Speichern von Zuständen**:
    In komplexeren Anwendungen dienen Variablen dazu, den Zustand einer Anwendung zu speichern und zu verwalten.
    Beispiele hierfür sind der Login-Status eines Nutzers oder die Anzahl der Artikel in einem Warenkorb.
+
+```python
+name = "Hans"
+print("Hallo " + name)
+print("Ich heiße auch " + name)
+name = "Klaus"
+print("Hallo auch " + name)
+```
 
 Variablen sind somit essenziell für die Erstellung flexibler, effizienter und verständlicher Programme und bilden die
 Grundlage für fast alle Operationen und Logiken in der Programmierung.

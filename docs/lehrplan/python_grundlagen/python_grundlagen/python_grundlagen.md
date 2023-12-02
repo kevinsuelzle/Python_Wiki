@@ -1,6 +1,7 @@
 # Einführung
 
 # Was ist Programmierung?
+Zeit: 10 Min
 
 Programmierung ist für uns der Prozess der Erstellung von Anweisungen, die von einem Computer ausgeführt werden, um
 bestimmte Aufgaben zu erfüllen oder Probleme zu lösen.
@@ -14,10 +15,13 @@ Im professionellen Umfeld steht die Wertschöpfung durch Software-Entwicklung an
 Probleme gelöst, die ein Unternehmen oder dessen Kunden haben.
 
 ## Aufgabe:
+Zeit: 15 Min + 20 Min
 
-Zeit: 20 Min
-
+TODO: Ich finde diese Aufgabe zu schwammig. Ich würde vorschlagen, dass man hier eine Liste
+von Aspekten angibt und diese zur Diskussion stellt. Z.B. bringe die folgenden in eine Rangfolge der wichtigkeit. 
 Diskutiert, welche Aspekte alles zur Programmierung gehören? Wie wichtig sind diese?
+
+TODO: hier auf eine zweite Seite verweisen, damit die "Kernaspekte" nicht die Aufgabe spoilern.
 
 ## Kernaspekte der Programmierung
 
@@ -39,13 +43,28 @@ Diskutiert, welche Aspekte alles zur Programmierung gehören? Wie wichtig sind d
 Das Schreiben von Code ist für die Programmierung zwar unerlässlich, aber eigentlich nur ein kleiner, aber wichtiger
 Teil.
 
+TODO: hier würde ich noch mal folgendes einschieben:
+Aufgabe: im folgenden Video berichtet ein Entwickler, wie viel Zeit er in seiner Tätigkeit für folgende Bereiche
+aufwendet: Selbst Code schreiben, fremden Code schreiben, Tests schreiben, Meetings.
+Mache eine Schätzung, wie viel Prozent seiner Zeit er wo verbringt.
+Dann könntest du ein zwei kurze Handyvideos aufnehmen lassen (Kai, du selbst, ...)
+Außerdem noch mal ein zweites Video aufnehmen lassen, in dem sie in 40 sekunden beschreiben, warum es trotzdem 
+sehr wertvoll ist, dass man programmieren kann, auch wenn man es nicht soo oft macht.
+Ich weiß nicht, ob die Aufgabe gut ist. sie könnte ggf. auch demotivieren. Aber früher oder später
+kriegen sie das sowieso raus, da ist es besser, wenn man da von vornherein gegenansteuert.
+
 
 ## Die Rolle von Python in der Programmierung
+10 Min
 
 Python ist eine weit verbreitete und vielseitige Programmiersprache, die sich durch ihre klare Syntax und Lesbarkeit
-auszeichnet. Python ist eine Skriptsprache, das heißt der Code wird während der Ausführung in Maschinensprache
+auszeichnet.
+
+TODO: Ich glaube den folgendne Teil würde ich weglassen und nach hinten verschieben, da das man das jetzt als Teilnehmer
+noch nicht verteht:
+*das Python ist eine Skriptsprache, das heißt der Code wird während der Ausführung in Maschinensprache
 übersetzt. Im Gegensatz dazu gibts es sogenannte kompilierte Sprachen, bei denen diese Übersetzung unmittelbar nach dem
-Schreiben des Codes stattfindet. Beide Ansätze haben Vor- und Nachteile.
+Schreiben des Codes stattfindet. Beide Ansätze haben Vor- und Nachteile.*
 
 Hier sehen wir einige Gründe, warum Python in der Welt der Programmierung eine wichtige Rolle spielt:
 
@@ -68,7 +87,7 @@ die es zu einer der beliebtesten Sprachen in der modernen Programmierung machen.
 ---
 
 # Integrated Development Environments (IDEs) in der Programmierung
-
+20 Min
 ## Was ist ein IDE?
 
 Ein Integrated Development Environment (IDE) ist eine Softwareanwendung, die umfangreiche Werkzeuge für Programmierer
@@ -83,16 +102,19 @@ Auf euren Rechnern sind sowohl VSCode als auch PyCharm vorinstalliert, sodass wi
 
 ## Beliebte IDEs für Python
 
+TODO: Hier bitte zu jeder IDE noch mal ein Screenshot machen.
+TDOO: Ich würde hier noch als 4. die Pythonconsole hinzufügen.
+
 ### 1. Visual Studio Code (VSCode)
 
 Visual Studio Code, entwickelt von Microsoft, ist ein kostenloser, leistungsfähiger und leichtgewichtiger Code-Editor.
 Er ist erweiterbar und anpassbar, was ihn zu einer beliebten Wahl für viele Programmiersprachen, einschließlich Python,
 macht.
 
-- **Features**:
-    - Unterstützung für zahlreiche Programmiersprachen und Frameworks.
-    - Integrierter Git-Support.
-    - Große Auswahl an Erweiterungen für erweiterte Funktionen wie Auto-Completion, Code-Linting, Themes und mehr.
+**Features**:
+- Unterstützung für zahlreiche Programmiersprachen und Frameworks.
+- Integrierter Git-Support (Git dient dazu Versionen eurer Projekte zu erstellen und zu verwalten).
+- Große Auswahl an Erweiterungen für erweiterte Funktionen wie Auto-Completion, Code-Linting, Themes und mehr.
 
 VSCode kann durch die Python-Erweiterung, die Features wie IntelliSense, Debugging, Jupyter Notebooks und mehr umfasst,
 effektiv für Python-Entwicklung genutzt werden.
@@ -102,41 +124,44 @@ effektiv für Python-Entwicklung genutzt werden.
 PyCharm ist eine IDE, die speziell für Python entwickelt wurde und von JetBrains angeboten wird. Sie ist deutlich
 umfangreicher als VSCode.
 
-- **Features**:
-    - Integrierte Tools für professionelle Python-Entwicklung.
-    - Smart Code Navigation, Refactoring-Tools und ein leistungsstarker Debugger.
-    - Integration mit gängigen Frameworks und Tools wie Django, Flask, Google App Engine, und mehr.
+**Features**:
+- Integrierte Tools für professionelle Python-Entwicklung.
+- Smart Code Navigation, Refactoring-Tools und ein leistungsstarker Debugger.
+- Integrierter Git-Support
+- Integration mit gängigen Frameworks und Tools wie Django, Flask, Google App Engine, und mehr.
 
 PyCharm bietet eine tiefe Integration mit Python-spezifischen Werkzeugen und eine reichhaltige Entwicklungsumgebung,
 ie besonders für größere Projekte nützlich ist.
+
+Pycharm besitzt eine kostenfreie "Community Edition" und eine kostenpflichtige "Professional Edition".
 
 ### 3. Jupyter Notebooks
 
 Jupyter Notebooks bieten eine webbasierte interaktive Entwicklungsumgebung, die es ermöglicht,
 Code auszuführen, Ergebnisse in Echtzeit zu sehen und gleichzeitig Erklärungen, Formeln und Visualisierungen
-einzubinden.
+einzubinden. Es wird besonders gern in der Datenanalyse, wissenschaftlichen Forschung und Lehre.
 
-- **Einsatzgebiete**:
-    - Besonders beliebt in der Datenanalyse, wissenschaftlichen Forschung und Lehre.
-    - Ermöglicht das Teilen von lebendigen Code-Dokumenten, was die Zusammenarbeit und das Lernen erleichtert.
+**Features**:
+- Dokumente sind über das .ipynb in Code und Markdown Blöcke unterteilt.
+- Markdown kann für eine komfortable Dokumentation genutzt werden.
+- Ausführung der Codeblöcke artet super mit gängigen Visualisierungsbibliotheken wie matplotlib zusammen.
 
 Jupyter Notebooks sind ideal für exploratives Programmieren und die Visualisierung von Daten.
 Sie unterstützen eine Mischung aus Code, Text, Bildern und Diagrammen.
 
-Sowohl VSCode als auch PyCharm bieten die Möglichkeit direkt mit Jupyter Notebook zu arbeiten.
+Sowohl VSCode als auch PyCharm bieten die Möglichkeit direkt mit .ipynb Dateien zu arbeiten und haben damit ein
+ähnliches Nutzererlebnis. Statt PyCharm würde man aber die Nutzung von **DataSpell** von Jetbrains empfehlen,
+da dieses speziel auf dieses Dateiformat ausgelegt ist.  
 
 ## Aufgabe: Das erste Programm
+25 Min bis es bei jedem klappt
 
-Zeitrahmen: 30 min + 15 min Diskussion
-
-1. Findet euch in Gruppen von 3 Personen. Die Häälfte der Gruppen wird PyCharm und die andere Hälfte VSCode nutzen.
-2. Macht euch mit PyCharm bzw. VSCode vertraut in dem hier folgenden Code programmiert und ausführt:
+TODO: Das würde ich als einzelaufgabe formulieren:
+Führe die folgenden Codezeilen in allen drei IDEs aus.
 
 ```python
 print("Hello Wolfsburg! Das ist mein erstes Programm!")
 ```
-
-3. Erklärt einer Gruppe, welche die andere IDE genutzt hat, wie eure IDE aufgebaut ist.
 
 ## Zusammenfassung
 
