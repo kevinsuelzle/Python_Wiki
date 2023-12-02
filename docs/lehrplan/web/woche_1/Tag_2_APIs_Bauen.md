@@ -6,6 +6,7 @@ Inhalt:
   - Wie funktionieren APIs intern?
     - Flussdiagram
     - API Architektur Prinzipien
+      - JSON (und XML)
     - Deployment (Ausblick)
       - Cloud (Azure)
       - Docker
@@ -21,6 +22,8 @@ Inhalt:
     - Aufgaben 1 + 2
 
     - Flask Advanced
+      - Restful API Designs
+      - Routen
       - Data Handling
       - Fehler Codes
       - CURL + Postman & Python Requests Testing
@@ -31,6 +34,7 @@ Inhalt:
 
 
 ## Aufgaben
+Zeit: 5-10 min / Aufgabe
 1. **Hello World Flask & Django API**: In Gruppen von 2, erstellt jeweils einen GET Endpunkt der den Text "Hallo Welt!" als Response zurückgibt in Flask und Django.
 2. **Reflexionsrunden Django vs Flask**: Vergleicht gemeinsam die Lesbarkeit, Einfachheit und den Syntax der beiden Frameworks.
 3. **Simple GET API Tested with Postman**:
@@ -50,4 +54,4 @@ Zeit: 30-45 min
 
 
 ## Weiterführende Materialien
-- Rate Limiting: Einschränkungen mit dem offiziellen [Flask Limiter Extension](https://flask-limiter.readthedocs.io/en/stable/)
+- **Rate Limiting**: API Einschränkungen mit dem offiziellen [Flask Limiter Extension](https://flask-limiter.readthedocs.io/en/stable/)

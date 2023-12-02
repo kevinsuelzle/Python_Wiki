@@ -27,6 +27,7 @@ Inhalt:
         - Authentication/Keys/Content-Type/User-Agent/Accept/Cookie
 
 ## Aufgaben
+Zeit: 5-10 min / Aufgabe
 1. **Terminal CURL Wetter API abrufen**: Nutze die Python Request Library um die Wetter API https://open-meteo.com/ nach deinem aktuellen Standort abzufragen.
 2. **Python Wetter API abrufen**: Nutze die Python Request Library um die Wetter API https://open-meteo.com/ nach deinem aktuellen Standort abzufragen.
 3. **Postman Wetter API abrufen**: Nutze die Python Request Library um die Wetter API https://open-meteo.com/ nach deinem aktuellen Standort abzufragen.
