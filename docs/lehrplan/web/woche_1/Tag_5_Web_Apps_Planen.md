@@ -29,7 +29,7 @@ Inhalt:
       - Feature-Driven Development
 
   - Architektur und Requirements
-    - Grundlagen und Designprinzipien
+    - Grundlagen und Designprinzipien (Kurz - Rückblick Clean Code Woche 6-7)
       - Modularität
       - Separation of Concerns
       - DRY (Don't Repeat Yourself)

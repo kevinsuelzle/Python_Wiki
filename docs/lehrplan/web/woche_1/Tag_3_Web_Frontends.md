@@ -16,12 +16,7 @@ Inhalt:
     - HTML, CSS, JS
       - Markup (HTML, XML) Vergleich Markdown
     - HTTP(S)
-    - Rendering (Ausblick)
-      - Templates (Flask)
-      - Server-Side vs. Client-Side
-        - React
-        - Vue
-    - Web-Accessibility
+
   - HTML Deep Dive
     - Die wichtigsten Tags
     - CSS 
@@ -37,12 +32,7 @@ Inhalt:
 
     - Aufgaben 3 - 5
 
-    - JS
-      - Eventhandler
-      - DOM-Manipulation
-      - Fetch API
-
-    - Aufgaben 6 + 7
+    - Web-Accessibility
 
 
 ## Aufgaben
@@ -54,9 +44,6 @@ Zeit: 5-10 min / Aufgabe
 4. **Styling mit Bootstrap**: Verbessere das Styling deines Formulares mit Bootstrap.
 5. **Vergleich von simplem CSS und Bootstrap**: Diskutiert in 2er Gruppen über das von euch verwendete Styling und vergleicht eure eigenes CSS Sytling mit dem Bootstrap Formular.
 
-
-6. **Interaktiver Showroom-Navigator**: Nutze JavaScript um die einfache Produktseite in einen einfachen interaktiven Showroom zu verwandeln. Verwende eine von dir erstellte JSON Datei um die Infos zu verschiedenen Fahrzeugen zu speichern.
-7. **Showroom-Navigator mit Showroom-API**: Lagere die Infos der einzelnen Modelle in eine Flask API aus und nutze die fetch API um die jeweiligen Infos abzurufen.
 
 
 ## Komplex-Aufgaben (Capstone Projekt)
