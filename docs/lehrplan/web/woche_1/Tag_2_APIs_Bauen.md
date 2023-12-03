@@ -1,7 +1,6 @@
 # Tag 2 - APIs Bauen
 
-Inhalt:
-
+### Inhalt
 - Wie baut man eine API?
   - Wie funktionieren APIs intern?
     - Flussdiagram
@@ -19,35 +18,85 @@ Inhalt:
           - Wie kann ein lokales Programm auf HTTP Requests nach "außen" hören?
             - Ports
 
-    - Aufgaben 1 + 2
-
     - Flask Advanced
       - Restful API Designs
       - ORMs
       - Routen
       - Data Handling
       - Fehler Codes
-      - CURL + Postman & Python Requests Testing
+      - Postman & Python Requests Testing
         - Wie testet man einfach APIs? (Rückblick Testing 4-5)
-        - Repeatable Testing mit Postman
+        - Postman Collections Repeatable Testing mit Postman
 
-    - Aufgaben 3 + 4
+# Wie baut man eine API?
+... todo
 
+
+## Tagesprojekt
+Ziel des heutigen Tages ist es, eine Wetterabfrage mit Python in einer CLI Anwendung zu integrieren und informationen zum Wetter einer Stadt zu bekommen.
+
+![Projekt](../assets/)
+
+
+
+## Wie funktionieren APIs intern?
+... todo
+
+
+## API Architektur Prinzipien
+- JSON (und XML)
+
+
+### Deployment (Ausblick)
+- Cloud (Azure)
+- Docker
+
+# Web API Frameworks
+## Flask & Django
+- Intro & Unterschiede
+- Beispiele
+  - Hallo Welt der APIs
+    - Live-Coding zur Demonstration der "Einfachheit"
+  - localhost / HTTP(S) Server
+    - Wie kann ein lokales Programm auf HTTP Requests nach "außen" hören?
+      - Ports
+- Intro & Unterschiede
+- Beispiele
+  - Hallo Welt der APIs
+    - Live-Coding zur Demonstration der "Einfachheit"
+  - localhost / HTTP(S) Server
+    - Wie kann ein lokales Programm auf HTTP Requests nach "außen" hören?
+      - Ports
 
 ## Aufgaben
-Zeit: 5-10 min / Aufgabe
+Zeit: 10-15 min / Aufgabe
 1. **Hello World Flask & Django API**: In Gruppen von 2, erstellt jeweils einen GET Endpunkt der den Text "Hallo Welt!" als Response zurückgibt in Flask und Django.
 2. **Reflexionsrunden Django vs Flask**: Vergleicht gemeinsam die Lesbarkeit, Einfachheit und den Syntax der beiden Frameworks.
-3. **Simple GET API Tested with Postman**:
-4. **CRUD-API with Python Requests Test + Mocked API**: 
+3. **GET API**: ...todo
+4. **Simple CRUD Api**: ...todo
 
+# Flask Advanced
+- Restful API Designs
+  - Planning
+- ORMs
+- Routen
+- Data Handling
+- Fehler Codes
+- Postman & Python Requests Testing
+  - Wie testet man einfach APIs? (Rückblick Testing 4-5)
+  - Postman Collections Repeatable Testing mit Postman
 
-## Komplex-Aufgaben (Capstone Projekt)
-**Todo CLI mit Postman Tests**
+## Komplex-Aufgabe (Capstone Projekt)
+**CRUD Inventory Management API**
+
+- Start with Planning
+  - Integration Test-Driven
+  - Postman Tests
+- Flask
 
 API, über die der Benutzer Aufgaben mit Titel und Fälligkeitsdatum erstellen und ihre To-Do-Liste verwalten können.
 
-Zeit: 30-45 min 
+Zeit: 45-60 min 
 
 - Postman Test Requests (GET, POST, PUT, DELETE)
 - User CRUD-API
