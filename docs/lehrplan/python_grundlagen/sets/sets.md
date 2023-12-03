@@ -1,23 +1,26 @@
 # Sets
 
-Sets in Python sind eine Datenstruktur, die für die Speicherung einer ungeordneten Sammlung von einzigartigen Elementen
-verwendet wird. Sie bieten folgende Eigenschaften:
+Ein Set ist eine Datenstruktur, die für die Speicherung einer ungeordneten Sammlung von einzigartigen Elementen
+verwendet wird. Das heißt, dass sich die Elemente in einem Set nicht wiederholen. 
+
+Sets bieten folgende Eigenschaften:
 
 ## Eigenschaften von Sets
 
 1. **Ungeordnet**:
     - Sets haben keine feste Reihenfolge der Elemente.
-    - Sie bieten keinen Indexzugriff wie Listen oder Tupel.
+    - Sie bieten dadurch auch keinen Indexzugriff wie Listen oder Tupel.
 
 2. **Einzigartige Elemente**:
     - Jedes Element in einem Set ist einzigartig.
-    - Duplikate sind nicht erlaubt und werden ignoriert.
+    - Duplikate werden ignoriert und tauchen im Set nur einmal auf..
 
 3. **Unveränderliche Elemente**:
     - Sets können nur unveränderliche (immutable) Datentypen als Elemente enthalten, wie Zahlen, Strings und Tupel.
+    - Das heißt, Listen und Dictionaries können zum Beispiel nicht in Sets gespeichert werden.
 
 4. **Veränderlich**:
-    - Sets selbst sind veränderlich, d.h., man kann Elemente hinzufügen und entfernen.
+    - Sets selbst sind veränderlich, das heißt man kann Elemente hinzufügen und entfernen.
 
 5. **Kein Indexzugriff**:
     - Aufgrund der Ungeordnetheit der Elemente gibt es keinen direkten Indexzugriff.
@@ -32,6 +35,7 @@ Sets werden mit geschweiften Klammern `{}` oder der `set()`-Funktion erstellt.
 ```python
 einzigartige_zahlen = {1, 2, 3, 4, 5}
 buchstaben = {'a', 'b', 'c', 'd'}
+abc = set(['a', 'b', 'c'])
 
 for element in buchstaben:
     print(element)
@@ -43,32 +47,33 @@ Sets sind nützlich für mathematische Operationen wie Union, Schnitt und Differ
 
 Hier eine Übersicht über häufig verwendete Funktionen im Zusammenhang mit Sets:
 
-| Funktion                     | Beschreibung                                                                                           | Beispiel                                 |
-|------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------|
-| `add(x)`                     | Fügt das Element `x` zum Set hinzu.                                                                    | `set1.add(5)`                            |
-| `remove(x)`                  | Entfernt das Element `x` aus dem Set. Wirft einen Fehler, falls `x` nicht vorhanden ist.               | `set1.remove(5)`                         |
-| `discard(x)`                 | Entfernt das Element `x` aus dem Set. Kein Fehler, wenn `x` nicht vorhanden ist.                       | `set1.discard(5)`                        |
-| `pop()`                      | Entfernt und gibt ein zufälliges Element aus dem Set zurück.                                           | `element = set1.pop()`                   |
-| `clear()`                    | Entfernt alle Elemente aus dem Set.                                                                    | `set1.clear()`                           |
-| `union(set2)`                | Gibt ein Set zurück, dass die Summe der Elemente von `set1` und `set2` enthält                         |                                          |                                                                                                     | Gibt ein neues Set zurück, das die Vereinigung von `set1` und `set2` ist.                              | `set3 = set1.union(set2)`                |
-| `intersection(set2)`         | Gibt ein neues Set zurück, das die Schnittmenge von `set1` und `set2` ist.                             | `set3 = set1.intersection(set2)`         |
-| `difference(set2)`           | Gibt ein neues Set zurück, das die Elemente von `set1` enthält, die nicht in `set2` sind.              | `set3 = set1.difference(set2)`           |
-| `symmetric_difference(set2)` | Gibt ein neues Set zurück, das Elemente enthält, die in `set1` oder `set2`, aber nicht in beiden sind. | `set3 = set1.symmetric_difference(set2)` |
+| Funktion                          | Beschreibung                                                                                           | Beispiel                                 |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------|
+| `set1.add(x)`                     | Fügt das Element `x` zum Set hinzu.                                                                    | `set1.add(5)`                            |
+| `set1.remove(x)`                  | Entfernt das Element `x` aus dem Set. Wirft einen Fehler, falls `x` nicht vorhanden ist.               | `set1.remove(5)`                         |
+| `set1.discard(x)`                 | Entfernt das Element `x` aus dem Set. Kein Fehler, wenn `x` nicht vorhanden ist.                       | `set1.discard(5)`                        |
+| `set.1pop()`                      | Entfernt und gibt ein zufälliges Element aus dem Set zurück.                                           | `element = set1.pop()`                   |
+| `set1.clear()`                    | Entfernt alle Elemente aus dem Set.                                                                    | `set1.clear()`                           |
+| `set1.union(set2)`                | Gibt ein Set zurück, dass die Summe der Elemente von `set1` und `set2` enthält                         |                                          |                                                                                                     | Gibt ein neues Set zurück, das die Vereinigung von `set1` und `set2` ist.                              | `set3 = set1.union(set2)`                |
+| `set1.intersection(set2)`         | Gibt ein neues Set zurück, das die Schnittmenge von `set1` und `set2` ist.                             | `set3 = set1.intersection(set2)`         |
+| `set1.difference(set2)`           | Gibt ein neues Set zurück, das die Elemente von `set1` enthält, die nicht in `set2` sind.              | `set3 = set1.difference(set2)`           |
+| `set1.symmetric_difference(set2)` | Gibt ein neues Set zurück, das Elemente enthält, die in `set1` oder `set2`, aber nicht in beiden sind. | `set3 = set1.symmetric_difference(set2)` |
 
-Für einige Funktionen gibt es auch Kurzformen:
+Für einige Funktionen gibt es seit neustem auch Kurzformen:
 
-- Union: set1 | set2 gibt ein neues Set mit allen Elementen aus beiden Sets zurück.
-- Schnittmenge: set1 & set2 gibt ein Set mit Elementen zurück, die in beiden Sets vorhanden sind.
-- Differenz: set1 - set2 gibt ein Set mit Elementen zurück, die in set1, aber nicht in set2 sind.
-- Symmetrische Differenz: set1 ^ set2 gibt ein Set mit Elementen zurück, die nur in einem der beiden Sets sind.
+- `set1.union(set2)`: `set1 | set2` gibt ein neues Set mit allen Elementen aus beiden Sets zurück.
+- `set1.intersect(set2)`: `set1 & set2` gibt ein Set mit Elementen zurück, die in beiden Sets vorhanden sind.
+- `set1.difference(set2)`: `set1 - set2` gibt ein Set mit Elementen zurück, die in set1, aber nicht in set2 sind.
+- `set1.symmetric_difference(set2)`: `set1 ^ set2` gibt ein Set mit Elementen zurück, die nur in einem der beiden Sets sind.
 
-Sets sind nützlich, um einzigartige Elemente zu speichern und schnelle Operationen wie Vereinigungen, Schnittmengen und
-Differenzen durchzuführen.
+Sets sind nützlich, um Mengen zu speichern, in denen nur das Vorhandensein eines Elements relevant ist, jedoch
+nicht wie oft dieses Element vorhanden ist.
 
 ## Anwendungsbeispiele
 
 - Entfernen von Duplikaten: Sets können verwendet werden, um Duplikate aus einer Liste zu entfernen.
-- Mitgliedschaftstests: Aufgrund ihrer internen Struktur sind Sets effizienter für Mitgliedschaftstests als Listen.
+- Mitgliedschaftstests: Aufgrund ihrer internen Struktur sind Sets effizienter um zu Testen ob Elemente in dieser 
+Struktur vorhanden sind als Listen.
 
 ## Aufgaben
 
@@ -96,109 +101,109 @@ Differenzen durchzuführen.
 Hier sind die Lösungen zu den Übungsaufgaben zu Python Sets:
 
 1. **Set Erstellung**
-   ```python
-   mein_set = {1, 2, 3, 4, 5}
-   print(mein_set)
-   ```
+```python
+mein_set = {1, 2, 3, 4, 5}
+print(mein_set)
+```
 
 2. **Duplikatentfernung**
-   ```python
-   meine_liste = [1, 2, 2, 3, 4, 5, 5, 6]
-   mein_set = set(meine_liste)
-   print(mein_set)
-   ```
+```python
+meine_liste = [1, 2, 2, 3, 4, 5, 5, 6]
+mein_set = set(meine_liste)
+print(mein_set)
+```
 
 3. **Elemente Hinzufügen**
-   ```python
-   mein_set = {1, 2, 3, 4, 5}
-   mein_set.update([6, 7, 8])
-   print(mein_set)
-   ```
+```python
+mein_set = {1, 2, 3, 4, 5}
+mein_set.update([6, 7, 8])
+print(mein_set)
+```
 
 4. **Element Entfernen**
-   ```python
-   mein_set = {1, 2, 3, 4, 5, 6, 7, 8}
-   mein_set.remove(5)
-   print(mein_set)
-   ```
+```python
+mein_set = {1, 2, 3, 4, 5, 6, 7, 8}
+mein_set.remove(5)
+print(mein_set)
+```
 
 5. **Set Durchlaufen**
-   ```python
-   mein_set = {1, 2, 3, 4, 5}
-   for element in mein_set:
-       print(element)
-   ```
+```python
+mein_set = {1, 2, 3, 4, 5}
+for element in mein_set:
+   print(element)
+```
 
 6. **Set Union**
-   ```python
-   set1 = {1, 2, 3}
-   set2 = {3, 4, 5}
-   union_set = set1 | set2
-   print(union_set)
-   ```
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+union_set = set1 | set2
+print(union_set)
+```
 
 7. **Set Schnittmenge**
-   ```python
-   set1 = {1, 2, 3}
-   set2 = {3, 4, 5}
-   schnittmenge = set1 & set2
-   print(schnittmenge)
-   ```
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+schnittmenge = set1 & set2
+print(schnittmenge)
+```
 
 8. **Set Differenz**
-   ```python
-   set1 = {1, 2, 3}
-   set2 = {3, 4, 5}
-   differenz = set1 - set2
-   print(differenz)
-   ```
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+differenz = set1 - set2
+print(differenz)
+```
 
 9. **Symmetrische Differenz**
-   ```python
-   set1 = {1, 2, 3}
-   set2 = {3, 4, 5}
-   sym_differenz = set1 ^ set2
-   print(sym_differenz)
-   ```
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+sym_differenz = set1 ^ set2
+print(sym_differenz)
+```
 
 10. **Set Länge**
-    ```python
-    mein_set = {1, 2, 3, 4, 5}
-    print(len(mein_set))
-    ```
+```python
+mein_set = {1, 2, 3, 4, 5}
+print(len(mein_set))
+```
 
 11. **Set Mitgliedschaftstest**
-    ```python
-    mein_set = {1, 2, 3, 4, 5}
-    print(3 in mein_set)
-    ```
+```python
+mein_set = {1, 2, 3, 4, 5}
+print(3 in mein_set)
+```
 
 12. **Set Leeren**
-    ```python
-    mein_set = {1, 2, 3, 4, 5}
-    mein_set.clear()
-    print(mein_set)
-    ```
+```python
+mein_set = {1, 2, 3, 4, 5}
+mein_set.clear()
+print(mein_set)
+```
 
 13. **Subsets**
-    ```python
-    set1 = {1, 2, 3}
-    set2 = {1, 2, 3, 4, 5}
-    print(set1.issubset(set2))
-    ```
+```python
+set1 = {1, 2, 3}
+set2 = {1, 2, 3, 4, 5}
+print(set1.issubset(set2))
+```
 
 14. **Supersets**
-    ```python
-    set1 = {1, 2, 3}
-    set2 = {1, 2, 3, 4, 5}
-    print(set2.issuperset(set1))
-    ```
+```python
+set1 = {1, 2, 3}
+set2 = {1, 2, 3, 4, 5}
+print(set2.issuperset(set1))
+```
 
 15. **Frozen Set**
-    ```python
-    mein_frozenset = frozenset([1, 2, 3, 4, 5])
-    print(mein_frozenset)
-    # Frozensets sind wie normale Sets, aber sie können nicht verändert werden
-    ```
+```python
+mein_frozenset = frozenset([1, 2, 3, 4, 5])
+print(mein_frozenset)
+# Frozensets sind wie normale Sets, aber sie können nicht verändert werden
+```
 
     

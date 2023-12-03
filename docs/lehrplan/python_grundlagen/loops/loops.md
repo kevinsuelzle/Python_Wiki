@@ -361,108 +361,108 @@ Bestellung an und fragt, ob der Benutzer bar oder mit Karte zahlen möchte.
 Natürlich, hier sind die Lösungen zu den Übungsaufgaben zu `for`-Schleifen:
 
 1. Schleife von 1 bis 10:
-   ```python
-   for zahl in range(1, 11):
-       print(zahl)
-   ```
+```python
+for zahl in range(1, 11):
+   print(zahl)
+```
 
 2. Liste von Städten ausgeben:
-   ```python
-   staedte = ["Berlin", "Paris", "London", "New York"]
-   for stadt in staedte:
-       print(stadt)
-   ```
+```python
+staedte = ["Berlin", "Paris", "London", "New York"]
+for stadt in staedte:
+   print(stadt)
+```
 
 3. Summe der Zahlen von 1 bis 100 berechnen:
-   ```python
-   summe = 0
-   for zahl in range(1, 101):
-       summe += zahl
-   print(summe)
-   ```
+```python
+summe = 0
+for zahl in range(1, 101):
+   summe += zahl
+print(summe)
+```
 
 4. Längsten Namen in einer Liste finden:
-   ```python
-   namen = ["Anna", "Max", "Benjamin", "Alexandra"]
-   laengster_name = ""
-   for name in namen:
-       if len(name) > len(laengster_name):
-           laengster_name = name
-   print("Längster Name:", laengster_name)
-   ```
+```python
+namen = ["Anna", "Max", "Benjamin", "Alexandra"]
+laengster_name = ""
+for name in namen:
+   if len(name) > len(laengster_name):
+       laengster_name = name
+print("Längster Name:", laengster_name)
+```
 
 5. Quadratzahlen von 1 bis 10 ausgeben:
-   ```python
-   for zahl in range(1, 11):
-       quadrat = zahl ** 2
-       print(quadrat)
-   ```
+```python
+for zahl in range(1, 11):
+   quadrat = zahl ** 2
+   print(quadrat)
+```
 
 6. Bestimmte Frucht in einer Liste suchen und ausgeben:
-   ```python
-   fruechte = ["Apfel", "Banane", "Kirsche", "Erdbeere"]
-   gesuchte_frucht = "Banane"
-   for frucht in fruechte:
-       if frucht == gesuchte_frucht:
-           print(f"{gesuchte_frucht} wurde gefunden!")
-           break
-   else:
-       print(f"{gesuchte_frucht} wurde nicht gefunden.")
-   ```
+```python
+fruechte = ["Apfel", "Banane", "Kirsche", "Erdbeere"]
+gesuchte_frucht = "Banane"
+for frucht in fruechte:
+   if frucht == gesuchte_frucht:
+       print(f"{gesuchte_frucht} wurde gefunden!")
+       break
+else:
+   print(f"{gesuchte_frucht} wurde nicht gefunden.")
+```
 
 7. Gerade Zahlen von 1 bis 20 ausgeben:
-   ```python
-   for zahl in range(2, 21, 2):
-       print(zahl)
-   ```
+```python
+for zahl in range(2, 21, 2):
+   print(zahl)
+```
 
 9. Buchstaben eines Wortes in umgekehrter Reihenfolge ausgeben:
-   ```python
-   wort = "Python"
-   for buchstabe in reversed(wort):
-       print(buchstabe)
-   ```
+```python
+wort = "Python"
+for buchstabe in reversed(wort):
+   print(buchstabe)
+```
 
 
 11. Fakultät einer Zahl `n` berechnen:
-    ```python
-    n = 5
-    faktor = 1
-    for zahl in range(1, n + 1):
-        faktor *= zahl
-    print(f"Fakultät von {n} ist {faktor}")
-    ```
+```python
+n = 5
+faktor = 1
+for zahl in range(1, n + 1):
+    faktor *= zahl
+print(f"Fakultät von {n} ist {faktor}")
+```
 
 12. Temperaturen von Celsius in Fahrenheit umwandeln und ausgeben:
-    ```python
-    temperaturen_celsius = [0, 10, 25, 32, 100]
-    for celsius in temperaturen_celsius:
-        fahrenheit = (celsius * 9/5) + 32
-        print(f"{celsius}°C entspricht {fahrenheit}°F")
-    ```
+```python
+temperaturen_celsius = [0, 10, 25, 32, 100]
+for celsius in temperaturen_celsius:
+    fahrenheit = (celsius * 9/5) + 32
+    print(f"{celsius}°C entspricht {fahrenheit}°F")
+```
 
 13. Anzahl der Vokale in einem Wort zählen:
-    ```python
-    wort = "Python"
-    anzahl_vokale = 0
-    for buchstabe in wort:
-        if buchstabe.lower() in "aeiou":
-            anzahl_vokale += 1
-    print(f"Anzahl der Vokale im Wort '{wort}': {anzahl_vokale}")
-    ```
+```python
+wort = "Python"
+anzahl_vokale = 0
+for buchstabe in wort:
+    if buchstabe.lower() in "aeiou":
+        anzahl_vokale += 1
+print(f"Anzahl der Vokale im Wort '{wort}': {anzahl_vokale}")
+```
 
 
 15. Anzahl eines bestimmten Worts in einem Text zählen:
-    ```python
-    text = "Python ist eine Programmiersprache, und Python ist großartig."
-    gesuchtes_wort = "Python"
-    anzahl = 0
-    woerter = text.split()
-    for wort in woerter:
-        if wort == gesuchtes_wort:
-            anzahl += 1
-    print(f"Anzahl von '{gesuchtes_wort}' im Text: {anzahl}")
-    ```
+```python
+text = "Python ist eine Programmiersprache, und Python ist großartig."
+gesuchtes_wort = "Python"
+anzahl = 0
+woerter = text.split()
+for wort in woerter:
+    if wort == gesuchtes_wort:
+        anzahl += 1
+print(f"Anzahl von '{gesuchtes_wort}' im Text: {anzahl}")
+```
 
 ## while-Schleifen
 

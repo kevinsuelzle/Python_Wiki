@@ -1,22 +1,25 @@
 # Einführung in Python-Funktionen
 
 Bereits in unseren bisherigen Python-Lektionen haben wir verschiedene eingebaute Funktionen verwendet, die
-verdeutlichen, wie nützlich und vielseitig Funktionen in Python sind.
+verdeutlichen, wie nützlich und vielseitig Funktionen in Python sind. Auch in der Startphase haben wir bereits
+unsere eigenen Funktionen geschrieben.
 
 Ein klassisches Beispiel ist die `print()`-Funktion, die wir häufig verwendet haben, um Werte auf dem Bildschirm
 auszugeben. Sie ist ein einfaches, aber mächtiges
 Werkzeug für die Ausgabe von Informationen während der Ausführung eines Programms.
 
 Eine weitere bisher häufig genutzte Funktion ist `input()`, die es uns ermöglicht, Benutzereingaben zu erfassen. Diese
-Eingaben können dann für eine Vielzahl von
-Zwecken innerhalb des Programms verwendet werden.
+Eingaben können dann für eine Vielzahl von Zwecken innerhalb des Programms verwendet werden.
 
-Schließlich haben wir auch die `random`-Bibliothek und ihre Funktionen
-wie `random.randint()` verwendet, um Zufallszahlen zu generieren.
+Schließlich haben wir auch die `random`-Bibliothek und ihre Funktionen wie `random.randint()` verwendet, um 
+Zufallszahlen zu generieren.
 
-Diese Funktionen sind Beispiele dafür, wie eingebauteund modul-spezifische Funktionen in Python die Entwicklung von
+Diese Funktionen sind Beispiele dafür, wie eingebaute und modul-spezifische Funktionen in Python die Entwicklung von
 Programmen vereinfachen und bereichern können, indem sie
 komplexe Aufgaben hinter einfach zu verstehenden und zu verwendenden Schnittstellen verbergen.
+
+Funktionen haben immer einen eindeutigen Namen, eine Menge an Parametern, die das Verhalten der Funktion modifizieren
+und sehr oft auch einen Rückgabewert, mit dem wir zum Beispiel Ergebnisse an den aufrufenden Code zurückgeben können.
 
 ## Bedeutung und Zweck von Funktionen
 
@@ -40,6 +43,12 @@ def funktionsname(parameter1, parameter2, ...):
     # Funktionskörper
     return ergebnis
 ```
+
+Daran erkennt man die grundlegende Syntax von einer Funktionsdefinition. Mit dem Keyword `def` zeigen wir Python an,
+dass wir eine Funktion erstellen wollen. 
+
+Im Funktionskörper können alle Dinge, die wir aus Python kennen ganz normal verwendet werden. Der Code im Funktionsblock
+unterscheidet sich nicht von anderem Python-Code.
 
 - **Beispiel**:
 
@@ -80,7 +89,6 @@ def multipliziere(x, y):
 def gruessen():
     return "Hallo Welt!"
 
-
 print(gruessen())
 ```
 
@@ -90,8 +98,7 @@ print(gruessen())
 def quadrat(zahl):
     return zahl * zahl
 
-
-   print(quadrat(4))
+print(quadrat(4))
 ```
 
 3. **Funktion mit mehreren Parametern**
@@ -101,7 +108,7 @@ def vollstaendiger_name(vorname, nachname):
     return f"{vorname} {nachname}"
 
 
-   print(vollstaendiger_name("Max", "Mustermann"))
+print(vollstaendiger_name("Max", "Mustermann"))
 ```
 
 4. **Funktion mit optionalen Parametern**
@@ -113,14 +120,13 @@ def begruessung(name, formal=False):
     else:
         return f"Hallo, {name}!"
 
-
-   print(begruessung("Anna"))
-   print(begruessung("Prof. Dr. Müller", formal=True))
+print(begruessung("Anna"))
+print(begruessung("Prof. Dr. Müller", formal=True))
 ```
 
 Durch diese Beispiele wird deutlich, wie Funktionen in Python definiert und genutzt werden können, um Code modular,
 wiederverwendbar und gut strukturiert zu gestalten. Funktionen sind ein zentrales Konzept in der Programmierung und
-unerlässlich für die Erstellung von sauberem und effizientem Code.+
+unerlässlich für die Erstellung von sauberem und effizientem Code.
 
 ### Aufgaben
 
@@ -314,119 +320,119 @@ Verwendung von Funktionen auftreten können.
 Hier sind die Lösungen für die vorgeschlagenen Übungsaufgaben:
 
 1. **Einfache Begrüßungsfunktion**
-   ```python
-   def begruesse():
-       print("Hallo Welt!")
-   begruesse()
-   ```
+```python
+def begruesse():
+   print("Hallo Welt!")
+begruesse()
+```
 
 2. **Quadratzahlen**
-   ```python
-   def quadrat(zahl):
-       return zahl * zahl
-   print(quadrat(4))
-   ```
+  ```python
+  def quadrat(zahl):
+      return zahl * zahl
+  print(quadrat(4))
+  ```
 
 3. **Maximum von zwei Zahlen**
-   ```python
-   def max_zwei(a, b):
-       if a > b:
-           return a
-       else:
-           return b
-   print(max_zwei(3, 5))
-   ```
+  ```python
+  def max_zwei(a, b):
+      if a > b:
+          return a
+      else:
+          return b
+  print(max_zwei(3, 5))
+  ```
 
 4. **Summierung**
-   ```python
-   def summiere(a, b, c):
-       return a + b + c
-   print(summiere(1, 2, 3))
-   ```
+  ```python
+  def summiere(a, b, c):
+      return a + b + c
+  print(summiere(1, 2, 3))
+  ```
 
 5. **String-Wiederholung**
-   ```python
-   def wiederhole_string(str, n):
-       return str * n
-   print(wiederhole_string("Hallo", 3))
-   ```
+  ```python
+  def wiederhole_string(str, n):
+      return str * n
+  print(wiederhole_string("Hallo", 3))
+  ```
 
 6. **Fahrenheit in Celsius**
-   ```python
-   def fahrenheit_in_celsius(f):
-       return (f - 32) * 5/9
-   print(fahrenheit_in_celsius(100))
-   ```
+  ```python
+  def fahrenheit_in_celsius(f):
+      return (f - 32) * 5/9
+  print(fahrenheit_in_celsius(100))
+  ```
 
 7. **Kreisumfang**
-   ```python
-   def kreisumfang(radius):
-       return 2 * 3.14159 * radius
-   print(kreisumfang(5))
-   ```
+  ```python
+  def kreisumfang(radius):
+      return 2 * 3.14159 * radius
+  print(kreisumfang(5))
+  ```
 
 8. **Listenelemente addieren**
-   ```python
-   def addiere_liste(liste):
-       return sum(liste)
-   print(addiere_liste([1, 2, 3, 4, 5]))
-   ```
+  ```python
+  def addiere_liste(liste):
+      return sum(liste)
+  print(addiere_liste([1, 2, 3, 4, 5]))
+  ```
 
 9. **Check Gerade Zahl**
-   ```python
-   def ist_gerade(zahl):
-       return zahl % 2 == 0
-   print(ist_gerade(4))
-   ```
+  ```python
+  def ist_gerade(zahl):
+      return zahl % 2 == 0
+  print(ist_gerade(4))
+  ```
 
 10. **Countdown**
-    ```python
-    def countdown(zahl):
-        for i in range(zahl, -1, -1):
-            print(i)
-    countdown(5)
-    ```
+   ```python
+   def countdown(zahl):
+       for i in range(zahl, -1, -1):
+           print(i)
+   countdown(5)
+   ```
 
 11. **Minimum in Liste finden**
-    ```python
-    def finde_minimum(liste):
-        return min(liste)
-    print(finde_minimum([5, 3, 8, 2, 9]))
-    ```
+   ```python
+   def finde_minimum(liste):
+       return min(liste)
+   print(finde_minimum([5, 3, 8, 2, 9]))
+   ```
 
 12. **Länge eines Strings**
-    ```python
-    def laenge_string(str):
-        return len(str)
-    print(laenge_string("Python"))
-    ```
+   ```python
+   def laenge_string(str):
+       return len(str)
+   print(laenge_string("Python"))
+   ```
 
 13. **Multiplikationstabelle**
-    ```python
-    def multiplikationstabelle(zahl):
-        for i in range(1, 11):
-            print(f"{zahl} * {i} = {zahl * i}")
-    multiplikationstabelle(3)
-    ```
+   ```python
+   def multiplikationstabelle(zahl):
+       for i in range(1, 11):
+           print(f"{zahl} * {i} = {zahl * i}")
+   multiplikationstabelle(3)
+   ```
 
 14. **Palindrome prüfen**
-    ```python
-    def ist_palindrom(str):
-        return str == str[::-1]
-    print(ist_palindrom("radar"))
-    ```
+   ```python
+   def ist_palindrom(str):
+       return str == str[::-1]
+   print(ist_palindrom("radar"))
+   ```
 
 15. **Fibonacci-Folge**
-    ```python
-    def fibonacci(n):
-        a, b = 0, 1
-        ergebnis = []
-        for _ in range(n):
-            ergebnis.append(a)
-            a, b = b, a + b
-        return ergebnis
-    print(fibonacci(5))
-    ```
+   ```python
+   def fibonacci(n):
+       a, b = 0, 1
+       ergebnis = []
+       for _ in range(n):
+           ergebnis.append(a)
+           a, b = b, a + b
+       return ergebnis
+   print(fibonacci(5))
+   ```
 
 ## Scopes
 

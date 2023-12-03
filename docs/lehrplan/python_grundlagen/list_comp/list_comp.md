@@ -1,15 +1,24 @@
 # Einführung in List Comprehensions in Python
 
-List Comprehensions in Python sind eine elegante und effiziente Möglichkeit, Listen zu erstellen und gleichzeitig
-Operationen auf ihren Elementen auszuführen. Sie bieten eine klare und prägnante Alternative zu traditionellen Schleifen
-und Funktionsaufrufen.
+List Comprehensions in Python sind eine elegante und effiziente Möglichkeit, Listen zu erstellen und Operationen auf 
+ihren Elementen auszuführen. Sie bieten eine klare und prägnante Alternative zu traditionellen Schleifen
+und Funktionsaufrufen. List Comprehensions sind eine typische Struktur, die man in Python-Code häufig findet.
+
+**Beispiel**
+
+```python
+quadrate = [i * i for i in range(1, 6)]
+
+print(quadrate)  # Ausgabe: [1, 4, 9, 16, 25]
+```
+
 
 ## Motivation für List Comprehensions
 
 1. **Kompakter Code**: List Comprehensions ermöglichen es, Schleifen und bedingte Anweisungen in einer Zeile zu
-   schreiben, wodurch der Code kürzer und leichter lesbar wird.
+   schreiben, wodurch der Code kürzer und wenn man es nicht übertreibt auch leichter lesbar wird.
 
-2. **Leistung**: Sie sind oft schneller als traditionelle Schleifen, besonders bei der Erstellung großer Listen.
+2. **Performance**: Sie sind oft schneller als traditionelle Schleifen, besonders bei der Erstellung großer Listen.
 
 3. **Klarheit und Präzision**: Sie machen den Code ausdrucksstärker und klarer, indem sie genau beschreiben, was jede
    Liste enthält.
@@ -17,14 +26,12 @@ und Funktionsaufrufen.
 4. **Reduzierung von Boilerplate-Code**: Weniger Codezeilen bedeuten weniger Platz für Fehler und vereinfachen die
    Wartung des Codes.
 
-5. **Funktionaler Stil**: List Comprehensions fördern einen funktionalen Programmierstil, der von vielen als sauber und
-   elegant angesehen wird.
 
-## Problemstellung, die durch List Comprehensions gelöst wird
+## Problemstellungen
 
-Stellen Sie sich vor, Sie möchten aus einer vorhandenen Liste eine neue Liste erstellen, in der jedes Element aufgrund
-einer Bedingung oder einer Operation verändert wurde. Traditionell würden Sie dazu eine for-Schleife verwenden, die
-durch die alte Liste iteriert, die Operation durchführt und das Ergebnis in einer neuen Liste speichert. Dies führt zu
+Stellen wir unsh vor, wir möchten aus einer vorhandenen Liste eine neue Liste erstellen, in der jedes Element aufgrund
+einer Bedingung oder einer Operation verändert wurde. Traditionell würden wir dazu eine for-Schleife verwenden, die
+über die alte Liste iteriert, die Operation durchführt und das Ergebnis in einer neuen Liste speichert. Dies führt zu
 mehrzeiligen Konstruktionen, die nicht nur umständlich, sondern auch fehleranfällig sein können.
 
 List Comprehensions lösen dieses Problem, indem sie die gesamte Logik in eine einzige, lesbare Zeile komprimieren. Sie
@@ -32,8 +39,7 @@ können Bedingungen anwenden, Funktionen aufrufen und die resultierende Liste di
 sauberer und eleganter macht.
 
 List Comprehensions bieten eine elegante Möglichkeit, for-Schleifen zu ersetzen, insbesondere wenn es darum geht, Listen
-zu erstellen oder zu modifizieren. Lassen Sie uns dies anhand eines Beispiels untersuchen und erklären, wie man dabei
-vorgeht.
+zu erstellen oder zu modifizieren. 
 
 ## Beispiel: Erstellen einer Liste mit Quadratzahlen
 
@@ -110,33 +116,6 @@ ist und die jeder kennen und verstehen sollte.
 18. **Summe von Paaren**: Erstelle eine Liste aller Paare von Zahlen in einer Liste, deren Summe 10 ergibt.
 19. **Durchschnittswerte**: Berechne den Durchschnitt von jedem Paar aufeinanderfolgender Zahlen in einer Liste.
 20. **Liste von Listen abflachen**: Flache eine Liste von Listen zu einer einzigen Liste ab.
-
-# Komplex-Aufgaben
-
-### Komplexe Aufgaben zu Sets, Dictionaries, Funktionen und Type Hints
-
-#### Aufgabe 1: Vereinigung und Schnittmenge von Sets
-
-Erstelle eine Funktion `analyse_sets(set1: set, set2: set) -> tuple`, die zwei Sets als Parameter annimmt und ein Tuple
-zurückgibt, das die Vereinigung und Schnittmenge dieser Sets enthält.
-
-#### Aufgabe 2: Wörterbuch-Analyse
-
-Schreibe eine Funktion `wort_haeufigkeit(text: str) -> dict`, die einen String als Parameter nimmt und ein Dictionary
-zurückgibt, in dem die Häufigkeit jedes Wortes im Text gezählt wird (Wörter getrennt durch Leerzeichen).
-
-#### Aufgabe 3: Filtern und Transformieren mit List Comprehension
-
-Nutze List Comprehension, um eine Funktion `filter_transformiere(lst: list[int]) -> list[int]` zu erstellen, die eine
-Liste von Zahlen annimmt, alle ungeraden Zahlen herausfiltert und von den verbleibenden geraden Zahlen das Quadrat
-bildet.
-
-#### Aufgabe 4: Daten Aggregieren
-
-Erstelle eine Funktion `aggregiere_daten(data: list[dict[str, int]]) -> dict`, die eine Liste von Dictionaries annimmt,
-wobei jedes Dictionary einen Namen (als `str`) und eine Zahl (als `int`) enthält. Die Funktion soll ein Dictionary
-zurückgeben, in dem jede Zahl zum gleichen Namen addiert wird.
-
 
 # Lösungen
 
@@ -263,41 +242,3 @@ durchschnitt = [(liste[i] + liste[i + 1]) / 2 for i in range(len(liste) - 1)]
 ```python
 abgeflacht = [element for sublist in [[1, 2], [3, 4], [5, 6]] for element in sublist]
 ```
-
-## Kmplex-Aufgaben
-
-### Lösung 1: Vereinigung und Schnittmenge von Sets
-
-```python
-def analyse_sets(set1: set, set2: set) -> tuple:
-    return (set1 | set2, set1 & set2)
-```
-
-### Lösung 2: Wörterbuch-Analyse
-
-```python
-def wort_haeufigkeit(text: str) -> dict:
-    worte = text.split()
-    return {wort: worte.count(wort) for wort in set(worte)}
-```
-
-### Lösung 3: Filtern und Transformieren mit List Comprehension
-
-```python
-def filter_transformiere(lst: list[int]) -> list[int]:
-    return [x ** 2 for x in lst if x % 2 == 0]
-```
-
-### Lösung 4: Daten Aggregieren
-
-```python
-def aggregiere_daten(data: list[dict[str, int]]) -> dict:
-    ergebnis = {}
-    for d in data:
-        if d['name'] in ergebnis:
-            ergebnis[d['name']] += d['zahl']
-        else:
-            ergebnis[d['name']] = d['zahl']
-    return ergebnis
-```
-

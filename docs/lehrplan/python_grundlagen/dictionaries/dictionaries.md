@@ -1,22 +1,29 @@
 # Dictionaries (Schlüssel-Wert-Paare):
 
-Dictionaries in Python sind Sammlungen von Schlüssel-Wert-Paaren. Sie ermöglichen es, Werte durch Schlüssel zu speichern
-und abzurufen, ähnlich wie ein echtes Wörterbuch es erlaubt, die Bedeutung eines Wortes zu finden.
+Dictionaries sind ein Datentyp in Python, mit dem wir Schlüssel-Wert-Paar beschreiben können. 
+Sie ermöglichen uns, Werte mithilfe von Schlüsseln zu speichern und abzurufen, ähnlich wie ein echtes Wörterbuch es 
+erlaubt, die Bedeutung eines Wortes zu finden. Wir erinnern uns an Listen oder Tupels, bei denen wir auf die Elemente
+durch ihre Position in der Sammlung, also deren Index, auf die Elemente zugreifen können. 
 
 ## Eigenschaften von Dictionaries
 
-1. **Schlüssel und Werte**: Jeder Eintrag in einem Dictionary besteht aus einem Schlüssel und einem zugehörigen Wert.
+- **Schlüssel und Werte**: Jeder Eintrag in einem Dictionary besteht aus einem Schlüssel und einem zugehörigen Wert.
 
-2. **Einzigartige Schlüssel**: Jeder Schlüssel in einem Dictionary muss einzigartig sein.
+- **Einzigartige Schlüssel**: Jeder Schlüssel in einem Dictionary muss einzigartig sein. Sollen mehrere Elemente in 
+    in einem Schlüssel gespeichert werden, kann man natürlich auch eine Liste in diesem Schlüssel speichern
 
-3. **Veränderbar**: Dictionaries sind veränderbar, was bedeutet, dass Einträge hinzugefügt, entfernt oder geändert
+- **Veränderbar**: Dictionaries sind veränderbar, was bedeutet, dass Einträge hinzugefügt, entfernt oder geändert
    werden können.
 
-4. **Ungeordnet**: Die Elemente in einem Dictionary sind nicht in einer bestimmten Reihenfolge gespeichert.
+- **Ungeordnet**: Die Elemente in einem Dictionary sind nicht in einer bestimmten Reihenfolge gespeichert. Man greift 
+    auf die Elemente über deren Schlüssel zu.
 
-5. **Dynamisch**: Die Größe eines Dictionaries kann sich während der Laufzeit des Programms ändern.
+- **Dynamisch**: Die Größe eines Dictionaries kann sich während der Laufzeit des Programms ändern.
 
 ## Erstellen und Initialisieren eines Dictionaries
+
+Wir erstellen Dictionaries mit geschweiften Klammern. Die Schlüssel-Wert-Paar werden dann jeweils mit 
+`schlüssel: wert` angegeben:
 
 ```python
 mein_dict = {"Name": "Max", "Alter": 25, "Stadt": "Berlin"}
@@ -25,6 +32,9 @@ print(mein_dict)
 
 ## Zugriff auf Werte
 
+Der Zugriff auf die Werte erfolgt über den entsprechenden Schlüssel in eckigen Klammern. Das sieht ähnlich aus wie bei
+Listen, nur dass wir keinen Index verwenden, sondern den entsprechenden Schlüssel.
+
 ```python
 # Zugriff auf den Wert mit dem Schlüssel "Name"
 name = mein_dict["Name"]
@@ -32,6 +42,9 @@ print(name)  # Gibt "Max" aus
 ```
 
 ## Hinzufügen und Ändern von Einträgen
+
+Werte können hinzugefügt werden, in dem wir einem Element, einen Schlüssel hinzufügen und diesem einen Wert zuweisen.
+Existiert der Schlüssel bereits wird der vorhandene Wert einfach überschrieben.
 
 ```python
 # Hinzufügen eines neuen Eintrags
@@ -42,6 +55,9 @@ mein_dict["Alter"] = 26
 ```
 
 ## Entfernen von Einträgen
+
+Das Entfernen von Einträgen sieht leider nicht wie typischer Python-Code aus. Man greift auf das Element, welches man 
+löschen will wie gewohnt zu und löscht das Element mit einem vorangestellten `del`.
 
 ```python
 # Entfernen eines Eintrags
@@ -83,13 +99,13 @@ Zugriff sowie flexible Datenstrukturen.
 ## Aufgaben
 
 1. **Grundlegendes Dictionary**: Erstelle ein Dictionary mit drei Schlüssel-Wert-Paaren und gib es aus.
-2. **Zugriff auf Werte**: Greife auf einen Wert in einem Dictionary zu und drucke ihn aus.
+2. **Zugriff auf Werte**: Greife auf einen Wert in einem Dictionary zu und gib ihn aus.
 3. **Hinzufügen eines Eintrags**: Füge einem bestehenden Dictionary einen neuen Schlüssel-Wert-Eintrag hinzu.
 4. **Ändern eines Wertes**: Ändere den Wert eines bestehenden Eintrags in einem Dictionary.
 5. **Entfernen eines Eintrags**: Entferne einen Eintrag aus einem Dictionary.
-6. **Durchlaufen mit Schleifen**: Durchlaufe ein Dictionary und drucke alle Schlüssel und deren zugehörige Werte aus.
-7. **Nur Schlüssel durchlaufen**: Durchlaufe ein Dictionary und drucke nur die Schlüssel aus.
-8. **Nur Werte durchlaufen**: Durchlaufe ein Dictionary und drucke nur die Werte aus.
+6. **Durchlaufen mit Schleifen**: Durchlaufe ein Dictionary und gib alle Schlüssel und deren zugehörige Werte aus.
+7. **Nur Schlüssel durchlaufen**: Durchlaufe ein Dictionary und gib nur die Schlüssel aus.
+8. **Nur Werte durchlaufen**: Durchlaufe ein Dictionary und gib nur die Werte aus.
 9. **Schlüssel-Existenz prüfen**: Überprüfe, ob ein bestimmter Schlüssel in einem Dictionary existiert.
 10. **Nested Dictionary**: Erstelle ein verschachteltes Dictionary (ein Dictionary innerhalb eines anderen Dictionaries)
     und greife auf ein Element des inneren Dictionaries zu.
@@ -128,69 +144,69 @@ Datenstrukturen im Allgemeinen zu verbessern.
 # Lösungen
 
 1. **Grundlegendes Dictionary**
-   ```python
-   mein_dict = {"Name": "Anna", "Alter": 30, "Beruf": "Ingenieurin"}
-   print(mein_dict)
-   ```
+```python
+mein_dict = {"Name": "Anna", "Alter": 30, "Beruf": "Ingenieurin"}
+print(mein_dict)
+```
 
 2. **Zugriff auf Werte**
-   ```python
-   print(mein_dict["Name"])  # Gibt "Anna" aus
-   ```
+```python
+print(mein_dict["Name"])  # Gibt "Anna" aus
+```
 
 3. **Hinzufügen eines Eintrags**
-   ```python
-   mein_dict["Stadt"] = "Berlin"
-   print(mein_dict)
-   ```
+```python
+mein_dict["Stadt"] = "Berlin"
+print(mein_dict)
+```
 
 4. **Ändern eines Wertes**
-   ```python
-   mein_dict["Alter"] = 31
-   print(mein_dict)
-   ```
+```python
+mein_dict["Alter"] = 31
+print(mein_dict)
+```
 
 5. **Entfernen eines Eintrags**
-   ```python
-   del mein_dict["Beruf"]
-   print(mein_dict)
-   ```
+```python
+del mein_dict["Beruf"]
+print(mein_dict)
+```
 
 6. **Durchlaufen mit Schleifen**
-   ```python
-   for key, value in mein_dict.items():
-       print(f"{key}: {value}")
-   ```
+```python
+for key, value in mein_dict.items():
+   print(f"{key}: {value}")
+```
 
 7. **Nur Schlüssel durchlaufen**
-   ```python
-   for key in mein_dict.keys():
-       print(key)
-   ```
+```python
+for key in mein_dict.keys():
+   print(key)
+```
 
 8. **Nur Werte durchlaufen**
-   ```python
-   for value in mein_dict.values():
-       print(value)
-   ```
+```python
+for value in mein_dict.values():
+   print(value)
+```
 
 9. **Schlüssel-Existenz prüfen**
-   ```python
-   key = "Name"
-   if key in mein_dict:
-       print(f"{key} ist im Dictionary vorhanden.")
-   else:
-       print(f"{key} ist nicht im Dictionary vorhanden.")
-   ```
+```python
+key = "Name"
+if key in mein_dict:
+   print(f"{key} ist im Dictionary vorhanden.")
+else:
+   print(f"{key} ist nicht im Dictionary vorhanden.")
+```
 
 10. **Nested Dictionary**
-    ```python
-    mein_nested_dict = {
-        "person1": {"Name": "Max", "Alter": 25},
-        "person2": {"Name": "Lisa", "Alter": 28}
-    }
-    print(mein_nested_dict["person1"]["Name"])  # Gibt "Max" aus
-    ```
+```python
+mein_nested_dict = {
+    "person1": {"Name": "Max", "Alter": 25},
+    "person2": {"Name": "Lisa", "Alter": 28}
+}
+print(mein_nested_dict["person1"]["Name"])  # Gibt "Max" aus
+```
 
 ## Komplex-Aufgaben
 

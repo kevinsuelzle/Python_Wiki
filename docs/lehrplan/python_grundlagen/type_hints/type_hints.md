@@ -2,7 +2,10 @@
 
 Type Hints sind in Python seit der Version 3.5 offiziell verfügbar und stellen eine bedeutende Erweiterung für die
 Sprache dar. Sie ermöglichen es Entwicklern, den erwarteten Datentyp von Parametern und Rückgabewerten in Funktionen
-anzugeben.
+anzugeben. 
+
+Leider ist dies lediglich ein Hinweis für andere Programmierer und wird durch Python nicht überprüft. Dafür
+gibt es allerdings frei verfügbare Tools, um dies zu tun.
 
 ## Wichtigkeit von Type Hints
 
@@ -30,37 +33,25 @@ Type Hints werden in Python durch die Verwendung von Anmerkungen (Annotations) d
   Funktionsdefinition angegeben.
 
 ## Beispiele
+- **Einfache Funktion mit Type Hints**
+```python
+def addiere(a: int, b: int) -> int:
+    return a + b
+```
 
-1. **Einfache Funktion mit Type Hints**
-   ```python
-   def addiere(a: int, b: int) -> int:
-       return a + b
-   ```
+- **Funktion mit gemischten Datentypen**
+```python
+def begruesse(name: str, alter: int) -> str:
+    return f"Hallo {name}, du bist {alter} Jahre alt."
+```
 
-2. **Funktion mit gemischten Datentypen**
-   ```python
-   def begruesse(name: str, alter: int) -> str:
-       return f"Hallo {name}, du bist {alter} Jahre alt."
-   ```
+- **Funktion mit komplexeren Datentypen**
+```python
+from typing import List, Dict
 
-3. **Funktion mit komplexeren Datentypen**
-   ```python
-   from typing import List, Dict
-
-   def verarbeite_daten(daten: List[int]) -> Dict[str, int]:
-       return {"max": max(daten), "min": min(daten)}
-   ```
-
-4. **Optional Type Hint**
-   ```python
-   from typing import Optional
-
-   def finde_index(elemente: List[int], ziel: int) -> Optional[int]:
-       try:
-           return elemente.index(ziel)
-       except ValueError:
-           return None
-   ```
+def verarbeite_daten(daten: List[int]) -> Dict[str, int]:
+    return {"max": max(daten), "min": min(daten)}
+```
 
 ## Type Hints Testen
 
@@ -155,65 +146,65 @@ Sicherheit von Python-Programmen bei und fördert die Entwicklung von robustem u
 Hier sind die Lösungen zu den vorgeschlagenen Übungsaufgaben zu Type Hints in Python:
 
 1. **Typisierte Variable**
-   ```python
-   alter: int = 25
-   ```
+```python
+alter: int = 25
+```
 
 2. **Typisierte Funktion**
-   ```python
-   def quadrat(zahl: int) -> int:
-       return zahl * zahl
-   ```
+```python
+def quadrat(zahl: int) -> int:
+    return zahl * zahl
+```
 
 3. **Mehrere Parameter**
-   ```python
-   def addiere(a: float, b: float) -> float:
-       return a + b
-   ```
+```python
+def addiere(a: float, b: float) -> float:
+    return a + b
+```
 
 4. **Optionale Parameter**
-   ```python
-   from typing import Optional
+```python
+from typing import Optional
 
-   def begruessen(name: str, alter: Optional[int] = None) -> str:
-       return f"Hallo {name}, Alter: {alter}" if alter is not None else f"Hallo {name}"
-   ```
+def begruessen(name: str, alter: Optional[int] = None) -> str:
+    return f"Hallo {name}, Alter: {alter}" if alter is not None else f"Hallo {name}"
+```
 
 5. **Rückgabewert None**
-   ```python
-   def drucke_hallo(name: str) -> None:
-       print(f"Hallo, {name}")
-   ```
+```python
+def drucke_hallo(name: str) -> None:
+    print(f"Hallo, {name}")
+```
 
 6. **Listen als Parameter**
-   ```python
-   def durchschnitt(zahlen: list[int]) -> float:
-       return sum(zahlen) / len(zahlen)
-   ```
+```python
+def durchschnitt(zahlen: list[int]) -> float:
+    return sum(zahlen) / len(zahlen)
+```
 
 7. **Dictionary als Rückgabewert**
-   ```python
-   def erstelle_dict(key: str, value: str) -> dict[str, str]:
-       return {key: value}
-   ```
+```python
+def erstelle_dict(key: str, value: str) -> dict[str, str]:
+    return {key: value}
+```
 
 8. **Komplexe Typen**
-   ```python
-   def verarbeite_daten(daten: list[dict[str, int]]) -> list[int]:
-       return [d["wert"] for d in daten]
-   ```
+```python
+def verarbeite_daten(daten: list[dict[str, int]]) -> list[int]:
+    return [d["wert"] for d in daten]
+```
 
 9. **Typisierte Tuples**
-   ```python
-   def min_max(zahlen: list[int]) -> tuple[int, int]:
-       return (min(zahlen), max(zahlen))
-   ```
+```python
+def min_max(zahlen: list[int]) -> tuple[int, int]:
+    return (min(zahlen), max(zahlen))
+```
 
 10. **Union Type Hints**
-    ```python
-    from typing import Union
+```python
+from typing import Union
 
-    def id_oder_name(wert: Union[int, str]) -> Union[int, str]:
-        return wert
-    ```
+def id_oder_name(wert: Union[int, str]) -> Union[int, str]:
+  return wert
+```
 

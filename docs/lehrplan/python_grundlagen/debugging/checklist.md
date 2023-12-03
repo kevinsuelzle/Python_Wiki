@@ -1,3 +1,4 @@
+# Checkliste zur Selbsteinschätzung
 - Ich weiß, wieso Fehler passieren können
 - Ich kenne die Grundlagen wie ich den Python Debugger benutzen, inbesondere ..
   - Haltepunkte
