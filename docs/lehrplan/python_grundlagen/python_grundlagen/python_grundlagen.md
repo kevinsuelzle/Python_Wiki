@@ -14,36 +14,34 @@ entwickeln.
 Im professionellen Umfeld steht die Wertschöpfung durch Software-Entwicklung an erster Stelle. Mit Programmierung werden
 Probleme gelöst, die ein Unternehmen oder dessen Kunden haben.
 
-## Aufgabe:
+## Kernaspekte der Programmierung
+
+- **Algorithmisches Denken**: Programmierung basiert auf der Entwicklung von Algorithmen –
+   Schritt-für-Schritt-Anweisungen zur Lösung eines Problems oder zur Durchführung einer Aufgabe.
+
+- **Code-Schreiben**: Das Schreiben von Code ist nur ein kleiner Teil der Programmierung. Hierbei wird ein Algorithmus
+   in eine Sprache übersetzt, die der Computer verstehen und ausführen kann. Für uns wird dies Python sein.
+
+- **Fehlerbehebung (Debugging)**: Kein Code ist perfekt. Programmierer verbringen viel Zeit damit, Fehler zu finden und
+   zu beheben, um sicherzustellen, dass ihr Code wie beabsichtigt funktioniert.
+
+- **Datenmanipulation**: Programme werden oft entwickelt, um Daten zu sammeln, zu verarbeiten und auszugeben. Das
+   Verständnis der Datenverarbeitung ist daher ein wesentlicher Aspekt der Programmierung.
+
+- **Benutzerinteraktion**: Viele Programme erfordern Interaktionen mit Benutzern. Das Design dieser Interaktionen ist
+   ein wichtiger Teil der Entwicklung einer benutzerfreundlichen Software.
+  
+### Aufgabe:
 Zeit: 15 Min + 20 Min
 
 TODO: Ich finde diese Aufgabe zu schwammig. Ich würde vorschlagen, dass man hier eine Liste
 von Aspekten angibt und diese zur Diskussion stellt. Z.B. bringe die folgenden in eine Rangfolge der wichtigkeit. 
-Diskutiert, welche Aspekte alles zur Programmierung gehören? Wie wichtig sind diese?
 
-TODO: hier auf eine zweite Seite verweisen, damit die "Kernaspekte" nicht die Aufgabe spoilern.
+1. Diskutiert, die Wichtigkeit dieser Aspekte
+2. Ordnet sie entsprechend ihrer Wichtigkeit und begründet kurz wieso.
 
-## Kernaspekte der Programmierung
 
-1. **Algorithmisches Denken**: Programmierung basiert auf der Entwicklung von Algorithmen –
-   Schritt-für-Schritt-Anweisungen zur Lösung eines Problems oder zur Durchführung einer Aufgabe.
-
-2. **Code-Schreiben**: Das Schreiben von Code ist nur ein kleiner Teil der Programmierung. Hierbei wird ein Algorithmus
-   in eine Sprache übersetzt, die der Computer verstehen und ausführen kann. Für uns wird dies Python sein.
-
-3. **Fehlerbehebung (Debugging)**: Kein Code ist perfekt. Programmierer verbringen viel Zeit damit, Fehler zu finden und
-   zu beheben, um sicherzustellen, dass ihr Code wie beabsichtigt funktioniert.
-
-4. **Datenmanipulation**: Programme werden oft entwickelt, um Daten zu sammeln, zu verarbeiten und auszugeben. Das
-   Verständnis der Datenverarbeitung ist daher ein wesentlicher Aspekt der Programmierung.
-
-5. **Benutzerinteraktion**: Viele Programme erfordern Interaktionen mit Benutzern. Das Design dieser Interaktionen ist
-   ein wichtiger Teil der Entwicklung einer benutzerfreundlichen Software.
-
-Das Schreiben von Code ist für die Programmierung zwar unerlässlich, aber eigentlich nur ein kleiner, aber wichtiger
-Teil.
-
-TODO: hier würde ich noch mal folgendes einschieben:
+**TODO: hier würde ich noch mal folgendes einschieben:
 Aufgabe: im folgenden Video berichtet ein Entwickler, wie viel Zeit er in seiner Tätigkeit für folgende Bereiche
 aufwendet: Selbst Code schreiben, fremden Code schreiben, Tests schreiben, Meetings.
 Mache eine Schätzung, wie viel Prozent seiner Zeit er wo verbringt.
@@ -51,7 +49,7 @@ Dann könntest du ein zwei kurze Handyvideos aufnehmen lassen (Kai, du selbst, .
 Außerdem noch mal ein zweites Video aufnehmen lassen, in dem sie in 40 sekunden beschreiben, warum es trotzdem 
 sehr wertvoll ist, dass man programmieren kann, auch wenn man es nicht soo oft macht.
 Ich weiß nicht, ob die Aufgabe gut ist. sie könnte ggf. auch demotivieren. Aber früher oder später
-kriegen sie das sowieso raus, da ist es besser, wenn man da von vornherein gegenansteuert.
+kriegen sie das sowieso raus, da ist es besser, wenn man da von vornherein gegenansteuert.**
 
 
 ## Die Rolle von Python in der Programmierung
@@ -59,12 +57,6 @@ kriegen sie das sowieso raus, da ist es besser, wenn man da von vornherein gegen
 
 Python ist eine weit verbreitete und vielseitige Programmiersprache, die sich durch ihre klare Syntax und Lesbarkeit
 auszeichnet.
-
-TODO: Ich glaube den folgendne Teil würde ich weglassen und nach hinten verschieben, da das man das jetzt als Teilnehmer
-noch nicht verteht:
-*das Python ist eine Skriptsprache, das heißt der Code wird während der Ausführung in Maschinensprache
-übersetzt. Im Gegensatz dazu gibts es sogenannte kompilierte Sprachen, bei denen diese Übersetzung unmittelbar nach dem
-Schreiben des Codes stattfindet. Beide Ansätze haben Vor- und Nachteile.*
 
 Hier sehen wir einige Gründe, warum Python in der Welt der Programmierung eine wichtige Rolle spielt:
 
@@ -92,7 +84,7 @@ die es zu einer der beliebtesten Sprachen in der modernen Programmierung machen.
 
 Ein Integrated Development Environment (IDE) ist eine Softwareanwendung, die umfangreiche Werkzeuge für Programmierer
 bereitstellt, um die Entwicklung von Software zu erleichtern. Ein typisches IDE umfasst einen Code-Editor,
-#Compiler/Interpreter, Debugger und oft weitere hilfreiche Werkzeuge.
+Compiler/Interpreter, Debugger und oft weitere hilfreiche Werkzeuge.
 
 Das Hauptziel einer IDE ist die Vereinfachung des Entwicklungsprozesses, sodass wir uns auf die eigenltichen
 Kernaufgaben
@@ -102,10 +94,9 @@ Auf euren Rechnern sind sowohl VSCode als auch PyCharm vorinstalliert, sodass wi
 
 ## Beliebte IDEs für Python
 
-TODO: Hier bitte zu jeder IDE noch mal ein Screenshot machen.
-TDOO: Ich würde hier noch als 4. die Pythonconsole hinzufügen.
-
 ### 1. Visual Studio Code (VSCode)
+
+![VSCode](../images/vscode.png)
 
 Visual Studio Code, entwickelt von Microsoft, ist ein kostenloser, leistungsfähiger und leichtgewichtiger Code-Editor.
 Er ist erweiterbar und anpassbar, was ihn zu einer beliebten Wahl für viele Programmiersprachen, einschließlich Python,
@@ -120,6 +111,8 @@ VSCode kann durch die Python-Erweiterung, die Features wie IntelliSense, Debuggi
 effektiv für Python-Entwicklung genutzt werden.
 
 ### 2. PyCharm
+
+![PyCharm](../images/pycharm.png)
 
 PyCharm ist eine IDE, die speziell für Python entwickelt wurde und von JetBrains angeboten wird. Sie ist deutlich
 umfangreicher als VSCode.
@@ -137,6 +130,8 @@ Pycharm besitzt eine kostenfreie "Community Edition" und eine kostenpflichtige "
 
 ### 3. Jupyter Notebooks
 
+![Jupyter Lab](../images/jupyter.png)
+
 Jupyter Notebooks bieten eine webbasierte interaktive Entwicklungsumgebung, die es ermöglicht,
 Code auszuführen, Ergebnisse in Echtzeit zu sehen und gleichzeitig Erklärungen, Formeln und Visualisierungen
 einzubinden. Es wird besonders gern in der Datenanalyse, wissenschaftlichen Forschung und Lehre.
@@ -151,13 +146,25 @@ Sie unterstützen eine Mischung aus Code, Text, Bildern und Diagrammen.
 
 Sowohl VSCode als auch PyCharm bieten die Möglichkeit direkt mit .ipynb Dateien zu arbeiten und haben damit ein
 ähnliches Nutzererlebnis. Statt PyCharm würde man aber die Nutzung von **DataSpell** von Jetbrains empfehlen,
-da dieses speziel auf dieses Dateiformat ausgelegt ist.  
+da dieses speziell auf dieses Dateiformat ausgelegt ist.  
+
+### 4. Python-Interpreter als interaktive Umgebung
+
+![Python](../images/py_console.png)
+
+Auch den Python-Interpreter selbst kann man als interaktive Programmierumgebung verwenden. Dazu führt man lediglich
+`python` im Terminal aus und wird dann mit einem Prompt begrüßt. 
+
+Hier lassen sich kleine Dinge sehr einfach ausprobieren, aber es ist nicht empfehlenswert diese zur Programmierung zu 
+verwenden.
 
 ## Aufgabe: Das erste Programm
 25 Min bis es bei jedem klappt
 
-TODO: Das würde ich als einzelaufgabe formulieren:
-Führe die folgenden Codezeilen in allen drei IDEs aus.
+1. Führe den folgenden Code mit der Python-Konsole aus
+2. Führe den folgenden Code in VSCode aus
+3. Führe den folgenden Code in PyCharm aus
+4. Führe den folgenden Code in einem Jupyter Notebook aus
 
 ```python
 print("Hello Wolfsburg! Das ist mein erstes Programm!")

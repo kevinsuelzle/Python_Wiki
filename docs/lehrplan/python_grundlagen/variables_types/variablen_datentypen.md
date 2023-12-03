@@ -12,10 +12,10 @@ mehrere wichtige Funktionen:
 1. **Daten speichern**:
    Variablen dienen als Speicherorte im Arbeitsspeicher eines Computers, in denen Daten gespeichert werden können.
    Diese Daten können Zahlen, Texte, und andere möglichen anderen Objekte sein.
-    ```python
-    sum = 10 + 13
-    print(sum)
-    ```
+```python
+sum = 10 + 13
+print(sum)
+```
 
 2. **Lesbarkeit und Wartbarkeit**:
    Variablen helfen, den Code verständlicher zu machen. Durch sinnvolle Namen wird der Zweck des Codes klarer, was die
