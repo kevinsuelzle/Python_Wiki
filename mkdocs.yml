@@ -22,3 +22,4 @@ plugins:
   - search
   - mkdocs-jupyter:
       execute: false
+      kernel_name: python3
