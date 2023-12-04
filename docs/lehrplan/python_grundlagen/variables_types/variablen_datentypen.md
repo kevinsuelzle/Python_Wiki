@@ -53,7 +53,7 @@ Grundlage für fast alle Operationen und Logiken in der Programmierung.
 # Variablen
 
 Eine Variable in Python kann erstellt werden, indem man ihr einen Namen gibt und
-ihr einen Wert zuweist.
+ihr einen Wert zuweist. Dabei steht links immer der Variablenname und rechts der Wert, der in dieser gespeichert werden soll:
 
 **Beispiel:**
 
@@ -62,13 +62,18 @@ meine_variable = 10
 alter = 23
 Geburtsjahr = 1940
 willkommens_text = "Hey du!"
+
+print(meine_variable)
+print(alter)
+print(Geburtsjahr)
+print(willkommens_text)
 ```
 
 ## Namenskonventionen:
 
 - Variablennamen sollten klar und beschreibend sein. In Python verwenden wir oft Snake-Case,
   bei dem Wörter durch Unterstriche getrennt werden (z.B. `meine_variable`).
-- Variablennamen dürften nicht mit einer Zahl anfangen und keine Sonderzeichen außer dem Unterstrich enhalten
+- Variablennamen dürften nicht mit einer Zahl anfangen und keine Sonderzeichen außer dem Unterstrich enthalten.
 
 Kurze Variablennamen sind nur in absoluten Ausnahmefällen zu verwenden, z.B. als Laufvariable in einer Schleife. Es
 kostet keine Ressourcen und kein Geld aussagekräftige Variablen zu nutzen.
@@ -85,16 +90,17 @@ In Python gibt es verschiedene Datentypen, aber hier konzentrieren wir uns auf d
 
 ### Integers (Ganzzahlen):
 
-Integers repräsentieren ganze Zahlen, positiv oder negativ, ohne Dezimalstellen.
-
-Möchte man andere Datentypen in Integers umwandeln, nutzt man die `int`-Funtkion, wie wir unten im Beispiel sehen
-können.
-
-Beispiel:
+Integers repräsentieren ganze Zahlen, positiv oder negativ, ohne Dezimalstellen:
 
 ```python
 alter = 30
 anzahl_der_aepfel = -3
+```
+
+Möchte man andere Datentypen in Integers umwandeln, nutzt man die `int`-Funtkion, wie wir unten im Beispiel sehen
+können:
+
+```python
 zahl_von_zeichenkette = int("20")
 ```
 
@@ -131,16 +137,30 @@ ist_sonnig = False
 Von Booleans werden wir um Laufe der Woche noch mehr hören und sie auch schon direkt in unserem eigenen Programm nutzen.
 
 ### Übungsaufgaben
+TODO: Bei vielen dieser Programme würde ich mir konkrete Aufgaben wünschen. Ich habe das mal bei Aufgabe 6 vorgemacht.
+Für fast jeden von denen kannst du hier mehrere beispiele durchgehen und dabei immer interessantere Fälle einbinden
+(z.B. mit Varialben usw.) Ich habe auch darüber nachgedacht, ob man das so lässt, aber das Problem ist,
+dass du hier Anweisungen gibst Dinge zu tun, die du ihnen vorher nicht gezeigt hast. Z.B. forderst du auf
+Vergleichsoperatoren zu nutzen, sie kennnen sie aber nicht. Bitte bedenke folgendes:
+Auch wenn die Teilnehmer bereits zwei Wochen Programmieruntericht im Moment genießen, so sollte das Skript
+doch darauf ausgelegt sein, dass sie keine Vorerfahrung haben.
 
 1. **Integer Addition**: Schreibe ein Programm, das zwei Integers addiert.
 2. **Integer Subtraktion**: Subtrahiere einen Integer von einem anderen und gib das Ergebnis aus.
 3. **Float Division**: Dividiere zwei Floats und gib das Ergebnis aus.
 4. **Multiplikation von Integers**: Multipliziere zwei Integers und gib das Ergebnis aus.
 5. **Konvertierung von Float zu Integer**: Konvertiere einen Float in einen Integer und gib das Ergebnis aus.
-6. **Vergleich von Integers**: Vergleiche zwei Integers mit einem Vergleichsoperator und gib das Ergebnis (True oder
-   False) aus.
-7. **Booleansches AND**: Verwende den AND-Operator, um zwei boolesche Werte zu vergleichen.
-8. **Booleansches OR**: Verwende den OR-Operator, um zwei boolesche Werte zu vergleichen.
+6. **Vergleich von Integers**: Was ist das Ergebnis von:
+   1. `1 < 3`
+   2. `10 > 11`
+   3. `22 != 23`
+   4. `567 <= 890`
+   5. `444 >= 444`
+   6. `42 =< 42`
+7. **Booleansches AND**: Was ist das Ergebnis von:
+   1. 1 < 3 and 4 < 3
+8. **Booleansches OR**: Es gelte `a=1` und `b=2`.
+   1. 2. a < 3 or b > 3
 9. **Umwandlung von Integer in Boolean**: Konvertiere einen Integer in einen Boolean und gib das Ergebnis aus.
 10. **Modulo-Operator mit Integers**: Verwende den Modulo-Operator, um den Rest zweier Integers zu finden.
 11. **Potenzierung von Floats**: Berechne die Potenz eines Floats (z.B. 5.5^3) und gib das Ergebnis aus.
@@ -149,8 +169,12 @@ Von Booleans werden wir um Laufe der Woche noch mehr hören und sie auch schon d
 14. **Negation eines Booleans**: Negiere einen booleschen Wert und gib das Ergebnis aus.
 15. **Kombination von Booleans und Integers**: Überprüfe, ob ein Integer positiv ist und gib das Ergebnis als Boolean
     zurück.
-15. **Diskussion**: Für welche Anwendungen float und integer jeweils besser geeignet sind und wo es keine Rolle spielt!
-16. **Diskussion**: Kann man mit Fließkommazahlen jede Dezimalzahl darstellen? Begründet eure Antworten.
+16. **Diskussion**: Für welche Anwendungen float und integer jeweils besser geeignet sind und wo es keine Rolle spielt!
+17. **Diskussion**: Kann man mit Fließkommazahlen jede Dezimalzahl darstellen? Begründet eure Antworten.
+
+[Lösung](solution_1.md)
+
+TODO: füge Abschnitt ein, der die `type` methode kurz erklärt.
 
 ## Strings, List, Tupel, Set, Dictionary
 
@@ -166,6 +190,12 @@ gespeichert werden, auch Emojis zum Beipiel!
 name = "Anna"
 begruessung = 'Hallo Welt!'
 zahl_als_text = "1234"
+cool = "😎"
+
+print(name)
+print(begruessung)
+print(zahl_als_text)
+print(cool)
 ```
 
 Strings sind für uns sehr wichtig. Der Datentyp ist sehr universell und typischerweise werden jegliche Eingaben und
@@ -182,12 +212,13 @@ Listen werden mit eckigen Klammern `[]` erstellt, und die Elemente werden durch 
 
 ```python
 fruechte = ["Apfel", "Banane", "Kirsche"]
-zahlen = [1, 2, 3, 4, 5]
+zahlen = [1, 2, 3, 4, 5, 4, 3, 2, 1]
 gemischt = [3.14, "Hallo", True]
 ```
 
 Listen sind sehr häufig verwendete Datenstrukturen. Deswegen ist dies hier nur ein kleiner Einstieg und wir lernen
 später noch mehr zu Listen.
+TODO: Hier ein Beispiel einfügen, wie man ein Listenelement ausliest und eines hinzufügt.
 
 ### Tupel
 
@@ -205,6 +236,10 @@ rgb_farbe = (256, 128, 0)
 
 Ebenso wie Listen, sind Tupel wichtige Datenstrukturen. Auch hier lernen wir später noch mehr.
 
+TODO: Hier ein Beispiel einfügen, wie man ein Listenelement ausliest und wie es zu einem Fehler beim auslesen kommt. 
+
+TODO: Hier einen Teil der Übungsaufgaben machen
+
 ### Sets
 
 Sets in Python sind eine Datenstruktur, die für die Speicherung einer ungeordneten Sammlung von einzigartigen Elementen
@@ -213,9 +248,14 @@ verwendet wird. Das heißt kein Element kann doppelt vorkommen.
 Wir erstellen Sets mit geschweiften Klammern `{}` und den jeweiligen Elementen:
 
 ```python
-einzigartige_zahlen = {1, 2, 3, 4, 5}
-buchstaben = {'a', 'b', 'c', 'd'}
+einzigartige_zahlen = {1, 2, 3, 4, 5, 4, 3, 1}
+print(einzigartige_zahlen)
+
+buchstaben = {'a', "a", "A", 'aa'}
+print(buchstaben)
 ```
+
+TODO: Hier einen Teil der Übungsaufgaben machen
 
 ### Dictionaries
 
@@ -233,11 +273,14 @@ print(mein_dict)
 name = mein_dict["Name"]
 print(name)  # Gibt "Max" aus
 ```
-
+TODO: Hier einen Teil der Übungsaufgaben machen
 ### Aufgaben
 
 ### Übungsaufgaben
+TODO: Hier sind auch viele Aufgaben nicht ohne Recherche lösbar und können einfach umformuliert werden,
+indem man den Fall angibt und fragt, was dabei herauskommt.
 
+TODO: Hier auch noch mal Übungsaufgaben hinzufügen, wo die Nutzung von den Konstruktoren (`list`, `set` usw. gezeigt wird)
 1. **Liste erstellen**: Erstelle eine Liste mit den Zahlen von 1 bis 10.
 2. **Tupel zu Liste**: Konvertiere das Tupel `(1, 2, 3)` in eine Liste.
 3. **Elemente zu Set hinzufügen**: Füge die Zahlen 4, 5 und 6 zu einem Set `{1, 2, 3}` hinzu.
@@ -258,116 +301,7 @@ print(name)  # Gibt "Max" aus
 
 # Lösungen
 
-## Floats, Integers, Booleans
-
-Hier sind die Lösungen zu den vorgeschlagenen Übungsaufgaben zu Integers, Floats und Booleans in Python:
-
-1. **Integer Addition**
-
-```python
-print(3 + 5)
-```
-
-2. **Integer Subtraktion**
-
-```python
-print(10 - 4)
-```
-
-3. **Float Division**
-
-```python
-print(7.5 / 2.5)
-```
-
-4. **Multiplikation von Integers**
-
-```python
-print(6 * 8)
-```
-
-5. **Konvertierung von Float zu Integer**
-
-```python
-print(int(7.8))
-```
-
-6. **Vergleich von Integers**
-
-```python
-print(5 > 3)
-```
-
-7. **Booleansches AND**
-
-```python
-print(True and False)
-```
-
-8. **Booleansches OR**
-
-```python
-print(False or True)
-```
-
-9. **Umwandlung von Integer in Boolean**
-
-```python
-print(bool(0))  # False
-print(bool(5))  # True
-```
-
-10. **Modulo-Operator mit Integers**
-
-```python
-print(10 % 3)
-```
-
-11. **Potenzierung von Floats**
-
-```python
-print(5.5 ** 3)
-```
-
-12. **Vergleich von Floats**
-
-```python
-print(5.5 == 5.5)
-```
-
-13. **Integer in Float konvertieren**
-
-```python
-print(float(7))
-```
-
-14. **Negation eines Booleans**
-
-```python
-print(not True)
-```
-
-15. **Kombination von Booleans und Integers**
-
-```python
-num = 5
-print(num > 0)
-```
-
-16. **Diskussion**:
-    Integer: Wenn es nur ganze Zahlen Sinn ergeben, z.B. Alter, Geburtsjahr
-    Floats: Wenn auch Bruchteile relevant sind, z.B. Gewicht
-17. **Diskussion**:
-    Nein, Fließkommazahlen haben keine unendlich hohe Genauigkeit. Für viele Anwendungen reicht dies aus, aber
-    inbesondere
-    wenn sehr viele Berechnungen durchgeführt werden, können diese Ungenauigkeiten zu signifikanten Abweichungen führen.
-    Deswegen verwendet man zum Beispiel für Geldbeträge auch immer Integer und nutzt die kleines WÄhrungseinheit. Erst
-    zur
-    Ausgabe wird umgerechnet.
-
-Diese Lösungen decken grundlegende Operationen mit Integers, Floats und Booleans in Python ab. Sie bieten praktische
-Beispiele, die das Verständnis dieser Datentypen und ihrer Anwendungen in der Programmierung verbessern.
-
+TODO: Lösung in eigene Datei verschieben und verlinken.
 ## Lists, Tupels, Sets, Dictionaries
 
 Hier sind die Lösungen zu den gestellten Übungsaufgaben zu Listen, Tupeln, Sets und Dictionaries in Python:

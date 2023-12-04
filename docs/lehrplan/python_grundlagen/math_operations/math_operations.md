@@ -65,7 +65,7 @@ import math
 wurzel = math.sqrt(64)  # Ergibt 8
 ```
 
-2. **Exponentialfunktion (`math.exp(x)`)**: Berechnet e^x, wobei e die Basis des natürlichen Logarithmus ist.
+2. **Exponentialfunktion (`math.exp(x)`)**: Berechnet $e^x$, wobei $e\approx 2,718282...$ die eulersche Zahl ist.
 
 ```python
 import math
@@ -128,6 +128,14 @@ Multiplikation ausgeführt wird.
 19. **Mehrere Operationen**: Finde das Ergebnis von `3 + 4 * 2 - 1`.
 20. **Komplexer Ausdruck**: Berechne den Wert von `(3 + 4) * (5 - 2) ** 2`.
 
+TODO: In diesem Beispiel sollen die Teilnehmer einen erweiterten Umgang mit Variablen lernen, also
+```python
+x+=1
+x = x + 1
+x = y
+```
+usw.
+
 ## Komplex-Aufgaben
 **Zinsrechner**
 
@@ -154,7 +162,7 @@ Aufgabenstellung:
 - Gib das Ergebnis der Umrechnung aus.
 
 
-
+TODO: Lösung in file übertragen
 ## Lösungen
 1. `print(5 + 3)  # 8`
 2. `print(10 - 2)  # 8`

@@ -40,7 +40,7 @@ echte Käfer (engl. Bugs) in diesen Röhren gemütlich gemacht und zu Fehlern ge
 Effizientes Debuggen besteht aus einer Mischung aus Erfahrung, systematischem Vorgehen und dem Nutzen der vorhandenen 
 Tools.
 
-### Nutzen der `print`-Funktion
+### Nutzen der `print`-Funktion zum Debuggen
 
 Die einfachste Form des Debuggings kann durch das Einfügen von `print`-Anweisungen im Code erfolgen, um Werte von 
 Variablen zu einem bestimmten Zeitpunkt auszugeben. Dies wird sehr häufig verwendet, ist jedoch nicht optimal. Deswegen
@@ -75,7 +75,7 @@ Software, die für einen Produktiveinsatz entwickelt wird, sollte immer eine For
     Performance-relevante Informationen können geloggt werden, um Engpässe und Leistungsprobleme zu identifizieren.
 
 #### Logging in der Praxis
-
+TODO: Vllt das in einen Bonusteil verschieben oder Aufgaben dazu?
 - **Logging-Level**: 
    Verschiedene Logging-Levels (wie INFO, DEBUG, ERROR) ermöglichen es, die Menge und den Detailgrad der 
   Log-Nachrichten zu steuern.
@@ -87,7 +87,7 @@ Software, die für einen Produktiveinsatz entwickelt wird, sollte immer eine For
    Logging ist eine nicht-intrusive Methode, die den normalen Ablauf des Programms nicht unterbricht.
 
 - **Werkzeuge und Bibliotheken**: 
-   Es gibt viele Tools und Bibliotheken (wie log4j, Python's logging-Modul), die das Logging unterstützen und 
+   Es gibt viele Tools und Bibliotheken (Python's `logging`-Modul), die das Logging unterstützen und 
   erleichtern.
 
 ### Der Debugger
@@ -227,3 +227,6 @@ um die Werte zu überprüfen.
 Programm zu beenden.
 5. Starte das Programm im Debug-Modus mit `python -m pdb script.py`. Setze einen Haltepunkt mit `b multipliziere` und 
 überprüfe `x` und `y` mit `p x` und `p y`, bevor du `c` ausführst.
+
+TODO: Ich wusste gar nicht, dass es so ein modul in python gibt. Was ich meinte, war einfach das debugging mit 
+einer IDE wie IntelliJ. Das würde ich auch als erstes zeigen und das hier als einen bonus.

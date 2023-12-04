@@ -46,8 +46,8 @@ Programmen zu erstellen, von einfachen Vergleichen bis hin zu komplexen logische
 
 Die Bausteine dafür sehen wir hier:
 
-- Vergleichsoperatoren: ==, !=, >, <, >=, <=
-- Logische Operatoren: and, or, not
+- Vergleichsoperatoren: `==`, `!=`, `>`, `<`, `>=`, `<=`
+- Logische Operatoren: `and`, `or`, `not`
 - Überprüfung auf Null/None: `is None`, `is not None`
 
 **Beispiel**:
@@ -94,6 +94,12 @@ Die Verwendung von if, elif und else in Python ermöglicht es, basierend auf Bed
 Programm einzuschlagen. Das findet man eigentlich in jedem Programm, da die Unterscheidung von Aktionen basierend auf
 einer oder mehrere Bedingungen ein zentraler Bestandteil der Softwareentwicklung ist.
 
+TODO: hier noch mal aufgaben einfügen, die zeigen, dass automatisch `bool` auf die werte eingefügt wird und
+man dinge wie `if liste:` oder `if zahl:` in python als normale Kurzformen schreibt.
+TODO: Hier kann man auch noch die Notation `a = b if condition else c` einführen
+TODO: Aufgabe hinzufüge, die mit dictionaries arbeitet
+
+
 ## Aufgaben
 1. **Einfache if-Abfrage**: Schreibe ein Programm, das überprüft, ob eine Variable `x` größer als 10 ist. Gib eine 
 entsprechende Nachricht aus.
@@ -137,6 +143,7 @@ die Eingabe bei Eingabe von "fertig".
 
 
 ## Lösungen
+TODO: Lösungen in eigene Datei
 
 1. 
 ```python

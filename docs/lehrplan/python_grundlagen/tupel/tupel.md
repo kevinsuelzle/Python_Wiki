@@ -1,7 +1,7 @@
 # Tupel in Python
 
 In Python ist ein Tupel eine grundlegende Datenstruktur, die einer Liste ähnlich ist, aber einen entscheidenden
-Unterschied aufweist: Sie ist unveränderlich. 
+Unterschied aufweist: Sie ist **unveränderlich**. 
 
 Das bedeutet, dass der Inhalt eines Tupels, sobald es erstellt wurde,
 nicht mehr geändert werden kann. Dies ist nützlich, um die Integrität der Daten im gesamten Programm zu gewährleisten.
@@ -11,7 +11,7 @@ sind.
 
 ## Grundlegende Verwendung
 
-Ein einfaches Beispiel für ein Tupel zum Beispiel die Defintion von Koordianten als ein Paar von zwei Fließkommazahlen:
+Ein einfaches Beispiel für ein Tupel zum Beispiel die Definition von Koordinaten als ein Paar von zwei Fließkommazahlen:
 
 ```python
 koordinaten = (50.8215, -0.1372)
@@ -40,7 +40,7 @@ Dieses Tupel, `koordinaten`, enthält zwei Fließkommazahlen und stellt einen fe
   Datensätzen.
 - **Sicherheit:** Da sie unveränderlich sind, können Tupel verwendet werden, um sicherzustellen, dass Daten im gesamten
   Programm unverändert bleiben.
-- **Funktionalität:** Tupel können als Schlüssel in Wörterbüchern verwendet werden, Listen hingegen nicht.
+- **Funktionalität:** Tupel können als Schlüssel in Dictionaries verwendet werden, Listen hingegen nicht.
 
 Hier sehen wir einige Code-Beispiele, die verschiedene Aspekte von Tupeln in Python veranschaulichen:
 
@@ -56,6 +56,7 @@ fruechte = ("Apfel", "Banane", "Kirsche")
 print(fruechte[0])  # Gibt 'Apfel' aus
 print(fruechte[-1])  # Gibt 'Kirsche' aus (letztes Element)
 ```
+TODO: Auf Slicing eingehen
 
 ### Unveränderlichkeit von Tupeln
 
@@ -118,10 +119,10 @@ zusammenfasst. Für jede Funktion/Methode gibt es eine kurze Beschreibung und ei
 
 | Funktionsname   | Kurzbeschreibung                                       | Beispiel                              |
 |-----------------|--------------------------------------------------------|---------------------------------------|
-| `len()`         | Gibt die Anzahl der Elemente im Tupel zurück.          | `len((1, 2, 3)) # Ergebnis: 3`        |
-| `max()`         | Gibt das größte Element im Tupel zurück.               | `max((1, 4, 2)) # Ergebnis: 4`        |
-| `min()`         | Gibt das kleinste Element im Tupel zurück.             | `min((1, 4, 2)) # Ergebnis: 1`        |
-| `sum()`         | Berechnet die Summe der Elemente im Tupel.             | `sum((1, 2, 3)) # Ergebnis: 6`        |
+| `len(tupel)`    | Gibt die Anzahl der Elemente im Tupel zurück.          | `len((1, 2, 3)) # Ergebnis: 3`        |
+| `max(tupel)`    | Gibt das größte Element im Tupel zurück.               | `max((1, 4, 2)) # Ergebnis: 4`        |
+| `min(tupel)`    | Gibt das kleinste Element im Tupel zurück.             | `min((1, 4, 2)) # Ergebnis: 1`        |
+| `sum(tupel)`    | Berechnet die Summe der Elemente im Tupel.             | `sum((1, 2, 3)) # Ergebnis: 6`        |
 | `tupel.index()` | Sucht nach einem Element und gibt dessen Index zurück. | `(1, 2, 3).index(2) # Ergebnis: 1`    |
 | `tupel.count()` | Zählt, wie oft ein Element im Tupel vorkommt.          | `(1, 2, 2, 3).count(2) # Ergebnis: 2` |
 
@@ -131,11 +132,11 @@ zusammenfasst. Für jede Funktion/Methode gibt es eine kurze Beschreibung und ei
 - `tupel.index()` und `tupel.count()` sind Methoden, die spezifisch für Tupel-Objekte sind. Hierbei ist `tupel` ein
   Platzhalter für das jeweilige Tupel-Objekt.
 
-Diese Funktionen und Methoden sind grundlegend für die Arbeit mit Tupeln und ermöglichen es Ihnen, grundlegende Abfragen
+Diese Funktionen und Methoden sind grundlegend für die Arbeit mit Tupeln und ermöglichen es uns, grundlegende Abfragen
 und Operationen auf Tupel-Datenstrukturen durchzuführen.
 
 ## Aufgaben
-
+TODO: Prüfe die Aufgaben auf Machbarkeit
 1. Erstelle ein Tupel mit den Namen von fünf verschiedenen Früchten.
 2. Zugriff auf das zweite Element im Tupel von Aufgabe 1.
 3. Ändere das zweite Element im Tupel von Aufgabe 1 auf "Erdbeere" (Trickfrage).
@@ -151,8 +152,9 @@ und Operationen auf Tupel-Datenstrukturen durchzuführen.
 13. Sortiere das Tupel von Aufgabe 12 in absteigender Reihenfolge (Hinweis: Tupel können nicht sortiert werden, aber es
     gibt einen Workaround).
 14. Überprüfe, ob das Tupel von Aufgabe 1 ein Subtupel von dem in Aufgabe 10 erstellten verschachtelten Tupel ist.
-15. Schreibe eine Funktion, die ein beliebiges Tupel nimmt und jedes Element davon in Großbuchstaben ausgibt (Hinweis:
+15. Schreibe Code, die ein beliebiges Tupel nimmt und jedes Element davon in Großbuchstaben ausgibt (Hinweis:
     Funktioniert nur mit Strings).
+16. Welchen Typ haben `a=(3,)` und `b=(3)`? 
 
 ## Komplex-Aufgaben
 
@@ -198,7 +200,7 @@ robusterem und fehlerresistenterem Code bei.
 13. `sortierte_zahlen = tuple(sorted(zahlen, reverse=True))`
 14. `print(fruechte in verschachtelt) # Gibt True aus, falls fruechte ein Subtupel ist`
 15.
-
+TODO: Diese Aufgabe ist zu diesem Zeitpunkt noch nicht lösbar!
 ```python
 def drucke_gross(tupel):
     for element in tupel:
@@ -214,7 +216,7 @@ Dies druckt jedes String-Element im Tupel in Großbuchstaben aus.
 ### Einkaufslistenmanager
 
 **Lösung:**
-
+TODO: Diese Aufgabe ist zu diesem Zeitpunkt noch nicht lösbar!
 ```python
 einkaufsliste = []
 

@@ -3,7 +3,7 @@
 
 ## Die `print`-Funktion
 
-Die `print`-Funktion ist eines der grundlegendsten und nützlichsten Werkzeuge in Python. Sie wird verwendet, um Werte 
+Die `print`-Funktion ist eines der grundlegendsten Werkzeuge in Python. Sie wird verwendet, um Werte auf der Konsole 
 auszugeben, sei es Text, Zahlen oder den Inhalt von Variablen. Ein einfacher Aufruf von `print` sieht wie folgt aus:
 `print("Hallo, Welt!")`. 
 
@@ -37,7 +37,7 @@ print(f"Hallo, {name}!")
 ```
 
 In diesem Beispiel wird der Benutzer aufgefordert, seinen Namen einzugeben. Nach der Eingabe wird der eingegebene 
-Name mit einer Begrüßung ausgegeben. Es ist wichtig zu beachten, dass input() immer einen String zurückgibt. Wenn wir 
+Name mit einer Begrüßung ausgegeben. Es ist wichtig zu beachten, dass `input()` immer einen String zurückgibt. Wenn wir 
 Zahlen oder andere Datentypen erwarten, müssen wir die Eingabe entsprechend konvertieren:
 
 ```python
@@ -48,7 +48,9 @@ alter = int(alter_string)
 Damit haben wir bereits eine Menge Grundlagen gelernt, mit denen wir kleine Programme schreiben können. Damit wir das 
 nicht nur theoretisch besprechen folgen jetzt erstmal eine Reihe an Übungsaufgaben.
 
+
 ## Aufgaben
+TODO: Auch hier sind Rechercheaufgaben enthalten, die sich durch konkrete ersetzen lassen.
 1. **Einfache Ausgabe**: Verwende `print`, um "Hallo Welt" auszugeben. 
 2. **Variable ausgeben**: Erstelle eine Variable `text` mit dem Wert "Python" und gib sie mit `print` aus.
 3. **Zahlen ausgeben**: Gib mit `print` die Zahl 100 aus. 
@@ -84,20 +86,11 @@ Aufgabenstellung:
 - Schreibe ein Python-Programm, das verschiedene persönliche Informationen von einem Benutzer erfragt: Name (String), Alter (Integer), Größe in Metern (Float) und Lieblingsfarben (Liste von Strings).
 - Das Programm soll dann diese Informationen jeweils in einem formatierten String ausgeben.
 - Für die Lieblingsfarben soll der Benutzer mehrere Farben eingeben können, getrennt durch Kommas.
+- Wie können die Farben intern als eine Liste gespeichert werden?
 - Das Programm soll die Anzahl der eingegebenen Lieblingsfarben berechnen und ausgeben.
 
-## Neue Begriffe
-
-| Begriff  | Kurzerklärung                                                         | Link zur Referenz                                                                                   |
-|----------|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| `print`  | Funktion um Variablen als Text auf der Konsole auszugeben             | [Referenz](https://docs.python.org/3/library/functions.html?highlight=print#print)                  |
-| `input`  | Funktion, um Nutzereingaben von der Konsole zu lesen                  | [Referenz](https://docs.python.org/3/library/functions.html?highlight=input#input)                  |
-| f-String | Möglichkeit, Strings zu formatieren                                   | [Referenz](https://docs.python.org/3/tutorial/inputoutput.html?highlight=f%20strings#tut-f-strings) |
-| `int`    | Funktion, um Strings, die nur Zahlen enthalten in Integer umzuwandlen | [Referenz](https://docs.python.org/3/library/functions.html?highlight=int#int)                      |
-
-
 ## Lösungen
-
+TODO: Lösung in eigene Datei
 1. `print("Hallo Welt")`
 2. `text = "Python"; print(text)`
 3. `print(100)`
@@ -116,7 +109,7 @@ print(alter)
 ```
 9. 
 ```python
-`essen = input("Was ist dein Lieblingsessen? ")
+essen = input("Was ist dein Lieblingsessen? ")
 print(f"Ich mag auch {essen}!")
 ```
 10. 

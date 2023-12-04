@@ -121,9 +121,18 @@ In diesem Beispiel:
 10. **Listen verschachteln:** Erstelle eine neue Liste `verschachtelt`, die zwei Listen enthält: die ursprüngliche
     Liste `zahlen` und eine Liste mit den Buchstaben ['a', 'b', 'c'].
 
-## Diskussionen
+TODO: Füge hier noch mal einen Text ein, der auf die Funktion von Variablen bei Listen eingeht:
+```python
+a = [1,2,3]
+b = a
+b.append(4)
+print(a)
+print(b)
+```
 
-1. Recherchiere im Internet, welche Informationen du zu Listen in Python findest. Gibt es Alternativen zu Listen?
+TODO: Slicing
+
+TODO: Konkatinations-Operator `+` einfügen
 
 ## Lösungen
 

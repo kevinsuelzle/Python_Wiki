@@ -41,17 +41,6 @@ von Aspekten angibt und diese zur Diskussion stellt. Z.B. bringe die folgenden i
 2. Ordnet sie entsprechend ihrer Wichtigkeit und begründet kurz wieso.
 
 
-**TODO: hier würde ich noch mal folgendes einschieben:
-Aufgabe: im folgenden Video berichtet ein Entwickler, wie viel Zeit er in seiner Tätigkeit für folgende Bereiche
-aufwendet: Selbst Code schreiben, fremden Code schreiben, Tests schreiben, Meetings.
-Mache eine Schätzung, wie viel Prozent seiner Zeit er wo verbringt.
-Dann könntest du ein zwei kurze Handyvideos aufnehmen lassen (Kai, du selbst, ...)
-Außerdem noch mal ein zweites Video aufnehmen lassen, in dem sie in 40 sekunden beschreiben, warum es trotzdem 
-sehr wertvoll ist, dass man programmieren kann, auch wenn man es nicht soo oft macht.
-Ich weiß nicht, ob die Aufgabe gut ist. sie könnte ggf. auch demotivieren. Aber früher oder später
-kriegen sie das sowieso raus, da ist es besser, wenn man da von vornherein gegenansteuert.**
-
-
 ## Die Rolle von Python in der Programmierung
 10 Min
 
