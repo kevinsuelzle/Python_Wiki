@@ -16,7 +16,6 @@
           - Live-Coding zur Demonstration der "Einfachheit"
         - localhost / HTTP(S) Server
           - Wie kann ein lokales Programm auf HTTP Requests nach "außen" hören?
-            - Ports
 
     - Flask Advanced
       - Restful API Designs
@@ -35,7 +34,7 @@ Im letzten Kapitel haben wir gelernt, dass API für Application Programming Inte
 ## Tagesprojekt
 Ziel des heutigen Tages ist es, eine eigene RESTful FLASK API mit CRUD Funktion für das Management von Stellplätzen in einer Garage zu erstellen und diese mit einer Postman Collection zu testen.
 
-![Projekt](../assets/postman_collection_run.png)
+![Projekt](../assets/postman_crud_collection.png)
 
 ## Entwerfen einer API
 Der Aufbau einer effektiven API erfordert ein solides Verständnis der Grundprinzipien und besten Praktiken in der Softwareentwicklung.
@@ -126,41 +125,380 @@ Die Verwendung von Containern wie [Docker](https://www.docker.com/) für das Dep
 
 # Web API Frameworks
 ## Flask & Django
-- Intro & Unterschiede
-- Beispiele
-  - Hallo Welt der APIs
-    - Annotations
-    - Live-Coding zur Demonstration der "Einfachheit"
-  - localhost / HTTP(S) Server
-    - Wie kann ein lokales Programm auf HTTP Requests nach "außen" hören?
-      - Ports
-- Intro & Unterschiede
-- Beispiele
-  - Hallo Welt der APIs
-    - Live-Coding zur Demonstration der "Einfachheit"
-  - localhost / HTTP(S) Server
-    - Wie kann ein lokales Programm auf HTTP Requests nach "außen" hören?
-      - Ports
+Flask und Django bieten zwei sehr unterschiedliche Ansätze für die Entwicklung von Webanwendungen und APIs in Python. Flask ist ideal für schnelle Entwicklung, kleine Projekte oder wenn eine hohe Flexibilität erforderlich ist. Django hingegen bietet ein umfassendes Ökosystem für größere und komplexere Anwendungen. **Die Wahl zwischen Flask und Django hängt von den spezifischen Anforderungen des Projekts, der bevorzugten Arbeitsweise des Entwicklerteams und der Komplexität der zu entwickelnden Anwendung ab**.
+
+## Flask: Das Mikro-Framework
+### Konzept und Philosophie
+Flask ist ein leichtgewichtiges und flexibles Mikro-Framework für Python, entworfen für kleine bis mittelgroße Anwendungen und einfache Web-Dienste.
+Es legt großen Wert auf Einfachheit und Erweiterbarkeit und bietet die Freiheit, die meisten Aspekte der Anwendung nach Bedarf zu gestalten.
+
+### Hauptmerkmale von Flask:
+
+**Minimalistischer Kern**: Flask kommt mit sehr wenig eingebauter Funktionalität. Dies ermöglicht eine hohe Anpassungsfähigkeit, erfordert aber auch, dass Entwickler viele Funktionen selbst implementieren oder Erweiterungen nutzen.
+
+**Erweiterungen**: Eine breite Palette von Erweiterungen verfügbar, die nahtlos integriert werden können, um Funktionen wie Datenbankanbindung, Formularverarbeitung, Authentifizierung etc. hinzuzufügen.
+
+**Einfache Routengestaltung**: Flask ermöglicht eine einfache und intuitive Routendeklaration mit Python-Dekoratoren.
+
+### Einrichtung einer API mit Flask
+**1. Installation**: Beginne mit der Installation von Flask mittels `pip install flask`.
+
+**2. Anwendungserstellung**: Erstelle eine neue Python-Datei und importiere Flask.
+
+**3. Route definieren**: Beachte, dass in Flask eine API oft als eine einfache Funktion beginnt, die über eine Annotation mit einem URL-Endpunkt verknüpft wird.
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/') # Flask URL-Endpunkt Annotation
+def hello_world():
+    return 'Hallo Welt!'
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
+```
+**4. Server starten**: Führe die Anwendung aus, um den lokalen Server zu starten.
+
+## Django: Das "Batterien-inbegriffen"-Framework
+### Konzept und Philosophie
+Django ist ein leistungsstarkes und voll ausgestattetes Web-Framework für größere Anwendungen und Plattformen.
+Sein Ansatz „Batterien inbegriffen“ bedeutet, dass es mit vielen integrierten Funktionen für die gängigsten Entwicklungsaufgaben kommt.
+
+### Hauptmerkmale von Django
+**Vollständige Entwicklungsumgebung**: Es bietet eine robuste Basis für Datenbankmodelle, Benutzerverwaltung, Sicherheitsmechanismen und mehr.
+
+**ORM (Object-Relational Mapping)**: Eines der Kernmerkmale von Django ist sein ORM-System, das eine Abstraktionsschicht über die Datenbank bietet und SQL-Abfragen durch Python-Code ersetzt.
+
+**Admin-Oberfläche**: Eine eingebaute Admin-Oberfläche ermöglicht einfache Verwaltung von Datenmodellen und Benutzerkonten.
+
+### Einrichtung einer API mit Django
+Im direkten Vergleich wird der Unterschied von Flask und Django klar, denn es erfordert ein wenig mehr Setup als Flask, bietet aber von Anfang an mehr Funktionalität.
+
+**1. Installation und Projektstart**: Installiere Django und starten ein neues Projekt mit `django-admin startproject myproject`.
+
+**2. Anwendung erstellen**: Erstelle eine neue Anwendung mit `python manage.py startapp myapp`.
+
+**3. Views und URLs definieren**: Django verwendet keine Annotations sondern ein Muster von Views und URLs um Anfragen zu verarbeiten.
+- In `views.py`, erstelle eine Funktion, die eine HTTP-Antwort zurückgibt. 
+- In `urls.py`, definiere eine URL-Route, die der View-Funktion entspricht.
+
+```python
+# views.py
+from django.http import HttpResponse
+
+def hello_world(request):
+    return HttpResponse('Hallo Welt!')
+
+# urls.py
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.hello_world),
+]
+```
+**4. Server starten**: Führe `python manage.py runserver 8000` aus, um den Server zu starten. 
+
+## Lokaler HTTP Server
+Ein lokaler HTTP(S) Server ermöglicht es, Webanwendungen und APIs auf einem lokalen Rechner zu entwickeln und zu testen. Sowohl Flask als auch Django bieten eingebaute Entwicklungsserver, die für Testzwecke und während der Entwicklung verwendet werden können. Diese Server sind jedoch nicht für den produktiven Einsatz gedacht, da sie nicht für hohe Lasten oder Sicherheitsanforderungen optimiert sind.
+
+Für Produktionsumgebungen sollten auf jeden Fall robustere Serverlösungen wie [Apache](https://httpd.apache.org/) verwendet und [HTTPS](https://www.cloudflare.com/de-de/learning/ssl/what-is-https/) konfiguriert werden.
+
 
 ## Aufgaben
-Zeit: 10-15 min / Aufgabe
-1. **Hello World Flask & Django API**: In Gruppen von 2, erstellt jeweils einen GET Endpunkt der den Text "Hallo Welt!" als Response zurückgibt in Flask und Django.
-2. **Reflexionsrunden Django vs Flask**: Vergleicht gemeinsam die Lesbarkeit, Einfachheit und den Syntax der beiden Frameworks.
-3. **GET API**: ...todo
-4. **Simple CRUD Api**: ...todo
+Zeit: 5-10 min / Aufgabe
+1. **Hello World Flask & Django API**: Erstellt jeweils einen GET Endpunkt der den Text "Hallo Welt!" als Response zurückgibt in Flask und Django.
+2. **Reflexionsrunden Django vs Flask**: In Gruppen von 2, vergleicht gemeinsam die Lesbarkeit, Einfachheit und den Syntax der beiden Frameworks.
+
+### Musterlösungen
+<details>
+  <summary>1. Flask & Django Hello World</summary>
+  
+  **Flask**
+  ```python
+  from flask import Flask
+app = Flask(__name__)
+
+@app.route('/') # Flask URL-Endpunkt Annotation
+def hello_world():
+    return 'Hallo Welt!'
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
+  ```
+
+  **Django**
+  ```python
+  # views.py
+from django.http import HttpResponse
+
+def hello_world(request):
+    return HttpResponse('Hallo Welt!')
+
+# urls.py
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.hello_world),
+]
+  ```
+</details>
+
+<br>
 
 # Flask Advanced
-- Restful API Designs
-  - Planning
-- ORMs
-- Routen
-- Data Handling
-- Fehler Codes
-- Postman & Python Requests Testing
-  - Wie testet man einfach APIs? (Rückblick Testing 4-5)
-  - Python Requests und Testing
-  - Postman Collections 
-    - Repeatable Testing mit Postman
+## Planung einer RESTful API in Flask
+### Schritt 1: Zieldefinition und Funktionsumfang
+**Ermittlung der Kernfunktionen**: Definiere die Hauptaufgaben, die Ihre API erfüllen soll. Ein Beispiel könnte das Verwalten von Benutzerkonten, das Posten von Nachrichten in einem sozialen Netzwerk oder das Abwickeln von Transaktionen in einem E-Commerce-System sein.
+
+**Anwendungsfälle identifizieren**: Überlege, welche Aktionen die Benutzer durchführen sollen. Dazu gehören das Erstellen, Lesen, Aktualisieren und Löschen von Daten (CRUD-Operationen).
+
+**Sicherheitsmaßnahmen planen**: Überlege, ob und wie die API gesichert wird. Das könnte z.B. über Authentifizierungstoken, OAuth oder andere Mechanismen funktionieren. Hierfür gibt es Flask-Erweiterungen wie Flask-JWT oder Flask-OAuthlib.
+
+### Schritt 2: Endpoint-Strukturierung
+**Ressourcenbasiertes Design**: RESTful APIs sind in der Regel ressourcenorientiert. Dies bedeutet, dass die Endpoints um die Ressourcen (wie Benutzer, Produkte, Nachrichten) herum strukturiert werden sollten. Zum Beispiel also wie folgend.
+
+- `/users` für das Auflisten aller Benutzer oder das Erstellen eines neuen Benutzers.
+- `/users/<id>` für das Abrufen, Aktualisieren oder Löschen eines spezifischen Benutzers.
+- `/products/<id>/reviews` für das Anzeigen oder Hinzufügen von Bewertungen zu einem bestimmten Produkt.
+
+### Schritt 3: Datenmodellierung
+**Datenstruktur festlegen**: Definiere, wie die Daten strukturiert sein sollen. Welche Attribute hat beispielsweise ein Benutzer? Name, E-Mail, Passwort usw. sind gängige Felder.
+
+**Beziehung zwischen Datenmodellen**: Bestimme die Beziehungen zwischen den Modellen. Zum Beispiel könnte ein Benutzer mehrere Bestellungen haben, und jede Bestellung könnte mehrere Produkte enthalten.
+
+**Datenbankintegration mit SQLAlchemy**:
+Flask arbeitet nicht direkt mit einer Datenbank, aber z.B. kann SQLAlchemy verwendet werden, um Modelle zu definieren, die Ihre Datenstrukturen repräsentieren.
+Beispiele hierfür findest du in [Woche 6-7](../../datenbanken/datenbanken.md).
+
+## Umsetzung einer RESTful API in Flask
+### Routen
+Das Kernstück jeder Flask-Anwendung sind die Routen, die bestimmen, wie Anfragen an verschiedene URLs gehandhabt werden. Ein Beispiel für eine einfache Route haben wir bereits im Teil [Einrichtung einer API mit Flask](#einrichtung-einer-api-mit-flask) gesehen.
+
+
+
+```python
+@app.route('/')
+def home():
+    return "Hallo Welt!"
+```
+
+RESTful Design definiert die Existenz der CRUD Operationen. Mit Flask können wir diese Endpoints wie folgt abbilden. Das explizite Angeben der unterstützen Methoden macht den Code auszeichnender und hilft bei der späteren Generierung der Dokumentation.
+
+**GET**: Abrufen von Nutzerdaten. (Basisroute):
+```python
+@app.route('/users', methods=['GET'])
+def get_users():
+    # Logik, um Benutzerdaten abzurufen
+```
+
+**POST**: Erstellen eines neuen Nutzers (Basisroute).
+```python
+@app.route('/users', methods=['POST'])
+def create_user():
+    # Logik, um einen neuen Benutzer zu erstellen
+```
+
+**PUT**: Aktualisieren eines bestehenden Nutzers (Variable Route).
+```python
+@app.route('/users/<id>', methods=['PUT'])
+def update_user(id):
+    # Logik, um Benutzerdaten zu aktualisieren
+```
+
+**DELETE**: Löschen eines Nutzers (Variable Route).
+```python
+@app.route('/users/<int:id>', methods=['DELETE'])
+def delete_user(id):
+    # Logik, um einen Benutzer zu löschen
+```
+
+
+### Datenverarbeitung
+Die Datenverarbeitung, z.B. von JSON Daten, sowohl als Payload in der Anfrage als auch in der Antwort ist für die effiziente Nutzung von APIs relevant. Deshalb bietet Flask das `request`-Objekt um Daten aus Anfragen abzurufen.
+```python
+@app.route('/users', methods=['POST'])
+def create_user():
+    user_data = request.json
+    # Verarbeiten von user_data
+```
+
+Für das einfach Senden von JSON-Objekten in der Antwort nutzen wir `jsonify`.
+```python
+@app.route('/users/<int:id>', methods=['GET'])
+def get_user(id):
+    # Angenommene Hilfsfunktion zur Datenbankabfrage
+    user = get_user_by_id(id)  
+    return jsonify(user)
+```
+
+Für das handling von Form-Daten gibt es ein Objektattribute namens `form`. Es beinhaltet alle request-Formular Daten.
+```python
+@app.route('/submit-form', methods=['POST'])
+def handle_data():
+    name = request.form['name']
+    age = request.form['age']
+    # Verarbeiten der Daten
+    return jsonify({"message": "Formular erhalten"}), 200
+```
+
+
+### Fehlercodes und Ausnahmebehandlung
+Bei der Behandlung von Fehlern ist die korrekte Verwendung von HTTP-Fehlercodes entscheidend, um dem Client-Ende nützliches Feedback zu geben. Alle Status Codes sind standardisiert und können z.B. auf der [SelfHTML Seite](https://wiki.selfhtml.org/wiki/HTTP/Statuscodes) eingesehen werden. Es sollte immer der präzise HTTP-Statuscodes gesendet werden um den Zustand der Anfrage zu kommunizieren.
+
+**`404 Nicht gefunden`**
+```python
+@app.route('/users/<int:id>')
+def get_user(id):
+    user = get_user_by_id(id)
+    if not user:
+        return jsonify({"error": "Benutzer nicht gefunden"}), 404 
+    return jsonify(user)
+```
+
+**`400 Schlechte Anfrage`**
+```python
+@app.route('/cars', methods=['POST'])
+def create_car():
+    data = request.json
+    if not valid_car_data(data):
+        return jsonify({"error": "Ungültige Daten"}), 400
+    # Erstellen eines neuen Autos
+    return jsonify({"message": "Auto erstellt"}), 201
+```
+
+**`401 Unautorisiert`**
+```python
+@app.route('/secure-area')
+def secure_area():
+    if not user_is_authenticated():
+        return jsonify({"error": "Unautorisiert"}), 401
+    return jsonify({"message": "Willkommen im sicheren Bereich"})
+```
+
+
+## Testing einer RESTful API in Flask
+Abhängig von der Art der Tests ([Unit, Integration oder End-To-End](#2-umsetzung)) gibt es verschiedene Möglichkeiten diese zu implementieren. Das Testen mit Python Requests und Postman bietet eine sich ergänzende Kombination, die Funktionalität und Zuverlässigkeit einer Flask-API sicherzustellen. 
+
+Während Python Requests ideal für das Schreiben automatisierter Testskripte (Unit Tests) ist, bietet Postman eine leistungsstarke Plattform für manuelles Testing, Automatisierung und Dokumentation (vor allem Integrationstests). Durch die Kombination beider Methoden kann ein robustes Testframework für APIs aufgebaut werden.
+
+
+### Testing mit Python Requests
+Die Python Requests Library haben wir bereits kennen gelernt. Sie ist eine einfache, aber leistungsstarke HTTP-Bibliothek, die für das Senden aller Arten von HTTP-Anfragen verwendet werden kann und somit perfekt geeignet um unsere API zu testen.
+
+**Grundlegendes Testing**: In diesem Beispiel wird eine GET-Anfrage an die /users-Route gesendet. Es wird überprüft, ob der Statuscode 200 ist und ob die Antwort JSON-Daten enthält.
+Erweiterte Testbeispiele
+
+```python
+import requests
+
+def test_get_users():
+    response = requests.get('http://localhost:5000/users')
+    assert response.status_code == 200
+    assert response.json() is not None
+```
+
+**Fehlerbehandlung testen**: Dieser Test überprüft, ob die API korrekt auf nicht gefundene Ressourcen mit einem 404-Fehler reagiert.
+
+```python
+def test_get_user_not_found():
+    response = requests.get('http://localhost:5000/users/999')
+    assert response.status_code == 404
+```
+
+### Testing mit Postman
+Postman ist ein beliebtes Werkzeug für das Testen von APIs und das Werkzeug der Wahl für das kommende Tagesprojekt. Es bietet eine benutzerfreundliche Oberfläche und leistungsstarke Funktionen zum Erstellen, Testen und Dokumentieren von APIs.
+
+#### Erstellen eines neuen Requests
+![Postman Neue GET Query](../assets/postman_get_example.png)
+
+#### Erstellen einer Postman Collections
+![Postman Neue Collection](../assets/postman_new_collection_query.png)
+
+#### Erstellen eines Tests für einen GET-Endpoint
+Füge im nächsten Schritt den Status-Code Test im "Tests"-Tab hinzu.
+```javascript
+pm.test("Statuscode ist 200", function () {
+    pm.response.to.have.status(200);
+
+    var jsonData = pm.response.json();
+    pm.expect(jsonData).to.not.be.empty;
+});
+```
+![Postman Test Sektion](../assets/postman_test_section.png)
+
+Über einen Rechtsklick auf die Collection können dann alle Requests inklusive tests in der angegebenen Reihenfolge getestet werden.
+
+![Postman Test Sektion](../assets/postman_run_collection.png)
+
+#### Automatisierung und wiederholbares Testing
+Postman ermöglicht es, alle Anfragen innerhalb einer Collection automatisch auszuführen. Das ist nützlich, um Regressionstests durchzuführen.
+
+![Postman Collection Test Run](../assets/postman_collection_run.png)
+
+Zusätzlich bietet Postman die Möglichkeit, Collections über die [Postman API](https://www.postman.com/postman/workspace/postman-public-workspace/documentation/12959542-c8142d51-e97c-46b6-bd77-52bb66712c9a) oder [Newman](https://www.npmjs.com/package/newman) (eine Command-Line-Version von Postman) in CI/CD-Pipelines zu integrieren. Das ermöglicht das automatische Testen von APIs bei jedem Build oder Deployment.
+
+
+
+## Dokumentation einer RESTful API in Flask
+Wie bereits ausführlich im Kapitel [Dokumentation](#3-dokumentation) besprochen, ist eine ausführliche und gut strukturierte Dokumentation entscheidend für eine professionelle API. Auch hierfür gibt es nützliche Tools die die Dokumentation deutlich vereinfachen.
+
+### Swagger / OpenAPI
+[Swagger](https://swagger.io/) bietet eine grafische Benutzeroberfläche und Werkzeuge zur Erstellung interaktiver API-Dokumentationen. Flask-APIs können mit [Flask-Swagger](https://pypi.org/project/flask-swagger/) integrieren, um automatisch eine Dokumentation zu generieren.
+
+### MkDocs oder Sphinx:
+Für eine eher traditionelle Dokumentation können Werkzeuge wie [MkDocs](https://www.mkdocs.org/) verwendet werden, die z.B. Markdown nutzen, um Seiten und Navigation zu erstellen.
+
+### Beispielstruktur einer API-Dokumentation
+
+```python
+# Meine RESTful API
+
+## Übersicht
+- Endpoints
+- Fehlercodes
+
+## Endpoints
+
+### GET /users
+- Beschreibung: Abrufen einer Liste aller Benutzer.
+- Parameter: Keine.
+
+- Beispielanfrage: GET /users
+
+- Beispielantwort (JSON):
+  {
+    "users": [
+      {"id": 1, "name": "John Doe"},
+      {"id": 2, "name": "Jane Doe"}
+    ]
+  }
+
+### POST /users
+Beschreibung: Erstellen eines neuen Benutzers.
+Parameter: name (String), email (String).
+
+Beispielanfrage (JSON): POST /users
+{
+  "name": "Max Mustermann",
+  "email": "max@example.com"
+}
+
+Beispielantwort (JSON):
+{
+  "message": "Benutzer erstellt",
+  "userId": 3
+}
+
+### Fehlercodes
+400 Bad Request: Ungültige Anfragedaten.
+404 Not Found: Ressource nicht gefunden.
+500 Internal Server Error: Allgemeiner Serverfehler.
+```
+
+
 
 ## Komplex-Aufgabe (Capstone Projekt)
 **CRUD Garagen Management API**
