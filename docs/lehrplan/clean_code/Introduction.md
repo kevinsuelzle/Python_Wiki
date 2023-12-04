@@ -34,26 +34,27 @@ zu öffnen. Liese dir durch was du siehst und diskutiere darüber.
 
 ## Beispiele für gute Code Konventionen 
 
-### [Gestaltung und Testen von Funktionen](Funktionsgestaltung.md) [100 min]
+### [Gestaltung und Testen von Funktionen](Funktionsgestaltung.ipynb) [100 min]
 
-### [DRY Don't repeat yourself](DRY.md) [20 min]
+### [DRY Don't repeat yourself](DRY.ipynb) [20 min]
 
-### [Typehints](Typehints.md) [50 min]
+### [Typehints](Typehints.ipynb) [50 min]
 
-### [GuardClauses](GuardClauses.md) [45 min]
+### [GuardClauses](GuardClauses.ipynb) [45 min]
 
-### [Variablenbenennung](Variablenbenennung.md) [35 min]
+### [Variablenbenennung](Variablenbenennung.ipynb) [35 min]
 
-### [Globaler Variablen sind böse](Globale_Parameter.md) [30 min]
+### [Globaler Variablen sind böse](Globale_Parameter.ipynb) [30 min]
 
-### [Fehlerbehandlung](Fehlerbehandlung.md) [50 min]
+### [Fehlerbehandlung](Fehlerbehandlung.ipynb) [50 min]
 
-### [List Comprehensions](ListComprehension.md) [45 min]
+### [List Comprehensions](ListComprehension.ipynb) [45 min]
 
-### [Benennungskonventionen](Benennungskonventionen.md)  [30 min]
+### [Benennungskonventionen](Benennungskonventionen.ipynb)  [30 min]
 
-### [Kommentaren und docstrings](Kommentare.md) [75 min]
+### [Kommentaren und docstrings](Kommentare.ipynb) [75 min]
 
-$$$ TODO: 20 Große Übungsaufgabe definieren
+### [Übungsaufgabe](Uebungsaufgabe.ipynb) [90 min]
+
 $$$ TODO 21 Begriffsliste definieren
 $$$ TODO 22 "zurück" buttons bei allen Unterseiten oben und unten eifnügen

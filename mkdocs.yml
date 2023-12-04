@@ -17,3 +17,8 @@ nav:
       - Leitfaden: orga/leitfaden.md
       - Inhalte: orga/inhalte.md
       - Viktors ToDo's: orga/todo.md
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false
