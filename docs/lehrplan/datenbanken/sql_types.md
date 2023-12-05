@@ -1,6 +1,6 @@
 # 
 
-# Arten von SQL-Anweisungen
+# Arten von SQL-Anweisungen [15min]
 
 - **DDL (Data Definition Language)**: Befehle, die Datenstrukturen in der Datenbank definieren, verwalten und modifizieren. Beispiele sind CREATE, ALTER, DROP und TRUNCATE.
 - **DML (Data Manipulation Language)**: Befehle, die sich mit in der Datenbank gespeicherten Daten befassen. Beispiele sind SELECT, INSERT, UPDATE und DELETE.
