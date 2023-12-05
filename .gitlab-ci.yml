@@ -4,6 +4,7 @@ build_stage:
     - pip install mkdocs mkdocs-material
     - mkdocs build --verbose
   artifacts:
+    untracked: true
     paths:
       - site
   only:
