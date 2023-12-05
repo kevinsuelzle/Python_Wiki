@@ -70,75 +70,132 @@ Datenbankdesigns und der Datenmodellierung wertvolle Dienste leistet.
 
 ## Beispiele
 
-```mermaid
-classDiagram
-    class Student {
-        -int studentId PK
-        -string name
-        +register()
-        #INDEX(name)
-    }
-    class Kurs {
-        -int kursId PK
-        -string title
-        +addStudent(Student)
-        #TRIGGER(onInsert)
-        #INDEX(title)
-    }
-    class Einschreibung {
-        -int studentId FK
-        -int kursId FK
-        #TRIGGER(onUpdate)
-    }
+[//]: # (```mermaid)
 
-    Student "1" -- "n" Einschreibung: hat
-    Einschreibung "n" -- "1" Kurs: gehört zu
-```
+[//]: # (classDiagram)
 
-### Begriffsdefinitionen für Klassen-Diagramme in Mermaid
+[//]: # (    class Student {)
 
-1. **Entitäten (Tabellen):**
-    - Jede Entität repräsentiert eine Tabelle in der Datenbank.
-    - Entitäten werden als Rechtecke dargestellt, wobei der Name der Entität (Tabelle) oben steht.
+[//]: # (        -int studentId PK)
 
-2. **Attribute:**
-    - Attribute einer Entität repräsentieren die Spalten der Tabelle.
-    - Sie werden innerhalb der Entitätsbox aufgelistet.
-    - Verschiedene Präfixe oder Stile können verwendet werden, um spezielle Attribute zu kennzeichnen:
-        - `-`: Private Attribute (nicht sichtbar außerhalb der Entität).
-        - `+`: Öffentliche Attribute (sichtbar und zugänglich).
-        - `#`: Geschützte Attribute (eingeschränkter Zugriff).
+[//]: # (        -string name)
 
-3. **Primärschlüssel (PK):**
-    - Ein Primärschlüssel wird oft durch Unterstreichung oder ein Präfix `PK` gekennzeichnet.
-    - Er identifiziert jeden Datensatz in der Tabelle eindeutig.
+[//]: # (        +register&#40;&#41;)
 
-4. **Fremdschlüssel (FK):**
-    - Fremdschlüssel werden oft durch ein Präfix `FK` gekennzeichnet.
-    - Sie stellen eine Verbindung zu einem Primärschlüssel in einer anderen Tabelle her.
+[//]: # (        #INDEX&#40;name&#41;)
 
-5. **Beziehungen:**
-    - Beziehungen zwischen Entitäten werden durch Linien dargestellt.
-    - Die Art der Beziehung wird durch die Beschriftung an den Enden der Linie angezeigt:
-        - `"1"`: Eine 1:1-Beziehung.
-        - `"n"`: Eine 1:N-Beziehung.
-        - `"m"`: Eine M:N-Beziehung.
+[//]: # (    })
 
-6. **Kardinalität:**
-    - Die Kardinalität einer Beziehung (wie 1:1, 1:N, N:M) gibt an, wie viele Instanzen einer Entität mit Instanzen
-      einer anderen Entität in Beziehung stehen können.
+[//]: # (    class Kurs {)
 
-7. **Rekursive Beziehungen:**
-    - Eine rekursive Beziehung tritt auf, wenn eine Entität eine Beziehung zu sich selbst hat.
-    - Dies wird durch eine Linie dargestellt, die von der Entität ausgeht und zu ihr zurückführt.
+[//]: # (        -int kursId PK)
 
-8. **Indizes und Trigger:**
-    - Indizes und Trigger sind spezielle Konstrukte, die nicht immer direkt in ER-Diagrammen dargestellt werden, aber
-      durch spezielle Notationen oder Kommentare gekennzeichnet werden können.
+[//]: # (        -string title)
 
-Diese Legende bietet eine allgemeine Übersicht über die Elemente, die in einem ER-Diagramm in Mermaid verwendet werden
-können. Beachten Sie, dass die genaue Syntax und Darstellung je nach den Konventionen und dem Stil, den Sie wählen,
-variieren kann.
+[//]: # (        +addStudent&#40;Student&#41;)
+
+[//]: # (        #TRIGGER&#40;onInsert&#41;)
+
+[//]: # (        #INDEX&#40;title&#41;)
+
+[//]: # (    })
+
+[//]: # (    class Einschreibung {)
+
+[//]: # (        -int studentId FK)
+
+[//]: # (        -int kursId FK)
+
+[//]: # (        #TRIGGER&#40;onUpdate&#41;)
+
+[//]: # (    })
+
+[//]: # ()
+[//]: # (    Student "1" -- "n" Einschreibung: hat)
+
+[//]: # (    Einschreibung "n" -- "1" Kurs: gehört zu)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (### Begriffsdefinitionen für Klassen-Diagramme in Mermaid)
+
+[//]: # ()
+[//]: # (1. **Entitäten &#40;Tabellen&#41;:**)
+
+[//]: # (    - Jede Entität repräsentiert eine Tabelle in der Datenbank.)
+
+[//]: # (    - Entitäten werden als Rechtecke dargestellt, wobei der Name der Entität &#40;Tabelle&#41; oben steht.)
+
+[//]: # ()
+[//]: # (2. **Attribute:**)
+
+[//]: # (    - Attribute einer Entität repräsentieren die Spalten der Tabelle.)
+
+[//]: # (    - Sie werden innerhalb der Entitätsbox aufgelistet.)
+
+[//]: # (    - Verschiedene Präfixe oder Stile können verwendet werden, um spezielle Attribute zu kennzeichnen:)
+
+[//]: # (        - `-`: Private Attribute &#40;nicht sichtbar außerhalb der Entität&#41;.)
+
+[//]: # (        - `+`: Öffentliche Attribute &#40;sichtbar und zugänglich&#41;.)
+
+[//]: # (        - `#`: Geschützte Attribute &#40;eingeschränkter Zugriff&#41;.)
+
+[//]: # ()
+[//]: # (3. **Primärschlüssel &#40;PK&#41;:**)
+
+[//]: # (    - Ein Primärschlüssel wird oft durch Unterstreichung oder ein Präfix `PK` gekennzeichnet.)
+
+[//]: # (    - Er identifiziert jeden Datensatz in der Tabelle eindeutig.)
+
+[//]: # ()
+[//]: # (4. **Fremdschlüssel &#40;FK&#41;:**)
+
+[//]: # (    - Fremdschlüssel werden oft durch ein Präfix `FK` gekennzeichnet.)
+
+[//]: # (    - Sie stellen eine Verbindung zu einem Primärschlüssel in einer anderen Tabelle her.)
+
+[//]: # ()
+[//]: # (5. **Beziehungen:**)
+
+[//]: # (    - Beziehungen zwischen Entitäten werden durch Linien dargestellt.)
+
+[//]: # (    - Die Art der Beziehung wird durch die Beschriftung an den Enden der Linie angezeigt:)
+
+[//]: # (        - `"1"`: Eine 1:1-Beziehung.)
+
+[//]: # (        - `"n"`: Eine 1:N-Beziehung.)
+
+[//]: # (        - `"m"`: Eine M:N-Beziehung.)
+
+[//]: # ()
+[//]: # (6. **Kardinalität:**)
+
+[//]: # (    - Die Kardinalität einer Beziehung &#40;wie 1:1, 1:N, N:M&#41; gibt an, wie viele Instanzen einer Entität mit Instanzen)
+
+[//]: # (      einer anderen Entität in Beziehung stehen können.)
+
+[//]: # ()
+[//]: # (7. **Rekursive Beziehungen:**)
+
+[//]: # (    - Eine rekursive Beziehung tritt auf, wenn eine Entität eine Beziehung zu sich selbst hat.)
+
+[//]: # (    - Dies wird durch eine Linie dargestellt, die von der Entität ausgeht und zu ihr zurückführt.)
+
+[//]: # ()
+[//]: # (8. **Indizes und Trigger:**)
+
+[//]: # (    - Indizes und Trigger sind spezielle Konstrukte, die nicht immer direkt in ER-Diagrammen dargestellt werden, aber)
+
+[//]: # (      durch spezielle Notationen oder Kommentare gekennzeichnet werden können.)
+
+[//]: # ()
+[//]: # (Diese Legende bietet eine allgemeine Übersicht über die Elemente, die in einem ER-Diagramm in Mermaid verwendet werden)
+
+[//]: # (können. Beachten Sie, dass die genaue Syntax und Darstellung je nach den Konventionen und dem Stil, den Sie wählen,)
+
+[//]: # (variieren kann.)
 
 ```mermaid
 erDiagram

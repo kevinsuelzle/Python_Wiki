@@ -1,8 +1,13 @@
 site_name: My Docs
 
+plugins:
+  - search
+  - mermaid2
+
 nav:
   - Home: index.md
   - Lehrplan: lehrplan/lehrplan.md
+  - Datenbanken: lehrplan/datenbanken/datenbanken.md
   - Lernziele: lehrplan/lernziele.md
   - Begriffssammlung: lehrplan/begriffssammlung.md
   - Projekte:

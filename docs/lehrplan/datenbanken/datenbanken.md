@@ -56,15 +56,15 @@ Sie die Kraft relationaler Datenbanken nutzen, um komplexe Datenanforderungen ef
 
 # Bestandteile des Kurses
 
-## Tag 1
+      1. Tag
 
 ## [Arten von SQL Anweisungen](sql_types.md)
-## [Normalisierung von Daten](normalization.md)
 ## [UML für Datenbanken](uml_diagramme.md)
+## [Normalisierung von Daten](normalization.md)
 ## [Indizes und Referentielle Integrität](indices_and_referential_integrity.md)
 ## [Arbeitsumgebung](how_we_will_work.md)
 ## [Reservierte Ausdrücke in SQLite](reserved_words_sqlite.md)
 ## [Datentypen in SQLite](daten_typen_sqlite.md)
 ## [Erstellen von Tabellen](create_tables.md)
 
-
+      2. Tag
