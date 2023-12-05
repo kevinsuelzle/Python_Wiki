@@ -1,8 +1,8 @@
 stages:
-  - build
-  - deploy
+  - build_stage
+  - deploy_stage
 
-build:
+build_stage:
   image: python:3.11
   script:
     - pip install mkdocs mkdocs-material
@@ -13,7 +13,7 @@ build:
   only:
     - main
 
-deploy:
+deploy_stage:
   image: node:21-slim
   script:
     - npm install -g firebase-tools
