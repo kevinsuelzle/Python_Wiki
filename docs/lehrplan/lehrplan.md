@@ -35,7 +35,7 @@
 | 5     | [Design Patterns Allgemein](python_grundlagen/Woche%204-5/14_design_patterns.md)       |                 | [hier](python_grundlagen/Woche%204-5/14_design_patterns.md#checkliste) | [hier](python_grundlagen/Woche%204-5/14_design_patterns.md#neue-schlüsselwörter) |
 | 5     | [Strategy Pattern](python_grundlagen/Woche%204-5/14_x1_strategy.md)              |                 | [hier](python_grundlagen/Woche%204-5/14_x1_strategy.md#checkliste)   | [hier](python_grundlagen/Woche%204-5/14_x1_strategy.md#neue-schlüsselwörter)  |
 | 5     | [Factory Method Pattern](python_grundlagen/Woche%204-5/14_x2_factory_method.md) |                 | [hier](python_grundlagen/Woche%204-5/14_x2_factory_method.md#checkliste) | [hier](python_grundlagen/Woche%204-5/14_x2_factory_method.md#neue-schlüsselwörter) |
-| 5     | [Adapter Pattern](python_grundlagen/Woche%204-5/14_x3_adapter.md)               |                 | [hier
+| 5     | [Adapter Pattern](python_grundlagen/Woche%204-5/14_x3_adapter.md)               |                 | [hier](python_grundlagen/Woche%204-5/14_x3_adapter.md#checkliste) | [hier](python_grundlagen/Woche%204-5/14_x3_adapter.md#neue-schlüsselwörter) |
 
 
 # Block 2
