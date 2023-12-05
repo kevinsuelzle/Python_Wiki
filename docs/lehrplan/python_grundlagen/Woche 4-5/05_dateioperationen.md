@@ -144,3 +144,11 @@ Erstelle eine Funktion, die die Anzahl der Zeichen in einer Textdatei zählt und
 ## 10. Datei verschlüsseln 🌶️🌶️🌶️🌶️
 
 Implementiere eine einfache Verschlüsselungsfunktion, die den Inhalt einer Datei verschlüsselt und in eine neue Datei schreibt. Verwende dazu eine geeignete Verschlüsselungsmethode deiner Wahl.
+
+# Checkliste: 
+
+- [ ] Ich kann grundlegende Dateioperationen in Python durchführen.
+- [ ] Ich verstehe, wie man Dateien öffnet, liest, schreibt und schließt.
+- [ ] Ich bin mir der verschiedenen Dateimodi und deren Verwendung bewusst.
+- [ ] Ich kenne die Verwendung von Ausnahmebehandlung bei Dateioperationen.
+- [ ] Ich kann mit CSV Dateien im Python umgehen.

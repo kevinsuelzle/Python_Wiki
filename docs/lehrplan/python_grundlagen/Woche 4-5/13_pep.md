@@ -104,3 +104,11 @@ Wähle einen Grundsatz aus dem "Zen of Python" und integriere ihn in das obige P
 ## 3. **Docstrings für Funktionen und Klassen 🌶️**
 
 Füge Docstrings zu den Funktionen `benutzerEingabe` und `quadratBerechnung` im obigen Python-Skript hinzu. Stelle sicher, dass die Docstrings die Funktionalität klar und prägnant erklären.
+
+
+# Checkliste:
+
+- [ ] Ich kenne die Bedeutung von PEP (_Python Enhancement Proposal_) in der Python-Entwicklung.
+- [ ] Ich verstehe, wie PEPs zur Verbesserung und Erweiterung der Python-Sprache beitragen.
+- [ ] Ich bin mit einigen wichtigen PEPs vertraut und deren Auswirkungen auf die Sprache.
+- [ ] Ich kann selbst Docstrings schreiben.

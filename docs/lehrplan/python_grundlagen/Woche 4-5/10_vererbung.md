@@ -98,3 +98,11 @@ Implementiere eine Basisklasse `Person` mit grundlegenden Informationen wie Name
    - Die `Teilnehmer`-Klasse sollte das Attribut `matrikelnummer` haben und eine Methode `prüfung_schreiben()` implementieren.
    - Die `Dozent`-Klasse sollte das Attribut `fachgebiet` haben und eine Methode `prüfungen_korrigieren()` implementieren.
 
+
+
+# Checkliste: 
+
+- [ ] Ich habe ein Verständnis für das Konzept der Vererbung in Python.
+- [ ] Ich kann Klassen ableiten und von Basisklassen erben.
+- [ ] Ich verstehe die Verwendung von Superklassen und Unterklassen.
+- [ ] Ich bin mir der Bedeutung von Methodenüberschreibung bewusst.

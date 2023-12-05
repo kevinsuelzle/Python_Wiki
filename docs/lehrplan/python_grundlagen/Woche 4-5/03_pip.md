@@ -100,3 +100,12 @@ Durch diese Befehle wird Pip angewiesen, den angegebenen Proxy zu verwenden, wen
 
 ## 7. Upgrade eines Pakets auf eine bestimmte Version 🌶️
    - Upgrade das Paket "requests" auf eine bestimmte Version mit dem Befehl `pip install --upgrade requests==2.26.0`.
+
+
+# Checkliste:
+
+- [ ] Ich verstehe die Bedeutung von PIP als Paketmanager für Python.
+- [ ] Ich kann Python-Pakete mit PIP installieren, aktualisieren und deinstallieren.
+- [ ] Ich kenne grundlegende PIP-Befehle und deren Optionen.
+- [ ] Ich kann nach einem Paket suchen.
+- [ ] Ich kann ein Paket in einer bestimmten Version installieren.

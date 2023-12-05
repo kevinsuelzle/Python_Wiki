@@ -47,3 +47,11 @@ Jetzt entscheidest du dich, konkrete Kaffeemaschinen zu bauen, basierend auf die
 So wie die Klasse den Bauplan für die Kaffeemaschine liefert, gibt sie vor, welche Funktionen und Eigenschaften die Kaffeemaschinen haben sollten. Die einzelnen Maschinen, also die Objekte, sind dann die konkreten Umsetzungen dieses Bauplans mit individuellen Variationen.
 
 **In diesem Sinne sind Klassen wie Baupläne, und Objekte sind die konkreten Instanzen, die basierend auf diesen Bauplänen erstellt werden.**
+
+
+# Checkliste: 
+
+- [ ] Ich habe grundlegende Kenntnisse über objektorientierte Programmierung (OOP).
+- [ ] Ich verstehe die vier Grundprinzipien von OOP: Abstraktion, Vererbung, Polymorphie und Kapselung.
+- [ ] Ich den Zusammenhang zwischen Klassen und Objekten in eigenen Worten erklären.
+- [ ] Ich bin mir der Bedeutung von Attributen und Methoden in Klassen bewusst.

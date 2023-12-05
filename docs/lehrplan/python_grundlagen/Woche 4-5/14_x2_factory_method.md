@@ -83,3 +83,10 @@ c. Erstelle eine abstrakte Klasse `BeverageFactory` mit der Factory-Methode `cre
 d. Implementiere konkrete Fabriken, die von `BeverageFactory` erben, z. B. `CoffeeFactory`, `TeaFactory`, und `HotChocolateFactory`.
 
 e. Zeige die Anwendung, indem du eine Kaffeemaschinen-Simulation erstellst und verschiedene Getränketypen zubereitest.
+
+
+# Checkliste: 
+
+- [ ] Ich kenne das Factory Method-Entwurfsmuster und seine Verwendung.
+- [ ] Ich kann die Factory Method in Python implementieren.
+- [ ] Ich verstehe, wie die Factory Method das Erzeugen von Objekten flexibler gestaltet.

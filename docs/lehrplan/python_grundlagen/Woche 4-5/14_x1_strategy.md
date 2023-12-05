@@ -6,6 +6,8 @@
 
 Das Strategy Pattern ist ein Verhaltensmuster, das es ermöglicht, eine Familie von Algorithmen zu definieren, sie zu kapseln und austauschbar zu machen. Es definiert eine Familie von Algorithmen, kapselt jeden Algorithmus und macht sie austauschbar. Das Muster ermöglicht es einem Client, den Algorithmus unabhängig von den Clients, die ihn verwenden, zu wählen und zu ändern.
 
+Die Entscheidung welche Strategie genutzt werden soll wird dabei zur **Laufzeit** festgelegt. 
+
 Beispiel:
 
 ```python
@@ -76,3 +78,11 @@ c. Entwickle eine Klasse `UserAuthentication`, die eine Instanz von `Authenticat
 d. Die Methode `authenticate_user` der Klasse `UserAuthentication` sollte die Authentifizierung unter Verwendung der übergebenen Authentifizierungsstrategie durchführen.
 
 e. Zeige die Anwendung, indem du einen Benutzer authentifizierst und verschiedene Authentifizierungsstrategien ausprobierst.
+
+
+# Checkliste: 
+
+- [ ] Ich verstehe das Strategy-Entwurfsmuster und seine Anwendung.
+- [ ] Ich kann das Strategy-Entwurfsmuster in Python implementieren.
+- [ ] Ich kenne die Vorteile und Einsatzszenarien des Strategy-Musters.
+- [ ] Ich weiss was eine Laufzeitentscheidung ist.

@@ -123,3 +123,10 @@ Sichtbarkeit bezieht sich auf die Zugriffsberechtigungen von Attributen und Meth
 
 ## 7. **Schülerverwaltung mit Noten 🌶️🌶️🌶️🌶️**:
    Implementiere eine Klasse `Schüler`, die private Attribute für den Namen und die Noten eines Schülers enthält. Verwende @property-Dekoratoren, um den Zugriff auf diese Attribute zu steuern. Füge Methoden hinzu, um den Durchschnitt der Noten zu berechnen und die Noten anzuzeigen.
+
+# Checkliste:
+
+- [ ] Ich verstehe die Notwendigkeit von Getter- und Setter-Methoden in Python-Klassen.
+- [ ] Ich kann Getter- und Setter-Methoden erstellen und verwenden.
+- [ ] Ich bin mir der Vorteile von Datenkapselung durch Getter und Setter bewusst.
+- [ ] Ich kenne den Begriff Dekorator.

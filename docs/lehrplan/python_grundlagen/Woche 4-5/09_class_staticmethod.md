@@ -103,3 +103,9 @@ Erweitere die Klasse `Car` um eine Klassenmethode `get_total_brand`. Diese Metho
 Entwickle eine Klasse `StringManipulator` mit einer statischen Methode `reverse_string`, die einen übergebenen String umkehrt, und einer Klassenmethode `capitalize_string`, die einen übergebenen String in Großbuchstaben umwandelt. Kombiniere beide Methoden, indem du einen String erst umkehrst und dann das Ergebnis großschreibst. Demonstriere die Anwendung dieser Methoden.
 
 Diese praktischen Aufgaben sollen dir helfen, die Konzepte der statischen Methoden und Klassenmethoden in Python besser zu verstehen und in realen Situationen anzuwenden.
+
+# Checkliste:
+
+- [ ] Ich kenne den Unterschied zwischen Klassenmethoden und statischen Methoden in Python.
+- [ ] Ich kann Klassenmethoden und statische Methoden in Python definieren und verwenden.
+- [ ] Ich verstehe, wann es sinnvoll ist, Klassenmethoden und statische Methoden einzusetzen.

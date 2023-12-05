@@ -137,3 +137,9 @@ Module und Pakete sind wichtig, um Code zu organisieren und wiederzuverwenden. D
 
 ## 4. Verwendung von `__init__.py` 🌶️🌶️
    - Erstelle ein Paket mit mehreren Modulen. Nutze die Datei `__init__.py`, um das Paket zu initialisieren und den Zugriff auf Module zu erleichtern. Importiere dann Module aus dem Paket in einem Skript.
+
+# Checkliste: 
+
+- [ ] Ich habe grundlegende Kenntnisse über die Verwendung von Modulen in Python.
+- [ ] Ich verstehe, wie Module dazu verwendet werden, Code zu organisieren und wiederzuverwenden.
+- [ ] Ich kenne die Syntax für den Import von Modulen in Python.

@@ -29,3 +29,9 @@ Die Wahl eines Design Patterns hängt vom spezifischen Anwendungsfall und den An
 
 ![Gamma](res/gamma.jpg)
 
+
+## Checkliste: 14_design_patterns.md
+
+- [ ] Ich verstanden warum es Entwurfsmuster in der Softwareentwicklung gibt.
+- [ ] Ich kenne einige häufig verwendete Entwurfsmuster und deren Anwendungsbereiche.
+- [ ] Ich verstehe, wie Entwurfsmuster zur Lösung bestimmter Probleme in der Softwareentwicklung eingesetzt werden.

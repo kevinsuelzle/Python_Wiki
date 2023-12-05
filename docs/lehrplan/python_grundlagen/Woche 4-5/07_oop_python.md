@@ -125,3 +125,11 @@ Entwickle ein System für die Verwaltung einer Musikbibliothek. Erstelle Klassen
 
 ## 10. **Restaurantreservierungssystem 🌶️🌶️🌶️🌶️**
 Baue ein System zur Reservierung von Restauranttischen. Erstelle Klassen für Restaurants, Tische und Reservierungen. Die Restaurantklasse sollte Informationen wie Name und verfügbare Tische haben. Die Tischklasse sollte Attribute wie Kapazität und Verfügbarkeit enthalten. Die Reservierungsklasse sollte Methoden zum Reservieren und Stornieren von Tischen haben.
+
+# Checkliste:
+
+- [ ] Ich kenne die Konzepte der objektorientierten Programmierung in Python.
+- [ ] Ich verstehe die Anwendung von `__init__` in Klassen.
+- [ ] Ich kann Eigenschaften und Methoden in Python-Klassen definieren.
+- [ ] Ich bin mir der Bedeutung von Instanzmethoden bewusst.
+- [ ] Ich weiß das `self`-Schlüsselwort einzusetzen.

@@ -651,22 +651,20 @@ Ziel ist es eine möglichst hohe Testabdeckung zu erreichen!
 
 # Neue Schlüsselwörter
 
-## Unittest
 
-Das `unittest`-Modul ist ein integriertes Testframework in Python, das Testfälle und Testsuiten bereitstellt. Es ermöglicht die Strukturierung von Tests und das Vergleichen von erwarteten und tatsächlichen Ergebnissen. Unittests können dazu verwendet werden, die Korrektheit von Funktionen, Klassen und Modulen sicherzustellen.
+
+- **Unittest**: Das `unittest`-Modul ist ein integriertes Testframework in Python, das Testfälle und Testsuiten bereitstellt. Es ermöglicht die Strukturierung von Tests und das Vergleichen von erwarteten und tatsächlichen Ergebnissen. Unittests können dazu verwendet werden, die Korrektheit von Funktionen, Klassen und Modulen sicherzustellen.
 
 [Python-Dokumentation zu unittest](https://docs.python.org/3/library/unittest.html)
 
-## TDD (Test-Driven Development)
+- **assert**: In Python dient das `assert`-Statement dazu, eine Bedingung zu überprüfen und sicherzustellen, dass sie während der Ausführung wahr ist. Wenn die Bedingung falsch ist, wird eine `AssertionError`-Ausnahme ausgelöst. Die Verwendung von `assert` ist besonders nützlich für das Schreiben von Tests und die Gewährleistung von Invarianten im Code.
+[Python-Dokumentation zu assert](https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement).
 
-TDD, oder "Test Driven Development", ist eine Entwicklungspraxis, bei der Tests vor dem eigentlichen Code geschrieben werden. Der Zyklus besteht typischerweise aus den Schritten: 
+- **TDD (Test-Driven Development)**: TDD, oder "Test Driven Development", ist eine Entwicklungspraxis, bei der Tests vor dem eigentlichen Code geschrieben werden. Der Zyklus besteht typischerweise aus den Schritten: 
 
-1. Schreibe einen Test, führe den Test aus (er sollte fehlschlagen), schreibe den Code, um den Test zu bestehen, und führe den Test erneut aus. Dieser Ansatz fördert die schrittweise Entwicklung von Funktionen und stellt sicher, dass jede Funktion getestet wird.
+Schreibe erst einen Test, führe den Test aus (er sollte fehlschlagen), schreibe den Code, um den Test zu bestehen, und führe den Test erneut aus. Dieser Ansatz fördert schrittweise Entwicklung von Funktionen und stellt sicher, dass jede Funktion getestet wird.
 
-## Doctest
-
-Das `doctest`-Modul ermöglicht das Schreiben von Tests innerhalb der Docstrings von Python-Modulen und -Funktionen. Es führt die in den Docstrings geschriebenen Beispiele aus und überprüft, ob die Ausgabe mit den erwarteten Ergebnissen übereinstimmt. Doctests sind eine praktische Möglichkeit, Tests direkt in der Dokumentation zu integrieren.
-
+- **Doctest**: Das `doctest`-Modul ermöglicht das Schreiben von Tests innerhalb der Docstrings von Python-Modulen und -Funktionen. Es führt die in den Docstrings geschriebenen Beispiele aus und überprüft, ob die Ausgabe mit den erwarteten Ergebnissen übereinstimmt. Doctests sind eine praktische Möglichkeit, Tests direkt in der Dokumentation zu integrieren.
 [Python-Dokumentation zu doctest](https://docs.python.org/3/library/doctest.html)
 
 # Aufgaben
@@ -696,3 +694,11 @@ def ist_primzahl(n):
    - Schreibe zuerst die Unit-Tests und dann die Implementierung.
    - Achte auf eine hohe Testabdeckung.
    - Beachte insbesondere die Testfälle für die `div()` Methode, um sicherzustellen, dass unerwartete Fehler oder Divisionen durch Null behandelt werden.
+
+# Checkliste: 
+
+- [ ] Ich verstehe die Grundprinzipien von Test-driven Development (TDD).
+- [ ] Ich kann Testfälle in Python schreiben und ausführen.
+- [ ] Ich bin mir der Bedeutung von Unit-Tests, Integrationstests und Funktionstests bewusst.
+- [ ] Ich das Testframework `unittest`.
+- [ ] Ich verstehe die Syntax von `assert`

@@ -96,3 +96,10 @@ Hinweise:
 - Verwende `**kwargs` für die optionalen Argumente.
 - Beachte die sinnvolle Verwendung von Standardwerten für die optionalen Argumente.
 - Nutze die Funktion, um einen formatierten Text auszugeben, der alle erhaltenen Informationen enthält.
+
+
+# Checkliste:
+
+- [ ] Ich verstehe die Verwendung von `*args` und `**kwargs` in Python-Funktionen.
+- [ ] Ich kann Funktionen mit variabler Anzahl von Argumenten erstellen.
+- [ ] Ich bin mir der Unterschiede zwischen `*args` und `**kwargs` bewusst.
