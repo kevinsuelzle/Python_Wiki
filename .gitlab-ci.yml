@@ -1,9 +1,8 @@
 image: node:latest
 
-services:
-  - python:3.11
-
 build_stage:
+  services:
+    - python:311
   script:
     - pip3 install mkdocs mkdocs-material
     - mkdocs build --verbose
