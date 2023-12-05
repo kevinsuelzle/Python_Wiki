@@ -1,11 +1,11 @@
 image: node:latest
 
 services:
-  - python:3.11-alpine
+  - python:3.11
 
 build_stage:
   script:
-    - pip install mkdocs mkdocs-material
+    - pip3 install mkdocs mkdocs-material
     - mkdocs build --verbose
   artifacts:
     untracked: true
