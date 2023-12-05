@@ -19,4 +19,4 @@ deploy_stage:
     - npm install -g firebase-tools
     - firebase deploy --token $FIREBASE_TOKEN
   dependencies:
-    - pages  # Der "deploy"-Job ist abhängig vom "pages"-Job
+    - build_stage
