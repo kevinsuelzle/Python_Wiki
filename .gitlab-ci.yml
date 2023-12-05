@@ -1,10 +1,8 @@
-image: python:3.11
-
-before_script:
-  - pip install mkdocs mkdocs-material
 
 pages:
+  image: python:3.11
   script:
+    - pip install mkdocs mkdocs-material
     - mkdocs build --verbose
   artifacts:
     paths:
@@ -13,6 +11,7 @@ pages:
     - main
 
 deploy:
+  image: node:14
   script:
     - npm install -g firebase-tools
     - firebase deploy --token $FIREBASE_TOKEN
