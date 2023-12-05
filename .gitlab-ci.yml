@@ -1,0 +1,11 @@
+image: python:3.11
+
+pages:
+  script:
+    - pip install mkdocs
+    - mkdocs build --verbose
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
