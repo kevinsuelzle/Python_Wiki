@@ -2,7 +2,7 @@ image: node:21-slim
 
 build_stage:
   script:
-    - RUN apt-get update
+    - apt-get update
     - apt-get install python -y
     - pip install mkdocs mkdocs-material
     - mkdocs build --verbose
