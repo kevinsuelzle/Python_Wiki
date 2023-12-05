@@ -1,6 +1,9 @@
+image: node:21-slim
+
 build_stage:
-  image: python:3.11
   script:
+    - RUN apt-get update
+    - apt-get install python -y
     - pip install mkdocs mkdocs-material
     - mkdocs build --verbose
   artifacts:
@@ -11,11 +14,9 @@ build_stage:
     - main
 
 deploy_stage:
-  image: node:21-slim
   script:
     - npm install -g firebase-tools
-    - mkdir site
-    - cp -R site/* .
-    - firebase deploy --token $FIREBASE_TOKEN
+    - firebase use --token $FIREBASE_TOKEN
+    - firebase deploy --only hosting --token $FIREBASE_TOKEN
   dependencies:
     - build_stage
