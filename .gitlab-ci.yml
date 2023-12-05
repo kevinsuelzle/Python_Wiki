@@ -1,7 +1,7 @@
 image: node:latest
 
 services:
-  - python3.11
+  - python:3.11-alpine
 
 build_stage:
   script:
