@@ -1,9 +1,10 @@
-image: node:21-slim
+image: node:latest
+
+services:
+  - python:3.11-bullseye
 
 build_stage:
   script:
-    - apt-get update
-    - apt-get install python -y
     - pip install mkdocs mkdocs-material
     - mkdocs build --verbose
   artifacts:
