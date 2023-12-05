@@ -11,7 +11,7 @@ pages:
     - main
 
 deploy:
-  image: node:14
+  image: node:21-slim
   script:
     - npm install -g firebase-tools
     - firebase deploy --token $FIREBASE_TOKEN
