@@ -1,4 +1,5 @@
-# Projekt 2: Thema Einkauf und Disposition - Stücklistenauflösung
+# Projekt 2: 
+## Thema Einkauf und Disposition - Stücklistenauflösung
 
 Versetze dich hinein in einen Abteilungsverantwortlichen im Einkauf. Im Verantwortungsbereich der Leitenden Person liegen drei Module, welche in ausreichender Zahl 
 rechtzeitig bestellt werden müssen, um eine durchgängige Produktion zu gewährleisten. 
@@ -6,12 +7,11 @@ Die Module selbst sind wiederum aus Bauteilen in bestimmter Menge zusammengesetz
 Diese Software wirst du entwickeln. Allerdings kannst du auf Code deines Vorgängers zugreifen. Mal schauen, wieviel bereits erledigt wurde.
 
 # Aufgabenstellungen
-
-### Aufgabe:
+## Aufgabe 1:
 Clone das repository und mache dich mit dem Code vertraut. Kannst du mit eigenen Worten beschreiben, was der Code machen soll?
 Hier findest du den Link zum Repo: https://git.qualidy.de/fakultaet73/data-science/project_1b
 
-### Aufgabe:
+## Aufgabe 2:
 Im Repository findest du ein Python Script namens stuecklistenaufloesung.py. Damit wirst du in diesem Projekt arbeiten. Codebeispiele in diesen Aufgaben sind diesem Script entnommen.
 Die Funktion stuecklistenaufloesung hat einen Bug. Dein Kollege meint, der Code sieht gut aus, er versteht den Fehler auch nicht. Kannst du ihm helfen?
 Die Liste "bestellungen" darf nicht verändert werden. Es darf nur die Funktion an sich bearbeitet werden.
@@ -65,17 +65,17 @@ print(bedarfe)
 
 
 
-### Aufgabe:
+## Aufgabe 3:
 Was ist eine große Schwäche dieser Funktion, wenn man bedenkt, dass man sie gerne im Produktionsbetrieb verwenden möchte?
 Kannst du die Funktion so umschreiben, dass ein unerfahrener Endnutzer möglichst wenig Falsch machen kann?
 
 * `Notiz:` - Klar definierte Argumente für die jeweiligen Module. Abfrage, ob Einagbe Integer ist. Fehlermeldung als Exception auswerfen usw.
 
-### Aufgabe:
+## Aufgabe 4:
 Schreib eine Funktion, die aus der Liste der Bestellungen eine passende Liste für deine neue Funktion macht.
 Führe beides hintereinander aus und lass dir eine Fehlermeldung auspucken, falls die erste Funktion nicht erfolgreich war.
 
-### Aufgabe:
+## Aufgabe 5:
 Erstelle eine Oberfläche mit dem Python-Modul "tkinter" , mit der ein Nutzer Eingabefelder hat und per Knopfdruck die Stücklistenauflösung berechnen kann.
 Es sollte pro Modul ein Eingabefeld geben, in welches der Nutzer die gewünschte Anzahl eingeben kann. Es sollten nur valide Eingaben gemacht werden können. 
 Entsprechende Fehlermeldungen sollen dem Nutzer helfen sich zu korrigieren. Die Darstellung soll leicht verständlich sein.
@@ -87,7 +87,7 @@ Du kannst die Einzelteile natürlich zu "Sets" zusammenfassen, damit die Liste d
 
 
 
-### Aufgabe
+## Aufgabe 6:
 Mit folgender Funktion kannst du auf eine Datei zugreifen und den aktuellen Lagerbestand abfragen.
 Beschreibe was sie macht und prüfe die Funktion, ob sie richtig arbeitet. Korrigiere ggf vorhandene Fehler.
 Auch hier darfst du wieder nur die Funktion ändern und nicht die Schnittstelle (den Input)
@@ -112,14 +112,14 @@ def lagerbestand():
 ```
 
 
-### Aufgabe:
+## Aufgabe 7:
 Stelle den aktuellen Lagerbestand in deiner App visuell dar und verwende gerne deine Bilder und Bezeichungen aus dem Aufgabenteil davor.
 
-### Aufgabe 
+## Aufgabe 8:
 Schreibe eine Funktion, mit der du die benötigten Bauteile aus der Stücklistenauflösung mit dem Lagerbestand abgleichst und ermittelts, wie viele Bauteile jeweils
 nachbestellt werden müssen. Du kannst davon ausgehen, dass die Datei mit dem Lagerbestand immer in demselben Format bereitgestellt wird und es an der Stelle nicht zu Fehlern kommt.
 
-### Aufgabe
+## Aufgabe 9:
 Schreibe und Präsentiere ein Programm, das beide Funktionen in einer netten Anwendung vereint. 
 Der Nutzer soll wieder seine Bestellung eingeben können und nach Betätigung eines Buttons folgende Angaben angezeigt bekommen:
 
@@ -129,5 +129,5 @@ Der Nutzer soll wieder seine Bestellung eingeben können und nach Betätigung ei
 
 Verwende gerne eine farbliche Kodierung der Zahlen, falls der Lagerbestand nicht ausreicht. Lass deine Kreativität freien Lauf.
 
-### Aufgabe:
+## Aufgabe 10:
 Lade das Projekt wieder in git hoch.
