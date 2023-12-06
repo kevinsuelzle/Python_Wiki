@@ -1,10 +1,10 @@
-
 # Mathematische Operationen
 In Python können wir alle einfachen mathematischen Operationen durchführen. Dieses sind grundlegend für die Entwicklung 
 von Algorithmen und der Lösung von Problemen. In diesem Abschnitt soll es nur um mathematische Operationen gehen,
 die wir mit Ganzzahlen und Fließkommazahlen verwenden können.
 
 ## Abschnitt 1: Grundoperationen
+[30min]
 
 1. **Addition (`+`)**: Addiert zwei Zahlen.
 ```python
@@ -47,6 +47,7 @@ potenz = 2 ** 3  # Ergibt 8
 ```
 
 ## Erweiterte Operationen
+[30min]
 
 Für komplexere mathematische Operationen wie Wurzeln oder trigonometrische Funktionen benötigen Sie das `math`-Modul, 
 das viele nützliche Funktionen bietet. 
@@ -80,6 +81,7 @@ log_nat = math.log(8, 2)  # Berechnet den Logarithmus von 8 zur Basis 2
 ```
 
 ## Reihenfolge der Operationen
+[30min]
 
 In Python, wie in den meisten Programmiersprachen, ist die Reihenfolge der mathematischen Operationen wichtig und folgt 
 etablierten mathematischen Konventionen. Diese Reihenfolge bestimmt, in welcher Reihenfolge die Operationen in einem 
@@ -176,5 +178,3 @@ Aufgabenstellung:
 - Celsius (`C = (F - 32) * 5/9`).
 - Gib das Ergebnis der Umrechnung aus.
 
-
-TODO: Lösung in file übertragen

@@ -6,4 +6,3 @@
 | Mutability  | [Referenz](https://docs.python.org/3/glossary.html#term-mutable)                 |
 | Immutablity | [Referenz](https://docs.python.org/3/glossary.html#term-immutable)               |
 
-TODO: Hier methoden hinzufügen

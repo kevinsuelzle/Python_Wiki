@@ -1,4 +1,5 @@
 # Tupel in Python
+[15min]
 
 In Python ist ein Tupel eine grundlegende Datenstruktur, die einer Liste ähnlich ist, aber einen entscheidenden
 Unterschied aufweist: Sie ist **unveränderlich**. 
@@ -10,7 +11,7 @@ Tupel werden definiert, indem Elemente in Klammern `( )` eingeschlossen werden, 
 sind.
 
 ## Grundlegende Verwendung
-
+[10min]
 Ein einfaches Beispiel für ein Tupel zum Beispiel die Definition von Koordinaten als ein Paar von zwei Fließkommazahlen:
 
 ```python
@@ -20,7 +21,7 @@ koordinaten = (50.8215, -0.1372)
 Dieses Tupel, `koordinaten`, enthält zwei Fließkommazahlen und stellt einen festen Punkt auf einer Fläche dar.
 
 ## Eigenschaften von Tupeln
-
+[30min]
 1. **Immutability:**
    Einmal erstellt, können wir keine Elemente zu einem Tupel hinzufügen, entfernen oder ändern. 
 
@@ -45,7 +46,7 @@ Dieses Tupel, `koordinaten`, enthält zwei Fließkommazahlen und stellt einen fe
 Hier sehen wir einige Code-Beispiele, die verschiedene Aspekte von Tupeln in Python veranschaulichen:
 
 ## Arbeiten mit Tupels
-
+[60min]
 ### Erstellung und Zugriff auf Elemente:
 
 ```python
@@ -127,7 +128,7 @@ print(orte[(52.5200, 13.4050)])  # Gibt 'Berlin' aus
 ```
 
 ## Häufige Funktionen und Methoden für Tupel in Python
-
+[30min]
 Hier ist eine übersichtliche Tabelle, die einige der häufigsten Funktionen und Methoden für Tupel in Python
 zusammenfasst. Für jede Funktion/Methode gibt es eine kurze Beschreibung und ein kleines Beispiel.
 
@@ -150,7 +151,8 @@ Diese Funktionen und Methoden sind grundlegend für die Arbeit mit Tupeln und er
 und Operationen auf Tupel-Datenstrukturen durchzuführen.
 
 # Aufgaben
-TODO: Prüfe die Aufgaben auf Machbarkeit
+[60min]
+
 ### Tupel erstellen
 Erstelle ein Tupel mit den Namen von fünf verschiedenen Früchten.
 ### 2. Auf Tupelelemente zugreifen
@@ -180,12 +182,12 @@ Sortiere das Tupel von Aufgabe 12 in absteigender Reihenfolge (Hinweis: Tupel k�
 gibt einen Workaround).
 ### 14. Subtupel
 Überprüfe, ob das Tupel von Aufgabe 1 ein Subtupel von dem in Aufgabe 10 erstellten verschachtelten Tupel ist.
-
 ### 15. Reingelegt
 Welchen Typ haben `a=(3,)` und `b=(3)`? 
 
 # Komplex-Aufgaben
-[]
+[60min]
+
 #### Aufgabe 1: Einkaufsliste Manager
 
 **Aufgabenstellung:**

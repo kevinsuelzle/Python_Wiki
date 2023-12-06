@@ -5,6 +5,7 @@ verstehen, wie Python-Code auf einem Computer ausgeführt wird, ist es wichtig, 
 Maschinencode zu verstehen.
 
 ## Bytecode in Python
+[50min]
 
 1. **Was ist Bytecode?**
    Bytecode ist eine niedrigere, abstraktere Darstellung des Quellcodes, die nicht direkt von der Hardware gelesen
@@ -26,6 +27,7 @@ Maschinencode zu verstehen.
    in Bytecode umgewandelt wird. Der Bytecode wird dann interpretiert.
 
 ## Maschinencode
+[50min]
 
 1. **Was ist Maschinencode?**
    Maschinencode ist die niedrigste Ebene der Code-Darstellung, die direkt von der CPU eines Computers verstanden und
@@ -43,7 +45,7 @@ Das Verständnis, wie Python-Code zu Bytecode und dann zu Maschinencode umgewand
 Verständnis der Funktionsweise von Python. Hier ist ein einfaches Beispiel, um diesen Prozess zu veranschaulichen:
 
 ## Beispiel
-
+[90min]
 Angenommen, wir haben ein einfaches Python-Skript:
 
 ```python

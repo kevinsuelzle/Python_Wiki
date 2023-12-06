@@ -1,5 +1,5 @@
 # Einführung in Python-Funktionen
-
+[20min]
 Bereits in unseren bisherigen Python-Lektionen haben wir verschiedene eingebaute Funktionen verwendet, die
 verdeutlichen, wie nützlich und vielseitig Funktionen in Python sind. Auch in der Startphase haben wir bereits
 unsere eigenen Funktionen geschrieben.
@@ -22,7 +22,7 @@ Funktionen haben immer einen eindeutigen Namen, eine Menge an Parametern, die da
 und sehr oft auch einen Rückgabewert, mit dem wir zum Beispiel Ergebnisse an den aufrufenden Code zurückgeben können.
 
 ## Bedeutung und Zweck von Funktionen
-
+[30min]
 1. **Modularität**: Funktionen ermöglichen es, den Code in kleinere, wiederverwendbare Teile zu unterteilen. Das macht
    den Code übersichtlicher und wartbarer.
 
@@ -35,6 +35,7 @@ und sehr oft auch einen Rückgabewert, mit dem wir zum Beispiel Ergebnisse an de
 4. **Testbarkeit**: Funktionen ermöglichen es, kleine Teile des Codes isoliert zu testen.
 
 ## Definition von Funktionen
+[45min]
 
 - **Syntax**:
 
@@ -57,7 +58,7 @@ def begruessung(name):
     return f"Hallo, {name}!"
 ```
 
-## Definition von Parametern
+### Definition von Parametern
 
 - Parameter sind Variablen, die beim Aufruf der Funktion Werte erhalten.
 
@@ -68,7 +69,7 @@ def addiere(a, b):
     return a + b
 ```
 
-## Rückgabewerte
+### Rückgabewerte
 
 - Der Rückgabewert ist das Ergebnis, das eine Funktion zurückgibt.
 - Verwendet wird hierfür das `return`-Statement.
@@ -82,7 +83,7 @@ def multipliziere(x, y):
 ```
 
 ## Codebeispiele
-
+[30min]
 1. **Einfache Funktion**
 
  ```python
@@ -129,7 +130,7 @@ wiederverwendbar und gut strukturiert zu gestalten. Funktionen sind ein zentrale
 unerlässlich für die Erstellung von sauberem und effizientem Code.
 
 # Aufgaben
-
+[90]
 ### 1. **Einfache Begrüßungsfunktion**: 
 Schreibe eine Funktion `begruesse()`, die "Hallo Welt!" ausgibt.
 
@@ -190,7 +191,7 @@ Schreibe eine Funktion `fibonacci()`, die eine Zahl `n` nimmt und die ersten `n`
 [Lösungen](solutions.md#funktionen-definieren)
 
 ## Gültigkeitsbereich von Variablen - Scopes
-
+[60min]
 Der Begriff "Scope" bezieht sich in der Programmierung auf den Bereich eines Programms, in dem eine Variable zugänglich
 ist. In Python gibt es im Wesentlichen zwei Hauptbereiche (Scopes): global und lokal. Um den Scope von Variablen in und
 außerhalb von Funktionen zu erläutern, betrachten wir ein konkretes Beispiel:
@@ -239,8 +240,8 @@ eine_andere_funktion()  # Gibt "Ich bin lokal!" aus
 In diesem Beispiel ist `lokale_variable` nur innerhalb der `eine_andere_funktion` gültig. Ein Versuch, auf sie außerhalb
 ihrer Funktion zuzugreifen, führt zu einem Fehler.
 
-#### Shadowing
-
+## Shadowing
+[60min]
 Wenn eine lokale Variable denselben Namen wie eine globale Variable hat, wird die globale Variable innerhalb der
 Funktion "verdeckt" oder "überschattet":
 
@@ -275,7 +276,7 @@ Programm gespeichert und zugänglich gemacht werden. Es hilft auch dabei, Fehler
 Überschneidungen von Variablennamen entstehen können.
 
 ## Übungsaufgaben zum Thema Scopes in Python
-
+[60min]
 ### 1. **Globale Variable**: 
 Definiere eine globale Variable und gib sie innerhalb einer Funktion aus.
 ### 2. **Lokale Variable**: 
@@ -305,7 +306,7 @@ Gib einen Wert aus einer Funktion zurück und weise ihn einer globalen Variable 
 [Lösungen](solutions.md#scopes)
 
 ## Argumente vs Parameter - Was ist der Unterschied?
-
+[30min]
 In der Programmierung, insbesondere in Python, ist es wichtig, die Unterschiede zwischen Parametern und Argumenten zu
 verstehen, da sie oft fälschlicherweise synonym verwendet werden, obwohl sie unterschiedliche Konzepte darstellen.
 

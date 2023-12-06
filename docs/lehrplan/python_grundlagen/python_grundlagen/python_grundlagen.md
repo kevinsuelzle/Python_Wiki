@@ -1,7 +1,7 @@
 # Einführung
 
 # Was ist Programmierung?
-Zeit: 10 Min
+[20min]
 
 Programmierung ist für uns der Prozess der Erstellung von Anweisungen, die von einem Computer ausgeführt werden, um
 bestimmte Aufgaben zu erfüllen oder Probleme zu lösen.
@@ -34,15 +34,12 @@ Probleme gelöst, die ein Unternehmen oder dessen Kunden haben.
 ### Aufgabe:
 [15 Min + 20 Min]
 
-TODO: Ich finde diese Aufgabe zu schwammig. Ich würde vorschlagen, dass man hier eine Liste
-von Aspekten angibt und diese zur Diskussion stellt. Z.B. bringe die folgenden in eine Rangfolge der wichtigkeit. 
-
 1. Diskutiert, die Wichtigkeit dieser Aspekte
 2. Ordnet sie entsprechend ihrer Wichtigkeit und begründet kurz wieso.
 
 
 ## Die Rolle von Python in der Programmierung
-10 Min
+[20min]
 
 Python ist eine weit verbreitete und vielseitige Programmiersprache, die sich durch ihre klare Syntax und Lesbarkeit
 auszeichnet.
@@ -67,8 +64,8 @@ die es zu einer der beliebtesten Sprachen in der modernen Programmierung machen.
 
 ---
 
-# Integrated Development Environments (IDEs) in der Programmierung
-20 Min
+# Programmierumgebungen und IDEs
+[20min]
 ## Was ist ein IDE?
 
 Ein Integrated Development Environment (IDE) ist eine Softwareanwendung, die umfangreiche Werkzeuge für Programmierer
@@ -81,8 +78,8 @@ konzentrieren können.
 
 Auf euren Rechnern sind sowohl VSCode als auch PyCharm vorinstalliert, sodass wir direkt loslegen können.
 
-## Beliebte IDEs für Python
-
+## Beliebte Tools für Python
+[70min]
 ### 1. Visual Studio Code (VSCode)
 
 ![VSCode](../images/vscode.png)
@@ -148,7 +145,7 @@ Hier lassen sich kleine Dinge sehr einfach ausprobieren, aber es ist nicht empfe
 verwenden.
 
 ## Aufgabe: Das erste Programm
-25 Min bis es bei jedem klappt
+[25min; bis es bei jedem klappt]
 
 1. Führe den folgenden Code mit der Python-Konsole aus
 2. Führe den folgenden Code in VSCode aus

@@ -1,8 +1,7 @@
-
 # Input und Output
 
 ## Die `print`-Funktion
-
+[45min]
 Die `print`-Funktion ist eines der grundlegendsten Werkzeuge in Python. Sie wird verwendet, um Werte auf der Konsole 
 auszugeben, sei es Text, Zahlen oder den Inhalt von Variablen. Ein einfacher Aufruf von `print` sieht wie folgt aus:
 `print("Hallo, Welt!")`. 
@@ -24,7 +23,7 @@ erheblich. Sie ermöglicht es, dynamisch Werte in Strings einzubetten, was beson
 komplexe Ausgaben zu generieren oder Benutzerinteraktionen zu gestalten.
 
 ## Die `input`-Funktion
-
+[45min]
 Die `input`-Funktion in Python ist ein wesentliches Werkzeug, um Benutzereingaben zu erhalten. Sie ermöglicht es einem
 Programm, während der Ausführung Daten vom Benutzer zu erfragen. Wenn `input()` aufgerufen wird, hält das Programm an
 und wartet auf eine Eingabe von der Tastatur. Nachdem der Benutzer seine Eingabe bestätigt hat (üblicherweise 
@@ -52,7 +51,7 @@ nicht nur theoretisch besprechen folgen jetzt erstmal eine Reihe an Übungsaufga
 # Aufgaben
 [40min]
 
-TODO: Auch hier sind Rechercheaufgaben enthalten, die sich durch konkrete ersetzen lassen.
+
 ### 1. **Einfache Ausgabe**: 
 Verwende `print`, um "Hallo Welt" auszugeben. 
 ### 2. **Variable ausgeben**: 
@@ -96,7 +95,7 @@ wenn beide Eingaben übereinstimmen, ansonsten eine Fehlermeldung.
 
 ## Komplex-Aufgaben
 
-**Aufgabe 1: Persönliche Statistik**
+### **Aufgabe 1: Persönliche Statistik**
 
 [45min]
 

@@ -1,12 +1,12 @@
 # Schleifen
-
+[10min]
 In der Programmierung sind **Schleifen** ein grundlegendes Konzept, welches verwendet wird, um einen bestimmten Block
 von
 Anweisungen wiederholt auszuführen. Man sagt auch, dass Schleifen über etwas iterieren. Dies kann zum Beispiel ein
 Zahlenbereich sein oder auch eine Menge an Elementen in einer Liste.
 
 ## Die Bedeutung von Schleifen
-
+[15min]
 Schleifen sind ein wesentlicher Bestandteil der Programmierung und haben eine breite Anwendung in verschiedenen
 Situationen:
 
@@ -21,7 +21,7 @@ Situationen:
    und je nach Eingabe unterschiedliche Aktionen ausführen.
 
 ## Arten von Schleifen in Python
-
+[25min]
 In Python gibt es zwei Hauptarten von Schleifen:
 
 1. **`for`-Schleife:** Die `for`-Schleife wird verwendet, um über eine Sequenz (z. B. eine Liste, ein Tupel oder eine
@@ -62,7 +62,7 @@ effiziente Verarbeitung von Daten. Es ist wichtig, Schleifen mit Bedacht zu verw
 unerwünschte Ergebnisse zu vermeiden.
 
 # Einführung in `for`-Schleifen
-
+[120min]
 Eine `for`-Schleife in Python ist eine Kontrollstruktur, die verwendet wird, um über eine Sequenz von Elementen (z. B.
 eine Liste, ein Tupel oder eine Zeichenkette) zu iterieren und eine Gruppe von Anweisungen für jedes Element in der
 Sequenz auszuführen. `for`-Schleifen sind sehr nützlich, um Aufgaben zu automatisieren, die eine wiederholte
@@ -118,7 +118,7 @@ In diesem Beispiel durchläuft die `for`-Schleife die Liste `zahlen` und gibt je
 - Automatisierung von Aufgaben, bei denen eine wiederholte Aktion erforderlich ist.
 
 ## Aufgaben
-[25min]
+[35min]
 
 ### 1. Zählen
 Schreibe eine `for`-Schleife, die die Zahlen von 1 bis 10 ausgibt.
@@ -150,7 +150,7 @@ Schreibe eine `for`-Schleife, die einen Text durchläuft und zählt, wie oft ein
 [Lösungen](solutions.md#for-schleifen)
 
 # Einführung in While-Schleifen in Python
-
+[120min]
 While-Schleifen sind eine grundlegende Kontrollstruktur in Python, die es ermöglicht, einen Block von Anweisungen
 wiederholt auszuführen, solange eine bestimmte Bedingung erfüllt ist. Sie sind besonders nützlich, wenn die Anzahl der
 Wiederholungen nicht im Voraus bekannt ist. Dies ist zum Beispiel bei einer wiederholten Eingabeaufforderung an den
@@ -201,7 +201,7 @@ while True:
 Wie wir die Endlosschleife doch verlassen können, lernen wir dann gleich.
 
 ## Aufgaben
-[25min]
+[35min]
 
 ### 1. Zählen
 Schreibe eine While-Schleife, die Zahlen von 1 bis 10 ausgibt.
@@ -230,7 +230,7 @@ Erstelle eine Schleife, die eine Liste durchläuft und bei Erreichen eines besti
 [Lösungen](solutions.md#while-schleifen)
 
 # Vorzeitiges Abbrechen einer Schleife
-
+[60min]
 In vielen Fällen sucht man einfach einen Wert in einem Bereich oder ein bestimmtes Element in einer List. Sobald man
 dieses gefunden hat, kann man die Schleife eigentlich abbrechen. Dafür nutzt man das Keyword `break`:
 
@@ -294,7 +294,7 @@ Schleifen durchlauf wird der Nutzer nach einer Eingabe gefragt. Sobald der Nutze
 den Befehl `break` verlassen und das Programm kann normal weiterlaufen.
 
 ## Else-Zweig bei While- und For-Schleifen in Python
-
+[30min]
 In Python können sowohl `while`- als auch `for`-Schleifen mit einem optionalen `else`-Zweig versehen werden. Dieser Teil
 der Schleife wird ausgeführt, wenn die Schleife auf normale Weise beendet wird, d.h., nicht durch ein `break`-Statement
 unterbrochen wird.

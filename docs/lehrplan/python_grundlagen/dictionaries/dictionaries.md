@@ -6,7 +6,7 @@ erlaubt, die Bedeutung eines Wortes zu finden. Wir erinnern uns an Listen oder T
 durch ihre Position in der Sammlung, also deren Index, auf die Elemente zugreifen können. 
 
 ## Eigenschaften von Dictionaries
-
+[30min]
 - **Schlüssel und Werte**: Jeder Eintrag in einem Dictionary besteht aus einem Schlüssel und einem zugehörigen Wert.
 
 - **Einzigartige Schlüssel**: Jeder Schlüssel in einem Dictionary muss einzigartig sein. Sollen mehrere Elemente in 
@@ -20,7 +20,9 @@ durch ihre Position in der Sammlung, also deren Index, auf die Elemente zugreife
 
 - **Dynamisch**: Die Größe eines Dictionaries kann sich während der Laufzeit des Programms ändern.
 
-## Erstellen und Initialisieren eines Dictionaries
+## Operationen mit Dictionaries
+[75min]
+### Erstellen und Initialisieren eines Dictionaries
 
 Wir erstellen Dictionaries mit geschweiften Klammern. Die Schlüssel-Wert-Paar werden dann jeweils mit 
 `schlüssel: wert` angegeben:
@@ -30,7 +32,7 @@ mein_dict = {"Name": "Max", "Alter": 25, "Stadt": "Berlin"}
 print(mein_dict)
 ```
 
-## Zugriff auf Werte
+### Zugriff auf Werte
 
 Der Zugriff auf die Werte erfolgt über den entsprechenden Schlüssel in eckigen Klammern. Das sieht ähnlich aus wie bei
 Listen, nur dass wir keinen Index verwenden, sondern den entsprechenden Schlüssel.
@@ -41,7 +43,7 @@ name = mein_dict["Name"]
 print(name)  # Gibt "Max" aus
 ```
 
-## Hinzufügen und Ändern von Einträgen
+### Hinzufügen und Ändern von Einträgen
 
 Werte können hinzugefügt werden, in dem wir einem Element, einen Schlüssel hinzufügen und diesem einen Wert zuweisen.
 Existiert der Schlüssel bereits wird der vorhandene Wert einfach überschrieben.
@@ -54,7 +56,7 @@ mein_dict["Beruf"] = "Ingenieur"
 mein_dict["Alter"] = 26
 ```
 
-## Entfernen von Einträgen
+### Entfernen von Einträgen
 
 Das Entfernen von Einträgen sieht leider nicht wie typischer Python-Code aus. Man greift auf das Element, welches man 
 löschen will wie gewohnt zu und löscht das Element mit einem vorangestellten `del`.
@@ -64,7 +66,7 @@ löschen will wie gewohnt zu und löscht das Element mit einem vorangestellten `
 del mein_dict["Stadt"]
 ```
 
-## Durchlaufen eines Dictionaries
+### Durchlaufen eines Dictionaries
 
 ```python
 # Durchlaufen aller Schlüssel-Wert-Paare
@@ -73,7 +75,7 @@ for key, value in mein_dict.items():
 ```
 
 ## Häufige Funktionen und Methoden für Dictionaries in Python
-
+[30min]
 | Funktion        | Beschreibung                                                                                                                     | Beispiel                            |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | `[key]`         | Greif auf den Wert mit dem Key `key` zu. Existiert dieser nicht wird er beim Schreiben erstellt. Beim Lesen gibt es einen Fehler | `dict["Key"] = Value`               |
@@ -97,7 +99,7 @@ Zugriff sowie flexible Datenstrukturen.
 - **Schneller Zugriff**: Aufgrund ihrer internen Struktur bieten Dictionaries einen schnellen Zugriff auf ihre Elemente.
 
 # Aufgaben
-
+[35min]
 ### 1. **Grundlegendes Dictionary**: 
 Erstelle ein Dictionary mit drei Schlüssel-Wert-Paaren und gib es aus.
 ### 2. **Zugriff auf Werte**:
@@ -123,6 +125,7 @@ Erstelle ein verschachteltes Dictionary (ein Dictionary innerhalb eines anderen 
 [Lösungen](solution.md#lösungen)
 
 # Komplex-Aufgaben
+[75min]
 
 ### Aufgabe 1: Wortzähler
 

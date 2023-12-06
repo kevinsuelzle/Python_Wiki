@@ -5,7 +5,7 @@ parallel zu durchlaufen. Sie fasst die Elemente mehrerer Iteratoren zu Tupeln zu
 diese Tupel zurück.
 
 ## Grundlegende Verwendung von `zip()`
-
+[60min]
 Die einfachste Verwendung von `zip()` besteht darin, zwei oder mehr Listen (oder andere Iterables) zu kombinieren:
 
 ```python
@@ -32,7 +32,7 @@ In diesem Beispiel werden die Elemente der beiden Listen `zahlen` und `buchstabe
    kürzeste Iterable erschöpft ist.
 
 ## Erweiterte Anwendungen von `zip()`
-
+[60min]
 - **Zip mit unterschiedlich langen Iterables**: Wenn man `zip()` mit Iterables unterschiedlicher Länge verwendet, werden
   die überschüssigen Elemente des längeren Iterables ignoriert.
 
@@ -64,7 +64,7 @@ print(list(buchstaben))  # Gibt ['a', 'b', 'c'] aus
 ```
 
 ## Komplexes Beispiel mit der `zip()`-Funktion in Python
-
+[90min]
 ### Szenario: Berechnung der Gesamtpunkte in einem Wettbewerb
 
 Stellen wir uns vor, wir haben einen Wettbewerb, bei dem Teilnehmer in verschiedenen Kategorien Punkte sammeln. Am Ende

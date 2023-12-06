@@ -2,9 +2,10 @@
 
 Um Zeichenketten in Python darzustellen, benötigt man sogenannte Strings. Strings werden in
 Python in einfachen oder doppelten Anführungszeichen eingeschlossen (`''` oder `""`). Mehrzeilige Strings können mit
-drei Anführungszeichen erstellt werden. (`''' '''' ` oder `""" """`). 
+drei Anführungszeichen erstellt werden. (`''' ''' ` oder `""" """`). 
 
 ## Eigenschaften von Strings
+[60min]
 
 Hier sind die Eigenschaften von Strings in Python im Markdown-Format:
 
@@ -36,7 +37,7 @@ Hier sind die Eigenschaften von Strings in Python im Markdown-Format:
    Sprachen und Schriften darstellen.
 
 ## Beispiel
-
+[20min]
 Hier sehen wir ein konkretes Code-Beispiel, das die Verwendung von Strings in Python zeigt:
 
 ```python
@@ -82,7 +83,7 @@ verschiedene Bedingungen zu überprüfen:
 4. Schließlich wird der Benutzername in Kleinbuchstaben konvertiert und angezeigt.
 
 ## Häufig verwendete Funktionen und Methoden im Zusammenhand mit Strings
-
+[25min]
 Hier ist eine Tabelle mit häufig verwendeten Funktionen von Strings in Python im Markdown-Format:
 
 | Funktion                    | Kurzbeschreibung                                                                                                               | Beispiel                                                                           |
@@ -99,6 +100,7 @@ Hier ist eine Tabelle mit häufig verwendeten Funktionen von Strings in Python i
 | `string.count(substring)`   | Zählt die Anzahl der Vorkommnisse einer Teilzeichenkette im String.                                                            | `text = "Python ist toll, Python ist mächtig."`<br>`anzahl = text.count("Python")` |
 
 ## Slicing
+[30min]
 
 Slicing ist ein nützliches Konzept in Python, mit dem Sie Teilzeichenketten (Teilstrings) aus einem vorhandenen
 String extrahieren können, indem Sie einen Bereich von Indizes angeben. Dies ermöglicht es Ihnen, auf Teile eines
@@ -107,12 +109,12 @@ Strings zuzugreifen, ohne den ursprünglichen String zu verändern.
 Die Syntax für das Slicing lautet:
 
 ```python
-substring = string[start:stop:step]
+substring = string[start:stop+1:step]
 ```
 
 - `string`: Der ursprüngliche String, aus dem Sie einen Teil extrahieren möchten.
 - `start`: Der Index, ab dem das Slicing beginnt (inklusiv). Der Standardwert ist 0, wenn nicht angegeben.
-- `stop`: Der Index, an dem das Slicing endet (exklusiv). Der Standardwert ist die Länge des Strings, wenn nicht
+- `stop + 1`: Der Index, an dem das Slicing endet (exklusiv). Der Standardwert ist die Länge des Strings, wenn nicht
   angegeben.
 - `step`: Die Menge an Indices, die überprungen wird. Default ist `1`. Gibt man `-1` an wird die Reihenfolge umgedreht.
 
@@ -151,6 +153,7 @@ In diesem Beispiel haben wir den String "Python ist großartig." definiert und v
 - `teil_text6` nutzt die Angabe der Schrittweite um nur jeden zweiten Buchstaben auszugeben
 
 ## Unicode in Python-Strings
+[20min]
 
 Unicode ist ein wichtiges Konzept in Python, das die Verwendung von Zeichen aus verschiedenen Sprachen und
 Schriftsystemen in Strings ermöglicht. In Python sind Strings Unicode-Zeichenketten, was bedeutet, dass sie Zeichen aus

@@ -6,6 +6,7 @@ verwendet wird. Das heißt, dass sich die Elemente in einem Set nicht wiederhole
 Sets bieten folgende Eigenschaften:
 
 ## Eigenschaften von Sets
+[30min]
 
 1. **Ungeordnet**:
     - Sets haben keine feste Reihenfolge der Elemente.
@@ -27,6 +28,7 @@ Sets bieten folgende Eigenschaften:
     - Die Mitgliedschaft eines Elements wird mit Methoden wie `in` überprüft.
 
 ## Erstellung und Nutzung von Sets
+[60min]
 
 Sets werden mit geschweiften Klammern `{}` oder der `set()`-Funktion erstellt.
 
@@ -70,6 +72,7 @@ Sets sind nützlich, um Mengen zu speichern, in denen nur das Vorhandensein eine
 nicht wie oft dieses Element vorhanden ist.
 
 ## Anwendungsbeispiele
+[20min]
 
 - Entfernen von Duplikaten: Sets können verwendet werden, um Duplikate aus einer Liste zu entfernen.
 - Mitgliedschaftstests: Aufgrund ihrer internen Struktur sind Sets effizienter um zu Testen ob Elemente in dieser 

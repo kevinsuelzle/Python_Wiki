@@ -1,12 +1,11 @@
 # Verzweigungen
-
 Verzweigungen sind ein wesentlicher Bestandteil der Programmierung. Sie ermöglichen es, Entscheidungen auf Basis 
 bestimmter Bedingungen zu treffen. 
 
 In Python verwenden wir dafür `if`, `elif` (else if) und `else` zur Steuerung des Programmflusses:
 
 ## Grundstruktur
-
+[20min]
 Die grundlegende Struktur einer `if-else`-Verzweigung in Python sieht folgendermaßen aus:
 
 ```python
@@ -19,7 +18,7 @@ else:
 Die `bedingung` ist ein Ausdruck, der entweder wahr (`True`) oder falsch (`False`) ergibt.
 
 ### Bedingungen
-
+[50min]
 In Python werden Bedingungen in `if`-Abfragen verwendet, um zu bestimmen, ob bestimmte Anweisungen ausgeführt werden 
 sollen oder nicht. Diese Bedingungen können auf unterschiedliche Weise formuliert werden, um die Logik des Programms 
 zu steuern. 
@@ -60,7 +59,7 @@ else:
 ```
 
 ##  if-elif-else-Abfragen
-
+[30min]
 Oft benötigen wir mehr als zwei Zweige, zum Beispiel wenn wir für verschiedene Altersklassen andere Aktionen ausführen 
 müssen oder wollen.
 
@@ -94,13 +93,9 @@ Die Verwendung von if, elif und else in Python ermöglicht es, basierend auf Bed
 Programm einzuschlagen. Das findet man eigentlich in jedem Programm, da die Unterscheidung von Aktionen basierend auf
 einer oder mehrere Bedingungen ein zentraler Bestandteil der Softwareentwicklung ist.
 
-TODO: hier noch mal aufgaben einfügen, die zeigen, dass automatisch `bool` auf die werte eingefügt wird und
-man dinge wie `if liste:` oder `if zahl:` in python als normale Kurzformen schreibt.
-TODO: Hier kann man auch noch die Notation `a = b if condition else c` einführen
-TODO: Aufgabe hinzufüge, die mit dictionaries arbeitet
-
 
 # Aufgaben
+[70min]
 ### 1. **Einfache if-Abfrage**: 
 Schreibe ein Programm, das überprüft, ob eine Variable `x` größer als 10 ist. Gib eine 
 entsprechende Nachricht aus.
@@ -149,7 +144,8 @@ Erstelle ein Programm, das unterschiedliche Eintrittspreise basierend auf dem Wo
 Schreibe ein Programm, das überprüft, ob ein gegebenes Jahr ein Schaltjahr ist oder nicht.
 
 # Komplex-Aufgaben
-**Benutzereingaben filtern und sortieren**
+[30min]
+### **Benutzereingaben filtern und sortieren**
 
 Aufgabenstellung:
 

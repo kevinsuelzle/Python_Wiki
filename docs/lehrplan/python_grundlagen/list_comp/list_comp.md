@@ -1,5 +1,5 @@
 # Einführung in List Comprehensions in Python
-
+[15min]
 List Comprehensions in Python sind eine elegante und effiziente Möglichkeit, Listen zu erstellen und Operationen auf 
 ihren Elementen auszuführen. Sie bieten eine klare und prägnante Alternative zu traditionellen Schleifen
 und Funktionsaufrufen. List Comprehensions sind eine typische Struktur, die man in Python-Code häufig findet.
@@ -12,8 +12,8 @@ quadrate = [i * i for i in range(1, 6)]
 print(quadrate)  # Ausgabe: [1, 4, 9, 16, 25]
 ```
 
-
 ## Motivation für List Comprehensions
+[35min]
 
 1. **Kompakter Code**: List Comprehensions ermöglichen es, Schleifen und bedingte Anweisungen in einer Zeile zu
    schreiben, wodurch der Code kürzer und wenn man es nicht übertreibt auch leichter lesbar wird.
@@ -28,7 +28,7 @@ print(quadrate)  # Ausgabe: [1, 4, 9, 16, 25]
 
 
 ## Problemstellungen
-
+[35min]
 Stellen wir unsh vor, wir möchten aus einer vorhandenen Liste eine neue Liste erstellen, in der jedes Element aufgrund
 einer Bedingung oder einer Operation verändert wurde. Traditionell würden wir dazu eine for-Schleife verwenden, die
 über die alte Liste iteriert, die Operation durchführt und das Ergebnis in einer neuen Liste speichert. Dies führt zu
@@ -44,7 +44,7 @@ zu erstellen oder zu modifizieren.
 ## Beispiel: Erstellen einer Liste mit Quadratzahlen
 
 ### Traditionelle Methode mit einer for-Schleife
-
+[25min]
 Angenommen, wir möchten eine Liste der Quadrate der Zahlen von 1 bis 5 erstellen. Mit einer for-Schleife könnte das so
 aussehen:
 
@@ -60,7 +60,7 @@ In diesem Code erstellen wir zunächst eine leere Liste `quadrate`. Dann iterier
 Zahlen von 1 bis 5, berechnen das Quadrat jeder Zahl und fügen es der Liste `quadrate` hinzu.
 
 ### Ersetzen durch eine List Comprehension
-
+[75min]
 Die gleiche Aufgabe lässt sich mit einer List Comprehension viel kompakter lösen:
 
 ```python
@@ -81,6 +81,7 @@ print(quadrate)  # Ausgabe: [1, 4, 9, 16, 25]
    zusammen: `[ausdruck for item in iterable]`. In unserem Fall ist das `[i * i for i in range(1, 6)]`.
 
 ### Vorteile der List Comprehension
+[15min]
 
 - **Kürzer und klarer**: Der Code ist kürzer und oft leichter zu verstehen.
 - **Direkte Erstellung der Liste**: Es ist keine separate Initialisierung einer leeren Liste und kein anschließendes
@@ -91,6 +92,7 @@ List Comprehensions sind ein hervorragendes Beispiel für *pythonic* Code, also 
 ist und die jeder kennen und verstehen sollte.
 
 # Aufgaben
+[75min]
 
 ### 1. **Quadrate erstellen**:
 Erstelle eine Liste der Quadrate der Zahlen von 1 bis 10.

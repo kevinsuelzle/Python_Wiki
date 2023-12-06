@@ -4,8 +4,8 @@ Programmieren ist ein komplexer Prozess, der Präzision und Aufmerksamkeit erfor
 Programmieren allgegenwärtig. Hier sind einige Gründe, warum Fehler entstehen, und die möglichen Auswirkungen, 
 die sie haben können.
 
-### Gründe für Programmierfehler
-
+## Gründe für Programmierfehler
+[20min]
 1. **Komplexität des Codes**: 
    Je komplexer ein Programm ist, desto schwieriger ist es, alle Aspekte zu überblicken und Fehler zu vermeiden.
 
@@ -19,8 +19,8 @@ die sie haben können.
 Fehler sind beim Programmieren unvermeidbar. Es gibt keine Software auf der Welt, die fehlerfrei ist. Dafür gibt es zu
 viele potentielle Fehlerquellen. 
 
-#### Aufgabe / Diskussion
-Zeit: 30 min
+### Aufgabe / Diskussion
+[30 min]
 
 Aufgabenstellung:
 - Diskutiert in 2er Gruppen, welche weiteren Gründe zu Fehlern führen können.
@@ -28,7 +28,7 @@ Aufgabenstellung:
 die Firma ein.
      
 ## Debugging von Python Anwendungen
-
+[75min]
 Als Debugging bezeichnet man das Finden und Beseitigen von Fehlern.
 
 Wieso nennt sich das eigentlich Debugging? 
@@ -45,50 +45,6 @@ Tools.
 Die einfachste Form des Debuggings kann durch das Einfügen von `print`-Anweisungen im Code erfolgen, um Werte von 
 Variablen zu einem bestimmten Zeitpunkt auszugeben. Dies wird sehr häufig verwendet, ist jedoch nicht optimal. Deswegen
 gehen wir hier auch nicht weiter darauf ein.
-
-### Nutzen von Logs zur Fehlersuche
-
-Die meisten Programme, erzeugen sogenannte Logs. Das sind meist Textdateien die während der Programmausführung angelegt
-werden und darüber Auskunft geben, welche Abläufe im Programm passiert sind. Geschieht ein Fehler, kann in den Logs
-verhältnismäßig einfach nachvollzogen werden, was vorher passiert ist.
-
-Oftmals sind Logs aber nur ein erster Hinweis darauf in welchen Programmteilen bestimmte Fehler passiert sind und welche
-Auswirkungen sie auf das Programm hatten. 
-
-Software, die für einen Produktiveinsatz entwickelt wird, sollte immer eine Form von Logging beinhalten.
-
-#### Warum ist Logging wichtig?
-
-1. **Fehleridentifikation**: 
-    Logging ermöglicht die Erfassung von Fehlern und Ausnahmen zur Laufzeit. Diese Logs bieten wichtige Hinweise zur 
-   Fehlerursache.
-
-2. **Verhaltensanalyse**: 
-    Durch das Protokollieren von Aktivitäten und Ereignissen kann das Verhalten des Programms verstanden und 
-   analysiert werden.
-
-3. **Historische Daten**: 
-    Logs bieten eine Historie der Programmausführung, die hilfreich sein kann, um Probleme, die zu einem früheren
-   Zeitpunkt aufgetreten sind, zu diagnostizieren.
-
-4. **Leistungsmessung**: 
-    Performance-relevante Informationen können geloggt werden, um Engpässe und Leistungsprobleme zu identifizieren.
-
-#### Logging in der Praxis
-
-- **Logging-Level**: 
-   Verschiedene Logging-Levels (wie INFO, DEBUG, ERROR) ermöglichen es, die Menge und den Detailgrad der 
-  Log-Nachrichten zu steuern.
-
-- **Kontextreiche Informationen**: 
-   Gute Log-Nachrichten enthalten Kontext, wie Zeitstempel, Ausführungspfad, Variablenwerte usw.
-
-- **Nicht-intrusiv**: 
-   Logging ist eine nicht-intrusive Methode, die den normalen Ablauf des Programms nicht unterbricht.
-
-- **Werkzeuge und Bibliotheken**: 
-   Es gibt viele Tools und Bibliotheken (Python's `logging`-Modul), die das Logging unterstützen und 
-  erleichtern.
 
 ### Der Debugger
 
@@ -112,7 +68,7 @@ Debugger haben alle ähnliche Funktionen:
     Erlaubt es, den Ablauf des Programms zu steuern, beispielsweise durch Fortsetzen der Ausführung oder Rückkehr 
    zu einem früheren Punkt.
 
-#### Verwendung von `pdb`
+### Verwendung von `pdb`
 
 Python bietet mit `pdb` einen Debugger, der mit Python direkt mitgeliefert wird. `pdb` ist ein interaktives Tool.
 
@@ -132,7 +88,7 @@ Hier sind einige grundlegende Befehle:
 - `q`: Beendet den Debugger und das Programm.
 
 #### Beispiel zur Nutzung von `pdb`
-
+[45min]
 ```python
 import pdb
 
@@ -149,7 +105,8 @@ In diesem Beispiel wird `pdb.set_trace()` verwendet, um einen Haltepunkt zu setz
 erreicht, wird die Ausführung pausiert und der Benutzer kann mit den pdb-Befehlen den Zustand des Programms 
 inspizieren und steuern. 
 
-### Übungsaufgaben
+### Aufgaben
+[60min]
 
 ### 1. **Haltepunkt setzen**: 
 Füge in der folgenden Funktion einen Haltepunkt hinzu und führe das Programm aus. 
@@ -220,3 +177,47 @@ print(ergebnis)
 ```
 [Lösungen](solution.md)
 
+## Nutzen von Logs zur Fehlersuche
+[60min]
+
+Die meisten Programme, erzeugen sogenannte Logs. Das sind meist Textdateien die während der Programmausführung angelegt
+werden und darüber Auskunft geben, welche Abläufe im Programm passiert sind. Geschieht ein Fehler, kann in den Logs
+verhältnismäßig einfach nachvollzogen werden, was vorher passiert ist.
+
+Oftmals sind Logs aber nur ein erster Hinweis darauf in welchen Programmteilen bestimmte Fehler passiert sind und welche
+Auswirkungen sie auf das Programm hatten. 
+
+Software, die für einen Produktiveinsatz entwickelt wird, sollte immer eine Form von Logging beinhalten.
+
+### Warum ist Logging wichtig?
+
+1. **Fehleridentifikation**: 
+    Logging ermöglicht die Erfassung von Fehlern und Ausnahmen zur Laufzeit. Diese Logs bieten wichtige Hinweise zur 
+   Fehlerursache.
+
+2. **Verhaltensanalyse**: 
+    Durch das Protokollieren von Aktivitäten und Ereignissen kann das Verhalten des Programms verstanden und 
+   analysiert werden.
+
+3. **Historische Daten**: 
+    Logs bieten eine Historie der Programmausführung, die hilfreich sein kann, um Probleme, die zu einem früheren
+   Zeitpunkt aufgetreten sind, zu diagnostizieren.
+
+4. **Leistungsmessung**: 
+    Performance-relevante Informationen können geloggt werden, um Engpässe und Leistungsprobleme zu identifizieren.
+
+### Logging in der Praxis
+
+- **Logging-Level**: 
+   Verschiedene Logging-Levels (wie INFO, DEBUG, ERROR) ermöglichen es, die Menge und den Detailgrad der 
+  Log-Nachrichten zu steuern.
+
+- **Kontextreiche Informationen**: 
+   Gute Log-Nachrichten enthalten Kontext, wie Zeitstempel, Ausführungspfad, Variablenwerte usw.
+
+- **Nicht-intrusiv**: 
+   Logging ist eine nicht-intrusive Methode, die den normalen Ablauf des Programms nicht unterbricht.
+
+- **Werkzeuge und Bibliotheken**: 
+   Es gibt viele Tools und Bibliotheken (Python's `logging`-Modul), die das Logging unterstützen und 
+  erleichtern.

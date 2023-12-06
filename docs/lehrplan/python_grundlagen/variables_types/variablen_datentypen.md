@@ -5,11 +5,11 @@ sind wie Behälter, in denen wir Daten speichern können, während Datentypen di
 Variablen gespeichert werden können.
 
 ## Bedeutung von Variablen in der Programmierung
-
+[60min]
 Variablen sind ein unverzichtbarer Bestandteil der meisten Programmiersprachen, einschließlich Python. Sie erfüllen
 mehrere wichtige Funktionen:
 
-1. **Daten speichern**:
+#### 1. **Daten speichern**:
    Variablen dienen als Speicherorte im Arbeitsspeicher eines Computers, in denen Daten gespeichert werden können.
    Diese Daten können Zahlen, Texte, und andere möglichen anderen Objekte sein.
 
@@ -18,11 +18,11 @@ sum = 10 + 13
 print(sum)
 ```
 
-2. **Lesbarkeit und Wartbarkeit**:
+#### 2. **Lesbarkeit und Wartbarkeit**:
    Variablen helfen, den Code verständlicher zu machen. Durch sinnvolle Namen wird der Zweck des Codes klarer, was die
    Wartung und Fehlerbehebung vereinfacht.
 
-3. **Berechnungen durchführen und Ergebnisse speichern**:
+#### 3. **Berechnungen durchführen und Ergebnisse speichern**:
    Variablen ermöglichen die Durchführung von Berechnungen mit gespeicherten Werten. So können beispielsweise
    mathematische Operationen ausgeführt und das Ergebnis in einer anderen Variablen gespeichert werden.
 
@@ -33,10 +33,10 @@ result = nominator / denominator
 print(result)
 ```
 
-4. **Daten wiederverwenden**:
+#### 4. **Daten wiederverwenden**:
    Variablen werden eingesetzt, um Daten in verschiedenen Teilen eines Programms zu nutzen.
 
-5. **Speichern von Zuständen**:
+#### 5. **Speichern von Zuständen**:
    In komplexeren Anwendungen dienen Variablen dazu, den Zustand einer Anwendung zu speichern und zu verwalten.
    Beispiele hierfür sind der Login-Status eines Nutzers oder die Anzahl der Artikel in einem Warenkorb.
 
@@ -54,6 +54,7 @@ Grundlage für fast alle Operationen und Logiken in der Programmierung.
 ----
 
 # Variablen
+[75min]
 
 Eine Variable in Python kann erstellt werden, indem man ihr einen Namen gibt und
 ihr einen Wert zuweist. Dabei steht links immer der Variablenname und rechts der Wert, der in dieser gespeichert werden
@@ -74,7 +75,7 @@ print(willkommens_text)
 ```
 
 ## Namenskonventionen:
-
+[20min]
 - Variablennamen sollten klar und beschreibend sein. In Python verwenden wir oft Snake-Case,
   bei dem Wörter durch Unterstriche getrennt werden (z.B. `meine_variable`).
 - Variablennamen dürften nicht mit einer Zahl anfangen und keine Sonderzeichen außer dem Unterstrich enthalten.
@@ -87,7 +88,7 @@ Eine Variable `a` könnte alles sein, während die Variable `zinssatz` recht sic
 ----
 
 # Datentypen
-
+[60min]
 In Python gibt es verschiedene Datentypen, aber hier konzentrieren wir uns auf die grundlegendsten.
 
 ## Primitive Datentypen
@@ -141,41 +142,51 @@ ist_sonnig = False
 Von Booleans werden wir um Laufe der Woche noch mehr hören und sie auch schon direkt in unserem eigenen Programm nutzen.
 
 ### Übungsaufgaben
-Zeit: 35min
-TODO: Bei vielen dieser Programme würde ich mir konkrete Aufgaben wünschen. Ich habe das mal bei Aufgabe 6 vorgemacht.
-Für fast jeden von denen kannst du hier mehrere beispiele durchgehen und dabei immer interessantere Fälle einbinden
-(z.B. mit Varialben usw.) Ich habe auch darüber nachgedacht, ob man das so lässt, aber das Problem ist,
-dass du hier Anweisungen gibst Dinge zu tun, die du ihnen vorher nicht gezeigt hast. Z.B. forderst du auf
-Vergleichsoperatoren zu nutzen, sie kennnen sie aber nicht. Bitte bedenke folgendes:
-Auch wenn die Teilnehmer bereits zwei Wochen Programmieruntericht im Moment genießen, so sollte das Skript
-doch darauf ausgelegt sein, dass sie keine Vorerfahrung haben.
+[35min]
 
-1. **Integer Addition**: Schreibe ein Programm, das zwei Integers addiert.
-2. **Integer Subtraktion**: Subtrahiere einen Integer von einem anderen und gib das Ergebnis aus.
-3. **Float Division**: Dividiere zwei Floats und gib das Ergebnis aus.
-4. **Multiplikation von Integers**: Multipliziere zwei Integers und gib das Ergebnis aus.
-5. **Konvertierung von Float zu Integer**: Konvertiere einen Float in einen Integer und gib das Ergebnis aus.
-6. **Vergleich von Integers**: Was ist das Ergebnis von:
+### 1. **Integer Addition**: 
+Schreibe ein Programm, das zwei Integers addiert.
+### 2. **Integer Subtraktion**: 
+Subtrahiere einen Integer von einem anderen und gib das Ergebnis aus.
+### 3. **Float Division**: 
+Dividiere zwei Floats und gib das Ergebnis aus.
+### 4. **Multiplikation von Integers**: 
+Multipliziere zwei Integers und gib das Ergebnis aus.
+### 5. **Konvertierung von Float zu Integer**: 
+Konvertiere einen Float in einen Integer und gib das Ergebnis aus.
+### 6. **Vergleich von Integers**: 
+Was ist das Ergebnis von:
     1. `1 < 3`
     2. `10 > 11`
     3. `22 != 23`
     4. `567 <= 890`
     5. `444 >= 444`
     6. `42 =< 42`
-7. **Booleansches AND**: Was ist das Ergebnis von:
+### 7. **Booleansches AND**: 
+Was ist das Ergebnis von:
     1. `1 < 3 and 4 < 3`
-8. **Booleansches OR**: Es gelte `a=1` und `b=2`. Was ist das Ergebnis?
+### 8. **Booleansches OR**: 
+Es gelte `a=1` und `b=2`. Was ist das Ergebnis?
     1. `a < 3 or b > 3`
-9. **Umwandlung von Integer in Boolean**: Konvertiere einen Integer in einen Boolean und gib das Ergebnis aus.
-10. **Modulo-Operator mit Integers**: Verwende den Modulo-Operator, um den Rest zweier Integers zu finden.
-11. **Potenzierung von Floats**: Berechne die Potenz eines Floats (z.B. 5.5^3) und gib das Ergebnis aus.
-12. **Vergleich von Floats**: Vergleiche zwei Floats miteinander und gib das Ergebnis (True oder False) aus.
-13. **Integer in Float konvertieren**: Konvertiere einen Integer in einen Float.
-14. **Negation eines Booleans**: Negiere einen booleschen Wert und gib das Ergebnis aus.
-15. **Kombination von Booleans und Integers**: Überprüfe, ob ein Integer positiv ist und gib das Ergebnis als Boolean
+### 9. **Umwandlung von Integer in Boolean**: 
+Konvertiere einen Integer in einen Boolean und gib das Ergebnis aus.
+### 10. **Modulo-Operator mit Integers**: 
+Verwende den Modulo-Operator, um den Rest zweier Integers zu finden.
+### 11. **Potenzierung von Floats**: 
+Berechne die Potenz eines Floats (z.B. 5.5^3) und gib das Ergebnis aus.
+### 12. **Vergleich von Floats**: 
+Vergleiche zwei Floats miteinander und gib das Ergebnis (True oder False) aus.
+### 13. **Integer in Float konvertieren**: 
+Konvertiere einen Integer in einen Float.
+### 14. **Negation eines Booleans**: 
+Negiere einen booleschen Wert und gib das Ergebnis aus.
+### 15. **Kombination von Booleans und Integers**: 
+Überprüfe, ob ein Integer positiv ist und gib das Ergebnis als Boolean
     zurück.
-16. **Diskussion**: Für welche Anwendungen float und integer jeweils besser geeignet sind und wo es keine Rolle spielt!
-17. **Diskussion**: Kann man mit Fließkommazahlen jede Dezimalzahl darstellen? Begründet eure Antworten.
+### 16. **Diskussion**: 
+Für welche Anwendungen float und integer jeweils besser geeignet sind und wo es keine Rolle spielt!
+### 17. **Diskussion**: 
+Kann man mit Fließkommazahlen jede Dezimalzahl darstellen? Begründet eure Antworten.
 
 [Lösung](solution_1.md)
 
@@ -230,6 +241,7 @@ in Python arbeitest.
 ## Strings, List, Tupel, Set, Dictionary
 
 ### Strings (Zeichenketten):
+[45min]
 
 Strings werden verwendet, um Text zu speichern. In Python gibt es eine Vielzahl von Funktionen und Methoden, die es
 erlauben Strings zu verarbeiten. Strings in Python sind Unicode, das heißt so ziemlich jedes Zeichen, was es gibt kann
@@ -253,6 +265,7 @@ Strings sind für uns sehr wichtig. Der Datentyp ist sehr universell und typisch
 Ausgaben eine Art String sein.
 
 ### Listen
+[45min]
 
 Listen in Python sind eine der vielseitigsten Datenstrukturen und werden verwendet, um eine geordnete Sammlung von
 Elementen zu speichern.
@@ -322,18 +335,26 @@ Das sagt uns, dass wir "our of range" sind, also außerhalb der möglichen Eleme
 ### Aufgaben
 Zeit: 20min
 
-1. **Liste erstellen**: Erstelle eine Liste mit den Zahlen von 1 bis 10.
-2. **Tupel zu Liste**: Konvertiere das Tupel `(1, 2, 3)` in eine Liste.
-5. **Liste invertieren**: Kehre die Reihenfolge der Elemente in der Liste von Aufgabe 1 um.
-6. **Tupel aus Listen**: Erstelle ein Tupel aus den ersten drei Elementen der Liste von Aufgabe 1.
-9. **Liste von Tupeln**: Erstelle eine Liste von Tupeln, wobei jedes Tupel aus einer Zahl und ihrem Quadrat besteht (für
+### 1. **Liste erstellen**:
+Erstelle eine Liste mit den Zahlen von 1 bis 10.
+### 2. **Tupel zu Liste**: 
+Konvertiere das Tupel `(1, 2, 3)` in eine Liste.
+### 3. **Liste invertieren**:
+Kehre die Reihenfolge der Elemente in der Liste von Aufgabe 1 um.
+### 4. **Tupel aus Listen**:
+Erstelle ein Tupel aus den ersten drei Elementen der Liste von Aufgabe 1.
+### 5. **Liste von Tupeln**: 
+Erstelle eine Liste von Tupeln, wobei jedes Tupel aus einer Zahl und ihrem Quadrat besteht (für
    Zahlen von 1 bis 5).
-12. **Listenelemente filtern**: Erstelle eine neue Liste aus der Liste von Aufgabe 1, die nur gerade Zahlen enthält.
-14. **Element in Tupel überprüfen**: Überprüfe, ob die Zahl 3 im Tupel von Aufgabe 6 enthalten ist.
+### 6. **Listenelemente filtern**: 
+Erstelle eine neue Liste aus der Liste von Aufgabe 1, die nur gerade Zahlen enthält.
+### 7. **Element in Tupel überprüfen**: 
+Überprüfe, ob die Zahl 3 im Tupel von Aufgabe 6 enthalten ist.
 
 [Lösungen](solution_3.md)
 
 ### Sets
+[45min]
 
 Sets in Python sind eine Datenstruktur, die für die Speicherung einer ungeordneten Sammlung von einzigartigen Elementen
 verwendet wird. Das heißt kein Element kann doppelt vorkommen.
@@ -349,6 +370,7 @@ print(buchstaben)
 ```
 
 ### Dictionaries
+[45min]
 
 Mit Dictionaries können wir Schlüssel-Wert-Paare speichern. Dies ist die vielleicht wichtigste Datenstruktur in Python
 und wird auch von der Sprache selbst in hohem Maße genutzt. Sehr viele Dinge in Python lassen sich im Grunde auf
@@ -365,26 +387,31 @@ name = mein_dict["Name"]
 print(name)  # Gibt "Max" aus
 ```
 
-### Aufgaben
-
-### Übungsaufgaben
-Zeit: 20min
+# Aufgaben
+[20min]
 
 Wenn ihr bei einer Aufgabe nicht wisst, wie es geht oder euch nicht sicher seit, versucht zuerst bei einer Suchmaschine
 eurer Wahl nach einem Lösungsweg zu suchen. Das Finden von Informationen ist ein wichtiger Skill als Software-Entwickler.
 
-3. **Elemente zu Set hinzufügen**: Füge die Zahlen 4, 5 und 6 zu einem Set `{1, 2, 3}` hinzu.
-4. **Schlüssel-Wert-Paare in Dictionary**: Erstelle ein Dictionary mit den Schlüsseln "a", "b", "c" und den Werten 1, 2,
-    3.
+### 1. **Elemente zu Set hinzufügen**: 
+Füge die Zahlen 4, 5 und 6 zu einem Set `{1, 2, 3}` hinzu.
+### 2. **Schlüssel-Wert-Paare in Dictionary**: 
+Erstelle ein Dictionary mit den Schlüsseln "a", "b", "c" und den Werten 1, 2, 3.
 
-7. **Element aus Set entfernen**: Entferne ein beliebiges Element aus dem Set von Aufgabe 3.
-8. **Werte aus Dictionary abrufen**: Greife auf den Wert des Schlüssels "b" im Dictionary von Aufgabe 4 zu.
+### 3. **Element aus Set entfernen**:
+Entferne ein beliebiges Element aus dem Set von Aufgabe 3.
+### 4. **Werte aus Dictionary abrufen**:
+Greife auf den Wert des Schlüssels "b" im Dictionary von Aufgabe 4 zu.
 
-10. **Dictionary Werte ändern**: Ändere im Dictionary von Aufgabe 4 den Wert von "c" zu 4.
-11. **Set Operationen**: Erstelle die Vereinigung und Schnittmenge zweier Sets `{1, 2, 3}` und `{3, 4, 5}`.
+### 5. **Dictionary Werte ändern**: 
+Ändere im Dictionary von Aufgabe 4 den Wert von "c" zu 4.
+### 6. **Set Operationen**:
+Erstelle die Vereinigung und Schnittmenge zweier Sets `{1, 2, 3}` und `{3, 4, 5}`.
 
-13. **Schlüssel aus Dictionary entfernen**: Entferne den Schlüssel "a" aus dem Dictionary von Aufgabe 4.
+### 7. **Schlüssel aus Dictionary entfernen**:
+Entferne den Schlüssel "a" aus dem Dictionary von Aufgabe 4.
 
-15. **Duplikate aus Liste entfernen**: Entferne alle Duplikate aus der Liste `[1, 2, 2, 3, 3, 4, 4, 5]`.
+### 8. **Duplikate aus Liste entfernen**: 
+Entferne alle Duplikate aus der Liste `[1, 2, 2, 3, 3, 4, 4, 5]`.
 
 [Lösungen](solution_2.md)

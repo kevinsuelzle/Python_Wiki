@@ -8,6 +8,7 @@ Leider ist dies lediglich ein Hinweis für andere Programmierer und wird durch P
 gibt es allerdings frei verfügbare Tools, um dies zu tun.
 
 ## Wichtigkeit von Type Hints
+[40min]
 
 1. **Verbesserte Lesbarkeit und Wartbarkeit**: Type Hints machen den Code für andere Entwickler (oder auch für den Autor
    selbst zu einem späteren Zeitpunkt) leichter verständlich.
@@ -33,6 +34,8 @@ Type Hints werden in Python durch die Verwendung von Anmerkungen (Annotations) d
   Funktionsdefinition angegeben.
 
 ## Beispiele
+[25min]
+
 - **Einfache Funktion mit Type Hints**
 ```python
 def addiere(a: int, b: int) -> int:
@@ -54,7 +57,7 @@ def verarbeite_daten(daten: List[int]) -> Dict[str, int]:
 ```
 
 ## Type Hints Testen
-
+[50min]
 Obwohl Type Hints in Python eine wertvolle Ergänzung für die Typisierung des Codes bieten, werden sie zur Laufzeit
 standardmäßig nicht erzwungen. Stattdessen können sie mit zusätzlichen Tools überprüft werden, um die Sicherheit und
 Korrektheit des Programms zu erhöhen.
@@ -91,7 +94,7 @@ wie `unittest` oder `pytest` ermöglichen es, zu überprüfen, ob Funktionen mit
 Während des Testlaufs können Sie überprüfen, ob die Funktionen korrekt auf Typfehler reagieren.
 
 ### Continuous Integration (CI)
-
+[30min]
 Die Einbindung von statischen Typüberprüfungstools in den CI/CD-Workflow stellt sicher, dass die Typsicherheit eines
 Programms bei jedem Build überprüft wird. Dies kann erreicht werden, indem man Tools wie `mypy` oder `pyright` in die
 CI-Pipeline integriert, sodass Pull Requests und Commits vor der Integration in den Hauptbranch automatisch auf
