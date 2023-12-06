@@ -3,9 +3,9 @@
 | KW  | Unterricht     | Lernziele | Begriffssammlung |
 |-----|----------------|-----------|------------------|
 |     |                |           |                  |
-| 3   | [git Teil 1]() | [Link]()  | [Link]()         |
-| 4   | [git Teil 2]() | [Link]()  | [Link]()         |
-| 5   | [git Teil 3]() | [Link]()  | [Link]()         |
+| 3   | [git Teil 1]() | [Link](lernziele.md)  | [Link](begriffssammlung.md)         |
+| 4   | [git Teil 2]() | [Link](lernziele.md)  | [Link](begriffssammlung.md)         |
+| 5   | [git Teil 3]() | [Link](lernziele.md)  | [Link](begriffssammlung.md)         |
 
 # Block 2
 

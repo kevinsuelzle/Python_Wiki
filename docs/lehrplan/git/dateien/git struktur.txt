@@ -71,6 +71,9 @@ Warum gibt es den Zwischenschritt der Staging-Area? Warum nicht direkt speichern
 Nutze git help <befehl> oder git <befehl> -h um mehr informationen zu den Befehlen zu erhalten.
 
 
+#############################
+#############################
+
 Was speichert GIT?
 Es gibt drei Hauptarten von Objekten in git:
 Blobs (Dateien mit Inhalt)
@@ -79,9 +82,17 @@ Commits (Wird bei einem Commit erstellt, hat verschiedene Metainfos und Referenz
 Annotatet Tags
 Alle Objekte sind im .git/objects Ordner gespeichert.
 
+
+
+
+
 Wie ist GIT strukturiert?
 Git speichert bei jeder Änderung ein Objekt komplett neu.
 Wenn sich nichts verändert, wird auch nichts neues gespeichert, sondern einfach erneut referenziert.
+
+
+
+
 
 # Zwei Workflows: Alleine arbeiten vs Zusammen arbeiten
 # Workflow 1 - alleine arbeiten:
@@ -91,6 +102,11 @@ Wenn sich nichts verändert, wird auch nichts neues gespeichert, sondern einfach
 # Workflow 2 - zusammen arbeiten:
     # programmieren -> änderungen auswählen -> änderungen commiten
     # im großen Bild
+
+
+
+#############################
+#############################
 
 Es gibt verschiedene Möglichkeiten verschiedene Commits zusammenzuführen:
 git merge
