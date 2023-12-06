@@ -4,7 +4,7 @@ Python ist eine Programmiersprache, die für ihre einfache Syntax und Lesbarkeit
 verstehen, wie Python-Code auf einem Computer ausgeführt wird, ist es wichtig, die Konzepte von Bytecode und
 Maschinencode zu verstehen.
 
-## Bytecode in Python
+## Bytecode in Python 
 [50min]
 
 1. **Was ist Bytecode?**
@@ -114,25 +114,25 @@ Abstraktionsebene effizient ausgeführt werden kann.
 
 # Diskussionsaufgaben
 [120min + 30min Auswertung]
-### 1. **Grundlagen des Python-Interpreters**: 
+### 1. **Grundlagen des Python-Interpreters**: 🌶️
 Recherchiere, was ein Python-Interpreter ist und wie er funktioniert. 
 Diskutiere, was beim Ausführen eines Python-Skripts im Hintergrund passiert, von der Eingabe des Codes bis zur
 Ausführung.
 
-### 2. **Bytecode in Python verstehen**: 
+### 2. **Bytecode in Python verstehen**: 🌶️
 Informiere dich darüber, was Bytecode in Python ist und warum Python-Code zuerst in
 Bytecode umgewandelt wird, bevor er ausgeführt wird. Diskutiere die Rolle des Bytecodes im Python-Ausführungsprozess.
 
-### 3. **Python und Plattformunabhängigkeit**: 
+### 3. **Python und Plattformunabhängigkeit**: 🌶️
 Recherchiere, was es bedeutet, dass Python plattformunabhängig ist.
 Diskutiere, wie Python auf verschiedenen Betriebssystemen wie Windows, MacOS und Linux ausgeführt werden kann, ohne
 den Code zu ändern.
 
-### 4. **Einführung in Python Virtual Machine (PVM)**: 
+### 4. **Einführung in Python Virtual Machine (PVM)**: 🌶️
 Finde heraus, was die Python Virtual Machine (PVM) ist und welche Rolle
 sie bei der Ausführung von Python-Code spielt. Diskutiere, wie die PVM Bytecode interpretiert und ausführt.
 
-### 5. **Python-Interpreter: CPython vs. PyPy**: 
+### 5. **Python-Interpreter: CPython vs. PyPy**: 🌶️
 Recherchiere die Unterschiede zwischen CPython (dem Standard-Python-Interpreter) und PyPy (einem alternativen 
 Interpreter). Diskutiere, wie diese Interpreter Python-Code  verarbeiten und welche Vor- und Nachteile sie haben.
 
