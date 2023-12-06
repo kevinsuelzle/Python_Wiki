@@ -19,7 +19,7 @@
 | 3     | [Type Hints](python_grundlagen/type_hints/type_hints.md)                            | [hier](../checklists/checkliste1.md#type-hints)                | [hier](python_grundlagen/type_hints/Begriffe.md)                                    |
 | 3     | [List Comprehensions](python_grundlagen/list_comp/list_comp.md)                     | [hier](../checklists/checkliste1.md#list-comprehension)        | [hier](python_grundlagen/list_comp/Begriffe.md)                                     |
 | 3     | [Zip](python_grundlagen/zip/zip.md)                                                 | [hier](../checklists/checkliste1.md#zip)                       | [hier](python_grundlagen/zip/Begriffe.md)                                           |
-| 3     | [git Teil 1]()                                                                      | [hier]()                                                       | [hier]()                                                                            |
+| 3     | [git Teil 1](git/git_Teil1.md)                                                      | [hier]()                                                       | [hier]()                                                                            |
 | 4     | [Try-Except](python_grundlagen/Woche%204-5/01_try_except.md)                        | [hier](../checklists/checkliste1.md#try-except)                | [hier](python_grundlagen/Woche%204-5/01_try_except.md#neue-schlüsselwörter)         |
 | 4     | [Module](python_grundlagen/Woche%204-5/02_module.md)                                | [hier](../checklists/checkliste1.md#module)                    | [hier](python_grundlagen/Woche%204-5/02_module.md#neue-schlüsselwörter)             |
 | 4     | [PIP](python_grundlagen/Woche%204-5/03_pip.md)                                      | [hier](../checklists/checkliste1.md#pip)                       | [hier](python_grundlagen/Woche%204-5/03_pip.md#neue-schlüsselwörter)                |
@@ -27,7 +27,7 @@
 | 4     | [Dateioperationen](python_grundlagen/Woche%204-5/05_dateioperationen.md)            | [hier](../checklists/checkliste1.md#dateioperationen)          | [hier](python_grundlagen/Woche%204-5/05_dateioperationen.md#neue-schlüsselwörter)   |
 | 4     | [OOP Einführung](python_grundlagen/Woche%204-5/06_oop_einführung.md)                | [hier](../checklists/checkliste1.md#oop-intro)                 | [hier](python_grundlagen/Woche%204-5/06_oop_einführung.md#neue-schlüsselwörter)     |
 | 4     | [OOP in Python](python_grundlagen/Woche%204-5/07_oop_python.md)                     | [hier](../checklists/checkliste1.md#oop-python)                | [hier](python_grundlagen/Woche%204-5/07_oop_python.md#neue-schlüsselwörter)         |
-| 4     | [git Teil 2]()                                                                      | [hier]()                                                       | [hier]()                                                                            |
+| 4     | [git Teil 2](git/git_Teil2.md)                                                      | [hier]()                                                       | [hier]()                                                                            |
 | 5     | [Getter Setter](python_grundlagen/Woche%204-5/08_getter_setter.md)                  | [hier](../checklists/checkliste1.md#getter-setter)             | [hier](python_grundlagen/Woche%204-5/08_getter_setter.md#neue-schlüsselwörter)      |
 | 5     | [Class- & Staticmethod](python_grundlagen/Woche%204-5/09_class_staticmethod.md)     | [hier](../checklists/checkliste1.md#class-staticmethod)        | [hier](python_grundlagen/Woche%204-5/09_class_staticmethod.md#neue-schlüsselwörter) |
 | 5     | [Vererbung](python_grundlagen/Woche%204-5/10_vererbung.md)                          | [hier](../checklists/checkliste1.md#vererbung)                 | [hier](python_grundlagen/Woche%204-5/10_vererbung.md#neue-schlüsselwörter)          |
@@ -39,7 +39,7 @@
 | 5     | [Factory Method Pattern](python_grundlagen/Woche%204-5/14_x2_factory_method.md)     | [hier](../checklists/checkliste1.md#factory-method)            | [hier](python_grundlagen/Woche%204-5/14_x2_factory_method.md#neue-schlüsselwörter)  |
 | 5     | [Adapter Pattern](python_grundlagen/Woche%204-5/14_x3_adapter.md)                   | [hier](../checklists/checkliste1.md#adapter)                   | [hier](python_grundlagen/Woche%204-5/14_x3_adapter.md#neue-schlüsselwörter)         |
 | 5     | [OOP vs Funktional](python_grundlagen/Woche%204-5/15_oop_vs_funktionale.md)         | [hier](../checklists/checkliste1.md#oop-vs-funktional)         | [hier](python_grundlagen/Woche%204-5/14_x3_adapter.md#neue-schlüsselwörter)         |
-| 5     | [git Teil 3]()                                                                      | [hier]()                                                       | [hier]()                                                                            |
+| 5     | [git Teil 3](git/git_Teil3.md)                                                      | [hier](../checkliste/checklist_git.md#teil-3)                  | [hier]()                                                                            |
 
 
 # Block 2
