@@ -1,3 +1,5 @@
+# Begriffe Block 1
+
 # Intro
 
 | Begriff | Kurzerklärung                                        | Link zur Referenz                             |
@@ -12,7 +14,7 @@
 
 | Begriff    | Kurzerklärung                                      | Link zur Referenz                                                                                       |
 |------------|----------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Variable   | Name, mit dem man Werte wiederholt nutzen kann     |                                                                                                         |
+| Variable   | Name, mit dem man Werte wiederholt nutzen kann     | [Referenz](https://docs.python.org/3/faq/programming.html)                                              |
 | Integer    | Datentyp für Ganzzahlen                            | [Referenz](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)             |
 | Float      | Datentyp für Fließkommazahlne                      | [Referenz](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)             |
 | Boolean    | Datentyp für Wahrheitswerte (`True`/`False`)       | [Referenz](https://docs.python.org/3/library/stdtypes.html#boolean-type-bool)                           |
@@ -36,13 +38,13 @@
 
 | Begriff     | Kurzerklärung                       | Link zur Referenz                                                                       |
 |-------------|-------------------------------------|-----------------------------------------------------------------------------------------|
-| `+`         | Addition von zwei Variablen         |                                                                                         |
-| `-`         | Subtraktion von zwei Variablen      |                                                                                         |
-| `*`         | Multiplikation von zwei Variablen   |                                                                                         |
-| `/`         | Divison von zwei Variablen          |                                                                                         |
-| `//`        | Ganzzahldivision von zwei Variablen |                                                                                         |
-| `%`         | Module von zwei Variablen           |                                                                                         |
-| `**`        | Potenzieren                         |                                                                                         |
+| `+`         | Addition von zwei Variablen         | [Referenz](https://docs.python.org/3/library/operator.html)                             |
+| `-`         | Subtraktion von zwei Variablen      | [Referenz](https://docs.python.org/3/library/operator.html)                             |
+| `*`         | Multiplikation von zwei Variablen   | [Referenz](https://docs.python.org/3/library/operator.html)                             |
+| `/`         | Divison von zwei Variablen          | [Referenz](https://docs.python.org/3/library/operator.html)                             |
+| `//`        | Ganzzahldivision von zwei Variablen | [Referenz](https://docs.python.org/3/library/operator.html)                             |
+| `%`         | Module von zwei Variablen           | [Referenz](https://docs.python.org/3/library/operator.html)                             |
+| `**`        | Potenzieren                         | [Referenz](https://docs.python.org/3/library/operator.html)                             |
 | `math.sqrt` | Ziehen der Quadratwurzel            | [Referenz](https://docs.python.org/3/library/math.html?highlight=math%20sqrt#math.sqrt) |
 | `math.exp`  | Exponentailfunktion                 | [Referenz](https://docs.python.org/3/library/math.html?highlight=math%20sqrt#math.exp)  |
 | `math.log`  | Logartihmus zur angegeben Basis     | [Referenz](https://docs.python.org/3/library/math.html?highlight=math%20sqrt#math.log)  |
@@ -57,9 +59,9 @@
 
 # Verzweigungen
 
-| Begriff     | Kurzerklärung                          | Link zur Referenz                                                                              |
-|-------------|----------------------------------------|------------------------------------------------------------------------------------------------|
-| `if`, `else` | Verzweigungen aufgrund von Bedingungen | [Referenz](https://docs.python.org/3/tutorial/controlflow.html?highlight=else#if-statements)   |
+| Begriff      | Kurzerklärung                          | Link zur Referenz                                                                            |
+|--------------|----------------------------------------|----------------------------------------------------------------------------------------------|
+| `if`, `else` | Verzweigungen aufgrund von Bedingungen | [Referenz](https://docs.python.org/3/tutorial/controlflow.html?highlight=else#if-statements) |
 
 
 # Listen
@@ -73,10 +75,10 @@
 
 # Tupel
 
-| Begriff     | Link zur Referenz                                                                          |
-|-------------|--------------------------------------------------------------------------------------------|
-| `Tupel`     | [Referenz](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)    |
-| Slicing     | [Referenz](https://docs.python.org/3/reference/datamodel.html?highlight=slicing#sequences) |
+| Begriff | Link zur Referenz                                                                          |
+|---------|--------------------------------------------------------------------------------------------|
+| `Tupel` | [Referenz](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)    |
+| Slicing | [Referenz](https://docs.python.org/3/reference/datamodel.html?highlight=slicing#sequences) |
 
 
 # Strings
@@ -84,8 +86,8 @@
 | Begriff        | Link zur Referenz                                                   |
 |----------------|---------------------------------------------------------------------|
 | `str`          | [Referenz](https://docs.python.org/3/library/stdtypes.html#textseq) |
-| Escape Zeichen | [Wikipedia](https://de.wikipedia.org/wiki/Escape_(Steuerzeichen))   |
-| Unicode        | [Wikipedia](https://de.wikipedia.org/wiki/Unicode)                  |
+| Escape Zeichen | [Referenz](https://de.wikipedia.org/wiki/Escape_(Steuerzeichen))    |
+| Unicode        | [Referenz](https://de.wikipedia.org/wiki/Unicode)                   |
 
 # Schleifen
 
@@ -99,182 +101,235 @@
 
 # Sets
 
-| Begriff             | Link zur Referenz                                                                                                                      |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `set`                | [Referenz](https://docs.python.org/3/library/stdtypes.html#set)                                          |
+| Begriff | Link zur Referenz                                               |
+|---------|-----------------------------------------------------------------|
+| `set`   | [Referenz](https://docs.python.org/3/library/stdtypes.html#set) |
 
 # Dictionaries
 
-| Begriff              | Link zur Referenz                                                              |
-|----------------------|--------------------------------------------------------------------------------|
-| `dictionary`         | [Referenz](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict) |
-| Schlüssel            | Value über den im Dictionary ein Wert referenziert wird.                       |
-| Wert                 | Für ein Schlüssel gespeicherter Value                                          |
-| Schlüssel-Wert-Paare | Paar auch Schlüssel und Wert (Key-Value-Pair)                                  |
+| Begriff              | Kurzerklörung                                                                    | Link zur Referenz                                                              |
+|----------------------|----------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| `dictionary`         | Ein Datencontainer mit dem man Werte und schlüssel miteinander assoziieren kann. | [Referenz](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict) |
+| Schlüssel            | Value über den im Dictionary ein Wert referenziert wird.                         | [Referenz](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict) |
+| Wert                 | Für ein Schlüssel gespeicherter Value                                            | [Referenz](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict) |
+| Schlüssel-Wert-Paare | Paar auch Schlüssel und Wert (Key-Value-Pair)                                    | [Referenz](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict) |
 
 
 # Bytecode
 
-| Begriff                   | Link zur Referenz                                                                                             |
-|---------------------------|---------------------------------------------------------------------------------------------------------------|
-| Bytecode                  | [Referenz](https://docs.python.org/3/glossary.html#term-bytecode)                                             |
-| Maschinencode             | [Wikipedia](https://en.wikipedia.org/wiki/Machine_code)                                                       |
-| `dis` Module              | [Referenz](https://docs.python.org/3/library/dis.html#)                                                       |
-| Kompilieren               | Übersetzen in Programmcode in eine für den Computer verständliche Repräsentation.                             |
-| Interpretieren            | Kontinuierliches Ausführen von Code, ohne diesen tatsächlich in Maschinensprache zu übersetzen (kompilieren). |
-| Just-in-Time Kompilierung | [Wikipedia](https://en.wikipedia.org/wiki/Just-in-time_compilation)                                           |
+| Begriff                   | Kurzerklörung                                                                                                | Link zur Referenz                                                  |
+|---------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| Bytecode                  | Eine übersetzte Repräsentation eines Programmes, welches für Interpreter einfach zu verstehen ist.           | [Referenz](https://docs.python.org/3/glossary.html#term-bytecode)  |
+| Maschinencode             | Ein übersetztes Programm welches für Prozessoren verständlich, aber für Menschen unverständlich ist.         | [Referenz](https://en.wikipedia.org/wiki/Machine_code)             |
+| `dis` Module              | Programmmodule welche das rück-übersetzen von Bytecode zu menschenleslichen in Python ermöglicht.            | [Referenz](https://docs.python.org/3/library/dis.html#)            |
+| Kompilieren               | Übersetzen in Programmcode in eine für den Computer verständliche Repräsentation.                            | [Referenz](https://de.wikipedia.org/wiki/Compiler)                 |
+| Interpretieren            | Kontinuierliches Ausführen von Code, ohne diesen tatsächlich in Maschinensprache zu übersetzen (kompilieren) | [Referenz](https://de.wikipedia.org/wiki/Interpreter)              |
+| Just-in-Time Kompilierung | Genau wie kompilieren. Nur hier wird der Code Stück für Stück übersetzt statt in einem Rutsch.               | [Referenz](https://en.wikipedia.org/wiki/Just-in-time_compilation) |
 
 
 # Funktionen
 
-| Begriff   | Link zur Referenz                                                                                       |
-|-----------|---------------------------------------------------------------------------------------------------------|
-| Funktion  | [Referenz](https://docs.python.org/3/glossary.html#term-function)                                       |
-| `def`     | Kennzeichnet die Definition einer Funktion oder Methode in Pythoncode.                                  |
-| Parameter | [Referenz](https://docs.python.org/3/glossary.html#term-parameter)                                      |
-| Argument  | [Referenz](https://docs.python.org/3/glossary.html#term-argument)                                       |
-| Scopes    | [Referenz](https://docs.python.org/3/reference/executionmodel.html?highlight=scope#resolution-of-names) |
+| Begriff   | Kurzerklörung                                                                                   | Link zur Referenz                                                                                       |
+|-----------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Funktion  | Ein gekapselter teil Code, an welchen Parameter überwegeben werden können wenn man ihn aufruft. | [Referenz](https://docs.python.org/3/glossary.html#term-function)                                       |
+| `def`     | Kennzeichnet die Definition einer Funktion oder Methode in Pythoncode.                          | [Referenz](https://docs.python.org/3/glossary.html#term-function)                                       |
+| Parameter | Werte welche an Funktionne übergeben werden.                                                    | [Referenz](https://docs.python.org/3/glossary.html#term-parameter)                                      |
+| Argument  | Anderer Ausdruck für Paramater                                                                  | [Referenz](https://docs.python.org/3/glossary.html#term-argument)                                       |
+| Scopes    | Bereiche in denen Werte und Code gelten.                                                        | [Referenz](https://docs.python.org/3/reference/executionmodel.html?highlight=scope#resolution-of-names) |
 
 
 # Type Hints
 
-| Begriff   | Link zur Referenz                            |
-|-----------|----------------------------------------------|
-| Type Hint | [PEP 484](https://peps.python.org/pep-0484/) |
+| Begriff   | Kurzerklärung                                               | Link zur Referenz                            |
+|-----------|-------------------------------------------------------------|----------------------------------------------|
+| Type Hint | Optionaler Typhinweis einer Variable oder Funktionrückgabe. | [PEP 484](https://peps.python.org/pep-0484/) |
 
 # List Comprehension
 
-| Begriff            | Link zur Referenz                                                              |
-|--------------------|--------------------------------------------------------------------------------|
-| List Comprehension | [Referenz](https://docs.python.org/3/glossary.html#term-list-comprehension)    |
+| Begriff            | Kurzerklärung                                                                                                                                    | Link zur Referenz                                                           |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| List Comprehension | Sammelbegriff für die Anwendung von Funktionen auf Listen, Sets, uws., welche in anderen Programmiersprachen mit Schleifen gelöst werden müssen. | [Referenz](https://docs.python.org/3/glossary.html#term-list-comprehension) |
 
 # zip
 
-| Begriff   | Link zur Referenz                                                                                |
-|-----------|--------------------------------------------------------------------------------------------------|
-| `zip`     | [Referenz](https://docs.python.org/3/library/functions.html?highlight=zip#zip)                   |
-| Iterables | [Referenz](https://docs.python.org/3/library/stdtypes.html?highlight=iterables#iterator-types)   |
+| Begriff   | Kurzerklärung                                                                    | Link zur Referenz                                                                              |
+|-----------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| Iterables | Datenstrukturen, die man Iteratiren kann und dem Iterable Design Pattern folgen. | [Referenz](https://docs.python.org/3/library/stdtypes.html?highlight=iterables#iterator-types) |
+| `zip`     | Methode zur Elementweisen Bildung von Paaren zweier Iterables.                   | [Referenz](https://docs.python.org/3/library/functions.html?highlight=zip#zip)                 |
 
 # Try Except
 
-- Ich weiß, was Ausnahmen von Compilerfehlern unterscheidet.
-- Ich weiß, was ein Laufzeitfehler ist.
-- Ich kenne wege Fehler zu behandeln.
-- Ich kenne die Sytax von `try`-`except`.
-- Ich weiß wofür ein `finally`-Block gebraucht wird.
+| Begriff   | Kurzerklärung                                                     | Link zur Referenz                                                                       |
+|-----------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| `try`     | Einleitung des Blocks in dem eine Exception geworfen werden kann. | [Referenz](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement)   |
+| `except`  | Behandlung einer Ausnahme.                                        | [Referenz](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement)   |
+| `finally` | Abschluss, der immer ausgeführt wird.                             | [Referenz](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement)   |
+| `raise`   | Werfen einer Exception                                            | [Referenz](https://docs.python.org/3/reference/compound_stmts.html#the-raise-statement) |
+| `else`    | optionaler Block, falls keine Exception auftrat                   | [Referenz](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement)   |
+| `class`   | Schlüsselwort, um Klasse und Exceptions zu definieren             | [Referenz](https://docs.python.org/3/reference/classes.html)                            |
+
 
 # Module
 
-- Ich habe grundlegende Kenntnisse über die Verwendung von Modulen in Python.
-- Ich verstehe, wie Module dazu verwendet werden, Code zu organisieren und wiederzuverwenden.
-- Ich kenne die Syntax für den Import von Modulen in Python.
+| Begriff       | Kurzerklärung                                                           | Link zur Referenz                                                                      |
+|---------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| `import`      | Importiert ein Modul oder Teile davon in ein Python-Skript..            | [Referenz](https://docs.python.org/3/reference/simple_stmts.html#import)               |
+| `from`        | Importiert spezifische Teile aus einem Modul oder Paket.                | [Referenz](https://docs.python.org/3/reference/simple_stmts.html#from)                 |
+| `as`          | Ermöglicht das Festlegen von Aliasen für Module oder importierte Teile. | [Referenz](https://docs.python.org/3/reference/simple_stmts.html#the-import-statement) |
+| `__init__.py` | Initialisiert ein Paket und erleichtert den Zugriff auf Module darin.   | [Referenz](https://docs.python.org/3/reference/import.html#regular-packages)           |
 
 # pip
 
-- Ich verstehe die Bedeutung von PIP als Paketmanager für Python.
-- Ich kann Python-Pakete mit PIP installieren, aktualisieren und deinstallieren.
-- Ich kenne grundlegende PIP-Befehle und deren Optionen.
-- Ich kann nach einem Paket suchen.
-- Ich kann ein Paket in einer bestimmten Version installieren.
+| Begriff     | Kurzerklärung                                                                                                | Link zur Referenz                                                             |
+|-------------|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| `pip`       | Ein Programm zum Verwalten von Softwarepaketen. Diese können fertige Python Programme und Bibliotheken sein. | [Referenz](https://pip.pypa.io/en/stable/)                                    |
+| `install`   | Der installierungs-Unterbefehl für pip um Pakete auf dem System zu installieren.                             | [Referenz](https://pip.pypa.io/en/stable/cli/pip_install/)                    |
+| `upgrade`   | Der aktualisierungs-Unterbefehl für pip um Pakete auf dem System zu aktualisieren.                           | [Referenz](https://pip.pypa.io/en/stable/cli/pip_install/#upgrading-packages) |
+| `uninstall` | Das Gegenteil von install.                                                                                   | [Referenz](https://pip.pypa.io/en/stable/cli/pip_uninstall/)                  |
+| `list`      | Betrachten und auflisten von lokal installierten Paketen.                                                    | [Referenz](https://pip.pypa.io/en/stable/cli/pip_list/)                       |
+| `search`    | Suchen von verfügbaren Paketen.                                                                              | [Referenz](https://pip.pypa.io/en/stable/cli/pip_search/)                     |
 
 # TDD
 
-- Ich verstehe die Grundprinzipien von Test-driven Development (TDD).
-- Ich kann Testfälle in Python schreiben und ausführen.
-- Ich bin mir der Bedeutung von Unit-Tests, Integrationstests und Funktionstests bewusst.
-- Ich das Testframework `unittest`.
-- Ich verstehe die Syntax von `assert`.
+| Begriff    | Kurzerklärung                                                                                                    | Link zur Referenz                                                                      |
+|------------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| `Unittest` | Ein integriertes Testframework-Modul in Python                                                                   | [Referenz](https://docs.python.org/3/library/unittest.html)                            |
+| `assert`   | Ein Statement um eine Bedingung zu überprüfen und sicherzustellen                                                | [Referenz](https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement) |
+| TDD        | Eine Entwicklungspraxis, bei der Tests vor dem eigentlichen Code geschrieben werden                              | [Referenz](https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung)                   |
+| Doctest    | Ein Modul welches das Schreiben von Tests innerhalb der Docstrings von Python-Modulen und -Funktionen ermöglicht | [Referenz](https://docs.python.org/3/library/doctest.html)                             |
 
+ 
 # Dateioperationen
 
-- Ich kann grundlegende Dateioperationen in Python durchführen.
-- Ich verstehe, wie man Dateien öffnet, liest, schreibt und schließt.
-- Ich bin mir der verschiedenen Dateimodi und deren Verwendung bewusst.
-- Ich kenne die Verwendung von Ausnahmebehandlung bei Dateioperationen.
-- Ich kann mit CSV Dateien im Python umgehen.
+| Begriff        | Kurzerklärung                                                        | Link zur Referenz                                                                |
+|----------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| `open`         | Eine Funktion  um eine Datei zu öffnen                               | [Referenz](https://docs.python.org/3/library/functions.html?highlight=open#open) |
+| absolute Pfade | Der vollständige Speicherort einer Datei                             | [Referenz](https://www.codingrooms.com/blog/file-paths)                          |
+| relative Pfade | Der Speicherort einer Datei  in relation zum aktuellen Arbeitsordner | [Referenz](https://www.codingrooms.com/blog/file-paths)                          |
+| r-Präfix       | Ein String in welchem Escape-Zeichen deaktiviert sind                | [Referenz](https://docs.python.org/3/reference/lexical_analysis.html)            |
+
 
 # OOP Intro
 
-- Ich habe grundlegende Kenntnisse über objektorientierte Programmierung (OOP).
-- Ich verstehe die vier Grundprinzipien von OOP: Abstraktion, Vererbung, Polymorphie und Kapselung.
-- Ich den Zusammenhang zwischen Klassen und Objekten in eigenen Worten erklären.
-- Ich bin mir der Bedeutung von Attributen und Methoden in Klassen bewusst.
+| Begriff        | Kurzerklärung                                                                                                                                              | Link zur Referenz                                                         |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| Klassen        | Ein Bauplan für Objekte, der Attribute (Variablen) und Methoden (Funktionen) definiert. In Python wird eine Klasse mit dem Schlüsselwort `class` erstellt. | [Referenz](https://de.wikipedia.org/wiki/Klasse_(Objektorientierung))     |
+| Objekte        | Eine Instanz einer Klasse. Mit dem Befehl `objekt = Klasse()` wird eine Instanz der Klasse erstellt.                                                       | [Referenz](https://de.wikipedia.org/wiki/Objekt_(Programmierung))         |
+| Vererbung      | Die Übertragung von Eigenschaften von Objekten durch eine relationale Beziehung.                                                                           | [Referenz](https://de.wikipedia.org/wiki/Vererbung_(Programmierung))      |
+| Polymorphismus | Die Fähigkeit eines Objektes unterschiedlichen Klassen zu entsprechen.                                                                                     | [Referenz](https://de.wikipedia.org/wiki/Polymorphie_(Programmierung))    |
+| Kapselung      | Daten werden in einer Struktur zusammengefasst. Der Zugriff auf diese Daten erfolgt durch Prozeduren.                                                      | [Referenz](https://de.wikipedia.org/wiki/Datenkapselung_(Programmierung)) |
 
 # OOP Python
 
-- Ich kenne die Konzepte der objektorientierten Programmierung in Python.
-- Ich verstehe die Anwendung von `__init__` in Klassen.
-- Ich kann Eigenschaften und Methoden in Python-Klassen definieren.
-- Ich bin mir der Bedeutung von Instanzmethoden bewusst.
-- Ich weiß das `self`-Schlüsselwort einzusetzen.
+| Begriff          | Kurzerklärung                                                                                                                                                                                     | Link zur Referenz                                                            |
+|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| Instanz          | Ein konkretes Vorkommen eines Objekts. Wenn du ein Objekt von einer Klasse erstellst, erstellst du eine Instanz dieser Klasse.                                                                    | [Referenz](https://de.wikipedia.org/wiki/Objekt_(Programmierung))            |
+| Attribut         | Eine Variable, die zur Darstellung von Eigenschaften oder Merkmalen eines Objekts verwendet wird. In Python können Attribute in der `__init__`-Methode der Klasse initialisiert werden.           | [Referenz](https://de.wikipedia.org/wiki/Attribut_(Programmierung))          |
+| Methode          | Eine Funktion, die zu einer Klasse gehört und auf Objekten dieser Klasse aufgerufen wird. Methoden werden innerhalb der Klasse definiert und können auf Objekten dieser Klasse aufgerufen werden. | [Referenz](https://de.wikipedia.org/wiki/Methode_(Programmierung))           |
+| `class`          | Ein Konventionsschlüsselwort in Python, das als erstes Argument in den Methoden einer Klasse verwendet wird und auf die Instanz der Klasse verweist.                                              | [Referenz](https://docs.python.org/3/tutorial/classes.html)                  |
+| `self`           | Das Schlüsselwort in Python, um eine Klasse zu definieren.                                                                                                                                        | [Referenz](https://docs.python.org/3/tutorial/classes.html#instance-objects) |
+| `Instanzmethode` | Eine Methode, die auf Instanzen einer Klasse angewendet wird und automatisch das `self`-Argument enthält.                                                                                         | [Referenz](https://docs.python.org/3/tutorial/classes.html#instance-methods) |
 
 # Getter Setter
 
-- Ich verstehe die Notwendigkeit von Getter- und Setter-Methoden in Python-Klassen.
-- Ich kann Getter- und Setter-Methoden erstellen und verwenden.
-- Ich bin mir der Vorteile von Datenkapselung durch Getter und Setter bewusst.
-- Ich kenne den Begriff Dekorator.
+| Begriff                   | Kurzerklärung                                                                                                                                                                                                                                                       | Link zur Referenz                                                               |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| Getter und Setter         | Getter und Setter sind Methoden, die den Lese- und Schreibzugriff auf Attribute ermöglichen. Der Getter liest den Wert eines Attributs, während der Setter den Wert setzt.                                                                                          | [Referenz](https://docs.python.org/3/library/functions.html#property)           |
+| `@property`               | `@property` ist ein Dekorator in Python, der es ermöglicht, eine Methode wie ein Attribut zu behandeln. Es wird verwendet, um den Zugriff auf Attribute zu steuern.                                                                                                 | [Referenz](https://docs.python.org/3/library/functions.html#property)           |
+| `@setter`                 | `@setter` ist ein spezifischer Dekorator, der mit `@property` verwendet wird, um die Setzung eines Attributs zu steuern. Es wird verwendet, um die Zuweisung eines Werts über den Setter zu ermöglichen.                                                            | [Referenz](https://docs.python.org/3/library/functions.html#property)           |
+| Einzelnes Unterstrich     | Ein einzelnes Unterstrichzeichen vor einem Attribut (z. B. `_attribut`) signalisiert, dass es als schwach "internen" oder "privaten" Verweis betrachtet werden sollte. Es ist jedoch nur eine Konvention und hat keine eigentliche Auswirkung auf die Sichtbarkeit. | [Referenz](https://www.python.org/dev/peps/pep-0008/#single-leading-underscore) |
+| Getter                    | Ein Getter ist eine Methode, die den Wert eines privaten Attributs zurückgibt. Es ermöglicht den Lesezugriff auf das Attribut von außerhalb der Klasse. Der Getter wird normalerweise mit `@property` implementiert.                                                | [Referenz](https://de.wikipedia.org/wiki/Zugriffsfunktion)                      |
+| Setter                    | Ein Setter ist eine Methode, die den Wert eines privaten Attributs setzt. Es ermöglicht den Schreibzugriff auf das Attribut von außerhalb der Klasse. Der Setter wird normalerweise mit `@setter` implementiert.                                                    | [Referenz](https://de.wikipedia.org/wiki/Zugriffsfunktion)                      |
+| Sichtbarkeit (Visibility) | Sichtbarkeit bezieht sich auf die Zugriffsberechtigungen von Attributen und Methoden. In Python gibt es keine strikte Privatsphäre, sondern nur Konventionen, die durch Namenskonventionen und Name Mangling erreicht werden.                                       | [Referenz](https://de.wikipedia.org/wiki/Sichtbarkeit_(Programmierung))         |
+
 
 # Class staticmethod
 
-- Ich kenne den Unterschied zwischen Klassenmethoden und statischen Methoden in Python.
-- Ich kann Klassenmethoden und statische Methoden in Python definieren und verwenden.
-- Ich verstehe, wann es sinnvoll ist, Klassenmethoden und statische Methoden einzusetzen.
+| Begriff        | Kurzerklärung                                                       | Link zur Referenz                                                         |
+|----------------|---------------------------------------------------------------------|---------------------------------------------------------------------------|
+| `staticmethod` | ist ein Dekorator für die Definition statischer Methoden in Python. | [Referenz](https://docs.python.org/3/library/functions.html#staticmethod) |
+| `classmethod`  | ist ein Dekorator für die Definition von Klassenmethoden in Python. | [Referenz](https://docs.python.org/3/library/functions.html#classmethod)  |
 
 # Vererbung
 
-- Ich habe ein Verständnis für das Konzept der Vererbung in Python.
-- Ich kann Klassen ableiten und von Basisklassen erben.
-- Ich verstehe die Verwendung von Superklassen und Unterklassen.
-- Ich bin mir der Bedeutung von Methodenüberschreibung bewusst.
+| Begriff   | Kurzerklärung                                                                                                                                                | Link zur Referenz                                                       |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Vererbung | Das Konzept, bei dem eine Klasse (Unterklasse) von einer anderen Klasse (Basisklasse) erbt, um deren Attribute und Methoden zu nutzen und/oder zu erweitern. | [Referenz](https://docs.python.org/3/tutorial/classes.html#inheritance) |
+| super()   | Ein Funktionsaufruf, der in einer abgeleiteten Klasse verwendet wird, um auf Methoden oder Attribute der Basisklasse zuzugreifen.                            | [Referenz](https://docs.python.org/3/library/functions.html#super)      |
 
 # Magic Methods
-
-- Ich kenne die Konzepte der magischen Methoden (Magic Methods) in Python.
-- Ich kann magische Methoden für spezielle Operationen in eigenen Klassen implementieren.
-- Ich verstehe, wie magische Methoden in Python die Verwendung von Operatoren ermöglichen.
+| Begriff        | Kurzerklärung                                                                                                                                                                                        | Link zur Referenz                                                                  |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| `__str__`      | Diese magische Methode wird aufgerufen, wenn die `str`-Funktion auf ein Objekt angewendet wird. Sie ermöglicht die Definition einer benutzerfreundlichen Zeichenfolge, die das Objekt repräsentiert. | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__str__)      |
+| `__add__`      | Diese magische Methode wird aufgerufen, wenn das `+`-Zeichen auf ein Objekt angewendet wird. Sie ermöglicht die Definition der Addition von zwei Objekten der Klasse.                                | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__add__)      |
+| `__len__`      | Diese magische Methode wird aufgerufen, wenn die `len`-Funktion auf ein Objekt angewendet wird. Sie ermöglicht die Definition der Anzahl von Elementen in einem Objekt.                              | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__len__)      |
+| `__sub__`      | Diese magische Methode wird aufgerufen, wenn das `-`-Zeichen auf ein Objekt angewendet wird. Sie ermöglicht die Definition der Subtraktion von zwei Objekten der Klasse.                             | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__sub__)      |
+| `__eq__`       | Diese magische Methode wird aufgerufen, um die Gleichheit von zwei Objekten zu überprüfen.                                                                                                           | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__eq__)       |
+| `__ne__`       | Diese magische Methode wird aufgerufen, um die Ungleichheit von zwei Objekten zu überprüfen.                                                                                                         | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__ne__)       |
+| `__lt__`       | Diese magische Methode wird aufgerufen, um festzustellen, ob ein Objekt kleiner als ein anderes ist.                                                                                                 | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__lt__)       |
+| `__le__`       | Diese magische Methode wird aufgerufen, um festzustellen, ob ein Objekt kleiner oder gleich einem anderen ist.                                                                                       | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__le__)       |
+| `__gt__`       | Diese magische Methode wird aufgerufen, um festzustellen, ob ein Objekt größer als ein anderes ist.                                                                                                  | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__gt__)       |
+| `__ge__`       | Diese magische Methode wird aufgerufen, um festzustellen, ob ein Objekt größer oder gleich einem anderen ist.                                                                                        | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__ge__)       |
+| `__getitem__`  | Diese magische Methode wird aufgerufen, um den Zugriff auf ein Element mittels Index zu ermöglichen.                                                                                                 | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__getitem__)  |
+| `__setitem__`  | Diese magische Methode wird aufgerufen, um das Setzen eines Elements mittels Index zu ermöglichen.                                                                                                   | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__setitem__)  |
+| `__contains__` | Diese magische Methode wird aufgerufen, um zu prüfen, ob ein Objekt ein bestimmtes Element enthält.                                                                                                  | [Referenz](https://docs.python.org/3/reference/datamodel.html#object.__contains__) |
 
 # args kwargs
 
-- Ich verstehe die Verwendung von `*args` und `**kwargs` in Python-Funktionen.
-- Ich kann Funktionen mit variabler Anzahl von Argumenten erstellen.
-- Ich bin mir der Unterschiede zwischen `*args` und `**kwargs` bewusst.
+| Begriff  | Kurzerklärung                                                                                                | Link zur Referenz                                                                          |
+|----------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| `args`   | Erlaubt den Umgang mit einer variablen Anzahl von **nicht**-schlüsselwortbasierten Argumenten in Funktionen. | [Referenz](https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions) |
+| `kwargs` | Ermöglicht den Umgang mit einer variablen Anzahl von schlüsselwortbasierten Argumenten in Funktionen.        | [Referenz](https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions) |
 
 # pep
 
-- Ich kenne die Bedeutung von PEP (_Python Enhancement Proposal_) in der Python-Entwicklung.
-- Ich verstehe, wie PEPs zur Verbesserung und Erweiterung der Python-Sprache beitragen.
-- Ich bin mit einigen wichtigen PEPs vertraut und deren Auswirkungen auf die Sprache.
-- Ich kann selbst Docstrings schreiben.
+| Begriff      | Kurzerklärung                                                                      | Link zur Referenz                                     |
+|--------------|------------------------------------------------------------------------------------|-------------------------------------------------------|
+| PEP 8        | Der Python Style Guide über Python Code                                            | [Referenz](https://www.python.org/dev/peps/pep-0008/) |
+| PEP 20       | Der Python Style Guide über allgemeine Regeln zu Python                            | [Referenz](https://www.python.org/dev/peps/pep-0020/) |
+| PEP 257      | Der Python Style Guide über Docstring Conventions                                  | [Referenz](https://www.python.org/dev/peps/pep-0257/) |
+| Konventionen | Regeln welche meist die Art und Weise der Formatierung von Dokumenten beschreiben. | [Referenz](https://de.wikipedia.org/wiki/Styleguide)  |
+| Style Guide  | Eine Ansammlung von Konventionen als Dokument.                                     | [Referenz](https://de.wikipedia.org/wiki/Styleguide)  |
+| Docstrings   | Eine Zeichenkette in einem Modul welche als Dokumentation dient.                   | [Referenz](https://peps.python.org/pep-0257/)         |
 
 # Design Patterns
 
-- Ich verstanden warum es Entwurfsmuster in der Softwareentwicklung gibt.
-- Ich kenne einige häufig verwendete Entwurfsmuster und deren Anwendungsbereiche.
-- Ich verstehe, wie Entwurfsmuster zur Lösung bestimmter Probleme in der Softwareentwicklung eingesetzt werden.
+| Begriff            | Kurzerklärung                                                                                                                                      | Link zur Referenz                                                     |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Design Pattern     | Eine abstrakte Regel zur Strukturierung von Code in eine bestimmtes Muster.                                                                        | [Referenz](https://de.wikipedia.org/wiki/Entwurfsmuster)              |
+| Creational Pattern | Diese Muster befassen sich mit der Instanziierung von Objekten. Beispiele sind das Singleton-Muster und das Factory-Muster.                        | [Referenz](https://de.wikipedia.org/wiki/Erzeugungsmuster)            |
+| Structural Pattern | Diese Muster beschäftigen sich mit der Zusammensetzung von Klassen und Objekten. Beispiele sind das Adapter-Muster und das Decorator-Muster.       | [Referenz](https://de.wikipedia.org/wiki/Strukturmuster)              |
+| Behavioral Pattern | Diese Muster definieren den Austausch von Informationen zwischen Objekten und Klassen. Beispiele sind das Observer-Muster und das Strategy-Muster. | [Referenz](https://de.wikipedia.org/wiki/Verhaltensmuster_(Software)) |
+
 
 # Strategy
 
-- Ich verstehe das Strategy-Entwurfsmuster und seine Anwendung.
-- Ich kann das Strategy-Entwurfsmuster in Python implementieren.
-- Ich kenne die Vorteile und Einsatzszenarien des Strategy-Musters.
-- Ich weiss was eine Laufzeitentscheidung ist.
+| Begriff          | Kurzerklärung                                                                                                                                                                                                 | Link zur Referenz                                                     |
+|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Verhaltensmuster | Ein Verhaltensmuster definiert, wie Objekte zusammenarbeiten, um bestimmte Verhaltensweisen zu realisieren. Es legt fest, wie Klassen und Objekte miteinander interagieren.                                   | [Referenz](https://de.wikipedia.org/wiki/Verhaltensmuster_(Software)) |
+| Algorithmus      | Ein Algorithmus ist eine Schritt-für-Schritt-Anleitung zur Lösung eines bestimmten Problems oder zur Durchführung einer Aufgabe. Im Kontext des Strategy Patterns sind verschiedene Algorithmen austauschbar. | [Referenz](https://de.wikipedia.org/wiki/Algorithmus)                 |
 
 # Factory Method
 
-- Ich kenne das Factory Method-Entwurfsmuster und seine Verwendung.
-- Ich kann die Factory Method in Python implementieren.
-- Ich verstehe, wie die Factory Method das Erzeugen von Objekten flexibler gestaltet.
+| Begriff          | Kurzerklärung                                                                                                                                                                                                                                                                       | Link zur Referenz                                                                                  |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Erzeugungsmuster | Erzeugungsmuster befassen sich mit der Art und Weise, wie Objekte erstellt werden. Sie kapseln den Instanziierungsprozess und stellen sicher, dass die Art der Erstellung eines Objekts flexibel bleibt.                                                                            | [Referenz](https://de.wikipedia.org/wiki/Erzeugungsmuster)                                         |
+| Schnittstelle    | Eine Schnittstelle definiert, welche Methoden eine Klasse implementieren muss, ohne die genaue Implementierung vorzuschreiben. Im Kontext des Factory Method Patterns kann eine Schnittstelle die abstrakte Methode darstellen, die von den konkreten Produkten implementiert wird. | [Referenz](https://de.wikipedia.org/wiki/Schnittstelle_(Objektorientierung))                       |
+| Instantiierung   | Instantiierung bezieht sich auf den Prozess, bei dem eine Klasse ein Objekt erstellt. Im Zusammenhang mit Erzeugungsmustern wie dem Factory Method Pattern wird die Instantiierung in abgeleitete Klassen ausgelagert.                                                              | [Referenz](https://de.wikipedia.org/wiki/Objekt_(Programmierung)#Objektorientierte_Programmierung) |
 
 # Adapter
 
-- Ich verstehe das Adapter-Entwurfsmuster und seine Anwendung.
-- Ich kann das Adapter-Entwurfsmuster in Python implementieren.
-- Ich kenne die Rolle von Adaptern bei der Integration von Komponenten.
+| Begriff        | Kurzerklärung                                                                                                                                                                                             | Link zur Referenz                                                                                  |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Kompatibilität | Im Kontext von Design Patterns bezieht sich Kompatibilität darauf, wie gut verschiedene Klassen oder Komponenten miteinander arbeiten können, insbesondere wenn ihre Schnittstellen unterschiedlich sind. | [Referenz](https://de.wikipedia.org/wiki/Objekt_(Programmierung)#Objektorientierte_Programmierung) |
+| Zusammenarbeit | Zusammenarbeit beschreibt die Interaktion und Koordination von verschiedenen Klassen oder Komponenten, um ein gemeinsames Ziel zu erreichen.                                                              | [Referenz](https://de.wikipedia.org/wiki/Objekt_(Programmierung)#Objektorientierte_Programmierung) |
+
 
 # OOP vs Funktional
 
-- Ich habe ein Verständnis für die Unterschiede zwischen objektorientierter und funktionaler Programmierung.
-- Ich kenne die Vor- und Nachteile beider Programmierparadigmen.
-- Ich kann Funktionen als _First-Class-Citizens_ in Python verwenden.
-- Ich weiss das `lambda`-Schlüsselwort einzusetzen.
+| Begriff            | Kurzerklärung                                                                            | Link zur Referenz                                                                      |
+|--------------------|------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Unveränderlichkeit | Betont die Verwendung von unveränderlichen Daten.                                        | [Referenz](https://docs.python.org/3/library/functools.html#immutable-functional-data) |
+| Höhere Ordnung     | Funktionen, die andere Funktionen als Argumente akzeptieren oder Funktionen zurückgeben. | [Referenz](https://docs.python.org/3/howto/functional.html#higher-order-functions)     |
+| Rekursion          | Die Technik, bei der eine Funktion sich selbst aufruft.                                  | [Referenz](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)     |
+| Lambda-Funktionen  | Anonyme Funktionen, erstellt mit dem `lambda`-Schlüsselwort.                             | [Referenz](https://docs.python.org/3/reference/expressions.html#lambda)                |

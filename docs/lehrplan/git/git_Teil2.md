@@ -191,7 +191,7 @@ Erstellen wir eine weitere Datei und fügen sie dem Staging-Bereich hinzu. Danac
 $ touch myfile-2.txt; git add *
 $ git stash push
 Saved working directory and index state WIP on master: 8451901 My first commit
-```c
+```
 
 Versuchen wir nun, die Datei aufzulisten:
 
@@ -386,22 +386,11 @@ Date: ...
 
 Tadaaaa! Wir sind fertig! 
 
-
-
-
-
-## Neue Schlüsselwörter:
-
-- **git push :**  
-[`git push`]() Veröffentlichen eines lokalen commits in den remote.
-
-
-
 # Aufgaben:
 [60min]
 
 
-## 1. Ein Repository bei GitLab / GitHub einrichten. 🌶️
+## 1. Ein Repository bei GitLab / GitHub einrichten. 🌶️🌶️🌶️
 Erstelle dein eigenes Remote Repository.
 Erzeuge eine Datei, mache deinen Commit und veröffentliche diesen in deinem Remote Repository.
 

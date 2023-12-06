@@ -199,22 +199,6 @@ origin	https://github.com/eugenp/tutorials.git (push)
 Git verwendet diese links, um weitere Änderungen zu verwalten.
 
 
-
-## Neue Schlüsselwörter:
-
-- **local / remote :**  
-[`local`]() bezeichnet ein lokales Repository auf deinem Computer.
-[`remote`]() bezeichnet ein online Repository auf einem Server.
-
-- **GIT Struktur:**  
-[`Index`]() Der Index ist eine Binärdatei (im Allgemeinen gespeichert .git/index), die eine sortierte Liste von Pfadnamen mit jeweils Berechtigungen und dem SHA1 eines Blob-Objekts enthält.
-[`Working Tree`]() Das Arbeitsverzeichnis von git. Hier “wird gearbeitet”, s.o.
-Oft findet man dafür auch die Bezeichnung Working Directory.
-[`Repository`]() Das Repository ist eine Datenbank, in der git die verschiedenen Zustände jeder Datei eines Projekts über die Zeit hinweg ablegt. 
-
-- **Commit:**  
-[`Commit`]() Veränderungen am Working Tree.
-
 # Aufgaben:
 [320min]
 

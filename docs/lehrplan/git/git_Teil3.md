@@ -60,16 +60,6 @@ In diesem Artikel haben wir alle Git-Grundlagen behandelt und die meisten gängi
 Wir begannen mit der Installation und Konfiguration von Git und erstellten dann das erste Repository. Danach haben wir einige Änderungen vorgenommen und gelernt, wie man den Commit-Verlauf ändert. Abschließend haben wir die Änderungen durch die Synchronisierung beider Repositories veröffentlicht und gelernt, wie man mit Git-Branches arbeitet.
 
 
-## Neue Schlüsselwörter:
-
-- **Branch:**  
-[`Branch`]() Branches bezeichnen in der Versionsverwaltung bestimmte unabhängige Arbeitsgebiete.
-
-- **Konflikt:**  
-[`Konflikt`]() Konflikte entstehen in der Regel dann, wenn zwei Personen dieselben Zeilen in einer Datei geändert haben oder ein Entwickler eine Datei löscht, während ein anderer Entwickler diese ändert. In diesen Fällen kann Git nicht automatisch entscheiden, welcher Vorgang richtig ist.
-
-
-
 # Aufgaben:
 [320min]
 
