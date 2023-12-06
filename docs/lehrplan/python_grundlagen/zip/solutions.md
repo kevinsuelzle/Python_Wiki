@@ -1,6 +1,6 @@
 # Lösungen
 
-### 1: Einführung in `zip`
+### 1: Einführung in `zip` 
 
 ```python
 liste1 = [1, 2, 3]
@@ -9,7 +9,7 @@ ergebnis = list(zip(liste1, liste2))
 print(ergebnis)
 ```
 
-### 2: Liste der Tupel
+### 2: Liste der Tupel 
 
 ```python
 liste1 = [1, 2, 3]
@@ -18,7 +18,7 @@ tupel_liste = list(zip(liste1, liste2))
 print(tupel_liste)
 ```
 
-### 3: Elementweise Addition
+### 3: Elementweise Addition 
 
 ```python
 liste1 = [1, 2, 3]
@@ -27,7 +27,7 @@ ergebnis = [x + y for x, y in zip(liste1, liste2)]
 print(ergebnis)
 ```
 
-### 4: Parallele Zuweisung
+### 4: Parallele Zuweisung 
 
 ```python
 namen = ['Alice', 'Bob', 'Charlie']
@@ -36,7 +36,7 @@ for name, age in zip(namen, alter):
     print(f"{name} ist {age} Jahre alt.")
 ```
 
-### 5: Elemente filtern
+### 5: Elemente filtern 
 
 ```python
 liste1 = [1, 2, 3, 4, 5]
@@ -45,7 +45,7 @@ ergebnis = [x for x, y in zip(liste1, liste2) if x % 2 == 0]
 print(ergebnis)
 ```
 
-### 6: Dictionary erstellen
+### 6: Dictionary erstellen 
 
 ```python
 schlüssel = ['A', 'B', 'C']
@@ -54,7 +54,7 @@ ergebnis = dict(zip(schlüssel, werte))
 print(ergebnis)
 ```
 
-### 7: Sortierte Paare
+### 7: Sortierte Paare 
 
 ```python
 liste1 = [5, 2, 8]
@@ -64,7 +64,7 @@ sortierte_paare = sorted(paare, key=lambda x: x[0] + x[1])
 print(sortierte_paare)
 ```
 
-### 8: Zusammenführen von Wörtern
+### 8: Zusammenführen von Wörtern 
 
 ```python
 adjektive = ['rot', 'schnell']
@@ -73,7 +73,7 @@ kombinationen = [adj + ' ' + nom for adj, nom in zip(adjektive, nomen)]
 print(kombinationen)
 ```
 
-### 9: Elemente multiplizieren
+### 9: Elemente multiplizieren 
 
 ```python
 liste1 = [1, 2, 3]
@@ -82,7 +82,7 @@ ergebnis = [x * y for x, y in zip(liste1, liste2)]
 print(ergebnis)
 ```
 
-### 10: Elemente vergleichen
+### 10: Elemente vergleichen 
 
 ```python
 liste1 = [1, 2, 3, 4, 5]
@@ -91,7 +91,7 @@ unterschiede = [(x, y) for x, y in zip(liste1, liste2) if x != y]
 print(unterschiede)
 ```
 
-### 11: Maximaler Wert pro Position
+### 11: Maximaler Wert pro Position 
 
 ```python
 liste1 = [5, 2, 8]
@@ -100,7 +100,7 @@ max_werte = [max(x, y) for x, y in zip(liste1, liste2)]
 print(max_werte)
 ```
 
-### 12: Mittelwert berechnen
+### 12: Mittelwert berechnen 
 
 ```python
 liste1 = [1, 2, 3]
@@ -109,7 +109,7 @@ mittelwerte = [(x + y) / 2 for x, y in zip(liste1, liste2)]
 print(mittelwerte)
 ```
 
-### 13: Elemente gruppieren
+### 13: Elemente gruppieren 
 
 ```python
 tupel_liste = [(1, 'a'), (2, 'b'), (1, 'c'), (3, 'd')]
@@ -122,7 +122,7 @@ for key, value in tupel_liste:
 print(gruppiert)
 ```
 
-### 14: Teile und erobere
+### 14: Teile und erobere 
 
 ```python
 zahlen = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -137,7 +137,7 @@ print("Gerade Zahlen:", gerade_zahlen)
 print("Ungerade Zahlen:", ungerade_zahlen)
 ```
 
-### 15: Prüfung von Bedingungen
+### 15: Prüfung von Bedingungen 
 
 ```python
 liste1 = [1, 2, 3, 4, 5]
@@ -146,7 +146,7 @@ bedingung_erfüllt = [x == y for x, y in zip(liste1, liste2)]
 print(bedingung_erfüllt)
 ```
 
-### 16: Entfernen von Duplikaten
+### 16: Entfernen von Duplikaten 
 
 ```python
 liste = [1, 2, 2, 3, 4, 4, 5]
@@ -154,7 +154,7 @@ ohne_duplikate = list(set(zip(liste)))
 print(ohne_duplikate)
 ```
 
-### 17: Anzahl der Übereinstimmungen zählen
+### 17: Anzahl der Übereinstimmungen zählen 
 
 ```python
 liste1 = [1, 2, 3, 4, 5]
@@ -163,7 +163,7 @@ anzahl_übereinstimmungen = sum(1 for x, y in zip(liste1, liste2) if x == y)
 print(anzahl_übereinstimmungen)
 ```
 
-### 18: Slices erstellen
+### 18: Slices erstellen 
 
 ```python
 zahlen = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -173,7 +173,7 @@ for i, j in zip(range(0, len(zahlen), 2), range(1, len(zahlen), 2)):
 print(slices)
 ```
 
-### 19: Elemente tauschen
+### 19: Elemente tauschen 
 
 ```python
 liste1 = [1, 2, 3]
@@ -183,7 +183,7 @@ print(liste1)
 print(liste2)
 ```
 
-### 20: Verschlüsselung mit `zip`
+### 20: Verschlüsselung mit `zip` 
 
 ```python
 def verschlüsseln(text):
@@ -206,7 +206,7 @@ print("Entschlüsselt:", entschlüsselter_text)
 # Lösungen Komplex Aufgaben
 
 
-### Lösung 1: Datenanalyse mit `zip` und Bedingungen
+### Lösung 1: Datenanalyse mit `zip` und Bedingungen 
 
 ```python
 temperaturen = [25, 30, 20, 35]

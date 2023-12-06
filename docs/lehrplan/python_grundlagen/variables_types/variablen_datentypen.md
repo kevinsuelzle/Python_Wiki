@@ -33,10 +33,10 @@ result = nominator / denominator
 print(result)
 ```
 
-#### 4. **Daten wiederverwenden**:
+#### 4. **Daten wiederverwenden** :
    Variablen werden eingesetzt, um Daten in verschiedenen Teilen eines Programms zu nutzen.
 
-#### 5. **Speichern von Zuständen**:
+#### 5. **Speichern von Zuständen** :
    In komplexeren Anwendungen dienen Variablen dazu, den Zustand einer Anwendung zu speichern und zu verwalten.
    Beispiele hierfür sind der Login-Status eines Nutzers oder die Anzahl der Artikel in einem Warenkorb.
 
@@ -144,17 +144,17 @@ Von Booleans werden wir um Laufe der Woche noch mehr hören und sie auch schon d
 ### Übungsaufgaben
 [35min]
 
-### 1. **Integer Addition**: 
+### 1. **Integer Addition** 🌶️: 
 Schreibe ein Programm, das zwei Integers addiert.
-### 2. **Integer Subtraktion**: 
+### 2. **Integer Subtraktion** 🌶️: 
 Subtrahiere einen Integer von einem anderen und gib das Ergebnis aus.
-### 3. **Float Division**: 
+### 3. **Float Division** 🌶️: 
 Dividiere zwei Floats und gib das Ergebnis aus.
-### 4. **Multiplikation von Integers**: 
+### 4. **Multiplikation von Integers** 🌶️: 
 Multipliziere zwei Integers und gib das Ergebnis aus.
-### 5. **Konvertierung von Float zu Integer**: 
+### 5. **Konvertierung von Float zu Integer** 🌶️: 
 Konvertiere einen Float in einen Integer und gib das Ergebnis aus.
-### 6. **Vergleich von Integers**: 
+### 6. **Vergleich von Integers** 🌶️: 
 Was ist das Ergebnis von:
     1. `1 < 3`
     2. `10 > 11`
@@ -162,30 +162,30 @@ Was ist das Ergebnis von:
     4. `567 <= 890`
     5. `444 >= 444`
     6. `42 =< 42`
-### 7. **Booleansches AND**: 
+### 7. **Booleansches AND** 🌶️: 
 Was ist das Ergebnis von:
     1. `1 < 3 and 4 < 3`
-### 8. **Booleansches OR**: 
+### 8. **Booleansches OR** 🌶️: 
 Es gelte `a=1` und `b=2`. Was ist das Ergebnis?
     1. `a < 3 or b > 3`
-### 9. **Umwandlung von Integer in Boolean**: 
+### 9. **Umwandlung von Integer in Boolean** 🌶️: 
 Konvertiere einen Integer in einen Boolean und gib das Ergebnis aus.
-### 10. **Modulo-Operator mit Integers**: 
+### 10. **Modulo-Operator mit Integers** 🌶️: 
 Verwende den Modulo-Operator, um den Rest zweier Integers zu finden.
-### 11. **Potenzierung von Floats**: 
+### 11. **Potenzierung von Floats** 🌶️: 
 Berechne die Potenz eines Floats (z.B. 5.5^3) und gib das Ergebnis aus.
-### 12. **Vergleich von Floats**: 
+### 12. **Vergleich von Floats** 🌶️: 
 Vergleiche zwei Floats miteinander und gib das Ergebnis (True oder False) aus.
-### 13. **Integer in Float konvertieren**: 
+### 13. **Integer in Float konvertieren** 🌶️: 
 Konvertiere einen Integer in einen Float.
-### 14. **Negation eines Booleans**: 
+### 14. **Negation eines Booleans** 🌶️: 
 Negiere einen booleschen Wert und gib das Ergebnis aus.
-### 15. **Kombination von Booleans und Integers**: 
+### 15. **Kombination von Booleans und Integers** 🌶️: 
 Überprüfe, ob ein Integer positiv ist und gib das Ergebnis als Boolean
     zurück.
-### 16. **Diskussion**: 
+### 16. **Diskussion** 🌶️: 
 Für welche Anwendungen float und integer jeweils besser geeignet sind und wo es keine Rolle spielt!
-### 17. **Diskussion**: 
+### 17. **Diskussion** 🌶️: 
 Kann man mit Fließkommazahlen jede Dezimalzahl darstellen? Begründet eure Antworten.
 
 [Lösung](solution_1.md)
@@ -335,20 +335,20 @@ Das sagt uns, dass wir "our of range" sind, also außerhalb der möglichen Eleme
 ### Aufgaben
 Zeit: 20min
 
-### 1. **Liste erstellen**:
+### 1. **Liste erstellen** 🌶️:
 Erstelle eine Liste mit den Zahlen von 1 bis 10.
-### 2. **Tupel zu Liste**: 
+### 2. **Tupel zu Liste** 🌶️: 
 Konvertiere das Tupel `(1, 2, 3)` in eine Liste.
 ### 3. **Liste invertieren**:
 Kehre die Reihenfolge der Elemente in der Liste von Aufgabe 1 um.
-### 4. **Tupel aus Listen**:
+### 4. **Tupel aus Listen** 🌶️:
 Erstelle ein Tupel aus den ersten drei Elementen der Liste von Aufgabe 1.
-### 5. **Liste von Tupeln**: 
+### 5. **Liste von Tupeln** 🌶️🌶️: 
 Erstelle eine Liste von Tupeln, wobei jedes Tupel aus einer Zahl und ihrem Quadrat besteht (für
    Zahlen von 1 bis 5).
-### 6. **Listenelemente filtern**: 
+### 6. **Listenelemente filtern**: 🌶️🌶️ 
 Erstelle eine neue Liste aus der Liste von Aufgabe 1, die nur gerade Zahlen enthält.
-### 7. **Element in Tupel überprüfen**: 
+### 7. **Element in Tupel überprüfen** 🌶️: 
 Überprüfe, ob die Zahl 3 im Tupel von Aufgabe 6 enthalten ist.
 
 [Lösungen](solution_3.md)
@@ -393,25 +393,25 @@ print(name)  # Gibt "Max" aus
 Wenn ihr bei einer Aufgabe nicht wisst, wie es geht oder euch nicht sicher seit, versucht zuerst bei einer Suchmaschine
 eurer Wahl nach einem Lösungsweg zu suchen. Das Finden von Informationen ist ein wichtiger Skill als Software-Entwickler.
 
-### 1. **Elemente zu Set hinzufügen**: 
+### 1. **Elemente zu Set hinzufügen** 🌶️: 
 Füge die Zahlen 4, 5 und 6 zu einem Set `{1, 2, 3}` hinzu.
-### 2. **Schlüssel-Wert-Paare in Dictionary**: 
+### 2. **Schlüssel-Wert-Paare in Dictionary** 🌶️: 
 Erstelle ein Dictionary mit den Schlüsseln "a", "b", "c" und den Werten 1, 2, 3.
 
-### 3. **Element aus Set entfernen**:
+### 3. **Element aus Set entfernen** 🌶️:
 Entferne ein beliebiges Element aus dem Set von Aufgabe 3.
-### 4. **Werte aus Dictionary abrufen**:
+### 4. **Werte aus Dictionary abrufen** 🌶️:
 Greife auf den Wert des Schlüssels "b" im Dictionary von Aufgabe 4 zu.
 
-### 5. **Dictionary Werte ändern**: 
+### 5. **Dictionary Werte ändern** 🌶️: 
 Ändere im Dictionary von Aufgabe 4 den Wert von "c" zu 4.
-### 6. **Set Operationen**:
+### 6. **Set Operationen** 🌶️🌶️:
 Erstelle die Vereinigung und Schnittmenge zweier Sets `{1, 2, 3}` und `{3, 4, 5}`.
 
-### 7. **Schlüssel aus Dictionary entfernen**:
+### 7. **Schlüssel aus Dictionary entfernen** 🌶️:
 Entferne den Schlüssel "a" aus dem Dictionary von Aufgabe 4.
 
-### 8. **Duplikate aus Liste entfernen**: 
+### 8. **Duplikate aus Liste entfernen** 🌶️: 
 Entferne alle Duplikate aus der Liste `[1, 2, 2, 3, 3, 4, 4, 5]`.
 
 [Lösungen](solution_2.md)
