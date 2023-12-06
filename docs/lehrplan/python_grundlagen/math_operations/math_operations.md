@@ -104,42 +104,57 @@ Mathematik kennen!
 Üben wir das Ganze:
 
 
-## Aufgabe
-1. **Addition**: Addiere 5 und 3. Gib das Ergebnis aus.
-2. **Subtraktion**: Subtrahiere 2 von 10. Gib das Ergebnis aus.
-3. **Multiplikation**: Multipliziere 4 mit 2. Gib das Ergebnis aus.
-4. **Division**: Teile 16 durch 2. Gib das Ergebnis aus.
-5. **Ganzzahlige Division**: Führe eine ganzzahlige Division von 17 durch 2 durch. Gib das Ergebnis aus.
-6. **Modulo**: Finde den Rest der Division von 18 durch 10. Gib das Ergebnis aus.
-7. **Potenzierung**: Erhebe 2 in die 3. Potenz. Gib das Ergebnis aus.
-8. **Quadratwurzel**: Berechne die Quadratwurzel von 64. Gib das Ergebnis aus.
-9. **Exponentialfunktion**: Berechne e^3 (e ist die Basis des natürlichen Logarithmus). Gib das Ergebnis aus.
-10. **Natürlicher Logarithmus**: Berechne den natürlichen Logarithmus von 8. Gib das Ergebnis aus.
+# Aufgaben
+[30min]
 
-11. **Komplexe Rechnung**: Berechne das Ergebnis von (3 + 4) * 5. Gib das Ergebnis aus.
-12. **Vergleich**: Überprüfe, ob das Produkt von 2 und 3 gleich 6 ist. Gib das Ergebnis aus.
-13. **Runden**: Runde die Zahl 2.7 auf die nächste ganze Zahl. Gib das Ergebnis aus.
-14. **Negative Zahlen**: Berechne das Produkt von -3 und 3. Gib das Ergebnis aus.
-15. **Variable in Rechnung**: Definiere eine Variable `x` mit dem Wert 5 und berechne `x * x`. Gib das Ergebnis aus.
-16. **Verschiedene Operationen**: Berechne das Ergebnis von `2 + 3 * 5`.
-17. **Einsatz von Klammern**: Ändere den Ausdruck `2 + 3 * 5` so ab, dass zuerst die Addition und dann die 
+### 1. **Addition**:
+Addiere 5 und 3. Gib das Ergebnis aus.
+### 2. **Subtraktion**: 
+Subtrahiere 2 von 10. Gib das Ergebnis aus.
+### 3. **Multiplikation**:
+Multipliziere 4 mit 2. Gib das Ergebnis aus.
+### 4. **Division**:
+Teile 16 durch 2. Gib das Ergebnis aus.
+### 5. **Ganzzahlige Division**:
+Führe eine ganzzahlige Division von 17 durch 2 durch. Gib das Ergebnis aus.
+### 6. **Modulo**: 
+Finde den Rest der Division von 18 durch 10. Gib das Ergebnis aus.
+### 7. **Potenzierung**:
+Erhebe 2 in die 3. Potenz. Gib das Ergebnis aus.
+### 8. **Quadratwurzel**: 
+Berechne die Quadratwurzel von 64. Gib das Ergebnis aus.
+### 9. **Exponentialfunktion**: 
+Berechne e^3 (e ist die Basis des natürlichen Logarithmus). Gib das Ergebnis aus.
+### 10. **Natürlicher Logarithmus**:
+Berechne den natürlichen Logarithmus von 8. Gib das Ergebnis aus.
+### 11. **Komplexe Rechnung**:
+Berechne das Ergebnis von (3 + 4) * 5. Gib das Ergebnis aus.
+### 12. **Vergleich**: 
+Überprüfe, ob das Produkt von 2 und 3 gleich 6 ist. Gib das Ergebnis aus.
+### 13. **Runden**: 
+Runde die Zahl 2.7 auf die nächste ganze Zahl. Gib das Ergebnis aus.
+### 14. **Negative Zahlen**: 
+Berechne das Produkt von -3 und 3. Gib das Ergebnis aus.
+### 15. **Variable in Rechnung**: 
+Definiere eine Variable `x` mit dem Wert 5 und berechne `x * x`. Gib das Ergebnis aus.
+### 16. **Verschiedene Operationen**: 
+Berechne das Ergebnis von `2 + 3 * 5`.
+### 17. **Einsatz von Klammern**: 
+Ändere den Ausdruck `2 + 3 * 5` so ab, dass zuerst die Addition und dann die 
 Multiplikation ausgeführt wird.
-18. **Potenzierung und Division**: Berechne das Ergebnis von `4 ** 2 / 8`.
-19. **Mehrere Operationen**: Finde das Ergebnis von `3 + 4 * 2 - 1`.
-20. **Komplexer Ausdruck**: Berechne den Wert von `(3 + 4) * (5 - 2) ** 2`.
+### 18. **Potenzierung und Division**: 
+Berechne das Ergebnis von `4 ** 2 / 8`.
+### 19. **Mehrere Operationen**: 
+Finde das Ergebnis von `3 + 4 * 2 - 1`.
+### 20. **Komplexer Ausdruck**: 
+Berechne den Wert von `(3 + 4) * (5 - 2) ** 2`.
 
-TODO: In diesem Beispiel sollen die Teilnehmer einen erweiterten Umgang mit Variablen lernen, also
-```python
-x+=1
-x = x + 1
-x = y
-```
-usw.
+[Lösungen](solutions.md)
 
-## Komplex-Aufgaben
-**Zinsrechner**
+# Komplex-Aufgaben
+### **Zinsrechner**
 
-Zeit: 40 min 
+[40 min] 
 
 Aufgabenstellung:
 
@@ -149,9 +164,9 @@ Jahren abfragen.
 - Berechne die Endsumme, die sich aus der Formel Endsumme = Anfangskapital * (1 + Zinssatz/100 * Jahre) ergibt. 
 - Gib das berechnete Ergebnis aus.
 
-**Umrechner für Temperaturen**
+### **Umrechner für Temperaturen**
 
-Zeit: 40 min
+[40 min]
 
 Aufgabenstellung:
 
@@ -163,60 +178,3 @@ Aufgabenstellung:
 
 
 TODO: Lösung in file übertragen
-## Lösungen
-1. `print(5 + 3)  # 8`
-2. `print(10 - 2)  # 8`
-3. `print(4 * 2)  # 8`
-4. `print(16 / 2)  # 8.0`
-5. `print(17 // 2)  # 8`
-6. `print(18 % 10)  # 8`
-7. `print(2 ** 3)  # 8`
-8. `import math; print(math.sqrt(64))  # 8.0`
-9. `import math; print(math.exp(3))  # etwa 20.085`
-10. `import math; print(math.log(8, math.e))  # etwa 2.079`
-
-11. `print((3 + 4) * 5)  # 35`
-12. `print(2 * 3 == 6)  # True`
-13. `print(round(2.7))  # 3`
-14. `print(-3 * 3)  # -9`
-15. `x = 5; print(x * x)  # 25`
-16. `print(2 + 3 * 5)  # 17, da die Multiplikation zuerst ausgeführt wird`
-17. `print((2 + 3) * 5)  # 25, da die Klammer zuerst ausgewertet wird`
-18. `print(4 ** 2 / 8)  # 2.0, da zuerst potenziert und dann dividiert wird`
-19. `print(3 + 4 * 2 - 1)  # 10, da Multiplikation vor Addition und Subtraktion ausgeführt wird`
-20. `print((3 + 4) * (5 - 2) ** 2)  # 49, da zuerst die Klammern, dann die Potenzierung und zuletzt die Multiplikation ausgeführt wird`
-
-### **Zinsrechner**
-```python
-# Benutzereingaben
-anfangskapital = float(input("Gib das Anfangskapital ein: "))
-zinssatz = float(input("Gib den Zinssatz in Prozent ein: "))
-jahre = float(input("Gib die Anlagedauer in Jahren ein: "))
-
-# Berechnung der Endsumme
-endsumme = anfangskapital * (1 + zinssatz/100 * jahre)
-
-# Ausgabe
-print(f"Die Endsumme nach {jahre} Jahren beträgt: {endsumme:.2f} Euro")
-
-```
-
-### **Umrechner für Temperaturen**
-
-```python
-# Benutzereingaben
-temperatur = float(input("Gib die Temperatur ein: "))
-einheit = input("Ist die Temperatur in Celsius (C) oder Fahrenheit (F)? ")
-
-# Umrechnung
-if einheit.lower() == 'c':
-    umgerechnet = temperatur * 9/5 + 32
-    zieleinheit = "Fahrenheit"
-elif einheit.lower() == 'f':
-    umgerechnet = (temperatur - 32) * 5/9
-    zieleinheit = "Celsius"
-
-# Ausgabe
-print(f"Die Temperatur in {zieleinheit} beträgt: {umgerechnet:.2f}°")
-
-```

@@ -110,101 +110,45 @@ können jedoch Typfehler vor der Ausführung erkannt und korrigiert werden. Dies
 Sicherheit von Python-Programmen bei und fördert die Entwicklung von robustem und wartbarem Code.
 
 # Aufgaben
+[25min]
 
-1. **Typisierte Variable**: Definiere eine Variable `alter` vom Typ `int`.
+### 1. **Typisierte Variable**: 
+Definiere eine Variable `alter` vom Typ `int`.
 
-2. **Typisierte Funktion**: Schreibe eine Funktion `quadrat`, die einen `int` als Parameter nimmt und einen `int`
+### 2. **Typisierte Funktion**: 
+Schreibe eine Funktion `quadrat`, die einen `int` als Parameter nimmt und einen `int`
    zurückgibt.
 
-3. **Mehrere Parameter**: Schreibe eine Funktion `addiere`, die zwei `float`-Parameter annimmt und ihr Ergebnis
+### 3. **Mehrere Parameter**: 
+Schreibe eine Funktion `addiere`, die zwei `float`-Parameter annimmt und ihr Ergebnis
    als `float` zurückgibt.
 
-4. **Optionale Parameter**: Schreibe eine Funktion `begruessen`, die einen `str`-Parameter und einen optionalen
+### 4. **Optionale Parameter**: 
+Schreibe eine Funktion `begruessen`, die einen `str`-Parameter und einen optionalen
    Parameter `alter` vom Typ `Optional[int]` hat.
 
-5. **Rückgabewert None**: Schreibe eine Funktion `drucke_hallo`, die einen `str` entgegennimmt und `None` zurückgibt.
+### 5. **Rückgabewert None**: 
+Schreibe eine Funktion `drucke_hallo`, die einen `str` entgegennimmt und `None` zurückgibt.
 
-6. **Listen als Parameter**: Schreibe eine Funktion `durchschnitt`, die eine Liste von `int` annimmt und einen `float`
+### 6. **Listen als Parameter**: 
+Schreibe eine Funktion `durchschnitt`, die eine Liste von `int` annimmt und einen `float`
    zurückgibt.
 
-7. **Dictionary als Rückgabewert**: Schreibe eine Funktion `erstelle_dict`, die zwei `str`-Parameter annimmt und
+### 7. **Dictionary als Rückgabewert**: 
+Schreibe eine Funktion `erstelle_dict`, die zwei `str`-Parameter annimmt und
    ein `Dict[str, str]` zurückgibt.
 
-8. **Komplexe Typen**: Schreibe eine Funktion `verarbeite_daten`, die eine `List[Dict[str, int]]` annimmt und
+### 8. **Komplexe Typen**: 
+Schreibe eine Funktion `verarbeite_daten`, die eine `List[Dict[str, int]]` annimmt und
    eine `List[int]` zurückgibt.
 
-9. **Typisierte Tuples**: Schreibe eine Funktion `min_max`, die eine `List[int]` annimmt und ein `Tuple[int, int]`
+### 9. **Typisierte Tuples**: 
+Schreibe eine Funktion `min_max`, die eine `List[int]` annimmt und ein `Tuple[int, int]`
    zurückgibt (das Minimum und Maximum der Liste).
 
-10. **Union Type Hints**: Schreibe eine Funktion `id_oder_name`, die einen Parameter annimmt, der entweder `int`
+### 10. **Union Type Hints**: 
+Schreibe eine Funktion `id_oder_name`, die einen Parameter annimmt, der entweder `int`
     oder `str` sein kann, und denselben Typ zurückgibt.
 
 
-
-# Lösungen
-
-Hier sind die Lösungen zu den vorgeschlagenen Übungsaufgaben zu Type Hints in Python:
-
-1. **Typisierte Variable**
-```python
-alter: int = 25
-```
-
-2. **Typisierte Funktion**
-```python
-def quadrat(zahl: int) -> int:
-    return zahl * zahl
-```
-
-3. **Mehrere Parameter**
-```python
-def addiere(a: float, b: float) -> float:
-    return a + b
-```
-
-4. **Optionale Parameter**
-```python
-from typing import Optional
-
-def begruessen(name: str, alter: Optional[int] = None) -> str:
-    return f"Hallo {name}, Alter: {alter}" if alter is not None else f"Hallo {name}"
-```
-
-5. **Rückgabewert None**
-```python
-def drucke_hallo(name: str) -> None:
-    print(f"Hallo, {name}")
-```
-
-6. **Listen als Parameter**
-```python
-def durchschnitt(zahlen: list[int]) -> float:
-    return sum(zahlen) / len(zahlen)
-```
-
-7. **Dictionary als Rückgabewert**
-```python
-def erstelle_dict(key: str, value: str) -> dict[str, str]:
-    return {key: value}
-```
-
-8. **Komplexe Typen**
-```python
-def verarbeite_daten(daten: list[dict[str, int]]) -> list[int]:
-    return [d["wert"] for d in daten]
-```
-
-9. **Typisierte Tuples**
-```python
-def min_max(zahlen: list[int]) -> tuple[int, int]:
-    return (min(zahlen), max(zahlen))
-```
-
-10. **Union Type Hints**
-```python
-from typing import Union
-
-def id_oder_name(wert: Union[int, str]) -> Union[int, str]:
-  return wert
-```
 

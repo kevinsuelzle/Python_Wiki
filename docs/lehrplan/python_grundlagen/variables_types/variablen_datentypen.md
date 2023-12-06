@@ -12,6 +12,7 @@ mehrere wichtige Funktionen:
 1. **Daten speichern**:
    Variablen dienen als Speicherorte im Arbeitsspeicher eines Computers, in denen Daten gespeichert werden können.
    Diese Daten können Zahlen, Texte, und andere möglichen anderen Objekte sein.
+
 ```python
 sum = 10 + 13
 print(sum)
@@ -24,12 +25,14 @@ print(sum)
 3. **Berechnungen durchführen und Ergebnisse speichern**:
    Variablen ermöglichen die Durchführung von Berechnungen mit gespeicherten Werten. So können beispielsweise
    mathematische Operationen ausgeführt und das Ergebnis in einer anderen Variablen gespeichert werden.
+
 ```python
 nominator = 3
 denominator = 6
 result = nominator / denominator
 print(result)
 ```
+
 4. **Daten wiederverwenden**:
    Variablen werden eingesetzt, um Daten in verschiedenen Teilen eines Programms zu nutzen.
 
@@ -53,7 +56,8 @@ Grundlage für fast alle Operationen und Logiken in der Programmierung.
 # Variablen
 
 Eine Variable in Python kann erstellt werden, indem man ihr einen Namen gibt und
-ihr einen Wert zuweist. Dabei steht links immer der Variablenname und rechts der Wert, der in dieser gespeichert werden soll:
+ihr einen Wert zuweist. Dabei steht links immer der Variablenname und rechts der Wert, der in dieser gespeichert werden
+soll:
 
 **Beispiel:**
 
@@ -137,6 +141,7 @@ ist_sonnig = False
 Von Booleans werden wir um Laufe der Woche noch mehr hören und sie auch schon direkt in unserem eigenen Programm nutzen.
 
 ### Übungsaufgaben
+Zeit: 35min
 TODO: Bei vielen dieser Programme würde ich mir konkrete Aufgaben wünschen. Ich habe das mal bei Aufgabe 6 vorgemacht.
 Für fast jeden von denen kannst du hier mehrere beispiele durchgehen und dabei immer interessantere Fälle einbinden
 (z.B. mit Varialben usw.) Ich habe auch darüber nachgedacht, ob man das so lässt, aber das Problem ist,
@@ -151,16 +156,16 @@ doch darauf ausgelegt sein, dass sie keine Vorerfahrung haben.
 4. **Multiplikation von Integers**: Multipliziere zwei Integers und gib das Ergebnis aus.
 5. **Konvertierung von Float zu Integer**: Konvertiere einen Float in einen Integer und gib das Ergebnis aus.
 6. **Vergleich von Integers**: Was ist das Ergebnis von:
-   1. `1 < 3`
-   2. `10 > 11`
-   3. `22 != 23`
-   4. `567 <= 890`
-   5. `444 >= 444`
-   6. `42 =< 42`
+    1. `1 < 3`
+    2. `10 > 11`
+    3. `22 != 23`
+    4. `567 <= 890`
+    5. `444 >= 444`
+    6. `42 =< 42`
 7. **Booleansches AND**: Was ist das Ergebnis von:
-   1. 1 < 3 and 4 < 3
-8. **Booleansches OR**: Es gelte `a=1` und `b=2`.
-   1. 2. a < 3 or b > 3
+    1. `1 < 3 and 4 < 3`
+8. **Booleansches OR**: Es gelte `a=1` und `b=2`. Was ist das Ergebnis?
+    1. `a < 3 or b > 3`
 9. **Umwandlung von Integer in Boolean**: Konvertiere einen Integer in einen Boolean und gib das Ergebnis aus.
 10. **Modulo-Operator mit Integers**: Verwende den Modulo-Operator, um den Rest zweier Integers zu finden.
 11. **Potenzierung von Floats**: Berechne die Potenz eines Floats (z.B. 5.5^3) und gib das Ergebnis aus.
@@ -174,7 +179,53 @@ doch darauf ausgelegt sein, dass sie keine Vorerfahrung haben.
 
 [Lösung](solution_1.md)
 
-TODO: füge Abschnitt ein, der die `type` methode kurz erklärt.
+Natürlich, hier ist die Erläuterung zur Verwendung der `type()`-Funktion in Python in Markdown-Format:
+
+## Die `type()`-Funktion 
+Die `type()`-Funktion in Python sagt dir, was für eine Art
+von Sache eine Variable ist. Sie verrät dir, ob es sich um eine Zahl, einen Text oder etwas 
+ganz anderes handelt.
+
+**Ein Beispiel:**
+Angenommen, du hast eine Zahl, sagen wir 42. Du möchtest wissen, welche Art von Zahl das ist. Du könntest die `type()`
+-Funktion verwenden, indem du folgenden Code schreibst:
+
+```python
+nummer = 42
+print(type(nummer))
+```
+
+Wenn du diesen Code ausführst, wird Python dir sagen, dass `nummer` vom Typ "int" ist, was für "integer" steht. 
+So verwendest du die `type()`-Funktion , um den Typ von Variablen in Python herauszufinden. Du gibst ihr etwas und sie 
+verrät dir, was es ist.
+
+**Wofür man die `type()`-Funktion verwenden kann:**
+Die Verwendung der `type()`-Funktion in Python kann sehr nützlich sein. Hier sind einige Anwendungsfälle:
+
+1. **Fehlervermeidung:** Wenn du sicherstellen möchtest, dass dein Code mit den richtigen Daten arbeitet, kannst
+   du `type()` verwenden, um sicherzustellen, dass die erwarteten Datentypen vorliegen. Wenn du beispielsweise eine
+   Funktion schreibst, die nur mit Ganzzahlen arbeitet, kannst du überprüfen, ob die eingegebene Variable wirklich eine
+   Ganzzahl ist, bevor du weitermachst.
+
+```python
+def verdopple(zahl):
+    if type(zahl) == int:
+        return zahl * 2
+    else:
+        return "Ungültige Eingabe"
+```
+
+2. **Debugging:** Wenn du einen Fehler in deinem Code findest und herausfinden möchtest, warum er auftritt, kann
+   die `type()`-Funktion dir helfen. Du kannst sie verwenden, um die Datentypen von Variablen während der Ausführung
+   deines Programms zu überprüfen und so eventuelle Inkonsistenzen zu erkennen.
+
+3. **Dynamisches Programmieren:** In Python können Variablen unterschiedliche Datentypen haben, da Python eine
+   dynamische Typisierung unterstützt. Manchmal ist es hilfreich, den aktuellen Typ einer Variable während der Laufzeit
+   zu überprüfen und den Programmfluss entsprechend anzupassen.
+
+Die `type()`-Funktion ist also ein Werkzeug, mit dem du sicherstellen kannst, dass dein Code korrekt funktioniert und
+den erwarteten Datentypen entspricht. Sie ist besonders nützlich, wenn du mit verschiedenen Datenstrukturen und -typen
+in Python arbeitest.
 
 ## Strings, List, Tupel, Set, Dictionary
 
@@ -206,7 +257,8 @@ Ausgaben eine Art String sein.
 Listen in Python sind eine der vielseitigsten Datenstrukturen und werden verwendet, um eine geordnete Sammlung von
 Elementen zu speichern.
 
-Listen werden mit eckigen Klammern `[]` erstellt, und die Elemente werden durch Kommata getrennt.
+Listen werden mit eckigen Klammern `[]`  oder der `list()`-Funktion erstellt. Die Elemente werden in eckigen Klammern
+durch Kommata getrennt.
 
 **Beispiel:**
 
@@ -214,11 +266,22 @@ Listen werden mit eckigen Klammern `[]` erstellt, und die Elemente werden durch 
 fruechte = ["Apfel", "Banane", "Kirsche"]
 zahlen = [1, 2, 3, 4, 5, 4, 3, 2, 1]
 gemischt = [3.14, "Hallo", True]
+
+buchstaben = list("Hallo") # ["H", "a", "l", "l", "o"]
 ```
 
 Listen sind sehr häufig verwendete Datenstrukturen. Deswegen ist dies hier nur ein kleiner Einstieg und wir lernen
 später noch mehr zu Listen.
-TODO: Hier ein Beispiel einfügen, wie man ein Listenelement ausliest und eines hinzufügt.
+
+Wir können auf Listen-Elemente auch einfach zugreifen und neue Elemente hinzufügen:
+
+```python
+erster_buchstabe = buchstaben[0]
+
+fruechte.append("Birne") # ["Apfel", "Banane", "Kirsche", "Birne"]
+```
+
+Beim Zugriff auf Listen fangen wir immer bei 0 an mit zählen.
 
 ### Tupel
 
@@ -234,11 +297,41 @@ koordinaten = (50.0, 20.1)
 rgb_farbe = (256, 128, 0)
 ```
 
-Ebenso wie Listen, sind Tupel wichtige Datenstrukturen. Auch hier lernen wir später noch mehr.
+Ebenso wie Listen, sind Tupel wichtige Datenstrukturen. Auch hier lernen wir später noch mehr. Wir dürfen aber jetzt 
+schon verraten, dass wir Elemente eines Tupels genauso auslesen können, wie die Elemente einer Liste:
 
-TODO: Hier ein Beispiel einfügen, wie man ein Listenelement ausliest und wie es zu einem Fehler beim auslesen kommt. 
+```python
+rot_anteil = rgb_farbe[0]
+```
 
-TODO: Hier einen Teil der Übungsaufgaben machen
+Aber was passiert eigenltich, wenn wir folgendes machen:
+
+```python
+blau_anteil = rgb_farbe[3]
+```
+
+Wir bekommen einen Fehler! Und zwar folgenden:
+
+```python
+IndexError: tuple index out of range
+```
+
+Das sagt uns, dass wir "our of range" sind, also außerhalb der möglichen Elemente einen Zugriff durchführen wollen.
+
+
+### Aufgaben
+Zeit: 20min
+
+1. **Liste erstellen**: Erstelle eine Liste mit den Zahlen von 1 bis 10.
+2. **Tupel zu Liste**: Konvertiere das Tupel `(1, 2, 3)` in eine Liste.
+5. **Liste invertieren**: Kehre die Reihenfolge der Elemente in der Liste von Aufgabe 1 um.
+6. **Tupel aus Listen**: Erstelle ein Tupel aus den ersten drei Elementen der Liste von Aufgabe 1.
+9. **Liste von Tupeln**: Erstelle eine Liste von Tupeln, wobei jedes Tupel aus einer Zahl und ihrem Quadrat besteht (für
+   Zahlen von 1 bis 5).
+12. **Listenelemente filtern**: Erstelle eine neue Liste aus der Liste von Aufgabe 1, die nur gerade Zahlen enthält.
+14. **Element in Tupel überprüfen**: Überprüfe, ob die Zahl 3 im Tupel von Aufgabe 6 enthalten ist.
+
+[Lösungen](solution_3.md)
 
 ### Sets
 
@@ -254,8 +347,6 @@ print(einzigartige_zahlen)
 buchstaben = {'a', "a", "A", 'aa'}
 print(buchstaben)
 ```
-
-TODO: Hier einen Teil der Übungsaufgaben machen
 
 ### Dictionaries
 
@@ -273,119 +364,27 @@ print(mein_dict)
 name = mein_dict["Name"]
 print(name)  # Gibt "Max" aus
 ```
-TODO: Hier einen Teil der Übungsaufgaben machen
+
 ### Aufgaben
 
 ### Übungsaufgaben
-TODO: Hier sind auch viele Aufgaben nicht ohne Recherche lösbar und können einfach umformuliert werden,
-indem man den Fall angibt und fragt, was dabei herauskommt.
+Zeit: 20min
 
-TODO: Hier auch noch mal Übungsaufgaben hinzufügen, wo die Nutzung von den Konstruktoren (`list`, `set` usw. gezeigt wird)
-1. **Liste erstellen**: Erstelle eine Liste mit den Zahlen von 1 bis 10.
-2. **Tupel zu Liste**: Konvertiere das Tupel `(1, 2, 3)` in eine Liste.
+Wenn ihr bei einer Aufgabe nicht wisst, wie es geht oder euch nicht sicher seit, versucht zuerst bei einer Suchmaschine
+eurer Wahl nach einem Lösungsweg zu suchen. Das Finden von Informationen ist ein wichtiger Skill als Software-Entwickler.
+
 3. **Elemente zu Set hinzufügen**: Füge die Zahlen 4, 5 und 6 zu einem Set `{1, 2, 3}` hinzu.
 4. **Schlüssel-Wert-Paare in Dictionary**: Erstelle ein Dictionary mit den Schlüsseln "a", "b", "c" und den Werten 1, 2,
-   3.
-5. **Liste invertieren**: Kehre die Reihenfolge der Elemente in der Liste von Aufgabe 1 um.
-6. **Tupel aus Listen**: Erstelle ein Tupel aus den ersten drei Elementen der Liste von Aufgabe 1.
+    3.
+
 7. **Element aus Set entfernen**: Entferne ein beliebiges Element aus dem Set von Aufgabe 3.
 8. **Werte aus Dictionary abrufen**: Greife auf den Wert des Schlüssels "b" im Dictionary von Aufgabe 4 zu.
-9. **Liste von Tupeln**: Erstelle eine Liste von Tupeln, wobei jedes Tupel aus einer Zahl und ihrem Quadrat besteht (für
-   Zahlen von 1 bis 5).
+
 10. **Dictionary Werte ändern**: Ändere im Dictionary von Aufgabe 4 den Wert von "c" zu 4.
 11. **Set Operationen**: Erstelle die Vereinigung und Schnittmenge zweier Sets `{1, 2, 3}` und `{3, 4, 5}`.
-12. **Listenelemente filtern**: Erstelle eine neue Liste aus der Liste von Aufgabe 1, die nur gerade Zahlen enthält.
+
 13. **Schlüssel aus Dictionary entfernen**: Entferne den Schlüssel "a" aus dem Dictionary von Aufgabe 4.
-14. **Element in Tupel überprüfen**: Überprüfe, ob die Zahl 3 im Tupel von Aufgabe 6 enthalten ist.
+
 15. **Duplikate aus Liste entfernen**: Entferne alle Duplikate aus der Liste `[1, 2, 2, 3, 3, 4, 4, 5]`.
 
-# Lösungen
-
-TODO: Lösung in eigene Datei verschieben und verlinken.
-## Lists, Tupels, Sets, Dictionaries
-
-Hier sind die Lösungen zu den gestellten Übungsaufgaben zu Listen, Tupeln, Sets und Dictionaries in Python:
-
-1. **Liste erstellen**
-```python
-liste = [i for i in range(1, 11)]
-```
-
-2. **Tupel zu Liste**
-```python
-tupel = (1, 2, 3)
-liste = list(tupel)
-```
-
-3. **Elemente zu Set hinzufügen**
-```python
-s = {1, 2, 3}
-s.update([4, 5, 6])
-```
-
-4. **Schlüssel-Wert-Paare in Dictionary**
-```python
-dictionary = {"a": 1, "b": 2, "c": 3}
-```
-
-5. **Liste invertieren**
-```python
-liste = liste[::-1]
-```
-
-6. **Tupel aus Listen**
-```python
-tupel = tuple(liste[:3])
-```
-
-7. **Element aus Set entfernen**
-```python
-s.remove(4)  # Entfernt die Zahl 4 aus dem Set
-```
-
-8. **Werte aus Dictionary abrufen**
-```python
-wert = dictionary["b"]
-```
-
-9. **Liste von Tupeln**
-```python
-liste_von_tupeln = [(i, i**2) for i in range(1, 6)]
-```
-
-10. **Dictionary Werte ändern**
-```python
-dictionary["c"] = 4
-```
-
-11. **Set Operationen**
-```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-vereinigung = set1 | set2
-schnittmenge = set1 & set2
-```
-
-12. **Listenelemente filtern**
-```python
-gerade_zahlen = [i for i in liste if i % 2 == 0]
-```
-
-13. **Schlüssel aus Dictionary entfernen**
-```python
-del dictionary["a"]
-```
-
-14. **Element in Tupel überprüfen**
-```python
-enthalten = 3 in tupel
-```
-
-15. **Duplikate aus Liste entfernen**
-```python
-liste_ohne_duplikate = list(set([1, 2, 2, 3, 3, 4, 4, 5]))
-```
-
-Diese Lösungen decken eine breite Palette von Operationen und Techniken ab, die mit Listen, Tupeln, Sets und
-Dictionaries in Python durchgeführt werden können, und bieten praktische Beispiele für den Umgang mit diesen wichtigen
-Datenstrukturen.
+[Lösungen](solution_2.md)

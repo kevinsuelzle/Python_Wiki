@@ -110,69 +110,28 @@ Maschine übersetzt wird.
 Das Wissen um diese Prozesse hilft zu verstehen, warum Python als plattformunabhängig gilt und wie es trotz der höheren
 Abstraktionsebene effizient ausgeführt werden kann.
 
-## Diskussion / Aufgaben
+# Diskussionsaufgaben
+[120min + 30min Auswertung]
+### 1. **Grundlagen des Python-Interpreters**: 
+Recherchiere, was ein Python-Interpreter ist und wie er funktioniert. 
+Diskutiere, was beim Ausführen eines Python-Skripts im Hintergrund passiert, von der Eingabe des Codes bis zur
+Ausführung.
 
-### Einfache Recherche- und Diskussionsaufgaben zum Thema Bytecode und Maschinencode in Python für Anfänger
+### 2. **Bytecode in Python verstehen**: 
+Informiere dich darüber, was Bytecode in Python ist und warum Python-Code zuerst in
+Bytecode umgewandelt wird, bevor er ausgeführt wird. Diskutiere die Rolle des Bytecodes im Python-Ausführungsprozess.
 
-1. **Grundlagen des Python-Interpreters**: Recherchiere, was ein Python-Interpreter ist und wie er funktioniert.
-   Diskutiere, was beim Ausführen eines Python-Skripts im Hintergrund passiert, von der Eingabe des Codes bis zur
-   Ausführung.
+### 3. **Python und Plattformunabhängigkeit**: 
+Recherchiere, was es bedeutet, dass Python plattformunabhängig ist.
+Diskutiere, wie Python auf verschiedenen Betriebssystemen wie Windows, MacOS und Linux ausgeführt werden kann, ohne
+den Code zu ändern.
 
-2. **Bytecode in Python verstehen**: Informiere dich darüber, was Bytecode in Python ist und warum Python-Code zuerst in
-   Bytecode umgewandelt wird, bevor er ausgeführt wird. Diskutiere die Rolle des Bytecodes im Python-Ausführungsprozess.
+### 4. **Einführung in Python Virtual Machine (PVM)**: 
+Finde heraus, was die Python Virtual Machine (PVM) ist und welche Rolle
+sie bei der Ausführung von Python-Code spielt. Diskutiere, wie die PVM Bytecode interpretiert und ausführt.
 
-3. **Python und Plattformunabhängigkeit**: Recherchiere, was es bedeutet, dass Python plattformunabhängig ist.
-   Diskutiere, wie Python auf verschiedenen Betriebssystemen wie Windows, MacOS und Linux ausgeführt werden kann, ohne
-   den Code zu ändern.
+### 5. **Python-Interpreter: CPython vs. PyPy**: 
+Recherchiere die Unterschiede zwischen CPython (dem Standard-Python-Interpreter) und PyPy (einem alternativen 
+Interpreter). Diskutiere, wie diese Interpreter Python-Code  verarbeiten und welche Vor- und Nachteile sie haben.
 
-4. **Einführung in Python Virtual Machine (PVM)**: Erforsche, was die Python Virtual Machine (PVM) ist und welche Rolle
-   sie bei der Ausführung von Python-Code spielt. Diskutiere, wie die PVM Bytecode interpretiert und ausführt.
-
-5. **Python-Interpreter: CPython vs. PyPy**: Recherchiere die Unterschiede zwischen CPython (dem
-   Standard-Python-Interpreter) und PyPy (einem alternativen Interpreter). Diskutiere, wie diese Interpreter Python-Code
-   verarbeiten und welche Vor- und Nachteile sie haben.
-
-
-
-# Antworten zu den vereinfachten Recherche- und Diskussionsaufgaben
-
-**1. Grundlagen des Python-Interpreters**
-
-  - **Definition**: Ein Interpreter, der Python-Code liest und ausführt.
-  - **Funktionsweise**: Übersetzt Python-Code in Bytecode, den er dann ausführt.
-  - **Interaktive Shell**: Erlaubt direkte Eingabe und Ausführung von Python-Code.
-  - **Skriptausführung**: Führt geschriebene Python-Skripte aus.
-  - **Fehlermeldungen**: Gibt Fehler und Ausnahmen während der Ausführung aus.
-
-**2. Bytecode in Python verstehen**
-
-   - **Zwischenstufe**: Bytecode ist eine Zwischenrepräsentation des Python-Codes.
-   - **Kompilierung**: Python-Code wird zuerst in Bytecode kompiliert.
-   - **Unabhängigkeit**: Bytecode ist plattformunabhängig.
-   - **Python Virtual Machine**: Bytecode wird von der PVM ausgeführt.
-   - **Optimierung**: Bytecode ermöglicht bestimmte Optimierungen.
-
-**3. Python und Plattformunabhängigkeit**
-
-   - **Definition**: Python-Code läuft auf verschiedenen Betriebssystemen.
-   - **Bytecode-Ebene**: Unabhängigkeit durch Kompilierung in Bytecode.
-   - **Python Interpreter**: Unterschiedliche Interpreter für verschiedene Systeme.
-   - **Keine Änderung nötig**: Gleicher Python-Code auf unterschiedlichen Systemen.
-   - **Breite Anwendbarkeit**: Eignet sich für cross-platform Entwicklung.
-
-**4. Einführung in Python Virtual Machine (PVM)**
-
-   - **Was ist PVM**: Interpretiert und führt Python-Bytecode aus.
-   - **Unabhängigkeit**: Macht Python plattformunabhängig.
-   - **Ausführung**: Verwandelt Bytecode in Maschinencode.
-   - **Portabilität**: Erlaubt Python-Code-Ausführung auf verschiedenen Systemen.
-   - **Kernkomponente**: Zentraler Bestandteil von Python's Ausführungsprozess.
-
-**5. Python-Interpreter: CPython vs. PyPy**
-
-   - **CPython**: Standard-Interpreter, direkt von Python.org.
-     - **Direkte Ausführung**: Kompiliert Python-Code in Bytecode und führt ihn aus.
-     - **Erweiterbarkeit**: Ermöglicht Erweiterungen in C.
-   - **PyPy**: Alternative Implementierung mit JIT-Kompilierung.
-     - **Performance**: Oft schneller durch JIT-Optimierung.
-     - **Speicherbedarf**: Kann mehr Speicher benötigen als CPython.
+[Lösung](solution.md)

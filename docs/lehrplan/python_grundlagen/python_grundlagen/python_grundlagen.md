@@ -32,7 +32,7 @@ Probleme gelöst, die ein Unternehmen oder dessen Kunden haben.
    ein wichtiger Teil der Entwicklung einer benutzerfreundlichen Software.
   
 ### Aufgabe:
-Zeit: 15 Min + 20 Min
+[15 Min + 20 Min]
 
 TODO: Ich finde diese Aufgabe zu schwammig. Ich würde vorschlagen, dass man hier eine Liste
 von Aspekten angibt und diese zur Diskussion stellt. Z.B. bringe die folgenden in eine Rangfolge der wichtigkeit. 

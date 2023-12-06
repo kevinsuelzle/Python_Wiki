@@ -49,37 +49,56 @@ Damit haben wir bereits eine Menge Grundlagen gelernt, mit denen wir kleine Prog
 nicht nur theoretisch besprechen folgen jetzt erstmal eine Reihe an Übungsaufgaben.
 
 
-## Aufgaben
+# Aufgaben
+[40min]
+
 TODO: Auch hier sind Rechercheaufgaben enthalten, die sich durch konkrete ersetzen lassen.
-1. **Einfache Ausgabe**: Verwende `print`, um "Hallo Welt" auszugeben. 
-2. **Variable ausgeben**: Erstelle eine Variable `text` mit dem Wert "Python" und gib sie mit `print` aus.
-3. **Zahlen ausgeben**: Gib mit `print` die Zahl 100 aus. 
-4. **Mehrere Argumente**: Verwende `print`, um "Hallo" und "Welt" in derselben Zeile mit einem Leerzeichen dazwischen
+### 1. **Einfache Ausgabe**: 
+Verwende `print`, um "Hallo Welt" auszugeben. 
+### 2. **Variable ausgeben**: 
+Erstelle eine Variable `text` mit dem Wert "Python" und gib sie mit `print` aus.
+### 3. **Zahlen ausgeben**: 
+Gib mit `print` die Zahl 100 aus. 
+### 4. **Mehrere Argumente**: 
+Verwende `print`, um "Hallo" und "Welt" in derselben Zeile mit einem Leerzeichen dazwischen
 auszugeben. 
-5. **Zeilenende ändern**: Benutze `print`, um "Hallo", gefolgt von einem "!", ohne Zeilenumbruch auszugeben. 
-6. **Eingabeaufforderung**: Verwende `input`, um den Benutzer nach seinem Namen zu fragen und speichere das Ergebnis in
+### 5. **Zeilenende ändern**: 
+Benutze `print`, um "Hallo", gefolgt von einem "!", ohne Zeilenumbruch auszugeben. 
+### 6. **Eingabeaufforderung**: 
+Verwende `input`, um den Benutzer nach seinem Namen zu fragen und speichere das Ergebnis in
 einer Variablen. 
-7. **Begrüßung**: Frage den Benutzer mit `input` nach seinem Namen und begrüße ihn anschließend mit `print`. 
-8. **Numerische Eingabe**: Frage den Benutzer nach seinem Alter und gib es mit `print` aus. 
-9. **Kombinierte Eingabe und Ausgabe**: Frage den Benutzer nach seinem Lieblingsessen und sage ihm mit `print`, dass du 
+### 7. **Begrüßung**:
+Frage den Benutzer mit `input` nach seinem Namen und begrüße ihn anschließend mit `print`. 
+### 8. **Numerische Eingabe**: 
+Frage den Benutzer nach seinem Alter und gib es mit `print` aus. 
+### 9. **Kombinierte Eingabe und Ausgabe**:
+Frage den Benutzer nach seinem Lieblingsessen und sage ihm mit `print`, dass du 
 es auch magst. 
-10. **Formatierte Ausgabe**: Frage den Benutzer nach seinem Namen und Alter und gib beides formatiert mit einem
+### 10. **Formatierte Ausgabe**:
+Frage den Benutzer nach seinem Namen und Alter und gib beides formatiert mit einem
 f-String aus. 
-11. **Mehrere Eingaben**: Frage den Benutzer nacheinander nach seinem Vornamen und Nachnamen und gib dann den
+### 11. **Mehrere Eingaben**:
+Frage den Benutzer nacheinander nach seinem Vornamen und Nachnamen und gib dann den
 vollständigen Namen aus. 
-12. **Rechnung mit Eingabe**: Bitte den Benutzer, zwei Zahlen einzugeben, addiere sie und gib das Ergebnis aus. 
-13. **Fehlerkorrektur**: Frage den Benutzer nach einer Zahl, konvertiere die Eingabe in einen Integer und fange dabei 
+### 12. **Rechnung mit Eingabe**:
+Bitte den Benutzer, zwei Zahlen einzugeben, addiere sie und gib das Ergebnis aus. 
+### 13. **Fehlerkorrektur**:
+Frage den Benutzer nach einer Zahl, konvertiere die Eingabe in einen Integer und fange dabei 
 Fehler mit einer Fehlermeldung ab. 
-14. **Eingabe in Liste speichern**: Bitte den Benutzer um drei Lieblingsfarben und speichere sie in einer Liste. Gib 
+### 14. **Eingabe in Liste speichern**:
+Bitte den Benutzer um drei Lieblingsfarben und speichere sie in einer Liste. Gib 
 dann die Liste aus. 
-15. **Benutzereingaben vergleichen**: Frage den Benutzer zweimal nach einem Passwort. Gib eine Erfolgsmeldung aus, 
+### 15. **Benutzereingaben vergleichen**: 
+Frage den Benutzer zweimal nach einem Passwort. Gib eine Erfolgsmeldung aus, 
 wenn beide Eingaben übereinstimmen, ansonsten eine Fehlermeldung.
+
+[Lösungen](solutions.md#lösungen)
 
 ## Komplex-Aufgaben
 
 **Aufgabe 1: Persönliche Statistik**
 
-Zeit: 45min
+[45min]
 
 Aufgabenstellung:
 
@@ -89,87 +108,4 @@ Aufgabenstellung:
 - Wie können die Farben intern als eine Liste gespeichert werden?
 - Das Programm soll die Anzahl der eingegebenen Lieblingsfarben berechnen und ausgeben.
 
-## Lösungen
-TODO: Lösung in eigene Datei
-1. `print("Hallo Welt")`
-2. `text = "Python"; print(text)`
-3. `print(100)`
-4. `print("Hallo", "Welt")`
-5. `print("Hallo!", end="")`
-6. `name = input("Wie heißt du? ")`
-7. 
-```python
-name = input("Wie heißt du? ")
-print(f"Hallo, {name}!")
-```
-8. 
-```python
-alter = int(input("Wie alt bist du? "))
-print(alter)
-```
-9. 
-```python
-essen = input("Was ist dein Lieblingsessen? ")
-print(f"Ich mag auch {essen}!")
-```
-10. 
-```python
-name = input("Wie heißt du? ")
-alter = input("Wie alt bist du? ")
-print(f"Name: {name}, Alter: {alter}")
-```
-11. 
-```python
-vorname = input("Vorname: ")
-nachname = input("Nachname: ")
-print(f"Vollständiger Name: {vorname} {nachname}")
-```
-12. 
-```python
-zahl1 = int(input("Erste Zahl: "))
-zahl2 = int(input("Zweite Zahl: "))
-print(f"Ergebnis: {zahl1 + zahl2}")
-```
-13. 
-```python
-try: 
-    zahl = int(input("Gib eine Zahl ein: "))
-    print(zahl) 
-except ValueError: 
-    print("Das war keine gültige Zahl!")
-```
-14. 
-```python
-farben = [input("Erste Farbe: "), input("Zweite Farbe: "), input("Dritte Farbe: ")]
-print(farben)
-```
-15. 
-```python 
-passwort1 = input("Passwort: ")
-passwort2 = input("Passwort wiederholen: ")
-if passwort1 == passwort2:
-    print("Erfolg")
-else:
-    print("Die Passwörter stimmen nicht überein!")
-```
-
-### **Persönliche Statistik**
-
-```python
-# Eingabe der persönlichen Informationen
-name = input("Gib deinen Namen ein: ")
-alter = int(input("Gib dein Alter ein: "))
-groesse = float(input("Gib deine Größe in Metern ein (z.B. 1.75): "))
-lieblingsfarben = input("Gib deine Lieblingsfarben ein, getrennt durch Kommas: ").split(',')
-
-# Berechnung der Anzahl der Lieblingsfarben
-anzahl_farben = len(lieblingsfarben)
-
-# Ausgabe der Informationen
-print("\n--- Persönliche Statistiken ---")
-print(f"Name: {name}")
-print(f"Alter: {alter} Jahre")
-print(f"Größe: {groesse} Meter")
-print(f"Anzahl der Lieblingsfarben: {anzahl_farben}")
-print(f"Lieblingsfarben: {', '.join(lieblingsfarben)}")
-```
+[Lösungen](solutions.md#komplex-aufgabe)

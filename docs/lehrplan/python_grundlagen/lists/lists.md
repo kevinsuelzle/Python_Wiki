@@ -107,19 +107,31 @@ In diesem Beispiel:
 - Danach sortieren wir die Liste.
 - Und schließlich suchen wir nach spezifischen Elementen (z.B. der Position von 5 und der Anzahl der 4 in der Liste).
 
-## Aufgaben
+# Aufgaben
 
-1. **Erstellen einer Liste:** Erstelle eine Liste mit den Zahlen 1 bis 5.
-2. **Hinzufügen von Elementen:** Füge die Zahl 6 zur Liste `zahlen` hinzu.
-3. **Entfernen von Elementen:** Entferne die Zahl 3 aus der Liste `zahlen`.
-4. **Zugreifen auf ein Listenelement:** Greife auf das dritte Element in der Liste `zahlen` zu.
-5. **Listenlänge:** Finde heraus, wie lang die Liste `zahlen` ist.
-6. **Slicing:** Erstelle eine neue Liste, die die ersten drei Elemente von `zahlen` enthält.
-7. **Elemente zählen:** Zähle, wie oft die Zahl 2 in der Liste `zahlen` vorkommt.
-8. **Liste umkehren:** Kehre die Reihenfolge der Elemente in der Liste `zahlen` um.
-9. **Liste sortieren:** Sortiere die Liste `zahlen` in absteigender Reihenfolge.
-10. **Listen verschachteln:** Erstelle eine neue Liste `verschachtelt`, die zwei Listen enthält: die ursprüngliche
+### 1. **Erstellen einer Liste:** 
+Erstelle eine Liste mit den Zahlen 1 bis 5.
+### 2. **Hinzufügen von Elementen:** 
+Füge die Zahl 6 zur Liste `zahlen` hinzu.
+### 3. **Entfernen von Elementen:** 
+Entferne die Zahl 3 aus der Liste `zahlen`.
+### 4. **Zugreifen auf ein Listenelement:** 
+Greife auf das dritte Element in der Liste `zahlen` zu.
+### 5. **Listenlänge:** 
+Finde heraus, wie lang die Liste `zahlen` ist.
+### 6. **Slicing:** 
+Erstelle eine neue Liste, die die ersten drei Elemente von `zahlen` enthält.
+### 7. **Elemente zählen:** 
+Zähle, wie oft die Zahl 2 in der Liste `zahlen` vorkommt.
+### 8. **Liste umkehren:** 
+Kehre die Reihenfolge der Elemente in der Liste `zahlen` um.
+### 9. **Liste sortieren:**
+Sortiere die Liste `zahlen` in absteigender Reihenfolge.
+### 10. **Listen verschachteln:**
+Erstelle eine neue Liste `verschachtelt`, die zwei Listen enthält: die ursprüngliche
     Liste `zahlen` und eine Liste mit den Buchstaben ['a', 'b', 'c'].
+
+[Lösungen](solutions.md)
 
 TODO: Füge hier noch mal einen Text ein, der auf die Funktion von Variablen bei Listen eingeht:
 ```python
@@ -133,66 +145,4 @@ print(b)
 TODO: Slicing
 
 TODO: Konkatinations-Operator `+` einfügen
-
-## Lösungen
-
-1.
-
-```python
-zahlen = [1, 2, 3, 4, 5]
-```
-
-2.
-
-```python
-zahlen.append(6)
-```
-
-3.
-
-```python
-zahlen.remove(3)
-```
-
-4.
-
-```python
-drittes_element = zahlen[2]
-```
-
-5.
-
-```python
-laenge = len(zahlen)
-```
-
-6.
-
-```python
-erste_drei = zahlen[:3]
-```
-
-7.
-
-```python
-anzahl_zwei = zahlen.count(2)
-```
-
-8.
-
-```python
-zahlen.reverse()
-```
-
-9.
-
-```python
-zahlen.sort(reverse=True)
-```
-
-10.
-
-```python
-verschachtelt = [zahlen, ['a', 'b', 'c']]
-```
 

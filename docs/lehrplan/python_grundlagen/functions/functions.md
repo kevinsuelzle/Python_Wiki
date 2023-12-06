@@ -128,51 +128,66 @@ Durch diese Beispiele wird deutlich, wie Funktionen in Python definiert und genu
 wiederverwendbar und gut strukturiert zu gestalten. Funktionen sind ein zentrales Konzept in der Programmierung und
 unerlässlich für die Erstellung von sauberem und effizientem Code.
 
-### Aufgaben
+# Aufgaben
 
-### Übungsaufgaben zum Erstellen von Funktionen in Python
+### 1. **Einfache Begrüßungsfunktion**: 
+Schreibe eine Funktion `begruesse()`, die "Hallo Welt!" ausgibt.
 
-1. **Einfache Begrüßungsfunktion**: Schreibe eine Funktion `begruesse()`, die "Hallo Welt!" ausgibt.
+### 2. **Quadratzahlen**: 
+Schreibe eine Funktion `quadrat()`, die das Quadrat einer übergebenen Zahl zurückgibt.
 
-2. **Quadratzahlen**: Schreibe eine Funktion `quadrat()`, die das Quadrat einer übergebenen Zahl zurückgibt.
-
-3. **Maximum von zwei Zahlen**: Schreibe eine Funktion `max_zwei()`, die zwei Zahlen als Argumente nimmt und die größere
+### 3. **Maximum von zwei Zahlen**: 
+Schreibe eine Funktion `max_zwei()`, die zwei Zahlen als Argumente nimmt und die größere
    Zahl zurückgibt.
 
-4. **Summierung**: Schreibe eine Funktion `summiere()`, die die Summe von drei übergebenen Zahlen berechnet und
+### 4. **Summierung**: 
+Schreibe eine Funktion `summiere()`, die die Summe von drei übergebenen Zahlen berechnet und
    zurückgibt.
 
-5. **String-Wiederholung**: Schreibe eine Funktion `wiederhole_string(str, n)`, die einen String `str` und eine Zahl `n`
+### 5. **String-Wiederholung**: 
+Schreibe eine Funktion `wiederhole_string(str, n)`, die einen String `str` und eine Zahl `n`
    nimmt und den String `n`-mal wiederholt.
 
-6. **Fahrenheit in Celsius**: Schreibe eine Funktion `fahrenheit_in_celsius()`, die eine Temperatur in Fahrenheit nimmt
+### 6. **Fahrenheit in Celsius**: 
+Schreibe eine Funktion `fahrenheit_in_celsius()`, die eine Temperatur in Fahrenheit nimmt
    und in Celsius umrechnet.
 
-7. **Kreisumfang**: Schreibe eine Funktion `kreisumfang()`, die den Radius eines Kreises als Parameter nimmt und den
+### 7. **Kreisumfang**: 
+Schreibe eine Funktion `kreisumfang()`, die den Radius eines Kreises als Parameter nimmt und den
    Umfang des Kreises berechnet.
 
-8. **Listenelemente addieren**: Schreibe eine Funktion `addiere_liste()`, die eine Liste von Zahlen nimmt und ihre Summe
+### 8. **Listenelemente addieren**: 
+Schreibe eine Funktion `addiere_liste()`, die eine Liste von Zahlen nimmt und ihre Summe
    zurückgibt.
 
-9. **Check Gerade Zahl**: Schreibe eine Funktion `ist_gerade()`, die prüft, ob eine übergebene Zahl gerade ist.
+### 9. **Check Gerade Zahl**: 
+Schreibe eine Funktion `ist_gerade()`, die prüft, ob eine übergebene Zahl gerade ist.
 
-10. **Countdown**: Schreibe eine Funktion `countdown()`, die eine Zahl nimmt und einen Countdown von dieser Zahl bis 0
+### 10. **Countdown**: 
+Schreibe eine Funktion `countdown()`, die eine Zahl nimmt und einen Countdown von dieser Zahl bis 0
     ausgibt.
 
-11. **Minimum in Liste finden**: Schreibe eine Funktion `finde_minimum()`, die eine Liste von Zahlen nimmt und das
+### 11. **Minimum in Liste finden**: 
+Schreibe eine Funktion `finde_minimum()`, die eine Liste von Zahlen nimmt und das
     kleinste Element zurückgibt.
 
-12. **Länge eines Strings**: Schreibe eine Funktion `laenge_string()`, die die Länge eines übergebenen Strings
+### 12. **Länge eines Strings**: 
+Schreibe eine Funktion `laenge_string()`, die die Länge eines übergebenen Strings
     zurückgibt.
 
-13. **Multiplikationstabelle**: Schreibe eine Funktion `multiplikationstabelle()`, die eine Zahl nimmt und ihre
+### 13. **Multiplikationstabelle**: 
+Schreibe eine Funktion `multiplikationstabelle()`, die eine Zahl nimmt und ihre
     Multiplikationstabelle bis 10 ausgibt.
 
-14. **Palindrome prüfen**: Schreibe eine Funktion `ist_palindrom()`, die einen String nimmt und prüft, ob es ein
+### 14. **Palindrome prüfen**: 
+Schreibe eine Funktion `ist_palindrom()`, die einen String nimmt und prüft, ob es ein
     Palindrom ist.
 
-15. **Fibonacci-Folge**: Schreibe eine Funktion `fibonacci()`, die eine Zahl `n` nimmt und die ersten `n` Zahlen der
+### 15. **Fibonacci-Folge**: 
+Schreibe eine Funktion `fibonacci()`, die eine Zahl `n` nimmt und die ersten `n` Zahlen der
     Fibonacci-Folge zurückgibt.
+
+[Lösungen](solutions.md#funktionen-definieren)
 
 ## Gültigkeitsbereich von Variablen - Scopes
 
@@ -259,28 +274,35 @@ Das Verständnis des Scopes von Variablen ist entscheidend, um zu verstehen, wie
 Programm gespeichert und zugänglich gemacht werden. Es hilft auch dabei, Fehler zu vermeiden, die durch unbeabsichtigte
 Überschneidungen von Variablennamen entstehen können.
 
-### Aufgaben
+## Übungsaufgaben zum Thema Scopes in Python
 
-### Übungsaufgaben zum Thema Scopes in Python
-
-#### Aufgaben
-
-1. **Globale Variable**: Definiere eine globale Variable und gib sie innerhalb einer Funktion aus.
-2. **Lokale Variable**: Definiere eine lokale Variable innerhalb einer Funktion und gib sie innerhalb dieser Funktion
+### 1. **Globale Variable**: 
+Definiere eine globale Variable und gib sie innerhalb einer Funktion aus.
+### 2. **Lokale Variable**: 
+Definiere eine lokale Variable innerhalb einer Funktion und gib sie innerhalb dieser Funktion
    aus.
-3. **Globale und lokale Variable mit demselben Namen**: Definiere eine globale und eine lokale Variable mit demselben
+### 3. **Globale und lokale Variable mit demselben Namen**:
+Definiere eine globale und eine lokale Variable mit demselben
    Namen und gib beide innerhalb der Funktion aus.
-4. **Änderung einer globalen Variable innerhalb einer Funktion**: Versuche, eine globale Variable innerhalb einer
+### 4. **Änderung einer globalen Variable**: 
+Versuche, eine globale Variable innerhalb einer
    Funktion zu ändern, ohne das `global`-Keyword zu verwenden.
-5. **Verwenden des `global`-Keywords**: Ändere eine globale Variable innerhalb einer Funktion mit Hilfe des `global`
+### 5. **Verwenden des `global`-Keywords**: 
+Ändere eine globale Variable innerhalb einer Funktion mit Hilfe des `global`
    -Keywords.
-6. **Nested Functions Scope**: Definiere eine verschachtelte Funktion und greife auf eine Variable aus der umgebenden
+### 6. **Nested Functions Scope**: 
+Definiere eine verschachtelte Funktion und greife auf eine Variable aus der umgebenden
    Funktion zu.
-7. **Lokale Variable in einer Schleife**: Definiere eine lokale Variable innerhalb einer for-Schleife in einer Funktion
+### 7. **Lokale Variable in einer Schleife**: 
+Definiere eine lokale Variable innerhalb einer for-Schleife in einer Funktion
    und gib sie aus.
-8. **Funktionsargument Scope**: Übergebe eine Variable als Argument an eine Funktion und ändere sie innerhalb der
+### 8. **Funktionsargument Scope**: 
+Übergebe eine Variable als Argument an eine Funktion und ändere sie innerhalb der
    Funktion.
-9. **Rückgabewerte und Scope**: Gib einen Wert aus einer Funktion zurück und weise ihn einer globalen Variable zu.
+### 9. **Rückgabewerte und Scope**: 
+Gib einen Wert aus einer Funktion zurück und weise ihn einer globalen Variable zu.
+
+[Lösungen](solutions.md#scopes)
 
 ## Argumente vs Parameter - Was ist der Unterschied?
 
@@ -313,226 +335,6 @@ Durch das Verständnis des Unterschieds zwischen Parametern und Argumenten kann 
 Python klarer erfassen und effektiver programmieren. Es hilft auch dabei, Missverständnisse zu vermeiden, die bei der
 Verwendung von Funktionen auftreten können.
 
-# Lösungen
 
-## Funktionen definieren
 
-Hier sind die Lösungen für die vorgeschlagenen Übungsaufgaben:
 
-1. **Einfache Begrüßungsfunktion**
-```python
-def begruesse():
-   print("Hallo Welt!")
-begruesse()
-```
-
-2. **Quadratzahlen**
-  ```python
-  def quadrat(zahl):
-      return zahl * zahl
-  print(quadrat(4))
-  ```
-
-3. **Maximum von zwei Zahlen**
-  ```python
-  def max_zwei(a, b):
-      if a > b:
-          return a
-      else:
-          return b
-  print(max_zwei(3, 5))
-  ```
-
-4. **Summierung**
-  ```python
-  def summiere(a, b, c):
-      return a + b + c
-  print(summiere(1, 2, 3))
-  ```
-
-5. **String-Wiederholung**
-  ```python
-  def wiederhole_string(str, n):
-      return str * n
-  print(wiederhole_string("Hallo", 3))
-  ```
-
-6. **Fahrenheit in Celsius**
-  ```python
-  def fahrenheit_in_celsius(f):
-      return (f - 32) * 5/9
-  print(fahrenheit_in_celsius(100))
-  ```
-
-7. **Kreisumfang**
-  ```python
-  def kreisumfang(radius):
-      return 2 * 3.14159 * radius
-  print(kreisumfang(5))
-  ```
-
-8. **Listenelemente addieren**
-  ```python
-  def addiere_liste(liste):
-      return sum(liste)
-  print(addiere_liste([1, 2, 3, 4, 5]))
-  ```
-
-9. **Check Gerade Zahl**
-  ```python
-  def ist_gerade(zahl):
-      return zahl % 2 == 0
-  print(ist_gerade(4))
-  ```
-
-10. **Countdown**
-   ```python
-   def countdown(zahl):
-       for i in range(zahl, -1, -1):
-           print(i)
-   countdown(5)
-   ```
-
-11. **Minimum in Liste finden**
-   ```python
-   def finde_minimum(liste):
-       return min(liste)
-   print(finde_minimum([5, 3, 8, 2, 9]))
-   ```
-
-12. **Länge eines Strings**
-   ```python
-   def laenge_string(str):
-       return len(str)
-   print(laenge_string("Python"))
-   ```
-
-13. **Multiplikationstabelle**
-   ```python
-   def multiplikationstabelle(zahl):
-       for i in range(1, 11):
-           print(f"{zahl} * {i} = {zahl * i}")
-   multiplikationstabelle(3)
-   ```
-
-14. **Palindrome prüfen**
-   ```python
-   def ist_palindrom(str):
-       return str == str[::-1]
-   print(ist_palindrom("radar"))
-   ```
-
-15. **Fibonacci-Folge**
-   ```python
-   def fibonacci(n):
-       a, b = 0, 1
-       ergebnis = []
-       for _ in range(n):
-           ergebnis.append(a)
-           a, b = b, a + b
-       return ergebnis
-   print(fibonacci(5))
-   ```
-
-## Scopes
-
-#### Lösungen
-
-1. **Globale Variable**
-   ```python
-   global_var = "Ich bin global"
-
-   def test_global():
-       print(global_var)
-
-   test_global()
-   ```
-
-2. **Lokale Variable**
-   ```python
-   def test_lokal():
-       lokal_var = "Ich bin lokal"
-       print(lokal_var)
-
-   test_lokal()
-   ```
-
-3. **Globale und lokale Variable mit demselben Namen**
-   ```python
-   var = "Ich bin global"
-
-   def test_gleichnamig():
-       var = "Ich bin lokal"
-       print(var)  # Lokale Variable
-       print(globals()['var'])  # Globale Variable
-
-   test_gleichnamig()
-   ```
-
-4. **Änderung einer globalen Variable innerhalb einer Funktion**
-   ```python
-   global_var = "Ursprünglich global"
-
-   def test_aendern():
-       global_var = "Geändert lokal"
-       print(global_var)
-
-   test_aendern()
-   print(global_var)  # Bleibt unverändert "Ursprünglich global"
-   ```
-
-5. **Verwenden des `global`-Keywords**
-   ```python
-   global_var = "Ursprünglich global"
-
-   def test_global_keyword():
-       global global_var
-       global_var = "Geändert global"
-       print(global_var)
-
-   test_global_keyword()
-   print(global_var)  # Wird zu "Geändert global"
-   ```
-
-6. **Nested Functions Scope**
-   ```python
-   def außen():
-       außen_var = "Variable von außen"
-
-       def innen():
-           print(außen_var)
-
-       innen()
-
-   außen()
-   ```
-
-7. **Lokale Variable in einer Schleife**
-   ```python
-   def test_schleife():
-       for i in range(3):
-           schleifen_var = i
-       print(schleifen_var)
-
-   test_schleife()
-   ```
-
-8. **Funktionsargument Scope**
-   ```python
-   def test_argument(arg):
-       arg = "Geändert"
-       print(arg)
-
-   var = "Original"
-   test_argument(var)
-   print(var)  # Bleibt "Original"
-   ```
-
-9. **Rückgabewerte und Scope**
-   ```python
-   def gib_zurueck():
-       return "Rückgabewert"
-
-   global_var = gib_zurueck()
-   print(global_var)
-   ```

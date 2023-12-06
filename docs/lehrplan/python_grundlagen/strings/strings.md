@@ -1,6 +1,6 @@
 # Strings in Python
 
-Um Zeichenketten in Python darzustellen benötigt man sogenannte Strings. Strings werden in
+Um Zeichenketten in Python darzustellen, benötigt man sogenannte Strings. Strings werden in
 Python in einfachen oder doppelten Anführungszeichen eingeschlossen (`''` oder `""`). Mehrzeilige Strings können mit
 drei Anführungszeichen erstellt werden. (`''' '''' ` oder `""" """`). 
 
@@ -183,186 +183,66 @@ Die Verwendung von Unicode ermöglicht es uns, Zeichen aus verschiedenen Schrift
 darzustellen und zu verarbeiten, was für die Unterstützung von Texten in verschiedenen Sprachen und für die Darstellung
 von Symbolen und Emojis in Anwendungen sehr nützlich ist.
 
-## Übungsaufgaben
+# Aufgaben
+[40min]
 
-1. Schreibe ein Programm, um die Länge eines Strings zu ermitteln.
-2. Erstelle einen String und gib ihn rückwärts aus.
-3. Erstelle einen String und konvertiere ihn in Großbuchstaben.
-4. Erstelle einen String und zähle die Anzahl der Vokale in ihm.
-5. Schreibe einen Python-Code, um den ersten und den letzten Buchstaben eines Strings auszugeben.
-6. Erstelle einen String und ersetze ein bestimmtes Zeichen darin durch ein anderes.
-7. Schreibe eine Funktion, die prüft, ob ein gegebener String ein gültiger E-Mail-Adresse ist.
-8. Erstelle einen String und entferne alle Leerzeichen daraus.
-9. Erstelle einen String und teile ihn in Wörter auf.
-10. Schreibe einen Python-Code, um den häufigsten Buchstaben in einem String zu finden.
-11. Erstelle einen String und überprüfe, ob er nur aus Zahlen besteht.
-12. Schreibe eine Funktion, die zwei Strings nimmt und überprüft, ob sie Anagramme sind (dh dieselben Buchstaben in
+### 1. Länge eines Strings ermitteln:
+Schreibe ein Programm, um die Länge eines Strings zu ermitteln.
+
+### 2. String rückwärts ausgeben:
+Erstelle einen String und gib ihn rückwärts aus.
+
+### 3. String in Großbuchstaben konvertieren:
+Erstelle einen String und konvertiere ihn in Großbuchstaben.
+
+### 4. Anzahl der Vokale zählen:
+Erstelle einen String und zähle die Anzahl der Vokale in ihm.
+
+### 5. Erster und letzter Buchstabe eines Strings:
+Schreibe einen Python-Code, um den ersten und den letzten Buchstaben eines Strings auszugeben.
+
+### 6. Zeichen ersetzen:
+Erstelle einen String und ersetze ein bestimmtes Zeichen darin durch ein anderes.
+
+### 7. Funktion zur Überprüfung einer E-Mail-Adresse:
+Schreibe eine Funktion, die prüft, ob ein gegebener String ein gültiger E-Mail-Adresse ist.
+
+### 8. Leerzeichen entfernen:
+Erstelle einen String und entferne alle Leerzeichen daraus.
+
+### 9. String in Wörter aufteilen:
+Erstelle einen String und teile ihn in Wörter auf.
+
+### 10. Häufigster Buchstabe in einem String finden:
+Schreibe einen Python-Code, um den häufigsten Buchstaben in einem String zu finden.
+
+### 11. Überprüfung, ob ein String nur aus Zahlen besteht:
+Erstelle einen String und überprüfe, ob er nur aus Zahlen besteht.
+
+### 12. Funktion zur Überprüfung von Anagrammen:
+Schreibe eine Funktion, die zwei Strings nimmt und überprüft, ob sie Anagramme sind (dh dieselben Buchstaben in
     unterschiedlicher Reihenfolge).
-13. Erstelle einen String und zähle die Anzahl der Wörter darin.
-14. Schreibe einen Python-Code, um alle Zeichen in einem String zu zählen.
-15. Erstelle einen String und überprüfe, ob er eine gültige URL ist.
-16. Schreibe eine Funktion, die einen gegebenen String in einen Titel-Case-String umwandelt (jedes Wort beginnt mit
+
+### 13. Anzahl der Wörter in einem String zählen:
+Erstelle einen String und zähle die Anzahl der Wörter darin.
+
+### 14. Anzahl der Zeichen in einem String zählen:
+Schreibe einen Python-Code, um alle Zeichen in einem String zu zählen.
+
+### 15. Überprüfung, ob ein String eine gültige URL ist:
+Erstelle einen String und überprüfe, ob er eine gültige URL ist.
+
+### 16. String in Titel-Case umwandeln:
+Schreibe eine Funktion, die einen gegebenen String in einen Titel-Case-String umwandelt (jedes Wort beginnt mit
     einem Großbuchstaben).
-17. Erstelle einen String und zähle die Anzahl der Zeichen, die keine Buchstaben oder Zahlen sind (
+
+### 17. Anzahl der Zeichen, die keine Buchstaben oder Zahlen sind, zählen:
+Erstelle einen String und zähle die Anzahl der Zeichen, die keine Buchstaben oder Zahlen sind (
     Sonderzeichen und Leerzeichen).
-18. Schreibe einen Python-Code, um alle URLs in einem gegebenen Text zu extrahieren.
-19. Schreibe eine Funktion, die überprüft, ob ein String ein Palindrom ist (d.h. rückwärts gelesen dasselbe wie
+
+### 18. Extrahieren von URLs aus einem Text:
+Schreibe einen Python-Code, um alle URLs in einem gegebenen Text zu extrahieren.
+
+### 19. Funktion für Palindrom-Überprüfung:
+Schreibe eine Funktion, die überprüft, ob ein String ein Palindrom ist (d.h. rückwärts gelesen dasselbe wie
     vorwärts).
-
-## Lösungen
-
-Selbstverständlich, hier sind Lösungen zu den Übungsaufgaben zu Strings in Python:
-
-1. Länge eines Strings ermitteln:
-```python
-text = "Dies ist ein Beispiel"
-laenge = len(text)
-print(f"Länge des Strings: {laenge}")
-```
-
-2. String rückwärts ausgeben:
-```python
-text = "Python"
-rueckwaerts = text[::-1]
-print(rueckwaerts)
-```
-
-1. String in Großbuchstaben konvertieren:
-```python
-text = "python"
-grossbuchstaben = text.upper()
-print(grossbuchstaben)
-```
-
-2. Anzahl der Vokale zählen:
-```python
-text = "Python ist großartig."
-anzahl_vokale = sum(1 for char in text if char.lower() in "aeiou")
-print(anzahl_vokale)
-```
-
-3. Erster und letzter Buchstabe eines Strings:
-```python
-text = "Python"
-erster_buchstabe = text[0]
-letzter_buchstabe = text[-1]
-print(f"Erster Buchstabe: {erster_buchstabe}, Letzter Buchstabe: {letzter_buchstabe}")
-```
-
-4. Zeichen ersetzen:
-```python
-text = "Python ist großartig."
-neuer_text = text.replace("groß", "super")
-print(neuer_text)
-```
-
-5. Funktion zur Überprüfung einer E-Mail-Adresse:
-```python
-import re
-
-def ist_gueltige_email(email):
-   pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
-   return re.match(pattern, email) is not None
-
-print(ist_gueltige_email("beispiel@email.com"))  # True
-print(ist_gueltige_email("keine-email"))  # False
-```
-
-6. Leerzeichen entfernen:
-```python
-text = " Text mit Leerzeichen "
-ohne_leerzeichen = text.strip()
-print(ohne_leerzeichen)
-```
-
-7. String in Wörter aufteilen:
-```python
-text = "Dies ist ein Satz."
-woerter = text.split()
-print(woerter)
-```
-
-8. Häufigster Buchstabe in einem String finden:
-```python
-text = "Mississippi"
-haeufigster_buchstabe = max(set(text), key=text.count)
-print(haeufigster_buchstabe)
-```
-
-9. Überprüfung, ob ein String nur aus Zahlen besteht:
-```python
-text = "12345"
-if text.isdigit():
-   print("Der String besteht nur aus Zahlen.")
-else:
-   print("Der String enthält andere Zeichen als Zahlen.")
-```
-
-10. Funktion zur Überprüfung von Anagrammen:
-```python
-def sind_anagramme(s1, s2):
-    return sorted(s1.lower()) == sorted(s2.lower())
-
-print(sind_anagramme("listen", "silent"))  # True
-print(sind_anagramme("Python", "Java"))  # False
-```
-
-11. Anzahl der Wörter in einem String zählen:
-```python
-text = "Dies ist ein Beispiel Satz."
-woerter = text.split()
-anzahl_woerter = len(woerter)
-print(f"Anzahl der Wörter: {anzahl_woerter}")
-```
-
-12. Anzahl der Zeichen in einem String zählen:
-```python
-text = "Python ist großartig."
-anzahl_zeichen = sum(1 for char in text)
-print(f"Anzahl der Zeichen: {anzahl_zeichen}")
-```
-
-13. Überprüfung, ob ein String eine gültige URL ist (mithilfe einer regulären Ausdrucks):
-```python
-import re
-
-def ist_gueltige_url(url):
-    pattern = r'^(https?|ftp)://[^\s/$.?#].[^\s]*$'
-    return re.match(pattern, url) is not None
-
-print(ist_gueltige_url("https://www.example.com"))  # True
-print(ist_gueltige_url("www.invalid-url"))  # False
-```
-
-14. String in Titel-Case umwandeln:
-```python
-text = "python ist großartig"
-titel_case = text.title()
-print(titel_case)
-```
-
-15. Anzahl der Zeichen, die keine Buchstaben oder Zahlen sind, zählen:
-```python
-text = "Python 123!?"
-anzahl_sonderzeichen = sum(1 for char in text if not char.isalnum())
-print(f"Anzahl der Sonderzeichen: {anzahl_sonderzeichen}")
-```
-
-16. Extrahieren von URLs aus einem Text (mithilfe einer regulären Ausdrucks):
-```python
-import re
-
-text = "Besuchen Sie meine Website unter https://www.example.com. Weitere Informationen finden Sie unter www.invalid-url."
-urls = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
-print(urls)
-```
-
-17. Funktion für Palindrom-Überprüfung:
-```python
-def ist_palindrom(text):
-    text = text.lower()  # Um Groß-/Kleinschreibung zu ignorieren
-    return text == text[::-1]
-
-print(ist_palindrom("anna"))  # True
-print(ist_palindrom("Python"))  # False
-```

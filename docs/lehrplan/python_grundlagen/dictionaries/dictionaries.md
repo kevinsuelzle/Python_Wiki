@@ -96,21 +96,33 @@ Zugriff sowie flexible Datenstrukturen.
   Benutzerinformationen oder Konfigurationseinstellungen.
 - **Schneller Zugriff**: Aufgrund ihrer internen Struktur bieten Dictionaries einen schnellen Zugriff auf ihre Elemente.
 
-## Aufgaben
+# Aufgaben
 
-1. **Grundlegendes Dictionary**: Erstelle ein Dictionary mit drei Schlüssel-Wert-Paaren und gib es aus.
-2. **Zugriff auf Werte**: Greife auf einen Wert in einem Dictionary zu und gib ihn aus.
-3. **Hinzufügen eines Eintrags**: Füge einem bestehenden Dictionary einen neuen Schlüssel-Wert-Eintrag hinzu.
-4. **Ändern eines Wertes**: Ändere den Wert eines bestehenden Eintrags in einem Dictionary.
-5. **Entfernen eines Eintrags**: Entferne einen Eintrag aus einem Dictionary.
-6. **Durchlaufen mit Schleifen**: Durchlaufe ein Dictionary und gib alle Schlüssel und deren zugehörige Werte aus.
-7. **Nur Schlüssel durchlaufen**: Durchlaufe ein Dictionary und gib nur die Schlüssel aus.
-8. **Nur Werte durchlaufen**: Durchlaufe ein Dictionary und gib nur die Werte aus.
-9. **Schlüssel-Existenz prüfen**: Überprüfe, ob ein bestimmter Schlüssel in einem Dictionary existiert.
-10. **Nested Dictionary**: Erstelle ein verschachteltes Dictionary (ein Dictionary innerhalb eines anderen Dictionaries)
+### 1. **Grundlegendes Dictionary**: 
+Erstelle ein Dictionary mit drei Schlüssel-Wert-Paaren und gib es aus.
+### 2. **Zugriff auf Werte**:
+Greife auf einen Wert in einem Dictionary zu und gib ihn aus.
+### 3. **Hinzufügen eines Eintrags**: 
+Füge einem bestehenden Dictionary einen neuen Schlüssel-Wert-Eintrag hinzu.
+### 4. **Ändern eines Wertes**: 
+Ändere den Wert eines bestehenden Eintrags in einem Dictionary.
+### 5. **Entfernen eines Eintrags**: 
+Entferne einen Eintrag aus einem Dictionary.
+### 6. **Durchlaufen mit Schleifen**:
+Durchlaufe ein Dictionary und gib alle Schlüssel und deren zugehörige Werte aus.
+### 7. **Nur Schlüssel durchlaufen**: 
+Durchlaufe ein Dictionary und gib nur die Schlüssel aus.
+### 8. **Nur Werte durchlaufen**: 
+Durchlaufe ein Dictionary und gib nur die Werte aus.
+### 9. **Schlüssel-Existenz prüfen**: 
+Überprüfe, ob ein bestimmter Schlüssel in einem Dictionary existiert.
+### 10. **Nested Dictionary**:
+Erstelle ein verschachteltes Dictionary (ein Dictionary innerhalb eines anderen Dictionaries)
     und greife auf ein Element des inneren Dictionaries zu.
 
-## Komplex-Aufgaben
+[Lösungen](solution.md#lösungen)
+
+# Komplex-Aufgaben
 
 ### Aufgabe 1: Wortzähler
 
@@ -141,166 +153,4 @@ Diese Aufgaben kombinieren die Nutzung von Dictionaries mit anderen grundlegende
 Bedingungsanweisungen. Sie sind darauf ausgelegt, das Verständnis und die Fähigkeiten im Umgang mit Dictionaries und
 Datenstrukturen im Allgemeinen zu verbessern.
 
-# Lösungen
-
-1. **Grundlegendes Dictionary**
-```python
-mein_dict = {"Name": "Anna", "Alter": 30, "Beruf": "Ingenieurin"}
-print(mein_dict)
-```
-
-2. **Zugriff auf Werte**
-```python
-print(mein_dict["Name"])  # Gibt "Anna" aus
-```
-
-3. **Hinzufügen eines Eintrags**
-```python
-mein_dict["Stadt"] = "Berlin"
-print(mein_dict)
-```
-
-4. **Ändern eines Wertes**
-```python
-mein_dict["Alter"] = 31
-print(mein_dict)
-```
-
-5. **Entfernen eines Eintrags**
-```python
-del mein_dict["Beruf"]
-print(mein_dict)
-```
-
-6. **Durchlaufen mit Schleifen**
-```python
-for key, value in mein_dict.items():
-   print(f"{key}: {value}")
-```
-
-7. **Nur Schlüssel durchlaufen**
-```python
-for key in mein_dict.keys():
-   print(key)
-```
-
-8. **Nur Werte durchlaufen**
-```python
-for value in mein_dict.values():
-   print(value)
-```
-
-9. **Schlüssel-Existenz prüfen**
-```python
-key = "Name"
-if key in mein_dict:
-   print(f"{key} ist im Dictionary vorhanden.")
-else:
-   print(f"{key} ist nicht im Dictionary vorhanden.")
-```
-
-10. **Nested Dictionary**
-```python
-mein_nested_dict = {
-    "person1": {"Name": "Max", "Alter": 25},
-    "person2": {"Name": "Lisa", "Alter": 28}
-}
-print(mein_nested_dict["person1"]["Name"])  # Gibt "Max" aus
-```
-
-## Komplex-Aufgaben
-
-Hier sind die Lösungen für die vorgeschlagenen komplexen Aufgaben mit Python Dictionaries:
-
-### Lösung zu Aufgabe 1: Wortzähler
-
-```python
-text = input("Gib einen Text ein: ").lower()
-wort_haeufigkeit = {}
-
-for wort in text.split():
-    if wort in wort_haeufigkeit:
-        wort_haeufigkeit[wort] += 1
-    else:
-        wort_haeufigkeit[wort] = 1
-
-print(wort_haeufigkeit)
-```
-
-### Lösung zu Aufgabe 2: Telefonbuch
-
-```python
-telefonbuch = {}
-
-while True:
-    aktion = input("Wähle eine Aktion: hinzufügen, suchen, ändern, löschen, beenden: ")
-
-    if aktion == "beenden":
-        break
-    elif aktion == "hinzufügen":
-        name = input("Name: ")
-        nummer = input("Telefonnummer: ")
-        telefonbuch[name] = nummer
-    elif aktion == "suchen":
-        name = input("Name: ")
-        print(telefonbuch.get(name, "Nicht gefunden"))
-    elif aktion == "ändern":
-        name = input("Name: ")
-        if name in telefonbuch:
-            nummer = input("Neue Telefonnummer: ")
-            telefonbuch[name] = nummer
-        else:
-            print("Name nicht im Telefonbuch")
-    elif aktion == "löschen":
-        name = input("Name: ")
-        if name in telefonbuch:
-            del telefonbuch[name]
-        else:
-            print("Name nicht im Telefonbuch")
-
-    print("Aktuelles Telefonbuch:", telefonbuch)
-```
-
-### Lösung zu Aufgabe 3: Lagerbestandsverwaltung
-
-```python
-lager = {}
-
-while True:
-    aktion = input("Aktion wählen: hinzufügen, aktualisieren, löschen, anzeigen, beenden: ")
-
-    if aktion == "beenden":
-        break
-    elif aktion == "hinzufügen":
-        produkt = input("Produktname: ")
-        menge = int(input("Menge: "))
-        lager[produkt] = lager.get(produkt, 0) + menge
-    elif aktion == "aktualisieren":
-        produkt = input("Produktname: ")
-        if produkt in lager:
-            menge = int(input("Neue Menge: "))
-            lager[produkt] = menge
-        else:
-            print("Produkt nicht gefunden")
-    elif aktion == "löschen":
-        produkt = input("Produktname: ")
-        if produkt in lager:
-            del lager[produkt]
-        else:
-            print("Produkt nicht gefunden")
-    elif aktion == "anzeigen":
-        for produkt, menge in lager.items():
-            print(f"{produkt}: {menge}")
-
-    print("Aktueller Lagerbestand:", lager)
-```
-
-### Lösung zu Aufgabe 4: Verschachteltes Dictionary analysieren
-
-```python
-studenten = {"Anna": {"Mathe": 1, "Englisch": 2}, "Max": {"Mathe": 3, "Englisch": 2}}
-
-for name, faecher in studenten.items():
-    durchschnitt = sum(faecher.values()) / len(faecher)
-    print(f"{name}: Durchschnittsnote = {durchschnitt:.2f}")
-```
+[Lösungen](solution.md#komplex-aufgaben)

@@ -56,7 +56,21 @@ fruechte = ("Apfel", "Banane", "Kirsche")
 print(fruechte[0])  # Gibt 'Apfel' aus
 print(fruechte[-1])  # Gibt 'Kirsche' aus (letztes Element)
 ```
-TODO: Auf Slicing eingehen
+
+Mit sogenannten Slices kann man auch direkt auf mehrere Elemente zugreifen:
+
+```python
+print(fruechte[0:2]) # gibt ('Apfel', 'Banane') aus
+```
+
+Dies ist exakt identische zum Slicing bei Listen und Strings:
+
+```python
+[startwert:stopwert+1:schrittweite]
+```
+
+Wenn wir also `[2:6:2]` schreiben, sagen wir, dass wir beim dritten Element starten wollen, dann jedes zweite Element 
+nehmen und bei fünf (stopwert + 1 = 6 => stopwert = 5) aufhören. Also erhalten wir das dritte und das fünfte Element. 
 
 ### Unveränderlichkeit von Tupeln
 
@@ -104,7 +118,7 @@ print(person_info)
 print(name, alter, groesse)
 ```
 
-### Verwendung von Tupeln als Schlüssel in einem Wörterbuch
+### Verwendung von Tupeln als Schlüssel in einem Dictionary
 
 ```python
 # Koordinaten als Schlüssel für Orte
@@ -135,31 +149,43 @@ zusammenfasst. Für jede Funktion/Methode gibt es eine kurze Beschreibung und ei
 Diese Funktionen und Methoden sind grundlegend für die Arbeit mit Tupeln und ermöglichen es uns, grundlegende Abfragen
 und Operationen auf Tupel-Datenstrukturen durchzuführen.
 
-## Aufgaben
+# Aufgaben
 TODO: Prüfe die Aufgaben auf Machbarkeit
-1. Erstelle ein Tupel mit den Namen von fünf verschiedenen Früchten.
-2. Zugriff auf das zweite Element im Tupel von Aufgabe 1.
-3. Ändere das zweite Element im Tupel von Aufgabe 1 auf "Erdbeere" (Trickfrage).
-4. Überprüfe, ob "Apfel" in dem Tupel von Aufgabe 1 enthalten ist.
-5. Zähle, wie oft die Frucht "Banane" im Tupel von Aufgabe 1 vorkommt.
-6. Erstelle ein neues Tupel, das die Elemente des Originaltupels in umgekehrter Reihenfolge enthält.
-7. Erstelle ein Tupel aus den ersten drei Elementen des Tupels von Aufgabe 1.
-8. Kombiniere das Tupel von Aufgabe 1 mit einem neuen Tupel, das drei Gemüsesorten enthält.
-9. Multipliziere das Tupel von Aufgabe 1, um ein Tupel zu erstellen, das jedes Element dreimal enthält.
-10. Erstelle ein verschachteltes Tupel, das das Originaltupel von Aufgabe 1 und das Gemüsetupel von Aufgabe 8 enthält.
-11. Finde den Index des Elements "Kirsche" im Tupel von Aufgabe 1.
-12. Erstelle ein Tupel mit Zahlen von 1 bis 5 und berechne die Summe der Zahlen.
-13. Sortiere das Tupel von Aufgabe 12 in absteigender Reihenfolge (Hinweis: Tupel können nicht sortiert werden, aber es
-    gibt einen Workaround).
-14. Überprüfe, ob das Tupel von Aufgabe 1 ein Subtupel von dem in Aufgabe 10 erstellten verschachtelten Tupel ist.
-15. Schreibe Code, die ein beliebiges Tupel nimmt und jedes Element davon in Großbuchstaben ausgibt (Hinweis:
-    Funktioniert nur mit Strings).
-16. Welchen Typ haben `a=(3,)` und `b=(3)`? 
+### Tupel erstellen
+Erstelle ein Tupel mit den Namen von fünf verschiedenen Früchten.
+### 2. Auf Tupelelemente zugreifen
+Zugriff auf das zweite Element im Tupel von Aufgabe 1.
+### 3.Tupelelemente ändern
+Ändere das zweite Element im Tupel von Aufgabe 1 auf "Erdbeere" (Trickfrage).
+### 4. Ist das Element im Tupel?
+Überprüfe, ob "Apfel" in dem Tupel von Aufgabe 1 enthalten ist.
+### 5. Zählen
+Zähle, wie oft die Frucht "Banane" im Tupel von Aufgabe 1 vorkommt.
+### 6. Umgekehrte Reihenfolge
+Erstelle ein neues Tupel, das die Elemente des Originaltupels in umgekehrter Reihenfolge enthält.
+### 7. Tupel vom Tupel
+Erstelle ein Tupel aus den ersten drei Elementen des Tupels von Aufgabe 1.
+### 8. Tupel kombinieren
+Kombiniere das Tupel von Aufgabe 1 mit einem neuen Tupel, das drei Gemüsesorten enthält.
+### 9. Multiplikation
+Multipliziere das Tupel von Aufgabe 1, um ein Tupel zu erstellen, das jedes Element dreimal enthält.
+### 10. Tupel verschachteln
+Erstelle ein verschachteltes Tupel, das das Originaltupel von Aufgabe 1 und das Gemüsetupel von Aufgabe 8 enthält.
+### 11. Index zum Element finden
+Finde den Index des Elements "Kirsche" im Tupel von Aufgabe 1.
+### 12. Summe der Tupelelemente
+Erstelle ein Tupel mit Zahlen von 1 bis 5 und berechne die Summe der Zahlen.
+### 13. Sortieren
+Sortiere das Tupel von Aufgabe 12 in absteigender Reihenfolge (Hinweis: Tupel können nicht sortiert werden, aber es
+gibt einen Workaround).
+### 14. Subtupel
+Überprüfe, ob das Tupel von Aufgabe 1 ein Subtupel von dem in Aufgabe 10 erstellten verschachtelten Tupel ist.
 
-## Komplex-Aufgaben
+### 15. Reingelegt
+Welchen Typ haben `a=(3,)` und `b=(3)`? 
 
-### Komplexe Aufgaben
-
+# Komplex-Aufgaben
+[]
 #### Aufgabe 1: Einkaufsliste Manager
 
 **Aufgabenstellung:**
@@ -171,7 +197,19 @@ Schreibe ein Programm, das eine Einkaufsliste verwaltet. Der Benutzer kann folge
 4. Beenden des Programms.
 
 Die Einkaufsliste sollte eine Liste von Tupeln sein, wobei jedes Tupel aus einem Produktname und der dazugehörigen Menge
-besteht.
+besteht. 
+
+Hinweis:
+
+Mit folgendem Code kannst du Dinge unendlich oft wiederholen:
+
+```python
+while True:
+    #... dein code ...
+
+    if aktion == "b":    # Die Nutzereingabe wurde in die Variable `aktion` eingelesen
+        break
+```
 
 
 ## Zusammenfassung
@@ -180,63 +218,5 @@ Zusammenfassend sind Tupel eine einfache, aber mächtige Datenstruktur in Python
 für die Speicherung von Daten, die sich nicht ändern sollen, wie feste Konfigurationen oder Einstellungen. Das
 Verständnis, wann und wie man Tupel verwendet, ist eine grundlegende Fähigkeit in der Python-Programmierung und trägt zu
 robusterem und fehlerresistenterem Code bei.
-
-## Lösungen
-
-1. `fruechte = ("Apfel", "Banane", "Kirsche", "Orange", "Mango")`
-2. `print(fruechte[1]) # Gibt 'Banane' aus`
-3. Dies ist nicht möglich, da Tupel unveränderlich sind.
-4. `print("Apfel" in fruechte) # Gibt True aus, falls Apfel enthalten ist`
-5. `print(fruechte.count("Banane")) # Gibt die Anzahl der 'Banane' aus`
-6. `umgekehrtes_tupel = fruechte[::-1]`
-7. `erste_drei = fruechte[:3]`
-8. `gemuese = ("Karotte", "Brokkoli", "Zwiebel")`
-   `kombiniert = fruechte + gemuese`
-9. `dreifach = fruechte * 3`
-10. `verschachtelt = (fruechte, gemuese)`
-11. `print(fruechte.index("Kirsche")) # Gibt den Index von 'Kirsche' aus`
-12. `zahlen = (1, 2, 3, 4, 5)`
-    `print(sum(zahlen)) # Gibt die Summe aus, also 15`
-13. `sortierte_zahlen = tuple(sorted(zahlen, reverse=True))`
-14. `print(fruechte in verschachtelt) # Gibt True aus, falls fruechte ein Subtupel ist`
-15.
-TODO: Diese Aufgabe ist zu diesem Zeitpunkt noch nicht lösbar!
-```python
-def drucke_gross(tupel):
-    for element in tupel:
-        if isinstance(element, str):
-            print(element.upper())
-
-
-drucke_gross(fruechte)
-```
-
-Dies druckt jedes String-Element im Tupel in Großbuchstaben aus.
-
-### Einkaufslistenmanager
-
-**Lösung:**
-TODO: Diese Aufgabe ist zu diesem Zeitpunkt noch nicht lösbar!
-```python
-einkaufsliste = []
-
-while True:
-    aktion = input("Wähle eine Aktion: Hinzufügen (h), Entfernen (e), Anzeigen (a), Beenden (b): ")
-
-    if aktion == "h":
-        produkt = input("Gib den Produktnamen ein: ")
-        menge = input("Gib die Menge ein: ")
-        einkaufsliste.append((produkt, menge))
-    elif aktion == "e":
-        produkt = input("Gib den Namen des zu entfernenden Produkts ein: ")
-        einkaufsliste = [item for item in einkaufsliste if item[0] != produkt]
-    elif aktion == "a":
-        for produkt, menge in einkaufsliste:
-            print(f"{produkt}: {menge}")
-    elif aktion == "b":
-        break
-    else:
-        print("Ungültige Eingabe.")
-```
 
 

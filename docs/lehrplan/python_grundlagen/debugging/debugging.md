@@ -75,7 +75,7 @@ Software, die für einen Produktiveinsatz entwickelt wird, sollte immer eine For
     Performance-relevante Informationen können geloggt werden, um Engpässe und Leistungsprobleme zu identifizieren.
 
 #### Logging in der Praxis
-TODO: Vllt das in einen Bonusteil verschieben oder Aufgaben dazu?
+
 - **Logging-Level**: 
    Verschiedene Logging-Levels (wie INFO, DEBUG, ERROR) ermöglichen es, die Menge und den Detailgrad der 
   Log-Nachrichten zu steuern.
@@ -151,7 +151,9 @@ inspizieren und steuern.
 
 ### Übungsaufgaben
 
-1. **Haltepunkt setzen**: Füge in der folgenden Funktion einen Haltepunkt hinzu und führe das Programm aus. 
+### 1. **Haltepunkt setzen**: 
+Füge in der folgenden Funktion einen Haltepunkt hinzu und führe das Programm aus. 
+
 Untersuche die Werte von `a` und `b`, bevor die Summe berechnet wird.
 ```python
 def addiere(a, b):
@@ -162,8 +164,9 @@ ergebnis = addiere(5, 7)
 print(ergebnis)
 ```
 
-2. **Nächste Zeile ausführen**: Betrachte das folgende Python-Skript. Führe es mit pdb aus und benutze den Befehl n (next),
-um die Ausführung bis zur print-Anweisung Zeile für Zeile zu durchlaufen.
+###  2. **Nächste Zeile ausführen**: 
+Betrachte das folgende Python-Skript. Führe es mit pdb aus und benutze den Befehl n (next), um die Ausführung bis zur 
+print-Anweisung Zeile für Zeile zu durchlaufen.
 ```python 
 import pdb
 
@@ -175,7 +178,8 @@ def quadriere(zahl):
 print(quadriere(4))
 ```
 
-3. **In eine Funktion eintreten**: In dem folgenden Code, tritt mit dem s (step) Befehl in die Funktion berechne_differenz 
+### 3. **In eine Funktion eintreten**: 
+In dem folgenden Code, tritt mit dem s (step) Befehl in die Funktion berechne_differenz 
 ein. Prüfe die Variablen innerhalb der Funktion.
 ```python
 import pdb
@@ -188,7 +192,8 @@ ergebnis = berechne_differenz(10, 5)
 print(ergebnis)
 ```
 
-4. **Werte ausdrucken**: Verwende p (print), um den Wert von ergebnis in dem folgenden Programm auszugeben, bevor es mit 
+### 4. **Werte ausdrucken**:
+Verwende p (print), um den Wert von ergebnis in dem folgenden Programm auszugeben, bevor es mit 
 dem c (continue) Befehl fortgesetzt wird.
 ```python
 import pdb
@@ -201,7 +206,8 @@ ergebnis = multipliziere(6, 7)
 print(ergebnis)
 ```
 
-5. **Haltepunkte dynamisch setzen**: Anstatt pdb.set_trace() direkt im Code zu verwenden, starte das folgende Programm mit 
+### 5. **Haltepunkte dynamisch setzen**: 
+Anstatt pdb.set_trace() direkt im Code zu verwenden, starte das folgende Programm mit 
 dem Python-Interpreter im Debug-Modus (`python -m pdb script.py`). Setze dann einen Haltepunkt bei der Zeile, die die 
 Multiplikation ausführt. Führe das Programm bis zu diesem Haltepunkt aus und überprüfe die Werte von x und y.
 ```python
@@ -212,21 +218,5 @@ def multipliziere(x, y):
 ergebnis = multipliziere(3, 3)
 print(ergebnis)
 ```
+[Lösungen](solution.md)
 
-
-## Lösungen
-Die Lösungen beziehen sich auf die Aktionen, die ausgeführt werden sollen, um mit dem Debugger zu interagieren:
-
-1. Füge `pdb.set_trace()` vor `return a + b` ein. Starte das Programm und verwende den Befehl `p a` und `p b`, 
-um die Werte zu überprüfen.
-2. Starte das Programm und verwende `n`, um jede Zeile auszuführen. Beobachte, wie die Variable `ergebnis` berechnet 
-wird.
-3. Starte das Programm und benutze `s`, um in die Funktion `berechne_differenz` einzutreten. Verwende `p x` und `p y`, 
-um die Werte zu überprüfen.
-4. Starte das Programm und verwende `p ergebnis`, um den Wert der Variable `ergebnis` auszugeben, dann `c`, um das 
-Programm zu beenden.
-5. Starte das Programm im Debug-Modus mit `python -m pdb script.py`. Setze einen Haltepunkt mit `b multipliziere` und 
-überprüfe `x` und `y` mit `p x` und `p y`, bevor du `c` ausführst.
-
-TODO: Ich wusste gar nicht, dass es so ein modul in python gibt. Was ich meinte, war einfach das debugging mit 
-einer IDE wie IntelliJ. Das würde ich auch als erstes zeigen und das hier als einen bonus.
