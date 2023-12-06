@@ -65,13 +65,12 @@ Hier ist, wie Sie die Spalte `Gewicht` aus Ihrer Tabelle `Werkzeuge` entfernen k
    Löschen Sie nun die alte Tabelle `Werkzeuge`.
 
          DROP TABLE Werkzeuge;
-   
+
 4. **Benennen Sie die neue Tabelle um**:
    Benennen Sie die neue Tabelle `Werkzeuge_neu` in `Werkzeuge` um.
 
          ALTER TABLE Werkzeuge_neu RENAME TO Werkzeuge;
 
-   
 Nachdem Sie diese Schritte ausgeführt haben, haben Sie effektiv die Spalte `Gewicht` aus Ihrer Tabelle `Werkzeuge`
 entfernt. Stellen Sie sicher, dass Sie vor dem Durchführen dieser Operationen eine Sicherungskopie Ihrer Datenbank
 erstellen, um Datenverlust zu vermeiden.
@@ -124,5 +123,95 @@ Hier sind die Schritte, um Fremdschlüsselbeziehungen für die `Werkzeuge`-Tabel
 3. **Löschen Sie die alte Tabelle**:
 
 4. **Benennen Sie die neue Tabelle um**:
+
+## Constraints und Default-Werte
+
+Bei der Erstellung von Tabellen in SQLite ist es wichtig, Constraints und Default-Werte zu berücksichtigen, um die
+Datenintegrität und Standardverhalten zu gewährleisten. Hier ist eine Ergänzung, die sich auf die Verwendung von
+Constraints und Default-Werten in der Tabelle `Werkzeuge` konzentriert:
+
+### Hinzufügen von Constraints
+
+Constraints sind Regeln, die auf die Daten in einer Tabelle angewendet werden, um deren Genauigkeit und Zuverlässigkeit
+sicherzustellen. In SQLite können Sie verschiedene Arten von Constraints definieren, wie `UNIQUE`, `NOT NULL`, `CHECK`,
+und `FOREIGN KEY`.
+
+Beispiel für die Erweiterung der `Werkzeuge`-Tabelle mit Constraints:
+
+```sql
+CREATE TABLE Werkzeuge
+(
+    id                INT PRIMARY KEY,
+    bezeichnung       TEXT NOT NULL,
+    gewicht           REAL,
+    farbe             TEXT,
+    waren_gruppe      TEXT,
+    waren_untergruppe TEXT,
+    UNIQUE (bezeichnung),
+    CHECK (gewicht >= 0)
+);
+```
+
+In diesem Beispiel wird sichergestellt, dass die `bezeichnung` eindeutig und nicht null ist und das `gewicht` nicht
+negativ ist.
+
+### Hinzufügen von Default-Werten
+
+Default-Werte werden verwendet, um einem Feld automatisch einen Wert zuzuweisen, wenn beim Einfügen eines Datensatzes
+kein Wert für dieses Feld angegeben wird. Dies kann hilfreich sein, um Standardwerte für bestimmte Felder festzulegen.
+
+Beispiel für die Erweiterung der `Werkzeuge`-Tabelle mit Default-Werten:
+
+```sql
+CREATE TABLE Werkzeuge
+(
+    id                INT PRIMARY KEY,
+    bezeichnung       TEXT NOT NULL,
+    gewicht           REAL DEFAULT 0,
+    farbe             TEXT DEFAULT 'Unbekannt',
+    waren_gruppe      TEXT,
+    waren_untergruppe TEXT
+);
+```
+
+Hier wird, falls kein `gewicht` angegeben wird, automatisch der Wert `0` gesetzt, und für `farbe` wird 'Unbekannt' als
+Standardwert verwendet, falls kein Wert angegeben wird.
+
+### Zusammenfassung
+
+Durch das Hinzufügen von Constraints und Default-Werten in der `Werkzeuge`-Tabelle können Sie die Datenintegrität
+verbessern und sicherstellen, dass die Datenbank konsistente und sinnvolle Informationen enthält. Diese Praktiken sind
+entscheidend für die Erstellung robuster und zuverlässiger Datenbankstrukturen in SQLite.
+
+## Modifikation von Constraints und Default-Werten mit ALTER
+
+In SQLite ist die Modifikation von Constraints und Default-Werten nach der Erstellung einer Tabelle begrenzt.
+Der `ALTER TABLE`-Befehl in SQLite unterstützt nicht direkt das Hinzufügen, Entfernen oder Ändern von Constraints oder
+Default-Werten in bestehenden Tabellen. Dies stellt eine Einschränkung dar, die bei der Datenbankplanung und -wartung
+berücksichtigt werden muss. Hier sind einige wichtige Punkte:
+
+1. **Ändern von Default-Werten**: SQLite erlaubt nicht das direkte Ändern von Default-Werten mit dem `ALTER TABLE`
+   -Befehl. Um einen Default-Wert zu ändern, müssen Sie eine neue Tabelle mit der geänderten Definition erstellen, die
+   Daten übertragen, die alte Tabelle löschen und die neue Tabelle umbenennen.
+
+2. **Hinzufügen oder Entfernen von Constraints**: Ähnlich wie bei Default-Werten unterstützt SQLite nicht das direkte
+   Hinzufügen oder Entfernen von Constraints (wie `UNIQUE`, `NOT NULL`, `CHECK`, `FOREIGN KEY`) in einer bestehenden
+   Tabelle. Um Constraints hinzuzufügen oder zu entfernen, müssen Sie den gleichen Prozess wie beim Ändern von
+   Default-Werten befolgen: Erstellen einer neuen Tabelle, Übertragen der Daten, Löschen der alten Tabelle und
+   Umbenennen der neuen Tabelle.
+
+3. **Praktische Überlegungen**: Diese Einschränkungen bedeuten, dass sorgfältige Planung erforderlich ist, bevor eine
+   Tabelle erstellt wird. Es ist wichtig, alle erforderlichen Constraints und Default-Werte im Voraus zu
+   berücksichtigen. Änderungen nachträglich können zeitaufwendig sein und erfordern eine sorgfältige Datenmigration.
+
+4. **Datenmigration**: Bei der Datenmigration ist es entscheidend, die Datenintegrität zu wahren. Es empfiehlt sich,
+   eine vollständige Sicherung der Datenbank vorzunehmen, bevor Änderungen durchgeführt werden. Außerdem sollten die
+   Daten nach der Migration überprüft werden, um sicherzustellen, dass keine Daten verloren gegangen sind oder verändert
+   wurden.
+
+Zusammenfassend lässt sich sagen, dass während SQLite eine flexible und leichte Datenbanklösung bietet, die
+Einschränkungen im Zusammenhang mit dem `ALTER TABLE`-Befehl eine Herausforderung darstellen können. Eine
+vorausschauende Planung und sorgfältige Datenmigration sind entscheidend, um die Struktur und Integrität der Datenbank
+im Laufe der Zeit zu erhalten und zu verwalten.
 
 [zurück](datenbanken.md)
