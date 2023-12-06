@@ -1,7 +1,5 @@
 # Indizes und Referentielle Integrität
 
-## Einführung
-
 In diesem Abschnitt der Schulungsunterlage werden wir uns mit zwei wichtigen Aspekten von SQLite-Datenbanken
 beschäftigen: Indizes und referentielle Integrität. Diese Konzepte sind entscheidend für die Effizienz und
 Zuverlässigkeit von Datenbankoperationen.
@@ -20,7 +18,7 @@ graph LR
     B -- Beschleunigt --> C[Suchanfragen]
 ```
 
-### Wie funktionieren Indizes?
+### Wie funktionieren Indizes allgemein?
 
 Indizes werden in einer separaten Datenstruktur gespeichert, die es der Datenbank ermöglicht, schnell auf die Position
 der gesuchten Daten in der Tabelle zuzugreifen.
@@ -42,7 +40,7 @@ Weiterverarbeitung von Daten den Namen und den Vornamen eines Mitarbeiters getre
 Um jemanden zu suchen kann es sinnvoll sein, die Kombination aus Vornamen und Nachnamen als Index zu verwenden, um die
 Suche zu beschleunigen.
 
-## Grundkonzept eines Index
+### Grundkonzept eines Index
 
 Um die Funktionsweise eines Index in einer Datenbank zu verstehen, beginnen wir mit einem einfachen Beispiel: einem
 Array. Ein Array ist eine Sammlung von Elementen, die in einer festgelegten Reihenfolge gespeichert sind. Jedes Element
@@ -56,12 +54,14 @@ ist die grundlegende Idee hinter einem Datenbankindex.
 
 ## Funktionsweise eines Datenbankindex
 
+Tiefer gehende Erläuterung der Funktionsweise von Indizes.
+
 ### Struktur eines Index
 
 In Datenbanken ist ein Index eine separate Datenstruktur (wie ein B-Baum, Hash-Tabelle oder ähnliches), die effizienten
 Zugriff auf die Datensätze einer Tabelle ermöglicht.
 
-#### B-Baum-Struktur
+### B-Baum-Struktur
 
 Die meisten Datenbanken, einschließlich SQLite, verwenden für ihre Indizes eine B-Baum-Struktur. Ein B-Baum ist ein
 selbst balancierender Baum, der eine sortierte Reihenfolge der Elemente und schnellen Zugriff auf diese Elemente
@@ -77,7 +77,7 @@ gewährleistet.
 
 #### Beispiel
 
-```sql
+```sqlite
 CREATE INDEX idx_nachname ON Personen (Nachname);
 ```
 
@@ -177,9 +177,7 @@ halten.
 
 Beschäftigen sie sich mit dem Flußdiagramm und versuchen sie zu verstehen, wie das System des B-Baumes funktioniert.
 
-## Referentielle Integrität
-
-### Was ist referentielle Integrität?
+# Referentielle Integrität
 
 Referentielle Integrität ist ein Konzept in relationalen Datenbanken, das sicherstellt, dass Beziehungen zwischen
 Tabellen konsistent bleiben.
@@ -197,6 +195,17 @@ erDiagram
         string Artikel
     }
 ```
+
+In dieser Darstellung sehen wir eine 1:N Beziehung. Das bedeutet, das es für jeden Eintrag in der Tabelle Personen
+mehrere Einträge in der Tabelle der bestellungen geben kann. Andersherum kann es in für jede Bestellung nur eine Person
+geben.
+
+Weitere möglich Beziehungen sind 
+- **1:1** für jeden Eintrag in der Tabelle existiert genau ein Eintrag in der anderen Tabelle.
+- **M:N** für jeden Eintrag in der einen Tabelle gibt es mehrere Einträge in der anderen Tabelle und umgekehrt.
+
+**Begriff:** Kardinalität
+Dies ist der fachlich korrekte Bezeichner für diese Art von Beziehungen.
 
 ### Schlüsselrollen
 
@@ -226,10 +235,11 @@ und `Bestellungen` die abhängige Tabelle (Child Table).
 
 Zuerst erstellen Sie die Haupttabelle `Personen`, die einen Primärschlüssel hat:
 
-```sql
-CREATE TABLE Personen (
+```sqlite
+CREATE TABLE Personen
+(
     PersonenID INTEGER PRIMARY KEY,
-    Name TEXT NOT NULL
+    Name       TEXT NOT NULL
 );
 ```
 
@@ -238,11 +248,12 @@ CREATE TABLE Personen (
 Dann erstellen Sie die Tabelle `Bestellungen` mit einem Fremdschlüssel, der auf den Primärschlüssel der
 Tabelle `Personen` verweist:
 
-```sql
-CREATE TABLE Bestellungen (
+```sqlite
+CREATE TABLE Bestellungen
+(
     BestellungsID INTEGER PRIMARY KEY,
-    Artikel TEXT NOT NULL,
-    PersonenID INTEGER,
+    Artikel       TEXT NOT NULL,
+    PersonenID    INTEGER,
     FOREIGN KEY (PersonenID) REFERENCES Personen (PersonenID)
 );
 ```
