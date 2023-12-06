@@ -20,16 +20,16 @@ Folgene Schritte sind dazu zu unternehmen:
 
 So soll es aussehen:
 
-![Frische Arbeitsumgebung](img_15.png)
+![Frische Arbeitsumgebung](images/img_15.png)
 
 ## Arbeiten mit dem Databank Navigator [40min]
 
 Über das grüne Plus-Zeichen in diesen Dialog legt man eine neue Datenbank an oder stellt eine neue Verbindung zu einer
 bestehenden Datenbank her.
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 SQLite erstellt für jede Datenbank eine eigene Datei.
 
@@ -44,23 +44,23 @@ noch nicht, so wählt man nur das Verzeichnis aus und hängt den Namen per Tasta
 
 Es sollte auch der Datenbankname im Feld **Name** angepasst werden.
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 mit Klick auf ok sind wir hier:
 
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
 Mittels Doppelklick auf die Datenbankverbindung öffnet sich ein Editorfenster, dass es uns ermöglicht, Befehle an die 
 Datenbank zu senden.
 
-![img_14.png](img_14.png)
+![img_14.png](images/img_14.png)
 
 Ein Klick auf Settings öffnet erneut den Konfigurationsdialog. Nachdem man die betreffende Datenbank ausgewählt hat,
 genügt der Klick auf das rote Minus-Zeichen, um die **Datenbankverbindung** zu löschen.
 
-![img_13.png](img_10.png)
+![img_13.png](images/img_10.png)
 
-![img_11.png](img_11.png)
+![img_11.png](images/img_11.png)
 
 Die Datenbank selbst bleibt im Verzeichnis bestehen.
 
@@ -70,7 +70,7 @@ Die Datenbank selbst bleibt im Verzeichnis bestehen.
 
 Gibt man in der Konsole **sqlite3** ein, zeigt das Ergebnis, ob sqlite installiert und erreichbar ist.
 
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
 Dabei zeigt die Konsole zwei wichtige Hinweise
 
@@ -90,15 +90,15 @@ Dabei zeigt die Konsole zwei wichtige Hinweise
 
     Der zu verwendende Befehl lautet .quit oder (was nicht angegeben ist) CTRL-D.
 
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 **Lösung 2:**
 
-![img_7.png](img_7.png)
+![img_7.png](images/img_7.png)
 
 Schauen wir uns den Projektbaum an:
 
-![img_8.png](img_8.png)
+![img_8.png](images/img_8.png)
 
 Im oben gezeigten Bild ist die Datei mydb.db zu sehen.
 **Das muss nicht sein!** Je nachdem, ob Lösung 1 oder Lösung 2 verwendet wurde, ist das Ergebnis unterschiedlich.
@@ -107,7 +107,7 @@ Außerdem ist auch die Dartstellung im Baum unterschiedlich.
 Das Listensymbol weist auf eine völlig leere Datenbank hin, während ein Blatt Papier Symbol auf bestehende Daten
 hinweist.
 
-![img_12.png](img_12.png)
+![img_12.png](images/img_12.png)
 
 Im .help Verzeichnis findet sich kein Kommando, um eine Datenbank zu löschen.
 Man erledigt das einfach durch das Löschen der Datei im Projektbaum.
