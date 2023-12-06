@@ -1,32 +1,5 @@
 # Tag 3 - Simple Web Frontends
 
-Inhalt:
-- API-Recap 
-  - Hinter "fast jeder" Website steckt ein Backend
-
-- Wie entsteht eine Website?
-  - Web Basics
-    - Websites Building Blocks
-      - Das Dokument Objekt Model (DOM) 
-      - Anschauen einer Website mit den Webtools
-        - Elemente
-        - Console
-        - Cookies & Localstorage
-    - HTML, CSS, JS
-    - HTTP(S)
-    - Web-Accessibility
-
-  - HTML Deep Dive
-    - Die wichtigsten Tags
-    - CSS
-
-    - Formulare
-    - Responsive CSS 
-      - Responsive Design
-        - Flexbox
-    - Bootstrap
-
-
 # API-Recap 
 Hinter fast jeder modernen Website oder Webanwendung steht ein Backend, das häufig über eine API (Application Programming Interface) mit dem Frontend kommuniziert. 
 

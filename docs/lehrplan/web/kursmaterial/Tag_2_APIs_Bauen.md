@@ -1,32 +1,5 @@
 # Tag 2 - APIs Bauen
 
-### Inhalt
-- Wie baut man eine API?
-  - Wie funktionieren APIs intern?
-    - Flussdiagram
-    - API Architektur Prinzipien
-      - JSON (und XML)
-    - Deployment (Ausblick)
-      - Cloud (Azure)
-      - Docker
-    - Flask & Django
-      - Intro & Unterschiede
-      - Beispiele
-        - Hallo Welt der APIs
-          - Live-Coding zur Demonstration der "Einfachheit"
-        - localhost / HTTP(S) Server
-          - Wie kann ein lokales Programm auf HTTP Requests nach "außen" hören?
-
-    - Flask Advanced
-      - Restful API Designs
-      - ORMs
-      - Routen
-      - Data Handling
-      - Fehler Codes
-      - Postman & Python Requests Testing
-        - Wie testet man einfach APIs? (Rückblick Testing 4-5)
-        - Postman Collections Repeatable Testing mit Postman
-
 # Wie baut man eine API?
 ## Rückblick - Was ist eine API?
 Im letzten Kapitel haben wir gelernt, dass API für Application Programming Interface steht. APIs ermöglichen es Entwicklern, komplexe Funktionen zu nutzen, ohne diese von Grund auf neu entwickeln zu müssen. So können beispielsweise Entwickler einer Wetter-App die API eines Wetterdienstes nutzen, um aktuelle Wetterdaten abzurufen, anstatt selbst eine umfassende Wetterdateninfrastruktur aufzubauen.

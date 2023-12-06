@@ -1,29 +1,5 @@
 # Tag 1 - APIs Intro
 
-### Inhalt
-- Was sind APIs?
-  - APIs zeigen (Was haben folgende Angebote gemeinsam?) sowie Vergleiche mit realen Beispielen
-  - Flussdiagram zu Request-Response
-  - Welche Arten von APIs gibt es?
-    - REST (Fokus)
-    - GraphQL (Kurzer Ausblick)
-    - WebSockets (Kurzer Ausblick)
-  - Wie "spricht" man mit einer API?
-    - CURL  
-    - Python Request Library
-    - Postman (Ausblick zum API Testing mit Postman)
-
-    - Kostenlose online APIs nutzen
-    - Analyse und Vergleich von API-Antworten: https://open-meteo.com/ und https://brightsky.dev/
-      - Reflexionsrunde: Warum sie die Antworten der beiden APIs unterschiedlich?
-
-   - Python Requests Deep Dive
-    - Python Requests Library
-      - Methods / Headers / Data / Params
-        - GET/POST/PUT/DELETE: Gemeinsamkeiten mit Datenbanken (Recap CRUD - Woche 6-7)
-        - Authentication/Keys/Content-Type/User-Agent/Accept/Cookie
-
-
 # Was ist eine API?
 API steht für Application Programming Interface. APIs ermöglichen es Entwicklern, komplexe Funktionen zu nutzen, ohne diese von Grund auf neu entwickeln zu müssen. So können beispielsweise Entwickler einer Wetter-App die API eines Wetterdienstes nutzen, um aktuelle Wetterdaten abzurufen, anstatt selbst eine umfassende Wetterdateninfrastruktur aufzubauen
 
