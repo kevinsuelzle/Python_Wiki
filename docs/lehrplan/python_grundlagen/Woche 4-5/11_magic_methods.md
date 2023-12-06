@@ -67,7 +67,7 @@ print(str(differenz))  # Ausgabe: (-2, 2)
 # Weitere magische Methoden können ähnlich verwendet werden.
 ```
 
-# Neue Schlüsselwörter:
+# Magic Methods:
 
 - `__str__`: Diese magische Methode wird aufgerufen, wenn die `str`-Funktion auf ein Objekt angewendet wird. Sie ermöglicht die Definition einer benutzerfreundlichen Zeichenfolge, die das Objekt repräsentiert. [Dokumentation](https://docs.python.org/3/reference/datamodel.html#object.__str__)
 
@@ -76,8 +76,6 @@ print(str(differenz))  # Ausgabe: (-2, 2)
 - `__len__`: Diese magische Methode wird aufgerufen, wenn die `len`-Funktion auf ein Objekt angewendet wird. Sie ermöglicht die Definition der Anzahl von Elementen in einem Objekt. [Dokumentation](https://docs.python.org/3/reference/datamodel.html#object.__len__)
 
 - `__sub__`: Diese magische Methode wird aufgerufen, wenn das `-`-Zeichen auf ein Objekt angewendet wird. Sie ermöglicht die Definition der Subtraktion von zwei Objekten der Klasse. [Dokumentation](https://docs.python.org/3/reference/datamodel.html#object.__sub__)
-
-# Weitere Magic Methods:
 
 - `__eq__`: Diese magische Methode wird aufgerufen, um die Gleichheit von zwei Objekten zu überprüfen. [Dokumentation](https://docs.python.org/3/reference/datamodel.html#object.__eq__)
 

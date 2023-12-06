@@ -72,26 +72,6 @@ class Auto:
         print(f"Marke: {self.marke}, Farbe: {self.farbe}")
 ```
 
-# Neue Schlüsselwörter:
-
-- **`class`:** Das Schlüsselwort in Python, um eine Klasse zu definieren. [Python Docs - class](https://docs.python.org/3/tutorial/classes.html)
-
-- **`self`:** Ein Konventionsschlüsselwort in Python, das als erstes Argument in den Methoden einer Klasse verwendet wird und auf die Instanz der Klasse verweist. [Python Docs - instance](https://docs.python.org/3/tutorial/classes.html#instance-objects)
-
-- **Instanzmethode:** Eine Methode, die auf Instanzen einer Klasse angewendet wird und automatisch das `self`-Argument enthält. [Python Docs - instance methods](https://docs.python.org/3/tutorial/classes.html#instance-methods)
-
-
-# Neue Begriffe:
-
-- **Klasse:** Ein Bauplan für Objekte, der Attribute (Variablen) und Methoden (Funktionen) definiert. In Python wird eine Klasse mit dem Schlüsselwort `class` erstellt.
-
-- **Objekt:** Eine Instanz einer Klasse. Mit dem Befehl `objekt = Klasse()` wird eine Instanz der Klasse erstellt.
-
-- **Instanz:** Ein konkretes Vorkommen eines Objekts. Wenn du ein Objekt von einer Klasse erstellst, erstellst du eine Instanz dieser Klasse.
-
-- **Attribut:** Eine Variable, die zur Darstellung von Eigenschaften oder Merkmalen eines Objekts verwendet wird. In Python können Attribute in der `__init__`-Methode der Klasse initialisiert werden.
-
-- **Methode:** Eine Funktion, die zu einer Klasse gehört und auf Objekten dieser Klasse aufgerufen wird. Methoden werden innerhalb der Klasse definiert und können auf Objekten dieser Klasse aufgerufen werden.
 
 # Aufgaben zu Klassen
 [360min]

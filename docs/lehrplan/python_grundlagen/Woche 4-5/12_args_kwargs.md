@@ -47,13 +47,6 @@ def drucke_infos(name, **infos):
 drucke_infos("Max", alter=23, stadt="Wolfsburg", beruf="Softwareentwickler")
 ```
 
-# Neue Schlüsselwörter:
-
-- `*args`: Erlaubt den Umgang mit einer variablen Anzahl von nicht-schlüsselwortbasierten Argumenten in Funktionen.
-- `**kwargs`: Ermöglicht den Umgang mit einer variablen Anzahl von schlüsselwortbasierten Argumenten in Funktionen.
-
-[Weitere Informationen zu *args und **kwargs in der Python-Dokumentation](https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions)
-
 # Aufgaben:
 [240min]
 

@@ -649,9 +649,7 @@ dem Muster "Was muss das Ergebnis einer Addition, Subtraktion, etc sein".
 Ziel ist es eine möglichst hohe Testabdeckung zu erreichen!
 5. Welches Verhalten sollte bei der `div()` Methode umbedingt getestet werden? 
 
-# Neue Schlüsselwörter
-
-
+# Wichtige Begriffe zusammengefasst:
 
 - **Unittest**: Das `unittest`-Modul ist ein integriertes Testframework in Python, das Testfälle und Testsuiten bereitstellt. Es ermöglicht die Strukturierung von Tests und das Vergleichen von erwarteten und tatsächlichen Ergebnissen. Unittests können dazu verwendet werden, die Korrektheit von Funktionen, Klassen und Modulen sicherzustellen.
 

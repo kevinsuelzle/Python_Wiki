@@ -82,16 +82,6 @@ else:
 
 Es ist wichtig zu betonen, dass Exception Handling nicht als Mechanismus zur Ablaufsteuerung genutzt werden sollte. Ausnahmen sollten nicht für die Kontrolle des normalen Programmflusses verwendet werden, sondern ausschließlich für die Behandlung von unerwarteten Ereignissen und Fehlerzuständen.
 
-
-# Neue Schlüsselwörter:
-
-- [`try`](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement): Einleitung des Blocks
-- [`except`](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement): Die Behandlug der Ausnahme.
-- [`finally`](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement): Abschluss, wird immer ausgeführt.
-- [`raise`](https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement): Werfen einer Ausnahme.
-- [`else`](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement): Falls keine Ausnahme auftrat (optional)
-- [`class`](https://docs.python.org/3/tutorial/classes.html): Schlüsselwort um Klassen zu erstellen (kommt in späterem Kapitel), welches benötigt wird ume eine eigene Ausnahme zu definieren.
-
 # Aufgaben
 
 [180min]

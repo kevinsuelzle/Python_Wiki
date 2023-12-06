@@ -61,12 +61,6 @@ print(mein_elektroauto.starten())   # Ausgabe: "Tesla Model S wird gestartet. El
 print(mein_elektroauto.aufladen())  # Ausgabe: "Tesla Model S wird aufgeladen."
 ```
 
-# Neue Schlüsselwörter:
-
-- **Vererbung:** Das Konzept, bei dem eine Klasse (Unterklasse) von einer anderen Klasse (Basisklasse) erbt, um deren Attribute und Methoden zu nutzen und/oder zu erweitern. [Python Docs - Vererbung](https://docs.python.org/3/tutorial/classes.html#inheritance)
-
-- **super():** Ein Funktionsaufruf, der in einer abgeleiteten Klasse verwendet wird, um auf Methoden oder Attribute der Basisklasse zuzugreifen. [Python Docs - super()](https://docs.python.org/3/library/functions.html#super)
-
 # Aufgaben:
 [320min]
 

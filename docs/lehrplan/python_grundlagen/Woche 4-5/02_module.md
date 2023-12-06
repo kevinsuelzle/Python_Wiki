@@ -116,13 +116,6 @@ Zusammenfassung
 
 Module und Pakete sind wichtig, um Code zu organisieren und wiederzuverwenden. Du kannst Module importieren, Alias verwenden, Bedingungen für den direkten Aufruf festlegen und mit Paketen eine noch höhere Organisationsebene erreichen. Dies ermöglicht eine flexible und saubere Strukturierung deines Codes.
 
-# Neue Schlüsselwörter:
-
-- [**import:**](https://docs.python.org/3/reference/simple_stmts.html#import) Importiert ein Modul oder Teile davon in ein Python-Skript.
-- [**from:**](https://docs.python.org/3/reference/simple_stmts.html#from) Importiert spezifische Teile aus einem Modul oder Paket.
-- [**as:**](https://docs.python.org/3/reference/simple_stmts.html#the-import-statement) Ermöglicht das Festlegen von Aliasen für Module oder importierte Teile.
-- [**__init__.py:**](https://docs.python.org/3/reference/import.html#regular-packages) Initialisiert ein Paket und erleichtert den Zugriff auf Module darin.
-
 # Aufgaben
 [120min]
 

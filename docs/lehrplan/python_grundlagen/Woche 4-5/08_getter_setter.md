@@ -75,31 +75,6 @@ class Buch:
         print(f"Titel: {self._titel}, Autor: {self._autor}")
 ```
 
-# Neue Schlüsselwörter:
-
-- **Getter und Setter:**  
-Getter und Setter sind Methoden, die den Lese- und Schreibzugriff auf Attribute ermöglichen. Der Getter liest den Wert eines Attributs, während der Setter den Wert setzt. [Python Docs - property](https://docs.python.org/3/library/functions.html#property)
-
-- **@property:**  
-`@property` ist ein Dekorator in Python, der es ermöglicht, eine Methode wie ein Attribut zu behandeln. Es wird verwendet, um den Zugriff auf Attribute zu steuern. [Python Docs - property](https://docs.python.org/3/library/functions.html#property)
-
-- **@setter:**  
-`@setter` ist ein spezifischer Dekorator, der mit `@property` verwendet wird, um die Setzung eines Attributs zu steuern. Es wird verwendet, um die Zuweisung eines Werts über den Setter zu ermöglichen. [Python Docs - property](https://docs.python.org/3/library/functions.html#property)
-
-- **_ (Einzelnes Unterstrich):**  
-Ein einzelnes Unterstrichzeichen vor einem Attribut (z. B. `_attribut`) signalisiert, dass es als schwach "internen" oder "privaten" Verweis betrachtet werden sollte. Es ist jedoch nur eine Konvention und hat keine eigentliche Auswirkung auf die Sichtbarkeit. [Python Docs - Benennungskonventionen](https://www.python.org/dev/peps/pep-0008/#single-leading-underscore)
-
-# Neue Begriffe:
-
-- **Getter:**  
-Ein Getter ist eine Methode, die den Wert eines privaten Attributs zurückgibt. Es ermöglicht den Lesezugriff auf das Attribut von außerhalb der Klasse. Der Getter wird normalerweise mit `@property` implementiert.
-
-- **Setter:**  
-Ein Setter ist eine Methode, die den Wert eines privaten Attributs setzt. Es ermöglicht den Schreibzugriff auf das Attribut von außerhalb der Klasse. Der Setter wird normalerweise mit `@setter` implementiert.
-
-- **Sichtbarkeit (Visibility):**  
-Sichtbarkeit bezieht sich auf die Zugriffsberechtigungen von Attributen und Methoden. In Python gibt es keine strikte Privatsphäre, sondern nur Konventionen, die durch Namenskonventionen und Name Mangling erreicht werden.
-
 # Aufgaben:
 [240min]
 

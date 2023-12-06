@@ -45,14 +45,6 @@ total_now = Car.get_total_cars()
 print(total_now)  # Ausgabe: 2 (nach der Instanziierung von zwei Autos)
 ```
 
-## Neue Schlüsselwörter:
-
-- **staticmethod:**  
-[`staticmethod`](https://docs.python.org/3/library/functions.html#staticmethod) ist ein Dekorator für die Definition statischer Methoden in Python.
-
-- **classmethod:**  
-[`classmethod`](https://docs.python.org/3/library/functions.html#classmethod) ist ein Dekorator für die Definition von Klassenmethoden in Python.
-
 # Aufgaben:
 [320min]
 

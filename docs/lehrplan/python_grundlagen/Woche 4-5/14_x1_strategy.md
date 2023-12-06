@@ -41,14 +41,6 @@ cart2 = ShoppingCart(paypal_payment)
 cart2.checkout(150)
 ```
 
-# Neue Schlüsselwörter:
-
-- **Verhaltensmuster:** Ein Verhaltensmuster definiert, wie Objekte zusammenarbeiten, um bestimmte Verhaltensweisen zu realisieren. Es legt fest, wie Klassen und Objekte miteinander interagieren.
-
-- **Algorithmus:** Ein Algorithmus ist eine Schritt-für-Schritt-Anleitung zur Lösung eines bestimmten Problems oder zur Durchführung einer Aufgabe. Im Kontext des Strategy Patterns sind verschiedene Algorithmen austauschbar.
-
-- **Austauschbarkeit:** Das Strategy Pattern ermöglicht die Austauschbarkeit von Algorithmen, indem es sie kapselt und es einem Client ermöglicht, zwischen ihnen zu wechseln.
-
 # Aufgaben:
 
 ## 1. Rabattberechnung 🌶️🌶️🌶️

@@ -35,13 +35,6 @@ print(f"European Socket Voltage: {european_socket.voltage()}V")
 print(f"Adapter Voltage: {adapter.voltage()}V (adapted)")
 ```
 
-## Neue Schlüsselwörter:
-
-- **Schnittstellen:** Schnittstellen definieren, welche Methoden eine Klasse bereitstellen muss, ohne die Implementierung vorzugeben. Sie dienen als Art Vertrag, den Klassen erfüllen müssen.
-
-- **Kompatibilität:** Im Kontext von Design Patterns bezieht sich Kompatibilität darauf, wie gut verschiedene Klassen oder Komponenten miteinander arbeiten können, insbesondere wenn ihre Schnittstellen unterschiedlich sind.
-
-- **Zusammenarbeit:** Zusammenarbeit beschreibt die Interaktion und Koordination von verschiedenen Klassen oder Komponenten, um ein gemeinsames Ziel zu erreichen.
 
 # Aufgaben:
 [150min]
