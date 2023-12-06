@@ -45,14 +45,6 @@ print(suv.drive())          # Ausgabe: Fahre als SUV.
 
 Die Klasse `Car` dient als Schnittstelle, und die konkreten Klassen `CompactCar` und `SUV` implementieren die spezifischen Details für Kleinwagen und SUVs. Die `CarFactory` erstellt Autos basierend auf dem angegebenen Autotyp.
 
-# Neue Schlüsselwörter:
-
-- **Erzeugungsmuster:** Erzeugungsmuster befassen sich mit der Art und Weise, wie Objekte erstellt werden. Sie kapseln den Instanziierungsprozess und stellen sicher, dass die Art der Erstellung eines Objekts flexibel bleibt.
-
-- **Schnittstelle:** Eine Schnittstelle definiert, welche Methoden eine Klasse implementieren muss, ohne die genaue Implementierung vorzuschreiben. Im Kontext des Factory Method Patterns kann eine Schnittstelle die abstrakte Methode darstellen, die von den konkreten Produkten implementiert wird.
-
-- **Instantiierung:** Instantiierung bezieht sich auf den Prozess, bei dem eine Klasse ein Objekt erstellt. Im Zusammenhang mit Erzeugungsmustern wie dem Factory Method Pattern wird die Instantiierung in abgeleitete Klassen ausgelagert.
-
 # Aufgaben:
 [220min]
 

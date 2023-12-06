@@ -44,16 +44,16 @@
 
 # Block 2
 
-| KW  | Unterricht | Weitere Übungen | Lernziele | Begriffssammlung |
-|-----|------------|-----------------|-----------|------------------|
-|     |            |                 |           |                  |
-|     |            |                 |           |                  |
+| KW  | Unterricht | Lernziele | Begriffssammlung |
+|-----|------------|-----------|------------------|
+|     |            |           |                  |
+|     |            |           |                  |
 
 # Block 3
 
-| KW  | Unterricht | Weitere Übungen | Lernziele | Begriffssammlung |
-|-----|------------|-----------------|-----------|------------------|
-|     |            |                 |           |                  |
-|     |            |                 |           |                  |
+| KW  | Unterricht | Lernziele | Begriffssammlung |
+|-----|------------|-----------|------------------|
+|     |            |           |                  |
+|     |            |           |                  |
 
 

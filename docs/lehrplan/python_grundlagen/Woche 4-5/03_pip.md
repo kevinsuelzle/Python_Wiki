@@ -68,14 +68,6 @@ Beispiel:
 
 Durch diese Befehle wird Pip angewiesen, den angegebenen Proxy zu verwenden, wenn es auf das Internet zugreift, und falls erforderlich, wird auch die Authentifizierung durchgeführt.
 
-# Neue Schlüsselwörter:
-
-- [pip](https://pip.pypa.io/en/stable/)
-- [install](https://pip.pypa.io/en/stable/cli/pip_install/)
-- [upgrade](https://pip.pypa.io/en/stable/cli/pip_install/#upgrading-packages)
-- [uninstall](https://pip.pypa.io/en/stable/cli/pip_uninstall/)
-- [list](https://pip.pypa.io/en/stable/cli/pip_list/)
-- [search](https://pip.pypa.io/en/stable/cli/pip_search/)
 
 # Aufgaben
 [60min]

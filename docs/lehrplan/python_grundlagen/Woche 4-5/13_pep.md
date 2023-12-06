@@ -59,23 +59,6 @@ def example_function(param1, param2):
 
 Weitere Details findest du [hier](https://www.python.org/dev/peps/pep-0257/).
 
-# Neue Schlüsselwörter:
-
-- [PEP 8](https://www.python.org/dev/peps/pep-0008/)
-- [PEP 20](https://www.python.org/dev/peps/pep-0020/)
-- [PEP 257](https://www.python.org/dev/peps/pep-0257/)
-- Style Guide
-- Zen of Python
-- Docstrings
-
-# Neue Begriffe:
-
-- **Docstring:** Ein Docstring ist eine Zeichenkette (String) in einem Python-Script, Modul, einer Funktion oder Klasse, die dazu dient, die Funktionalität und Verwendung des Codes zu dokumentieren. Docstrings werden häufig verwendet, um automatisch generierte Dokumentation zu erstellen.
-
-- **PEPs (Python Enhancement Proposals):** PEPs sind Vorschläge für Verbesserungen des Python-Programmiersprachekerns. Diese Vorschläge können neue Funktionen, Erweiterungen bestehender Funktionen oder Änderungen an der Python-Infrastruktur umfassen. PEPs dienen als Diskussionsgrundlage für die Python-Community und werden durch die Zustimmung der Beteiligten implementiert.
-
-- **Konventionen:** In der Programmierung bezieht sich der Begriff "Konventionen" auf bestimmte Vereinbarungen und Standards, die von Entwicklern befolgt werden, um den Code einheitlich und leicht verständlich zu gestalten. Dies kann beispielsweise die Benennung von Variablen, die Einrückung oder die Verwendung von Leerzeichen betreffen. PEP 8 ist ein Beispiel für einen Leitfaden, der Konventionen für den Python-Code festlegt.
-
 # Aufgaben:
 [120min]
 

@@ -92,16 +92,6 @@ Hier eine Übersicht
 | "t"   | Textmodus     | [Link](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) |
 | "+"   | Aktualisieren (Lesen/Schreiben) | [Link](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) |
 
-# Neue Schlüsselwörter:
-
-- **open:** Die `open`-Funktion in Python wird verwendet, um eine Datei zu öffnen. Sie akzeptiert den Dateipfad und den gewünschten Modus als Parameter. Die Funktion gibt ein Dateiobjekt zurück, das für Lese-, Schreib- oder beides verwendet werden kann.
-
-- **absolute Pfade:** Absolute Pfade geben den vollständigen Speicherort einer Datei oder eines Verzeichnisses im Dateisystem an. Sie beginnen normalerweise mit dem Wurzelverzeichnis und sind unabhängig vom aktuellen Arbeitsverzeichnis.
-
-- **relative Pfade:** Relative Pfade geben den Pfad in Bezug auf das aktuelle Arbeitsverzeichnis an, in dem das Python-Skript ausgeführt wird. Sie sind nicht vollständig, sondern relativ zum aktuellen Standort.
-
-- **"r"-Präfix:** Das "r"-Präfix vor einem Pfad in Python steht für "raw" (roh) und wird verwendet, um Escape-Zeichen zu deaktivieren. Dies ist besonders nützlich, um Probleme mit Escape-Zeichen in Windows-Pfaden zu vermeiden.
-
 # Aufgaben:
 [240min]
 

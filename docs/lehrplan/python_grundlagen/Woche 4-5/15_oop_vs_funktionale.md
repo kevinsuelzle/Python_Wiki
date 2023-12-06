@@ -129,13 +129,6 @@ def square_function(x):
 square_lambda = lambda x: x ** 2
 ```
 
-# Neue Schlüsselwörter:
-
-- **Unveränderlichkeit:** Betont die Verwendung von unveränderlichen Daten. [Dokumentation](https://docs.python.org/3/library/functools.html#immutable-functional-data)
-- **Höhere Ordnung:** Funktionen, die andere Funktionen als Argumente akzeptieren oder Funktionen zurückgeben. [Dokumentation](https://docs.python.org/3/howto/functional.html#higher-order-functions)
-- **Rekursion:** Die Technik, bei der eine Funktion sich selbst aufruft. [Dokumentation](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
-- **Lambda-Funktionen:** Anonyme Funktionen, erstellt mit dem `lambda`-Schlüsselwort. [Dokumentation](https://docs.python.org/3/reference/expressions.html#lambda)
-
 # Aufgaben:
 [100min]
 
