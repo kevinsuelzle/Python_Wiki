@@ -1,3 +1,0 @@
-# Checkliste zur Selbsteinschätzung
-- Ich weiß, wie man Zeichenketten in Python definiert
-- Ich kenne häufig verwendete Funktionen im Zusammenhang mit Strings in Python

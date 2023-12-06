@@ -123,12 +123,3 @@ Es ist wichtig zu betonen, dass Exception Handling nicht als Mechanismus zur Abl
 
 ### 9. Fehlerbehandlung in Rekursion 🌶️🌶️🌶️
    - Schreibe eine rekursive Funktion zur Berechnung der Fakultät einer Zahl. Behandle den Basisfall und mögliche `RecursionError`-Ausnahmen durch eine angemessene Fehlerbehandlung.
-
-
-# Checkliste
-
-- [ ] Ich weiß, was Ausnahmen von Compilerfehlern unterscheidet
-- [ ] Ich weiß, was ein Laufzeitfehler ist
-- [ ] Ich kenne wege Fehler zu behandeln
-- [ ] Ich kenne die Sytax von `try`-`except`
-- [ ] Ich weiß wofür ein `finally`-Block gebraucht wird

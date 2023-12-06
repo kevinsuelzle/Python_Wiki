@@ -120,10 +120,3 @@ adapter = FahrenheitToCelsiusAdapter(fahrenheit_temperature=fahrenheit_source)
 existing_application = ExistingApplication()
 existing_application.process_temperature(temperature=adapter.adapt_temperature())
 ```
-
-
-# Checkliste: 
-
-- [ ] Ich verstehe das Adapter-Entwurfsmuster und seine Anwendung.
-- [ ] Ich kann das Adapter-Entwurfsmuster in Python implementieren.
-- [ ] Ich kenne die Rolle von Adaptern bei der Integration von Komponenten.

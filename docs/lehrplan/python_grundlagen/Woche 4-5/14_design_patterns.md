@@ -28,10 +28,3 @@ Es gibt verschiedene Arten von Design Patterns, die in drei Hauptkategorien unte
 Die Wahl eines Design Patterns hängt vom spezifischen Anwendungsfall und den Anforderungen des Projekts ab. Ein Klassiker ist das Buch "Design Patterns: Elements of Reusable Object-Oriented Software" von Erich Gamma und seinen Kollegen.
 
 ![Gamma](res/gamma.jpg)
-
-
-## Checkliste: 14_design_patterns.md
-
-- [ ] Ich verstanden warum es Entwurfsmuster in der Softwareentwicklung gibt.
-- [ ] Ich kenne einige häufig verwendete Entwurfsmuster und deren Anwendungsbereiche.
-- [ ] Ich verstehe, wie Entwurfsmuster zur Lösung bestimmter Probleme in der Softwareentwicklung eingesetzt werden.

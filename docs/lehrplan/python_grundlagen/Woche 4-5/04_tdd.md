@@ -694,11 +694,4 @@ def ist_primzahl(n):
    - Schreibe zuerst die Unit-Tests und dann die Implementierung.
    - Achte auf eine hohe Testabdeckung.
    - Beachte insbesondere die Testfälle für die `div()` Methode, um sicherzustellen, dass unerwartete Fehler oder Divisionen durch Null behandelt werden.
-
-# Checkliste: 
-
-- [ ] Ich verstehe die Grundprinzipien von Test-driven Development (TDD).
-- [ ] Ich kann Testfälle in Python schreiben und ausführen.
-- [ ] Ich bin mir der Bedeutung von Unit-Tests, Integrationstests und Funktionstests bewusst.
-- [ ] Ich das Testframework `unittest`.
-- [ ] Ich verstehe die Syntax von `assert`
+   

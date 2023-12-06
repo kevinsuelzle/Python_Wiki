@@ -130,10 +130,3 @@ _Tipp_: Du kannst dich an dem Beispiel zum addieren zweiter Punkte orientieren.
 ## 5. **Indizierte Wörterbuchklasse** 🌶️🌶️🌶️🌶️
 
    Erstelle eine Klasse `IndiziertesWörterbuch`, die wie ein Wörterbuch funktioniert, aber zusätzlich zur normalen Funktionalität auch den Zugriff auf Einträge über den Index ermöglicht. Implementiere die magischen Methoden `__getitem__` und `__setitem__` entsprechend.
-
-
-# Checkliste: 
-
-- [ ] Ich kenne die Konzepte der magischen Methoden (Magic Methods) in Python.
-- [ ] Ich kann magische Methoden für spezielle Operationen in eigenen Klassen implementieren.
-- [ ] Ich verstehe, wie magische Methoden in Python die Verwendung von Operatoren ermöglichen.
