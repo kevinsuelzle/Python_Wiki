@@ -23,4 +23,4 @@ In den folgenden Teilen zeigen wir dir den lokalen Umgang mit git sowie den im T
 
 ##[Lernziele](../../checklists/checklist_git.md)
 
-##[Begriffssammlung](../begriffssammlung.md)
+##[Begriffssammlung](../../begriffe/begriffe_git.md)

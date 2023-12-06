@@ -109,52 +109,52 @@ Mathematik kennen!
 # Aufgaben
 [30min]
 
-### 1. **Addition**:
+### 1. **Addition**🌶
 Addiere 5 und 3. Gib das Ergebnis aus.
-### 2. **Subtraktion**: 
+### 2. **Subtraktion**🌶
 Subtrahiere 2 von 10. Gib das Ergebnis aus.
-### 3. **Multiplikation**:
+### 3. **Multiplikation**🌶
 Multipliziere 4 mit 2. Gib das Ergebnis aus.
-### 4. **Division**:
+### 4. **Division**🌶
 Teile 16 durch 2. Gib das Ergebnis aus.
-### 5. **Ganzzahlige Division**:
+### 5. **Ganzzahlige Division**🌶
 Führe eine ganzzahlige Division von 17 durch 2 durch. Gib das Ergebnis aus.
-### 6. **Modulo**: 
+### 6. **Modulo**:🌶
 Finde den Rest der Division von 18 durch 10. Gib das Ergebnis aus.
-### 7. **Potenzierung**:
+### 7. **Potenzierung**🌶
 Erhebe 2 in die 3. Potenz. Gib das Ergebnis aus.
-### 8. **Quadratwurzel**: 
+### 8. **Quadratwurzel**:🌶🌶
 Berechne die Quadratwurzel von 64. Gib das Ergebnis aus.
-### 9. **Exponentialfunktion**: 
+### 9. **Exponentialfunktion**:🌶🌶
 Berechne e^3 (e ist die Basis des natürlichen Logarithmus). Gib das Ergebnis aus.
-### 10. **Natürlicher Logarithmus**:
+### 10. **Natürlicher Logarithmus**🌶🌶
 Berechne den natürlichen Logarithmus von 8. Gib das Ergebnis aus.
-### 11. **Komplexe Rechnung**:
+### 11. **Komplexe Rechnung**🌶
 Berechne das Ergebnis von (3 + 4) * 5. Gib das Ergebnis aus.
-### 12. **Vergleich**: 
+### 12. **Vergleich**: 🌶
 Überprüfe, ob das Produkt von 2 und 3 gleich 6 ist. Gib das Ergebnis aus.
-### 13. **Runden**: 
+### 13. **Runden**: 🌶🌶
 Runde die Zahl 2.7 auf die nächste ganze Zahl. Gib das Ergebnis aus.
-### 14. **Negative Zahlen**: 
+### 14. **Negative Zahlen**: 🌶
 Berechne das Produkt von -3 und 3. Gib das Ergebnis aus.
-### 15. **Variable in Rechnung**: 
+### 15. **Variable in Rechnung**: 🌶
 Definiere eine Variable `x` mit dem Wert 5 und berechne `x * x`. Gib das Ergebnis aus.
-### 16. **Verschiedene Operationen**: 
+### 16. **Verschiedene Operationen**: 🌶
 Berechne das Ergebnis von `2 + 3 * 5`.
-### 17. **Einsatz von Klammern**: 
+### 17. **Einsatz von Klammern**: 🌶
 Ändere den Ausdruck `2 + 3 * 5` so ab, dass zuerst die Addition und dann die 
 Multiplikation ausgeführt wird.
-### 18. **Potenzierung und Division**: 
+### 18. **Potenzierung und Division**: 🌶
 Berechne das Ergebnis von `4 ** 2 / 8`.
-### 19. **Mehrere Operationen**: 
+### 19. **Mehrere Operationen**: 🌶
 Finde das Ergebnis von `3 + 4 * 2 - 1`.
-### 20. **Komplexer Ausdruck**: 
+### 20. **Komplexer Ausdruck**: 🌶
 Berechne den Wert von `(3 + 4) * (5 - 2) ** 2`.
 
 [Lösungen](solutions.md)
 
 # Komplex-Aufgaben
-### **Zinsrechner**
+### **Zinsrechner**🌶🌶🌶
 
 [40 min] 
 
@@ -166,7 +166,7 @@ Jahren abfragen.
 - Berechne die Endsumme, die sich aus der Formel Endsumme = Anfangskapital * (1 + Zinssatz/100 * Jahre) ergibt. 
 - Gib das berechnete Ergebnis aus.
 
-### **Umrechner für Temperaturen**
+### **Umrechner für Temperaturen**🌶🌶🌶
 
 [40 min]
 
