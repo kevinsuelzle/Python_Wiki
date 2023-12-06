@@ -52,42 +52,42 @@ nicht nur theoretisch besprechen folgen jetzt erstmal eine Reihe an Übungsaufga
 [40min]
 
 
-### 1. **Einfache Ausgabe**: 
+### 1. **Einfache Ausgabe**: 🌶️
 Verwende `print`, um "Hallo Welt" auszugeben. 
-### 2. **Variable ausgeben**: 
+### 2. **Variable ausgeben**: 🌶️
 Erstelle eine Variable `text` mit dem Wert "Python" und gib sie mit `print` aus.
-### 3. **Zahlen ausgeben**: 
+### 3. **Zahlen ausgeben**: 🌶️
 Gib mit `print` die Zahl 100 aus. 
-### 4. **Mehrere Argumente**: 
+### 4. **Mehrere Argumente**: 🌶️
 Verwende `print`, um "Hallo" und "Welt" in derselben Zeile mit einem Leerzeichen dazwischen
 auszugeben. 
-### 5. **Zeilenende ändern**: 
+### 5. **Zeilenende ändern**: 🌶️🌶️
 Benutze `print`, um "Hallo", gefolgt von einem "!", ohne Zeilenumbruch auszugeben. 
-### 6. **Eingabeaufforderung**: 
+### 6. **Eingabeaufforderung**: 🌶️🌶️
 Verwende `input`, um den Benutzer nach seinem Namen zu fragen und speichere das Ergebnis in
 einer Variablen. 
-### 7. **Begrüßung**:
+### 7. **Begrüßung**: 🌶️🌶️
 Frage den Benutzer mit `input` nach seinem Namen und begrüße ihn anschließend mit `print`. 
-### 8. **Numerische Eingabe**: 
+### 8. **Numerische Eingabe**: 🌶️🌶️
 Frage den Benutzer nach seinem Alter und gib es mit `print` aus. 
-### 9. **Kombinierte Eingabe und Ausgabe**:
+### 9. **Kombinierte Eingabe und Ausgabe**: 🌶️🌶️
 Frage den Benutzer nach seinem Lieblingsessen und sage ihm mit `print`, dass du 
 es auch magst. 
-### 10. **Formatierte Ausgabe**:
+### 10. **Formatierte Ausgabe**: 🌶️🌶️
 Frage den Benutzer nach seinem Namen und Alter und gib beides formatiert mit einem
 f-String aus. 
-### 11. **Mehrere Eingaben**:
+### 11. **Mehrere Eingaben**: 🌶️🌶️
 Frage den Benutzer nacheinander nach seinem Vornamen und Nachnamen und gib dann den
 vollständigen Namen aus. 
-### 12. **Rechnung mit Eingabe**:
+### 12. **Rechnung mit Eingabe**: 🌶️🌶️
 Bitte den Benutzer, zwei Zahlen einzugeben, addiere sie und gib das Ergebnis aus. 
-### 13. **Fehlerkorrektur**:
+### 13. **Fehlerkorrektur**: 🌶️🌶️🌶️
 Frage den Benutzer nach einer Zahl, konvertiere die Eingabe in einen Integer und fange dabei 
 Fehler mit einer Fehlermeldung ab. 
-### 14. **Eingabe in Liste speichern**:
+### 14. **Eingabe in Liste speichern**: 🌶️🌶️🌶️
 Bitte den Benutzer um drei Lieblingsfarben und speichere sie in einer Liste. Gib 
 dann die Liste aus. 
-### 15. **Benutzereingaben vergleichen**: 
+### 15. **Benutzereingaben vergleichen**: 🌶️🌶️🌶️
 Frage den Benutzer zweimal nach einem Passwort. Gib eine Erfolgsmeldung aus, 
 wenn beide Eingaben übereinstimmen, ansonsten eine Fehlermeldung.
 
@@ -95,7 +95,7 @@ wenn beide Eingaben übereinstimmen, ansonsten eine Fehlermeldung.
 
 ## Komplex-Aufgaben
 
-### **Aufgabe 1: Persönliche Statistik**
+### **Aufgabe 1: Persönliche Statistik** 🌶️🌶️🌶️
 
 [45min]
 
