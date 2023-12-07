@@ -98,3 +98,5 @@ Sie die Kraft relationaler Datenbanken nutzen, um komplexe Datenanforderungen ef
 ### [Fragen an die Datenbank](unterrichte/joins_and_views.md)
 
 ### [Schlußbemerkungen](unterrichte/finally.md)
+
+Weiter zu [Unterrichtsplan](DB1%20Planung.pdf)

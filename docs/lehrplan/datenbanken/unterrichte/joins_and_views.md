@@ -103,4 +103,4 @@ nützlich ist.
 - Führen sie JOINs in ihre Projekte ein. Suchen sie nach Fällen und Fragestellungen, in denen JOINs sinnvolle Aussagen generieren.
 - Erstellen sie aus den entwickelten JOINs VIEWS, die diese Abfragen fixieren.
 
-[zurück](../datenbanken.md)
+Weiter zu [Schlußbemerkungen](../unterrichte/finally.md) &emsp; | &emsp; [zurück](../datenbanken.md)

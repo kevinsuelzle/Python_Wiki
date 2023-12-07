@@ -89,4 +89,4 @@ Sie sind besonders nützlich in komplexen Abfragen mit langen oder mehrfach verw
 - Führen sie die verschiedenen Kommandos aus.
 - Entwickeln sie eigene Aliasse aufgrund von eigenen Erweiterungen in ihren Daten.
 
-[zurück](../datenbanken.md)
+Weiter zu [Eingebaute Funktionen](../unterrichte/build_in_functions.md) &emsp; | &emsp; [zurück](../datenbanken.md)

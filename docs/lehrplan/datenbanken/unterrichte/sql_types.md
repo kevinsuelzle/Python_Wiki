@@ -9,4 +9,4 @@
 - **DQL (Data Query Language)**: Bezieht sich hauptsächlich auf den SELECT-Befehl, der die Datenbank abfragt, um Daten abzurufen und zu filtern.
 - **DSL (Data Search Language)**: Bezieht sich auf Volltextsuchfähigkeiten.
 
-[zurück](../datenbanken.md)
+Weiter zu [UML für Datenbanken](../unterrichte/uml_diagramme.md) &emsp; | &emsp; [zurück](../datenbanken.md)

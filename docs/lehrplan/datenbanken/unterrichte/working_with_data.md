@@ -347,4 +347,4 @@ Die `UPDATE`- und `DELETE`-Befehle sind wesentliche Werkzeuge in SQLite, um Date
 der Datenintegrität und -aktualität unerlässlich ist. Es ist wichtig, diese Befehle mit Vorsicht zu verwenden,
 insbesondere den `DELETE`-Befehl, da er Daten dauerhaft entfernt.
 
-[zurück](../datenbanken.md)
+Weiter zu [Verwenden von Aliasen](../unterrichte/aliases.md) &emsp; | &emsp; [zurück](../datenbanken.md)

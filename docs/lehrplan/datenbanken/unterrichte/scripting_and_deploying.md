@@ -236,4 +236,4 @@ Das Deployment von SQLite ist aufgrund seiner Einfachheit und Portabilität beso
 mobile Anwendungen und kleinere Webprojekte. Es bietet eine unkomplizierte Lösung für Anwendungen, die eine
 zuverlässige, leichtgewichtige und einfach zu verwaltende Datenbank benötigen.
 
-[zurück](../datenbanken.md)
+Weiter zu [Gruppenarbeit - Projekte](../unterrichte/projects.md) &emsp; | &emsp; [zurück](../datenbanken.md)

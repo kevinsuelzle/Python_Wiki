@@ -131,4 +131,4 @@ Diese Liste bietet eine allgemeine Übersicht über die Elemente, die in einem E
 können. Beachten Sie, dass Mermaid in seiner Fähigkeit, komplexe Datenbankstrukturen darzustellen, begrenzt ist und
 einige spezifische Datenbankkonzepte wie Indizes und Trigger möglicherweise nicht direkt visualisiert werden können.
 
-[zurück](../datenbanken.md)
+Weiter zu [Normalisierung von Daten](../unterrichte/normalization.md) &emsp; | &emsp; [zurück](../datenbanken.md)
