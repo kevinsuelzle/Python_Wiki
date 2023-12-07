@@ -83,7 +83,7 @@ Sie die Kraft relationaler Datenbanken nutzen, um komplexe Datenanforderungen ef
 
 ### [Arbeiten mit Daten](working_with_data.md)
 
-### [Verenden von Aliasen](aliases.md)
+### [Verwenden von Aliasen](aliases.md)
 
 ### [Eingebaute Funktionen](build_in_functions.md)
 
