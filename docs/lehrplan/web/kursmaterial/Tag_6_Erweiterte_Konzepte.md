@@ -1,45 +1,47 @@
 # Tag 6 - Wochenresúme und Erweiterte Konzepte
 
-Inhalt:
+## Woche im Rückblick
+- **Kurzpräsentation der Projekte**: Jedes Projektteam hat 5 Minuten Zeit, um ihre Arbeit zu präsentieren.
+- **Resümee der Woche**: Diskussion der gelernten Konzepte und Techniken.
 
-- Week Recap 
-  - Kurzpräsentation der Projekte (5 min/Projekt)
-  - Resúme der Woche
-    - Was waren die Erkentnisse
-    - Welche Konzepte waren am interessantesten
-    - Bei welchem Projekt habt ihr am meisten gelernt?
-      - Und was genau?
+# Advanced Web Konzepte
 
-- Erweiterte Konzepte
-  - API-Versionierung und Vergleich mit Git (Rückblick auf Git Woche 3-5)
+## Tagesprojekt
+- Ein praxisorientiertes Projekt, das die in der Woche gelernten Konzepte anwendet.
 
-  - Middleware
-    - Aufgabe 1
+## Middleware
+- **Einführung in Middleware**: Verständnis der Rolle und Funktion von Middleware in Webanwendungen.
+- **Aufgabe 1**: Implementieren einer einfachen Middleware in einer Python-Webanwendung.
 
-  - Web Automation
-    - Frontend Testing (Selenium)
-    - Web Crawling mit Requests
-    - Robots.txt
+## API-Versionierung und Vergleich mit Git
+- **Konzepte der API-Versionierung**: Bedeutung und Methoden der API-Versionierung.
+- **Rückblick auf Git**: Wie Versionierung in Git funktioniert und Parallelen zur API-Versionierung.
+- **Beispiel**: Implementierung von Versionsmanagement in einer Flask-API.
 
-    - Aufgabe 2
+## Backend-Workers
+- **Asynchrone Tasks mit Celery**:
+  - Einführung in Celery für asynchrone Aufgabenverarbeitung.
+  - Integration von Celery in eine Flask-Anwendung.
+- **Aufgabe 2**: Erstellen eines asynchronen Tasks in Celery zur Datenverarbeitung.
 
-  - Backend-Workers
-    - Asynchrone Tasks (Celery)
+## Web Automation
+- **Frontend Testing mit Selenium**:
+  - Grundlagen von Selenium für automatisierte Frontend-Tests.
+  - Erstellen eines Testskripts für eine Webanwendung.
+- **Web Crawling mit Requests**:
+  - Einsatz von Python Requests für Web Crawling.
+  - Erstellen eines einfachen Crawlers.
+- **Robots.txt**: Verständnis der Bedeutung und Einhaltung von robots.txt in Webprojekten.
+- **Aufgabe 3**: Automatisieren eines Web-Prozesses mit Selenium und Erstellen eines Crawlers.
 
-    - Aufgabe 3
-
-  - Sicherheit
-    - Web Basics
-      - Ports
-      - Inputs
-    - OAuth
-
-    - Aufgabe 4 + 5
-
-
-## Fragen
-Zeit: 1-2 min / Frage
-1. ...
+## Sicherheit
+- **Web Basics**:
+  - Grundlagen der Netzwerksicherheit: Ports und sichere Datenübertragung.
+  - Einführung in sichere Input-Validierung.
+- **OAuth**:
+  - Grundlagen von OAuth für Authentifizierung und Autorisierung.
+  - Integration von OAuth in eine Flask-Anwendung.
+- **Aufgaben 4 und 5**: Implementierung sicherer Authentifizierungsmechanismen und Schutz der Anwendung vor gängigen Sicherheitsrisiken.
 
 ## Aufgaben
 Zeit: 15-20 min / Aufgabe

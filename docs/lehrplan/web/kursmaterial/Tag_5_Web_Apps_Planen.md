@@ -57,25 +57,25 @@ Unified Modeling Language (UML) ist eine visuelle Sprache zur Darstellung von So
 #### Strukturdiagramme
 Diese Diagramme fokussieren sich auf die statischen Aspekte eines Systems.
 
-1. **Klassendiagramme**: Das Klassendiagramm ist das zentrale Element der UML und unverzichtbar für das Design objektorientierter Systeme. Es stellt Klassen, ihre Attribute, Methoden und die Beziehungen zwischen ihnen dar. Klassen, als grundlegende Bausteine, werden durch Rechtecke repräsentiert, die in drei Teile untergliedert sind: den Klassennamen, ihre Attribute und die Methoden. Die Beziehungen zwischen den Klassen, wie Assoziationen, Aggregationen und Kompositionen, werden durch verschiedene Arten von Verbindungslinien dargestellt.
+**Klassendiagramme**: Das Klassendiagramm ist das zentrale Element der UML und unverzichtbar für das Design objektorientierter Systeme. Es stellt Klassen, ihre Attribute, Methoden und die Beziehungen zwischen ihnen dar. Klassen, als grundlegende Bausteine, werden durch Rechtecke repräsentiert, die in drei Teile untergliedert sind: den Klassennamen, ihre Attribute und die Methoden. Die Beziehungen zwischen den Klassen, wie Assoziationen, Aggregationen und Kompositionen, werden durch verschiedene Arten von Verbindungslinien dargestellt.
 
 Beispielsweise könnte ein Klassendiagramm für ein Einkaufssystem Klassen wie `Kunde`, `Produkt` und `Bestellung` enthalten. Attribute könnten bei `Kunde` beispielsweise `Name`, `Adresse` sein, während Methoden `ProduktHinzufügen()`, `BestellungAufgeben()` umfassen könnten.
 
 ... Beispiel
 
-1. **Objektdiagramme**: Objektdiagramme sind eng verwandt mit Klassendiagrammen. Sie zeigen Instanzen von Klassen zur Laufzeit und illustrieren die Beziehung zwischen Objekten. Im Gegensatz zu Klassendiagrammen, die eine allgemeine Blaupause bieten, stellen Objektdiagramme spezifische Fälle dar und sind hilfreich, um konkrete Szenarien und das Verhalten von Systemen zu veranschaulichen.
+**Objektdiagramme**: Objektdiagramme sind eng verwandt mit Klassendiagrammen. Sie zeigen Instanzen von Klassen zur Laufzeit und illustrieren die Beziehung zwischen Objekten. Im Gegensatz zu Klassendiagrammen, die eine allgemeine Blaupause bieten, stellen Objektdiagramme spezifische Fälle dar und sind hilfreich, um konkrete Szenarien und das Verhalten von Systemen zu veranschaulichen.
 
 ... Beispiel
 
-3. **Komponentendiagramme**: Komponentendiagramme visualisieren die Organisation und Beziehungen zwischen verschiedenen Softwarekomponenten. Sie sind besonders nützlich in großen Systemen, um die Struktur der Softwarearchitektur und Abhängigkeiten zwischen Modulen und Schnittstellen darzustellen.
+**Komponentendiagramme**: Komponentendiagramme visualisieren die Organisation und Beziehungen zwischen verschiedenen Softwarekomponenten. Sie sind besonders nützlich in großen Systemen, um die Struktur der Softwarearchitektur und Abhängigkeiten zwischen Modulen und Schnittstellen darzustellen.
 
 ... Beispiel
 
-4. **Paketdiagramme**: Paketdiagramme organisieren Elemente eines Systems in "Paketen". Diese Diagramme sind hilfreich, um die Struktur großer Systeme zu verstehen und zu zeigen, wie Klassen oder Komponenten in logische Module gruppiert sind.
+**Paketdiagramme**: Paketdiagramme organisieren Elemente eines Systems in "Paketen". Diese Diagramme sind hilfreich, um die Struktur großer Systeme zu verstehen und zu zeigen, wie Klassen oder Komponenten in logische Module gruppiert sind.
 
 ... Beispiel
 
-5. **Verteilungsdiagramme**: Verteilungsdiagramme zeigen die physische Verteilung von Softwarekomponenten auf Hardware. Sie sind wichtig, um zu verstehen, wie verschiedene Teile eines Systems auf Servern, Clients und anderen Geräten verteilt sind.
+**Verteilungsdiagramme**: Verteilungsdiagramme zeigen die physische Verteilung von Softwarekomponenten auf Hardware. Sie sind wichtig, um zu verstehen, wie verschiedene Teile eines Systems auf Servern, Clients und anderen Geräten verteilt sind.
 
 
 ... Beispiel
@@ -83,31 +83,31 @@ Beispielsweise könnte ein Klassendiagramm für ein Einkaufssystem Klassen wie `
 #### Verhaltensdiagramme
 Diese Diagramme beschreiben die dynamischen Aspekte und das Verhalten von Systemelementen.
 
-1. **Anwendungsfalldiagramme**: Anwendungsfalldiagramme illustrieren die Funktionalitäten eines Systems aus der Sicht des Benutzers. Sie sind nützlich, um die Interaktion zwischen Benutzern (oder "Akteuren") und dem System zu verstehen.
+**Anwendungsfalldiagramme**: Anwendungsfalldiagramme illustrieren die Funktionalitäten eines Systems aus der Sicht des Benutzers. Sie sind nützlich, um die Interaktion zwischen Benutzern (oder "Akteuren") und dem System zu verstehen.
 
 ... Beispiel
 
-2. **Aktivitätsdiagramme**: Aktivitätsdiagramme stellen den Fluss von Aktivitäten und die Reihenfolge von Operationen dar. Sie sind nützlich, um den Workflow oder Geschäftsprozess in einem System zu verstehen.
+**Aktivitätsdiagramme**: Aktivitätsdiagramme stellen den Fluss von Aktivitäten und die Reihenfolge von Operationen dar. Sie sind nützlich, um den Workflow oder Geschäftsprozess in einem System zu verstehen.
 
 ... Beispiel
 
-3. **Zustandsdiagramme**: Zustandsdiagramme zeigen die verschiedenen Zustände, die ein Objekt während seines Lebenszyklus durchlaufen kann. Sie sind wichtig, um das Verhalten von Objekten in Reaktion auf Ereignisse darzustellen.
+**Zustandsdiagramme**: Zustandsdiagramme zeigen die verschiedenen Zustände, die ein Objekt während seines Lebenszyklus durchlaufen kann. Sie sind wichtig, um das Verhalten von Objekten in Reaktion auf Ereignisse darzustellen.
 
 ... Beispiel
 
-4. **Sequenzdiagramme**: Sequenzdiagramme illustrieren die Interaktionen zwischen Objekten in einer zeitlichen Abfolge. Sie zeigen, wie Objekte zusammenarbeiten, um eine Funktion auszuführen.
+**Sequenzdiagramme**: Sequenzdiagramme illustrieren die Interaktionen zwischen Objekten in einer zeitlichen Abfolge. Sie zeigen, wie Objekte zusammenarbeiten, um eine Funktion auszuführen.
 
 ... Beispiel
 
-5. **Kommunikationsdiagramme**: Kommunikationsdiagramme, ähnlich wie Sequenzdiagramme, fokussieren auf die Beziehungen und den Nachrichtenaustausch zwischen Objekten. Sie sind hilfreich, um das Zusammenspiel von Objekten in einem System zu verstehen.
+**Kommunikationsdiagramme**: Kommunikationsdiagramme, ähnlich wie Sequenzdiagramme, fokussieren auf die Beziehungen und den Nachrichtenaustausch zwischen Objekten. Sie sind hilfreich, um das Zusammenspiel von Objekten in einem System zu verstehen.
 
 ... Beispiel
 
-6. **Interaktionsübersichtsdiagramme**: Interaktionsübersichtsdiagramme kombinieren Elemente von Sequenz- und Aktivitätsdiagrammen und bieten einen Überblick über den Gesamtablauf von Interaktionen im System.
+**Interaktionsübersichtsdiagramme**: Interaktionsübersichtsdiagramme kombinieren Elemente von Sequenz- und Aktivitätsdiagrammen und bieten einen Überblick über den Gesamtablauf von Interaktionen im System.
 
 ... Beispiel
 
-7. **Zeitdiagramme**: Zeitdiagramme zeigen das Verhalten von Objekten über die Zeit. Sie sind nützlich, um zeitabhängige Aspekte eines Systems zu analysieren, wie z.B. Zustandsänderungen oder Leistungsparameter.
+**Zeitdiagramme**: Zeitdiagramme zeigen das Verhalten von Objekten über die Zeit. Sie sind nützlich, um zeitabhängige Aspekte eines Systems zu analysieren, wie z.B. Zustandsänderungen oder Leistungsparameter.
 
 ... Beispiel
 
@@ -210,10 +210,12 @@ Zeit: 10-15 min / Aufgabe
    - Die Klasse Mitglied sollte die Attribute Name und Mitgliedsnummer und eine Methode BuchAusleihen() enthalten.
    - Stelle eine Assoziation zwischen Buch und Mitglied dar, um das Ausleihen zu visualisieren.
 
+
 2. **Erweitertes Klassendiagramm mit Aggregation**: Erweitere das Bibliothekssystem um Aggregationsbeziehungen.
    - Füge eine Klasse Bibliothek hinzu, die mehrere Buch-Objekte aggregiert.
    - Die Klasse Bibliothek sollte eine Methode BuchHinzufügen() enthalten.
    - Zeige eine Aggregationsbeziehung zwischen Bibliothek und Buch
+
 
 3. **Komplexes Klassendiagramm mit Vererbung und Komposition**: Entwickle ein umfassendes Modell mit Vererbung und Komposition.
    - Erstelle eine abstrakte Klasse Person mit den Attributen Name und Adresse.
@@ -222,12 +224,14 @@ Zeit: 10-15 min / Aufgabe
    - Die Klasse Ausleihhistorie sollte Attribute wie Ausleihdatum und Rückgabedatum und eine Methode EintragHinzufügen() haben.
    - Visualisiere die Vererbung zwischen Person, Mitglied und Mitarbeiter und die Kompositionsbeziehung zwischen Mitglied und Ausleihhistorie.
 
+
 4. **Komplexe UML-Modellierung mit Schnittstellen und Mehrfachvererbung**: Entwickle ein erweitertes UML-Klassendiagramm, das Schnittstellen und Mehrfachvererbung für ein Online-Shop-System umfasst.
    - Definiere eine Schnittstelle Zahlbar mit der Methode bezahlen().
    - Erstelle Klassen Rechnung und PayPalZahlung, die die Schnittstelle Zahlbar implementieren.
    - Füge eine abstrakte Klasse OnlineArtikel hinzu mit Attributen Preis und DigitaleLieferung und einer Methode Herunterladen().
    - Leite die Klassen EBook und MusikAlbum von OnlineArtikel ab.
    - Erstelle eine Mehrfachvererbungsbeziehung, in der EBook sowohl von OnlineArtikel als auch von Zahlbar erbt.
+
 
 ### Musterlösungen
 <details>
