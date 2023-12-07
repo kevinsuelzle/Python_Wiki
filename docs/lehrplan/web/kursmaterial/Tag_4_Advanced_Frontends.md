@@ -1,9 +1,9 @@
 # Tag 4 - Advanced Web Frontends
 
-# Website Basics-Recap 
+## Website Basics-Recap 
 Bei der Erstellung einer Website kommen zahlreiche Technologien und Praktiken zum Einsatz, die zusammenspielen, um ein nahtloses, interaktives Nutzererlebnis zu erstellen. Die Basis bildet ein Verständnis der Web-Grundlagen – von der Strukturierung und dem Styling von Inhalten bis hin zur Implementierung von Interaktivität und dynamischen Funktionen. 
 
-## Fragen
+### Fragen
 Zeit: 1-2 min / Frage
 1. Was ist der Zweck des `<div>`-Elements in HTML?
 2. Wie unterscheiden sich Klassen- und ID-Selektoren in CSS?
@@ -741,7 +741,7 @@ if __name__ == '__main__':
 
 ## Komplex-Aufgaben (Capstone Projekt)
 **Interaktive Website für Testfahrten mit einem VW-Fahrzeug**
-Zeit: 60-90 min 
+> Zeit: 60-90 min 
 
 Das Ziel dieses Projektes ist es, die zuvor erstellte HTML + CSS Website mit interaktivität zu versehen. Die Nutzer sollen einen vollen Kalender sehen, die dynamisch mit neuen Testfahrten befüllt wird. Anstelle einer echten Flask API sollen gebuchte Fahrten im Local Storage des Browsers gespeichert werden.
 Außerdem soll bei Klick auf die einzelnen Tage angezeigt werden, wer die jeweilige Fahrt gebucht hat.

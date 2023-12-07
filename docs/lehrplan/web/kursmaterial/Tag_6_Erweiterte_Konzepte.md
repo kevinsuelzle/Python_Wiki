@@ -1,9 +1,9 @@
-# Tag 5 - Wochenresúme und Erweiterte Konzepte
+# Tag 6 - Wochenresúme und Erweiterte Konzepte
 
 Inhalt:
 
 - Week Recap 
-  - Fragerunde (Fragen 1-15)
+  - Kurzpräsentation der Projekte (5 min/Projekt)
   - Resúme der Woche
     - Was waren die Erkentnisse
     - Welche Konzepte waren am interessantesten

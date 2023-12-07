@@ -1,9 +1,9 @@
 # Tag 3 - Simple Web Frontends
 
-# API-Recap 
+## API-Recap 
 Hinter fast jeder modernen Website oder Webanwendung steht ein Backend, das häufig über eine API (Application Programming Interface) mit dem Frontend kommuniziert. 
 
-## Fragen
+### Fragen
 Zeit: 1-2 min / Frage
 1. Was ist eine API und warum ist sie wichtig?
 2. Beschreibe das Prinzip einer RESTful API
@@ -12,7 +12,6 @@ Zeit: 1-2 min / Frage
 5. Warum ist die Dokumentation einer API wichtig?
 6. Wie werden Daten in einer RESTful API übertragen und welche Formate werden typischerweise verwendet?
 7. Welche Rolle spielen HTTP-Statuscodes in einer RESTful API und wie sollten sie verwendet werden?
-
 
 # Wie entsteht eine Website?
 Die Erstellung einer Website ist ein dynamischer und iterativer Prozess, der Flexibilität und Anpassungsfähigkeit erfordert. Von der ersten Idee bis zur Veröffentlichung ist jede Phase entscheidend für die Entwicklung einer erfolgreichen Online-Präsenz. In den folgenden Tagen werden wir alle Schritte nach und nach durchführen und so den vollen Prozess kennenlernen. 
