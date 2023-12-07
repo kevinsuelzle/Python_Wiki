@@ -1,4 +1,5 @@
 # Indizes und Referentielle Integrität
+[45 min]
 
 In diesem Abschnitt der Schulungsunterlage werden wir uns mit zwei wichtigen Aspekten von SQLite-Datenbanken
 beschäftigen: Indizes und referentielle Integrität. Diese Konzepte sind entscheidend für die Effizienz und
@@ -173,8 +174,8 @@ Dieses Diagramm bietet eine vereinfachte Darstellung eines B-Baums. In realen Da
 sein und zusätzliche Regeln für das Einfügen und Löschen von Schlüsseln enthalten, um die Baumstruktur ausgewogen zu
 halten.
 
-**Aufgabe:**
-
+### **Aufgabe: B-Baum Recherche 🌶🌶**
+[30 min]
 Beschäftigen sie sich mit dem Flußdiagramm und versuchen sie zu verstehen, wie das System des B-Baumes funktioniert.
 
 # Referentielle Integrität

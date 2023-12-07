@@ -1,4 +1,5 @@
 # Reservierte Ausdrücke in SQLITE
+[10min]
 
 Liste von reservierten Wörtern. Diese Wörter haben eine spezielle Bedeutung in SQL und sollten daher
 nicht als Namen für Tabellen, Spalten oder andere Datenbankobjekte verwendet werden, es sei denn, sie sind in

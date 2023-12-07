@@ -45,26 +45,7 @@ Hilfe eines Shell-Skripts oder eines ähnlichen Mechanismus tun. Hier sind einig
 Sie können ein einfaches Shell-Skript (für Unix-basierte Systeme wie Linux oder macOS) oder ein Batch-Skript (für
 Windows) erstellen, das mehrere `.read`-Befehle für SQLite enthält, um jede Ihrer SQL-Dateien nacheinander auszuführen.
 
-#### Beispiel für ein Unix-Shell-Skript:
 
-```bash
-#!/bin/bash
-
-sqlite3 MeineDatenbank.db <<EOF
-.read file1.sql
-.read file2.sql
-.read file3.sql
-EOF
-```
-
-#### Beispiel für ein Windows-Batch-Skript:
-
-```batch
-@echo off
-sqlite3 MeineDatenbank.db ".read file1.sql"
-sqlite3 MeineDatenbank.db ".read file2.sql"
-sqlite3 MeineDatenbank.db ".read file3.sql"
-```
 
 #### Beispiel für ein Python-Batch-Script:
 

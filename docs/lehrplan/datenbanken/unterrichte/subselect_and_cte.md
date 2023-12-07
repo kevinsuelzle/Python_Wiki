@@ -31,7 +31,7 @@ FROM mitarbeiter m;
 ```
 Diese Abfrage zeigt den Namen jedes Mitarbeiters zusammen mit der Anzahl der Mitarbeiter in ihrer Abteilung.
 
-## Common Table Expressions (CTEs) in SQLite
+## Vertiefung: Common Table Expressions (CTEs) in SQLite
 
 CTEs bieten eine alternative Methode zur Strukturierung von Abfragen, die Unterabfragen ersetzen oder ergänzen können.
 Eine CTE ist im Wesentlichen eine temporäre Ergebnismenge, die innerhalb einer SQL-Abfrage definiert und wie eine

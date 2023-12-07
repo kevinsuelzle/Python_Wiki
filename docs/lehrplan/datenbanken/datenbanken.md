@@ -61,8 +61,6 @@ Sie die Kraft relationaler Datenbanken nutzen, um komplexe Datenanforderungen ef
 
 ### [Einführung](datenbanken.md)
 
-### [Unterrichtsplan](DB1%20Planung.pdf)
-
 ### [Arten von SQL Anweisungen](unterrichte/sql_types.md)
 
 ### [UML für Datenbanken](unterrichte/uml_diagramme.md)
@@ -99,4 +97,3 @@ Sie die Kraft relationaler Datenbanken nutzen, um komplexe Datenanforderungen ef
 
 ### [Schlußbemerkungen](unterrichte/finally.md)
 
-Weiter zu [Unterrichtsplan](DB1%20Planung.pdf)

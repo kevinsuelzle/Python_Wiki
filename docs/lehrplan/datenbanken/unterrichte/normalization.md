@@ -1,4 +1,5 @@
-# Datenbank Normalisierung [45min]
+# Datenbank Normalisierung
+[45min]
 
 ## Was ist Normalisierung?
 
@@ -29,6 +30,28 @@ Eine Tabelle ist in der ersten Normalform, wenn:
 - Jede Spalte enthält nur Daten eines einzigen Datentyps.
 - Jede Spalte hat eine eindeutige Bezeichnung innerhalb der Tabelle.
 
+```mermaid
+erDiagram
+    STUDENTS_COURSES ||--o{ STUDENTS: "enthält"
+    STUDENTS_COURSES ||--o{ COURSES: "enthält"
+    STUDENTS_COURSES {
+        int StudentID
+        string StudentName
+        int CourseID
+        string CourseName
+        string Instructor
+    }
+    STUDENTS {
+        int StudentID PK
+        string StudentName
+    }
+    COURSES {
+        int CourseID PK
+        string CourseName
+        string Instructor
+    }
+```
+
 ### Zweite Normalform (2NF)
 
 Eine Tabelle ist in der zweiten Normalform, wenn:
@@ -36,12 +59,54 @@ Eine Tabelle ist in der zweiten Normalform, wenn:
 - Sie in der ersten Normalform ist.
 - Alle Spalten, die keine Schlüsselspalten sind, funktional abhängig vom Primärschlüssel der Tabelle sind.
 
+```mermaid
+erDiagram
+    STUDENTS ||--o{ ENROLLMENTS: "einschreiben"
+    COURSES ||--o{ ENROLLMENTS: "angeboten"
+    STUDENTS {
+        int StudentID PK
+        string StudentName
+    }
+    COURSES {
+        int CourseID PK
+        string CourseName
+    }
+    ENROLLMENTS {
+        int StudentID PK
+        int CourseID PK
+    }
+```
+
 ### Dritte Normalform (3NF)
 
 Eine Tabelle ist in der dritten Normalform, wenn:
 
 - Sie in der zweiten Normalform ist.
 - Alle Attribute in der Tabelle funktional abhängig vom Primärschlüssel sind.
+
+
+```mermaid
+erDiagram
+    STUDENTS ||--o{ ENROLLMENTS: einschreiben
+    COURSES ||--o{ ENROLLMENTS: angeboten
+    COURSES }|--o{ INSTRUCTORS: "gelehrt von"
+    STUDENTS {
+        int StudentID PK
+        string StudentName
+    }
+    COURSES {
+        int CourseID PK
+        string CourseName
+    }
+    INSTRUCTORS {
+        int InstructorID PK
+        string InstructorName
+    }
+    ENROLLMENTS {
+        int StudentID PK
+        int CourseID PK
+    }
+```
 
 ## Beispiele
 
@@ -142,79 +207,6 @@ Primärschlüssel abhängen muss. Hier sind einige wichtige Punkte zu diesem Kon
 Zusammenfassend sorgt die eindeutige Abhängigkeit vom Primärschlüssel dafür, dass jede Information in einer Tabelle
 direkt und eindeutig durch den Primärschlüssel bestimmt wird, was Redundanzen reduziert und die Datenintegrität erhöht.
 
-## Diagrammdarstellung
-
-Hier sind Beispiele für Diagramme, die die Konzepte der ersten, zweiten und dritten Normalform (1NF, 2NF, 3NF)
-veranschaulichen:
-
-### 1. Erste Normalform (1NF)
-
-```mermaid
-erDiagram
-    STUDENTS_COURSES ||--o{ STUDENTS: "enthält"
-    STUDENTS_COURSES ||--o{ COURSES: "enthält"
-    STUDENTS_COURSES {
-        int StudentID
-        string StudentName
-        int CourseID
-        string CourseName
-        string Instructor
-    }
-    STUDENTS {
-        int StudentID PK
-        string StudentName
-    }
-    COURSES {
-        int CourseID PK
-        string CourseName
-        string Instructor
-    }
-```
-
-### 2. Zweite Normalform (2NF)
-
-```mermaid
-erDiagram
-    STUDENTS ||--o{ ENROLLMENTS: "einschreiben"
-    COURSES ||--o{ ENROLLMENTS: "angeboten"
-    STUDENTS {
-        int StudentID PK
-        string StudentName
-    }
-    COURSES {
-        int CourseID PK
-        string CourseName
-    }
-    ENROLLMENTS {
-        int StudentID PK
-        int CourseID PK
-    }
-```
-
-### 3. Dritte Normalform (3NF)
-
-```mermaid
-erDiagram
-    STUDENTS ||--o{ ENROLLMENTS: einschreiben
-    COURSES ||--o{ ENROLLMENTS: angeboten
-    COURSES }|--o{ INSTRUCTORS: "gelehrt von"
-    STUDENTS {
-        int StudentID PK
-        string StudentName
-    }
-    COURSES {
-        int CourseID PK
-        string CourseName
-    }
-    INSTRUCTORS {
-        int InstructorID PK
-        string InstructorName
-    }
-    ENROLLMENTS {
-        int StudentID PK
-        int CourseID PK
-    }
-```
 
 Diese Diagramme zeigen die Beziehungen zwischen den Tabellen und wie sie sich von der ersten bis zur dritten Normalform
 entwickeln. In der ersten Normalform wird die ursprüngliche Tabelle `STUDENTS_COURSES` in zwei Tabellen `STUDENTS`

@@ -28,7 +28,7 @@ VALUES (1, 'Max Mustermann', 30);
 ```
 
 **Aufgabe:**
-
+[10min]
 Wiederholen Sie diesen Vorgang für einige Datensätze, um den Schülern zu zeigen, wie Daten manuell eingefügt werden.
 
 **Einfügen mehrerer Datensätze**:

@@ -1,4 +1,5 @@
 # UML Diagramme
+[90 min]
 
 UML steht für "Unified Modeling Language". Es handelt sich um eine standardisierte Modellierungssprache, die in der
 Softwareentwicklung verwendet wird, um Systeme, Softwarearchitektur, Geschäftsprozesse und andere Aspekte der Software-

@@ -1,5 +1,5 @@
 # Tabellen erstellen
-
+[10 min]
 ## Grundform
 
 Wir erstellen eine Tabelle, die die Anzahl und Eigenschaften der Werkzeuge in unserer Werkstatt aufnehmen soll.
@@ -43,25 +43,28 @@ der neuen Tabelle in den ursprünglichen Tabellennamen.
 
 Hier ist, wie Sie die Spalte `Gewicht` aus Ihrer Tabelle `Werkzeuge` entfernen können:
 
-1. **Erstellen Sie eine neue Tabelle**:
-   Erstellen Sie eine neue Tabelle, die identisch mit der ursprünglichen Tabelle `Werkzeuge` ist, aber ohne die
-   Spalte `Gewicht`.
+## Aufgaben:
+[30min]
+### **1. Erstellen Sie eine neue Tabelle** 🌶
+Erstellen Sie eine neue Tabelle, die identisch mit der ursprünglichen Tabelle `Werkzeuge` ist, aber ohne die 
+Spalte `Gewicht`.
+```sql
+CREATE TABLE Werkzeuge_neu (
+    id INT PRIMARY KEY,
+    bezeichnung TEXT,
+    farbe TEXT,
+    Warengruppe TEXT,
+    Warenuntergruppe TEXT
+);
+```
 
-         CREATE TABLE Werkzeuge_neu (
-             id INT PRIMARY KEY,
-             bezeichnung TEXT,
-             farbe TEXT,
-             Warengruppe TEXT,
-             Warenuntergruppe TEXT
-         );
-
-2. **Kopieren Sie die Daten**:Kopieren Sie alle Daten von der alten Tabelle `Werkzeuge` in die neue
-   Tabelle `Werkzeuge_neu`, ohne die Spalte `Gewicht`.
-
-         INSERT INTO Werkzeuge_neu (id, bezeichnung, farbe, Warengruppe, Warenuntergruppe)
-         SELECT id, bezeichnung, farbe, Warengruppe, Warenuntergruppe FROM Werkzeuge;
-
-3. **Löschen Sie die alte Tabelle**:
+### **2. Kopieren Sie die Daten** 🌶
+Kopieren Sie alle Daten von der alten Tabelle `Werkzeuge` in die neue Tabelle `Werkzeuge_neu`, ohne die Spalte `Gewicht`.
+```sql
+INSERT INTO Werkzeuge_neu (id, bezeichnung, farbe, Warengruppe, Warenuntergruppe)
+SELECT id, bezeichnung, farbe, Warengruppe, Warenuntergruppe FROM Werkzeuge;
+```
+3. **Löschen Sie die alte Tabelle**
    Löschen Sie nun die alte Tabelle `Werkzeuge`.
 
          DROP TABLE Werkzeuge;
@@ -71,6 +74,8 @@ Hier ist, wie Sie die Spalte `Gewicht` aus Ihrer Tabelle `Werkzeuge` entfernen k
 
          ALTER TABLE Werkzeuge_neu RENAME TO Werkzeuge;
 
+##
+[10min]
 Nachdem Sie diese Schritte ausgeführt haben, haben Sie effektiv die Spalte `Gewicht` aus Ihrer Tabelle `Werkzeuge`
 entfernt. Stellen Sie sicher, dass Sie vor dem Durchführen dieser Operationen eine Sicherungskopie Ihrer Datenbank
 erstellen, um Datenverlust zu vermeiden.
@@ -91,7 +96,7 @@ Angenommen, Sie haben zwei Tabellen `Warengruppen` und `Warenuntergruppen`, und 
 die als Primärschlüssel dient.
 
 **Aufgabe:**
-
+[30min]
 1. **Erstellen Sie eine neue Tabelle**:
 
 2. **Kopieren Sie die Daten**:
@@ -103,6 +108,8 @@ die als Primärschlüssel dient.
 4. **Benennen Sie die neue Tabelle um**:
 
 **Aufgabe:** Wir haben vergessen, die FOREIGN KEYS anzugeben.
+
+## Fremdschlüssel
 
 Das Hinzufügen von Fremdschlüsselbeziehungen zu einer bestehenden Tabelle in SQLite, nachdem die Tabelle bereits
 erstellt wurde, erfordert ähnliche Schritte wie das Ändern des Datentyps einer Spalte. SQLite unterstützt das direkte
@@ -125,7 +132,7 @@ Hier sind die Schritte, um Fremdschlüsselbeziehungen für die `Werkzeuge`-Tabel
 4. **Benennen Sie die neue Tabelle um**:
 
 ## Constraints und Default-Werte
-
+[40min]
 Bei der Erstellung von Tabellen in SQLite ist es wichtig, Constraints und Default-Werte zu berücksichtigen, um die
 Datenintegrität und Standardverhalten zu gewährleisten. Hier ist eine Ergänzung, die sich auf die Verwendung von
 Constraints und Default-Werten in der Tabelle `Werkzeuge` konzentriert:

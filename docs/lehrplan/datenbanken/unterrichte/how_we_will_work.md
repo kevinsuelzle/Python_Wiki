@@ -1,6 +1,6 @@
-# Arbeitsumgebung [90min]
-
-## Einleitung [4min]
+# Arbeitsumgebung
+[30 min]
+## Einleitung 
 
 Dieser Unterricht ist Teil eines Kurses in Python. Daher verwenden wir die PyCharm IDE von JetBrains.
 Sie enthält bereits SQLite als Datenbanksystem.
@@ -9,7 +9,7 @@ Da wir uns nicht um die Programmierung der Datenbank über die Tools von Python 
 Datenbanken in ihrer **rohen** Form kennenlernen möchten, werden wir die Einrichtung und Bedienung
 über CLI und Konsole erledigen.
 
-## Arbeitsumgebung einrichten - Überblick [2min]
+## Arbeitsumgebung einrichten - Überblick 
 
 Folgene Schritte sind dazu zu unternehmen:
 
@@ -22,7 +22,7 @@ So soll es aussehen:
 
 ![Frische Arbeitsumgebung](../images/img_15.png)
 
-## Arbeiten mit dem Databank Navigator [40min]
+## Arbeiten mit dem Databank Navigator 
 
 Über das grüne Plus-Zeichen in diesen Dialog legt man eine neue Datenbank an oder stellt eine neue Verbindung zu einer
 bestehenden Datenbank her.
@@ -64,7 +64,7 @@ genügt der Klick auf das rote Minus-Zeichen, um die **Datenbankverbindung** zu 
 
 Die Datenbank selbst bleibt im Verzeichnis bestehen.
 
-## Arbeiten mit dem Kommandozeilen-Tool [40min]
+## Arbeiten mit dem Kommandozeilen-Tool
 
 ### Kommandozeilen-Tool = Command Line Interface = CLI
 

@@ -1,4 +1,5 @@
 # Datentypen in SQLite
+[20min]
 
 SQLite verwendet ein dynamisches Typensystem, das sich von den meisten anderen SQL-Datenbanken unterscheidet. In SQLite
 wird der Datentyp eines Wertes hauptsächlich durch den Wert selbst bestimmt, nicht durch die Spalte, in der der Wert
