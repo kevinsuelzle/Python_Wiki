@@ -85,15 +85,15 @@ Sie die Kraft relationaler Datenbanken nutzen, um komplexe Datenanforderungen ef
 
 ### [Verenden von Aliasen](aliases.md)
 
+### [Eingebaute Funktionen](build_in_functions.md)
+
 ### [Verschachtelte Abfragen](subselect_and_cte.md)
+
+### [Batch, Script, Deploy](scripting_and_deploying.md)
 
 ### [Gruppenarbeit - Projekte](projects.md)
 
 ## 3. Tag
-
-### [Batch, Script, Deploy](scripting_and_deploying.md)
-
-### [Eingebaute Funktionen](build_in_functions.md)
 
 ### [Fragen an die Datenbank](joins_and_views.md)
 
