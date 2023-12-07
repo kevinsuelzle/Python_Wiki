@@ -2,3 +2,4 @@ site
 .idea
 /venv
 .firebase
+.DS_Store
