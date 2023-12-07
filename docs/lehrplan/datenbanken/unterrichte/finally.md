@@ -47,4 +47,4 @@ Lösungen zu erzielen.
 Datenbanken sind weit mehr als bloße Tabellenspeicher. Ihr Potenzial sollte genutzt werden, wenn es angebracht ist. Es
 ist nicht immer möglich oder ratsam, aber es sollte stets in Betracht gezogen werden.
 
-[zurück](datenbanken.md)
+[zurück](../datenbanken.md)

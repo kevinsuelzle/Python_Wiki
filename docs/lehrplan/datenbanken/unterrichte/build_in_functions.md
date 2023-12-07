@@ -171,4 +171,4 @@ Funktionen je nach SQLite-Version variieren können.
 In SQLite können auch eigene Funktionen programmiert werden. Dieses Kapitel ist Bestandteil eines weiterführenden
 Kurses.
 
-[zurück](datenbanken.md)
+[zurück](../datenbanken.md)

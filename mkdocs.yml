@@ -7,7 +7,6 @@ plugins:
 nav:
   - Home: index.md
   - Lehrplan: lehrplan/lehrplan.md
-  - Datenbanken: lehrplan/datenbanken/datenbanken.md
   - Lernziele: lehrplan/lernziele.md
   - Begriffssammlung: lehrplan/begriffssammlung.md
   - Projekte:

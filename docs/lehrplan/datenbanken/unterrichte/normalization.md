@@ -222,4 +222,4 @@ und `COURSES` aufgeteilt. In der zweiten Normalform wird eine neue Tabelle `ENRO
 zwischen `STUDENTS` und `COURSES` zu verwalten. In der dritten Normalform wird eine weitere Tabelle `INSTRUCTORS`
 hinzugefügt, um die transitive Abhängigkeit zu entfernen.
 
-[zurück](datenbanken.md)
+[zurück](../datenbanken.md)

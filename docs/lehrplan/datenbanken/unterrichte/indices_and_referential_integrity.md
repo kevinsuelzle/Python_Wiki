@@ -277,4 +277,4 @@ In diesem Beispiel:
 Durch die Verwendung von Fremdschlüsseln können Sie die Datenintegrität in Ihrer Datenbank aufrechterhalten und
 sicherstellen, dass Beziehungen zwischen Tabellen korrekt verwaltet werden.
 
-[zurück](datenbanken.md)
+[zurück](../datenbanken.md)

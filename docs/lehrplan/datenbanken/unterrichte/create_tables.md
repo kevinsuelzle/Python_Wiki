@@ -214,4 +214,4 @@ Einschränkungen im Zusammenhang mit dem `ALTER TABLE`-Befehl eine Herausforderu
 vorausschauende Planung und sorgfältige Datenmigration sind entscheidend, um die Struktur und Integrität der Datenbank
 im Laufe der Zeit zu erhalten und zu verwalten.
 
-[zurück](datenbanken.md)
+[zurück](../datenbanken.md)

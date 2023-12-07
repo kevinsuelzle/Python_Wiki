@@ -77,4 +77,4 @@ strukturierte und effiziente Weise zu erstellen. Während Unterabfragen direkt i
 bieten CTEs eine klarere Trennung und Strukturierung, insbesondere bei der Verwendung mehrerer temporärer Tabellen.
 Durch das Üben dieser Beispiele können die Schüler lernen, wie man beide Techniken effektiv einsetzt.
 
-[zurück](datenbanken.md)
+[zurück](../datenbanken.md)

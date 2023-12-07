@@ -41,4 +41,4 @@ Hier ist eine vollständige Liste der reservierten Wörter in SQLite:
 | VACUUM        | VALUES             | VIEW         | VIRTUAL        |
 | WHEN          | WHERE              | WITH         | WITHOUT        |
 
-[zurück](datenbanken.md)
+[zurück](../datenbanken.md)

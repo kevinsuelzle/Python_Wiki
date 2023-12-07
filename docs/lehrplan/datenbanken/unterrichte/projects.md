@@ -106,4 +106,4 @@ erfordert. Hier ist ein Leitfaden, der Ihnen und Ihrer Gruppe helfen soll, ein e
 
 Entwickeln sie daraus die entsprechenden SQL Kommandos.
 
-[zurück](datenbanken.md)
+[zurück](../datenbanken.md)

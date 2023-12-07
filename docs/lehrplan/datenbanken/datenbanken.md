@@ -17,7 +17,7 @@ Datenbank kann eine Vielzahl von Daten enthalten, die in Zeilen und Spalten orga
      Kunden, Produkte) und besteht aus Zeilen und Spalten.
 
 2. **SQL-Anweisungen:**
-    - SQL verwendet spezielle [Anweisungen oder Befehle](sql_types.md), um mit Datenbanken zu interagieren.
+    - SQL verwendet spezielle [Anweisungen oder Befehle](unterrichte/sql_types.md), um mit Datenbanken zu interagieren.
     - Diese Anweisungen und Befehle ermöglichen es Ihnen
       - Datenstrukturen aufzubauen sowie 
       - Daten zu erstellen, abzurufen, zu aktualisieren und zu löschen.
@@ -63,38 +63,38 @@ Sie die Kraft relationaler Datenbanken nutzen, um komplexe Datenanforderungen ef
 
 ### [Unterrichtsplan](DB1%20Planung.pdf)
 
-### [Arten von SQL Anweisungen](sql_types.md)
+### [Arten von SQL Anweisungen](unterrichte/sql_types.md)
 
-### [UML für Datenbanken](uml_diagramme.md)
+### [UML für Datenbanken](unterrichte/uml_diagramme.md)
 
-### [Normalisierung von Daten](normalization.md)
+### [Normalisierung von Daten](unterrichte/normalization.md)
 
-### [Indizes und Referentielle Integrität](indices_and_referential_integrity.md)
+### [Indizes und Referentielle Integrität](unterrichte/indices_and_referential_integrity.md)
 
-### [Arbeitsumgebung](how_we_will_work.md)
+### [Arbeitsumgebung](unterrichte/how_we_will_work.md)
 
-### [Reservierte Ausdrücke in SQLite](reserved_words_sqlite.md)
+### [Reservierte Ausdrücke in SQLite](unterrichte/reserved_words_sqlite.md)
 
-### [Datentypen in SQLite](daten_typen_sqlite.md)
+### [Datentypen in SQLite](unterrichte/daten_typen_sqlite.md)
 
-### [Erstellen von Tabellen](create_tables.md)
+### [Erstellen von Tabellen](unterrichte/create_tables.md)
 
 ## 2. Tag
 
-### [Arbeiten mit Daten](working_with_data.md)
+### [Arbeiten mit Daten](unterrichte/working_with_data.md)
 
-### [Verwenden von Aliasen](aliases.md)
+### [Verwenden von Aliasen](unterrichte/aliases.md)
 
-### [Eingebaute Funktionen](build_in_functions.md)
+### [Eingebaute Funktionen](unterrichte/build_in_functions.md)
 
-### [Verschachtelte Abfragen](subselect_and_cte.md)
+### [Verschachtelte Abfragen](unterrichte/subselect_and_cte.md)
 
-### [Batch, Script, Deploy](scripting_and_deploying.md)
+### [Batch, Script, Deploy](unterrichte/scripting_and_deploying.md)
 
-### [Gruppenarbeit - Projekte](projects.md)
+### [Gruppenarbeit - Projekte](unterrichte/projects.md)
 
 ## 3. Tag
 
-### [Fragen an die Datenbank](joins_and_views.md)
+### [Fragen an die Datenbank](unterrichte/joins_and_views.md)
 
-### [Schlußbemerkungen](finally.md)
+### [Schlußbemerkungen](unterrichte/finally.md)
