@@ -27,9 +27,9 @@ INSERT INTO personen (id, name, alter)
 VALUES (1, 'Max Mustermann', 30);
 ```
 
-**Aufgabe:**
+### **Aufgabe: Daten manuell einfügen 🌶️**
 [10min]
-Wiederholen Sie diesen Vorgang für einige Datensätze, um den Schülern zu zeigen, wie Daten manuell eingefügt werden.
+Wiederholen Sie diesen Vorgang für einige Datensätze, um zu üben, wie Daten manuell eingefügt werden.
 
 **Einfügen mehrerer Datensätze**:
 
@@ -41,12 +41,12 @@ VALUES (2, 'Maria Musterfrau', 28),
        (3, 'John Doe', 25);
 ```
 
-**Aufgabe:**
-
+### **Aufgabe: Mehrere Datesätze manuell einfügen 🌶️**
+[15min]
 Wiederholen sie den Vorgang und fügen sie weitere Datensätze in das Kommando ein.
 
-**Überprüfung der Einfügung**:
-
+### **Aufgabe: Überprüfung der Einfügungen 🌶️**:
+[10min]
 Um zu überprüfen, ob die Daten korrekt eingefügt wurden, verwenden Sie das `SELECT`-Statement:
 
 ```sql
@@ -87,7 +87,8 @@ SELECT *
 FROM personen;
 ```
 
-**Aufgabe:**
+### **Aufgabe: Beispieldaten finden und einfügen 🌶️🌶️🌶️**
+[40 min]
 
 1. Suchen sie im Internet nach Datentabellen, die im CSV Format geladen werden können. Hier bieten sich fake Datenbanken
    oder Ortsverzeichnisse mit PLZ an.
@@ -127,9 +128,11 @@ CREATE TABLE mitarbeiter
 );
 ```
 
-**Aufgabe:** Fülle die Tabelle mit Testdaten.
+### **Aufgabe: Fülle die Tabelle mit Testdaten 🌶️🌶️**
+[40min]
 
-**Aufgabe:** Erweitere die Tabelle mit dem ALTER Befehl und fülle mit Daten.
+### **Aufgabe: Erweitere die Tabelle mit dem ALTER Befehl und fülle mit Daten 🌶️🌶️**
+[30min]
 
 ### Liste von Abfragebeispielen
 
@@ -248,9 +251,8 @@ FROM mitarbeiter
 ORDER BY abteilung, gehalt DESC; -- alternativ ASC
 ```
 
-**Aufgabe:**
-
-Wende die Befehle auf selbst zugefügte Spalten und Daten an.
+### **Aufgabe: Wende die Befehle auf selbst zugefügte Spalten und Daten an 🌶️🌶️🌶️**
+[60min]
 
 ### Zusammenfassung
 

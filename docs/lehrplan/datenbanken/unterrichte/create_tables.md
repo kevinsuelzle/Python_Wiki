@@ -95,7 +95,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass die Tabellen, auf die sich die Frem
 Angenommen, Sie haben zwei Tabellen `Warengruppen` und `Warenuntergruppen`, und jede hat eine Spalte `ID` vom Typ `INT`,
 die als Primärschlüssel dient.
 
-**Aufgabe:**
+### **Aufgabe: Lösen sie das Problem nach dem vorgegeben Schema 🌶️🌶️**
 [30min]
 1. **Erstellen Sie eine neue Tabelle**:
 
@@ -107,8 +107,6 @@ die als Primärschlüssel dient.
 
 4. **Benennen Sie die neue Tabelle um**:
 
-**Aufgabe:** Wir haben vergessen, die FOREIGN KEYS anzugeben.
-
 ## Fremdschlüssel
 
 Das Hinzufügen von Fremdschlüsselbeziehungen zu einer bestehenden Tabelle in SQLite, nachdem die Tabelle bereits
@@ -117,8 +115,8 @@ Hinzufügen oder Ändern von Fremdschlüsseln in einer bestehenden Tabelle nicht
 gewünschten Fremdschlüsselbeziehungen erstellen, die Daten übertragen, die alte Tabelle löschen und die neue Tabelle
 umbenennen.
 
-Hier sind die Schritte, um Fremdschlüsselbeziehungen für die `Werkzeuge`-Tabelle hinzuzufügen:
-
+### **Aufgabe: Wir haben vergessen, die FOREIGN KEYS anzugeben. 🌶️🌶️** 
+[30min]
 1. **Erstellen Sie eine neue Tabelle mit Fremdschlüsseln**:
    Angenommen, Sie haben die Tabellen `Warengruppen` und `Warenuntergruppen` mit den Primärschlüsseln `ID`. Erstellen
    Sie eine neue Tabelle, die die Fremdschlüsselbeziehungen enthält:

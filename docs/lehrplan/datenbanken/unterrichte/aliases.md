@@ -84,9 +84,9 @@ der `GROUP BY`-Klausel verwendet.
 Aliasse sind ein einfaches, aber mächtiges Werkzeug in SQL, um Abfragen lesbarer und manchmal auch kürzer zu gestalten.
 Sie sind besonders nützlich in komplexen Abfragen mit langen oder mehrfach verwendeten Tabellen- und Spaltennamen.
 
-**Aufgabe:**
+### **Aufgabe: Führen sie die verschiedenen Kommandos aus. 🌶️**
+[30min]
 
-- Führen sie die verschiedenen Kommandos aus.
-- Entwickeln sie eigene Aliasse aufgrund von eigenen Erweiterungen in ihren Daten.
-
+### **Aufgabe: Entwickeln sie eigene Aliasse aufgrund von eigenen Erweiterungen in ihren Daten. 🌶️🌶️**
+[30min]
 Weiter zu [Eingebaute Funktionen](../unterrichte/build_in_functions.md) &emsp; | &emsp; [zurück](../datenbanken.md)

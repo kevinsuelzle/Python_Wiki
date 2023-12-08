@@ -127,11 +127,10 @@ ROLLBACK;
 In diesem Fall wird keine der Änderungen, die nach `BEGIN TRANSACTION;` gemacht wurden, in der Datenbank gespeichert,
 und der Zustand der Datenbank bleibt unverändert, als ob die Transaktion nie stattgefunden hätte.
 
-**Aufgabe:**
-
-Entwickeln sie eigene Scripte, die mehrere Anweisungen enthalten und in eine Transaktion eingebunden sind.
-Untersuchen sie die Funktionalität von COMMIT und ROLLBACK.
-
+### **Aufgabe: Entwickeln sie eigene Scripte, die mehrere Anweisungen enthalten und in eine Transaktion eingebunden sind. 🌶️🌶️🌶️**
+[40min]
+### **Aufgabe: Untersuchen sie die Funktionalität von COMMIT und ROLLBACK. 🌶️🌶️🌶️**
+[40min]
 ### Externe Fehlerbehandlung
 
 SQLite selbst unterstützt keine `TRY...CATCH...FINALLY`-Syntax wie in einigen anderen Programmiersprachen oder

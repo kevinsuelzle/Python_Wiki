@@ -77,8 +77,8 @@ Dabei zeigt die Konsole zwei wichtige Hinweise
 - .help → zeigt Hilfetexte an und
 - .open FILENAME → weist darauf hin, wie die Verbindung zu einer Datenbank hergestellt wird.
 
-**Aufgabe:**
-
+### **Aufgabe: Kommandozeile bedienen 🌶️**
+[10min]
     Probiere .help selbst aus. Suche den Befehl zum Verlassen der Konsole.
     
     Verlasse die Konsole. Das ist nicht unbedingt notwendig, aber es ist gut, den Befehl zu kennen
