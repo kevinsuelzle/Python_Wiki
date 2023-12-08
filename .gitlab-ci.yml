@@ -1,0 +1,22 @@
+image: node:latest
+
+build_stage:
+  services:
+    - python:3.11
+  script:
+    - pip3 install mkdocs mkdocs-material
+    - mkdocs build --verbose
+  artifacts:
+    untracked: true
+    paths:
+      - site
+  only:
+    - main
+
+deploy_stage:
+  script:
+    - npm install -g firebase-tools
+    - firebase use --token $FIREBASE_TOKEN
+    - firebase deploy --only hosting --token $FIREBASE_TOKEN
+  dependencies:
+    - build_stage
