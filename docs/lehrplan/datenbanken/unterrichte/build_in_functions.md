@@ -1,4 +1,4 @@
-## Eingebaute Funktionen
+# Eingebaute Funktionen
 
 SQLite bietet eine Vielzahl von eingebauten Funktionen, die für verschiedene Operationen verwendet werden können, von
 mathematischen Berechnungen bis hin zur Textmanipulation. Diese Funktionen sind direkt in SQLite integriert und können
@@ -53,7 +53,7 @@ SELECT DATE('now');
 SELECT RANDOM();
 ```
 
-## Aggregatefunktionen in SQLite
+# Aggregatefunktionen in SQLite
 
 Aggregatefunktionen in SQLite werden verwendet, um eine Berechnung auf einer Gruppe von Werten durchzuführen und ein
 einzelnes Ergebnis zurückzugeben. Sie sind besonders nützlich in Kombination mit der `GROUP BY`-Klausel.
@@ -113,58 +113,47 @@ Datenmanipulationen effizient durchzuführen. Diese Funktionen erweitern die Mö
 erheblich und sind ein wesentlicher Bestandteil der SQL-Kenntnisse. Durch das Üben mit diesen Funktionen können die
 Schüler lernen, wie man Daten in einer Datenbank effektiv verarbeitet und analysiert.
 
-## Liste der Eingebauten Funktionen in SQLite
+## Liste der eingebauten Funktionen
 
-Hier ist eine Liste der wichtigsten eingebauten Funktionen in SQLite, gruppiert nach ihrer Funktionalität:
-
-### Mathematische Funktionen
-
-- `ABS(x)`: Gibt den absoluten Wert von `x` zurück.
-- `ROUND(x, y)`: Rundet `x` auf `y` Dezimalstellen.
-- `RANDOM()`: Gibt eine Zufallszahl zurück.
-- `MOD(x, y)`: Gibt den Rest der Division von `x` durch `y` zurück.
-- `CEIL(x)`: Gibt die kleinste ganze Zahl, die größer oder gleich `x` ist.
-- `FLOOR(x)`: Gibt die größte ganze Zahl, die kleiner oder gleich `x` ist.
-- `POWER(x, y)`: Gibt `x` hoch `y` zurück.
-
-### Textfunktionen
-
-- `LENGTH(x)`: Gibt die Länge des Strings `x` zurück.
-- `UPPER(x)`: Konvertiert den String `x` in Großbuchstaben.
-- `LOWER(x)`: Konvertiert den String `x` in Kleinbuchstaben.
-- `SUBSTR(x, y, z)`: Gibt einen Teilstring von `x` zurück, beginnend bei `y` mit der Länge `z`.
-- `TRIM(x)`: Entfernt Leerzeichen am Anfang und Ende des Strings `x`.
-- `REPLACE(x, y, z)`: Ersetzt alle Vorkommen von `y` in `x` durch `z`.
-
-### Datum- und Zeitfunktionen
-
-- `DATE()`: Gibt das aktuelle Datum zurück.
-- `TIME()`: Gibt die aktuelle Uhrzeit zurück.
-- `DATETIME()`: Gibt das aktuelle Datum und die aktuelle Uhrzeit zurück.
-- `JULIANDAY()`: Gibt den Julianischen Tag zurück.
-- `STRFTIME()`: Formatiert Datum und Zeit gemäß dem angegebenen Format.
-
-### Sonstige Funktionen
-
-- `COALESCE(x, y, ...)`: Gibt den ersten nicht-NULL-Wert in der Liste zurück.
-- `NULLIF(x, y)`: Gibt NULL zurück, wenn `x` gleich `y` ist, sonst `x`.
-- `LAST_INSERT_ROWID()`: Gibt die ROWID des zuletzt eingefügten Datensatzes zurück.
-
-## Liste der Aggregatefunktionen in SQLite
-
-Aggregatefunktionen in SQLite werden verwendet, um Berechnungen auf einer Gruppe von Werten durchzuführen:
-
-- `COUNT(x)`: Zählt die Anzahl der Zeilen, die den Ausdruck `x` enthalten.
-- `SUM(x)`: Summiert die Werte von `x`.
-- `AVG(x)`: Berechnet den Durchschnittswert von `x`.
-- `MAX(x)`: Findet den höchsten Wert von `x`.
-- `MIN(x)`: Findet den niedrigsten Wert von `x`.
-- `GROUP_CONCAT(x)`: Kombiniert Werte aus `x` zu einem durch Kommas getrennten String.
-- `TOTAL(x)`: Berechnet die Gesamtsumme von `x` (ähnlich wie `SUM`, aber immer gibt einen Wert zurück, auch bei
-  NULL-Werten).
-
-Diese Listen bieten eine Übersicht über die gängigsten Funktionen in SQLite. Es ist wichtig zu beachten, dass einige
-Funktionen je nach SQLite-Version variieren können.
+| Gruppe       | Funktion            | Bedeutung                                                                | Beispiel                                   |
+|--------------|---------------------|--------------------------------------------------------------------------|--------------------------------------------|
+| String       | `LENGTH`            | Gibt die Länge eines Strings zurück.                                     | `LENGTH('Hello')` -> 5                     |
+| String       | `UPPER`             | Konvertiert einen String in Großbuchstaben.                              | `UPPER('Hello')` -> 'HELLO'                |
+| String       | `LOWER`             | Konvertiert einen String in Kleinbuchstaben.                             | `LOWER('Hello')` -> 'hello'                |
+| String       | `SUBSTR`            | Extrahiert einen Teilstring.                                             | `SUBSTR('Hello', 2, 3)` -> 'ell'           |
+| String       | `TRIM`              | Entfernt Leerzeichen am Anfang und Ende eines Strings.                   | `TRIM('  Hello  ')` -> 'Hello'             |
+| String       | `LTRIM`             | Entfernt Leerzeichen am Anfang eines Strings.                            | `LTRIM('  Hello')` -> 'Hello'              |
+| String       | `RTRIM`             | Entfernt Leerzeichen am Ende eines Strings.                              | `RTRIM('Hello  ')` -> 'Hello'              |
+| String       | `REPLACE`           | Ersetzt Teilstrings.                                                     | `REPLACE('Hello', 'He', 'Ha')` -> 'Hallo'  |
+| String       | `QUOTE`             | Gibt einen String sicher für SQL-Abfragen zurück.                        | `QUOTE('It''s SQLite')` -> 'It''s SQLite'  |
+| Numerisch    | `ABS`               | Gibt den absoluten Wert zurück.                                          | `ABS(-5)` -> 5                             |
+| Numerisch    | `ROUND`             | Rundet eine Zahl.                                                        | `ROUND(5.75)` -> 6                         |
+| Numerisch    | `RANDOM`            | Generiert eine Zufallszahl.                                              | `RANDOM()` -> Zufallszahl                  |
+| Datum/Zeit   | `DATE`              | Gibt das aktuelle Datum zurück.                                          | `DATE('now')` -> 'YYYY-MM-DD'              |
+| Datum/Zeit   | `TIME`              | Gibt die aktuelle Uhrzeit zurück.                                        | `TIME('now')` -> 'HH:MM:SS'                |
+| Datum/Zeit   | `STRFTIME`          | Formatiert Datum/Zeit nach einem Muster.                                 | `STRFTIME('%Y-%m-%d', 'now')`              |
+| Datum/Zeit   | `JULIANDAY`         | Gibt das Julianische Datum zurück.                                       | `JULIANDAY('now')` -> Julianisches Datum   |
+| Datum/Zeit   | `DATETIME`          | Gibt Datum und Uhrzeit zurück.                                           | `DATETIME('now')` -> 'YYYY-MM-DD HH:MM:SS' |
+| Aggregat     | `COUNT`             | Zählt die Anzahl der Datensätze.                                         | `COUNT(*)` -> Anzahl der Datensätze        |
+| Aggregat     | `MAX`               | Findet den maximalen Wert.                                               | `MAX(age)` -> älteste Person               |
+| Aggregat     | `MIN`               | Findet den minimalen Wert.                                               | `MIN(age)` -> jüngste Person               |
+| Aggregat     | `AVG`               | Berechnet den Durchschnittswert.                                         | `AVG(price)` -> Durchschnittspreis         |
+| Aggregat     | `SUM`               | Summiert Werte.                                                          | `SUM(amount)` -> Gesamtsumme               |
+| Aggregat     | `GROUP_CONCAT`      | Verkettet Strings einer Gruppe.                                          | `GROUP_CONCAT(name, ', ')`                 |
+| Aggregat     | `TOTAL`             | Summiert Werte, gibt immer einen Wert zurück.                            | `TOTAL(column)` -> Gesamtsumme             |
+| Mathematisch | `HEX`               | Konvertiert einen BLOB in einen Hexadezimal-String.                      | `HEX('SQLite')` -> Hexadezimal-String      |
+| Mathematisch | `ZEROBLOB`          | Erzeugt einen BLOB der angegebenen Länge mit Nullen.                     | `ZEROBLOB(10)` -> BLOB mit Nullen          |
+| Mathematisch | `TYPEOF`            | Gibt den Datentyp eines Ausdrucks zurück.                                | `TYPEOF('Hello')` -> 'text'                |
+| Mathematisch | `CHANGES`           | Gibt die Anzahl der durch die letzte Anweisung geänderten Zeilen zurück. | `CHANGES()` -> Anzahl geänderter Zeilen    |
+| Mathematisch | `INSTR`             | Gibt die Position eines Teilstrings in einem String zurück.              | `INSTR('Hello', 'e')` -> 2                 |
+| Mathematisch | `SQRT`              | Berechnet die Quadratwurzel einer Zahl.                                  | `SQRT(9)` -> 3                             |
+| Mathematisch | `MOD`               | Berechnet den Rest einer Division.                                       | `MOD(10, 3)` -> 1                          |
+| Mathematisch | `GLOB`              | Gibt TRUE zurück, wenn ein String einem GLOB-Muster entspricht.          | `GLOB('F*', 'Foo')` -> 1                   |
+| Mathematisch | `LIKE`              | Gibt TRUE zurück, wenn ein String einem LIKE-Muster entspricht.          | `LIKE('F%', 'Foo')` -> 1                   |
+| Sonstige     | `COALESCE`          | Gibt den ersten nicht-NULL-Wert zurück.                                  | `COALESCE(NULL, NULL, 'Hello')` -> 'Hello' |
+| Sonstige     | `NULLIF`            | Gibt NULL zurück, wenn zwei Werte gleich sind, sonst den ersten Wert.    | `NULLIF(5, 5)` -> NULL                     |
+| Sonstige     | `LAST_INSERT_ROWID` | Gibt die ROWID des zuletzt eingefügten Datensatzes zurück.               | `LAST_INSERT_ROWID()` -> Letzte ROWID      |
+| Sonstige     | `RANDOMBLOB`        | Erzeugt einen zufälligen BLOB einer bestimmten Länge.                    | `RANDOMBLOB(10)` -> Zufälliger BLOB        |
 
 ## Ausblick
 
@@ -172,3 +161,4 @@ In SQLite können auch eigene Funktionen programmiert werden. Dieses Kapitel ist
 Kurses.
 
 Weiter zu [Verschachtelte Abfragen](../unterrichte/subselect_and_cte.md) &emsp; | &emsp; [zurück](../datenbanken.md)
+
