@@ -13,7 +13,7 @@ vorgeschlagenen Themen zuordnen, je nach ihren Interessen und Zielen.
 
 ## Themenvorschläge für Projekte
 
-1. **Kundendatenbank für ein Einzelhandelsunternehmen**: Entwickeln Sie eine Datenbank, die Kundeninformationen,
+1. [**Kundendatenbank für ein Einzelhandelsunternehmen**](beispiel_projekt_kaufhaus.md): Entwickeln Sie eine Datenbank, die Kundeninformationen,
    Kaufhistorie und Produktbestände verwaltet. Dieses Projekt könnte auch Aspekte wie Kundenloyalitätsprogramme und
    Inventarmanagement umfassen.
 
