@@ -159,6 +159,3 @@ Schüler lernen, wie man Daten in einer Datenbank effektiv verarbeitet und analy
 
 In SQLite können auch eigene Funktionen programmiert werden. Dieses Kapitel ist Bestandteil eines weiterführenden
 Kurses.
-
-Weiter zu [Verschachtelte Abfragen](../unterrichte/subselect_and_cte.md) &emsp; | &emsp; [zurück](../datenbanken.md)
-

@@ -5,7 +5,75 @@ plugins:
   - mermaid2
 
 nav:
-  - Home: index.md
   - Lehrplan: lehrplan/lehrplan.md
+  - Übersicht:
+      - Block 1:
+          - Python Grundlagen: lehrplan/python_grundlagen/python_grundlagen/python_grundlagen.md
+          - Variable Datentypen: lehrplan/python_grundlagen/variables_types/variablen_datentypen.md
+          - Input Output: lehrplan/python_grundlagen/input_output/input_output.md
+          - Mathematische Operationen: lehrplan/python_grundlagen/math_operations/math_operations.md
+          - Debugging: lehrplan/python_grundlagen/debugging/debugging.md
+          - Verzweigungen: lehrplan/python_grundlagen/if_elif_else/if_elif_else.md
+          - Listen: lehrplan/python_grundlagen/lists/lists.md
+          - Tupel: lehrplan/python_grundlagen/tupel/tupel.md
+          - Strings: lehrplan/python_grundlagen/strings/strings.md
+          - Schleifen: lehrplan/python_grundlagen/loops/loops.md
+          - Sets: lehrplan/python_grundlagen/sets/sets.md
+          - Dictionaries: lehrplan/python_grundlagen/dictionaries/dictionaries.md
+          - Bytecode: lehrplan/python_grundlagen/bytecode/bytecode.md
+          - Funktionen: lehrplan/python_grundlagen/functions/functions.md
+          - Type Hints: lehrplan/python_grundlagen/type_hints/type_hints.md
+          - List Comprehension: lehrplan/python_grundlagen/list_comp/list_comp.md
+          - zip: lehrplan/python_grundlagen/zip/zip.md
+          - Git Teil 1: lehrplan/git/git_Teil1.md
+          - try except: lehrplan/python_grundlagen/01_try_except.md
+          - Module: lehrplan/python_grundlagen/02_module.md
+          - pip: lehrplan/python_grundlagen/03_pip.md
+          - TDD: lehrplan/python_grundlagen/04_tdd.md
+          - Dateioperationen: lehrplan/python_grundlagen/05_dateioperationen.md
+          - OOP Einführung: lehrplan/python_grundlagen/06_oop_einführung.md
+          - OOP Python: lehrplan/python_grundlagen/07_oop_python.md
+          - Git Teil 2: lehrplan/git/git_Teil2.md
+          - Getter Setter: lehrplan/python_grundlagen/08_getter_setter.md
+          - staticmethod: lehrplan/python_grundlagen/09_class_staticmethod.md
+          - Vererbung: lehrplan/python_grundlagen/10_vererbung.md
+          - Magic Methods: lehrplan/python_grundlagen/11_magic_methods.md
+          - args kwargs: lehrplan/python_grundlagen/12_args_kwargs.md
+          - pep: lehrplan/python_grundlagen/13_pep.md
+          - Design Pattern: lehrplan/python_grundlagen/14_design_patterns.md
+          - Strategy: lehrplan/python_grundlagen/14_x1_strategy.md
+          - Factory Method: lehrplan/python_grundlagen/14_x2_factory_method.md
+          - Adapter: lehrplan/python_grundlagen/14_x3_adapter.md
+          - OOP vs Funktional: lehrplan/python_grundlagen/15_oop_vs_funktionale.md
+          - Git Teil 3: lehrplan/git/git_Teil3.md
+      - Block 2:
+          - Clean Code: lehrplan/clean_code/Introduction.md
+          - Einführung SQL-Datenbanken: lehrplan/datenbanken/datenbanken.md
+          - Arten von SQL Anweisungen: lehrplan/datenbanken/unterrichte/sql_types.md
+          - UML für Datenbanken: lehrplan/datenbanken/unterrichte/uml_diagramme.md
+          - Normalisierung von Daten: lehrplan/datenbanken/unterrichte/normalization.md
+          - Indizes und referentielle Integrität: lehrplan/datenbanken/unterrichte/indices_and_referential_integrity.md
+          - Arbeitsumgebung einrichten: lehrplan/datenbanken/unterrichte/how_we_will_work.md
+          - Reservierte Ausdrücke: lehrplan/datenbanken/unterrichte/reserved_words_sqlite.md
+          - Datentypen: lehrplan/datenbanken/unterrichte/daten_typen_sqlite.md
+          - Erstellen von Tabellen: lehrplan/datenbanken/unterrichte/create_tables.md
+          - Arbeiten mit Daten: lehrplan/datenbanken/unterrichte/working_with_data.md
+          - Aliase: lehrplan/datenbanken/unterrichte/aliases.md
+          - Funktionen: lehrplan/datenbanken/unterrichte/build_in_functions.md
+          - Unterabfragen und CTE: lehrplan/datenbanken/unterrichte/subselect_and_cte.md
+          - Batch, Script, Deploy: lehrplan/datenbanken/unterrichte/scripting_and_deploying.md
+          - Gruppenarbeit: lehrplan/datenbanken/unterrichte/projects.md
+          - Fragen an die Datenbank: lehrplan/datenbanken/unterrichte/joins_and_views.md
+          - Abschluss SQL-Datenbanken: lehrplan/datenbanken/unterrichte/finally.md
+  - Begriffssammlung:
+      - Python Grundlagen: begriffe/begriffe_1.md
+      - git: begriffe/begriffe_git.md
+      - Clean Code: begriffe/begriffe_clean_code.md
+      - SQL-Datenbanken: begriffe/begriffe_db1.md
+  - Checklisten:
+      - Python Grundlagen: checklists/checklists_1.md
+      - git: checklists/checklist_git.md
+      - Clean Code: checklists/checklist_clean_code.md
+      - SQL-Datenbanken: checklists/checklist_db1.md
   - Werkzeuge:
       - git: lehrplan/git/git.md

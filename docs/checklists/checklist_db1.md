@@ -1,6 +1,4 @@
-# Lernziele Datenbanken Teil 1
-
-## Grobziele
+# Lernziele SQL Datenbanken
 
 1. **Grundverständnis relationaler Datenbanken**: Die Schüler sollten die grundlegenden Konzepte relationaler
    Datenbanken verstehen, einschließlich Tabellen, Spalten, Zeilen, Primärschlüssel und Fremdschlüssel.
@@ -30,20 +28,18 @@
 9. **Praktische Anwendung durch Projekte**: Die Schüler sollten die Möglichkeit haben, ihr Wissen in praktischen
    Projekten anzuwenden, um ein tieferes Verständnis der realen Anwendung von Datenbanken zu entwickeln.
 
-## Feinziele nach UEs
-
-### Aliase
+# Aliase
 
 - Ich weiß, was Aliase sind und wie man sie einsetzt
 - Ich kann in einem Skript Aliase erkennen
 
-### Eingebaute Funktionen
+# Eingebaute Funktionen
 
 - Ich kenne übliche eingebaute Funktionen und kann sie in Abfragen einsetzen
 - Ich kenne den Unterschied zu Aggregatefunktionen
 - Ich kann Aggregatefunktionen sinnvoll in Abfragen verwenden
 
-### Erstellen von Tabellen
+# Erstellen von Tabellen
 
 - Ich kann Tabellen erstellen
     - mit typisiereten Spalten
@@ -60,11 +56,11 @@
         - neue Tabelle umbenennen
 - Ich kann Tabellen löschen
 
-### Datentypen
+# Datentypen
 
 - Ich kenne die in SQLite verwendeten Datentypen
 
-### Arbeitsumgebung
+# Arbeitsumgebung
 
 - Ich kann eine Arbeitsumgebung herstellen
     - indem ich die Kommandozeile aufrufe und mich mit der Datenbank verbinde
@@ -74,29 +70,29 @@
             - um mich mit der Datenbank zu verbinden und
             - um über eine Konsole Befehle an die Datenbank zu senden und Ergebnisse zurück zu bekommen
 
-### Indizes und referentielle Integrität
+# Indizes und referentielle Integrität
 
 - Ich weiß was ein Index ist
 - Ich weiß ungefähr, wie er intern funktioniert und kann anhand eines einfachen B-Baumes seine Funktion erklären
 
-### Joins und Views
+# Joins und Views
 
 - Ich kenne die verschiedenen Arten von JOINs
 - Ich kann erklären, was ein INNER Join macht und was ich als Ergebnis erwarten kann
 - Ich kann ein Beispiel schreiben, das einen INNER JOIN nutzt.
 
-### Normalisierung von Daten
+# Normalisierung von Daten
 
 - Ich weiß, warum Daten für die Verwendung in relationalen Datenbanken normalisiert werden müssen
 - Ich kenne Ausnahmen zu dieser Regel
 - Ich kann Daten in Tabellen ordnen, sodass diese der 1.NF, 2.NF oder 3.NF entsprechen
 - Ich weiß, dass die inneren Zusammenhänge dieser Daten durch referentielle Integrität abgesichert wird
 
-### Reservierte Worte
+# Reservierte Worte
 
 - Ich weiß, dass es reservierte Worte gibt, die nicht für die Namensgebung verwendet werden sollten.
 
-### Batch, Script, Deploy
+# Batch, Script, Deploy
 
 - Ich kann SQLite Kommandos in einer Datei zusammenfassen.
 - Ich weiß, dass das Ausführen aufeinander folgender Kommandos batch genannt wird, die Datei script
@@ -105,17 +101,17 @@
 - Ich weiß, dass komplexe Fälle mit anderen Sprachen (z.B. python) verarbeitet werden müssen.
 - Ich weiß, wie ich, im Falle von SQLite, eine Datenbank verteilen kann.
 
-### SQL Sprachtypisierung
+# SQL Sprachtypisierung
 
 - Ich kenne die Bezeichner DDL und DML
 
-### Unterabfragen und Common Table Expressions
+# Unterabfragen und Common Table Expressions
 
 - Ich kann eine Abfrage als Unterabfrage in SELECT, INSERT oder UPDATE Kommandos erstellen.
 - Ich verstehe die allgemeine Form der Common Table Expression und deren Bedeutung
 - Ich kann einfache Unterabfragen in CTE umschreiben
 
-### UML-Diagramme
+# UML-Diagramme
 
 - Ich verstehe, was UML-Diagramme sind,
 - was sie in Bezug auf Datenbanken ausdrücken und
@@ -123,7 +119,7 @@
 - Ich kann die normalsprachlichen Formulierungen eines Datenbankproblems in UML-Diagramme umsetzen
 - Ich kann die UML_Diagramme in die Tabellenstruktur einer Datenbank überführen
 
-### Arbeiten mit Daten
+# Arbeiten mit Daten
 
 - Ich kenne die CRUD Operationen, die auf Datenbanken angewendet werden können
 - Ich kann entsprechende Befehle verfassen
@@ -134,11 +130,11 @@
     - mittels GROUP BY gruppieren,
     - mittels HAVING nochmals auf anderer Ebene filtern
 
-### Projekte
+# Projekte
 
-- Ich vertiefe mein Wissen an praktischen Beispielen
+- Ich kann das Wissen über Datenbanken bei konkreten Projekten anwenden.
 
-### Schlusswort
+# Schlusswort
 
 - Ich verstehe, wie Datenbanken verwendet werden können und das sie noch mehr Potential haben, als wir in diesem Kurs
   angesprochen haben.

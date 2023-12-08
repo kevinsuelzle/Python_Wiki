@@ -128,11 +128,11 @@ CREATE TABLE mitarbeiter
 );
 ```
 
-### **Aufgabe: Fülle die Tabelle mit Testdaten 🌶️🌶️**
-[40min]
+### **Aufgabe: Testdaten 🌶️🌶️**
+[40min] Fülle die Tabelle mit Testdaten.
 
-### **Aufgabe: Erweitere die Tabelle mit dem ALTER Befehl und fülle mit Daten 🌶️🌶️**
-[30min]
+### **Aufgabe: Alter nutzen 🌶️🌶️**
+[30min]  Erweitere die Tabelle mit dem ALTER Befehl und fülle mit Daten
 
 ### Liste von Abfragebeispielen
 
@@ -251,8 +251,8 @@ FROM mitarbeiter
 ORDER BY abteilung, gehalt DESC; -- alternativ ASC
 ```
 
-### **Aufgabe: Wende die Befehle auf selbst zugefügte Spalten und Daten an 🌶️🌶️🌶️**
-[60min]
+### **Aufgabe: Befehle anwenden 🌶️🌶️🌶️**
+[60min] Wende die Befehle auf selbst zugefügte Spalten und Daten an
 
 ### Zusammenfassung
 
@@ -348,5 +348,3 @@ Die `UPDATE`- und `DELETE`-Befehle sind wesentliche Werkzeuge in SQLite, um Date
 Üben dieser Beispiele lernen die Schüler, wie man Daten effektiv aktualisiert und löscht, was für die Aufrechterhaltung
 der Datenintegrität und -aktualität unerlässlich ist. Es ist wichtig, diese Befehle mit Vorsicht zu verwenden,
 insbesondere den `DELETE`-Befehl, da er Daten dauerhaft entfernt.
-
-Weiter zu [Verwenden von Aliasen](../unterrichte/aliases.md) &emsp; | &emsp; [zurück](../datenbanken.md)

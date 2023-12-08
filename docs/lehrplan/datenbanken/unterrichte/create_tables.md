@@ -235,5 +235,3 @@ Zusammenfassend lässt sich sagen, dass während SQLite eine flexible und leicht
 Einschränkungen im Zusammenhang mit dem `ALTER TABLE`-Befehl eine Herausforderung darstellen können. Eine
 vorausschauende Planung und sorgfältige Datenmigration sind entscheidend, um die Struktur und Integrität der Datenbank
 im Laufe der Zeit zu erhalten und zu verwalten.
-
-Weiter zu [Arbeiten mit Daten](../unterrichte/working_with_data.md) &emsp; | &emsp; [zurück](../datenbanken.md)

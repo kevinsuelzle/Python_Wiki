@@ -59,5 +59,3 @@ Einige wichtige Punkte zu BLOBs in SQLite:
 In der Praxis bedeutet dies, dass SQLite für Anwendungen gut geeignet ist, die mit moderaten Mengen an BLOB-Daten
 arbeiten, wie z.B. das Speichern von Bildern, Dokumenten oder anderen Medien, solange die Größe dieser Objekte nicht
 extrem groß ist. Für sehr große BLOBs kann es jedoch besser sein, diese außerhalb der Datenbank zu speichern.
-
-Weiter zu [Erstellen von Tabellen](../unterrichte/create_tables.md) &emsp; | &emsp; [zurück](../datenbanken.md)

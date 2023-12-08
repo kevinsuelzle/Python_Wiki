@@ -7,5 +7,3 @@
 - **TCL (Transaction Control Language)**: Befehle, die Änderungen durch DML-Anweisungen verwalten. Beispiele sind COMMIT, ROLLBACK, SAVEPOINT und SET TRANSACTION.
 - **DQL (Data Query Language)**: Bezieht sich hauptsächlich auf den SELECT-Befehl, der die Datenbank abfragt, um Daten abzurufen und zu filtern.
 - **DSL (Data Search Language)**: Bezieht sich auf Volltextsuchfähigkeiten.
-
-Weiter zu [UML für Datenbanken](../unterrichte/uml_diagramme.md) &emsp; | &emsp; [zurück](../datenbanken.md)

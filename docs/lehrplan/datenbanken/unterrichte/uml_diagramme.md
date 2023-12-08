@@ -131,5 +131,3 @@ erDiagram
 Diese Liste bietet eine allgemeine Übersicht über die Elemente, die in einem ER-Diagramm in Mermaid verwendet werden
 können. Beachten Sie, dass Mermaid in seiner Fähigkeit, komplexe Datenbankstrukturen darzustellen, begrenzt ist und
 einige spezifische Datenbankkonzepte wie Indizes und Trigger möglicherweise nicht direkt visualisiert werden können.
-
-Weiter zu [Normalisierung von Daten](../unterrichte/normalization.md) &emsp; | &emsp; [zurück](../datenbanken.md)

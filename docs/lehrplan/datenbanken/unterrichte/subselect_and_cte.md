@@ -76,5 +76,3 @@ Sowohl Unterabfragen als auch CTEs sind mächtige Werkzeuge in SQL, die es ermö
 strukturierte und effiziente Weise zu erstellen. Während Unterabfragen direkt in die Hauptabfrage eingebettet werden,
 bieten CTEs eine klarere Trennung und Strukturierung, insbesondere bei der Verwendung mehrerer temporärer Tabellen.
 Durch das Üben dieser Beispiele können die Schüler lernen, wie man beide Techniken effektiv einsetzt.
-
-Weiter zu [Batch, Script, Deploy](../unterrichte/scripting_and_deploying.md) &emsp; | &emsp; [zurück](../datenbanken.md)

@@ -131,12 +131,3 @@ Datenbank senden und die Ergebnisse von Abfragen anzeigen.
 Es ist dabei einleuchtend, dass der Navigator wesentlich komfortabler ist als die CLI. Man sollte die CLI aber nicht
 unterschätzen. Bei kleinen Aufgaben und Wartungsarbeiten ist man mit dem CLI deutlich schneller als mit einer
 **großen** Lösung.
-
-Weiter zu [Reservierte Ausdrücke in SQLite](../unterrichte/reserved_words_sqlite.md) &emsp; | &emsp; [zurück](../datenbanken.md)
-
-
-
-
-
-
-

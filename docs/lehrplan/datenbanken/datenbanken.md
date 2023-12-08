@@ -58,8 +58,6 @@ Sie die Kraft relationaler Datenbanken nutzen, um komplexe Datenanforderungen ef
 
 # Bestandteile des Kurses
 
-## 1. Tag
-
 ### [Einführung](datenbanken.md)
 
 ### [Arten von SQL Anweisungen](unterrichte/sql_types.md)
@@ -78,8 +76,6 @@ Sie die Kraft relationaler Datenbanken nutzen, um komplexe Datenanforderungen ef
 
 ### [Erstellen von Tabellen](unterrichte/create_tables.md)
 
-## 2. Tag
-
 ### [Arbeiten mit Daten](unterrichte/working_with_data.md)
 
 ### [Verwenden von Aliasen](unterrichte/aliases.md)
@@ -91,8 +87,6 @@ Sie die Kraft relationaler Datenbanken nutzen, um komplexe Datenanforderungen ef
 ### [Batch, Script, Deploy](unterrichte/scripting_and_deploying.md)
 
 ### [Gruppenarbeit - Projekte](unterrichte/projects.md)
-
-## 3. Tag
 
 ### [Fragen an die Datenbank](unterrichte/joins_and_views.md)
 

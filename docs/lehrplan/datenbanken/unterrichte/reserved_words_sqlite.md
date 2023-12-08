@@ -75,5 +75,3 @@ Hier ist eine vollständige Liste der reservierten Wörter in SQLite:
 
 Diese erweiterten Beschreibungen bieten einen detaillierteren Überblick über die Funktion jedes reservierten Wortes in
 SQLite. Beachten Sie, dass einige Wörter in spezifischen Kontexten unterschiedliche Bedeutungen haben können.
-
-Weiter zu [Datentypen in SQLite](../unterrichte/daten_typen_sqlite.md) &emsp; | &emsp; [zurück](../datenbanken.md)

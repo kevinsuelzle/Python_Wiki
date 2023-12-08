@@ -11,7 +11,7 @@ ist. Diese Projekte sollen als Plattform dienen, um das Gelernte in die Praxis u
 entwickeln und kreativ mit Daten zu arbeiten. Alternativ können die Teilnehmer sich auch selbst einem der
 vorgeschlagenen Themen zuordnen, je nach ihren Interessen und Zielen.
 
-## Themenvorschläge für Projekte
+## Themenvorschläge für Projekte 🌶🌶🌶
 
 1. [**Kundendatenbank für ein Einzelhandelsunternehmen**](beispiel_projekt_kaufhaus.md): Entwickeln Sie eine Datenbank, die Kundeninformationen,
    Kaufhistorie und Produktbestände verwaltet. Dieses Projekt könnte auch Aspekte wie Kundenloyalitätsprogramme und
@@ -105,5 +105,3 @@ erfordert. Hier ist ein Leitfaden, der Ihnen und Ihrer Gruppe helfen soll, ein e
     - Der vierte Punkt lädt die Liste, mit den Kriterien bearbeitet, erneut vom Server.
 
 Entwickeln sie daraus die entsprechenden SQL Kommandos.
-
-Weiter zu [Fragen an die Datenbank](../unterrichte/joins_and_views.md) &emsp; | &emsp; [zurück](../datenbanken.md)

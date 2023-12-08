@@ -127,10 +127,12 @@ ROLLBACK;
 In diesem Fall wird keine der Änderungen, die nach `BEGIN TRANSACTION;` gemacht wurden, in der Datenbank gespeichert,
 und der Zustand der Datenbank bleibt unverändert, als ob die Transaktion nie stattgefunden hätte.
 
-### **Aufgabe: Entwickeln sie eigene Scripte, die mehrere Anweisungen enthalten und in eine Transaktion eingebunden sind. 🌶️🌶️🌶️**
-[40min]
-### **Aufgabe: Untersuchen sie die Funktionalität von COMMIT und ROLLBACK. 🌶️🌶️🌶️**
-[40min]
+### **Aufgabe: Eine Skripte mit Transaktionen🌶️🌶️🌶️**
+[40min] Entwickeln sie eigene Scripte, die mehrere Anweisungen enthalten und in eine Transaktion eingebunden sind. 
+
+### **Aufgabe: Funktionsweise von Commit und Rollback 🌶️🌶️🌶️**
+[40min] Untersuchen sie die Funktionalität von COMMIT und ROLLBACK.
+
 ### Externe Fehlerbehandlung
 
 SQLite selbst unterstützt keine `TRY...CATCH...FINALLY`-Syntax wie in einigen anderen Programmiersprachen oder
@@ -215,5 +217,3 @@ folgende Schritte:
 Das Deployment von SQLite ist aufgrund seiner Einfachheit und Portabilität besonders beliebt für Desktop-Anwendungen,
 mobile Anwendungen und kleinere Webprojekte. Es bietet eine unkomplizierte Lösung für Anwendungen, die eine
 zuverlässige, leichtgewichtige und einfach zu verwaltende Datenbank benötigen.
-
-Weiter zu [Gruppenarbeit - Projekte](../unterrichte/projects.md) &emsp; | &emsp; [zurück](../datenbanken.md)
