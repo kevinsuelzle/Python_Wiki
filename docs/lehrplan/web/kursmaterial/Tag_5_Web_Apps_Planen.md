@@ -57,59 +57,51 @@ Unified Modeling Language (UML) ist eine visuelle Sprache zur Darstellung von So
 #### Strukturdiagramme
 Diese Diagramme fokussieren sich auf die statischen Aspekte eines Systems.
 
-**Klassendiagramme**: Das Klassendiagramm ist das zentrale Element der UML und unverzichtbar für das Design objektorientierter Systeme. Es stellt Klassen, ihre Attribute, Methoden und die Beziehungen zwischen ihnen dar. Klassen, als grundlegende Bausteine, werden durch Rechtecke repräsentiert, die in drei Teile untergliedert sind: den Klassennamen, ihre Attribute und die Methoden. Die Beziehungen zwischen den Klassen, wie Assoziationen, Aggregationen und Kompositionen, werden durch verschiedene Arten von Verbindungslinien dargestellt.
+**[Klassendiagramme](https://www.lucidchart.com/pages/de/uml-klassendiagramme)**: Das Klassendiagramm ist das zentrale Element der UML und unverzichtbar für das Design objektorientierter Systeme. Es stellt Klassen, ihre Attribute, Methoden und die Beziehungen zwischen ihnen dar. Klassen, als grundlegende Bausteine, werden durch Rechtecke repräsentiert, die in drei Teile untergliedert sind: den Klassennamen, ihre Attribute und die Methoden. Die Beziehungen zwischen den Klassen, wie Assoziationen, Aggregationen und Kompositionen, werden durch verschiedene Arten von Verbindungslinien dargestellt.
+
+Sämtliche Klassen verfügen zusätzlich, je nach gewollter Sichtbarkeit, über unterschiedliche Zugriffsebenen. Diese werden durch das jeweilige Zeichen an Attributen wie Methoden definiert.
+ - Öffentlich (`+`)
+ - Privat (`-`)
+ - Geschützt (`#`)
+ - Paket (`~`)
+ - Abgeleitet (`/`)
+ - Statisch (`unterstrichen`)
 
 Beispielsweise könnte ein Klassendiagramm für ein Einkaufssystem Klassen wie `Kunde`, `Produkt` und `Bestellung` enthalten. Attribute könnten bei `Kunde` beispielsweise `Name`, `Adresse` sein, während Methoden `ProduktHinzufügen()`, `BestellungAufgeben()` umfassen könnten.
 
-... Beispiel
+![Klassendiagramm](../assets/5_klassen_1.png)
 
-**Objektdiagramme**: Objektdiagramme sind eng verwandt mit Klassendiagrammen. Sie zeigen Instanzen von Klassen zur Laufzeit und illustrieren die Beziehung zwischen Objekten. Im Gegensatz zu Klassendiagrammen, die eine allgemeine Blaupause bieten, stellen Objektdiagramme spezifische Fälle dar und sind hilfreich, um konkrete Szenarien und das Verhalten von Systemen zu veranschaulichen.
+**[Komponentendiagramme](https://www.lucidchart.com/pages/de/uml-komponentendiagramm)**: Komponentendiagramme visualisieren die Organisation und Beziehungen zwischen verschiedenen Softwarekomponenten. Sie sind besonders nützlich in großen Systemen, um die Struktur der Softwarearchitektur und Abhängigkeiten zwischen Modulen und Schnittstellen darzustellen.
 
-... Beispiel
+![Komponentendiagram](../assets/5_komponenten.png)
 
-**Komponentendiagramme**: Komponentendiagramme visualisieren die Organisation und Beziehungen zwischen verschiedenen Softwarekomponenten. Sie sind besonders nützlich in großen Systemen, um die Struktur der Softwarearchitektur und Abhängigkeiten zwischen Modulen und Schnittstellen darzustellen.
+**[Paketdiagramme](https://www.lucidchart.com/pages/de/uml-paketdiagramm)**: Paketdiagramme organisieren Elemente eines Systems in "Paketen". Diese Diagramme sind hilfreich, um die Struktur großer Systeme zu verstehen und zu zeigen, wie Klassen oder Komponenten in logische Module gruppiert sind.
 
-... Beispiel
+![Paketdiagram](../assets/5_paket.png)
 
-**Paketdiagramme**: Paketdiagramme organisieren Elemente eines Systems in "Paketen". Diese Diagramme sind hilfreich, um die Struktur großer Systeme zu verstehen und zu zeigen, wie Klassen oder Komponenten in logische Module gruppiert sind.
-
-... Beispiel
-
-**Verteilungsdiagramme**: Verteilungsdiagramme zeigen die physische Verteilung von Softwarekomponenten auf Hardware. Sie sind wichtig, um zu verstehen, wie verschiedene Teile eines Systems auf Servern, Clients und anderen Geräten verteilt sind.
+**[Verteilungsdiagramme](https://www.lucidchart.com/pages/de/tutorial-fur-verteilungsdiagramme)**: Verteilungsdiagramme zeigen die physische Verteilung von Softwarekomponenten auf Hardware. Sie sind wichtig, um zu verstehen, wie verschiedene Teile eines Systems auf Servern, Clients und anderen Geräten verteilt sind.
 
 
-... Beispiel
+![Paketdiagram](../assets/5_verteilung.png)
 
 #### Verhaltensdiagramme
 Diese Diagramme beschreiben die dynamischen Aspekte und das Verhalten von Systemelementen.
 
-**Anwendungsfalldiagramme**: Anwendungsfalldiagramme illustrieren die Funktionalitäten eines Systems aus der Sicht des Benutzers. Sie sind nützlich, um die Interaktion zwischen Benutzern (oder "Akteuren") und dem System zu verstehen.
+**[Anwendungsfalldiagramme](https://www.lucidchart.com/pages/de/uml-anwendungsfalldiagramm)**: Anwendungsfalldiagramme illustrieren die Funktionalitäten eines Systems aus der Sicht des Benutzers. Sie sind nützlich, um die Interaktion zwischen Benutzern (oder "Akteuren") und dem System zu verstehen.
 
-... Beispiel
+![Paketdiagram](../assets/5_usecase.png)
 
-**Aktivitätsdiagramme**: Aktivitätsdiagramme stellen den Fluss von Aktivitäten und die Reihenfolge von Operationen dar. Sie sind nützlich, um den Workflow oder Geschäftsprozess in einem System zu verstehen.
+**[Aktivitätsdiagramme](https://www.lucidchart.com/pages/de/uml-aktivitatsdiagramme)**: Aktivitätsdiagramme stellen den Fluss von Aktivitäten und die Reihenfolge von Operationen dar. Sie sind nützlich, um den Workflow oder Geschäftsprozess in einem System zu verstehen.
 
-... Beispiel
+![Paketdiagram](../assets/5_aktivität.png)
 
-**Zustandsdiagramme**: Zustandsdiagramme zeigen die verschiedenen Zustände, die ein Objekt während seines Lebenszyklus durchlaufen kann. Sie sind wichtig, um das Verhalten von Objekten in Reaktion auf Ereignisse darzustellen.
+**[Zustandsdiagramme](https://www.lucidchart.com/pages/de/maschinenzustandsdiagramm)**: Zustandsdiagramme zeigen die verschiedenen Zustände, die ein Objekt während seines Lebenszyklus durchlaufen kann. Sie sind wichtig, um das Verhalten von Objekten in Reaktion auf Ereignisse darzustellen.
 
-... Beispiel
+![Zustandsdiagram](../assets/5_zustand.png)
 
-**Sequenzdiagramme**: Sequenzdiagramme illustrieren die Interaktionen zwischen Objekten in einer zeitlichen Abfolge. Sie zeigen, wie Objekte zusammenarbeiten, um eine Funktion auszuführen.
+**[Sequenzdiagramme](https://www.lucidchart.com/pages/uml-sequence-diagram)**: Sequenzdiagramme illustrieren die Interaktionen zwischen Objekten in einer zeitlichen Abfolge. Sie zeigen, wie Objekte zusammenarbeiten, um eine Funktion auszuführen.
 
-... Beispiel
-
-**Kommunikationsdiagramme**: Kommunikationsdiagramme, ähnlich wie Sequenzdiagramme, fokussieren auf die Beziehungen und den Nachrichtenaustausch zwischen Objekten. Sie sind hilfreich, um das Zusammenspiel von Objekten in einem System zu verstehen.
-
-... Beispiel
-
-**Interaktionsübersichtsdiagramme**: Interaktionsübersichtsdiagramme kombinieren Elemente von Sequenz- und Aktivitätsdiagrammen und bieten einen Überblick über den Gesamtablauf von Interaktionen im System.
-
-... Beispiel
-
-**Zeitdiagramme**: Zeitdiagramme zeigen das Verhalten von Objekten über die Zeit. Sie sind nützlich, um zeitabhängige Aspekte eines Systems zu analysieren, wie z.B. Zustandsänderungen oder Leistungsparameter.
-
-... Beispiel
+![Sequenzdiagram](../assets/5_sequenz.png)
 
 
 #### Vererbung und Klassentypen
@@ -117,11 +109,11 @@ Um komplexere Beziehungen in UML modellieren zu können, gibt es auch hier die K
 
 **`Vererbung`**: In UML wird Vererbung durch eine Linie dargestellt, die von der abgeleiteten Klasse (Unterklasse) zu ihrer Basisklasse (Oberklasse) führt. Diese Linie endet bei der Basisklasse mit einem leeren Dreieck.
 
-... Beispiel
+![Sequenzdiagram](../assets/5_vererbung.png)
 
 **`Implementierung`**: Die Implementierung eines Interfaces wird in UML als `gestrichelte Linie` mit einem nicht ausgefüllten Dreieck am Ende dargestellt, das auf das Interface zeigt.
 
-... Beispiel
+![Sequenzdiagram](../assets/5_implementierung.png)
 
 **`Abstrakte Klasse`**: Eine abstrakte Klasse wird in UML meist durch *`Kursivschrift`* ihres Namens kenntlich gemacht. Sie enthält oft abstrakte Methoden, die keine Implementierung besitzen.
 
@@ -135,15 +127,9 @@ Um komplexere Beziehungen in UML modellieren zu können, gibt es auch hier die K
 
 Die Multiplizität gibt an, wie viele Instanzen der einen Klasse mit der anderen in Beziehung stehen können. Zum Beispiel würde `„1“ für eine Eins-zu-Eins-Beziehung` und `„1..*“ für eine Eins-zu-viele-Beziehung` stehen.
 
-... Beispiel
-
 **`Aggregation`**: Aggregation wird als eine spezielle Form der Assoziation dargestellt, die eine „hat-ein“-Beziehung darstellt. In UML wird dies durch eine `Linie mit einer leeren Raute` am Ende der Linie bei der Klasse gezeigt, die das Ganze repräsentiert.
 
-... Beispiel
-
 **`Komposition`**: Komposition ist eine stärkere Form der Aggregation, die eine exklusive Besitzbeziehung anzeigt. In UML wird dies durch eine `Linie mit einer gefüllten Raute` am Ende der Linie bei der Klasse dargestellt, die das Ganze repräsentiert. Die gefüllte Raute impliziert, dass die Lebensdauer der Teilobjekte eng mit der des Ganzen verbunden ist. 
-
-... Beispiel
 
 
 #### Praktisches Beispiel
@@ -167,40 +153,7 @@ Diese Struktur zeigt die Beziehungen und Abhängigkeiten zwischen den Klassen un
 - Die Konto-Klasse hat Attribute Kontonummer und Kontostand, sowie Methoden Einzahlen() und Abheben().
 - Girokonto hat ein zusätzliches Attribut Dispo, Sparkonto hat ein Attribut Zinssatz. Beide Klassen definieren die Methode TransaktionDurchführen() gemäß der Schnittstelle.
 
-```bash
-+---------------------------------+    +-------------------------------+
-|            Kunde                |    |       Transaktionsfähig       |
-+---------------------------------+    +-------------------------------+
-| - Kundennummer: int             |    |                               |
-| - Name: String                  |    +-------------------------------+
-| - Adresse: String               |    | + TransaktionDurchführen()    |
-| - Telefonnummer: String         |    |                               |
-+---------------------------------+    +-------------------------------+
-| + Login(): boolean              |                /|\
-| + ÜberweisungTätigen(): void    |                 |
-+---------------------------------+    +-------------------------------+
-               |                         |            Konto              |
-               |                         | +-----------------------------+
-               |                         | - Kontonummer: int            |
-               |                         | - Kontostand: double          |
-               |                         +-----------------------------+
-               |                         | + Einzahlen(double): void     |
-               |                         | + Abheben(double): void       |
-               |                         +-----------------------------+
-               |                                         /|\
-               |                                          |
-               |                                          |
-+------------------------------+        +------------------------------+
-|          Girokonto           |        |          Sparkonto           |
-+------------------------------+        +------------------------------+
-| - Dispo: double              |        | - Zinssatz: double           |
-+------------------------------+        +------------------------------+
-| + TransaktionDurchführen()   |        | + TransaktionDurchführen()   |
-+------------------------------+        +------------------------------+
-```
-
-... Lösung
-
+![Sequenzdiagram](../assets/5_beispiel.png)
 
 ## Aufgaben
 Zeit: 10-15 min / Aufgabe
@@ -242,7 +195,7 @@ Zeit: 10-15 min / Aufgabe
 - Klasse Mitglied hat Attribute Name: String, Mitgliedsnummer: Int und eine Methode BuchAusleihen(buch: Buch).
 - Eine Assoziationslinie zwischen Buch und Mitglied zeigt die Beziehung an.
 
-... Lösung
+![1. Lösung](../assets/5_1_loesung.png)
 </details>
 
 <details>
@@ -252,7 +205,7 @@ Zeit: 10-15 min / Aufgabe
 - Aggregationsbeziehung zwischen Bibliothek und Buch, dargestellt durch eine Linie mit einer leeren Raute am Bibliothek-Ende.
 - Die Klasse Bibliothek enthält eine Liste von Büchern.
 
-... Lösung
+![2. Lösung](../assets/5_2_loesung.png)
 </details>
 
 <details>
@@ -260,11 +213,11 @@ Zeit: 10-15 min / Aufgabe
   
 - Abstrakte Klasse Person mit Name: String und Adresse: String.
 - Klassen Mitglied und Mitarbeiter erben von Person.
-- Klasse Ausleihhistorie mit Ausleihdatum: Date, Rückgabedatum: Date und EintragHinzufügen().
+- Klasse Ausleihhistorie mit Ausleihdatum: Date, Rückgabedatum: Date und EintragErstellen().
 - Kompositionsbeziehung zwischen Mitglied und Ausleihhistorie, dargestellt durch eine Linie mit einer gefüllten Raute am Mitglied-Ende.
 - Vererbungslinien von Person zu Mitglied und Mitarbeiter mit einem ausgefüllten Dreieck am Person-Ende.
 
-... Lösung
+![3. Lösung](../assets/5_3_loesung.png)
 </details>
 
 <details>
@@ -276,7 +229,7 @@ Klassen Rechnung und PayPalZahlung implementieren Zahlbar und enthalten die Meth
 - Klassen EBook und MusikAlbum erben von OnlineArtikel und enthalten spezifische Attribute und Methoden.
 - EBook zeigt eine Schnittstelle zur Zahlbar-Schnittstelle zusätzlich zur Vererbung von OnlineArtikel.
 
-... Lösung
+![4. Lösung](../assets/5_3_loesung.png)
 </details>
 
 ## Test Driven Development
@@ -386,5 +339,4 @@ Das Ziel dieses Projekts ist die Entwicklung einer interaktiven Webanwendung zur
 
 ## Weiterführende Materialien
 - **IBM UML Basics**: [Einführung in die Unified Modeling Language](https://developer.ibm.com/articles/the-class-diagram/)
-- **Test Driven Development (TDD)**: [Die Testgetriebene Entwicklung](https://www.ionos.de/digitalguide/websites/web-entwicklung/test-driven-development/)
 - **Test Driven Development (TDD)**: [Die Testgetriebene Entwicklung](https://www.ionos.de/digitalguide/websites/web-entwicklung/test-driven-development/)
