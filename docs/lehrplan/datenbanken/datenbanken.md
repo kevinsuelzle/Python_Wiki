@@ -12,9 +12,10 @@ Datenbank kann eine Vielzahl von Daten enthalten, die in Zeilen und Spalten orga
 ### Grundkonzepte von SQL:
 
 1. **Datenbanken und Tabellen:**
-   - Eine Datenbank ist eine Sammlung von Daten, die organisiert und leicht zugänglich sind.
-   - Innerhalb einer Datenbank sind Daten in Tabellen gespeichert. Jede Tabelle repräsentiert eine Art von Daten (z.B.
-     Kunden, Produkte) und besteht aus Zeilen und Spalten.
+
+    - Eine Datenbank ist eine Sammlung von Daten, die organisiert und leicht zugänglich sind.
+    - Innerhalb einer Datenbank sind Daten in Tabellen gespeichert. Jede Tabelle repräsentiert eine Art von Daten (z.B.
+      Kunden, Produkte) und besteht aus Zeilen und Spalten.
 
 2. **SQL-Anweisungen:**
     - SQL verwendet spezielle [Anweisungen oder Befehle](unterrichte/sql_types.md), um mit Datenbanken zu interagieren.

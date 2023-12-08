@@ -45,7 +45,8 @@ Hier ist, wie Sie die Spalte `Gewicht` aus Ihrer Tabelle `Werkzeuge` entfernen k
 
 ## Aufgaben:
 [30min]
-### **1. Erstellen Sie eine neue Tabelle** 🌶
+### **1. Erstellen Sie eine neue Tabelle 🌶**
+
 Erstellen Sie eine neue Tabelle, die identisch mit der ursprünglichen Tabelle `Werkzeuge` ist, aber ohne die 
 Spalte `Gewicht`.
 ```sql
@@ -58,24 +59,29 @@ CREATE TABLE Werkzeuge_neu (
 );
 ```
 
-### **2. Kopieren Sie die Daten** 🌶
+### **2. Kopieren Sie die Daten 🌶**
+
 Kopieren Sie alle Daten von der alten Tabelle `Werkzeuge` in die neue Tabelle `Werkzeuge_neu`, ohne die Spalte `Gewicht`.
 ```sql
 INSERT INTO Werkzeuge_neu (id, bezeichnung, farbe, Warengruppe, Warenuntergruppe)
 SELECT id, bezeichnung, farbe, Warengruppe, Warenuntergruppe FROM Werkzeuge;
 ```
-3. **Löschen Sie die alte Tabelle**
-   Löschen Sie nun die alte Tabelle `Werkzeuge`.
+### 3. **Löschen Sie die alte Tabelle 🌶️**
 
-         DROP TABLE Werkzeuge;
+Löschen Sie nun die alte Tabelle `Werkzeuge`.
+```sqlite
+DROP TABLE Werkzeuge;
+```
 
-4. **Benennen Sie die neue Tabelle um**:
-   Benennen Sie die neue Tabelle `Werkzeuge_neu` in `Werkzeuge` um.
+### 4. **Benennen Sie die neue Tabelle um 🌶️**:
+Benennen Sie die neue Tabelle `Werkzeuge_neu` in `Werkzeuge` um.
+```sqlite
+ALTER TABLE Werkzeuge_neu RENAME TO Werkzeuge;
+```
 
-         ALTER TABLE Werkzeuge_neu RENAME TO Werkzeuge;
-
-##
+## Ergebnisbewertung 
 [10min]
+
 Nachdem Sie diese Schritte ausgeführt haben, haben Sie effektiv die Spalte `Gewicht` aus Ihrer Tabelle `Werkzeuge`
 entfernt. Stellen Sie sicher, dass Sie vor dem Durchführen dieser Operationen eine Sicherungskopie Ihrer Datenbank
 erstellen, um Datenverlust zu vermeiden.
@@ -83,7 +89,7 @@ erstellen, um Datenverlust zu vermeiden.
 Im Zuge der Normalisierung stellen sie fest, dass die beiden neuen Spalten den falschen Typ haben. Sie sollen als
 Fremdschlüssel dienen und keinen Text enthalten.
 
-Da hätte man besser planen müssen:
+Da hätte man besser planen müssen!
 
 Um die Datentypen der Spalten `Warengruppe` und `Warenuntergruppe` in Ihrer `Werkzeuge`-Tabelle von `TEXT` auf `INT` zu
 ändern und sie als Fremdschlüssel zu definieren, müssen Sie ähnliche Schritte wie beim Entfernen einer Spalte
@@ -95,8 +101,9 @@ Bevor Sie beginnen, stellen Sie sicher, dass die Tabellen, auf die sich die Frem
 Angenommen, Sie haben zwei Tabellen `Warengruppen` und `Warenuntergruppen`, und jede hat eine Spalte `ID` vom Typ `INT`,
 die als Primärschlüssel dient.
 
-### **Aufgabe: Lösen sie das Problem nach dem vorgegeben Schema 🌶️🌶️**
+### **Aufgabe: Lösen sie das Problem nach dem vorgegebenen Schema 🌶️🌶️**
 [30min]
+
 1. **Erstellen Sie eine neue Tabelle**:
 
 2. **Kopieren Sie die Daten**:
@@ -117,6 +124,7 @@ umbenennen.
 
 ### **Aufgabe: Wir haben vergessen, die FOREIGN KEYS anzugeben. 🌶️🌶️** 
 [30min]
+
 1. **Erstellen Sie eine neue Tabelle mit Fremdschlüsseln**:
    Angenommen, Sie haben die Tabellen `Warengruppen` und `Warenuntergruppen` mit den Primärschlüsseln `ID`. Erstellen
    Sie eine neue Tabelle, die die Fremdschlüsselbeziehungen enthält:
@@ -131,6 +139,7 @@ umbenennen.
 
 ## Constraints und Default-Werte
 [40min]
+
 Bei der Erstellung von Tabellen in SQLite ist es wichtig, Constraints und Default-Werte zu berücksichtigen, um die
 Datenintegrität und Standardverhalten zu gewährleisten. Hier ist eine Ergänzung, die sich auf die Verwendung von
 Constraints und Default-Werten in der Tabelle `Werkzeuge` konzentriert:
@@ -195,25 +204,33 @@ Der `ALTER TABLE`-Befehl in SQLite unterstützt nicht direkt das Hinzufügen, En
 Default-Werten in bestehenden Tabellen. Dies stellt eine Einschränkung dar, die bei der Datenbankplanung und -wartung
 berücksichtigt werden muss. Hier sind einige wichtige Punkte:
 
-1. **Ändern von Default-Werten**: SQLite erlaubt nicht das direkte Ändern von Default-Werten mit dem `ALTER TABLE`
-   -Befehl. Um einen Default-Wert zu ändern, müssen Sie eine neue Tabelle mit der geänderten Definition erstellen, die
-   Daten übertragen, die alte Tabelle löschen und die neue Tabelle umbenennen.
+### 1. **Ändern von Default-Werten**: 
 
-2. **Hinzufügen oder Entfernen von Constraints**: Ähnlich wie bei Default-Werten unterstützt SQLite nicht das direkte
-   Hinzufügen oder Entfernen von Constraints (wie `UNIQUE`, `NOT NULL`, `CHECK`, `FOREIGN KEY`) in einer bestehenden
-   Tabelle. Um Constraints hinzuzufügen oder zu entfernen, müssen Sie den gleichen Prozess wie beim Ändern von
-   Default-Werten befolgen: Erstellen einer neuen Tabelle, Übertragen der Daten, Löschen der alten Tabelle und
-   Umbenennen der neuen Tabelle.
+SQLite erlaubt nicht das direkte Ändern von Default-Werten mit dem `ALTER TABLE`
+-Befehl. Um einen Default-Wert zu ändern, müssen Sie eine neue Tabelle mit der geänderten Definition erstellen, die
+Daten übertragen, die alte Tabelle löschen und die neue Tabelle umbenennen.
 
-3. **Praktische Überlegungen**: Diese Einschränkungen bedeuten, dass sorgfältige Planung erforderlich ist, bevor eine
-   Tabelle erstellt wird. Es ist wichtig, alle erforderlichen Constraints und Default-Werte im Voraus zu
-   berücksichtigen. Änderungen nachträglich können zeitaufwendig sein und erfordern eine sorgfältige Datenmigration.
+### 2. **Hinzufügen oder Entfernen von Constraints**: 
 
-4. **Datenmigration**: Bei der Datenmigration ist es entscheidend, die Datenintegrität zu wahren. Es empfiehlt sich,
-   eine vollständige Sicherung der Datenbank vorzunehmen, bevor Änderungen durchgeführt werden. Außerdem sollten die
-   Daten nach der Migration überprüft werden, um sicherzustellen, dass keine Daten verloren gegangen sind oder verändert
-   wurden.
+Ähnlich wie bei Default-Werten unterstützt SQLite nicht das direkte
+Hinzufügen oder Entfernen von Constraints (wie `UNIQUE`, `NOT NULL`, `CHECK`, `FOREIGN KEY`) in einer bestehenden
+Tabelle. Um Constraints hinzuzufügen oder zu entfernen, müssen Sie den gleichen Prozess wie beim Ändern von
+Default-Werten befolgen: Erstellen einer neuen Tabelle, Übertragen der Daten, Löschen der alten Tabelle und
+Umbenennen der neuen Tabelle.
 
+### 3. **Praktische Überlegungen**: 
+
+Diese Einschränkungen bedeuten, dass sorgfältige Planung erforderlich ist, bevor eine
+Tabelle erstellt wird. Es ist wichtig, alle erforderlichen Constraints und Default-Werte im Voraus zu
+berücksichtigen. Änderungen nachträglich können zeitaufwendig sein und erfordern eine sorgfältige Datenmigration.
+
+### 4. **Datenmigration**: 
+Bei der Datenmigration ist es entscheidend, die Datenintegrität zu wahren. Es empfiehlt sich,
+eine vollständige Sicherung der Datenbank vorzunehmen, bevor Änderungen durchgeführt werden. Außerdem sollten die
+Daten nach der Migration überprüft werden, um sicherzustellen, dass keine Daten verloren gegangen sind oder verändert
+wurden.
+
+### 5. **Zusammenfassung:**
 Zusammenfassend lässt sich sagen, dass während SQLite eine flexible und leichte Datenbanklösung bietet, die
 Einschränkungen im Zusammenhang mit dem `ALTER TABLE`-Befehl eine Herausforderung darstellen können. Eine
 vorausschauende Planung und sorgfältige Datenmigration sind entscheidend, um die Struktur und Integrität der Datenbank

@@ -99,8 +99,8 @@ solche Abfragen zu standardisieren und zu vereinfachen, was besonders bei wieder
 nützlich ist.
 
 ### **Aufgabe: Führen sie JOINs in ihre Projekte ein. Suchen sie nach Fällen und Fragestellungen, in denen JOINs sinnvolle Aussagen generieren. 🌶️🌶️🌶️**
-[60min]
+[120min]
 ### **Aufgabe: Erstellen sie aus den entwickelten JOINs VIEWS, die diese Abfragen fixieren. 🌶️🌶️🌶️**
-[40min]
+[120min]
 
 Weiter zu [Schlußbemerkungen](../unterrichte/finally.md) &emsp; | &emsp; [zurück](../datenbanken.md)
