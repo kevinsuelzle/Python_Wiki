@@ -4,3 +4,8 @@ nav:
   - Lehrplan: lehrplan/lehrplan.md
   - Werkzeuge:
       - git: lehrplan/git/git.md
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false
