@@ -41,13 +41,22 @@
 | 5     | [OOP vs Funktional](python_grundlagen/Woche%204-5/15_oop_vs_funktionale.md)         | [hier](../checklists/checkliste1.md#oop-vs-funktional)         | [hier](../begriffe/begriffe1.md#oop-vs-funktional)         |
 | 5     | [git Teil 3](git/git_Teil3.md)                                                      | [hier](../checklists/checklist_git.md#teil-3)                  | [hier](../begriffe/begriffe1.md#teil-3)                    |
 
-
 # Block 2
 
-| Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
-|       |            |           |                  |
-|       |            |           |                  |
+| Woche | Unterricht                                                               | Lernziele                                                    | Begriffssammlung                                            |
+|-------|--------------------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------|
+| 6     | [Clean Code Einführung](clean_code/Introduction.md)                      | [hier](../checklists/checkliste2.md#clean-code-einfuehrung)  | [hier](../begriffe/begriffe2.md#clean-code-einfuehrung)     |
+| 6     | [Benennungskonventionen](clean_code/Benennungskonventionen.md)           | [hier](../checklists/checkliste2.md#benennungskonventionen)  | [hier](../begriffe/begriffe2.md#benennungskonventionen)     |
+| 6     | [DRY Prinzip](clean_code/DRY.ipynb)                                      | [hier](../checklists/checkliste2.md#dry-prinzip)             | [hier](../begriffe/begriffe2.md#dry-prinzip)                |
+| 6     | [Fehlerbehandlung](clean_code/Fehlerbehandlung.ipynb)                    | [hier](../checklists/checkliste2.md#fehlerbehandlung)        | [hier](../begriffe/begriffe2.md#fehlerbehandlung)           |
+| 6     | [Funktionsgestaltung](clean_code/Funktionsgestaltung.ipynb)              | [hier](../checklists/checkliste2.md#funktionsgestaltung)     | [hier](../begriffe/begriffe2.md#funktionsgestaltung)        |
+| 6     | [Globale Parameter](clean_code/Globale_Parameter.ipynb)                  | [hier](../checklists/checkliste2.md#globale-parameter)       | [hier](../begriffe/begriffe2.md#globale-parameter)          |
+| 7     | [Guard Clauses](clean_code/GuardClauses.ipynb)                           | [hier](../checklists/checkliste2.md#guard-clauses)           | [hier](../begriffe/begriffe2.md#guard-clauses)              |
+| 7     | [Kommentare](clean_code/Kommentare.ipynb)                                | [hier](../checklists/checkliste2.md#kommentare)              | [hier](../begriffe/begriffe2.md#kommentare)                 |
+| 7     | [List Comprehensions](clean_code/ListComprehension.ipynb)                | [hier](../checklists/checkliste2.md#list-comprehensions)     | [hier](../begriffe/begriffe2.md#list-comprehensions)        |
+| 7     | [Type Hints](clean_code/Typehints.ipynb)                                 | [hier](../checklists/checkliste2.md#type-hints)              | [hier](../begriffe/begriffe2.md#type-hints)                 |
+| 7     | [Übungsaufgaben](clean_code/Uebungsaufgabe.ipynb)                        | [hier](../checklists/checkliste2.md#uebungsaufgaben)         | [hier](../begriffe/begriffe2.md#uebungsaufgaben)            |
+| 7     | [Variablennamen](clean_code/Variablenbenennung.ipynb)                    | [hier](../checklists/checkliste2.md#variablennamen)          | [hier](../begriffe/begriffe2.md#variablennamen)             |
 
 # Block 3
 
@@ -55,5 +64,8 @@
 |-------|------------|-----------|------------------|
 |       |            |           |                  |
 |       |            |           |                  |
+
+
+
 
 
