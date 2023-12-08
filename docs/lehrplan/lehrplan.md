@@ -44,10 +44,10 @@
 
 # Block 2
 
-| Woche | Unterricht                                  | Lernziele                                    | Begriffssammlung                                      |
-|-------|---------------------------------------------|:---------------------------------------------|:------------------------------------------------------|
-|       | [Clean Code](clean_code/Introduction.md)    | [Lernziele](clean_code/CC_lernziele.md)      | [Begriffssammlung](clean_code/CC_begriffssammlung.md) |
-|       | [Datenbanken 1](datenbanken/datenbanken.md) | [Lernziele](../checklists/checkliste_db1.md) | [Begriffssammlung](../begriffe/begriffe_db1.md)       |
+| Woche | Unterricht                                  | Lernziele                               | Begriffssammlung                          |
+|-------|---------------------------------------------|:----------------------------------------|:------------------------------------------|
+| 6     | [Clean Code](clean_code/Introduction.md)    | [hier](../checklists/lernziele_clean_code.md)      | [hier](../begriffe/begriffe_clean_code.md) |
+| 6     | [Datenbanken 1](datenbanken/datenbanken.md) | [hier](../checklists/checkliste_db1.md) | [hier](../begriffe/begriffe_db1.md)       |
 
 # Block 3
 

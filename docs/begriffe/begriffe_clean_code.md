@@ -15,3 +15,20 @@
 | **Unit Testing**                     | Das Schreiben von Tests für einzelne Komponenten oder Funktionen eines Programms.                                                    |
 | **Code-Review**                      | Der Prozess, bei dem der Code von anderen Entwicklern überprüft wird, um Qualität und Konsistenz zu gewährleisten.                   |
 
+# Basics
+| Begriff                                       | Kurzerklärung                                                                                                                                                                     | Link zur Referenz                                                              |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| local                                         | bezeichnet ein lokales Repository auf deinem Computer.                                                                                                                            | [Referenz]() |
+
+# Konventionen
+# Bennenungskonventionen
+# DRY
+# Fehlerbehandlung
+# Funktionsgestaltung
+# Globale Parameter
+# Guard Clauses
+# Introduction
+# Kommentare
+# Lst Comprehension
+# Type Hints
+# Benennung von Variablen
