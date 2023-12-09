@@ -4,7 +4,7 @@
 Bei der Erstellung einer Website kommen zahlreiche Technologien und Praktiken zum Einsatz, die zusammenspielen, um ein nahtloses, interaktives Nutzererlebnis zu erstellen. Die Basis bildet ein Verständnis der Web-Grundlagen – von der Strukturierung und dem Styling von Inhalten bis hin zur Implementierung von Interaktivität und dynamischen Funktionen. 
 
 ### Fragen
-Zeit: 1-2 min / Frage
+Zeit: 3 min / Frage
 1. Was ist der Zweck des `<div>`-Elements in HTML?
 2. Wie unterscheiden sich Klassen- und ID-Selektoren in CSS?
 3. Was ist das Box-Modell in CSS und welche Komponenten beinhaltet es?
@@ -313,7 +313,7 @@ try {
 }
 ```
 
-####  mit der Fetch API
+#### Requests mit der Fetch API
 Die Fetch API bietet natürlich, wie Python `requests`, zugang zu allen HTTP-Methoden wie GET, POST, PUT und DELETE.
 
 `GET`
@@ -414,7 +414,7 @@ Dynamische Webseiten hingegen präsentieren unterschiedlichen Besuchern verschie
 
 
 ## Aufgaben
-Zeit: 5-10 min / Aufgabe
+Zeit: 15 min / Aufgabe
 1. **Einfache JavaScript Alert-Box**: Implementiert ein einfaches JavaScript-Skript, das beim Laden der Webseite eine Alert-Box anzeigt, die "Hallo Welt!" enthält.
 
 2. **Dynamische Textänderung mit JavaScript**: Fügt ein HTML-Element hinzu (z.B. ein `<p>`-Tag) und verwendet JavaScript, um den Text dieses Elements beim Klicken auf einen Button zu ändern. Zum Beispiel könnte der Text von `"Vor dem Klick"` zu `"Nach dem Klick"` geändert werden.
@@ -741,7 +741,7 @@ if __name__ == '__main__':
 
 ## Komplex-Aufgaben (Capstone Projekt)
 **Interaktive Website für Testfahrten mit einem VW-Fahrzeug**
-> Zeit: 60-90 min 
+> Zeit: 180 min 
 
 Das Ziel dieses Projektes ist es, die zuvor erstellte HTML + CSS Website mit interaktivität zu versehen. Die Nutzer sollen einen vollen Kalender sehen, die dynamisch mit neuen Testfahrten befüllt wird. Anstelle einer echten Flask API sollen gebuchte Fahrten im Local Storage des Browsers gespeichert werden.
 Außerdem soll bei Klick auf die einzelnen Tage angezeigt werden, wer die jeweilige Fahrt gebucht hat.

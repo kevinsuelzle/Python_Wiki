@@ -180,7 +180,7 @@ Für Produktionsumgebungen sollten auf jeden Fall robustere Serverlösungen wie 
 
 
 ## Aufgaben
-Zeit: 5-10 min / Aufgabe
+Zeit: 15 min / Aufgabe
 1. **Hello World Flask & Django API**: Erstellt jeweils einen GET Endpunkt der den Text "Hallo Welt!" als Response zurückgibt in Flask und Django.
 2. **Reflexionsrunden Django vs Flask**: In Gruppen von 2, vergleicht gemeinsam die Lesbarkeit, Einfachheit und den Syntax der beiden Frameworks.
 
@@ -249,7 +249,6 @@ Beispiele hierfür findest du in [Woche 6-7](../../datenbanken/datenbanken.md).
 ## Umsetzung einer RESTful API in Flask
 ### Routen
 Das Kernstück jeder Flask-Anwendung sind die Routen, die bestimmen, wie Anfragen an verschiedene URLs gehandhabt werden. Ein Beispiel für eine einfache Route haben wir bereits im Teil [Einrichtung einer API mit Flask](#einrichtung-einer-api-mit-flask) gesehen.
-
 
 
 ```python
@@ -475,7 +474,7 @@ Beispielantwort (JSON):
 
 ## Komplex-Aufgabe (Capstone Projekt)
 **CRUD Garagen Management API**
-> Zeit: 45-60 min 
+> Zeit: 180 min 
 
 Erstelle eine FLASK RESTful API mit CRUD Funktion für das Management von Stellplätzen in einer Garage.
 Hierbei sollen Fahrzeuge mit ihrem Kennzeichen eingebucht und einem Stellplatz zugewiesen werden.

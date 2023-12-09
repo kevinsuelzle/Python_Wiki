@@ -75,7 +75,8 @@
 | 9     |[Web API Frameworks](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 9     |[RESTful Planung](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 9     |[RESTful Umsetzung](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
-| 9     |[RESTful Testing & Dokumentation](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[RESTful Testing](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[RESTful Dokumentation](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 9     |[Capstone Projekt](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[Einführung ins Web](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[Web Basics](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
@@ -88,6 +89,7 @@
 | 10     |[JavaScript](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[Eventhandling](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[Fetch API](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[JS Frameworks & Libraries](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[Moderne Web Applications](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[Serverside Javascript (NPM)](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[Rendering](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|

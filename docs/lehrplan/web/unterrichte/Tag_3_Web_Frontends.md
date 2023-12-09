@@ -4,7 +4,7 @@
 Hinter fast jeder modernen Website oder Webanwendung steht ein Backend, das häufig über eine API (Application Programming Interface) mit dem Frontend kommuniziert. 
 
 ### Fragen
-Zeit: 1-2 min / Frage
+Zeit: 3 min / Frage
 1. Was ist eine API und warum ist sie wichtig?
 2. Beschreibe das Prinzip einer RESTful API
 3. Was sind die Hauptunterschiede zwischen Flask und Django?
@@ -562,7 +562,7 @@ Passt das Layout an basierend auf der Größe des Browserfensters oder Gerätes 
 ```
 
 ## Aufgaben
-Zeit: 5-10 min / Aufgabe
+Zeit: 20 min / Aufgabe
 
 **1. Grundstruktur der Automobil-Website**
 Erstelle das Grundgerüst einer HTML-Seite für ein Automobilunternehmen. Diese Seite soll als Basis für die weiteren Schritte dienen und die grundlegenden Elemente wie Header, Hauptinhalt und Footer enthalten.
@@ -1064,7 +1064,7 @@ Im **traditionellen CSS** werden Media Queries verwendet, um ähnliche responsiv
 
 ## Komplex-Aufgabe (Capstone Projekt)
 **Webseite für Testfahrten mit einem VW-Fahrzeug**
-> Zeit: 30-45 min 
+> Zeit: 150 min 
 
 Das Ziel dieses Projekts ist es, eine benutzerfreundliche Webseite zu erstellen, die es potenziellen Kunden ermöglicht, eine Testfahrt für ein VW-Fahrzeug zu buchen. Die Webseite soll ein intuitives Formular enthalten, das neben grundlegenden persönlichen Informationen auch die Auswahl des Fahrzeugmodells, des Wunschtermins und der Uhrzeit für die Testfahrt bietet.
 

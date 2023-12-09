@@ -4,7 +4,7 @@
 Bei der Erstellung einer Website kommen zahlreiche Technologien und Praktiken zum Einsatz, die zusammenspielen, um ein nahtloses, interaktives Nutzererlebnis zu erstellen. 
 
 ### Fragen
-Zeit: 1-2 min / Frage
+Zeit: 3 min / Frage
 1. Was ist der Hauptunterschied zwischen `let`, `const` und `var` in JavaScript?
 2. Wie funktionieren Template Literals in JavaScript und gib ein Beispiel?
 3. Wie werden Arrays in JavaScript manipuliert? Nenne ein Beispiel für das Hinzufügen eines Elements.
@@ -156,7 +156,7 @@ Diese Struktur zeigt die Beziehungen und Abhängigkeiten zwischen den Klassen un
 ![Sequenzdiagram](../assets/5_beispiel.png)
 
 ## Aufgaben
-Zeit: 10-15 min / Aufgabe
+Zeit: 20 min / Aufgabe
 1. **Einfaches Klassendiagramm**: Erstelle ein einfaches UML-Klassendiagramm für ein Bibliothekssystem.
    - Modelliere die Klassen Buch und Mitglied.
    - Die Klasse Buch sollte die Attribute Titel und Autor und eine Methode ausleihen() haben.
@@ -314,7 +314,7 @@ Das folgende Beispiel zeigt, wie DDD dabei helfen kann, ein komplexes System in 
 
 ## Komplex-Aufgaben (Capstone Projekt)
 **Inventory-Management-System für Automobilhersteller**
-> Zeit: 90-120 min 
+> Zeit: 180min 
 
 Das Ziel dieses Projekts ist die Entwicklung einer interaktiven Webanwendung zur Verwaltung des Inventars von Automobilteilen. Die Anwendung soll eine Übersicht über verschiedene Autoteile bieten, mit der Möglichkeit, neue Teile hinzuzufügen, bestehende zu aktualisieren oder zu entfernen. Wichtig ist die Zusammenarbeit in 2er Gruppen und sich gemeinsam Gedanken über die Aufteilung und Ausführung der Aufgaben zu machen.
 

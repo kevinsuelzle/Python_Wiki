@@ -172,7 +172,7 @@ Um eine API in Postman zu testen, erstellt man eine neue Anfrage, wählt z.B. di
 Um ein besseres Verständnis mit dem Umgang mit API aufzubauen, nutzen wir zwei kostenlose APIs zur Abfrage des Wetters an einer Geokoordinate: https://open-meteo.com/ und https://brightsky.dev/.
 
 ## Aufgaben
-Zeit: 5-10 min / Aufgabe
+Zeit: 15 min / Aufgabe
 1. **Terminal CURL Wetter API abrufen**: Nutze CURL im Terminal, um die Wetterdaten von https://open-meteo.com/ für einen bestimmten Ort abzufragen.
 
 2. **Python Wetter API abrufen**: Verwende die Python Request Library, um die Wetterdaten von https://open-meteo.com/ für einen bestimmten Ort abzufragen.
@@ -391,7 +391,7 @@ except requests.exceptions.RequestException as e:
 
 # Komplexe-Aufgabe (Capstone Projekt)
 **Wetter API CLI Anwendung**
-> Zeit: 45-60 min 
+> Zeit: 120 min 
 
 Erstelle ein Kommandozeilen-Programm bei dem der Nutzer um die Eingabe einer Stadt gebeten wird und dann das aktuelle Wetter für den gegebenen Standort bekommt.
 Füge zusätzlich die Option hinzu, eine Vorhersage für die kommenden 7 Tage anzuzeigen.
