@@ -1064,7 +1064,7 @@ Im **traditionellen CSS** werden Media Queries verwendet, um ähnliche responsiv
 
 ## Komplex-Aufgabe (Capstone Projekt)
 **Webseite für Testfahrten mit einem VW-Fahrzeug**
-> Zeit: 150 min 
+> Zeit: 180 min 
 
 Das Ziel dieses Projekts ist es, eine benutzerfreundliche Webseite zu erstellen, die es potenziellen Kunden ermöglicht, eine Testfahrt für ein VW-Fahrzeug zu buchen. Die Webseite soll ein intuitives Formular enthalten, das neben grundlegenden persönlichen Informationen auch die Auswahl des Fahrzeugmodells, des Wunschtermins und der Uhrzeit für die Testfahrt bietet.
 

@@ -4,7 +4,7 @@
 API steht für Application Programming Interface. APIs ermöglichen es Entwicklern, komplexe Funktionen zu nutzen, ohne diese von Grund auf neu entwickeln zu müssen. So können beispielsweise Entwickler einer Wetter-App die API eines Wetterdienstes nutzen, um aktuelle Wetterdaten abzurufen, anstatt selbst eine umfassende Wetterdateninfrastruktur aufzubauen
 
 ## API Capstone Projekt Ausblick
-Ziel für das erste Capstone Projekt ist es, eine Wetterabfrage mit Python in einer CLI Anwendung zu integrieren und informationen zum Wetter einer Stadt zu bekommen.
+Ziel ist es, eine Wetterabfrage mit Python in einer CLI Anwendung zu integrieren und informationen zum Wetter einer Stadt zu bekommen.
 
 ![Wetter CLI Projekt](../../images/1_wetter_cli.png)
 

@@ -33,10 +33,10 @@ def test_get_user_not_found():
 Postman ist ein beliebtes Werkzeug für das Testen von APIs und das Werkzeug der Wahl für das kommende Tagesprojekt. Es bietet eine benutzerfreundliche Oberfläche und leistungsstarke Funktionen zum Erstellen, Testen und Dokumentieren von APIs.
 
 #### Erstellen eines neuen Requests
-![Postman Neue GET Query](../assets/postman_get_example.png)
+![Postman Neue GET Query](../../images/postman_get_example.png)
 
 #### Erstellen einer Postman Collections
-![Postman Neue Collection](../assets/postman_new_collection_query.png)
+![Postman Neue Collection](../../images/postman_new_collection_query.png)
 
 #### Erstellen eines Tests für einen GET-Endpoint
 Füge im nächsten Schritt den Status-Code Test im "Tests"-Tab hinzu.
@@ -48,15 +48,30 @@ pm.test("Statuscode ist 200", function () {
     pm.expect(jsonData).to.not.be.empty;
 });
 ```
-![Postman Test Sektion](../assets/postman_test_section.png)
+![Postman Test Sektion](../../images/postman_test_section.png)
 
 Über einen Rechtsklick auf die Collection können dann alle Requests inklusive tests in der angegebenen Reihenfolge getestet werden.
 
-![Postman Test Sektion](../assets/postman_run_collection.png)
+![Postman Test Sektion](../../images/postman_run_collection.png)
 
 ### Automatisierung und wiederholbares Testing
 Postman ermöglicht es, alle Anfragen innerhalb einer Collection automatisch auszuführen. Das ist nützlich, um Regressionstests durchzuführen.
 
-![Postman Collection Test Run](../assets/postman_collection_run.png)
+![Postman Collection Test Run](../../images/postman_collection_run.png)
 
 Zusätzlich bietet Postman die Möglichkeit, Collections über die [Postman API](https://www.postman.com/postman/workspace/postman-public-workspace/documentation/12959542-c8142d51-e97c-46b6-bd77-52bb66712c9a) oder [Newman](https://www.npmjs.com/package/newman) (eine Command-Line-Version von Postman) in CI/CD-Pipelines zu integrieren. Das ermöglicht das automatische Testen von APIs bei jedem Build oder Deployment.
+
+
+## Aufgaben
+[45 min]
+
+### Testen der GET-Route für Benutzerliste 🌶️
+Schreibe einen Python-Test, der die GET-Route für die Benutzerliste testet.
+
+### Testen der POST-Route für das Hinzufügen eines neuen Benutzers 🌶️🌶️
+Schreibe einen Python-Test, um das Hinzufügen eines neuen Benutzers zu testen.
+
+### Testen der DELETE-Route für das Löschen eines Benutzers 🌶️🌶️
+Schreibe einen Python-Test, um das Löschen eines Benutzers zu testen.
+
+[Lösungen](./solutions.md)

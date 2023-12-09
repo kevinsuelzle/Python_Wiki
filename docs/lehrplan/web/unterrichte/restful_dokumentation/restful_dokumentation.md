@@ -56,3 +56,15 @@ Beispielantwort (JSON):
 500 Internal Server Error: Allgemeiner Serverfehler.
 ```
 
+## Aufgaben
+[30 min]
+
+### Erstellen einer Swagger-Dokumentation. 🌶️🌶️
+Integriere Swagger in Ihre Flask-API, um eine interaktive Dokumentation zu erstellen.
+
+#### Schritte
+- Installiere `flask-swagger` im Flask-Projekt.
+- Erstelle YAML-Dokumentationsblöcke für die bestehenden Endpoints.
+- Konfiguriere Flask-Swagger, um diese Dokumentationsblöcke zu sammeln und eine interaktive API-Dokumentation bereitzustellen.
+
+[Lösungen](./solutions.md)
