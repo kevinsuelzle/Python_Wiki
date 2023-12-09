@@ -46,8 +46,47 @@
 
 | Woche | Unterricht | Lernziele | Begriffssammlung |
 |-------|------------|-----------|------------------|
-|       |            |           |                  |
-|       |            |           |                  |
+| 9     |[Einführung in APIs](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[API Arten](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[API Kommunikation](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[API Nutzung](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[HTTP Methoden](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[Python Requests](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[Capstone Projekt](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[Aufbau einer API](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[Implementierungsprinzipien](web/...)|[hier](../
+checklists/...)|[hier](../begriffe/)|
+| 9     |[Web API Frameworks](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[RESTful Planung](web/...)|[hier](../checklists/...)|[hier]
+(../begriffe/)|
+| 9     |[RESTful Umsetzung](web/...)|[hier](../checklists/...)|[hier]
+(../begriffe/)|
+| 9     |[RESTful Testing & Dokumentation](web/...)|[hier](../checklists/...)|[hier]
+(../begriffe/)|
+| 9     |[Capstone Projekt](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Einführung ins Web](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Web Basics](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[HTML](web/...)|[hier](../checklists/...)|[hier](../
+begriffe/)|
+| 10     |[CSS](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Komplexes HTML](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Komplexes CSS](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Capstone Projekt](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Einführung in interaktive Websites](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[JavaScript](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Eventhandling](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Fetch API](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Moderne Web Applications](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Serverside Javascript (NPM)](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Rendering](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Capstone Projekt](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Einführung in die Web App Planung](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Projekte mit Struktur](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[UML](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Test & Domain Driven](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 10     |[Capstone Projekt](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+
+
 
 # Block 3
 
