@@ -46,6 +46,23 @@
 
 | Woche | Unterricht | Lernziele | Begriffssammlung |
 |-------|------------|-----------|------------------|
+| 6     | [Einführung SQL-Datenbanken](datenbanken/datenbanken.md)                                             | [hier](../checklists/checklist_db1.md)                                            | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Arten von SQL Anweisungen](datenbanken/unterrichte/sql_types.md)                                    | [hier](../checklists/checklist_db1.md#sql-sprachtypisierung)                      | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [UML für Datenbanken](datenbanken/unterrichte/uml_diagramme.md)                                      | [hier](../checklists/checklist_db1.md#uml-diagramme)                              | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Normalisierung von Daten](datenbanken/unterrichte/normalization.md)                                 | [hier](../checklists/checklist_db1.md#normalisierung-von-daten)                   | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Indizes und referentielle Integrität](datenbanken/unterrichte/indices_and_referential_integrity.md) | [hier](../checklists/checklist_db1.md#indizes-und-referentielle-integrität)       | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Arbeitsumgebung einrichten](datenbanken/unterrichte/how_we_will_work.md)                            | [hier](../checklists/checklist_db1.md#arbeitsumgebung)                            | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Reservierte Ausdrücke](datenbanken/unterrichte/reserved_words_sqlite.md)                            | [hier](../checklists/checklist_db1.md#reservierte-worte)                          | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Datentypen](datenbanken/unterrichte/daten_typen_sqlite.md)                                          | [hier](../checklists/checklist_db1.md#datentypen)                                 | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Erstellen von Tabellen](datenbanken/unterrichte/create_tables.md)                                   | [hier](../checklists/checklist_db1.md#erstellen-von-tabellen)                     | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Arbeiten mit Daten](datenbanken/unterrichte/working_with_data.md)                                   | [hier](../checklists/checklist_db1.md#arbeiten-mit-daten)                         | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Aliase](datenbanken/unterrichte/aliases.md)                                                         | [hier](../checklists/checklist_db1.md#aliase)                                     | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Funktionen](datenbanken/unterrichte/build_in_functions.md)                                          | [hier](../checklists/checklist_db1.md#eingebaute-funktionen)                      | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Unterabfragen und CTE](datenbanken/unterrichte/subselect_and_cte.md)                                | [hier](../checklists/checklist_db1.md#unterabfragen-und-common-table-expressions) | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Batch, Script, Deploy](datenbanken/unterrichte/scripting_and_deploying.md)                          | [hier](../checklists/checklist_db1.md#batch-script-deploy)                        | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Gruppenarbeit](datenbanken/unterrichte/projects.md)                                                 | [hier](../checklists/checklist_db1.md#projekte)                                   | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Fragen an die Datenbank](datenbanken/unterrichte/joins_and_views.md)                                | [hier](../checklists/checklist_db1.md#joins-und-views)                            | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Abschluss SQL-Datenbanken](datenbanken/unterrichte/finally.md)                                      | [hier](../checklists/checklist_db1.md#schlusswort)                                | [hier](../begriffe/begriffe_db1.md) |
 | 9     |[Einführung in APIs](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 9     |[API Arten](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 9     |[API Kommunikation](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
@@ -54,20 +71,15 @@
 | 9     |[Python Requests](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 9     |[Capstone Projekt](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 9     |[Aufbau einer API](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
-| 9     |[Implementierungsprinzipien](web/...)|[hier](../
-checklists/...)|[hier](../begriffe/)|
+| 9     |[Implementierungsprinzipien](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 9     |[Web API Frameworks](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
-| 9     |[RESTful Planung](web/...)|[hier](../checklists/...)|[hier]
-(../begriffe/)|
-| 9     |[RESTful Umsetzung](web/...)|[hier](../checklists/...)|[hier]
-(../begriffe/)|
-| 9     |[RESTful Testing & Dokumentation](web/...)|[hier](../checklists/...)|[hier]
-(../begriffe/)|
+| 9     |[RESTful Planung](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[RESTful Umsetzung](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
+| 9     |[RESTful Testing & Dokumentation](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 9     |[Capstone Projekt](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[Einführung ins Web](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[Web Basics](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
-| 10     |[HTML](web/...)|[hier](../checklists/...)|[hier](../
-begriffe/)|
+| 10     |[HTML](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[CSS](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[Komplexes HTML](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
 | 10     |[Komplexes CSS](web/...)|[hier](../checklists/...)|[hier](../begriffe/)|
