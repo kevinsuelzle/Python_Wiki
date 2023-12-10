@@ -99,7 +99,7 @@
 | 10     |[UML](web/unterrichte/uml/uml.md)|[hier](../checklists/checklist_web.md#uml)|[hier](../begriffe/begriffe_web.md)|
 | 10     |[Test & Domain Driven](web/unterrichte/test_domain_driven/test_domain_driven.md)|[hier](../checklists/checklist_web.md#test--domain-driven)|[hier](../begriffe/begriffe_web.md)|
 | 10     |[Capstone Projekt](web/unterrichte/capstone_projekt_5/capstone_projekt_5.md)|[hier](../checklists/checklist_web.md)|[hier](../begriffe/begriffe_web.md)|
-
+| 11     |[Cloud Intro](azure/unterrichte/cloud_intro/cloud_intro.md)|[hier](../checklists/checklist_azure.md)|[hier](../begriffe/begriffe_azure.md)|
 
 
 # Block 3
