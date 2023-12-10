@@ -5,7 +5,7 @@
 Projektthema: API und Web App Entwicklung mit Deployment auf Azure
 
 ![App Screenshot](./assets/car_rent_1.png)
-[App Demo](./assets/Car-rental-recording.mov)
+[App Demo](./assets/Car-rental-recording.mp4)
 
 ## Normalsprachliche Beschreibung des Projektes
 
