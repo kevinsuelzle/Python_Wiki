@@ -65,9 +65,14 @@
 
 # Block 3
 
-| Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
-|       |            |           |                  |
-|       |            |           |                  |
-
-
+| Woche | Unterricht                           | Lernziele | Begriffssammlung |
+|-------|--------------------------------------|-----------|------------------|
+|  12   | [Einführung in Data Science](datascience/unterrichte/data_science_einfuehrung.md) | [hier](../checklists/checklist_data_science.md#einfuehrung) | [hier](../begriffe/begriffe_data_science.md) |
+|  12   | [Pandas: Einführung](datascience/unterrichte/pandas_einfuehrung.md) | [hier](../checklists/checklist_data_science.md#pandas_einfuehrung) | [hier](../begriffe/begriffe_data_science.md) |
+|  12   | [Pandas: Import/Export von Daten](datascience/unterrichte/pandas_import_export.md) | [hier](../checklists/checklist_data_science.md#pandas_import_export) | [hier](../begriffe/begriffe_data_science.md) |
+|  12   | [Pandas: Fehlende Werte](datascience/unterrichte/pandas_fehlende_werte.md) | [hier](../checklists/checklist_data_science.md#pandas_fehlende_werte) | [hier](../begriffe/begriffe_data_science.md) |
+|  12   | [NumPy: Arrays](datascience/unterrichte/numpy_arrays.md) | [hier](../checklists/checklist_data_science.md#numpy_arrays) | [hier](../begriffe/begriffe_data_science.md) |
+|  13   | [NumPy: Slicing](datascience/unterrichte/numpy_slicing.md) | [hier](../checklists/checklist_data_science.md#numpy_slicing) | [hier](../begriffe/begriffe_data_science.md) |
+|  13   | [Matplotlib: Linienplots](datascience/unterrichte/matplotlib_linienplots.md) | [hier](../checklists/checklist_data_science.md#matplotlib_linienplots) | [hier](../begriffe/begriffe_data_science.md) |
+|  13   | [Matplotlib: Subplots](datascience/unterrichte/matplotlib_subplots.md) | [hier](../checklists/checklist_data_science.md#matplotlib_subplots) | [hier](../begriffe/begriffe_data_science.md) |
+|  13   | [Seaborn: Einführung](datascience/unterrichte/seaborn_einfuehrung.md) | [hier](../checklists/checklist_data_science.md#seaborn_einfuehrung) | [hier](../begriffe/begriffe_data_science.md) |
