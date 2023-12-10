@@ -61,6 +61,7 @@
 | 6     | [Batch, Script, Deploy](datenbanken/unterrichte/scripting_and_deploying.md)                          | [hier](../checklists/checklist_db1.md#batch-script-deploy)                        | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Gruppenarbeit](datenbanken/unterrichte/projects.md)                                                 | [hier](../checklists/checklist_db1.md#projekte)                                   | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Fragen an die Datenbank](datenbanken/unterrichte/joins_and_views.md)                                | [hier](../checklists/checklist_db1.md#joins-und-views)                            | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Python und SQL](datenbanken/unterrichte/sqlite3.md)                                | [hier](../checklists/checklist_db1.md#sqlite3)                            | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Abschluss SQL-Datenbanken](datenbanken/unterrichte/finally.md)                                      | [hier](../checklists/checklist_db1.md#schlusswort)                                | [hier](../begriffe/begriffe_db1.md) |
 
 # Block 3

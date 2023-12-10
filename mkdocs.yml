@@ -63,6 +63,7 @@ nav:
           - Batch, Script, Deploy: lehrplan/datenbanken/unterrichte/scripting_and_deploying.md
           - Gruppenarbeit: lehrplan/datenbanken/unterrichte/projects.md
           - Fragen an die Datenbank: lehrplan/datenbanken/unterrichte/joins_and_views.md
+          - Python und SQL: lehrplan/datenbanken/unterrichte/sqlite3.md
           - Abschluss SQL-Datenbanken: lehrplan/datenbanken/unterrichte/finally.md
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
