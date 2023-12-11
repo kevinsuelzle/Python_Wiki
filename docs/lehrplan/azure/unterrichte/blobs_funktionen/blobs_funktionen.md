@@ -25,6 +25,6 @@ Simpler Dokumentupload für eine Zeiterfassungs-Excel Dokument in folgendem Form
 |3|8|7|9|9|5|
 |4|8|7|9|9|5|
 
-Zeit: 180 min 
+Zeit: 240 min 
 
 Sobald das Dokument im Blob Store liegt, wird eine Azure Funktion getriggert, die die Stunden pro Woche summiert und die Über- oder Fehlstunden für den angegebenen Monat anzeigt.

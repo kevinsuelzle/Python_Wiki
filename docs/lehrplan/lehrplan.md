@@ -99,7 +99,17 @@
 | 10     |[UML](web/unterrichte/uml/uml.md)|[hier](../checklists/checklist_web.md#uml)|[hier](../begriffe/begriffe_web.md)|
 | 10     |[Test & Domain Driven](web/unterrichte/test_domain_driven/test_domain_driven.md)|[hier](../checklists/checklist_web.md#test--domain-driven)|[hier](../begriffe/begriffe_web.md)|
 | 10     |[Capstone Projekt](web/unterrichte/capstone_projekt_5/capstone_projekt_5.md)|[hier](../checklists/checklist_web.md)|[hier](../begriffe/begriffe_web.md)|
-| 11     |[Cloud Intro](azure/unterrichte/cloud_intro/cloud_intro.md)|[hier](../checklists/checklist_azure.md)|[hier](../begriffe/begriffe_azure.md)|
+| 11     |[Cloud Intro](azure/unterrichte/cloud_intro/cloud_intro.md)|[hier](../checklists/checklist_azure.md#cloud-intro)|[hier](../begriffe/begriffe_azure.md)|
+| 11     |[Cloud Anbieter](azure/unterrichte/cloud_anbieter/cloud_anbieter.md)|[hier](../checklists/checklist_azure.md#cloud-anbieter)|[hier](../begriffe/begriffe_azure.md)|
+| 11     |[Azure Intro](azure/unterrichte/azure_intro/azure_intro.md)|[hier](../checklists/checklist_azure.md#azure-intro)|[hier](../begriffe/begriffe_azure.md)|
+| 11     |[Azure Services](azure/unterrichte/azure_services/azure_services.md.md)|[hier](../checklists/checklist_azure.md#azure-services)|[hier](../begriffe/begriffe_azure.md)|
+| 11     |[Static Web Apps](azure/unterrichte/static_web_apps/static_web_apps.md)|[hier](../checklists/checklist_azure.md#static-web-apps)|[hier](../begriffe/begriffe_azure.md)|
+| 11     |[Cloud Web Apps](azure/unterrichte/cloud_backend.md/cloud_backend.md)|[hier](../checklists/checklist_azure.md#cloud-web-apps)|[hier](../begriffe/begriffe_azure.md)|
+| 11     |[Cloud Databases](azure/unterrichte/cloud_database/cloud_database.md)|[hier](../checklists/checklist_azure.md#cloud-databases)|[hier](../begriffe/begriffe_azure.md)|
+| 11     |[Cloud Planung](azure/unterrichte/cloud_planung/cloud_planung.md)|[hier](../checklists/checklist_azure.md#cloud-planung)|[hier](../begriffe/begriffe_azure.md)|
+| 11     |[Blobs und Funktionen](azure/unterrichte/blobs_funktionen/blobs_funktionen.md)|[hier](../checklists/checklist_azure.md#blobs-und-funktionen)|[hier](../begriffe/begriffe_azure.md)|
+| 11     |[Cloud Monitoring](azure/unterrichte/cloud_monitoring/cloud_monitoring.md)|[hier](../checklists/checklist_azure.md#cloud-monitoring)|[hier](../begriffe/begriffe_azure.md)|
+
 
 
 # Block 3
