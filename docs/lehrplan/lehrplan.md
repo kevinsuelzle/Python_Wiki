@@ -58,14 +58,14 @@
 | 7     | [Übungsaufgaben](clean_code/Uebungsaufgabe.ipynb)                        | [hier](../checklists/checkliste2.md#uebungsaufgaben)         | [hier](../begriffe/begriffe2.md#uebungsaufgaben)            |
 | 7     | [Variablennamen](clean_code/Variablenbenennung.ipynb)                    | [hier](../checklists/checkliste2.md#variablennamen)          | [hier](../begriffe/begriffe2.md#variablennamen)             |
 
+Um die Kapitel unter "datenbanken" zu Ihrem Lehrplan hinzuzufügen und sich dabei an dem gegebenen Format aus Block 2 zu orientieren, könnten Sie den Lehrplan wie folgt strukturieren:
+
 # Block 3
 
-| Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
-|       |            |           |                  |
-|       |            |           |                  |
-
-
-
-
-
+| Woche | Unterricht                                                               | Lernziele                                                    | Begriffssammlung                                            |
+|-------|--------------------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------|
+| 8     | [Einführung in SQLAlchemy](datenbanken/einfuehrung.ipynb)               | [hier](../checklists/checkliste3.md#einfuehrung-sqlalchemy)  | [hier](../begriffe/begriffe3.md#einfuehrung-sqlalchemy)     |
+| 9     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.ipynb) | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte)  | [hier](../begriffe/begriffe3.md#fortgeschrittene-orm-konzepte)     |
+| 10     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.ipynb) | [hier](../checklists/checkliste3.md#sql-expression-language)  | [hier](../begriffe/begriffe3.md#sql-expression-language)     |
+| 11     | [Best Practices und fortgeschrittene Themen](datenbanken/best_practices.ipynb) | [hier](../checklists/checkliste3.md#best-practices)  | [hier](../begriffe/begriffe3.md#best-practices)     |
+| 11     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.ipynb) | [hier](../checklists/checkliste3.md#integration-in-flask)  | [hier](../begriffe/begriffe3.md#integration-in-flask)     |
