@@ -63,17 +63,20 @@ nav:
           - Batch, Script, Deploy: lehrplan/datenbanken/unterrichte/scripting_and_deploying.md
           - Gruppenarbeit: lehrplan/datenbanken/unterrichte/projects.md
           - Fragen an die Datenbank: lehrplan/datenbanken/unterrichte/joins_and_views.md
-          - Python und SQL: lehrplan/datenbanken/unterrichte/sqlite3.md
           - Abschluss SQL-Datenbanken: lehrplan/datenbanken/unterrichte/finally.md
+          - Python und SQL: lehrplan/datenbanken/unterrichte/sqlite3_basic.md
+          - sqlite3 - weitere Funktionen: lehrplan/datenbanken/unterrichte/sqlite3_advanced.md
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md
       - Clean Code: begriffe/begriffe_clean_code.md
       - SQL-Datenbanken: begriffe/begriffe_db1.md
+      - Python und SQL: begriffe/checklist_db_python.md
   - Checklisten:
       - Python Grundlagen: checklists/checklists_1.md
       - git: checklists/checklist_git.md
       - Clean Code: checklists/checklist_clean_code.md
       - SQL-Datenbanken: checklists/checklist_db1.md
+      - Python und SQL: begriffe/begriffe_db_python.md
   - Werkzeuge:
       - git: lehrplan/git/git.md
