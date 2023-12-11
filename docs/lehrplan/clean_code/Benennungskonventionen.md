@@ -1,8 +1,12 @@
-# Benennungskonventionen
+Hier ist eine überarbeitete und verständlichere Version Ihres Textes:
 
-siehe auch [PEP 8](https://peps.python.org/pep-0008/) 
+# Benennungskonventionen in der Programmierung
+
+Für detaillierte Benennungskonventionen, siehe [PEP 8](https://peps.python.org/pep-0008/).
 
 ## Variablen
+
+Unklare Variablennamen wie im folgenden Beispiel:
 
 ```python
 a = 50
@@ -10,58 +14,48 @@ b = 100
 c = a + b
 ```
 
-[Bezeichner](Conventions.md) sollten klar und eindeutig sein und [PEP 8](https://peps.python.org/pep-0008/#prescriptive-naming-conventions) folgen.
+sollten vermieden werden. Stattdessen empfiehlt es sich, klare und aussagekräftige Bezeichner zu verwenden, die den [PEP 8-Richtlinien](https://peps.python.org/pep-0008/#prescriptive-naming-conventions) entsprechen:
 
 ```python
 basispreis = 50
 steuer = 100
 gesamtpreis = basispreis + steuer
 ```
+
 # Aussagekräftige Namen
 
-Variablennamen und Funktionsnamen sollten
+Variablen- und Funktionsnamen sollten:
 
-- aussagekräftig und
-- beschreibend sein, um die Lesbarkeit und Wartbarkeit des Codes zu verbessern.
-- gut auszusprechen sein und nicht in die Irre führen.
-- durchsuchbar sein.
-- nichts kodiertes enthalten. $$$ TODO 17: was heißt das genau?
-- einfach zu verstehen sein.
-- nicht schwafelig sein, keine Mundart wiedergeben oder sonstiges kulturelles Gut enthalten.
-- nicht doppelt verwendet werden oder mit einem Prefix versehen sein.
-- us dem Fachgebiet übernommen werden, um das es gerade geht.
-
-Nutzt man Begriffe aus der fachlichen Domain des Anwenders, so entsteht eine problemspezifische Sprache, die eventuell
-sogar genügt, um mit Nicht-Programmierern zu diskutieren.
-Hier kommen wir in den Bereich des Domain-Designs.
+- Informativ und beschreibend sein, um die Lesbarkeit und Wartbarkeit des Codes zu verbessern.
+- Einfach aussprechbar und nicht irreführend sein.
+- Leicht durchsuchbar sein.
+- Keine kryptischen Abkürzungen oder Codierungen enthalten. *(Anmerkung: Hier wird auf die Vermeidung von unklaren Abkürzungen oder spezifischen Codierungen hingewiesen, die außerhalb des Kontexts keinen Sinn ergeben.)*
+- Einfach zu verstehen sein.
+- Keine Umgangssprache, Mundart oder kulturelle Spezifika beinhalten.
+- Eindeutig sein und keine doppelten Bezeichnungen oder vorangestellte Präfixe haben.
+- Fachbegriffe aus dem relevanten Themengebiet verwenden, um eine fachspezifische Sprache zu schaffen, die auch mit Nicht-Programmierern kommuniziert werden kann. Dies führt uns in den Bereich des Domain-Driven Designs.
 
 ## Funktionen
+
+Allgemeine Funktionsnamen wie im folgenden Beispiel:
 
 ```python
 def calc(x):
     return x * 2 + 5
 ```
 
-Eine sehr allgemein formulierte Namensgebung trägt nichts zum Verständnis der Aufgabe der Funktion bei. Da sie nur eine
-Sache tun soll, kann man sich gut auf dieses Tun beziehen.
-
-$$$ TODO 7 hier ein anderes Beispiel verwenden. Und Satz nachvollziehbarer formulieren.
+sollten vermieden werden, da sie wenig über die eigentliche Funktion aussagen. Besser ist es, Namen zu verwenden, die sich auf die spezifische Aufgabe beziehen:
 
 ```python
 def calculate_adjusted_value(x):
     return x * 2 + 5
 ```
 
-Immer noch nicht verständlich, was hier passiert, oder?
-Stellen wir uns also vor, dass wir in einer Applikation sind, die mit direkten Speicheradressen operiert.
-Dabei bekommt auch die Variable eine Bedeutung zugewiesen.
+Dieser Name ist immer noch nicht vollständig aussagekräftig. Nehmen wir an, wir arbeiten in einer Applikation, die mit direkten Speicheradressen operiert:
 
 ```python
 def get_next_memory_address(old_address):
     return old_address * 2 + 5
 ```
 
-Dadurch erspart man sich möglicherweise die [Kommentare](../Kommentare).
-
-[zurück](../TheGoodPractices) 
-
+Durch einen solchen spezifischen Namen kann man oft auf zusätzliche Kommentare verzichten.
