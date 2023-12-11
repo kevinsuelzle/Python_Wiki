@@ -67,6 +67,18 @@ nav:
           - Gruppenarbeit: lehrplan/datenbanken/unterrichte/projects.md
           - Fragen an die Datenbank: lehrplan/datenbanken/unterrichte/joins_and_views.md
           - Abschluss SQL-Datenbanken: lehrplan/datenbanken/unterrichte/finally.md
+          - Einführung zu Clean Code: lehrplan/clean_code/Introduction.md
+          - Benennungskonventionen: lehrplan/clean_code/Benennungskonventionen.md
+          - DRY: lehrplan/clean_code/DRY.ipynb
+          - Fehlerbehandlung: lehrplan/clean_code/Fehlerbehandlung.ipynb
+          - Funktionsgestaltung: lehrplan/clean_code/Funktionsgestaltung.ipynb
+          - Globale Parameter: lehrplan/clean_code/Globale_Parameter.ipynb
+          - Guard Clauses: lehrplan/clean_code/GuardClauses.ipynb
+          - Kommentare: lehrplan/clean_code/Kommentare.ipynb
+          - List Comprehensions: lehrplan/clean_code/ListComprehension.ipynb
+          - Typehints: lehrplan/clean_code/Typehints.ipynb
+          - Übungsaufgabe: lehrplan/clean_code/Uebungsaufgabe.ipynb
+          - Variablenbenennung: lehrplan/clean_code/Variablenbenennung.ipynb
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md
