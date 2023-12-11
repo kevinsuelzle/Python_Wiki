@@ -75,8 +75,6 @@
 | 7     | [Übungsaufgaben](clean_code/Uebungsaufgabe.ipynb)                        | [hier](../checklists/checkliste2.md#uebungsaufgaben)         | [hier](../begriffe/begriffe2.md#uebungsaufgaben)            |
 | 7     | [Variablennamen](clean_code/Variablenbenennung.ipynb)                    | [hier](../checklists/checkliste2.md#variablennamen)          | [hier](../begriffe/begriffe2.md#variablennamen)             |
 
-Um die Kapitel unter "datenbanken" zu Ihrem Lehrplan hinzuzufügen und sich dabei an dem gegebenen Format aus Block 2 zu orientieren, könnten Sie den Lehrplan wie folgt strukturieren:
-
 # Block 3
 
 | Woche | Unterricht                                                               | Lernziele                                                    | Begriffssammlung                                            |
