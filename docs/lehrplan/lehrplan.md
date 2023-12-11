@@ -1,7 +1,7 @@
 # Block 1
 
 | Woche | Unterricht                                                                          | Lernziele                                                      | Begriffssammlung                                            |
-|-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|-------------------------------------------------------------|
+| ----- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------- |
 | 1     | [Einführung](python_grundlagen/python_grundlagen/python_grundlagen.md)              | [hier](../checklists/checklist_1.md#intro)                     | [hier](../begriffe/begriffe_1.md#intro)                     |
 | 1     | [Variablen & Datentypen](python_grundlagen/variables_types/variablen_datentypen.md) | [hier](../checklists/checklist_1.md#variablen-datentypen)      | [hier](../begriffe/begriffe_1.md#variablen-datentypen)      |
 | 1     | [Ein- und Ausgabe](python_grundlagen/input_output/input_output.md)                  | [hier](../checklists/checklist_1.md#input-output)              | [hier](../begriffe/begriffe_1.md#input-output)              |
@@ -20,31 +20,31 @@
 | 3     | [List Comprehensions](python_grundlagen/list_comp/list_comp.md)                     | [hier](../checklists/checklist_1.md#list-comprehension)        | [hier](../begriffe/begriffe_1.md#list-comprehension)        |
 | 3     | [Zip](python_grundlagen/zip/zip.md)                                                 | [hier](../checklists/checklist_1.md#zip)                       | [hier](../begriffe/begriffe_1.md#zip)                       |
 | 3     | [git Teil 1](git/git_Teil1.md)                                                      | [hier](../checklists/checklist_git.md#teil-1)                  | [hier](../begriffe/begriffe_1.md#teil-1)                    |
-| 4     | [Try-Except](python_grundlagen/01_try_except.md)                        | [hier](../checklists/checklist_1.md#try-except)                | [hier](../begriffe/begriffe_1.md#try-except)                |
-| 4     | [Module](python_grundlagen/02_module.md)                                | [hier](../checklists/checklist_1.md#module)                    | [hier](../begriffe/begriffe_1.md#module)                    |
-| 4     | [PIP](python_grundlagen/03_pip.md)                                      | [hier](../checklists/checklist_1.md#pip)                       | [hier](../begriffe/begriffe_1.md#pip)                       |
-| 4     | [Test Driven Development (TDD)](python_grundlagen/04_tdd.md)            | [hier](../checklists/checklist_1.md#tdd)                       | [hier](../begriffe/begriffe_1.md#tdd)                       |
-| 4     | [Dateioperationen](python_grundlagen/05_dateioperationen.md)            | [hier](../checklists/checklist_1.md#dateioperationen)          | [hier](../begriffe/begriffe_1.md#dateioperationen)          |
-| 4     | [OOP Einführung](python_grundlagen/06_oop_einführung.md)                | [hier](../checklists/checklist_1.md#oop-intro)                 | [hier](../begriffe/begriffe_1.md#oop-intro)                 |
-| 4     | [OOP in Python](python_grundlagen/07_oop_python.md)                     | [hier](../checklists/checklist_1.md#oop-python)                | [hier](../begriffe/begriffe_1.md#oop-python)                |
+| 4     | [Try-Except](python_grundlagen/01_try_except.md)                                    | [hier](../checklists/checklist_1.md#try-except)                | [hier](../begriffe/begriffe_1.md#try-except)                |
+| 4     | [Module](python_grundlagen/02_module.md)                                            | [hier](../checklists/checklist_1.md#module)                    | [hier](../begriffe/begriffe_1.md#module)                    |
+| 4     | [PIP](python_grundlagen/03_pip.md)                                                  | [hier](../checklists/checklist_1.md#pip)                       | [hier](../begriffe/begriffe_1.md#pip)                       |
+| 4     | [Test Driven Development (TDD)](python_grundlagen/04_tdd.md)                        | [hier](../checklists/checklist_1.md#tdd)                       | [hier](../begriffe/begriffe_1.md#tdd)                       |
+| 4     | [Dateioperationen](python_grundlagen/05_dateioperationen.md)                        | [hier](../checklists/checklist_1.md#dateioperationen)          | [hier](../begriffe/begriffe_1.md#dateioperationen)          |
+| 4     | [OOP Einführung](python_grundlagen/06_oop_einführung.md)                            | [hier](../checklists/checklist_1.md#oop-intro)                 | [hier](../begriffe/begriffe_1.md#oop-intro)                 |
+| 4     | [OOP in Python](python_grundlagen/07_oop_python.md)                                 | [hier](../checklists/checklist_1.md#oop-python)                | [hier](../begriffe/begriffe_1.md#oop-python)                |
 | 4     | [git Teil 2](git/git_Teil2.md)                                                      | [hier](../checklists/checklist_git.md#teil-2)                  | [hier](../begriffe/begriffe_1.md#teil-2)                    |
-| 5     | [Getter Setter](python_grundlagen/08_getter_setter.md)                  | [hier](../checklists/checklist_1.md#getter-setter)             | [hier](../begriffe/begriffe_1.md#getter-setter)             |
-| 5     | [Class- & Staticmethod](python_grundlagen/09_class_staticmethod.md)     | [hier](../checklists/checklist_1.md#class-staticmethod)        | [hier](../begriffe/begriffe_1.md#class-staticmethod)        |
-| 5     | [Vererbung](python_grundlagen/10_vererbung.md)                          | [hier](../checklists/checklist_1.md#vererbung)                 | [hier](../begriffe/begriffe_1.md#vererbung)                 |
-| 5     | [Magic Methods](python_grundlagen/11_magic_methods.md)                  | [hier](../checklists/checklist_1.md#magic-methods)             | [hier](../begriffe/begriffe_1.md#magic-methods)             |
-| 5     | [Args & Kwargs](python_grundlagen/12_args_kwargs.md)                    | [hier](../checklists/checklist_1.md#args-kwargs)               | [hier](../begriffe/begriffe_1.md#args-kwargs)               |
-| 5     | [PEP](python_grundlagen/13_pep.md)                                      | [hier](../checklists/checklist_1.md#pep)                       | [hier](../begriffe/begriffe_1.md#pep)                       |
-| 5     | [Design Patterns](python_grundlagen/14_design_patterns.md)              | [hier](../checklists/checklist_1.md#design-patterns)           | [hier](../begriffe/begriffe_1.md#design-patterns)           |
-| 5     | [Strategy Pattern](python_grundlagen/14_x1_strategy.md)                 | [hier](../checklists/checklist_1.md#strategy)                  | [hier](../begriffe/begriffe_1.md#strategy)                  |
-| 5     | [Factory Method Pattern](python_grundlagen/14_x2_factory_method.md)     | [hier](../checklists/checklist_1.md#factory-method)            | [hier](../begriffe/begriffe_1.md#factory-method)            |
-| 5     | [Adapter Pattern](python_grundlagen/14_x3_adapter.md)                   | [hier](../checklists/checklist_1.md#adapter)                   | [hier](../begriffe/begriffe_1.md#adapter)                   |
-| 5     | [OOP vs Funktional](python_grundlagen/15_oop_vs_funktionale.md)         | [hier](../checklists/checklist_1.md#oop-vs-funktional)         | [hier](../begriffe/begriffe_1.md#oop-vs-funktional)         |
+| 5     | [Getter Setter](python_grundlagen/08_getter_setter.md)                              | [hier](../checklists/checklist_1.md#getter-setter)             | [hier](../begriffe/begriffe_1.md#getter-setter)             |
+| 5     | [Class- & Staticmethod](python_grundlagen/09_class_staticmethod.md)                 | [hier](../checklists/checklist_1.md#class-staticmethod)        | [hier](../begriffe/begriffe_1.md#class-staticmethod)        |
+| 5     | [Vererbung](python_grundlagen/10_vererbung.md)                                      | [hier](../checklists/checklist_1.md#vererbung)                 | [hier](../begriffe/begriffe_1.md#vererbung)                 |
+| 5     | [Magic Methods](python_grundlagen/11_magic_methods.md)                              | [hier](../checklists/checklist_1.md#magic-methods)             | [hier](../begriffe/begriffe_1.md#magic-methods)             |
+| 5     | [Args & Kwargs](python_grundlagen/12_args_kwargs.md)                                | [hier](../checklists/checklist_1.md#args-kwargs)               | [hier](../begriffe/begriffe_1.md#args-kwargs)               |
+| 5     | [PEP](python_grundlagen/13_pep.md)                                                  | [hier](../checklists/checklist_1.md#pep)                       | [hier](../begriffe/begriffe_1.md#pep)                       |
+| 5     | [Design Patterns](python_grundlagen/14_design_patterns.md)                          | [hier](../checklists/checklist_1.md#design-patterns)           | [hier](../begriffe/begriffe_1.md#design-patterns)           |
+| 5     | [Strategy Pattern](python_grundlagen/14_x1_strategy.md)                             | [hier](../checklists/checklist_1.md#strategy)                  | [hier](../begriffe/begriffe_1.md#strategy)                  |
+| 5     | [Factory Method Pattern](python_grundlagen/14_x2_factory_method.md)                 | [hier](../checklists/checklist_1.md#factory-method)            | [hier](../begriffe/begriffe_1.md#factory-method)            |
+| 5     | [Adapter Pattern](python_grundlagen/14_x3_adapter.md)                               | [hier](../checklists/checklist_1.md#adapter)                   | [hier](../begriffe/begriffe_1.md#adapter)                   |
+| 5     | [OOP vs Funktional](python_grundlagen/15_oop_vs_funktionale.md)                     | [hier](../checklists/checklist_1.md#oop-vs-funktional)         | [hier](../begriffe/begriffe_1.md#oop-vs-funktional)         |
 | 5     | [git Teil 3](git/git_Teil3.md)                                                      | [hier](../checklists/checklist_git.md#teil-3)                  | [hier](../begriffe/begriffe_1.md#teil-3)                    |
 
 # Block 2
 
 | Woche | Unterricht                                                                                           | Lernziele                                                                         | Begriffssammlung                    |
-|-------|------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:------------------------------------|
+| ----- | ---------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- | :---------------------------------- |
 | 6     | [Einführung SQL-Datenbanken](datenbanken/datenbanken.md)                                             | [hier](../checklists/checklist_db1.md)                                            | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Arten von SQL Anweisungen](datenbanken/unterrichte/sql_types.md)                                    | [hier](../checklists/checklist_db1.md#sql-sprachtypisierung)                      | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [UML für Datenbanken](datenbanken/unterrichte/uml_diagramme.md)                                      | [hier](../checklists/checklist_db1.md#uml-diagramme)                              | [hier](../begriffe/begriffe_db1.md) |
@@ -61,13 +61,13 @@
 | 6     | [Batch, Script, Deploy](datenbanken/unterrichte/scripting_and_deploying.md)                          | [hier](../checklists/checklist_db1.md#batch-script-deploy)                        | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Gruppenarbeit](datenbanken/unterrichte/projects.md)                                                 | [hier](../checklists/checklist_db1.md#projekte)                                   | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Fragen an die Datenbank](datenbanken/unterrichte/joins_and_views.md)                                | [hier](../checklists/checklist_db1.md#joins-und-views)                            | [hier](../begriffe/begriffe_db1.md) |
-| 6     | [Python und SQL](datenbanken/unterrichte/sqlite3.md)                                | [hier](../checklists/checklist_db1.md#sqlite3)                            | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Python und SQL](datenbanken/unterrichte/sqlite3.md)                                                 | [hier](../checklists/checklist_db1.md#sqlite-in-python)                           | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Abschluss SQL-Datenbanken](datenbanken/unterrichte/finally.md)                                      | [hier](../checklists/checklist_db1.md#schlusswort)                                | [hier](../begriffe/begriffe_db1.md) |
 
 # Block 3
 
 | Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
+| ----- | ---------- | --------- | ---------------- |
 |       |            |           |                  |
 |       |            |           |                  |
 

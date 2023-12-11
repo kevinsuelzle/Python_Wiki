@@ -5,6 +5,7 @@ Python biete uns die Möglichkeit, über ein Modul auf eine SQLite-Datenbanken z
 
 ## Verbindung zur Datenbank
 [15min]
+
 Eine Verbindung zur SQLite-Datenbank kann über die connect()-Methode verwenden. 
 
 ``` py
@@ -24,6 +25,7 @@ connection.close()
 
 ## Das Curser-Objekt
 [10min]
+
 Der Cursor in der SQLite-Bibliothek (und in vielen anderen Datenbank-Bibliotheken) fungiert als Arbeitsbereich oder Zeiger, der es ermöglicht, SQL-Anweisungen auf der Datenbank auszuführen und mit den Ergebnissen zu interagieren. Der Cursor wird aus der Verbindungsinstanz erstellt und stellt die Schnittstelle bereit, um SQL-Anweisungen auf der Datenbank auszuführen. Das Cursor-Objekt wird über die Methode cursor() des Verbindungsobjekts erstellt.
 
 ``` py
@@ -33,7 +35,8 @@ cursor = connection.cursor()
 
 ## Datenbankoperationen
 [15min]
-Über das cursor Objekt können wir nun Datenbankoperationen ausführen. Dazu gehören das Erstellen von Tabellen, das Einfügen von Daten, das Abrufen von Daten und das Löschen von Daten. Wichtig ist, dass die Operationen nach dem Ausführen mit der commit()-Methode bestätigt werden müssen. 
+
+Über das cursor Objekt können wir nun Datenbankoperationen ausführen. Dazu gehören das Erstellen von Tabellen, das Einfügen von Daten, das Abrufen von Daten und das Löschen von Daten. Wichtig ist, dass die Operationen nach dem Ausführen mit der commit()-Methode bestätigt werden müssen. Die Operationen selbst werdend durch die execute()-Methode ausgeführt.
 
 ``` py
 # Transaktion bestätigen
@@ -119,6 +122,148 @@ cursor.execute("SELECT * FROM users WHERE name = ?", (user_input,))
 ```
 
 In diesem Beispiel würde der Versuch, eine SQL-Injektion durchzuführen, scheitern, da der Wert von `user_input` sicher durch den Platzhalter eingefügt wird, und der Treiber kümmert sich um die richtige Behandlung der Daten. Platzhalter sind daher eine bewährte Praxis, um die Sicherheit von Datenbankabfragen zu verbessern.
+
+## Methoden in der Übersicht
+[15min]
+
+Die folgende Tabelle zeigt eine Übersicht über die wichtigsten Methoden, die in der `sqlite3`-Bibliothek verwendet werden können. Weitere Funktionen und Details zu dem Modul  `sqlite3` können der [Dokumentation](https://docs.python.org/3/library/sqlite3.html) entnommen werden.
+
+| Name                   | Beschreibung                                   | Beispiel                                                                                                                                                      |
+|------------------------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `sqlite3.connect()`    | Verbindung zur SQLite-Datenbank herstellen     | `connection = sqlite3.connect("example.db")`                                                                                                                |
+| `connection.cursor()`  | Cursor erstellen                                | `cursor = connection.cursor()`                                                                                                                               |
+| `cursor.execute()`     | SQL-Anweisung ausführen                         | `cursor.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)")`                                                       |
+| `connection.commit()`  | Transaktion bestätigen                          | `connection.commit()`                                                                                                                                        |
+| `connection.close()`   | Verbindung schließen                            | `connection.close()`                                                                                                                                         |
+| `cursor.fetchall()`    | Alle Datensätze abrufen                        | `rows = cursor.fetchall()`                                                                                                                                  |
+| `cursor.fetchone()`    | Einen Datensatz abrufen                         | `row = cursor.fetchone()`                                                                                                                                   |
+| `cursor.executemany()` | Mehrere SQL-Anweisungen ausführen               | `data = [("John", 25), ("Jane", 30)]`<br>`cursor.executemany("INSERT INTO users (name, age) VALUES (?, ?)", data)`                                        |
+| `cursor.executescript()`| Skript mit SQL-Anweisungen ausführen            | `script = """CREATE TABLE IF NOT EXISTS products (id INTEGER PRIMARY KEY, name TEXT, price REAL);`<br>`INSERT INTO products (name, price) VALUES ('Widget', 19.99);"""`<br>`cursor.executescript(script)`             |
+| `cursor.rowcount`      | Anzahl der betroffenen Zeilen abrufen           | `print("Anzahl der betroffenen Zeilen:", cursor.rowcount)`                                                                                                  |
+| `cursor.description`   | Spalteninformationen zu den abgerufenen Daten   | `columns = [column[0] for column in cursor.description]`<br>`print("Spalten:", columns)`                                                                    |
+| `cursor.rollback()`    | Transaktion rückgängig machen                   | `cursor.rollback()`                                                                                                                                          |
+
+Die `rollback()`-Methode kann verwendet werden, um fehlerhafte oder ungewollte Transaktionen rückgängig zu machen. Daher wird sie oft in Verbindung mit der `try`-`except`-Anweisung verwendet, um sicherzustellen, dass die Transaktionen nur dann bestätigt werden, wenn keine Fehler auftreten.
+
+``` py
+import sqlite3
+
+# Verbindung zur SQLite-Datenbank herstellen
+connection = sqlite3.connect("example.db")
+
+# Cursor erstellen
+cursor = connection.cursor()
+
+try:
+    # Beginn einer Transaktion
+    cursor.execute("BEGIN")
+
+    # Durchführung von Änderungen (z. B. INSERT, UPDATE, DELETE)
+    cursor.execute("INSERT INTO users (name, age) VALUES ('John', 30)")
+
+    # Überprüfung auf Bedingungen
+    condition_not_met = True
+
+    if condition_not_met:
+        # Rückgängig machen aller Änderungen bei Bedingungsfehler
+        cursor.execute("ROLLBACK")
+        print("Transaktion rückgängig gemacht.")
+    else:
+        # Bestätigung der Transaktion
+        cursor.execute("COMMIT")
+        print("Transaktion bestätigt.")
+
+except Exception as e:
+    print("Fehler:", str(e))
+    # Falls ein Fehler auftritt, Transaktion rückgängig machen
+    cursor.execute("ROLLBACK")
+    print("Transaktion rückgängig gemacht aufgrund eines Fehlers.")
+
+finally:
+    # Verbindung schließen
+    connection.close()
+```
+
+Neben den bisher genannten Methoden gibt eine Reihe weiterer Methoden, die in der `sqlite3`-Bibliothek verwendet werden können, jedoch nicht in diesem Kurs behandelt werden. Beispielsweise können über die Methode `create_aggregate()` eigene Aggregationsfunktionen erstellt werden, welche dann in SQL-Abfragen verwendet werden können. 
+
+``` py
+import sqlite3
+
+# Benutzerdefinierte Aggregatfunktion
+class MyAggregate:
+    def __init__(self):
+        self.total = 0
+
+    def step(self, value):
+        self.total += value
+
+    def finalize(self):
+        return self.total
+
+# Verbindung zur Datenbank herstellen
+connection = sqlite3.connect(":memory:")
+
+# Aggregatfunktion erstellen
+connection.create_aggregate("my_sum", 1, MyAggregate)
+
+# Cursor erstellen
+cursor = connection.cursor()
+
+# Tabelle erstellen und Daten einfügen
+cursor.execute("CREATE TABLE numbers (value INTEGER)")
+cursor.executemany("INSERT INTO numbers VALUES (?)", [(1,), (2,), (3,)])
+
+# Benutzerdefinierte Aggregatfunktion verwenden
+result = cursor.execute("SELECT my_sum(value) FROM numbers").fetchone()[0]
+
+# Ausgabe des Ergebnisses
+print("Ergebnis der benutzerdefinierten Aggregatfunktion:", result)
+
+# Verbindung schließen
+connection.close()
+```
+
+## Context-Manager
+[10min]
+
+Die `sqlite3`-Bibliothek unterstützt die Verwendung von Context-Managern. Ein Context Manager in Python ist ein Objekt, welches das "`with`"-Statement unterstützt. Der Hauptzweck besteht darin, sicherzustellen, dass bestimmte Ressourcen ordnungsgemäß verwaltet und freigegeben werden, unabhängig davon, ob ein Fehler auftritt oder nicht. Der Kontextmanager wird durch zwei spezielle Methoden, `__enter__` und `__exit__`, definiert.
+
+- `__enter__`: Diese Methode wird am Anfang des "`with`"-Blocks ausgeführt. Sie kann beispielsweise eine Ressource initialisieren und gibt das Objekt zurück, das den Kontext für den Block bereitstellt.
+
+- `__exit__`: Diese Methode wird am Ende des "`with`"-Blocks aufgerufen, unabhängig davon, ob ein Fehler aufgetreten ist oder nicht. Sie wird verwendet, um Ressourcen freizugeben oder Bereinigungen durchzuführen.
+
+Wir kennen Context-Manager bereits vom Lesen und Schreiben von Dateien.
+    
+```python
+with open("example.txt", "r") as file:
+    # Datei lesen
+```
+
+In `sqlite3` wird der Context Manager häufig mit der `connect`-Funktion verwendet. Durch den Context Manager kann die Verbindung zur Datenbank automatisch geschlossen werden, wenn der Kontext verlassen wird. Die Verwendung ist optional, da die Verbindung auch manuell geschlossen werden kann.
+
+```python
+import sqlite3
+
+# Verbindung zur SQLite-Datenbank herstellen und als Context Manager verwenden
+with sqlite3.connect("example.db") as connection:
+    # Cursor erstellen
+    cursor = connection.cursor()
+
+    # Beispiel: Tabelle erstellen
+    cursor.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)")
+
+    # Beispiel: Daten einfügen
+    cursor.execute("INSERT INTO users (name, age) VALUES ('John', 30)")
+
+    # Beispiel: Abfrage ausführen
+    cursor.execute("SELECT * FROM users")
+    rows = cursor.fetchall()
+    print(rows)  # Ausgabe der abgerufenen Daten
+
+# Verbindung wird automatisch geschlossen, wenn der "with"-Block verlassen wird
+```
+
+In diesem Beispiel wird `sqlite3.connect` als Context Manager verwendet. Die Verbindung zur Datenbank wird am Anfang des "`with`"-Blocks hergestellt und am Ende des Blocks automatisch geschlossen, unabhängig davon, ob ein Fehler auftritt oder nicht. Dies sorgt für eine robuste und fehlersichere Verwendung von SQLite-Verbindungen.
 
 
 ## Aufgaben
