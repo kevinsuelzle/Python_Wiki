@@ -2,12 +2,12 @@
 
 # Intro
 
-| Begriff | Kurzerklärung                                        | Link zur Referenz                             |
-|---------|------------------------------------------------------|-----------------------------------------------|
-| Python  | Programmiersprache unserer Wahl                      | [Website](https://www.python.org)             |
-| PyCharm | Umfassende Python IDE von Jetbrains                  | [Website](https://www.jetbrains.com/pycharm/) |
-| VSCode  | Universal-IDE mit mächtigen Python-Plugins           | [Website](https://code.visualstudio.com/)     |
-| Jupyter | Entwicklungsumgebung für interaktives Programmiereun | [Website](https://jupyter.org/)               |
+| Begriff | Kurzerklärung                                        | Link zur Referenz                              |
+|---------|------------------------------------------------------|------------------------------------------------|
+| Python  | Programmiersprache unserer Wahl                      | [Referenz](https://www.python.org)             |
+| PyCharm | Umfassende Python IDE von Jetbrains                  | [Referenz](https://www.jetbrains.com/pycharm/) |
+| VSCode  | Universal-IDE mit mächtigen Python-Plugins           | [Referenz](https://code.visualstudio.com/)     |
+| Jupyter | Entwicklungsumgebung für interaktives Programmiereun | [Referenz](https://jupyter.org/)               |
 
 # Variablen Datentypen
 

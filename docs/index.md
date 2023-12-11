@@ -2,7 +2,7 @@
 
 Willkommen im Python Pathway.
 
-Du findest alle Inhalte hier im
+Du findest eine chronologische Anordnung aller Inhalte im
 # [Lehrplan](lehrplan/lehrplan.md)
 
 Wir wünschen dir viel Spaß und Erfolg.
