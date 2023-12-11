@@ -1,7 +1,6 @@
 # Azure Cloud Services
 [30 min]
 
-
 Microsoft Azure bietet eine breite Palette an Cloud-Diensten, die eine Vielzahl von Anwendungsfällen in verschiedenen Branchen unterstützen. Diese Dienste decken Bereiche wie Computing, Speicherung, Netzwerke, Datenbanken, KI, IoT und viele andere ab. Folgend eine kurze Übersicht über die zentralen Azure-Services und deren typische Anwendungsbereiche.
 
 **Azure Virtual Machines (VMs)**: VMs sind virtuelle Computer, die in der Cloud ausgeführt werden. Sie können für alles verwendet werden, von der Webserver-Hosting bis hin zu komplexen Datenverarbeitungen. Anwendungsbereiche sind z.B. Hosting von Websites, Anwendungen, Test- und Entwicklungsumgebungen, Datenbankservern.

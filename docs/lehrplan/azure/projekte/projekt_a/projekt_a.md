@@ -16,7 +16,7 @@ Die Softwarelösung ist eine vollständig deployte Web App, die es den Nutzern e
 ### Kernaspekte
 
 1. **Fahrzeugverwaltung:**
-    - Speicherung und Verwaltung von Fahrzeuginformationen wie Name, Farbe, Modell über ein simples JSON.
+    - Speicherung und Verwaltung von Fahrzeuginformationen wie Name, Farbe und Modell.
     - Möglichkeit, neue Buchungsanfragen in einer Datenbank zu speichern.
     - Fahrzeugbuchungen werden verwendet nicht verfügbare Zeiträume zu kennzeichnen.
 
