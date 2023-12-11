@@ -3,6 +3,9 @@ site_name: My Docs
 plugins:
   - search
   - mermaid2
+  - mkdocs-jupyter:
+      execute: false
+      kernel_name: python3
 
 nav:
   - Lehrplan: lehrplan/lehrplan.md

@@ -62,6 +62,18 @@
 | 6     | [Gruppenarbeit](datenbanken/unterrichte/projects.md)                                                 | [hier](../checklists/checklist_db1.md#projekte)                                   | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Fragen an die Datenbank](datenbanken/unterrichte/joins_and_views.md)                                | [hier](../checklists/checklist_db1.md#joins-und-views)                            | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Abschluss SQL-Datenbanken](datenbanken/unterrichte/finally.md)                                      | [hier](../checklists/checklist_db1.md#schlusswort)                                | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Clean Code Einführung](clean_code/Introduction.md)                      | [hier](../checklists/checkliste2.md#clean-code-einfuehrung)  | [hier](../begriffe/begriffe2.md#clean-code-einfuehrung)     |
+| 6     | [Benennungskonventionen](clean_code/Benennungskonventionen.md)           | [hier](../checklists/checkliste2.md#benennungskonventionen)  | [hier](../begriffe/begriffe2.md#benennungskonventionen)     |
+| 6     | [DRY Prinzip](clean_code/DRY.ipynb)                                      | [hier](../checklists/checkliste2.md#dry-prinzip)             | [hier](../begriffe/begriffe2.md#dry-prinzip)                |
+| 6     | [Fehlerbehandlung](clean_code/Fehlerbehandlung.ipynb)                    | [hier](../checklists/checkliste2.md#fehlerbehandlung)        | [hier](../begriffe/begriffe2.md#fehlerbehandlung)           |
+| 6     | [Funktionsgestaltung](clean_code/Funktionsgestaltung.ipynb)              | [hier](../checklists/checkliste2.md#funktionsgestaltung)     | [hier](../begriffe/begriffe2.md#funktionsgestaltung)        |
+| 6     | [Globale Parameter](clean_code/Globale_Parameter.ipynb)                  | [hier](../checklists/checkliste2.md#globale-parameter)       | [hier](../begriffe/begriffe2.md#globale-parameter)          |
+| 7     | [Guard Clauses](clean_code/GuardClauses.ipynb)                           | [hier](../checklists/checkliste2.md#guard-clauses)           | [hier](../begriffe/begriffe2.md#guard-clauses)              |
+| 7     | [Kommentare](clean_code/Kommentare.ipynb)                                | [hier](../checklists/checkliste2.md#kommentare)              | [hier](../begriffe/begriffe2.md#kommentare)                 |
+| 7     | [List Comprehensions](clean_code/ListComprehension.ipynb)                | [hier](../checklists/checkliste2.md#list-comprehensions)     | [hier](../begriffe/begriffe2.md#list-comprehensions)        |
+| 7     | [Type Hints](clean_code/Typehints.ipynb)                                 | [hier](../checklists/checkliste2.md#type-hints)              | [hier](../begriffe/begriffe2.md#type-hints)                 |
+| 7     | [Übungsaufgaben](clean_code/Uebungsaufgabe.ipynb)                        | [hier](../checklists/checkliste2.md#uebungsaufgaben)         | [hier](../begriffe/begriffe2.md#uebungsaufgaben)            |
+| 7     | [Variablennamen](clean_code/Variablenbenennung.ipynb)                    | [hier](../checklists/checkliste2.md#variablennamen)          | [hier](../begriffe/begriffe2.md#variablennamen)             |
 
 # Block 3
 
@@ -69,5 +81,8 @@
 |-------|------------|-----------|------------------|
 |       |            |           |                  |
 |       |            |           |                  |
+
+
+
 
 
