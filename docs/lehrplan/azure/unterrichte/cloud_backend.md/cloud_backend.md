@@ -1,5 +1,5 @@
 # Flask API in der Cloud
-[45 min]
+[60 min]
 
 Eine Flask-API mit Azure Web Apps zu deployen, ermöglicht es, leistungsfähige Webanwendungen und APIs in einer skalierbaren und verwalteten Cloud-Umgebung zu hosten. Flask ist ein leichtgewichtiges und flexibles Mikro-Webframework für Python, ideal für schnelle Entwicklung und einfache Bereitstellung von Webanwendungen.
 
@@ -30,13 +30,26 @@ Ressourcengruppen-Deployment unter Verwendung einer ARM-Vorlagendatei durchführ
 az deployment group create --resource-group myResourceGroup --template-file template.json
 ```
 
+**Oder auch die Erstellung und das gesamte Deployment einer Web App**: Erstellt eine neue Web App und führt folgende Aktionen aus.
+
+- Erstellen einer Standardressourcengruppe
+
+- Erstellen eines App Service-Plans
+
+- Erstellen einer App mit dem angegebenen Namen
+
+- Bereitstellen eines ZIP-Pakets aller Dateien aus dem aktuellen Arbeitsverzeichnis mit aktivierter Buildautomatisierung
+
+```bash
+az webapp up --runtime PYTHON:3.9 --sku B1 --logs
+```
 
 ## Live Deployment der Beispiel Flask API auf Azure
 ... Todo
 
 
 ## Aufgaben
-[45 min]
+[60 min]
 
 ### Deployment einer simplen Flask API 🌶️🌶️
 Erstelle eine Simple Flask API mit GET-Route die bei Request ein "Hallo Welt!" zurückgibt. Deploye die API als Azure Web App.
@@ -45,10 +58,4 @@ Erstelle eine Simple Flask API mit GET-Route die bei Request ein "Hallo Welt!" z
 ...
 
 
-## Komplex-Aufgaben
-[90 min]
-
-### Inventory Management SWA 🌶️🌶️🌶️🌶️
-Erstelle eine simple statische Webapp mit einem Formular um Inventaritems in die Datenbank zu schreiben. Zeige die Inventarliste in der SWA direkt an.
-
-[Lösungen](./solutions.md)
+[Lösungs Tutorial](https://learn.microsoft.com/de-de/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cazure-cli%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli)

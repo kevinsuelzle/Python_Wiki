@@ -83,6 +83,20 @@ Ein Unternehmen hat seine Cloud-Ressourcen nicht richtig konfiguriert und überw
 Ein Unternehmen implementiert keine ausreichenden Sicherheitsmaßnahmen in seiner Cloud-Umgebung. Hacker nutzen eine Sicherheitslücke aus, um in das Netzwerk einzudringen und sensible Daten zu stehlen oder Ransomware zu installieren, was zu erheblichen finanziellen und rechtlichen Konsequenzen führt.
 
 
+## Schlüsseltechnologien und -komponenten
+Auch wenn nicht im Fokus dieses Blocks, ist es wichtig im Kontext der Cloud verschiedene Begriffe gehört zu haben und ein ordnen zu können.
+
+### Containerisierung
+(Docker) Container sind leichtgewichtige, eigenständige Pakete, die Code, Laufzeitumgebung, Systemtools, Bibliotheken und Einstellungen enthalten. Sie bieten eine konsistente Umgebung für die Anwendung, unabhängig von der Infrastruktur.
+
+### Orchestrierung und Management
+Kubernetes ist eine führende Orchestrierungsplattform, die das Deployment, die Skalierung und das Management von Container-Anwendungen automatisiert.
+
+**Grundkonzepte von Kubernetes:**
+- **Pods:** Die kleinste Einheit, die in Kubernetes erstellt und verwaltet wird.
+- **Services:** Abstraktion, die einen logischen Satz von Pods definiert und eine Politik zur Zugriffssteuerung darauf anwendet.
+  
+
 ## Weiterführende Materialien
 - **Microsoft Azure Fundamentals**: Microsoft bietet eine dreiteilige Serie, die grundlegende Cloud-Konzepte vermittelt - [Microsoft Azure Fundamentals](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/).
 - **AWS Cloud Essentials**: AWS bietet eine Einführung in die grundlegenden Konzepte des Cloud-Computings und der AWS-Cloud - [AWS Cloud Essentials](https://aws.amazon.com).
