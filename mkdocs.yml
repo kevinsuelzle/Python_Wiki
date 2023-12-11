@@ -70,7 +70,7 @@ nav:
       - Clean Code: begriffe/begriffe_clean_code.md
       - SQL-Datenbanken: begriffe/begriffe_db1.md
   - Checklisten:
-      - Python Grundlagen: checklists/checklists_1.md
+      - Python Grundlagen: checklists/checklist_1.md
       - git: checklists/checklist_git.md
       - Clean Code: checklists/checklist_clean_code.md
       - SQL-Datenbanken: checklists/checklist_db1.md
