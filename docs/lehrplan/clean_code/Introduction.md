@@ -1,8 +1,7 @@
-$$$ TODO 15: Uhrzeiten und Chillis bei den Aufgaben und Texten hinzufügen.
-
 # Einführung in Clean Code
 
-## Was ist Clean Code? [10 min]
+## Was ist Clean Code?
+[10 min]
 
 **Clean Code** bezeichnet einen Programmierstil, bei dem der resultierende Software-Code, leicht zu verstehen und zu
 ändern ist.
@@ -18,7 +17,9 @@ Ziel ist eine langfristige Wartbarkeit und Skalierbarkeit des Softwareprojekts m
 3. **Qualität**: Sauberer Code führt zu weniger Fehlern und höherer Softwarequalität.
 4. **Skalierbarkeit**: Projekte sind einfacher zu erweitern und anzupassen, wenn der zugrunde liegende Code sauber ist.
 
-## Disskussionsaufgabe: [15 min]
+## Disskussionsaufgabe: 🌶️
+[15 min]
+
 Überlege dir für jeden der folgenden 4 Merkmale von Clean Code jeweils eine Verabredung du in deinem
 Entwicklerteam treffen kannst, umd diese Ziele zu erfüllen:
 
@@ -27,33 +28,8 @@ Entwicklerteam treffen kannst, umd diese Ziele zu erfüllen:
 - **Wartbarkeit**: Leicht zu ändern und zu erweitern.
 - **Effizienz**: Der Code sollte nicht nur funktionieren, sondern auch effizient sein.
 
-# Zen of Python [30 min]
+# Aufgabe: Zen of Python 🌶️
+[30 min]
 
 Öffne deine Console und führe `import this` aus , um das [Zen of Python](https://gist.github.com/corysimmons/8b94c08421dec18bbaa4)
 zu öffnen. Liese dir durch was du siehst und diskutiere darüber.
-
-## Beispiele für gute Code Konventionen 
-
-### [Gestaltung und Testen von Funktionen](Funktionsgestaltung.md) [100 min]
-
-### [DRY Don't repeat yourself](DRY.md) [20 min]
-
-### [Typehints](Typehints.md) [50 min]
-
-### [GuardClauses](GuardClauses.md) [45 min]
-
-### [Variablenbenennung](Variablenbenennung.md) [35 min]
-
-### [Globaler Variablen sind böse](Globale_Parameter.md) [30 min]
-
-### [Fehlerbehandlung](Fehlerbehandlung.md) [50 min]
-
-### [List Comprehensions](ListComprehension.md) [45 min]
-
-### [Benennungskonventionen](Benennungskonventionen.md)  [30 min]
-
-### [Kommentaren und docstrings](Kommentare.md) [75 min]
-
-$$$ TODO: 20 Große Übungsaufgabe definieren
-$$$ TODO 21 Begriffsliste definieren
-$$$ TODO 22 "zurück" buttons bei allen Unterseiten oben und unten eifnügen
