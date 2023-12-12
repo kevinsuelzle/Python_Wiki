@@ -1,5 +1,3 @@
-Hier ist eine überarbeitete und verständlichere Version Ihres Textes:
-
 # Benennungskonventionen in der Programmierung
 
 Für detaillierte Benennungskonventionen, siehe [PEP 8](https://peps.python.org/pep-0008/).
