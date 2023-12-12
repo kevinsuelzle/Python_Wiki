@@ -37,6 +37,6 @@
 # Guard Clauses
 # Introduction
 # Kommentare
-# Lst Comprehension
+# List Comprehension
 # Type Hints
 # Benennung von Variablen
