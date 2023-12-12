@@ -23,30 +23,30 @@ Durch die Verwendung von SQLAlchemy in Ihren Projekten können Sie eine höhere 
 Der Vergleich von SQLAlchemy mit anderen Datenbank-Toolkits gibt einen guten Überblick über die verschiedenen Ansätze und Funktionen, die in der Welt der Datenbankinteraktion zur Verfügung stehen. Hier sind einige gängige Toolkits und wie sie sich von SQLAlchemy unterscheiden:
 
 1. **Django ORM**:
-   - **Einsatzbereich**: Django ORM ist Teil des Django Web Frameworks und wird hauptsächlich für Webanwendungen verwendet. SQLAlchemy ist unabhängig von einem spezifischen Framework und kann in einer breiteren Palette von Anwendungen eingesetzt werden.
-   - **Designphilosophie**: Django ORM zielt darauf ab, eng mit anderen Teilen des Django-Frameworks zu integrieren und bietet eine enge Kopplung zwischen Modellen und Datenbankstrukturen. SQLAlchemy hingegen legt Wert auf Flexibilität und erlaubt eine feinere Kontrolle über die Datenbankinteraktionen.
-   - **Lernkurve**: Django ORM kann für Einsteiger in die Welt der Webentwicklung einfacher zu erlernen sein, da es mit vielen Standardeinstellungen und Konventionen kommt. SQLAlchemy hat eine etwas steilere Lernkurve aufgrund seiner umfassenden Funktionen und Konfigurationsoptionen.
+    - **Einsatzbereich**: Django ORM ist Teil des Django Web Frameworks und wird hauptsächlich für Webanwendungen verwendet. SQLAlchemy ist unabhängig von einem spezifischen Framework und kann in einer breiteren Palette von Anwendungen eingesetzt werden.
+    - **Designphilosophie**: Django ORM zielt darauf ab, eng mit anderen Teilen des Django-Frameworks zu integrieren und bietet eine enge Kopplung zwischen Modellen und Datenbankstrukturen. SQLAlchemy hingegen legt Wert auf Flexibilität und erlaubt eine feinere Kontrolle über die Datenbankinteraktionen.
+    - **Lernkurve**: Django ORM kann für Einsteiger in die Welt der Webentwicklung einfacher zu erlernen sein, da es mit vielen Standardeinstellungen und Konventionen kommt. SQLAlchemy hat eine etwas steilere Lernkurve aufgrund seiner umfassenden Funktionen und Konfigurationsoptionen.
 
 2. **Active Record (Ruby on Rails)**:
-   - **Sprache**: Active Record ist ein Teil von Ruby on Rails und für Ruby geschrieben. SQLAlchemy ist für Python.
-   - **Paradigma**: Active Record folgt dem gleichnamigen Muster, bei dem jedes Modell eng mit der Datenbank verbunden ist. SQLAlchemy bietet durch sein Data Mapper Pattern mehr Trennung zwischen Objektmodellen und Datenbanktabellen.
-   - **Flexibilität**: SQLAlchemy bietet mehr Flexibilität und eignet sich besser für komplexe Abfragen und Datenbankoperationen, während Active Record für seine Einfachheit und schnelle Entwicklung bekannt ist.
+    - **Sprache**: Active Record ist ein Teil von Ruby on Rails und für Ruby geschrieben. SQLAlchemy ist für Python.
+    - **Paradigma**: Active Record folgt dem gleichnamigen Muster, bei dem jedes Modell eng mit der Datenbank verbunden ist. SQLAlchemy bietet durch sein Data Mapper Pattern mehr Trennung zwischen Objektmodellen und Datenbanktabellen.
+    - **Flexibilität**: SQLAlchemy bietet mehr Flexibilität und eignet sich besser für komplexe Abfragen und Datenbankoperationen, während Active Record für seine Einfachheit und schnelle Entwicklung bekannt ist.
 
 3. **Entity Framework (C#/.NET)**:
-   - **Plattform**: Entity Framework ist für .NET-Plattformen und somit für C# und andere .NET-Sprachen. SQLAlchemy ist Python-spezifisch.
-   - **Integration**: Entity Framework ist eng in das .NET-Ökosystem integriert und bietet Funktionen wie LINQ (Language Integrated Query), was die Abfragebildung vereinfacht. SQLAlchemy ist eigenständig und nicht an eine bestimmte Plattform oder Sprache gebunden.
+    - **Plattform**: Entity Framework ist für .NET-Plattformen und somit für C# und andere .NET-Sprachen. SQLAlchemy ist Python-spezifisch.
+    - **Integration**: Entity Framework ist eng in das .NET-Ökosystem integriert und bietet Funktionen wie LINQ (Language Integrated Query), was die Abfragebildung vereinfacht. SQLAlchemy ist eigenständig und nicht an eine bestimmte Plattform oder Sprache gebunden.
 
 4. **PeeWee**:
-   - **Komplexität und Größe**: PeeWee ist ein kleineres, leichteres ORM-Toolkit für Python und zielt darauf ab, einfach und leichtgewichtig zu sein. SQLAlchemy ist umfangreicher und bietet mehr Funktionen und Flexibilität.
-   - **Geeignet für**: PeeWee eignet sich gut für kleinere Anwendungen und Skripte, während SQLAlchemy besser für größere, komplexere Projekte geeignet ist.
+    - **Komplexität und Größe**: PeeWee ist ein kleineres, leichteres ORM-Toolkit für Python und zielt darauf ab, einfach und leichtgewichtig zu sein. SQLAlchemy ist umfangreicher und bietet mehr Funktionen und Flexibilität.
+    - **Geeignet für**: PeeWee eignet sich gut für kleinere Anwendungen und Skripte, während SQLAlchemy besser für größere, komplexere Projekte geeignet ist.
 
 5. **Hibernate (Java)**:
-   - **Sprache**: Hibernate ist ein ORM-Toolkit für Java, während SQLAlchemy für Python ist.
-   - **Funktionen**: Beide bieten ähnliche Funktionen wie Caching, Lazy Loading und eine reichhaltige Abfragesprache, aber Hibernate ist speziell auf Java-Anwendungen ausgerichtet.
+    - **Sprache**: Hibernate ist ein ORM-Toolkit für Java, während SQLAlchemy für Python ist.
+    - **Funktionen**: Beide bieten ähnliche Funktionen wie Caching, Lazy Loading und eine reichhaltige Abfragesprache, aber Hibernate ist speziell auf Java-Anwendungen ausgerichtet.
 
 Jedes dieser Toolkits hat seine Stärken in bestimmten Bereichen und Szenarien. SQLAlchemy zeichnet sich durch seine Flexibilität und seine Fähigkeit aus, sowohl mit einfachen als auch mit sehr komplexen Datenbankoperationen gut umzugehen. Es ist ideal für Python-Entwickler, die eine umfassende Kontrolle über ihre Datenbankinteraktionen benötigen.
 
-## Installation und grundlegende 
+## Installation
 [30 min]
 
 Die Installation und grundlegende Konfiguration von SQLAlchemy in einem Python-Projekt besteht aus einigen einfachen Schritten. Hier ist ein Leitfaden, um Sie durch den Prozess zu führen:
@@ -71,7 +71,7 @@ Nach der Installation können Sie SQLAlchemy in Ihrem Projekt einrichten:
 from sqlalchemy import create_engine, MetaData
 ```
 
-2. **Erstellen einer Datenbank-Engine**: SQLAlchemy verwendet das Konzept einer "Engine", um eine Verbindung zur Datenbank herzustellen. Hier ist ein Beispiel, wie man eine Engine für eine SQLite-Datenbank erstellt:
+1. **Erstellen einer Datenbank-Engine**: SQLAlchemy verwendet das Konzept einer "Engine", um eine Verbindung zur Datenbank herzustellen. Die Engine ermöglicht es, eine Verbindung zur Datenbank herzustellen. Sie spezifiziert die Art der Datenbank, den Verbindungspfad und andere Parameter. Zusätzlich verwaltet die Engine oftmals einen Verbindungspool, der die Wiederverwendung von Datenbankverbindungen erleichtert, um die Leistung zu verbessern. Hier ist ein Beispiel, wie man eine Engine für eine SQLite-Datenbank erstellt:
 
 
 ```python
@@ -80,7 +80,7 @@ engine = create_engine('sqlite:///example.db')
 
    Ersetzen Sie `sqlite:///example.db` durch den entsprechenden Verbindungsstring für Ihre Datenbank. Zum Beispiel für eine PostgreSQL-Datenbank könnte es `postgresql://user:password@localhost/mydatabase` sein.
 
-3. **Definieren der Metadaten**: Metadaten sind eine Sammlung von Tabellendefinitionen und anderen Datenbankkonstrukten. Sie können so initialisiert werden:
+1. **Definieren der Metadaten**: Metadaten sind eine Sammlung von Tabellendefinitionen und anderen Datenbankkonstrukten. Sie können so initialisiert werden:
 
 
 ```python
@@ -243,35 +243,31 @@ session.close()
 
 In dieser Übung werden Sie das zuvor Gelernte anwenden, um eine einfache Anwendung mit SQLAlchemy ORM zu erstellen. Sie werden ein Modell definieren, eine Datenbanktabelle erstellen und grundlegende Operationen wie das Einfügen, Abfragen und Aktualisieren von Daten durchführen.
 
-### Voraussetzungen
-
-Stellen Sie sicher, dass SQLAlchemy in Ihrer Python-Umgebung installiert ist. Erstellen Sie eine neue Python-Datei für diese Übung.
-
 ### Aufgabenstellung
 
 1. **Definieren Sie ein Modell 'Book'**:
-   - Erstellen Sie eine Klasse `Book`, die von `Base` erbt.
-   - Definieren Sie die Tabelle `books` mit folgenden Spalten:
-     - `id`: Integer, Primärschlüssel
-     - `title`: String, Titel des Buches
-     - `author`: String, Autor des Buches
-     - `published_year`: Integer, Jahr der Veröffentlichung
+    - Erstellen Sie eine Klasse `Book`, die von `Base` erbt.
+    - Definieren Sie die Tabelle `books` mit folgenden Spalten:
+      - `id`: Integer, Primärschlüssel
+      - `title`: String, Titel des Buches
+      - `author`: String, Autor des Buches
+      - `published_year`: Integer, Jahr der Veröffentlichung
 
 2. **Erstellen Sie eine SQLite-Datenbank**:
-   - Verwenden Sie eine SQLite-Datenbank (`sqlite:///books.db`).
-   - Erstellen Sie die Tabelle `books` in der Datenbank.
+    - Verwenden Sie eine SQLite-Datenbank (`sqlite:///books.db`).
+    - Erstellen Sie die Tabelle `books` in der Datenbank.
 
 3. **Fügen Sie neue Bücher hinzu**:
-   - Erstellen Sie mindestens drei Buch-Objekte mit unterschiedlichen Attributen.
-   - Fügen Sie diese Objekte zur Session hinzu und speichern Sie sie in der Datenbank.
+    - Erstellen Sie mindestens drei Buch-Objekte mit unterschiedlichen Attributen.
+    - Fügen Sie diese Objekte zur Session hinzu und speichern Sie sie in der Datenbank.
 
 4. **Abfragen von Büchern**:
-   - Führen Sie eine Abfrage durch, um alle Bücher eines bestimmten Autors zu finden.
-   - Führen Sie eine Abfrage durch, um alle Bücher zu finden, die vor dem Jahr 2000 veröffentlicht wurden.
+    - Führen Sie eine Abfrage durch, um alle Bücher eines bestimmten Autors zu finden.
+    - Führen Sie eine Abfrage durch, um alle Bücher zu finden, die vor dem Jahr 2000 veröffentlicht wurden.
 
 5. **Aktualisieren eines Buches**:
-   - Wählen Sie eines der Bücher aus und aktualisieren Sie dessen `published_year`.
-   - Speichern Sie die Änderungen in der Datenbank.
+    - Wählen Sie eines der Bücher aus und aktualisieren Sie dessen `published_year`.
+    - Speichern Sie die Änderungen in der Datenbank.
 
 6. **Bonus**: Implementieren Sie eine Funktion, um ein Buch anhand seiner ID zu löschen.
 

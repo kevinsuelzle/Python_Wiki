@@ -6,6 +6,11 @@ plugins:
   - mkdocs-jupyter:
       execute: false
       kernel_name: python3
+      
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 nav:
   - Lehrplan: lehrplan/lehrplan.md

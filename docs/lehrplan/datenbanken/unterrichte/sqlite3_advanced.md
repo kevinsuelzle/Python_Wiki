@@ -16,13 +16,13 @@ SQL-Injection ist eine Art von Angriff, bei dem ein Angreifer SQL-Code in eine W
 SQL-Injektionen treten auf, wenn Benutzereingaben oder andere nicht vertrauenswürdige Daten direkt in SQL-Anweisungen eingefügt werden, ohne ordnungsgemäße Validierung oder Bereinigung. Über die Parametrisierung von SQL-Abfragen können SQL-Injektionen verhindert werden. Die Parametrisierung von SQL-Abfragen bietet drei Hauptvorteile:
 
 1. **Trennung von Daten und Anweisung:**
-   - Platzhalter ermöglichen es, die SQL-Anweisung und die Daten, die in die Anweisung eingefügt werden sollen, zu trennen. Dadurch wird verhindert, dass Benutzereingaben direkt in die Anweisung eingebettet werden.
+  Platzhalter ermöglichen es, die SQL-Anweisung und die Daten, die in die Anweisung eingefügt werden sollen, zu trennen. Dadurch wird verhindert, dass Benutzereingaben direkt in die Anweisung eingebettet werden.
 
-2. **Automatische Typkonvertierung:**
-   - Die Parameterisierung ermöglicht eine automatische Typkonvertierung. Wenn beispielsweise ein Platzhalter für einen INTEGER-Wert verwendet wird und der Benutzer einen String einschickt, wird der Treiber automatisch versuchen, den String in einen INTEGER umzuwandeln, was zu sichereren Abfragen führt.
+1. **Automatische Typkonvertierung:**
+  Die Parameterisierung ermöglicht eine automatische Typkonvertierung. Wenn beispielsweise ein Platzhalter für einen INTEGER-Wert verwendet wird und der Benutzer einen String einschickt, wird der Treiber automatisch versuchen, den String in einen INTEGER umzuwandeln, was zu sichereren Abfragen führt.
 
-3. **Bereinigung von Sonderzeichen:**
-   - Die meisten Datenbanktreiber führen interne Bereinigungen durch, um sicherzustellen, dass die eingefügten Daten sicher sind. Dies kann das Entfernen oder Maskieren von potenziell schädlichen Zeichen beinhalten.
+1. **Bereinigung von Sonderzeichen:**
+  Die meisten Datenbanktreiber führen interne Bereinigungen durch, um sicherzustellen, dass die eingefügten Daten sicher sind. Dies kann das Entfernen oder Maskieren von potenziell schädlichen Zeichen beinhalten.
 
 Beispiel ohne Platzhalter (anfällig für SQL-Injektion):
 

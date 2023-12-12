@@ -118,38 +118,30 @@ query = session.query(User)
 print(query.statement)
 ```
 
-### Zusammenfassung
 
 Die Beachtung von Best Practices in SQLAlchemy hinsichtlich Code-Organisation, Session-Management, Fehlerbehandlung und Debugging trägt dazu bei, robuste, wartbare und effiziente Anwendungen zu entwickeln. Durch eine klare Strukturierung der Modelle und die richtige Handhabung von Sessions und Transaktionen können viele häufige Fehler vermieden werden. Debugging-Tools und -Techniken helfen dabei, Probleme effizient zu identifizieren und zu lösen.
 
-## Übungsaufgabe: Einsatz von Mixins in SQLAlchemy
-
+## Übungsaufgabe: Einsatz von Mixins in SQLAlchemy  🌶️🌶️🌶️
 [60 min]
 
-### Ziel der Aufgabe
-
 In dieser Übung werden Sie das Konzept der Mixins in SQLAlchemy praktisch anwenden, um eine saubere und wiederverwendbare Struktur für Ihre Datenbankmodelle zu erstellen. Sie werden ein Mixin definieren, das in verschiedenen Modellen verwendet wird, um gemeinsame Attribute zu implementieren.
-
-### Voraussetzungen
-
-Stellen Sie sicher, dass SQLAlchemy in Ihrer Python-Umgebung installiert ist. Grundlegende Kenntnisse in Python und SQLAlchemy sind erforderlich.
 
 ### Aufgabenstellung
 
 1. **Definieren eines Timestamp-Mixins**:
-   - Erstellen Sie ein Mixin namens `TimestampMixin`, das zwei Spalten `created_at` und `updated_at` enthält. Diese Spalten sollen die Erstellungs- und letzte Aktualisierungszeitstempel speichern.
+    - Erstellen Sie ein Mixin namens `TimestampMixin`, das zwei Spalten `created_at` und `updated_at` enthält. Diese Spalten sollen die Erstellungs- und letzte Aktualisierungszeitstempel speichern.
 
 2. **Erstellen von Datenbankmodellen**:
-   - Definieren Sie zwei Modelle, `User` und `Article`. Beide Modelle sollen von `Base` und `TimestampMixin` erben.
-   - `User` soll zusätzlich die Spalten `id` (Primärschlüssel) und `name` haben.
-   - `Article` soll zusätzlich die Spalten `id`, `title` und `content` haben.
+    - Definieren Sie zwei Modelle, `User` und `Article`. Beide Modelle sollen von `Base` und `TimestampMixin` erben.
+    - `User` soll zusätzlich die Spalten `id` (Primärschlüssel) und `name` haben.
+    - `Article` soll zusätzlich die Spalten `id`, `title` und `content` haben.
 
 3. **Datenbank und Tabellen erstellen**:
-   - Erstellen Sie eine SQLite-Datenbank und die definierten Tabellen.
+    - Erstellen Sie eine SQLite-Datenbank und die definierten Tabellen.
 
 4. **Daten einfügen und abfragen**:
-   - Fügen Sie einige Datensätze in beide Tabellen ein.
-   - Führen Sie Abfragen durch, um die eingefügten Daten sowie die automatisch gesetzten Zeitstempel anzuzeigen.
+    - Fügen Sie einige Datensätze in beide Tabellen ein.
+    - Führen Sie Abfragen durch, um die eingefügten Daten sowie die automatisch gesetzten Zeitstempel anzuzeigen.
 
 ### Lösung zur Übungsaufgabe
 
@@ -286,7 +278,5 @@ async def get_users():
         users = result.scalars().all()
         return users
 ```
-
-### Zusammenfassung
 
 Die Integration von SQLAlchemy in Web-Frameworks wie Flask bietet erhebliche Flexibilität und Leistung für die Datenbankinteraktion. Für Django-Projekte ist jedoch Vorsicht geboten, da hier das eingebaute ORM-System vorherrscht. Asynchrone Operationen in SQLAlchemy eröffnen neue Möglichkeiten für die Entwicklung effizienter und moderner Webanwendungen, insbesondere wenn es um die Handhabung von nicht-blockierenden Datenbankoperationen geht. Insgesamt ermöglicht SQLAlchemy eine nahtlose und leistungsfähige Datenverwaltung in Python-basierten Webprojekten.
