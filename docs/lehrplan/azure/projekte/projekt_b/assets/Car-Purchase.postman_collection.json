@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "9a52f5ce-d028-4dde-b281-bd2a68cc5788",
+		"name": "Car-Purchase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "3480586",
+		"_collection_link": "https://www.postman.com/warped-eclipse-990046/workspace/car-fleet-management/collection/3480586-9a52f5ce-d028-4dde-b281-bd2a68cc5788?action=share&source=collection_link&creator=3480586"
+	},
+	"item": [
+		{
+			"name": "/car-models",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/car-models",
+				"description": "Fetch the list of car models."
+			},
+			"response": []
+		},
+		{
+			"name": "/car-models/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/car-models/1",
+				"description": "Fetch car model by id."
+			},
+			"response": []
+		},
+		{
+			"name": "/car-types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/car-types",
+				"description": "Fetch the list of car engine types."
+			},
+			"response": []
+		},
+		{
+			"name": "/car-gears",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/car-gears",
+				"description": "Fetch the list of car gears."
+			},
+			"response": []
+		},
+		{
+			"name": "/orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BASE_URL}}/orders",
+				"description": "Fetch the list of all orders."
+			},
+			"response": []
+		},
+		{
+			"name": "/orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"John\",\n    \"email\":\"John@gmail.com\",\n    \"phone_number\":\"+917865444422\",\n    \"car_model_id\":1,\n    \"car_type_id\":1,\n    \"car_gear_id\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/orders",
+				"description": "Create an order"
+			},
+			"response": []
+		}
+	]
+}
