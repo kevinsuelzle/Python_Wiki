@@ -3,3 +3,4 @@ site
 /venv
 .firebase
 .DS_Store
+*.db

@@ -77,12 +77,10 @@
 
 # Block 3
 
-| Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
-|       |            |           |                  |
-|       |            |           |                  |
-
-
-
-
-
+| Woche | Unterricht                                                               | Lernziele                                                    | Begriffssammlung                                            |
+|-------|--------------------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------|
+| 8     | [Einführung in SQLAlchemy](datenbanken/einfuehrung.ipynb)               | [hier](../checklists/checkliste3.md#einfuehrung-sqlalchemy)  | [hier](../begriffe/begriffe3.md#einfuehrung-sqlalchemy)     |
+| 9     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.ipynb) | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte)  | [hier](../begriffe/begriffe3.md#fortgeschrittene-orm-konzepte)     |
+| 10     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.ipynb) | [hier](../checklists/checkliste3.md#sql-expression-language)  | [hier](../begriffe/begriffe3.md#sql-expression-language)     |
+| 11     | [Best Practices und fortgeschrittene Themen](datenbanken/best_practices.ipynb) | [hier](../checklists/checkliste3.md#best-practices)  | [hier](../begriffe/begriffe3.md#best-practices)     |
+| 11     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.ipynb) | [hier](../checklists/checkliste3.md#integration-in-flask)  | [hier](../begriffe/begriffe3.md#integration-in-flask)     |
