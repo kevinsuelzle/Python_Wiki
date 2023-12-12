@@ -67,13 +67,25 @@ nav:
           - Gruppenarbeit: lehrplan/datenbanken/unterrichte/projects.md
           - Fragen an die Datenbank: lehrplan/datenbanken/unterrichte/joins_and_views.md
           - Abschluss SQL-Datenbanken: lehrplan/datenbanken/unterrichte/finally.md
+          - Einführung zu Clean Code: lehrplan/clean_code/Introduction.md
+          - Benennungskonventionen: lehrplan/clean_code/Benennungskonventionen.md
+          - DRY: lehrplan/clean_code/DRY/DRY.md
+          - Fehlerbehandlung: lehrplan/clean_code/Fehlerbehandlung/Fehlerbehandlung.md
+          - Funktionsgestaltung: lehrplan/clean_code/Funktionsgestaltung/Funktionsgestaltung.md
+          - Globale Parameter: lehrplan/clean_code/Globale_Parameter/Globale_Parameter.md
+          - Guard Clauses: lehrplan/clean_code/GuardClauses/GuardClauses.md
+          - Kommentare: lehrplan/clean_code/Kommentare/Kommentare.md
+          - List Comprehensions: lehrplan/clean_code/ListComprehension/ListComprehension.md
+          - Typehints: lehrplan/clean_code/Typehints/Typehints.md
+          - Übungsaufgabe: lehrplan/clean_code/Uebungsaufgabe/Uebungsaufgabe.md
+          - Variablenbenennung: lehrplan/clean_code/Variablenbenennung/Variablenbenennung.md
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md
       - Clean Code: begriffe/begriffe_clean_code.md
       - SQL-Datenbanken: begriffe/begriffe_db1.md
   - Checklisten:
-      - Python Grundlagen: checklists/checklists_1.md
+      - Python Grundlagen: checklists/checklist_1.md
       - git: checklists/checklist_git.md
       - Clean Code: checklists/checklist_clean_code.md
       - SQL-Datenbanken: checklists/checklist_db1.md
