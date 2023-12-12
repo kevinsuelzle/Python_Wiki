@@ -1,32 +1,22 @@
 ## Projekt: Integration von SQLAlchemy in einem Flask-Projekt 🌶️🌶️🌶️🌶️
 [120 min]
 
-Entwickeln Sie ein einfaches Flask-Webprojekt mit SQLAlchemy, das ein Auto-Datenmodell verwendet. Sie werden CRUD-Operationen implementieren und die Funktionalität über HTTP-Endpoints bereitstellen.
-
-### Voraussetzungen
-
-- Installieren Sie Flask und Flask-SQLAlchemy in Ihrer Python-Umgebung:
-  
-  ```bash
-  pip install Flask Flask-SQLAlchemy
-  ```
-
-- Grundkenntnisse in Flask, SQLAlchemy und der Verwendung von HTTP-Requests sind erforderlich.
+Entwickel ein einfaches Flask-Webprojekt mit SQLAlchemy, das ein Auto-Datenmodell verwendet. Sie werden CRUD-Operationen implementieren und die Funktionalität über HTTP-Endpoints bereitstellen.
 
 ### Aufgabenstellung
 
 1. **Einrichten eines Flask-Projekts mit SQLAlchemy**:
-    - Erstellen Sie ein neues Flask-Projekt.
-    - Konfigurieren Sie SQLAlchemy mit einer lokalen SQLite-Datenbank.
+    - Erstelle ein neues Flask-Projekt.
+    - Konfiguriere SQLAlchemy mit einer lokalen SQLite-Datenbank.
 
 2.  **Datenmodell `Auto` erstellen**:
-   - Definieren Sie ein Modell `Auto` mit den Feldern `id` (Integer, Primärschlüssel) und `marke` (String).
+   - Definiere ein Modell `Auto` mit den Feldern `id` (Integer, Primärschlüssel) und `marke` (String).
 
 3. **CRUD-Operationen implementieren**:
-    - Implementieren Sie Flask-Routen, um Autos hinzuzufügen (`/add-auto`), alle Autos anzuzeigen (`/autos`) und ein bestimmtes Auto zu löschen (`/delete-auto/<id>`).
+    - Implementiere Flask-Routen, um Autos hinzuzufügen (`/add-auto`), alle Autos anzuzeigen (`/autos`) und ein bestimmtes Auto zu löschen (`/delete-auto/<id>`).
 
 4. **Testen der Routes mit `curl`**:
-    - Führen Sie Test-HTTP-Requests mit `curl` aus, um die Funktionalität Ihrer Routen zu überprüfen.
+    - Führe Test-HTTP-Requests mit `curl` aus, um die Funktionalität Ihrer Routen zu überprüfen.
 
 ### Lösung zur Übungsaufgabe
 

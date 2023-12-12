@@ -2,9 +2,9 @@
 ## Einführung in die SQL Expression Language
 [15 min]
 
-SQLAlchemy's SQL Expression Language ermöglicht eine detaillierte und flexible Erstellung von SQL-Statements in Python. Es ist ein leistungsstarkes Werkzeug für die direkte Interaktion mit der Datenbank, wobei die volle Flexibilität von SQL genutzt wird.
+SQLAlchemy's SQL Expression Language ermöglicht eine detaillierte Erstellung von SQL-Statements in Python. Im Gegensatz zum ORM, das eine höhere Abstraktionsebene bietet, ermöglicht die SQL Expression Language eine präzisere und spezifischere Interaktion mit der Datenbank. In diesem Abschnitt werden wir die Grundlagen der SQL Expression Language in SQLAlchemy kennenlernen. 
 
-### Kernkonzepte
+Die SQL Expression Language aus SQLAlchemy unterscheidet zwei grundlegende Konzepte: Ausdrücke und Statements. Ein Ausdruck ist ein einzelnes Element, das in SQL verwendet werden kann, wie z.B. eine Spalte oder ein mathematischer Ausdruck. Ein Statement ist ein SQL-Befehl, der eine oder mehrere Ausdrücke enthält.
 
 - **Ausdrücke und Statements**: Jedes Element in der SQL Expression Language ist entweder ein Ausdruck (wie eine Spalte oder ein mathematischer Ausdruck) oder ein Statement (wie ein SQL-Befehl).
   
@@ -66,35 +66,28 @@ for row in result:
     print(row.id, row.name)
 ```
 
-Die SQL Expression Language in SQLAlchemy ermöglicht es Ihnen, SQL-Statements direkt in Python zu erstellen, und bietet eine leistungsfähige Alternative zum ORM für komplexe Abfragen und spezielle Datenbankoperationen. Mit der Einführung von SQLAlchemy 1.4+ hat sich die Syntax leicht verändert, wobei die `select()`-Funktion nun direkt Spalten als Argumente akzeptiert, was die Nutzung intuitiver und Pythonischer macht.
+Die SQL Expression Language in SQLAlchemy ermöglicht es, SQL-Statements direkt in Python zu erstellen, und bietet eine leistungsfähige Alternative zum ORM für komplexe Abfragen und spezielle Datenbankoperationen. Mit der Einführung von SQLAlchemy 1.4+ hat sich die Syntax leicht verändert, wobei die `select()`-Funktion nun direkt Spalten als Argumente akzeptiert, was die Nutzung intuitiver und Pythonischer macht.
 
-## Übungsaufgabe: Erkundung der SQL Expression Language in SQLAlchemy 🌶️🌶️🌶️
+### Übungsaufgabe: Erkundung der SQL Expression Language in SQLAlchemy 🌶️🌶️🌶️
 [60 min]
 
-In dieser Übung werden Sie die Grundlagen der SQL Expression Language in SQLAlchemy erkunden. Sie werden eine Reihe von Abfragen erstellen, die grundlegende SQL-Operationen in SQLAlchemy's SQL Expression Language demonstrieren.
-
-### Voraussetzungen
-
-Stellen Sie sicher, dass SQLAlchemy in Ihrer Python-Umgebung installiert ist und Sie Grundkenntnisse in Python und SQL haben.
-
-### Aufgabenstellung
 
 1. **Vorbereitung der Umgebung und Tabellendefinition**:
-    - Erstellen Sie eine neue SQLite-Datenbank und definieren Sie eine Tabelle `user` mit den Spalten `id` (Integer, Primärschlüssel) und `name` (String).
-    - Fügen Sie einige Einträge in die `user`-Tabelle ein.
+    - Erstelle eine neue SQLite-Datenbank und definieren Sie eine Tabelle `user` mit den Spalten `id` (Integer, Primärschlüssel) und `name` (String).
+    - Füge einige Einträge in die `user`-Tabelle ein.
  
 2. **Erstellen von Select-Statements**:
-    - Schreiben Sie ein Select-Statement, um alle Nutzer aus der `user`-Tabelle abzurufen.
-    - Schreiben Sie ein weiteres Select-Statement, um nur Nutzer mit einem bestimmten Namen (z.B. "Alice") abzurufen.
+    - Schreibe ein Select-Statement, um alle Nutzer aus der `user`-Tabelle abzurufen.
+    - Schreibe ein weiteres Select-Statement, um nur Nutzer mit einem bestimmten Namen (z.B. "Alice") abzurufen.
 
 3. **Erstellen und Ausführen einer Insert-Operation**:
-    - Fügen Sie einen neuen Nutzer in die `user`-Tabelle ein.
+    - Füge einen neuen Nutzer in die `user`-Tabelle ein.
 
 4. **Update- und Delete-Operationen**:
-    - Aktualisieren Sie den Namen eines Nutzers in der `user`-Tabelle.
-    - Löschen Sie einen Nutzer aus der `user`-Tabelle.
+    - Aktualisiere den Namen eines Nutzers in der `user`-Tabelle.
+    - Lösch einen Nutzer aus der `user`-Tabelle.
 
-5. **Bonus**: Erstellen Sie eine Unterabfrage, die eine aggregierte Information zurückgibt (z.B. die Gesamtanzahl der Nutzer).
+5. **Bonus**: Erstelle eine Unterabfrage, die eine aggregierte Information zurückgibt (z.B. die Gesamtanzahl der Nutzer).
 
 ### Lösung:
 
@@ -155,7 +148,7 @@ In diesem Abschnitt konzentrieren wir uns auf CRUD-Operationen (Create, Read, Up
 
 ### Erstellen von Daten (Create)
 
-Das Erstellen neuer Daten in der Datenbank erfolgt über das `insert`-Statement. Sie können einzelne Datensätze oder mehrere auf einmal einfügen.
+Das Erstellen neuer Daten in der Datenbank erfolgt über das `insert`-Statement. Wir können einzelne Datensätze oder mehrere auf einmal einfügen.
 
 
 ```python
@@ -174,7 +167,7 @@ conn.execute(user_table.insert(), [
 
 ### Lesen von Daten (Read)
 
-Das Lesen von Daten, bekannt als Abfrage oder Query, wird mit dem `select`-Statement durchgeführt. Sie können spezifische Spalten auswählen und Bedingungen für die Abfrage festlegen.
+Das Lesen von Daten, bekannt als Abfrage oder Query, wird mit dem `select`-Statement durchgeführt. Wir können spezifische Spalten auswählen und Bedingungen für die Abfrage festlegen.
 
 
 ```python
@@ -195,7 +188,7 @@ for row in result:
 
 ### Aktualisieren von Daten (Update)
 
-Das Aktualisieren vorhandener Daten erfolgt über das `update`-Statement. Sie können spezifizieren, welche Spalten aktualisiert werden sollen und unter welchen Bedingungen.
+Das Aktualisieren vorhandener Daten erfolgt über das `update`-Statement. Wir können spezifizieren, welche Spalten aktualisiert werden sollen und unter welchen Bedingungen.
 
 
 ```python
@@ -208,7 +201,7 @@ conn.execute(update_stmt)
 
 ### Löschen von Daten (Delete)
 
-Das Löschen von Daten aus der Datenbank wird mit dem `delete`-Statement ausgeführt. Sie können Bedingungen angeben, um zu steuern, welche Datensätze gelöscht werden.
+Das Löschen von Daten aus der Datenbank wird mit dem `delete`-Statement ausgeführt. Wir können Bedingungen angeben, um zu steuern, welche Datensätze gelöscht werden.
 
 
 ```python
@@ -221,7 +214,7 @@ conn.execute(delete_stmt)
 
 ### Umgang mit Bulk-Operationen
 
-Bulk-Operationen sind nützlich, wenn Sie eine große Anzahl von Datensätzen einfügen, aktualisieren oder löschen müssen. SQLAlchemy bietet Methoden, um solche Operationen effizient zu handhaben.
+Bulk-Operationen sind nützlich, um eine große Anzahl von Datensätzen einzufügen, zu aktualisieren oder zu löschen. SQLAlchemy bietet Methoden, um solche Operationen effizient zu handhaben.
 
 
 ```python
@@ -240,35 +233,31 @@ conn.execute(delete(user_table).where(user_table.c.name == 'Unknown'))
 ```
 
 
-CRUD-Operationen bilden die Grundlage der Datenbankinteraktion in SQLAlchemy's SQL Expression Language. Sie ermöglichen es Ihnen, Daten effizient zu erstellen, abzufragen, zu aktualisieren und zu löschen. Bulk-Operationen erweitern diese Funktionalität, indem sie die Bearbeitung großer Datensätze optimieren. Durch das Erlernen dieser Grundlagen können Sie die Daten in Ihrer Anwendung effektiv verwalten und manipulieren.
+CRUD-Operationen bilden die Grundlage der Datenbankinteraktion in SQLAlchemy's SQL Expression Language. Sie ermöglichen es uns, Daten effizient zu erstellen, abzufragen, zu aktualisieren und zu löschen. Bulk-Operationen erweitern diese Funktionalität, indem sie die Bearbeitung großer Datensätze optimieren. Durch das Erlernen dieser Grundlagen können wir die Daten in unser Anwendung effektiv verwalten und manipulieren.
 
-## Übungsaufgabe: CRUD-Operationen mit SQL Expression Language 🌶️🌶️
+### Übungsaufgabe: CRUD-Operationen mit SQL Expression Language 🌶️🌶️
 [60 min]
 
-In dieser Übung werden Sie die CRUD-Operationen (Create, Read, Update, Delete) mit der SQL Expression Language in SQLAlchemy praktisch anwenden. Sie erstellen eine Tabelle, fügen Daten hinzu, lesen diese Daten aus, aktualisieren sie und führen schließlich eine Löschoperation durch.
-
-### Aufgabenstellung
-
 1. **Tabellenerstellung**:
-    - Definieren Sie eine Tabelle `book` mit den Spalten `id` (Integer, Primärschlüssel) und `title` (String).
-    - Erstellen Sie die Tabelle in einer SQLite-Datenbank.
+    - Definiere eine Tabelle `book` mit den Spalten `id` (Integer, Primärschlüssel) und `title` (String).
+    - Erstelle die Tabelle in einer SQLite-Datenbank.
 
 2. **Daten einfügen (Create)**:
-    - Fügen Sie mindestens drei Bücher in die `book`-Tabelle ein.
+    - Füge mindestens drei Bücher in die `book`-Tabelle ein.
 
 3. **Daten abfragen (Read)**:
-    - Führen Sie eine Abfrage durch, um alle Bücher in der Tabelle anzuzeigen.
+    - Führe eine Abfrage durch, um alle Bücher in der Tabelle anzuzeigen.
 
 4. **Daten aktualisieren (Update)**:
-    - Aktualisieren Sie den Titel eines Buches.
+    - Aktualisiere den Titel eines Buches.
 
 5. **Daten löschen (Delete)**:
-    - Löschen Sie ein Buch aus der Tabelle.
+    - Lösche ein Buch aus der Tabelle.
 
 6. **Ausgabe der Daten**:
-    - Führen Sie eine Abfrage durch, um alle Bücher in der Tabelle anzuzeigen.
+    - Führe eine Abfrage durch, um alle Bücher in der Tabelle anzuzeigen.
 
-7. **Bonus**: Führen Sie eine Bulk-Insert-Operation durch, um mehrere Bücher gleichzeitig hinzuzufügen.
+7. **Bonus**: Führe eine Bulk-Insert-Operation durch, um mehrere Bücher gleichzeitig hinzuzufügen.
 
 ### Lösung zur Übungsaufgabe
 
@@ -336,7 +325,7 @@ In diesem Abschnitt befassen wir uns mit fortgeschrittenen Techniken in SQLAlche
 
 #### Indexierung
 
-Indexe in einer Datenbank verbessern die Geschwindigkeit der Datenabrufe, können aber das Einfügen, Löschen und Aktualisieren von Daten verlangsamen. SQLAlchemy ermöglicht es Ihnen, Indexe in Ihren Tabellendefinitionen zu spezifizieren.
+Indexe in einer Datenbank verbessern die Geschwindigkeit der Datenabrufe, können aber das Einfügen, Löschen und Aktualisieren von Daten verlangsamen. SQLAlchemy ermöglicht es, Indexe in Ihren Tabellendefinitionen zu spezifizieren.
 
 
 ```python
@@ -399,23 +388,19 @@ for row in result:
 
 Die Verwendung von Indexierung und Performance-Tuning-Techniken kann die Effizienz Ihrer Anwendung erheblich verbessern, insbesondere bei großen Datenmengen. Ebenso ermöglicht die Nutzung von Funktionen und Stored Procedures eine erweiterte Interaktion mit der Datenbank, die über einfache CRUD-Operationen hinausgeht. SQLAlchemy bietet eine reichhaltige Palette an Möglichkeiten, um diese fortgeschrittenen Features effektiv zu nutzen.
 
-## Übungsaufgabe: Erweiterte Funktionen und Performance in SQLAlchemy 🌶️🌶️🌶️
+### Übungsaufgabe: Erweiterte Funktionen und Performance in SQLAlchemy 🌶️🌶️🌶️
 [60 min]
 
-In dieser Übung werden Sie die erweiterten Funktionen und Performance-Optimierung in SQLAlchemy anhand von reinem Python-Code erforschen. Sie werden eine Tabelle mit Indexierung erstellen, Eager Loading anwenden und die Auswirkungen auf die Performance beobachten.
-
-### Aufgabenstellung
-
 1. **Tabellenerstellung mit Index**:
-    - Erstellen Sie eine Tabelle `employee` mit den Spalten `id`, `name` und `department`.
-    - Fügen Sie einen Index auf die Spalte `department` hinzu und beobachten Sie die Auswirkungen auf Abfragegeschwindigkeiten.
+    - Erstelle eine Tabelle `employee` mit den Spalten `id`, `name` und `department`.
+    - Füge einen Index auf die Spalte `department` hinzu und beobachte die Auswirkungen auf Abfragegeschwindigkeiten.
 
 2. **Eager Loading vs. Lazy Loading**:
-    - Erstellen Sie zwei Tabellen `author` und `book`, wobei `author` eine One-to-Many-Beziehung zu `book` hat.
-    - Führen Sie Abfragen durch, um alle Autoren und ihre Bücher zu laden, einmal mit Lazy Loading und einmal mit Eager Loading (verwenden Sie `joinedload`).
+    - Erstelle zwei Tabellen `author` und `book`, wobei `author` eine One-to-Many-Beziehung zu `book` hat.
+    - Führe Abfragen durch, um alle Autoren und ihre Bücher zu laden, einmal mit Lazy Loading und einmal mit Eager Loading (verwenden `joinedload`).
 
 3. **Performance-Messung**:
-    - Messen Sie die Ausführungszeit für beide Abfragen (Lazy Loading und Eager Loading) und vergleichen Sie die Ergebnisse.
+    - Mess die Ausführungszeit für beide Abfragen (Lazy Loading und Eager Loading) und vergleiche die Ergebnisse.
 
 ### Lösung zur Übungsaufgabe
 

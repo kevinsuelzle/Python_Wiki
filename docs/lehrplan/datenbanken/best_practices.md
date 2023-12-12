@@ -6,7 +6,7 @@ Eine effiziente Organisation und Strukturierung des Codes ist wesentlich, um die
 
 #### Modellierung
 
-- **Definieren von Modellen**: Organisieren Sie Ihre Modelldefinitionen in separaten Dateien oder Modulen, um die Übersichtlichkeit zu bewahren. Jedes Modell sollte einer Tabelle in Ihrer Datenbank entsprechen.
+- **Definieren von Modellen**: Organisiere deine Modelldefinitionen in separaten Dateien oder Modulen, um die Übersichtlichkeit zu bewahren. Jedes Modell sollte einer Tabelle in Ihrer Datenbank entsprechen.
 
 
 ```python
@@ -23,7 +23,7 @@ class User(Base):
 ```
 
 
-- **Verwenden von Mixins**: Mixins sind ein fortgeschrittenes Konzept in SQLAlchemy, das dazu dient, gemeinsame Spalten und Methoden in mehreren Tabellenmodellen wiederverwendbar zu gestalten. Sie sind besonders nützlich, um Code-Duplikation zu vermeiden und eine saubere, modulare Struktur in Ihrem Datenbankmodell zu gewährleisten. Ein Mixin ist eine Klasse, die Felder und Methoden definiert, die in mehreren Modellen wiederverwendet werden können. Mixins sollten von object erben, nicht von Base.
+- **Verwenden von Mixins**: Mixins sind ein wichtiges Konzept in SQLAlchemy (und generell in Python), das dazu dient, gemeinsame Spalten und Methoden in mehreren Tabellenmodellen wiederverwendbar zu gestalten. Sie sind besonders nützlich, um Code-Duplikation zu vermeiden und eine saubere, modulare Struktur in Ihrem Datenbankmodell zu gewährleisten. Ein Mixin ist eine Klasse, die Felder und Methoden definiert, die in mehreren Modellen wiederverwendet werden können. Mixins sollten von object erben, nicht von Base.
 
 
 ```python
@@ -36,7 +36,7 @@ class TimestampMixin:
     updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
 ```
 
-**Integration in Modelle**: Um ein Mixin in einem Modell zu verwenden, erben Sie einfach von der Mixin-Klasse neben der Basisklasse Base. Die Attribute und Methoden des Mixins werden automatisch in das Modell integriert.
+**Integration in Modelle**: Um ein Mixin in einem Modell zu verwenden, erben wir von der Mixin-Klasse neben der Basisklasse Base. Die Attribute und Methoden des Mixins werden automatisch in das Modell integriert.
 
 
 ```python
@@ -55,7 +55,7 @@ class User(Base, TimestampMixin):
 
 #### Session-Management
 
-- **Session-Factory**: Verwenden Sie `sessionmaker` zur Erstellung einer Session-Factory und erstellen Sie Sessions bei Bedarf.
+- **Session-Factory**: Verwende `sessionmaker` zur Erstellung einer Session-Factory und erstelle Sessions bei Bedarf.
 
 
 ```python
@@ -67,7 +67,7 @@ engine = create_engine('sqlite:///example.db')
 Session = sessionmaker(bind=engine)
 ```
 
-- **Context Manager**: Nutzen Sie Python's Context Manager (mit `with`-Statement), um sicherzustellen, dass Sessions ordnungsgemäß geschlossen werden.
+- **Context Manager**: Nutze Python's Context Manager (mit `with`-Statement), um sicherzustellen, dass Sessions ordnungsgemäß geschlossen werden.
 
 
 ```python
@@ -85,7 +85,7 @@ with Session() as session:
 
 #### Fehlerbehandlung
 
-- **Transaktionsmanagement**: Nutzen Sie `try-except`-Blöcke um Transaktionen, um Fehler zu fangen und die Transaktion bei Bedarf zurückzurollen.
+- **Transaktionsmanagement**: Nutze `try-except`-Blöcke um Transaktionen, um Fehler zu fangen und die Transaktion bei Bedarf zurückzurollen.
 
 
 ```python
@@ -100,7 +100,7 @@ except Exception as e:
 
 #### Debugging
 
-- **SQL-Logging aktivieren**: Um zu sehen, welche SQL-Befehle SQLAlchemy ausführt, können Sie das SQL-Logging aktivieren.
+- **SQL-Logging aktivieren**: Um zu sehen, welche SQL-Befehle SQLAlchemy ausführt, können wir das SQL-Logging aktivieren.
 
 
 ```python
@@ -121,27 +121,23 @@ print(query.statement)
 
 Die Beachtung von Best Practices in SQLAlchemy hinsichtlich Code-Organisation, Session-Management, Fehlerbehandlung und Debugging trägt dazu bei, robuste, wartbare und effiziente Anwendungen zu entwickeln. Durch eine klare Strukturierung der Modelle und die richtige Handhabung von Sessions und Transaktionen können viele häufige Fehler vermieden werden. Debugging-Tools und -Techniken helfen dabei, Probleme effizient zu identifizieren und zu lösen.
 
-## Übungsaufgabe: Einsatz von Mixins in SQLAlchemy  🌶️🌶️🌶️
+## #Übungsaufgabe: Einsatz von Mixins in SQLAlchemy  🌶️🌶️🌶️
 [60 min]
 
-In dieser Übung werden Sie das Konzept der Mixins in SQLAlchemy praktisch anwenden, um eine saubere und wiederverwendbare Struktur für Ihre Datenbankmodelle zu erstellen. Sie werden ein Mixin definieren, das in verschiedenen Modellen verwendet wird, um gemeinsame Attribute zu implementieren.
-
-### Aufgabenstellung
-
 1. **Definieren eines Timestamp-Mixins**:
-    - Erstellen Sie ein Mixin namens `TimestampMixin`, das zwei Spalten `created_at` und `updated_at` enthält. Diese Spalten sollen die Erstellungs- und letzte Aktualisierungszeitstempel speichern.
+    - Erstelle ein Mixin namens `TimestampMixin`, das zwei Spalten `created_at` und `updated_at` enthält. Diese Spalten sollen die Erstellungs- und letzte Aktualisierungszeitstempel speichern.
 
 2. **Erstellen von Datenbankmodellen**:
-    - Definieren Sie zwei Modelle, `User` und `Article`. Beide Modelle sollen von `Base` und `TimestampMixin` erben.
+    - Definiere zwei Modelle, `User` und `Article`. Beide Modelle sollen von `Base` und `TimestampMixin` erben.
     - `User` soll zusätzlich die Spalten `id` (Primärschlüssel) und `name` haben.
     - `Article` soll zusätzlich die Spalten `id`, `title` und `content` haben.
 
 3. **Datenbank und Tabellen erstellen**:
-    - Erstellen Sie eine SQLite-Datenbank und die definierten Tabellen.
+    - Erstelle eine SQLite-Datenbank und die definierten Tabellen.
 
 4. **Daten einfügen und abfragen**:
-    - Fügen Sie einige Datensätze in beide Tabellen ein.
-    - Führen Sie Abfragen durch, um die eingefügten Daten sowie die automatisch gesetzten Zeitstempel anzuzeigen.
+    - Füge einige Datensätze in beide Tabellen ein.
+    - Führe Abfragen durch, um die eingefügten Daten sowie die automatisch gesetzten Zeitstempel anzuzeigen.
 
 ### Lösung zur Übungsaufgabe
 
@@ -253,10 +249,10 @@ Django, ein weiteres beliebtes Python-Web-Framework, kommt mit seinem eigenen OR
 
 ### Umgang mit asynchronen Anfragen
 
-Asynchrone Programmierung wird immer wichtiger in der Webentwicklung, um effiziente, nicht-blockierende Anwendungen zu erstellen. SQLAlchemy bietet ab Version 1.4 Unterstützung für asynchrone Datenbankoperationen.
+Asynchrone Programmierung wird immer wichtiger in der Webentwicklung, um effiziente, nicht-blockierende Anwendungen zu erstellen. Asynchrone Anfragen benötigen wir beispielsweise für die Verarbeitung von HTTP-Anfragen, die von mehreren Clients gleichzeitig gesendet werden. SQLAlchemy bietet ab Version 1.4 Unterstützung für asynchrone Datenbankoperationen. 
 
 1. **Einrichten einer asynchronen Engine**:
-   Um asynchrone Operationen zu ermöglichen, verwenden Sie eine asynchrone Engine, die mit einer geeigneten asynchronen Datenbank-API wie `aiosqlite` für SQLite-Datenbanken arbeitet.
+   Um asynchrone Operationen zu ermöglichen, verwenden wir eine asynchrone Engine, die mit einer geeigneten asynchronen Datenbank-API wie `aiosqlite` für SQLite-Datenbanken arbeitet.
 
 
 ```python
@@ -267,8 +263,8 @@ async_engine = create_async_engine('sqlite+aiosqlite:///example.db')
 AsyncSessionLocal = sessionmaker(bind=async_engine, class_=AsyncSession, expire_on_commit=False)
 ```
 
-2. **Asynchrone Datenbankoperationen**:
-   Asynchrone Datenbankoperationen können nun mit der `await`-Syntax durchgeführt werden. Dies ermöglicht es Ihrer Anwendung, andere Aufgaben fortzusetzen, während die Datenbankoperation ausgeführt wird.
+1. **Asynchrone Datenbankoperationen**:
+   Asynchrone Datenbankoperationen können nun mit der `await`-Syntax durchgeführt werden. Dies ermöglicht es Anwendung, andere Aufgaben fortzusetzen, während die Datenbankoperation ausgeführt wird.
 
 
 ```python

@@ -1,20 +1,25 @@
 # Fortgeschrittene ORM- Konzepte
+
+Bisher haben wir SQLAlchemy verwendet, um einfache Datenbankoperationen durchzuführen. In realen Anwendungen werden wir jedoch schnell komplexere Abfragen erstellen, beispielsweise um unsere Datenbank zu durchsuchen. Abfreagen aus der Datenbank werden häufig auch als queries bezeichnet. Im folgenden werden wir uns einigen queries in SQLAlchemy widmen, die es uns ermöglichen, komplexe Abfragen zu erstellen.
+
 ## Erstellen von Abfragen mit SQLAlchemy
 [10 min]
 
-SQLAlchemy bietet eine reiche und intuitive API zur Erstellung von Abfragen. Diese Abfragen ermöglichen es Ihnen, Daten aus Ihrer Datenbank auf flexible Weise abzurufen.
-
-- **Abfrage erstellen**: Eine Abfrage wird in SQLAlchemy mit der `query()`-Methode erstellt. Sie können angeben, welche Modelle oder Felder Sie abfragen möchten.
+Eine Abfrage wird in SQLAlchemy mit der `query()`-Methode erstellt. als Attribut gebenw ir der Methode die zu abfragende Tabelle an. Die `query()`-Methode gibt ein `Query`-Objekt zurück, das die Abfrage repräsentiert. Das `Query`-Objekt kann dann verwendet werden, um die Abfrage zu verfeinern und die Ergebnisse abzurufen.
 
 
 ```python
 result = session.query(MyModel).all()
 ```
 
-  Hierbei ist `MyModel` ein SQLAlchemy-Modell, das eine Datenbanktabelle repräsentiert.
+Hierbei ist `MyModel` ein SQLAlchemy-Modell, das eine Datenbanktabelle repräsentiert. Die `all()`-Methode gibt alle Datensätze in der Tabelle zurück. Wir können auch andere Methoden verwenden, um die Abfrage zu verfeinern und die Ergebnisse zu filtern, zu sortieren oder zu aggregieren.
 
-- **Auswahl spezifischer Spalten**: Sie können spezifische Spalten auswählen, anstatt alle Spalten eines Modells abzufragen.
+### Aufgabe:🌶️
+[10min]
 
+Suche in der SQLAlchemy-Dokumentation nach weiteren Methoden, um die Datensätze eines `Query`-Objektes zurückzugeben.
+
+Neben dem Abfragen einer ganzen Tabelle können wir auch nur bestimmte Spalten abfragen. Dies wird erreicht, indem wir die gewünschten Spalten als Argumente an die `query()`-Methode übergeben.
 
 ```python
 result = session.query(MyModel.column1, MyModel.column2).all()
@@ -24,7 +29,7 @@ result = session.query(MyModel.column1, MyModel.column2).all()
 ## Arbeiten mit Filtern, Sortierung und Aggregation
 [15 min]
 
-- **Filtern**: Sie können Abfragen mit Bedingungen filtern, um nur Datensätze abzurufen, die bestimmten Kriterien entsprechen.
+- **Filtern**: Wir können Abfragen mit Bedingungen filtern, um nur Datensätze abzurufen, die bestimmten Kriterien entsprechen.
 
 
 ```python
@@ -33,7 +38,7 @@ result = session.query(MyModel).filter(MyModel.column == 'wert').all()
 
   Es ist auch möglich, mehrere Filterbedingungen zu kombinieren.
 
-- **Sortierung**: SQLAlchemy ermöglicht es Ihnen, die Ergebnisse einer Abfrage zu sortieren.
+- **Sortierung**: SQLAlchemy ermöglicht es uns, die Ergebnisse einer Abfrage zu sortieren.
 
 
 ```python
@@ -52,7 +57,7 @@ Hierbei ist `func` ein Modul in SQLAlchemy, das SQL-Funktionen wie `count` berei
 ## Definition und Verwendung von Beziehungen zwischen Tabellen
 [15 min]
 
-Beziehungen sind ein zentrales Konzept in relationalen Datenbanken. SQLAlchemy ermöglicht es Ihnen, Beziehungen zwischen Tabellen auf einfache und Pythonische Weise zu definieren und zu nutzen.
+Aus der Einführung in SQL wissen wir bereits, dass Beziehungen bzw. Relationen ein Zentrales Konzept relationaler Datenbanken sind. SQLAlchemy ermöglicht es uns, Beziehungen zwischen Tabellen auf einfache und Pythonische Weise zu definieren und zu nutzen.
 
 - **Definition einer Beziehung**: Eine Beziehung wird in SQLAlchemy mit der `relationship`-Funktion definiert.
 
@@ -71,7 +76,7 @@ class Child(Base):
 
 In diesem Beispiel hat ein `Parent` mehrere `Children`. Die `relationship`-Funktion erstellt eine Verbindung zwischen `Parent` und `Child`.
 
-- **Verwenden von Beziehungen in Abfragen**: Sobald eine Beziehung definiert ist, können Sie diese in Ihren Abfragen verwenden.
+- **Verwenden von Beziehungen in Abfragen**: Sobald eine Beziehung definiert ist, können wir diese in unseren Abfragen verwenden.
 
 
 
@@ -85,40 +90,23 @@ result = session.query(Parent).join(Child).filter(Child.column == 'wert').all()
 ## Übungsaufgabe: Abfragen und Beziehungen in SQLAlchemy 🌶️🌶️🌶️
 [60 min]
 
-In dieser Übung werden Sie die in der Session erlernten Konzepte anwenden, um Abfragen zu erstellen und Beziehungen zwischen Tabellen in einer SQLAlchemy-basierten Python-Anwendung zu nutzen.
+1. Definieren zwei Modelle: `Author` und `Book`. `Author` soll die Felder `id` und `name` haben, `Book` die Felder `id`, `title`, `published_year` und `author_id`.
 
-### Voraussetzungen
+2. Füge eine Beziehung zwischen `Author` und `Book` hinzu, sodass ein Autor mehrere Bücher haben kann.
 
-Sie sollten mit den Grundlagen von SQLAlchemy vertraut sein, einschließlich der Erstellung von Modellen und der Durchführung einfacher Abfragen.
+3. Erstelle mehrere Autoren und Bücher. Stelle  sicher, dass die Bücher Autoren zugewiesen sind.
 
-### Aufgabenstellung
+4. Schreibe eine Abfrage, um alle Bücher eines bestimmten Autors abzurufen.
 
-1. **Vorbereitung der Umgebung**:
-    - Stellen Sie sicher, dass SQLAlchemy in Ihrer Python-Umgebung installiert ist.
-    - Definieren Sie zwei Modelle: `Author` und `Book`. `Author` soll die Felder `id` und `name` haben, `Book` die Felder `id`, `title`, `published_year` und `author_id`.
+5. Schreibe eine Abfrage, um alle Bücher zu finden, die zwischen 1990 und 2000 veröffentlicht wurden.
 
-2. **Definieren Sie Beziehungen**:
-    - Fügen Sie eine Beziehung zwischen `Author` und `Book` hinzu, sodass ein Autor mehrere Bücher haben kann.
+6. Schreibe eine Abfrage, um alle Bücher eines Autors, sortiert nach ihrem Veröffentlichungsjahr, abzurufen.
 
-3. **Füllen Sie die Datenbank**:
-    - Erstellen Sie mehrere Autoren und Bücher. Stellen Sie sicher, dass die Bücher Autoren zugewiesen sind.
+7. **Bonus**: Implementiere eine Aggregationsabfrage, um die Anzahl der Bücher zu zählen, die jeder Autor geschrieben hat.
 
-4. **Abfrage von Büchern eines bestimmten Autors**:
-    - Schreiben Sie eine Abfrage, um alle Bücher eines bestimmten Autors abzurufen.
+### Hinweis
 
-5. **Abfrage nach Büchern innerhalb eines bestimmten Zeitraums**:
-    - Schreiben Sie eine Abfrage, um alle Bücher zu finden, die zwischen 1990 und 2000 veröffentlicht wurden.
-
-6. **Sortieren von Büchern nach Veröffentlichungsjahr**:
-    - Schreiben Sie eine Abfrage, um alle Bücher eines Autors, sortiert nach ihrem Veröffentlichungsjahr, abzurufen.
-
-7. **Bonus**: Implementieren Sie eine Aggregationsabfrage, um die Anzahl der Bücher zu zählen, die jeder Autor geschrieben hat.
-
-### Hinweise
-
-- Verwenden Sie `relationship` und `ForeignKey` zur Definition der Beziehung zwischen `Author` und `Book`.
-- Um Beziehungen in Abfragen zu nutzen, verwenden Sie `.join()` oder lassen Sie SQLAlchemy die Verbindung automatisch herstellen, indem Sie die Beziehung direkt abfragen.
-- Für die Sortierung und Filterung von Ergebnissen nutzen Sie `.order_by()` und `.filter()`.
+- Verwende `relationship` und `ForeignKey` zur Definition der Beziehung zwischen `Author` und `Book`.
 
 ### Lösung
 
@@ -206,34 +194,25 @@ session.close()
 ## Übungsaufgabe: Komplexe Abfragen und Joins in SQLAlchemy 🌶️🌶️🌶️
 [60 min]
 
-Diese Übung zielt darauf ab, Ihre Fähigkeiten im Umgang mit komplexen Abfragen und Beziehungen in SQLAlchemy zu verbessern. Sie werden lernen, wie man Joins und Unterabfragen verwendet, sowie komplexere Beziehungen und Vererbung in Modellen handhabt.
-
-
 ### Aufgabenstellung
 
 1. **Modelldefinitionen**:
-     - Definieren Sie drei Modelle: `Department`, `Employee` und `Project`.
+     - Definiere drei Modelle: `Department`, `Employee` und `Project`.
      - `Department` sollte Felder für `id` und `name` haben.
      - `Employee` sollte Felder für `id`, `name`, `department_id` (Fremdschlüssel zu `Department`) und `manager_id` (selbstreferenzierender Fremdschlüssel) haben.
      - `Project` sollte Felder für `id`, `name` und `department_id` haben.
 
-2. **Erstellen Sie Beziehungen**:
+2. **Erstelle Beziehungen**:
     - Zwischen `Department` und `Employee` (One-to-Many).
     - Zwischen `Employee` und `Project` über eine Assoziationstabelle (Many-to-Many).
 
 3. **Datenbank befüllen**:
-    - Erstellen Sie einige Beispieldatensätze für jedes Modell.
+    - Erstelle einige Beispieldatensätze für jedes Modell.
 
 4. **Komplexe Abfragen**:
-    - Schreiben Sie eine Abfrage, um alle Mitarbeiter eines bestimmten Departments anzuzeigen.
-    - Schreiben Sie eine Abfrage, um alle Projekte zu finden, an denen ein bestimmter Mitarbeiter arbeitet.
-    - Schreiben Sie eine Abfrage, um den Manager jedes Mitarbeiters (falls vorhanden) zu finden.
-
-### Hinweise
-
--  Verwenden Sie `relationship()` und `backref` für One-to-Many- und Many-to-One-Beziehungen.
--  Für die Many-to-Many-Beziehung zwischen `Employee` und `Project`, verwenden Sie eine Assoziationstabelle.
--  Nutzen Sie `join()` für Ihre Abfragen, um die erforderlichen Informationen aus den verbundenen Tabellen abzurufen.
+    - Schreibe eine Abfrage, um alle Mitarbeiter eines bestimmten Departments anzuzeigen.
+    - Schreibe eine Abfrage, um alle Projekte zu finden, an denen ein bestimmter Mitarbeiter arbeitet.
+    - Schreibe eine Abfrage, um den Manager jedes Mitarbeiters (falls vorhanden) zu finden.
 
 ### Lösung
 
@@ -339,7 +318,7 @@ Session = sessionmaker(bind=engine)
 session = Session()
 ```
 
-- **Verwenden einer Session**: Über die Session interagieren Sie mit der Datenbank. Sie können Objekte hinzufügen, aktualisieren, abfragen und löschen.
+- **Verwenden einer Session**: Über die Session interagieren wir mit der Datenbank. Wir können Objekte hinzufügen, aktualisieren, abfragen und löschen.
 
 
 ```python
@@ -388,27 +367,22 @@ Das Unit-of-Work-Muster ist ein Entwurfsmuster, das sicherstellt, dass alle Änd
 - **Automatisches Tracking von Änderungen**: SQLAlchemy trackt automatisch Änderungen an Objekten, die zur Session hinzugefügt wurden. Dies umfasst das Verfolgen von Änderungen an Feldwerten, das Hinzufügen oder Löschen von Objekten usw.
 - **Commit des Unit of Work**: Beim Commit einer Session werden alle gesammelten Änderungen in einer einzigen Transaktion an die Datenbank übermittelt.
 
-Das Verständnis von Sitzungen und Transaktionen sowie des Unit-of-Work-Musters ist entscheidend für die effektive Nutzung von SQLAlchemy. Es ermöglicht Ihnen, Änderungen an Ihren Daten auf konsistente und kontrollierte Weise zu verwalten. Durch die Verwendung von Sessions können Sie sicherstellen, dass Ihre Datenbankoperationen atomar, konsistent, isoliert und dauerhaft (ACID-Eigenschaften) sind.
+Das Verständnis von Sitzungen und Transaktionen sowie des Unit-of-Work-Musters ist entscheidend für die effektive Nutzung von SQLAlchemy. Es ermöglicht uns, Änderungen an den Daten auf konsistente und kontrollierte Weise zu verwalten. Durch die Verwendung von Sessions können wir sicherstellen, dass unsere Datenbankoperationen atomar, konsistent, isoliert und dauerhaft (ACID-Eigenschaften) sind.
 
 ## Übungsaufgabe: Transaktionen und Sitzungsmanagement in SQLAlchemy 🌶️🌶️🌶️
 [60 min]
 
-### Ziel der Aufgabe
-In dieser Übung werden Sie Transaktionen und das Sitzungsmanagement in SQLAlchemy praktisch anwenden. Sie werden ein einfaches Szenario erstellen, in dem Sie Daten in einer Datenbank ändern und die Funktionsweise von Transaktionen und dem Unit-of-Work-Muster verstehen lernen.
-
-### Aufgabenstellung
-
 1. **Modell- und Datenbanksetup**:
-    - Definieren Sie ein einfaches Modell `Person` mit den Feldern `id` (Primärschlüssel) und `name`.
-    - Erstellen Sie eine SQLite-Datenbank und fügen Sie einige Einträge in die `Person`-Tabelle ein.
+    - Definiere ein einfaches Modell `Person` mit den Feldern `id` (Primärschlüssel) und `name`.
+    - Erstelle eine SQLite-Datenbank und füge einige Einträge in die `Person`-Tabelle ein.
 
 2. **Transaktionsmanagement**:
-    - Schreiben Sie eine Funktion `add_person`, die eine neue `Person` hinzufügt. Nutzen Sie Transaktionsmanagement, um  sicherzustellen, dass Änderungen nur bei Erfolg commitet werden.
-    - Simulieren Sie innerhalb der Funktion einen Fehler (z.B. durch Einfügen eines Duplikats) und stellen Sie sicher, d ass die Transaktion zurückgerollt wird.
+    - Schreibe eine Funktion `add_person`, die eine neue `Person` hinzufügt. Nutze Transaktionsmanagement, um  sicherzustellen, dass Änderungen nur bei Erfolg commitet werden.
+    - Simuliere innerhalb der Funktion einen Fehler (z.B. durch Einfügen eines Duplikats) und stelle sicher, dass die Transaktion zurückgerollt wird.
  
 3. **Abfrage und Änderung von Daten**:
-    - Führen Sie eine Abfrage aus, um alle Personen in der Datenbank zu finden.
-    - Ändern Sie den Namen einer Person und commiten Sie die Änderung.
+    - Führe eine Abfrage aus, um alle Personen in der Datenbank zu finden.
+    - Ändere den Namen einer Person und committe die Änderung.
 
 
 ```python

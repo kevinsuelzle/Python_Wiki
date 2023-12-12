@@ -2,20 +2,18 @@
 ## Überblick über SQLAlchemy
 [10 min]
 
-SQLAlchemy ist eine leistungsstarke und vielseitige Bibliothek für Python, die es ermöglicht, mit relationalen Datenbanken auf eine Weise zu interagieren, die sowohl effizient als auch intuitiv ist. Sie bietet zwei Hauptfunktionalitäten: ein ORM (Object-Relational Mapping) und eine SQL-Expression Language.
+SQLAlchemy ist eine Bibliothek zum Interagieren mit SQL-Datenbanken. Sie bietet zwei Hauptfunktionalitäten: ein ORM (Object-Relational Mapping) und eine SQL-Expression Language.
 
-1. **ORM (Object-Relational Mapping)**: SQLAlchemy's ORM erlaubt es Ihnen, Datenbanktabellen als Python-Klassen zu definieren und die dazugehörigen Zeilen als Instanzen dieser Klassen. Dies bedeutet, dass Sie mit Ihrer Datenbank interagieren können, als würden Sie mit normalen Python-Objekten arbeiten. Das ORM kümmert sich um die Umwandlung zwischen den Python-Objekten und den Datenbankdaten, was den Code lesbarer und wartbarer macht.
+1. **ORM (Object-Relational Mapping)**: SQLAlchemy's ORM erlaubt es, Datenbanktabellen als Python-Klassen zu definieren und die dazugehörigen Zeilen als Instanzen dieser Klassen. Dies bedeutet, dass wir mit der Datenbank interagieren können, als würden wir mit normalen Python-Objekten arbeiten. Das ORM kümmert sich um die Umwandlung zwischen den Python-Objekten und den Datenbankdaten, was den Code lesbarer und wartbarer macht.
 
-2. **SQL-Expression Language**: Für Fälle, in denen mehr Kontrolle oder eine direktere Interaktion mit der Datenbank erforderlich ist, bietet SQLAlchemy eine SQL-Expression Language. Diese ermöglicht es Ihnen, SQL-Anweisungen in Python zu schreiben und auszuführen, wobei die Syntax und die Sicherheitsfunktionen von SQLAlchemy genutzt werden. Dies kann besonders nützlich sein, wenn komplexe Abfragen oder spezifische Datenbankoperationen erforderlich sind, die über die Möglichkeiten des ORMs hinausgehen.
-
-In Ihrem Kurs werden Sie lernen, wie Sie SQLAlchemy effektiv nutzen können, um Datenbankoperationen durchzuführen, von einfachen Abfragen bis hin zu komplexen Transaktionen. Dabei werden Sie sowohl mit dem ORM als auch mit der SQL-Expression Language arbeiten. Zu den Übungsaufgaben könnten gehören:
+2. **SQL-Expression Language**: Für Fälle, in denen mehr Kontrolle oder eine direktere Interaktion mit der Datenbank erforderlich ist, bietet SQLAlchemy eine SQL-Expression Language. Diese ermöglicht es, SQL-Anweisungen in Python zu schreiben und auszuführen, wobei die Syntax und die Sicherheitsfunktionen von SQLAlchemy genutzt werden. Dies kann besonders nützlich sein, wenn komplexe Abfragen oder spezifische Datenbankoperationen erforderlich sind, die über die Möglichkeiten des ORMs hinausgehen.
 
 - Erstellen von Datenbanktabellen mit SQLAlchemy ORM.
 - Einfügen, Aktualisieren und Löschen von Daten in einer Datenbank.
 - Durchführen von Abfragen, um spezifische Daten aus der Datenbank zu extrahieren.
 - Verwenden der SQL-Expression Language für fortgeschrittenere Datenbankoperationen.
 
-Durch die Verwendung von SQLAlchemy in Ihren Projekten können Sie eine höhere Ebene der Abstraktion und Flexibilität erreichen, was den Umgang mit relationalen Datenbanken erheblich vereinfacht.
+Durch die Verwendung von SQLAlchemy in Ihren Projekten können wir eine höhere Ebene der Abstraktion und Flexibilität erreichen, was den Umgang mit relationalen Datenbanken erheblich vereinfacht. SQLAlchemy bietet damit die Möglichkeit, Datenbanken in Python-Anwendungen zu verwenden, ohne dass wir uns mit den Details der Datenbankinteraktionen befassen müssen.
 
 ## Vergleich von SQLAlchemy mit anderen Datenbank-Toolkits
 [15 min]
@@ -51,9 +49,9 @@ Jedes dieser Toolkits hat seine Stärken in bestimmten Bereichen und Szenarien. 
 
 Die Installation und grundlegende Konfiguration von SQLAlchemy in einem Python-Projekt besteht aus einigen einfachen Schritten. Hier ist ein Leitfaden, um Sie durch den Prozess zu führen:
 
-1. **Vorbereitung der Umgebung**: Es ist empfehlenswert, SQLAlchemy innerhalb einer virtuellen Umgebung zu installieren, um Konflikte mit anderen Bibliotheken zu vermeiden. Wenn Sie noch keine virtuelle Umgebung haben, können Sie eine mit `python -m venv venv` erstellen und aktivieren.
+1. **Vorbereitung der Umgebung**: Es ist empfehlenswert, SQLAlchemy innerhalb einer virtuellen Umgebung zu installieren, um Konflikte mit anderen Bibliotheken zu vermeiden. Eine virtuelle Umgebung kömmem wir mit `python -m venv venv` erstellen und aktivieren.
 
-2. **Installieren von SQLAlchemy**: Führen Sie den folgenden Befehl aus, um SQLAlchemy zu installieren:
+2. **Installieren von SQLAlchemy**: Führen den folgenden Befehl aus, um SQLAlchemy zu installieren:
 
 
 ```python
@@ -62,10 +60,7 @@ pip install sqlalchemy
 
 ### Grundlegende Konfiguration
 
-Nach der Installation können Sie SQLAlchemy in Ihrem Projekt einrichten:
-
-1. **Importieren von SQLAlchemy**: Fügen Sie zu Beginn Ihres Python-Skripts oder Ihrer Anwendung die folgende Zeile hinzu, um SQLAlchemy zu importieren:
-
+Nach der Installation können wir SQLAlchemy in unserem Projekt einrichten:
 
 ```python
 from sqlalchemy import create_engine, MetaData
@@ -78,7 +73,7 @@ from sqlalchemy import create_engine, MetaData
 engine = create_engine('sqlite:///example.db')
 ```
 
-   Ersetzen Sie `sqlite:///example.db` durch den entsprechenden Verbindungsstring für Ihre Datenbank. Zum Beispiel für eine PostgreSQL-Datenbank könnte es `postgresql://user:password@localhost/mydatabase` sein.
+Ersetze `sqlite:///example.db` durch den entsprechenden Verbindungsstring für Ihre Datenbank. Zum Beispiel für eine PostgreSQL-Datenbank könnte es `postgresql://user:password@localhost/mydatabase` sein.
 
 1. **Definieren der Metadaten**: Metadaten sind eine Sammlung von Tabellendefinitionen und anderen Datenbankkonstrukten. Sie können so initialisiert werden:
 
@@ -100,7 +95,7 @@ example_table = Table('example', metadata,
                     )
 ```
 
-5. **Erstellen der Tabellen in der Datenbank**: Nachdem Sie Ihre Tabellen definiert haben, können Sie sie in der Datenbank erstellen:
+5. **Erstellen der Tabellen in der Datenbank**: Nachdem wir unsere Tabellen definiert haben, können wir sie in der Datenbank erstellen:
 
 
 ```python
@@ -110,7 +105,7 @@ metadata.create_all(engine)
 ## Herstellen einer Verbindung zu verschiedenen Datenbanktypen
 [30 min]
 
-Das Herstellen einer Verbindung zu verschiedenen Datenbanktypen mit SQLAlchemy erfolgt durch die Erstellung einer Engine, die den entsprechenden Verbindungsstring für die jeweilige Datenbank verwendet. Hier sind Beispiele, wie Sie Verbindungen zu einigen gängigen Datenbanktypen wie SQLite, PostgreSQL und MySQL herstellen können:
+Das Herstellen einer Verbindung zu verschiedenen Datenbanktypen mit SQLAlchemy erfolgt durch die Erstellung einer Engine, die den entsprechenden Verbindungsstring für die jeweilige Datenbank verwendet. Hier sind Beispiele, wie wir Verbindungen zu einigen gängigen Datenbanktypen wie SQLite, PostgreSQL und MySQL herstellen können:
 
 ### SQLite
 
@@ -129,14 +124,14 @@ engine = create_engine('sqlite:///:memory:')
 
 ### PostgreSQL
 
-PostgreSQL ist eine leistungsstarke, Open-Source objektrelationale Datenbank. Sie müssen den Benutzernamen, das Passwort, den Host (z. B. `localhost`) und den Datenbanknamen angeben.
+PostgreSQL ist eine leistungsstarke, Open-Source objektrelationale Datenbank. Wir müssen den Benutzernamen, das Passwort, den Host (z. B. `localhost`) und den Datenbanknamen angeben.
 
 
 ```python
 engine = create_engine('postgresql://username:password@localhost/mydatabase')
 ```
 
-Ersetzen Sie `username`, `password` und `mydatabase` mit Ihren PostgreSQL-Anmeldeinformationen und dem Datenbanknamen.
+Ersetze `username`, `password` und `mydatabase` mit deinen PostgreSQL-Anmeldeinformationen und dem Datenbanknamen.
 
 ### MySQL/MariaDB
 
@@ -147,15 +142,12 @@ MySQL und MariaDB sind weit verbreitete Open-Source relationale Datenbankmanagem
 engine = create_engine('mysql+pymysql://username:password@localhost/mydatabase')
 ```
 
-Auch hier ersetzen Sie `username`, `password` und `mydatabase` mit Ihren eigenen Anmeldeinformationen.
+Ersetze auch hier `username`, `password` und `mydatabase` mit deinen eigenen Anmeldeinformationen.
 
-### Wichtige Hinweise
+### Hinweise
 
-- Stellen Sie sicher, dass Sie alle erforderlichen Abhängigkeiten für die jeweilige Datenbank installiert haben. Zum Beispiel benötigen Sie für PostgreSQL den `psycopg2`-Treiber (`pip install psycopg2`) und für MySQL/MariaDB den `pymysql`-Treiber (`pip install pymysql`).
-- Der Verbindungsstring kann je nach Konfiguration Ihrer Datenbank und den von Ihnen verwendeten Treibern variieren. Überprüfen Sie die Dokumentation des jeweiligen Datenbanktreibers für spezifische Details.
-- Sicherheitsaspekt: Speichern Sie niemals Benutzernamen und Passwörter direkt im Code. Betrachten Sie stattdessen sichere Methoden zur Speicherung von Anmeldeinformationen, wie Umgebungsvariablen oder spezielle Konfigurationsdateien.
-
-Diese Beispiele geben Ihnen einen grundlegenden Überblick darüber, wie Sie eine Verbindung zu verschiedenen Datenbanken herstellen können. Für fortgeschrittene Konfigurationen und Optimierungen sollten Sie die spezifischen Anforderungen Ihrer Anwendung und die Best Practices für das jeweilige Datenbanksystem berücksichtigen.
+- Stell sicher, dass alle erforderlichen Abhängigkeiten für die jeweilige Datenbank installiert haben. Zum Beispiel benötigen wir für PostgreSQL den `psycopg2`-Treiber (`pip install psycopg2`) und für MySQL/MariaDB den `pymysql`-Treiber (`pip install pymysql`).
+- Sicherheitsaspekt: Speicher niemals Benutzernamen und Passwörter direkt im Code. Verwende stattdessen sichere Methoden zur Speicherung von Anmeldeinformationen, wie Umgebungsvariablen oder spezielle Konfigurationsdateien (z. B. durch die Verwendung von `.env` Dateien). 
 
 ## Erste Schritte mit dem ORM
 [30 min]
@@ -239,43 +231,35 @@ session.close()
 ## Übungsaufgabe: Erstellen und Verwalten von Daten mit SQLAlchemy ORM 🌶️🌶️
 [60 min]
 
-### Ziel der Aufgabe
-
-In dieser Übung werden Sie das zuvor Gelernte anwenden, um eine einfache Anwendung mit SQLAlchemy ORM zu erstellen. Sie werden ein Modell definieren, eine Datenbanktabelle erstellen und grundlegende Operationen wie das Einfügen, Abfragen und Aktualisieren von Daten durchführen.
-
-### Aufgabenstellung
-
 1. **Definieren Sie ein Modell 'Book'**:
-    - Erstellen Sie eine Klasse `Book`, die von `Base` erbt.
-    - Definieren Sie die Tabelle `books` mit folgenden Spalten:
+    - Erstelle eine Klasse `Book`, die von `Base` erbt.
+    - Definiere die Tabelle `books` mit folgenden Spalten:
       - `id`: Integer, Primärschlüssel
       - `title`: String, Titel des Buches
       - `author`: String, Autor des Buches
       - `published_year`: Integer, Jahr der Veröffentlichung
 
 2. **Erstellen Sie eine SQLite-Datenbank**:
-    - Verwenden Sie eine SQLite-Datenbank (`sqlite:///books.db`).
-    - Erstellen Sie die Tabelle `books` in der Datenbank.
+    - Verwende eine SQLite-Datenbank (`sqlite:///books.db`).
+    - Erstelle die Tabelle `books` in der Datenbank.
 
 3. **Fügen Sie neue Bücher hinzu**:
-    - Erstellen Sie mindestens drei Buch-Objekte mit unterschiedlichen Attributen.
-    - Fügen Sie diese Objekte zur Session hinzu und speichern Sie sie in der Datenbank.
+    - Erstelle mindestens drei Buch-Objekte mit unterschiedlichen Attributen.
+    - Füge diese Objekte zur Session hinzu und speicher sie in der Datenbank.
 
 4. **Abfragen von Büchern**:
-    - Führen Sie eine Abfrage durch, um alle Bücher eines bestimmten Autors zu finden.
-    - Führen Sie eine Abfrage durch, um alle Bücher zu finden, die vor dem Jahr 2000 veröffentlicht wurden.
+    - Führe eine Abfrage durch, um alle Bücher eines bestimmten Autors zu finden.
+    - Führe eine Abfrage durch, um alle Bücher zu finden, die vor dem Jahr 2000 veröffentlicht wurden.
 
 5. **Aktualisieren eines Buches**:
-    - Wählen Sie eines der Bücher aus und aktualisieren Sie dessen `published_year`.
-    - Speichern Sie die Änderungen in der Datenbank.
+    - Wähle eines der Bücher aus und aktualisiere dessen `published_year`.
+    - Speicher die Änderungen in der Datenbank.
 
-6. **Bonus**: Implementieren Sie eine Funktion, um ein Buch anhand seiner ID zu löschen.
+6. **Bonus**: Implementiere eine Funktion, um ein Buch anhand seiner ID zu löschen.
 
-### Hinweise zur Lösung
+### Hinweis zur Lösung
 
-- Verwenden Sie die erlernten Methoden und Techniken, um die Aufgaben zu lösen.
-- Denken Sie daran, Ihre Session nach jeder Operation zu commiten, um die Änderungen zu speichern.
-- Nutzen Sie die SQLAlchemy-Dokumentation, falls Sie zusätzliche Informationen benötigen.
+- Nutzen die SQLAlchemy-Dokumentation, falls du zusätzliche Informationen benötigst.
 
 ### Lösung
 
