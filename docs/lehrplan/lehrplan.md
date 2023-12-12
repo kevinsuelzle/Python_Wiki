@@ -1,7 +1,7 @@
 # Block 1
 
 | Woche | Unterricht                                                                          | Lernziele                                                      | Begriffssammlung                                            |
-|-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|-------------------------------------------------------------|
+| ----- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------- |
 | 1     | [Einführung](python_grundlagen/python_grundlagen/python_grundlagen.md)              | [hier](../checklists/checklist_1.md#intro)                     | [hier](../begriffe/begriffe_1.md#intro)                     |
 | 1     | [Variablen & Datentypen](python_grundlagen/variables_types/variablen_datentypen.md) | [hier](../checklists/checklist_1.md#variablen-datentypen)      | [hier](../begriffe/begriffe_1.md#variablen-datentypen)      |
 | 1     | [Ein- und Ausgabe](python_grundlagen/input_output/input_output.md)                  | [hier](../checklists/checklist_1.md#input-output)              | [hier](../begriffe/begriffe_1.md#input-output)              |
@@ -44,7 +44,7 @@
 # Block 2
 
 | Woche | Unterricht                                                                                             | Lernziele                                                                         | Begriffssammlung                                                   |
-|-------|--------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:-------------------------------------------------------------------|
+| ----- | ------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------- | :----------------------------------------------------------------- |
 | 6     | [Einführung SQL-Datenbanken](datenbanken/datenbanken.md)                                               | [hier](../checklists/checklist_db1.md)                                            | [hier](../begriffe/begriffe_db1.md)                                |
 | 6     | [Arten von SQL Anweisungen](datenbanken/unterrichte/sql_types.md)                                      | [hier](../checklists/checklist_db1.md#sql-sprachtypisierung)                      | [hier](../begriffe/begriffe_db1.md)                                |
 | 6     | [UML für Datenbanken](datenbanken/unterrichte/uml_diagramme.md)                                        | [hier](../checklists/checklist_db1.md#uml-diagramme)                              | [hier](../begriffe/begriffe_db1.md)                                |
@@ -74,11 +74,13 @@
 | 7     | [Type Hints](clean_code/Typehints/Typehints.md)                                                        | [hier](../checklists/checklist_clean_code.md#type-hints)                          | [hier](../begriffe/begriffe_clean_code.md#type-hints)              |
 | 7     | [Übungsaufgaben](clean_code/Uebungsaufgabe/Uebungsaufgabe.md)                                          | [hier](../checklists/checklist_clean_code.md)                                     | [hier](../begriffe/begriffe_clean_code.md)                         |
 | 7     | [Variablennamen](clean_code/Variablenbenennung/Variablenbenennung.md)                                  | [hier](../checklists/checklist_clean_code.md#benennung-von-variablen)             | [hier](../begriffe/begriffe_clean_code.md#benennung-von-variablen) |
-| 7     | [Einführung in SQLAlchemy](datenbanken/einfuehrung.ipynb)                                              | [hier](../checklists/checkliste3.md#einfuehrung-sqlalchemy)                       | [hier](../begriffe/begriffe3.md#einfuehrung-sqlalchemy)            |
-| 7     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.ipynb)                                        | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte)                | [hier](../begriffe/begriffe3.md#fortgeschrittene-orm-konzepte)     |
-| 7     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.ipynb)                           | [hier](../checklists/checkliste3.md#sql-expression-language)                      | [hier](../begriffe/begriffe3.md#sql-expression-language)           |
-| 7     | [Best Practices und fortgeschrittene Themen](datenbanken/best_practices.ipynb)                         | [hier](../checklists/checkliste3.md#best-practices)                               | [hier](../begriffe/begriffe3.md#best-practices)                    |
-| 7     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.ipynb)                         | [hier](../checklists/checkliste3.md#integration-in-flask)                         | [hier](../begriffe/begriffe3.md#integration-in-flask)              |
+| 7     | [Python sqlite3 ](datenbanken/unterrichte/sqlite3_basic.md)                                          | [hier](../checklists/checklist_db_python.md#sqlite-in-python)                     | [hier](../begriffe/begriffe_db_python.md) |
+| 7     | [sqlite3 weitere Funktionen](datenbanken/unterrichte/sqlite3_advanced.md)                            | [hier](../checklists/checklist_db_python.md#sqlite-in-python)                     | [hier](../begriffe/begriffe_db_python.md) |
+| 7     | [Einführung in SQLAlchemy](datenbanken/einfuehrung.md)                                              | [hier](../checklists/checkliste3.md#einfuehrung-sqlalchemy)                       | [hier](../begriffe/begriffe3.md#einfuehrung-sqlalchemy)            |
+| 7     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.md)                                        | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte)                | [hier](../begriffe/begriffe3.md#fortgeschrittene-orm-konzepte)     |
+| 7     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.md)                           | [hier](../checklists/checkliste3.md#sql-expression-language)                      | [hier](../begriffe/begriffe3.md#sql-expression-language)           |
+| 7     | [Best Practices und fortgeschrittene Themen](datenbanken/best_practices.md)                         | [hier](../checklists/checkliste3.md#best-practices)                               | [hier](../begriffe/begriffe3.md#best-practices)                    |
+| 7     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.md)                         | [hier](../checklists/checkliste3.md#integration-in-flask)                         | [hier](../begriffe/begriffe3.md#integration-in-flask)              |
 | 8     | [Einführung in APIs](web/unterrichte/einfuehrung_apis/einfuehrung_apis.md)                             | [hier](../checklists/checklist_web.md#api-intro)                                  | [hier](../begriffe/begriffe_web.md)                                |
 | 8     | [API Arten](web/unterrichte/api_arten/api_arten.md)                                                    | [hier](../checklists/checklist_web.md#api-arten)                                  | [hier](../begriffe/begriffe_web.md)                                |
 | 8     | [API Kommunikation](web/unterrichte/api_kommunikation/api_kommunikation.md)                            | [hier](../checklists/checklist_web.md#api-kommunikation)                          | [hier](../begriffe/begriffe_web.md)                                |
@@ -129,6 +131,6 @@
 # Block 3
 
 | Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
+| ----- | ---------- | --------- | ---------------- |
 |       |            |           |                  |
 |       |            |           |                  |

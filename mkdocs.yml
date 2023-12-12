@@ -6,6 +6,11 @@ plugins:
   - mkdocs-jupyter:
       execute: false
       kernel_name: python3
+      
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 nav:
   - Lehrplan: lehrplan/lehrplan.md
@@ -79,6 +84,13 @@ nav:
           - Typehints: lehrplan/clean_code/Typehints/Typehints.md
           - Übungsaufgabe: lehrplan/clean_code/Uebungsaufgabe/Uebungsaufgabe.md
           - Variablenbenennung: lehrplan/clean_code/Variablenbenennung/Variablenbenennung.md
+          - Python und SQL: lehrplan/datenbanken/unterrichte/sqlite3_basic.md
+          - sqlite3 - weitere Funktionen: lehrplan/datenbanken/unterrichte/sqlite3_advanced.md
+          - Einführung in SQLAlchemy: lehrplan/datenbanken/einfuehrung.md
+          - Fortgeschrittene ORM Konzepte: lehrplan/datenbanken/orm_konzepte.md
+          - Arbeiten mit dem SQL Expression Language: lehrplan/datenbanken/sql_expression.md
+          - Best Practices und fortgeschrittene Themen: lehrplan/datenbanken/best_practices.md
+          - Integration von SQLAlchemy in einem Flask-Projekt: lehrplan/datenbanken/projekt.md
           - Einführung in APIs: lehrplan/web/unterrichte/einfuehrung_apis/einfuehrung_apis.md
           - API Arten: lehrplan/web/unterrichte/api_arten/api_arten.md
           - API Kommunikation: lehrplan/web/unterrichte/api_kommunikation/api_kommunikation.md
@@ -125,17 +137,20 @@ nav:
           - Cloud Planung: lehrplan/azure/unterrichte/cloud_planung/cloud_planung.md
           - Blobs und Funktionen: lehrplan/azure/unterrichte/blobs_funktionen/blobs_funktionen.md
           - Cloud Monitoring: lehrplan/azure/unterrichte/cloud_monitoring/cloud_monitoring.md
+      
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md
       - Clean Code: begriffe/begriffe_clean_code.md
       - SQL-Datenbanken: begriffe/begriffe_db1.md
+      - Python und SQL: begriffe/checklist_db_python.md
       - Web: begriffe/begriffe_web.md
   - Checklisten:
       - Python Grundlagen: checklists/checklists_1.md
       - git: checklists/checklist_git.md
       - Clean Code: checklists/checklist_clean_code.md
       - SQL-Datenbanken: checklists/checklist_db1.md
+      - Python und SQL: begriffe/begriffe_db_python.md
       - Web: checklists/checklist_web.md
 
   - Werkzeuge:
