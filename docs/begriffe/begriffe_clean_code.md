@@ -5,7 +5,6 @@
 | **Lesbarkeit**                       | Die Leichtigkeit, mit der Code von anderen Entwicklern gelesen und verstanden werden kann.                                           |
 | **Wartbarkeit**                      | Die Fähigkeit des Codes, leicht geändert, korrigiert, angepasst oder erweitert zu werden.                                            |
 | **Refactoring**                      | Der Prozess der Umstrukturierung bestehenden Codes, um seine interne Struktur zu verbessern, ohne sein externes Verhalten zu ändern. |
-| **DRY (Don't Repeat Yourself)**      | Ein Prinzip, das darauf abzielt, Wiederholungen im Code zu vermeiden, um Redundanz zu reduzieren.                                    |
 | **KISS (Keep It Simple, Stupid)**    | Ein Designprinzip, das für Einfachheit in der Softwareentwicklung steht.                                                             |
 | **YAGNI (You Aren't Gonna Need It)** | Ein Prinzip, das empfiehlt, keine Funktionalität zu implementieren, die derzeit nicht benötigt wird.                                 |
 | **Code-Smells**                      | Merkmale im Code, die auf tiefer liegende Probleme in der Software hinweisen.                                                        |
@@ -16,14 +15,23 @@
 | **Code-Review**                      | Der Prozess, bei dem der Code von anderen Entwicklern überprüft wird, um Qualität und Konsistenz zu gewährleisten.                   |
 
 # Basics
-| Begriff                                       | Kurzerklärung                                                                                                                                                                     | Link zur Referenz                                                              |
-|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| local                                         | bezeichnet ein lokales Repository auf deinem Computer.                                                                                                                            | [Referenz]() |
+| Begriff       | Kurzerklärung                                                      | Link zur Referenz                                                    |
+|---------------|--------------------------------------------------------------------|----------------------------------------------------------------------|
+| Zen of Python | Text, der als Richtlinie in der Python Programmierung dienen will. | [Referenz](https://gist.github.com/corysimmons/8b94c08421dec18bbaa4) |
 
-# Konventionen
-# Bennenungskonventionen
+# Benennungskonventionen
+| Begriff | Kurzerklärung           | Link zur Referenz                             |
+|---------|-------------------------|-----------------------------------------------|
+| PEP 8   | Style Guide für Python. | [Referenz](https://peps.python.org/pep-0008/) |
+
 # DRY
+
+| Begriff                         | Kurzerklärung                                                                                     | Link zur Referenz |
+|---------------------------------|---------------------------------------------------------------------------------------------------|-------------------|
+| **DRY (Don't Repeat Yourself)** | Ein Prinzip, das darauf abzielt, Wiederholungen im Code zu vermeiden, um Redundanz zu reduzieren. |
+
 # Fehlerbehandlung
+
 # Funktionsgestaltung
 # Globale Parameter
 # Guard Clauses

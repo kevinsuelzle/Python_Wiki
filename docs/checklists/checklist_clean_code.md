@@ -21,7 +21,7 @@
 - Ich kann Refactoring nutzen, um die Lesbarkeit und Wartbarkeit des Codes zu verbessern.
 - Ich weiß, wie Funktionen und Klassen strukturiert werden können, um den Anforderungen von guter Programmierung zu genügen.
 
-# Bennenungskonventionen
+# Benennungskonventionen
 - Ich kenne die Konventionen aus PEP 8 und kann sie anwenden
 
 # DRY
@@ -51,7 +51,6 @@
 - Ich kann erklären, was Guard Clauses sind.
 - Ich kann Code so umschreiben, dass er Guard Clauses verwendet
 
-# Introduction
 # Kommentare
 - Ich weiß, wann Kommentare und Doc_Strings angebracht sind
 - Ich erkenne überflüssige Kommentare oder Informationen in Doc_Strings
