@@ -74,6 +74,9 @@
 | 7     | [Type Hints](clean_code/Typehints/Typehints.md)                                                        | [hier](../checklists/checklist_clean_code.md#type-hints)                          | [hier](../begriffe/begriffe_clean_code.md#type-hints)              |
 | 7     | [Übungsaufgaben](clean_code/Uebungsaufgabe/Uebungsaufgabe.md)                                          | [hier](../checklists/checklist_clean_code.md)                                     | [hier](../begriffe/begriffe_clean_code.md)                         |
 | 7     | [Variablennamen](clean_code/Variablenbenennung/Variablenbenennung.md)                                  | [hier](../checklists/checklist_clean_code.md#benennung-von-variablen)             | [hier](../begriffe/begriffe_clean_code.md#benennung-von-variablen) |
+| 7     | [Python sqlite3 ](datenbanken/unterrichte/sqlite3_basic.md)                                          | [hier](../checklists/checklist_db_python.md#sqlite-in-python)                     | [hier](../begriffe/begriffe_db_python.md) |
+| 7     | [sqlite3 weitere Funktionen](datenbanken/unterrichte/sqlite3_advanced.md)                            | [hier](../checklists/checklist_db_python.md#sqlite-in-python)                     | [hier](../begriffe/begriffe_db_python.md) |
+| 7     | [ORM](#)                                                                                             | [hier](../checklists/checklist_db1.md#sqlite-in-python)                           | [hier](../begriffe/begriffe_db_python.md) |
 | 7     | [Einführung in SQLAlchemy](datenbanken/einfuehrung.ipynb)                                              | [hier](../checklists/checkliste3.md#einfuehrung-sqlalchemy)                       | [hier](../begriffe/begriffe3.md#einfuehrung-sqlalchemy)            |
 | 7     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.ipynb)                                        | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte)                | [hier](../begriffe/begriffe3.md#fortgeschrittene-orm-konzepte)     |
 | 7     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.ipynb)                           | [hier](../checklists/checkliste3.md#sql-expression-language)                      | [hier](../begriffe/begriffe3.md#sql-expression-language)           |
@@ -125,9 +128,6 @@
 | 10    | [Cloud Planung](azure/unterrichte/cloud_planung/cloud_planung.md)                                      | [hier](../checklists/checklist_azure.md#cloud-planung)                            | [hier](../begriffe/begriffe_azure.md)                              |
 | 10    | [Blobs und Funktionen](azure/unterrichte/blobs_funktionen/blobs_funktionen.md)                         | [hier](../checklists/checklist_azure.md#blobs-und-funktionen)                     | [hier](../begriffe/begriffe_azure.md)                              |
 | 10    | [Cloud Monitoring](azure/unterrichte/cloud_monitoring/cloud_monitoring.md)                             | [hier](../checklists/checklist_azure.md#cloud-monitoring)                         | [hier](../begriffe/begriffe_azure.md)                              |
-| 7     | [Python sqlite3 ](datenbanken/unterrichte/sqlite3_basic.md)                                          | [hier](../checklists/checklist_db_python.md#sqlite-in-python)                     | [hier](../begriffe/begriffe_db1.md) |
-| 7     | [sqlite3 weitere Funktionen](datenbanken/unterrichte/sqlite3_advanced.md)                            | [hier](../checklists/checklist_db_python.md#sqlite-in-python)                     | [hier](../begriffe/begriffe_db1.md) |
-| 7     | [ORM](#)                                                                                             | [hier](../checklists/checklist_db1.md#sqlite-in-python)                           | [hier](../begriffe/begriffe_db1.md) |
 
 # Block 3
 
