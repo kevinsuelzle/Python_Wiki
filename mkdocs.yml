@@ -81,6 +81,11 @@ nav:
           - Variablenbenennung: lehrplan/clean_code/Variablenbenennung/Variablenbenennung.md
           - Python und SQL: lehrplan/datenbanken/unterrichte/sqlite3_basic.md
           - sqlite3 - weitere Funktionen: lehrplan/datenbanken/unterrichte/sqlite3_advanced.md
+          - Einführung in SQLAlchemy: lehrplan/datenbanken/einfuehrung.md
+          - Fortgeschrittene ORM Konzepte: lehrplan/datenbanken/orm_konzepte.md
+          - Arbeiten mit dem SQL Expression Language: lehrplan/datenbanken/sql_expression.md
+          - Best Practices und fortgeschrittene Themen: lehrplan/datenbanken/best_practices.md
+          - Integration von SQLAlchemy in einem Flask-Projekt: lehrplan/datenbanken/projekt.md
           - Einführung in APIs: lehrplan/web/unterrichte/einfuehrung_apis/einfuehrung_apis.md
           - API Arten: lehrplan/web/unterrichte/api_arten/api_arten.md
           - API Kommunikation: lehrplan/web/unterrichte/api_kommunikation/api_kommunikation.md
