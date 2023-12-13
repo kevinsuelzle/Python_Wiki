@@ -1,5 +1,7 @@
 # Einführung in Clean Code
 
+<img alt="Clean code image" src="../images/clean_code_python_im1.png" width="400">
+
 ## Was ist Clean Code?
 [10 min]
 

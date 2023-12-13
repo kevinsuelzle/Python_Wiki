@@ -92,7 +92,7 @@
 | 7     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.md)                                           | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte) | [hier](../begriffe/begriffe3.md#fortgeschrittene-orm-konzepte) |
 | 7     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.md)                              | [hier](../checklists/checkliste3.md#sql-expression-language)       | [hier](../begriffe/begriffe3.md#sql-expression-language)       |
 | 7     | [Best Practices und fortgeschrittene Themen](datenbanken/best_practices.md)                            | [hier](../checklists/checkliste3.md#best-practices)                | [hier](../begriffe/begriffe3.md#best-practices)                |
-| 7     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.md)                            | [hier](../checklists/checkliste3.md#integration-in-flask)          | [hier](../begriffe/begriffe3.md#integration-in-flask)          |
+<!-- | 7     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.md)                            | [hier](../checklists/checkliste3.md#integration-in-flask)          | [hier](../begriffe/begriffe3.md#integration-in-flask)          | -->
 
 ## Web
 | Woche | Unterricht                                                                                             | Lernziele                                                          | Begriffssammlung                                               |

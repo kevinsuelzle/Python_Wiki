@@ -9,6 +9,8 @@ plugins:
       
 markdown_extensions:
   - def_list
+  - attr_list
+  - md_in_html
   - pymdownx.tasklist:
       custom_checkbox: true
 
@@ -94,7 +96,7 @@ nav:
               - Fortgeschrittene ORM Konzepte: lehrplan/datenbanken/orm_konzepte.md
               - Arbeiten mit dem SQL Expression Language: lehrplan/datenbanken/sql_expression.md
               - Best Practices und fortgeschrittene Themen: lehrplan/datenbanken/best_practices.md
-              - Integration von SQLAlchemy in einem Flask-Projekt: lehrplan/datenbanken/projekt.md
+            #   - Integration von SQLAlchemy in einem Flask-Projekt: lehrplan/datenbanken/projekt.md
               - Einführung in APIs: lehrplan/web/unterrichte/einfuehrung_apis/einfuehrung_apis.md
               - API Arten: lehrplan/web/unterrichte/api_arten/api_arten.md
           - Web:

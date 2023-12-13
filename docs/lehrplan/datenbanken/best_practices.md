@@ -121,7 +121,7 @@ print(query.statement)
 
 Die Beachtung von Best Practices in SQLAlchemy hinsichtlich Code-Organisation, Session-Management, Fehlerbehandlung und Debugging trägt dazu bei, robuste, wartbare und effiziente Anwendungen zu entwickeln. Durch eine klare Strukturierung der Modelle und die richtige Handhabung von Sessions und Transaktionen können viele häufige Fehler vermieden werden. Debugging-Tools und -Techniken helfen dabei, Probleme effizient zu identifizieren und zu lösen.
 
-## #Übungsaufgabe: Einsatz von Mixins in SQLAlchemy  🌶️🌶️🌶️
+### Übungsaufgabe: Einsatz von Mixins in SQLAlchemy  🌶️🌶️🌶️
 [60 min]
 
 1. **Definieren eines Timestamp-Mixins**:

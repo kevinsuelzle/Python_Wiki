@@ -90,7 +90,7 @@ result = session.query(Parent).join(Child).filter(Child.column == 'wert').all()
 ## Übungsaufgabe: Abfragen und Beziehungen in SQLAlchemy 🌶️🌶️🌶️
 [60 min]
 
-1. Definieren zwei Modelle: `Author` und `Book`. `Author` soll die Felder `id` und `name` haben, `Book` die Felder `id`, `title`, `published_year` und `author_id`.
+1. Definiere zwei Modelle: `Author` und `Book`. `Author` soll die Felder `id` und `name` haben, `Book` die Felder `id`, `title`, `published_year` und `author_id`.
 
 2. Füge eine Beziehung zwischen `Author` und `Book` hinzu, sodass ein Autor mehrere Bücher haben kann.
 

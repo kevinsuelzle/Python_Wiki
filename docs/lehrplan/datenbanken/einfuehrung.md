@@ -8,11 +8,6 @@ SQLAlchemy ist eine Bibliothek zum Interagieren mit SQL-Datenbanken. Sie bietet 
 
 2. **SQL-Expression Language**: Für Fälle, in denen mehr Kontrolle oder eine direktere Interaktion mit der Datenbank erforderlich ist, bietet SQLAlchemy eine SQL-Expression Language. Diese ermöglicht es, SQL-Anweisungen in Python zu schreiben und auszuführen, wobei die Syntax und die Sicherheitsfunktionen von SQLAlchemy genutzt werden. Dies kann besonders nützlich sein, wenn komplexe Abfragen oder spezifische Datenbankoperationen erforderlich sind, die über die Möglichkeiten des ORMs hinausgehen.
 
-- Erstellen von Datenbanktabellen mit SQLAlchemy ORM.
-- Einfügen, Aktualisieren und Löschen von Daten in einer Datenbank.
-- Durchführen von Abfragen, um spezifische Daten aus der Datenbank zu extrahieren.
-- Verwenden der SQL-Expression Language für fortgeschrittenere Datenbankoperationen.
-
 Durch die Verwendung von SQLAlchemy in Ihren Projekten können wir eine höhere Ebene der Abstraktion und Flexibilität erreichen, was den Umgang mit relationalen Datenbanken erheblich vereinfacht. SQLAlchemy bietet damit die Möglichkeit, Datenbanken in Python-Anwendungen zu verwenden, ohne dass wir uns mit den Details der Datenbankinteraktionen befassen müssen.
 
 ## Vergleich von SQLAlchemy mit anderen Datenbank-Toolkits
@@ -51,7 +46,7 @@ Die Installation und grundlegende Konfiguration von SQLAlchemy in einem Python-P
 
 1. **Vorbereitung der Umgebung**: Es ist empfehlenswert, SQLAlchemy innerhalb einer virtuellen Umgebung zu installieren, um Konflikte mit anderen Bibliotheken zu vermeiden. Eine virtuelle Umgebung kömmem wir mit `python -m venv venv` erstellen und aktivieren.
 
-2. **Installieren von SQLAlchemy**: Führen den folgenden Befehl aus, um SQLAlchemy zu installieren:
+2. **Installieren von SQLAlchemy**: Führe den folgenden Befehl aus, um SQLAlchemy zu installieren:
 
 
 ```python
@@ -66,7 +61,7 @@ Nach der Installation können wir SQLAlchemy in unserem Projekt einrichten:
 from sqlalchemy import create_engine, MetaData
 ```
 
-1. **Erstellen einer Datenbank-Engine**: SQLAlchemy verwendet das Konzept einer "Engine", um eine Verbindung zur Datenbank herzustellen. Die Engine ermöglicht es, eine Verbindung zur Datenbank herzustellen. Sie spezifiziert die Art der Datenbank, den Verbindungspfad und andere Parameter. Zusätzlich verwaltet die Engine oftmals einen Verbindungspool, der die Wiederverwendung von Datenbankverbindungen erleichtert, um die Leistung zu verbessern. Hier ist ein Beispiel, wie man eine Engine für eine SQLite-Datenbank erstellt:
+**Erstellen einer Datenbank-Engine**: SQLAlchemy verwendet das Konzept einer "Engine", um eine Verbindung zur Datenbank herzustellen. Die Engine ermöglicht es, eine Verbindung zur Datenbank herzustellen. Sie spezifiziert die Art der Datenbank, den Verbindungspfad und andere Parameter. Zusätzlich verwaltet die Engine oftmals einen Verbindungspool, der die Wiederverwendung von Datenbankverbindungen erleichtert, um die Leistung zu verbessern. Hier ist ein Beispiel, wie man eine Engine für eine SQLite-Datenbank erstellt:
 
 
 ```python
@@ -75,15 +70,13 @@ engine = create_engine('sqlite:///example.db')
 
 Ersetze `sqlite:///example.db` durch den entsprechenden Verbindungsstring für Ihre Datenbank. Zum Beispiel für eine PostgreSQL-Datenbank könnte es `postgresql://user:password@localhost/mydatabase` sein.
 
-1. **Definieren der Metadaten**: Metadaten sind eine Sammlung von Tabellendefinitionen und anderen Datenbankkonstrukten. Sie können so initialisiert werden:
-
+**Definieren der Metadaten**: Metadaten sind eine Sammlung von Tabellendefinitionen und anderen Datenbankkonstrukten. Sie können so initialisiert werden:
 
 ```python
 metadata = MetaData()
 ```
 
-4. **Definieren von Tabellen**: Sie definieren Tabellen und deren Spalten in SQLAlchemy mit dem `Table`-Objekt und verschiedenen Spaltentypen:
-
+**Definieren von Tabellen**: Sie definieren Tabellen und deren Spalten in SQLAlchemy mit dem `Table`-Objekt und verschiedenen Spaltentypen:
 
 ```python
 from sqlalchemy import Table, Column, Integer, String
@@ -95,8 +88,7 @@ example_table = Table('example', metadata,
                     )
 ```
 
-5. **Erstellen der Tabellen in der Datenbank**: Nachdem wir unsere Tabellen definiert haben, können wir sie in der Datenbank erstellen:
-
+**Erstellen der Tabellen in der Datenbank**: Nachdem wir unsere Tabellen definiert haben, können wir sie in der Datenbank erstellen:
 
 ```python
 metadata.create_all(engine)
@@ -164,7 +156,7 @@ Ersetze auch hier `username`, `password` und `mydatabase` mit deinen eigenen Anm
 
 In SQLAlchemy werden Tabellen durch Klassen dargestellt, die von `declarative_base()` abgeleitet werden. Jede Klasse repräsentiert eine Tabelle in der Datenbank, und jede Instanz der Klasse entspricht einer Zeile in dieser Tabelle.
 
-1. **Definieren des Basismodells**:
+### 1. **Definieren des Basismodells**:
 
 
 ```python
@@ -172,7 +164,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 ```
 
-2. **Erstellen eines Modells**:
+### 2. **Erstellen eines Modells**:
    Modelle werden durch Klassen definiert, die von `Base` erben. Spalten in der Tabelle werden als Attribute der Klasse definiert.
 
 
@@ -193,8 +185,8 @@ class User(Base):
 
 Sitzungen in SQLAlchemy ermöglichen es uns, Objekte zu erstellen, zu ändern und zu löschen. Sie fungieren als eine Art Puffer zwischen den Python-Objekten und der Datenbank.
 
-1. **Erstellen einer Session**:
-   Um mit der Datenbank zu interagieren, müssen Sie eine Session erstellen.
+### 1. **Erstellen einer Session**:
+   Um mit der Datenbank zu interagieren, erstellen eine Session.
 
 
 ```python
@@ -203,7 +195,7 @@ Session = sessionmaker(bind=engine)
 session = Session()
 ```
 
-2. **Hinzufügen von Objekten**:
+### 2. **Hinzufügen von Objekten**:
    Neue Objekte (Zeilen) können zur Datenbank hinzugefügt werden, indem sie zur Session hinzugefügt werden.
 
 
@@ -212,7 +204,7 @@ new_user = User(name='Alice', age=30)
 session.add(new_user)
 ```
 
-3. **Speichern von Änderungen**:
+### 3. **Speichern von Änderungen**:
    Änderungen werden in der Datenbank gespeichert, indem die `commit()`-Methode der Session aufgerufen wird.
 
 
@@ -220,18 +212,18 @@ session.add(new_user)
 session.commit()
 ```
 
-4. **Schließen der Session**:
-   Nachdem Sie mit der Datenbankinteraktion fertig sind, sollten Sie die Session schließen.
+### 4. **Schließen der Session**:
+   Nachdem wir mit der Datenbankinteraktion fertig sind, sollten wir die Session schließen.
 
 
 ```python
 session.close()
 ```
 
-## Übungsaufgabe: Erstellen und Verwalten von Daten mit SQLAlchemy ORM 🌶️🌶️
+### Übungsaufgabe: Erstellen und Verwalten von Daten mit SQLAlchemy ORM 🌶️🌶️
 [60 min]
 
-1. **Definieren Sie ein Modell 'Book'**:
+1. **Definiere ein Modell 'Book'**:
     - Erstelle eine Klasse `Book`, die von `Base` erbt.
     - Definiere die Tabelle `books` mit folgenden Spalten:
       - `id`: Integer, Primärschlüssel
@@ -239,11 +231,11 @@ session.close()
       - `author`: String, Autor des Buches
       - `published_year`: Integer, Jahr der Veröffentlichung
 
-2. **Erstellen Sie eine SQLite-Datenbank**:
+2. **Erstellen eine SQLite-Datenbank**:
     - Verwende eine SQLite-Datenbank (`sqlite:///books.db`).
     - Erstelle die Tabelle `books` in der Datenbank.
 
-3. **Fügen Sie neue Bücher hinzu**:
+3. **Füge neue Bücher hinzu**:
     - Erstelle mindestens drei Buch-Objekte mit unterschiedlichen Attributen.
     - Füge diese Objekte zur Session hinzu und speicher sie in der Datenbank.
 
