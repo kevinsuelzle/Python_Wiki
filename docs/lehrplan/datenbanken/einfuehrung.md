@@ -1,4 +1,7 @@
 # Einführung in SQLAlchemy
+
+<img alt="ORM" src="../images/orm.png" width="600">
+
 ## Überblick über SQLAlchemy
 [10 min]
 
@@ -100,6 +103,7 @@ metadata.create_all(engine)
 Das Herstellen einer Verbindung zu verschiedenen Datenbanktypen mit SQLAlchemy erfolgt durch die Erstellung einer Engine, die den entsprechenden Verbindungsstring für die jeweilige Datenbank verwendet. Hier sind Beispiele, wie wir Verbindungen zu einigen gängigen Datenbanktypen wie SQLite, PostgreSQL und MySQL herstellen können:
 
 ### SQLite
+<img alt="ORM" src="../images/SQLite.png" width="300">
 
 SQLite ist eine leichte, dateibasierte Datenbank, die ideal für Entwicklung, Testen oder kleine Anwendungen ist. Sie benötigt keine separate Serverinstallation.
 
@@ -115,6 +119,7 @@ engine = create_engine('sqlite:///:memory:')
 ```
 
 ### PostgreSQL
+<img alt="ORM" src="../images/Postgresql.png" width="300">
 
 PostgreSQL ist eine leistungsstarke, Open-Source objektrelationale Datenbank. Wir müssen den Benutzernamen, das Passwort, den Host (z. B. `localhost`) und den Datenbanknamen angeben.
 
@@ -126,6 +131,7 @@ engine = create_engine('postgresql://username:password@localhost/mydatabase')
 Ersetze `username`, `password` und `mydatabase` mit deinen PostgreSQL-Anmeldeinformationen und dem Datenbanknamen.
 
 ### MySQL/MariaDB
+<img alt="ORM" src="../images/mysql.png" width="300">
 
 MySQL und MariaDB sind weit verbreitete Open-Source relationale Datenbankmanagementsysteme. Der Verbindungsstring ist dem von PostgreSQL sehr ähnlich.
 
