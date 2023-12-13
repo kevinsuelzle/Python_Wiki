@@ -1,4 +1,4 @@
-# Begriffe git
+# Begriffssammlung git
 
 # Teil 1:
 

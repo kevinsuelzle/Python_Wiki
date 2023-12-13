@@ -16,142 +16,149 @@ nav:
   - Lehrplan: lehrplan/lehrplan.md
   - Übersicht:
       - Block 1:
-          - Python Grundlagen: lehrplan/python_grundlagen/python_grundlagen/python_grundlagen.md
-          - Variable Datentypen: lehrplan/python_grundlagen/variables_types/variablen_datentypen.md
-          - Input Output: lehrplan/python_grundlagen/input_output/input_output.md
-          - Mathematische Operationen: lehrplan/python_grundlagen/math_operations/math_operations.md
-          - Debugging: lehrplan/python_grundlagen/debugging/debugging.md
-          - Verzweigungen: lehrplan/python_grundlagen/if_elif_else/if_elif_else.md
-          - Listen: lehrplan/python_grundlagen/lists/lists.md
-          - Tupel: lehrplan/python_grundlagen/tupel/tupel.md
-          - Strings: lehrplan/python_grundlagen/strings/strings.md
-          - Schleifen: lehrplan/python_grundlagen/loops/loops.md
-          - Sets: lehrplan/python_grundlagen/sets/sets.md
-          - Dictionaries: lehrplan/python_grundlagen/dictionaries/dictionaries.md
-          - Bytecode: lehrplan/python_grundlagen/bytecode/bytecode.md
-          - Funktionen: lehrplan/python_grundlagen/functions/functions.md
-          - Type Hints: lehrplan/python_grundlagen/type_hints/type_hints.md
-          - List Comprehension: lehrplan/python_grundlagen/list_comp/list_comp.md
-          - zip: lehrplan/python_grundlagen/zip/zip.md
-          - Git Teil 1: lehrplan/git/git_Teil1.md
-          - try except: lehrplan/python_grundlagen/01_try_except.md
-          - Module: lehrplan/python_grundlagen/02_module.md
-          - pip: lehrplan/python_grundlagen/03_pip.md
-          - TDD: lehrplan/python_grundlagen/04_tdd.md
-          - Dateioperationen: lehrplan/python_grundlagen/05_dateioperationen.md
-          - OOP Einführung: lehrplan/python_grundlagen/06_oop_einführung.md
-          - OOP Python: lehrplan/python_grundlagen/07_oop_python.md
-          - Git Teil 2: lehrplan/git/git_Teil2.md
-          - Getter Setter: lehrplan/python_grundlagen/08_getter_setter.md
-          - staticmethod: lehrplan/python_grundlagen/09_class_staticmethod.md
-          - Vererbung: lehrplan/python_grundlagen/10_vererbung.md
-          - Magic Methods: lehrplan/python_grundlagen/11_magic_methods.md
-          - args kwargs: lehrplan/python_grundlagen/12_args_kwargs.md
-          - pep: lehrplan/python_grundlagen/13_pep.md
-          - Design Pattern: lehrplan/python_grundlagen/14_design_patterns.md
-          - Strategy: lehrplan/python_grundlagen/14_x1_strategy.md
-          - Factory Method: lehrplan/python_grundlagen/14_x2_factory_method.md
-          - Adapter: lehrplan/python_grundlagen/14_x3_adapter.md
-          - OOP vs Funktional: lehrplan/python_grundlagen/15_oop_vs_funktionale.md
-          - Git Teil 3: lehrplan/git/git_Teil3.md
+          - Python Grundlagen:
+              - Python Grundlagen: lehrplan/python_grundlagen/python_grundlagen/python_grundlagen.md
+              - Variable Datentypen: lehrplan/python_grundlagen/variables_types/variablen_datentypen.md
+              - Input Output: lehrplan/python_grundlagen/input_output/input_output.md
+              - Mathematische Operationen: lehrplan/python_grundlagen/math_operations/math_operations.md
+              - Debugging: lehrplan/python_grundlagen/debugging/debugging.md
+              - Verzweigungen: lehrplan/python_grundlagen/if_elif_else/if_elif_else.md
+              - Listen: lehrplan/python_grundlagen/lists/lists.md
+              - Tupel: lehrplan/python_grundlagen/tupel/tupel.md
+              - Strings: lehrplan/python_grundlagen/strings/strings.md
+              - Schleifen: lehrplan/python_grundlagen/loops/loops.md
+              - Sets: lehrplan/python_grundlagen/sets/sets.md
+              - Dictionaries: lehrplan/python_grundlagen/dictionaries/dictionaries.md
+              - Bytecode: lehrplan/python_grundlagen/bytecode/bytecode.md
+              - Funktionen: lehrplan/python_grundlagen/functions/functions.md
+              - Type Hints: lehrplan/python_grundlagen/type_hints/type_hints.md
+              - List Comprehension: lehrplan/python_grundlagen/list_comp/list_comp.md
+              - zip: lehrplan/python_grundlagen/zip/zip.md
+              - Git Teil 1: lehrplan/git/git_Teil1.md
+              - try except: lehrplan/python_grundlagen/01_try_except.md
+              - Module: lehrplan/python_grundlagen/02_module.md
+              - pip: lehrplan/python_grundlagen/03_pip.md
+              - TDD: lehrplan/python_grundlagen/04_tdd.md
+              - Dateioperationen: lehrplan/python_grundlagen/05_dateioperationen.md
+              - OOP Einführung: lehrplan/python_grundlagen/06_oop_einführung.md
+              - OOP Python: lehrplan/python_grundlagen/07_oop_python.md
+              - Git Teil 2: lehrplan/git/git_Teil2.md
+              - Getter Setter: lehrplan/python_grundlagen/08_getter_setter.md
+              - staticmethod: lehrplan/python_grundlagen/09_class_staticmethod.md
+              - Vererbung: lehrplan/python_grundlagen/10_vererbung.md
+              - Magic Methods: lehrplan/python_grundlagen/11_magic_methods.md
+              - args kwargs: lehrplan/python_grundlagen/12_args_kwargs.md
+              - pep: lehrplan/python_grundlagen/13_pep.md
+              - Design Pattern: lehrplan/python_grundlagen/14_design_patterns.md
+              - Strategy: lehrplan/python_grundlagen/14_x1_strategy.md
+              - Factory Method: lehrplan/python_grundlagen/14_x2_factory_method.md
+              - Adapter: lehrplan/python_grundlagen/14_x3_adapter.md
+              - OOP vs Funktional: lehrplan/python_grundlagen/15_oop_vs_funktionale.md
+              - Git Teil 3: lehrplan/git/git_Teil3.md
       - Block 2:
-          - Einführung SQL-Datenbanken: lehrplan/datenbanken/datenbanken.md
-          - Arten von SQL Anweisungen: lehrplan/datenbanken/unterrichte/sql_types.md
-          - UML für Datenbanken: lehrplan/datenbanken/unterrichte/uml_diagramme.md
-          - Normalisierung von Daten: lehrplan/datenbanken/unterrichte/normalization.md
-          - Indizes und referentielle Integrität: lehrplan/datenbanken/unterrichte/indices_and_referential_integrity.md
-          - Arbeitsumgebung einrichten: lehrplan/datenbanken/unterrichte/how_we_will_work.md
-          - Reservierte Ausdrücke: lehrplan/datenbanken/unterrichte/reserved_words_sqlite.md
-          - Datentypen: lehrplan/datenbanken/unterrichte/daten_typen_sqlite.md
-          - Erstellen von Tabellen: lehrplan/datenbanken/unterrichte/create_tables.md
-          - Arbeiten mit Daten: lehrplan/datenbanken/unterrichte/working_with_data.md
-          - Aliase: lehrplan/datenbanken/unterrichte/aliases.md
-          - Funktionen: lehrplan/datenbanken/unterrichte/build_in_functions.md
-          - Unterabfragen und CTE: lehrplan/datenbanken/unterrichte/subselect_and_cte.md
-          - Batch, Script, Deploy: lehrplan/datenbanken/unterrichte/scripting_and_deploying.md
-          - Gruppenarbeit: lehrplan/datenbanken/unterrichte/projects.md
-          - Fragen an die Datenbank: lehrplan/datenbanken/unterrichte/joins_and_views.md
-          - Abschluss SQL-Datenbanken: lehrplan/datenbanken/unterrichte/finally.md
-          - Einführung zu Clean Code: lehrplan/clean_code/Introduction.md
-          - Benennungskonventionen: lehrplan/clean_code/Benennungskonventionen.md
-          - DRY: lehrplan/clean_code/DRY/DRY.md
-          - Fehlerbehandlung: lehrplan/clean_code/Fehlerbehandlung/Fehlerbehandlung.md
-          - Funktionsgestaltung: lehrplan/clean_code/Funktionsgestaltung/Funktionsgestaltung.md
-          - Globale Parameter: lehrplan/clean_code/Globale_Parameter/Globale_Parameter.md
-          - Guard Clauses: lehrplan/clean_code/GuardClauses/GuardClauses.md
-          - Kommentare: lehrplan/clean_code/Kommentare/Kommentare.md
-          - List Comprehensions: lehrplan/clean_code/ListComprehension/ListComprehension.md
-          - Typehints: lehrplan/clean_code/Typehints/Typehints.md
-          - Übungsaufgabe: lehrplan/clean_code/Uebungsaufgabe/Uebungsaufgabe.md
-          - Variablenbenennung: lehrplan/clean_code/Variablenbenennung/Variablenbenennung.md
-          - Python und SQL: lehrplan/datenbanken/unterrichte/sqlite3_basic.md
-          - sqlite3 - weitere Funktionen: lehrplan/datenbanken/unterrichte/sqlite3_advanced.md
-          - Einführung in SQLAlchemy: lehrplan/datenbanken/einfuehrung.md
-          - Fortgeschrittene ORM Konzepte: lehrplan/datenbanken/orm_konzepte.md
-          - Arbeiten mit dem SQL Expression Language: lehrplan/datenbanken/sql_expression.md
-          - Best Practices und fortgeschrittene Themen: lehrplan/datenbanken/best_practices.md
-          - Integration von SQLAlchemy in einem Flask-Projekt: lehrplan/datenbanken/projekt.md
-          - Einführung in APIs: lehrplan/web/unterrichte/einfuehrung_apis/einfuehrung_apis.md
-          - API Arten: lehrplan/web/unterrichte/api_arten/api_arten.md
-          - API Kommunikation: lehrplan/web/unterrichte/api_kommunikation/api_kommunikation.md
-          - API Nutzung: lehrplan/web/unterrichte/api_nutzung/api_nutzung.md
-          - HTTP Methoden: lehrplan/web/unterrichte/http_methoden/http_methoden.md
-          - Python Requests: lehrplan/web/unterrichte/python_requests/python_requests.md
-          - Capstone Projekt: lehrplan/web/unterrichte/capstone_projekt_1/capstone_projekt_1.md
-          - Aufbau einer API: lehrplan/web/unterrichte/api_aufbau/api_aufbau.md
-          - Implementierungsprinzipien: lehrplan/web/unterrichte/implementierung_prinzip/implementierung_prinzip.md
-          - Web API Frameworks: lehrplan/web/unterrichte/api_frameworks/api_frameworks.md
-          - RESTful Planung: lehrplan/web/unterrichte/restful_planung/restful_planung.md
-          - RESTful Umsetzung: lehrplan/web/unterrichte/restful_umsetzung/restful_umsetzung.md
-          - RESTful Testing: lehrplan/web/unterrichte/restful_testing/restful_testing.md
-          - RESTful Dokumentation: lehrplan/web/unterrichte/restful_dokumentation/restful_dokumentation.md
-          - Capstone Projekt: lehrplan/web/unterrichte/capstone_projekt_2/capstone_projekt_2.md
-          - Einführung ins Web: lehrplan/web/unterrichte/einfuehrung_web/einfuehrung_web.md
-          - Web Basics: lehrplan/web/unterrichte/web_basics/web_basics.md
-          - HTML: lehrplan/web/unterrichte/html/html.md
-          - CSS: lehrplan/web/unterrichte/css/css.md
-          - Komplexes HTML: lehrplan/web/unterrichte/komplex_html/komplex_html.md
-          - Komplexes CSS: lehrplan/web/unterrichte/komplex_css/komplex_css.md
-          - Capstone Projekt: lehrplan/web/unterrichte/capstone_projekt_3/
-          - Einführung in interaktive Websites: lehrplan/web/unterrichte/einfuehrung_interaktiv/einfuehrung_interaktiv.md
-          - JavaScript: lehrplan/web/unterrichte/javascript_basics/javascript_basics.md
-          - Eventhandling: lehrplan/web/unterrichte/eventhandling/eventhandling.md
-          - Fetch API: lehrplan/web/unterrichte/fetch_api/fetch_api.md
-          - JS Frameworks & Libraries: lehrplan/web/unterrichte/frameworks/frameworks.md
-          - Moderne Web Applications: lehrplan/web/unterrichte/modern_web/modern_web.md
-          - Serverside Javascript (NPM): lehrplan/web/unterrichte/serverside_js/serverside_js.md
-          - Rendering: lehrplan/web/unterrichte/rendering/rendering.md
-          - Capstone Projekt: lehrplan/web/unterrichte/capstone_projekt_4/capstone_projekt_4.md
-          - Einführung in die Web App Planung: lehrplan/web/unterrichte/web_planung/web_planung.md
-          - Projekte mit Struktur: lehrplan/web/unterrichte/projekte_struktur/projekte_struktur.md
-          - UML: lehrplan/web/unterrichte/uml/uml.md
-          - Test & Domain Driven: lehrplan/web/unterrichte/test_domain_driven/test_domain_driven.md
-          - Capstone Projekt: lehrplan/web/unterrichte/capstone_projekt_5/capstone_projekt_5.md
-          - Cloud Intro: lehrplan/azure/unterrichte/cloud_intro/cloud_intro.md
-          - Cloud Anbieter: lehrplan/azure/unterrichte/cloud_anbieter/cloud_anbieter.md
-          - Azure Intro: lehrplan/azure/unterrichte/azure_intro/azure_intro.md
-          - Azure Services: lehrplan/azure/unterrichte/azure_services/azure_services.md
-          - Static Web Apps: lehrplan/azure/unterrichte/static_web_apps/static_web_apps.md
-          - Cloud Web Apps: lehrplan/azure/unterrichte/cloud_backend/cloud_backend.md
-          - Cloud Databases: lehrplan/azure/unterrichte/cloud_database/cloud_database.md
-          - Cloud Planung: lehrplan/azure/unterrichte/cloud_planung/cloud_planung.md
-          - Blobs und Funktionen: lehrplan/azure/unterrichte/blobs_funktionen/blobs_funktionen.md
-          - Cloud Monitoring: lehrplan/azure/unterrichte/cloud_monitoring/cloud_monitoring.md
-      
+          - SQL-Datenbanken:
+              - Einführung SQL-Datenbanken: lehrplan/datenbanken/datenbanken.md
+              - Arten von SQL Anweisungen: lehrplan/datenbanken/unterrichte/sql_types.md
+              - UML für Datenbanken: lehrplan/datenbanken/unterrichte/uml_diagramme.md
+              - Normalisierung von Daten: lehrplan/datenbanken/unterrichte/normalization.md
+              - Indizes und referentielle Integrität: lehrplan/datenbanken/unterrichte/indices_and_referential_integrity.md
+              - Arbeitsumgebung einrichten: lehrplan/datenbanken/unterrichte/how_we_will_work.md
+              - Reservierte Ausdrücke: lehrplan/datenbanken/unterrichte/reserved_words_sqlite.md
+              - Datentypen: lehrplan/datenbanken/unterrichte/daten_typen_sqlite.md
+              - Erstellen von Tabellen: lehrplan/datenbanken/unterrichte/create_tables.md
+              - Arbeiten mit Daten: lehrplan/datenbanken/unterrichte/working_with_data.md
+              - Aliase: lehrplan/datenbanken/unterrichte/aliases.md
+              - Funktionen: lehrplan/datenbanken/unterrichte/build_in_functions.md
+              - Unterabfragen und CTE: lehrplan/datenbanken/unterrichte/subselect_and_cte.md
+              - Batch, Script, Deploy: lehrplan/datenbanken/unterrichte/scripting_and_deploying.md
+              - Gruppenarbeit: lehrplan/datenbanken/unterrichte/projects.md
+              - Fragen an die Datenbank: lehrplan/datenbanken/unterrichte/joins_and_views.md
+              - Abschluss SQL-Datenbanken: lehrplan/datenbanken/unterrichte/finally.md
+          - Clean Code:
+              - Einführung zu Clean Code: lehrplan/clean_code/Introduction.md
+              - Benennungskonventionen: lehrplan/clean_code/Benennungskonventionen.md
+              - DRY: lehrplan/clean_code/DRY/DRY.md
+              - Fehlerbehandlung: lehrplan/clean_code/Fehlerbehandlung/Fehlerbehandlung.md
+              - Funktionsgestaltung: lehrplan/clean_code/Funktionsgestaltung/Funktionsgestaltung.md
+              - Globale Parameter: lehrplan/clean_code/Globale_Parameter/Globale_Parameter.md
+              - Guard Clauses: lehrplan/clean_code/GuardClauses/GuardClauses.md
+              - Kommentare: lehrplan/clean_code/Kommentare/Kommentare.md
+              - List Comprehensions: lehrplan/clean_code/ListComprehension/ListComprehension.md
+              - Typehints: lehrplan/clean_code/Typehints/Typehints.md
+              - Übungsaufgabe: lehrplan/clean_code/Uebungsaufgabe/Uebungsaufgabe.md
+              - Variablenbenennung: lehrplan/clean_code/Variablenbenennung/Variablenbenennung.md
+          - Python und SQL:
+              - Python und SQL Einführung: lehrplan/datenbanken/unterrichte/sqlite3_basic.md
+              - sqlite3 - weitere Funktionen: lehrplan/datenbanken/unterrichte/sqlite3_advanced.md
+              - Einführung in SQLAlchemy: lehrplan/datenbanken/einfuehrung.md
+              - Fortgeschrittene ORM Konzepte: lehrplan/datenbanken/orm_konzepte.md
+              - Arbeiten mit dem SQL Expression Language: lehrplan/datenbanken/sql_expression.md
+              - Best Practices und fortgeschrittene Themen: lehrplan/datenbanken/best_practices.md
+              - Integration von SQLAlchemy in einem Flask-Projekt: lehrplan/datenbanken/projekt.md
+              - Einführung in APIs: lehrplan/web/unterrichte/einfuehrung_apis/einfuehrung_apis.md
+              - API Arten: lehrplan/web/unterrichte/api_arten/api_arten.md
+          - Web:
+              - API Kommunikation: lehrplan/web/unterrichte/api_kommunikation/api_kommunikation.md
+              - API Nutzung: lehrplan/web/unterrichte/api_nutzung/api_nutzung.md
+              - HTTP Methoden: lehrplan/web/unterrichte/http_methoden/http_methoden.md
+              - Python Requests: lehrplan/web/unterrichte/python_requests/python_requests.md
+              - Capstone Projekt: lehrplan/web/unterrichte/capstone_projekt_1/capstone_projekt_1.md
+              - Aufbau einer API: lehrplan/web/unterrichte/api_aufbau/api_aufbau.md
+              - Implementierungsprinzipien: lehrplan/web/unterrichte/implementierung_prinzip/implementierung_prinzip.md
+              - Web API Frameworks: lehrplan/web/unterrichte/api_frameworks/api_frameworks.md
+              - RESTful Planung: lehrplan/web/unterrichte/restful_planung/restful_planung.md
+              - RESTful Umsetzung: lehrplan/web/unterrichte/restful_umsetzung/restful_umsetzung.md
+              - RESTful Testing: lehrplan/web/unterrichte/restful_testing/restful_testing.md
+              - RESTful Dokumentation: lehrplan/web/unterrichte/restful_dokumentation/restful_dokumentation.md
+              - Capstone Projekt: lehrplan/web/unterrichte/capstone_projekt_2/capstone_projekt_2.md
+              - Einführung ins Web: lehrplan/web/unterrichte/einfuehrung_web/einfuehrung_web.md
+              - Web Basics: lehrplan/web/unterrichte/web_basics/web_basics.md
+              - HTML: lehrplan/web/unterrichte/html/html.md
+              - CSS: lehrplan/web/unterrichte/css/css.md
+              - Komplexes HTML: lehrplan/web/unterrichte/komplex_html/komplex_html.md
+              - Komplexes CSS: lehrplan/web/unterrichte/komplex_css/komplex_css.md
+              - Capstone Projekt: lehrplan/web/unterrichte/capstone_projekt_3/
+              - Einführung in interaktive Websites: lehrplan/web/unterrichte/einfuehrung_interaktiv/einfuehrung_interaktiv.md
+              - JavaScript: lehrplan/web/unterrichte/javascript_basics/javascript_basics.md
+              - Eventhandling: lehrplan/web/unterrichte/eventhandling/eventhandling.md
+              - Fetch API: lehrplan/web/unterrichte/fetch_api/fetch_api.md
+              - JS Frameworks & Libraries: lehrplan/web/unterrichte/frameworks/frameworks.md
+              - Moderne Web Applications: lehrplan/web/unterrichte/modern_web/modern_web.md
+              - Serverside Javascript (NPM): lehrplan/web/unterrichte/serverside_js/serverside_js.md
+              - Rendering: lehrplan/web/unterrichte/rendering/rendering.md
+              - Capstone Projekt: lehrplan/web/unterrichte/capstone_projekt_4/capstone_projekt_4.md
+              - Einführung in die Web App Planung: lehrplan/web/unterrichte/web_planung/web_planung.md
+              - Projekte mit Struktur: lehrplan/web/unterrichte/projekte_struktur/projekte_struktur.md
+              - UML: lehrplan/web/unterrichte/uml/uml.md
+              - Test & Domain Driven: lehrplan/web/unterrichte/test_domain_driven/test_domain_driven.md
+              - Capstone Projekt: lehrplan/web/unterrichte/capstone_projekt_5/capstone_projekt_5.md
+          - Azure:
+              - Cloud Intro: lehrplan/azure/unterrichte/cloud_intro/cloud_intro.md
+              - Cloud Anbieter: lehrplan/azure/unterrichte/cloud_anbieter/cloud_anbieter.md
+              - Azure Intro: lehrplan/azure/unterrichte/azure_intro/azure_intro.md
+              - Azure Services: lehrplan/azure/unterrichte/azure_services/azure_services.md
+              - Static Web Apps: lehrplan/azure/unterrichte/static_web_apps/static_web_apps.md
+              - Cloud Web Apps: lehrplan/azure/unterrichte/cloud_backend/cloud_backend.md
+              - Cloud Databases: lehrplan/azure/unterrichte/cloud_database/cloud_database.md
+              - Cloud Planung: lehrplan/azure/unterrichte/cloud_planung/cloud_planung.md
+              - Blobs und Funktionen: lehrplan/azure/unterrichte/blobs_funktionen/blobs_funktionen.md
+              - Cloud Monitoring: lehrplan/azure/unterrichte/cloud_monitoring/cloud_monitoring.md
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md
-      - Clean Code: begriffe/begriffe_clean_code.md
       - SQL-Datenbanken: begriffe/begriffe_db1.md
-      - Python und SQL: begriffe/checklist_db_python.md
-      - Web: begriffe/begriffe_web.md
-  - Checklisten:
-      - Python Grundlagen: checklists/checklists_1.md
-      - git: checklists/checklist_git.md
-      - Clean Code: checklists/checklist_clean_code.md
-      - SQL-Datenbanken: checklists/checklist_db1.md
+      - Clean Code: begriffe/begriffe_clean_code.md
       - Python und SQL: begriffe/begriffe_db_python.md
+      - Web: begriffe/begriffe_web.md
+      - Azure: begriffe/begriffe_azure.md
+  - Checklisten:
+      - Python Grundlagen: checklists/checklist_1.md
+      - git: checklists/checklist_git.md
+      - SQL-Datenbanken: checklists/checklist_db1.md
+      - Clean Code: checklists/checklist_clean_code.md
+      - Python und SQL: checklists/checklist_db_python.md
       - Web: checklists/checklist_web.md
+      - Azure: checklists/checklist_azure.md
 
   - Werkzeuge:
       - git: lehrplan/git/git.md

@@ -1,4 +1,4 @@
-# Begriffe Block 1
+# Begriffssammlung Python Grundlagen
 
 # Intro
 
