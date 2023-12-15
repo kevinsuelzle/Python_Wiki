@@ -76,3 +76,6 @@
 |  13   | [Matplotlib: Linienplots](datascience/unterrichte/matplotlib_linienplots.md) | [hier](../checklists/checklist_data_science.md#matplotlib_linienplots) | [hier](../begriffe/begriffe_data_science.md) |
 |  13   | [Matplotlib: Subplots](datascience/unterrichte/matplotlib_subplots.md) | [hier](../checklists/checklist_data_science.md#matplotlib_subplots) | [hier](../begriffe/begriffe_data_science.md) |
 |  13   | [Seaborn: Einführung](datascience/unterrichte/seaborn_einfuehrung.md) | [hier](../checklists/checklist_data_science.md#seaborn_einfuehrung) | [hier](../begriffe/begriffe_data_science.md) |
+|  13   | [Pandas: Gruppieren und Pivotisieren](datascience/unterrichte/pandas_gruppieren_und_pivotisieren.md) | [hier](../checklists/checklist_data_science.md#pandas_gruppieren_und_pivotisieren) | [hier](../begriffe/begriffe_data_science.md) |
+|  13   | [Matplotlib: Ticks](datascience/unterrichte/matplotlib_ticks.md) | [hier](../checklists/checklist_data_science.md#matplotlib_ticks) | [hier](../begriffe/begriffe_data_science.md) |
+|  13   | [Pandas: Multiindex](datascience/unterrichte/pandas_multiindex.md) | [hier](../checklists/checklist_data_science.md#pandas_multiindex) | [hier](../begriffe/begriffe_data_science.md) |

@@ -62,3 +62,23 @@
 - wissen, wie sich Seaborn von Matplotlib unterscheidet
 - violinplots, boxplots, jointplots, kdeplots, countplots, facetgrids kennen lernen
 - Scatterplots mit Regressionsgeraden erzeugen können
+
+# Pandas: Gruppieren und Pivotisieren
+
+- Anwendungsfälle für das Gruppieren bzw. Pivotisieren von Daten kennen
+- Gruppieren von Daten und das Berechnen von Summen, Minima, Maxima, Durchschnittswerten, etc. pro Gruppe beherrschen
+- Pivotosieren von Tabellen nach einem oder mehreren Merkmalen können
+
+# Matplotlib: Ticks
+
+- wissen, was Ticks sind
+- wissen, wie man Ticks an ganz bestimmten Stellen auf der x- und y-Achse erscheinen lassen kann
+- Ticks konfigurieren können (Labels, Farbe)
+
+# Pandas: Multiindex
+
+- verstehen, dass es bei Pandas Tabellen auch hierarschiche Indizies gibt (Multiindex)
+- verstehen, wieso es das gibt und was es bringt
+- Tabellen mit Multiindex erzeugen können
+- Daten aus Tabellen mit Multiindex auslesen können
+
