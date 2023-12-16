@@ -1,5 +1,7 @@
 # Block 1
 
+## Einführung Python
+
 | Woche | Unterricht                                                                          | Lernziele                                                      | Begriffssammlung                                            |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|-------------------------------------------------------------|
 | 1     | [Einführung](python_grundlagen/python_grundlagen/python_grundlagen.md)              | [hier](../checklists/checklist_1.md#intro)                     | [hier](../begriffe/begriffe_1.md#intro)                     |
@@ -20,28 +22,30 @@
 | 3     | [List Comprehensions](python_grundlagen/list_comp/list_comp.md)                     | [hier](../checklists/checklist_1.md#list-comprehension)        | [hier](../begriffe/begriffe_1.md#list-comprehension)        |
 | 3     | [Zip](python_grundlagen/zip/zip.md)                                                 | [hier](../checklists/checklist_1.md#zip)                       | [hier](../begriffe/begriffe_1.md#zip)                       |
 | 3     | [git Teil 1](git/git_Teil1.md)                                                      | [hier](../checklists/checklist_git.md#teil-1)                  | [hier](../begriffe/begriffe_1.md#teil-1)                    |
-| 4     | [Try-Except](python_grundlagen/01_try_except.md)                        | [hier](../checklists/checklist_1.md#try-except)                | [hier](../begriffe/begriffe_1.md#try-except)                |
-| 4     | [Module](python_grundlagen/02_module.md)                                | [hier](../checklists/checklist_1.md#module)                    | [hier](../begriffe/begriffe_1.md#module)                    |
-| 4     | [PIP](python_grundlagen/03_pip.md)                                      | [hier](../checklists/checklist_1.md#pip)                       | [hier](../begriffe/begriffe_1.md#pip)                       |
-| 4     | [Test Driven Development (TDD)](python_grundlagen/04_tdd.md)            | [hier](../checklists/checklist_1.md#tdd)                       | [hier](../begriffe/begriffe_1.md#tdd)                       |
-| 4     | [Dateioperationen](python_grundlagen/05_dateioperationen.md)            | [hier](../checklists/checklist_1.md#dateioperationen)          | [hier](../begriffe/begriffe_1.md#dateioperationen)          |
-| 4     | [OOP Einführung](python_grundlagen/06_oop_einführung.md)                | [hier](../checklists/checklist_1.md#oop-intro)                 | [hier](../begriffe/begriffe_1.md#oop-intro)                 |
-| 4     | [OOP in Python](python_grundlagen/07_oop_python.md)                     | [hier](../checklists/checklist_1.md#oop-python)                | [hier](../begriffe/begriffe_1.md#oop-python)                |
+| 4     | [Try-Except](python_grundlagen/01_try_except.md)                                    | [hier](../checklists/checklist_1.md#try-except)                | [hier](../begriffe/begriffe_1.md#try-except)                |
+| 4     | [Module](python_grundlagen/02_module.md)                                            | [hier](../checklists/checklist_1.md#module)                    | [hier](../begriffe/begriffe_1.md#module)                    |
+| 4     | [PIP](python_grundlagen/03_pip.md)                                                  | [hier](../checklists/checklist_1.md#pip)                       | [hier](../begriffe/begriffe_1.md#pip)                       |
+| 4     | [Test Driven Development (TDD)](python_grundlagen/04_tdd.md)                        | [hier](../checklists/checklist_1.md#tdd)                       | [hier](../begriffe/begriffe_1.md#tdd)                       |
+| 4     | [Dateioperationen](python_grundlagen/05_dateioperationen.md)                        | [hier](../checklists/checklist_1.md#dateioperationen)          | [hier](../begriffe/begriffe_1.md#dateioperationen)          |
+| 4     | [OOP Einführung](python_grundlagen/06_oop_einführung.md)                            | [hier](../checklists/checklist_1.md#oop-intro)                 | [hier](../begriffe/begriffe_1.md#oop-intro)                 |
+| 4     | [OOP in Python](python_grundlagen/07_oop_python.md)                                 | [hier](../checklists/checklist_1.md#oop-python)                | [hier](../begriffe/begriffe_1.md#oop-python)                |
 | 4     | [git Teil 2](git/git_Teil2.md)                                                      | [hier](../checklists/checklist_git.md#teil-2)                  | [hier](../begriffe/begriffe_1.md#teil-2)                    |
-| 5     | [Getter Setter](python_grundlagen/08_getter_setter.md)                  | [hier](../checklists/checklist_1.md#getter-setter)             | [hier](../begriffe/begriffe_1.md#getter-setter)             |
-| 5     | [Class- & Staticmethod](python_grundlagen/09_class_staticmethod.md)     | [hier](../checklists/checklist_1.md#class-staticmethod)        | [hier](../begriffe/begriffe_1.md#class-staticmethod)        |
-| 5     | [Vererbung](python_grundlagen/10_vererbung.md)                          | [hier](../checklists/checklist_1.md#vererbung)                 | [hier](../begriffe/begriffe_1.md#vererbung)                 |
-| 5     | [Magic Methods](python_grundlagen/11_magic_methods.md)                  | [hier](../checklists/checklist_1.md#magic-methods)             | [hier](../begriffe/begriffe_1.md#magic-methods)             |
-| 5     | [Args & Kwargs](python_grundlagen/12_args_kwargs.md)                    | [hier](../checklists/checklist_1.md#args-kwargs)               | [hier](../begriffe/begriffe_1.md#args-kwargs)               |
-| 5     | [PEP](python_grundlagen/13_pep.md)                                      | [hier](../checklists/checklist_1.md#pep)                       | [hier](../begriffe/begriffe_1.md#pep)                       |
-| 5     | [Design Patterns](python_grundlagen/14_design_patterns.md)              | [hier](../checklists/checklist_1.md#design-patterns)           | [hier](../begriffe/begriffe_1.md#design-patterns)           |
-| 5     | [Strategy Pattern](python_grundlagen/14_x1_strategy.md)                 | [hier](../checklists/checklist_1.md#strategy)                  | [hier](../begriffe/begriffe_1.md#strategy)                  |
-| 5     | [Factory Method Pattern](python_grundlagen/14_x2_factory_method.md)     | [hier](../checklists/checklist_1.md#factory-method)            | [hier](../begriffe/begriffe_1.md#factory-method)            |
-| 5     | [Adapter Pattern](python_grundlagen/14_x3_adapter.md)                   | [hier](../checklists/checklist_1.md#adapter)                   | [hier](../begriffe/begriffe_1.md#adapter)                   |
-| 5     | [OOP vs Funktional](python_grundlagen/15_oop_vs_funktionale.md)         | [hier](../checklists/checklist_1.md#oop-vs-funktional)         | [hier](../begriffe/begriffe_1.md#oop-vs-funktional)         |
+| 5     | [Getter Setter](python_grundlagen/08_getter_setter.md)                              | [hier](../checklists/checklist_1.md#getter-setter)             | [hier](../begriffe/begriffe_1.md#getter-setter)             |
+| 5     | [Class- & Staticmethod](python_grundlagen/09_class_staticmethod.md)                 | [hier](../checklists/checklist_1.md#class-staticmethod)        | [hier](../begriffe/begriffe_1.md#class-staticmethod)        |
+| 5     | [Vererbung](python_grundlagen/10_vererbung.md)                                      | [hier](../checklists/checklist_1.md#vererbung)                 | [hier](../begriffe/begriffe_1.md#vererbung)                 |
+| 5     | [Magic Methods](python_grundlagen/11_magic_methods.md)                              | [hier](../checklists/checklist_1.md#magic-methods)             | [hier](../begriffe/begriffe_1.md#magic-methods)             |
+| 5     | [Args & Kwargs](python_grundlagen/12_args_kwargs.md)                                | [hier](../checklists/checklist_1.md#args-kwargs)               | [hier](../begriffe/begriffe_1.md#args-kwargs)               |
+| 5     | [PEP](python_grundlagen/13_pep.md)                                                  | [hier](../checklists/checklist_1.md#pep)                       | [hier](../begriffe/begriffe_1.md#pep)                       |
+| 5     | [Design Patterns](python_grundlagen/14_design_patterns.md)                          | [hier](../checklists/checklist_1.md#design-patterns)           | [hier](../begriffe/begriffe_1.md#design-patterns)           |
+| 5     | [Strategy Pattern](python_grundlagen/14_x1_strategy.md)                             | [hier](../checklists/checklist_1.md#strategy)                  | [hier](../begriffe/begriffe_1.md#strategy)                  |
+| 5     | [Factory Method Pattern](python_grundlagen/14_x2_factory_method.md)                 | [hier](../checklists/checklist_1.md#factory-method)            | [hier](../begriffe/begriffe_1.md#factory-method)            |
+| 5     | [Adapter Pattern](python_grundlagen/14_x3_adapter.md)                               | [hier](../checklists/checklist_1.md#adapter)                   | [hier](../begriffe/begriffe_1.md#adapter)                   |
+| 5     | [OOP vs Funktional](python_grundlagen/15_oop_vs_funktionale.md)                     | [hier](../checklists/checklist_1.md#oop-vs-funktional)         | [hier](../begriffe/begriffe_1.md#oop-vs-funktional)         |
 | 5     | [git Teil 3](git/git_Teil3.md)                                                      | [hier](../checklists/checklist_git.md#teil-3)                  | [hier](../begriffe/begriffe_1.md#teil-3)                    |
 
 # Block 2
+
+## SQL Datenbanken
 
 | Woche | Unterricht                                                                                           | Lernziele                                                                         | Begriffssammlung                    |
 |-------|------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:------------------------------------|
@@ -49,7 +53,7 @@
 | 6     | [Arten von SQL Anweisungen](datenbanken/unterrichte/sql_types.md)                                    | [hier](../checklists/checklist_db1.md#sql-sprachtypisierung)                      | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [UML für Datenbanken](datenbanken/unterrichte/uml_diagramme.md)                                      | [hier](../checklists/checklist_db1.md#uml-diagramme)                              | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Normalisierung von Daten](datenbanken/unterrichte/normalization.md)                                 | [hier](../checklists/checklist_db1.md#normalisierung-von-daten)                   | [hier](../begriffe/begriffe_db1.md) |
-| 6     | [Indizes und referentielle Integrität](datenbanken/unterrichte/indices_and_referential_integrity.md) | [hier](../checklists/checklist_db1.md#indizes-und-referentielle-integrität)       | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Indizes und referentielle Integrität](datenbanken/unterrichte/indices_and_referential_integrity.md) | [hier](../checklists/checklist_db1.md#indizes-und-referentielle-integritt)        | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Arbeitsumgebung einrichten](datenbanken/unterrichte/how_we_will_work.md)                            | [hier](../checklists/checklist_db1.md#arbeitsumgebung)                            | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Reservierte Ausdrücke](datenbanken/unterrichte/reserved_words_sqlite.md)                            | [hier](../checklists/checklist_db1.md#reservierte-worte)                          | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Datentypen](datenbanken/unterrichte/daten_typen_sqlite.md)                                          | [hier](../checklists/checklist_db1.md#datentypen)                                 | [hier](../begriffe/begriffe_db1.md) |
@@ -63,10 +67,107 @@
 | 6     | [Fragen an die Datenbank](datenbanken/unterrichte/joins_and_views.md)                                | [hier](../checklists/checklist_db1.md#joins-und-views)                            | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Abschluss SQL-Datenbanken](datenbanken/unterrichte/finally.md)                                      | [hier](../checklists/checklist_db1.md#schlusswort)                                | [hier](../begriffe/begriffe_db1.md) |
 
+## Clean Code
+| Woche | Unterricht                                                                   | Lernziele                                                             | Begriffssammlung                                                   |
+|-------|------------------------------------------------------------------------------|:----------------------------------------------------------------------|:-------------------------------------------------------------------|
+| 6     | [Clean Code Einführung](clean_code/Introduction.md)                          | [hier](../checklists/checklist_clean_code.md#basics)                  | [hier](../begriffe/begriffe_clean_code.md#basics)                  |
+| 6     | [Benennungskonventionen](clean_code/Benennungskonventionen.md)               | [hier](../checklists/checklist_clean_code.md#benennungskonventionen)  | [hier](../begriffe/begriffe_clean_code.md#benennungskonventionen)  |
+| 6     | [DRY Prinzip](clean_code/DRY/DRY.md)                                         | [hier](../checklists/checklist_clean_code.md#dry)                     | [hier](../begriffe/begriffe_clean_code.md#dry)                     |
+| 6     | [Fehlerbehandlung](clean_code/Fehlerbehandlung/Fehlerbehandlung.md)          | [hier](../checklists/checklist_clean_code.md#fehlerbehandlung)        | [hier](../begriffe/begriffe_clean_code.md#fehlerbehandlung)        |
+| 6     | [Funktionsgestaltung](clean_code/Funktionsgestaltung/Funktionsgestaltung.md) | [hier](../checklists/checklist_clean_code.md#funktionsgestaltung)     | [hier](../begriffe/begriffe_clean_code.md#funktionsgestaltung)     |
+| 6     | [Globale Parameter](clean_code/Globale_Parameter/Globale_Parameter.md)       | [hier](../checklists/checklist_clean_code.md#globale-parameter)       | [hier](../begriffe/begriffe_clean_code.md#globale-parameter)       |
+| 7     | [Guard Clauses](clean_code/GuardClauses/GuardClauses.md)                     | [hier](../checklists/checklist_clean_code.md#guard-clauses)           | [hier](../begriffe/begriffe_clean_code.md#guard-clauses)           |
+| 7     | [Kommentare](clean_code/Kommentare/Kommentare.md)                            | [hier](../checklists/checklist_clean_code.md#kommentare)              | [hier](../begriffe/begriffe_clean_code.md#kommentare)              |
+| 7     | [List Comprehensions](clean_code/ListComprehension/ListComprehension.md)     | [hier](../checklists/checklist_clean_code.md#list-comprehension)      | [hier](../begriffe/begriffe_clean_code.md#list-comprehension)      |
+| 7     | [Type Hints](clean_code/Typehints/Typehints.md)                              | [hier](../checklists/checklist_clean_code.md#type-hints)              | [hier](../begriffe/begriffe_clean_code.md#type-hints)              |
+| 7     | [Übungsaufgaben](clean_code/Uebungsaufgabe/Uebungsaufgabe.md)                | [hier](../checklists/checklist_clean_code.md)                         | [hier](../begriffe/begriffe_clean_code.md)                         |
+| 7     | [Variablennamen](clean_code/Variablenbenennung/Variablenbenennung.md)        | [hier](../checklists/checklist_clean_code.md#benennung-von-variablen) | [hier](../begriffe/begriffe_clean_code.md#benennung-von-variablen) |
+
+## Python & Datenbanken
+| Woche | Unterricht                                                                                             | Lernziele                                                          | Begriffssammlung                                               |
+|-------|--------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|:---------------------------------------------------------------|
+| 7     | [Python sqlite3 ](datenbanken/unterrichte/sqlite3_basic.md)                                            | [hier](../checklists/checklist_db_python.md#sqlite-in-python)      | [hier](../begriffe/begriffe_db_python.md)                      |
+| 7     | [sqlite3 weitere Funktionen](datenbanken/unterrichte/sqlite3_advanced.md)                              | [hier](../checklists/checklist_db_python.md#sqlite-in-python)      | [hier](../begriffe/begriffe_db_python.md)                      |
+| 7     | [Einführung in SQLAlchemy](datenbanken/einfuehrung.md)                                                 | [hier](../checklists/checkliste3.md#einfuehrung-sqlalchemy)        | [hier](../begriffe/begriffe3.md#einfuehrung-sqlalchemy)        |
+| 7     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.md)                                           | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte) | [hier](../begriffe/begriffe3.md#fortgeschrittene-orm-konzepte) |
+| 7     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.md)                              | [hier](../checklists/checkliste3.md#sql-expression-language)       | [hier](../begriffe/begriffe3.md#sql-expression-language)       |
+| 7     | [Best Practices und fortgeschrittene Themen](datenbanken/best_practices.md)                            | [hier](../checklists/checkliste3.md#best-practices)                | [hier](../begriffe/begriffe3.md#best-practices)                |
+<!-- | 7     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.md)                            | [hier](../checklists/checkliste3.md#integration-in-flask)          | [hier](../begriffe/begriffe3.md#integration-in-flask)          | -->
+
+## Web
+| Woche | Unterricht                                                                                             | Lernziele                                                          | Begriffssammlung                                               |
+|-------|--------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|:---------------------------------------------------------------|
+| 8     | [Einführung in APIs](web/unterrichte/einfuehrung_apis/einfuehrung_apis.md)                             | [hier](../checklists/checklist_web.md#api-intro)                   | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [API Arten](web/unterrichte/api_arten/api_arten.md)                                                    | [hier](../checklists/checklist_web.md#api-arten)                   | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [API Kommunikation](web/unterrichte/api_kommunikation/api_kommunikation.md)                            | [hier](../checklists/checklist_web.md#api-kommunikation)           | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [API Nutzung](web/unterrichte/api_nutzung/api_nutzung.md)                                              | [hier](../checklists/checklist_web.md#api-nutzung)                 | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [HTTP Methoden](web/unterrichte/http_methoden/http_methoden.md)                                        | [hier](../checklists/checklist_web.md#http-methoden)               | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [Python Requests](web/unterrichte/python_requests/python_requests.md)                                  | [hier](../checklists/checklist_web.md#python-requests)             | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [Capstone Projekt](web/unterrichte/capstone_projekt_1/capstone_projekt_1.md)                           | [hier](../checklists/checklist_web.md)                             | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [Aufbau einer API](web/unterrichte/api_aufbau/api_aufbau.md)                                           | [hier](../checklists/checklist_web.md#aufbau-einer-api)            | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [Implementierungsprinzipien](web/unterrichte/implementierung_prinzip/implementierung_prinzip.md)       | [hier](../checklists/checklist_web.md#implementierungsprinzipien)  | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [Web API Frameworks](web/unterrichte/api_frameworks/api_frameworks.md)                                 | [hier](../checklists/checklist_web.md#web-api-frameworks)          | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [RESTful Planung](web/unterrichte/restful_planung/restful_planung.md)                                  | [hier](../checklists/checklist_web.md#restful-planning)            | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [RESTful Umsetzung](web/unterrichte/restful_umsetzung/restful_umsetzung.md)                            | [hier](../checklists/checklist_web.md#restful-umsetzung)           | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [RESTful Testing](web/unterrichte/restful_testing/restful_testing.md)                                  | [hier](../checklists/checklist_web.md#restful-testing)             | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [RESTful Dokumentation](web/unterrichte/restful_dokumentation/restful_dokumentation.md)                | [hier](../checklists/checklist_web.md#restful-dokumentation)       | [hier](../begriffe/begriffe_web.md)                            |
+| 8     | [Capstone Projekt](web/unterrichte/capstone_projekt_2/capstone_projekt_2.md)                           | [hier](../checklists/checklist_web.md)                             | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Einführung ins Web](web/unterrichte/einfuehrung_web/einfuehrung_web.md)                               | [hier](../checklists/checklist_web.md#einführung-web)              | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Web Basics](web/unterrichte/web_basics/web_basics.md)                                                 | [hier](../checklists/checklist_web.md#web-basics)                  | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [HTML](web/unterrichte/html/html.md)                                                                   | [hier](../checklists/checklist_web.md#html)                        | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [CSS](web/unterrichte/css/css.md)                                                                      | [hier](../checklists/checklist_web.md#css)                         | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Komplexes HTML](web/unterrichte/komplex_html/komplex_html.md)                                         | [hier](../checklists/checklist_web.md#komplexeres-html)            | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Komplexes CSS](web/unterrichte/komplex_css/komplex_css.md)                                            | [hier](../checklists/checklist_web.md#komplexeres-css)             | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Capstone Projekt](web/unterrichte/capstone_projekt_3/)                                                | [hier](../checklists/checklist_web.md)                             | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Einführung in interaktive Websites](web/unterrichte/einfuehrung_interaktiv/einfuehrung_interaktiv.md) | [hier](../checklists/checklist_web.md#interaktive-websites)        | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [JavaScript](web/unterrichte/javascript_basics/javascript_basics.md)                                   | [hier](../checklists/checklist_web.md#javascript)                  | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Eventhandling](web/unterrichte/eventhandling/eventhandling.md)                                        | [hier](../checklists/checklist_web.md#eventhandling)               | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Fetch API](web/unterrichte/fetch_api/fetch_api.md)                                                    | [hier](../checklists/checklist_web.md#fetch-api)                   | [hier](../begriffe/)                                           |
+| 9     | [JS Frameworks & Libraries](web/unterrichte/frameworks/frameworks.md)                                  | [hier](../checklists/checklist_web.md#js-frameworks--libraries)    | [hier](../begriffe/)                                           |
+| 9     | [Moderne Web Applications](web/unterrichte/modern_web/modern_web.md)                                   | [hier](../checklists/checklist_web.md#moderne-web-applikationen)   | [hier](../begriffe/)                                           |
+| 9     | [Serverside Javascript (NPM)](web/unterrichte/serverside_js/serverside_js.md)                          | [hier](../checklists/checklist_web.md#serverside-javascript-npm)   | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Rendering](web/unterrichte/rendering/rendering.md)                                                    | [hier](../checklists/checklist_web.md#rendering)                   | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Capstone Projekt](web/unterrichte/capstone_projekt_4/capstone_projekt_4.md)                           | [hier](../checklists/checklist_web.md)                             | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Einführung in die Web App Planung](web/unterrichte/web_planung/web_planung.md)                        | [hier](../checklists/checklist_web.md#planung-von-web-apps)        | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Projekte mit Struktur](web/unterrichte/projekte_struktur/projekte_struktur.md)                        | [hier](../checklists/checklist_web.md#projekte-mit-struktur)       | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [UML](web/unterrichte/uml/uml.md)                                                                      | [hier](../checklists/checklist_web.md#uml)                         | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Test & Domain Driven](web/unterrichte/test_domain_driven/test_domain_driven.md)                       | [hier](../checklists/checklist_web.md#test--domain-driven)         | [hier](../begriffe/begriffe_web.md)                            |
+| 9     | [Capstone Projekt](web/unterrichte/capstone_projekt_5/capstone_projekt_5.md)                           | [hier](../checklists/checklist_web.md)                             | [hier](../begriffe/begriffe_web.md)                            |
+
+## Azure
+| Woche | Unterricht                                                                     | Lernziele                                                     | Begriffssammlung                      |
+|-------|--------------------------------------------------------------------------------|:--------------------------------------------------------------|:--------------------------------------|
+| 10    | [Cloud Intro](azure/unterrichte/cloud_intro/cloud_intro.md)                    | [hier](../checklists/checklist_azure.md#cloud-intro)          | [hier](../begriffe/begriffe_azure.md) |
+| 10    | [Cloud Anbieter](azure/unterrichte/cloud_anbieter/cloud_anbieter.md)           | [hier](../checklists/checklist_azure.md#cloud-anbieter)       | [hier](../begriffe/begriffe_azure.md) |
+| 10    | [Azure Intro](azure/unterrichte/azure_intro/azure_intro.md)                    | [hier](../checklists/checklist_azure.md#azure-intro)          | [hier](../begriffe/begriffe_azure.md) |
+| 10    | [Azure Services](azure/unterrichte/azure_services/azure_services.md)           | [hier](../checklists/checklist_azure.md#azure-services)       | [hier](../begriffe/begriffe_azure.md) |
+| 10    | [Static Web Apps](azure/unterrichte/static_web_apps/static_web_apps.md)        | [hier](../checklists/checklist_azure.md#static-web-apps)      | [hier](../begriffe/begriffe_azure.md) |
+| 10    | [Cloud Web Apps](azure/unterrichte/cloud_backend/cloud_backend.md)             | [hier](../checklists/checklist_azure.md#cloud-web-apps)       | [hier](../begriffe/begriffe_azure.md) |
+| 10    | [Cloud Databases](azure/unterrichte/cloud_database/cloud_database.md)          | [hier](../checklists/checklist_azure.md#cloud-databases)      | [hier](../begriffe/begriffe_azure.md) |
+| 10    | [Cloud Planung](azure/unterrichte/cloud_planung/cloud_planung.md)              | [hier](../checklists/checklist_azure.md#cloud-planung)        | [hier](../begriffe/begriffe_azure.md) |
+| 10    | [Blobs und Funktionen](azure/unterrichte/blobs_funktionen/blobs_funktionen.md) | [hier](../checklists/checklist_azure.md#blobs-und-funktionen) | [hier](../begriffe/begriffe_azure.md) |
+| 10    | [Cloud Monitoring](azure/unterrichte/cloud_monitoring/cloud_monitoring.md)     | [hier](../checklists/checklist_azure.md#cloud-monitoring)     | [hier](../begriffe/begriffe_azure.md) |
+
 # Block 3
 
-| Woche | Unterricht                           | Lernziele | Begriffssammlung |
-|-------|--------------------------------------|-----------|------------------|
+## Docker
+
+| Woche | Unterricht | Lernziele | Begriffssammlung |
+|-------|------------|-----------|------------------|
+|       |            |           |                  |
+|       |            |           |                  |
+
+## NoSQL Datenbanken
+
+| Woche | Unterricht | Lernziele | Begriffssammlung |
+|-------|------------|-----------|------------------|
+|       |            |           |                  |
+|       |            |           |                  |
+
+## Datenverarbeitung und -darstellung
+
+| Woche | Unterricht | Lernziele | Begriffssammlung |
+|-------|------------|-----------|------------------|
 |  12   | [Einführung in Data Science](datascience/unterrichte/data_science_einfuehrung.md) | [hier](../checklists/checklist_data_science.md#einfuehrung) | [hier](../begriffe/begriffe_data_science.md) |
 |  12   | [Pandas: Einführung](datascience/unterrichte/pandas_einfuehrung.md) | [hier](../checklists/checklist_data_science.md#pandas_einfuehrung) | [hier](../begriffe/begriffe_data_science.md) |
 |  12   | [Pandas: Import/Export von Daten](datascience/unterrichte/pandas_import_export.md) | [hier](../checklists/checklist_data_science.md#pandas_import_export) | [hier](../begriffe/begriffe_data_science.md) |
@@ -79,3 +180,20 @@
 |  13   | [Pandas: Gruppieren und Pivotisieren](datascience/unterrichte/pandas_gruppieren_und_pivotisieren.md) | [hier](../checklists/checklist_data_science.md#pandas_gruppieren_und_pivotisieren) | [hier](../begriffe/begriffe_data_science.md) |
 |  13   | [Matplotlib: Ticks](datascience/unterrichte/matplotlib_ticks.md) | [hier](../checklists/checklist_data_science.md#matplotlib_ticks) | [hier](../begriffe/begriffe_data_science.md) |
 |  13   | [Pandas: Multiindex](datascience/unterrichte/pandas_multiindex.md) | [hier](../checklists/checklist_data_science.md#pandas_multiindex) | [hier](../begriffe/begriffe_data_science.md) |
+
+
+## Python Fortgeschritten
+
+| Woche | Unterricht | Lernziele | Begriffssammlung |
+|-------|------------|-----------|------------------|
+|       |            |           |                  |
+|       |            |           |                  |
+
+## Robotik
+
+| Woche | Unterricht | Lernziele | Begriffssammlung |
+| ----- | ---------- | --------- | ---------------- |
+|  15   | [Einführung: Robotik & Robotersimulatoren](robotik/unterrichte/einfuehrung_robotik.md) | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |
+|  15   | [Einen Webots-Roboter aus Python heraus steuern](robotik/unterrichte/webots_roboter_aus_python_steuern.md) | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |
+
+
