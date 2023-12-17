@@ -17,6 +17,14 @@
 - die Motoren eines Webots-Roboters aus Python heraus ansteuern
 - einen ersten einfachen eigenen Robotercontroller in Python zur Roboternavigation schreiben können
 
+## Reaktiver Controller
+
+- die drei Hauptansätze für Roboterkontrollarchitekturen kennen
+- verstehen, was die Idee hinter Braitenberg-Vehikeln ist (Beispiel für reaktive Controller)
+- einen eigenen reaktiven Controller in Webots zur Hindernissvermeidung in Python programmieren können
+
+
+
 
 
 
