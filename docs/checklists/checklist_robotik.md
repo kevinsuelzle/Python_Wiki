@@ -29,6 +29,13 @@
 - eine komplette Webots-Welt (Stadtumgebung) in einem eigenen Projekt wiederverwenden
 - Tastatureingaben in Webots vom Benutzer einlesen und Fahrzeuggeschwindigkeit und Lenkwinkel hierüber steuern
 
+## Webots Fahrerassistenzsystem: Fahrsequenz-Assistenten
+
+- sich klar machen, dass die Entwicklung eines Robotik/Fahrerassistenz-Systems viele Komponenten, Arbeitsschritte besitzt
+- die Entwicklung eines einfachen Fahrerassistenzsystems (für Fahrsequenz-Aufnahme und -Abspielen) durchlaufen
+- die Grenzen der Robotik / von einfachen Fahrerassistenzsystemen erfahren
+
+
 
 
 

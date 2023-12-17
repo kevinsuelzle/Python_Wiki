@@ -197,5 +197,6 @@
 |  15   | [Einen Webots-Roboter aus Python heraus steuern](robotik/unterrichte/webots_roboter_aus_python_steuern.md) | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |
 |  15   | [Reaktiver Robotercontroller](robotik/unterrichte/webots_reaktiver_controller.md) | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |
 |  15   | [Webots Fahrzeug aus Python heraus steuern](robotik/unterrichte/webots_fahrzeug_steuern_aus_python.md) | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |
+|  15   | [Fahrsequenz-Assistent in Python/Webots](robotik/unterrichte/webots_fahrerassistenzsystem.md) | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |
 
 
