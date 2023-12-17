@@ -23,6 +23,13 @@
 - verstehen, was die Idee hinter Braitenberg-Vehikeln ist (Beispiel für reaktive Controller)
 - einen eigenen reaktiven Controller in Webots zur Hindernissvermeidung in Python programmieren können
 
+## Webots Fahrzeug aus Python heraus steuern
+
+- sich bewusst machen, dass Webots nicht nur eine Roboter- sondern auch ein Fahrzeug-Simulator ist
+- eine komplette Webots-Welt (Stadtumgebung) in einem eigenen Projekt wiederverwenden
+- Tastatureingaben in Webots vom Benutzer einlesen und Fahrzeuggeschwindigkeit und Lenkwinkel hierüber steuern
+
+
 
 
 

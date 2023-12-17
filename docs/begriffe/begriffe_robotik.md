@@ -26,4 +26,5 @@
 | Braitenberg Vehikel | Einfache, hypothetische Fahrzeuge mit Sensoren und Motoren, die auf direkte Reaktionen auf Umweltreize basieren. |
 | Sensor-Motor-Kopplung | Eine Verbindung, bei der jeder Nähesensor eines Roboters mit dem Motor auf der gleichen Seite verbunden ist. |
 | Sensorreichweite | Die Reichweite der Sensoren eines Roboters, die bestimmt, wie früh er auf ein Hindernis reagiert. |
+| Fahrerassistenzsystem | Eine Funktionalität in modernen Fahrzeugen, die eine Teilaufgabe des Fahrens des Fahrzeuges übernimmt, um die Sicherheit oder den Fahrkomfort zu erhöhen |
 
