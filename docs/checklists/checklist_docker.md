@@ -38,49 +38,51 @@
     - Bereitstellung eines Glossars mit Schlüsselbegriffen und Definitionen.
     - Auflistung nützlicher Ressourcen für weiterführendes Lernen und Vertiefung.
 
-# Grundlegendes
+## Feinziele
+
+### Grundlegendes
 
 - Verstehen, was Docker ist und wie es sich von anderen Virtualisierungstechnologien unterscheidet.
 - Erkennen der Vorteile und Einsatzmöglichkeiten von Docker.
 - Einführung in die grundlegenden Komponenten von Docker: Container, Images, Dockerfile.
 
-# Installation und Konfiguration
+### Installation und Konfiguration
 
 - Erlernen der Installation von Docker auf verschiedenen Betriebssystemen.
 - Durchführen der Erstkonfiguration und Verifizierung der Installation.
 - Verstehen der Docker-Architektur und Hauptkomponenten.
 
-# Docker Images und Container
+### Docker Images und Container
 
 - Erstellen und Verwalten von Docker-Images.
 - Grundlagen zum Starten, Stoppen und Verwalten von Docker-Containern.
 - Untersuchen von Containern und Images mit Docker-Befehlen.
 
-# Dockerfile und Docker Compose
+### Dockerfile und Docker Compose
 
 - Erstellen von Dockerfiles zur Automatisierung des Image-Build-Prozesses.
 - Verstehen der Syntax und Befehle in Dockerfiles.
 - Einführung in Docker Compose und Erstellung von `docker-compose.yml` Dateien.
 
-# Netzwerk und Datenspeicherung in Docker
+### Netzwerk und Datenspeicherung in Docker
 
 - Verstehen der Docker-Netzwerkarchitektur und Konfiguration von Netzwerken.
 - Umgang mit persistenten Daten in Docker durch Volumes.
 - Verbinden von Containern und Konfigurieren von Netzwerk-Einstellungen.
 
-# Best Practices und Sicherheit
+### Best Practices und Sicherheit
 
 - Erlernen von Best Practices für die Entwicklung und Bereitstellung von Docker-Containern.
 - Einführung in Sicherheitsaspekte und Absicherung von Docker-Containern.
 - Verstehen von Netzwerksicherheit und Zugriffskontrollen in Docker.
 
-# Fortgeschrittene Themen
+### Fortgeschrittene Themen
 
 - Einführung in Orchestrierungstools wie Docker Swarm und Kubernetes.
 - Vertiefung in fortgeschrittene Docker-Funktionen und -Techniken.
 - Erkunden von Multi-Container-Anwendungen und deren Management.
 
-# Praktische Szenarien
+### Praktische Szenarien
 
 - Durchführung von Hands-on-Übungen zur Anwendung des Gelernten.
 - Bearbeitung von realistischen Szenarien und Fallstudien.
