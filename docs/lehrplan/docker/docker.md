@@ -43,9 +43,9 @@ praktische Übungen und fortgeschrittene Themen zu schaffen.
 ## Aufgaben
 [15min]
 
-### **Aufgabe: Unterschied zwischen VM und Container beschreiben  🌶️**
+### **Aufgabe: Unterschied zwischen VM und Container beschreiben 🌶️**
 
-### **Aufgabe: Beschreibe Umstände, in denen der Einsatz von Docker zweckmäßig erscheint  🌶️**
+### **Aufgabe: Beschreibe Umstände, in denen der Einsatz von Docker zweckmäßig erscheint 🌶️**
 
 ## Geschichtlicher Rückblick: Die Rolle der Open Container Initiative (OCI)
 
