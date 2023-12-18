@@ -48,9 +48,9 @@
 
 ### Installation und Konfiguration
 
-- Erlernen der Installation von Docker auf verschiedenen Betriebssystemen.
-- Durchführen der Erstkonfiguration und Verifizierung der Installation.
-- Verstehen der Docker-Architektur und Hauptkomponenten.
+- Teilnehmer sollen in der Lage sein, Docker auf verschiedenen Betriebssystemen zu installieren.
+- Verständnis der grundlegenden Konfigurationseinstellungen von Docker.
+- Fähigkeit, grundlegende Docker-Befehle und -Operationen auszuführen.
 
 ### Docker Images und Container
 

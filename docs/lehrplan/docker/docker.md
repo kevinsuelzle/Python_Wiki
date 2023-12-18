@@ -40,6 +40,13 @@ die Welt der modernen Softwareentwicklung und -bereitstellung einzutauchen. Nach
 von Docker werden wir uns mit der Installation und Konfiguration von Docker befassen, um eine solide Basis für
 praktische Übungen und fortgeschrittene Themen zu schaffen.
 
+## Aufgaben
+[15min]
+
+### **Aufgabe: Unterschied zwischen VM und Container beschreiben  🌶️**
+
+### **Aufgabe: Beschreibe Umstände, in denen der Einsatz von Docker zweckmäßig erscheint  🌶️**
+
 ## Geschichtlicher Rückblick: Die Rolle der Open Container Initiative (OCI)
 
 [10min]
@@ -155,3 +162,7 @@ zu diesem Thema enthält. Hier ist ein Vorschlag für die Struktur:
 | 14:15 - 14:30 | Pause                                |
 | 14:30 - 16:00 | Praktische Übungen und Szenarien     |
 | 16:00 - 16:15 | Schlussbemerkungen                   |
+
+## Referenz
+
+[Docker.com](https://docs.docker.com/)
