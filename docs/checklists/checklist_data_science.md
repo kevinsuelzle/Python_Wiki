@@ -82,3 +82,12 @@
 - Tabellen mit Multiindex erzeugen können
 - Daten aus Tabellen mit Multiindex auslesen können
 
+# Pandas & Matplotlib: Zeitreihen
+
+- Zeitreihen glätten können
+- Zeitreihen auf eine beliebige neue Periode (z.B. wochenweise, monatsweise) resampeln
+- Zeitreihen auf Trends und Saisonalität untersuchen können
+- Zeitreihen alternativ als Heatmaps visualisieren können
+- wissen, was Zeitreihenprädiktion ist
+- Zeitreihen unterteilen und deskriptive Statistiken für die Teilzeitreihen berechnen können
+

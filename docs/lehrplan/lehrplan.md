@@ -180,6 +180,7 @@
 |  13   | [Pandas: Gruppieren und Pivotisieren](datascience/unterrichte/pandas_gruppieren_und_pivotisieren.md) | [hier](../checklists/checklist_data_science.md#pandas_gruppieren_und_pivotisieren) | [hier](../begriffe/begriffe_data_science.md) |
 |  13   | [Matplotlib: Ticks](datascience/unterrichte/matplotlib_ticks.md) | [hier](../checklists/checklist_data_science.md#matplotlib_ticks) | [hier](../begriffe/begriffe_data_science.md) |
 |  13   | [Pandas: Multiindex](datascience/unterrichte/pandas_multiindex.md) | [hier](../checklists/checklist_data_science.md#pandas_multiindex) | [hier](../begriffe/begriffe_data_science.md) |
+|  13   | [Pandas & Matplotlib: Zeitreihenanalyse](datascience/unterrichte/pandas_matplotlib_zeitreihen.md) | [hier](../checklists/checklist_data_science.md#pandas_matplotlib_zeitreihen) | [hier](../begriffe/begriffe_data_science.md) |
 
 
 ## Python Fortgeschritten

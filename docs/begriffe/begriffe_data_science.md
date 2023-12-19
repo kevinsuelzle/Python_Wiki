@@ -22,3 +22,4 @@
 | Multiindex | Ein Multiindex in Pandas ermöglicht es, mehrere Indexebenen in einem DataFrame oder einer Series zu haben, wodurch komplexere Datenstrukturen dargestellt werden können |
 | Gruppen (bei Pandas) | Gruppen in Pandas beziehen sich auf das Ergebnis der groupby-Operation, die Daten anhand gemeinsamer Merkmale in Untergruppen segmentiert, um Aggregations-, Transformations- oder Filteroperationen durchzuführen |
 | Pivottabellen | Eine Pivottabelle in Pandas ist eine Datenzusammenfassungstabelle, die häufig für die interaktive Analyse und das Umstrukturieren von Daten, insbesondere zur Segmentierung und Aggregation, verwendet wird |
+| Zeitreihe | Eine zeitlich geoordnete Folge von Werten, z.B. Sensorwerte einer Maschine oder Umsatzzahlen eines Unternehmens |
