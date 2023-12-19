@@ -63,6 +63,8 @@ Diese Anleitung führt Sie durch die grundlegenden Schritte zur Installation von
 Informationen und Fehlerbehebung besuchen Sie bitte
 die [Docker-Dokumentation](https://docs.docker.com/desktop/install/mac-install/).
 
+### **Aufgabe: Installation von Docker auf dem eigenen Rechner ausführen. 🌶️**
+
 ### **Unterschiede zwischen Docker Desktop und Docker Engine.**
 
 Der Unterschied zwischen Docker Desktop und Docker Engine liegt hauptsächlich in ihrer Zielgruppe, Funktionalität und
@@ -116,8 +118,6 @@ die Kernkomponente, die auf Linux-Systemen läuft und eine direktere, CLI-basier
    erkennbar, dass ein Update für Docker vorliegt.
 
    ![img.png](img.png)
-
-### **Aufgabe: Installation von Docker auf dem eigenen Rechner ausführen. 🌶️**
 
 ### **Hinweis für Docker unter Linux**
 
