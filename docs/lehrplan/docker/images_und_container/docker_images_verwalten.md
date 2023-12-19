@@ -6,48 +6,64 @@ Container-Umgebungen zu haben.
 
 ## Warum Docker-Images in Repositories speichern?
 
-1. **Versionierung und Wiederverwendbarkeit:** Repositories ermöglichen es Ihnen, verschiedene Versionen eines Images zu
-   speichern und bei Bedarf darauf zurückzugreifen.
+### **Versionierung und Wiederverwendbarkeit:**
 
-2. **Kollaboration:** Durch das Hochladen von Images in ein Repository können Teams gemeinsam an Anwendungen arbeiten
-   und sicherstellen, dass jeder auf die gleiche Umgebung zugreift.
+Repositories ermöglichen es Ihnen, verschiedene Versionen eines Images zu
+speichern und bei Bedarf darauf zurückzugreifen.
 
-3. **Deployment:** Images aus Repositories können leicht auf Produktions- oder Entwicklungsservern bereitgestellt
-   werden.
+### **Kollaboration:**
+
+Durch das Hochladen von Images in ein Repository können Teams gemeinsam an Anwendungen arbeiten
+und sicherstellen, dass jeder auf die gleiche Umgebung zugreift.
+
+### **Deployment:**
+
+Images aus Repositories können leicht auf Produktions- oder Entwicklungsservern bereitgestellt
+werden.
 
 ## Schritte zum Sichern eines Docker-Images in einem Repository
 
-1. **Wählen eines Docker-Repositorys:**
-    - Das bekannteste Docker-Repository ist Docker Hub, aber es gibt auch andere Optionen wie AWS Elastic Container
-      Registry (ECR), Google Container Registry (GCR) oder private Repositories.
+### **Wählen eines Docker-Repositorys:**
 
-2. **Taggen des Docker-Images:**
-    - Bevor Sie ein Image in ein Repository hochladen, sollten Sie es taggen. Dies gibt dem Image einen Namen und
-      optional eine Version.
-    - Befehl zum Taggen eines Images:
-      ```bash
-      docker tag hello-world-python yourusername/hello-world-python:version
-      ```
-    - Ersetzen Sie `yourusername` mit Ihrem Benutzernamen im Repository und `version` mit dem gewünschten Versions-Tag.
+- Das bekannteste Docker-Repository ist Docker Hub, aber es gibt auch andere Optionen wie AWS Elastic Container
+  Registry (ECR), Google Container Registry (GCR) oder private Repositories.
 
-3. **Anmelden am Docker-Repository:**
-    - Um Images hochzuladen, müssen Sie sich bei dem Repository anmelden.
-    - Befehl zum Anmelden bei Docker Hub:
-      ```bash
-      docker login
-      ```
-    - Folgen Sie den Anweisungen, um Ihre Anmeldeinformationen einzugeben.
+### **Taggen des Docker-Images:**
 
-4. **Hochladen (Push) des Images:**
-    - Nachdem das Image getaggt und Sie angemeldet sind, können Sie es in das Repository hochladen.
-    - Befehl zum Hochladen des Images:
-      ```bash
-      docker push yourusername/hello-world-python:version
-      ```
+- Bevor Sie ein Image in ein Repository hochladen, sollten Sie es taggen. Dies gibt dem Image einen Namen und
+  optional eine Version.
+- Befehl zum Taggen eines Images:
 
-5. **Überprüfen des Images im Repository:**
-    - Nach dem Hochladen können Sie sich in Ihrem Repository anmelden und überprüfen, ob das Image erfolgreich
-      hochgeladen wurde.
+```bash
+docker tag hello-world-python yourusername/hello-world-python:version
+```
+
+- Ersetzen Sie `yourusername` mit Ihrem Benutzernamen im Repository und `version` mit dem gewünschten Versions-Tag.
+
+### **Anmelden am Docker-Repository:**
+
+- Um Images hochzuladen, müssen Sie sich bei dem Repository anmelden.
+- Befehl zum Anmelden bei Docker Hub:
+
+```bash
+docker login
+```
+
+- Folgen Sie den Anweisungen, um Ihre Anmeldeinformationen einzugeben.
+
+### **Hochladen (Push) des Images:**
+
+- Nachdem das Image getaggt und Sie angemeldet sind, können Sie es in das Repository hochladen.
+- Befehl zum Hochladen des Images:
+
+```bash
+docker push yourusername/hello-world-python:version
+```
+
+### **Überprüfen des Images im Repository:**
+
+- Nach dem Hochladen können Sie sich in Ihrem Repository anmelden und überprüfen, ob das Image erfolgreich
+  hochgeladen wurde.
 
 ## Best Practices
 
@@ -87,30 +103,39 @@ Sicherheit Ihrer Docker-Images. Hier erfahren Sie, wie Sie ein privates Docker-R
 
 ### Schritte zur Einrichtung eines selbst gehosteten Docker-Repositories
 
-1. **Vorbereitung:**
-    - Stellen Sie sicher, dass Sie einen Server haben, auf dem Sie die Registry hosten können.
-    - Installieren Sie Docker auf diesem Server.
+#### **Vorbereitung:**
 
-2. **Starten der Docker Registry:**
-    - Führen Sie den folgenden Befehl aus, um eine Docker Registry als Container zu starten:
-      ```bash
-      docker run -d -p 5000:5000 --restart=always --name registry registry:2
-      ```
-    - Dies startet eine Docker Registry, die auf Port 5000 lauscht.
+- Stellen Sie sicher, dass Sie einen Server haben, auf dem Sie die Registry hosten können.
+- Installieren Sie Docker auf diesem Server.
 
-3. **Taggen und Pushen eines Images zur privaten Registry:**
-    - Taggen Sie Ihr lokales Image für die private Registry:
-      ```bash
-      docker tag hello-world-python localhost:5000/hello-world-python
-      ```
-    - Pushen Sie das Image zur privaten Registry:
-      ```bash
-      docker push localhost:5000/hello-world-python
-      ```
+#### **Starten der Docker Registry:**
 
-4. **Zugriff auf das private Repository:**
-    - Um auf Images aus der privaten Registry zuzugreifen, verwenden Sie den vollständigen Pfad in Ihren
-      Docker-Befehlen, z.B. `localhost:5000/hello-world-python`.
+- Führen Sie den folgenden Befehl aus, um eine Docker Registry als Container zu starten:
+
+```bash
+docker run -d -p 5000:5000 --restart=always --name registry registry:2
+```
+
+- Dies startet eine Docker Registry, die auf Port 5000 lauscht.
+
+#### **Taggen und Pushen eines Images zur privaten Registry:**
+
+- Taggen Sie Ihr lokales Image für die private Registry:
+
+```bash
+docker tag hello-world-python localhost:5000/hello-world-python
+```
+
+- Pushen Sie das Image zur privaten Registry:
+
+```bash
+docker push localhost:5000/hello-world-python
+```
+
+#### **Zugriff auf das private Repository:**
+
+- Um auf Images aus der privaten Registry zuzugreifen, verwenden Sie den vollständigen Pfad in Ihren
+  Docker-Befehlen, z.B. `localhost:5000/hello-world-python`.
 
 ### Sicherheitsaspekte
 
@@ -135,18 +160,22 @@ Repositories zu erkunden:
 Docker Hub ist das bekannteste und am häufigsten genutzte öffentliche Repository für Docker-Images. Es bietet eine
 Vielzahl von offiziellen und Community-basierten Images.
 
-1. **Web-Oberfläche:**
-    - Besuchen Sie [Docker Hub](https://hub.docker.com/).
-    - Nutzen Sie die Suchfunktion, um nach spezifischen Images oder Anbietern zu suchen.
-    - Durchstöbern Sie Kategorien oder verwenden Sie Tags, um relevante Images zu finden.
+### **Web-Oberfläche:**
 
-2. **Docker CLI:**
-    - Verwenden Sie den `docker search` Befehl, um Docker Hub direkt über die Kommandozeile zu durchsuchen. Zum
-      Beispiel:
-      ```bash
-      docker search python
-      ```
-    - Dieser Befehl zeigt eine Liste von Python-Images mit Beschreibungen und weiteren Informationen an.
+- Besuchen Sie [Docker Hub](https://hub.docker.com/).
+- Nutzen Sie die Suchfunktion, um nach spezifischen Images oder Anbietern zu suchen.
+- Durchstöbern Sie Kategorien oder verwenden Sie Tags, um relevante Images zu finden.
+
+### **Docker CLI:**
+
+- Verwenden Sie den `docker search` Befehl, um Docker Hub direkt über die Kommandozeile zu durchsuchen. Zum
+  Beispiel:
+
+```bash
+docker search python
+```
+
+- Dieser Befehl zeigt eine Liste von Python-Images mit Beschreibungen und weiteren Informationen an.
 
 ### Andere Öffentliche Repositories
 

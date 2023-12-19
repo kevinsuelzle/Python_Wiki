@@ -248,7 +248,7 @@ und Mac-Systemen zu konfigurieren.
 Hier ist eine Markdown-Tabelle mit Docker-Befehlen, die sich auf System- und Verwaltungsaufgaben beziehen:
 
 | Befehl                   | Beschreibung                                                                                                                                                              |
-|:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `docker info`            | Zeigt Systemweite Informationen über Docker, einschließlich der Anzahl der Container und Images, Speicher- und Netzwerkkonfiguration, Kernel-Version usw.                 |
 | `docker version`         | Zeigt Informationen über die Docker-Version, einschließlich der Client- und Server-Version (Docker-Daemon).                                                               |
 | `docker system df`       | Zeigt die belegte Speichermenge durch Docker-Images, Container, Volumes und Build Cache.                                                                                  |
