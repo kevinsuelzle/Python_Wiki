@@ -76,3 +76,5 @@ unerlässlich. Durch die Nutzung von Container-Logs, Docker-Statusbefehlen und H
 identifizieren und beheben. Die Implementierung einer soliden Logging-Strategie, einschließlich der Verwendung von
 Logging-Treibern und zentralem Log-Management, ist entscheidend für die Aufrechterhaltung der Übersichtlichkeit und
 Reaktionsfähigkeit in komplexen Docker-Umgebungen.
+
+TODO: kann man hier vllt ein paar logs zeigen und etwas interpretieren?

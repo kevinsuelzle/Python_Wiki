@@ -47,3 +47,5 @@ Die Containerisierung mit Docker bietet eine effiziente, portable und konsistent
 -bereitstellung. Sie ermöglicht es Entwicklern und Betriebsteams, Anwendungen schneller und zuverlässiger als je zuvor
 zu erstellen und zu verwalten.
 
+TODO: Dieses Kapitel ist extrem allgemein. Ginge ein konrkretes Beispiel?
+

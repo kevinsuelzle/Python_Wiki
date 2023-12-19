@@ -1,5 +1,7 @@
 # Grundbegriffe von Docker
 
+TODO: Das hier bitte in die drei-spaltige Tabellenform bringen mit Referenzen.
+
 1. **Docker:**  
    Eine Plattform für die Entwicklung, Bereitstellung und Ausführung von Anwendungen in isolierten Umgebungen namens
    Containern.

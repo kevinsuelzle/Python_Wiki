@@ -10,7 +10,7 @@ ersten Schritt unserer Lernziele in diesem Seminar.
 ## Was ist Docker?
 
 Docker ist eine Open-Source-Plattform, die die Entwicklung, den Versand und die Ausführung von Anwendungen vereinfacht.
-Es ermöglicht es, Anwendungen in sogenannten Containern zu verpacken. Diese Container sind leichtgewichtig, tragbar und
+**Docker ermöglicht, Anwendungen in sogenannten Containern zu verpacken**. Diese Container sind leichtgewichtig, tragbar und
 bieten eine konsistente Umgebung, unabhängig davon, wo die Anwendung ausgeführt wird.
 
 ## Containervirtualisierung: Ein Paradigmenwechsel
@@ -43,7 +43,7 @@ praktische Übungen und fortgeschrittene Themen zu schaffen.
 ## Aufgaben
 [15min]
 
-### **Aufgabe: Unterschied zwischen VM und Container beschreiben 🌶️**
+### **Aufgabe: Unterschied zwischen (Virtuellen Maschine) VM und Container beschreiben 🌶️**
 
 ### **Aufgabe: Beschreibe Umstände, in denen der Einsatz von Docker zweckmäßig erscheint 🌶️**
 
@@ -88,81 +88,10 @@ wesentlicher Bestandteil eines größeren Ökosystems von Container-Technologien
 ihnen helfen, die Bedeutung von Docker im Kontext der gesamten Branche zu würdigen und die Wichtigkeit von
 Standards und Interoperabilität in der Softwareentwicklung zu erkennen.
 
-Um eine strukturierte und leicht navigierbare Unterrichtsmappe für das Docker-Seminar zu erstellen, können wir die
-Lernziele in eine Reihe von Überschriften umwandeln. Jede Überschrift verweist auf eine Datei, die spezifische Inhalte
-zu diesem Thema enthält. Hier ist ein Vorschlag für die Struktur:
-
-## Seminarstruktur: Docker-Seminar
-
-### [Grundlegendes Verständnis von Docker](docker.md)
-
-- Einführung in die Containervirtualisierung und Docker.
-- Unterschiede zwischen traditioneller Virtualisierung und Containern.
-
-### [Installation und Konfiguration](installation_und_konfiguration.md)
-
-- Schritt-für-Schritt-Anleitung zur Installation von Docker.
-- Grundlegende Konfiguration und Einrichtung.
-
-### [Docker-Images und Container](docker_images_und_container.md)
-
-- Erstellen und Verwalten von Docker-Images.
-- Lebenszyklus von Containern: Erstellen, Starten, Stoppen.
-
-### [Dockerfile und Docker Compose](dockerfile_und_docker_compose.md)
-
-- Erstellung und Nutzung von Dockerfiles.
-- Einführung in Docker Compose.
-
-### [Netzwerk und Datenspeicherung in Docker](netzwerk_und_datenspeicherung)
-
-- Docker-Netzwerkarchitektur und Konfiguration.
-- Umgang mit persistenten Daten und Volumes.
-
-### [Best Practices und Sicherheit](best_practices_und_sicherheit.md)
-
-- Best Practices für die Entwicklung und Bereitstellung.
-- Grundlagen der Sicherheit in Docker-Umgebungen.
-
-### [Fortgeschrittene Themen](fortgeschrittene_themen.md)
-
-- Einführung in Docker Swarm und Kubernetes.
-- Überblick über fortgeschrittene Docker-Funktionen.
-
-### [Praktische Übungen und Szenarien](praktische_uebungen_und_szenarien.md)
-
-- Hands-on-Übungen zur Anwendung des Gelernten.
-- Realistische Anwendungsszenarien.
-
-## Unterrichtsplan
-[10min]
-
-### Tag 1: Einführung und Grundlagen
-
-| Zeit          | Aktivität                                         |
-|---------------|---------------------------------------------------|
-| 08:30 - 09:00 | Einführung in Docker und Containervirtualisierung |
-| 09:00 - 10:00 | Installation und Konfiguration von Docker         |
-| 10:00 - 10:15 | Pause                                             |
-| 10:15 - 12:00 | Docker-Images und Container                       |
-| 12:00 - 12:45 | Mittagspause                                      |
-| 12:45 - 14:15 | Dockerfile und Docker Compose                     |
-| 14:15 - 14:30 | Pause                                             |
-| 14:30 - 16:15 | Netzwerk und Datenspeicherung in Docker           |
-
-### Tag 2: Fortgeschrittene Themen und Praxis
-
-| Zeit          | Aktivität                            |
-|---------------|--------------------------------------|
-| 08:30 - 10:00 | Docker Best Practices und Sicherheit |
-| 10:00 - 10:15 | Pause                                |
-| 10:15 - 12:00 | Fortgeschrittene Docker-Themen       |
-| 12:00 - 12:45 | Mittagspause                         |
-| 12:45 - 14:15 | Praktische Übungen und Szenarien     |
-| 14:15 - 14:30 | Pause                                |
-| 14:30 - 16:00 | Praktische Übungen und Szenarien     |
-| 16:00 - 16:15 | Schlussbemerkungen                   |
-
 ## Referenz
 
 [Docker.com](https://docs.docker.com/)
+
+TODO: kannst du vllt noch mal ein ganz konkretes Anwendungsbeispiel einfügen?
+Ich bin jetzt schon etwas weiter im Lesen und kann mir nur weil ich VMs kenne, annähernd vorstellen,
+was genau Docker ist. Bestimmt fällt dir da was greifbares ein.

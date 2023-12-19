@@ -1,4 +1,5 @@
 # Netzwerk und Datenspeicherung in Docker
+TODO: einige dieser Inhalte waren doch schon in anderen kapiteln?
 
 In diesem Kapitel vertiefen wir die Themen Netzwerk und Datenspeicherung in Docker, die bereits in den Abschnitten zu
 Docker-Images und Containern sowie in der Diskussion über persistente Datenspeicherung und Container-Kommunikation
@@ -73,7 +74,8 @@ docker run --rm --volumes-from mein-container -v $(pwd):/backup ubuntu tar cvf /
 # Wiederherstellung
 docker run --rm -v mein-volume:/mein-volume -v $(pwd):/backup ubuntu tar xvf /backup/backup.tar
 ```
-
+TODO: das hier scheint der einzige interessante und neue Aspekt dieses Kapitels zu sein. Willst du das 
+woanders hin übertragen und alles oder den rest rausnehmen?
 Sichert das Volume `mein-volume` von `mein-container` und stellt es später wieder her.
 
 ## Zusammenfassung

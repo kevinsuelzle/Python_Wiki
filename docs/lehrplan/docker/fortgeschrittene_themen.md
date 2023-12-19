@@ -1,4 +1,5 @@
 # Fortgeschrittene Themen in Docker - Swarm, Kubernetes und Terraform
+TODO: dieses kapitel ist höchsten ein ausblick und würde ich entfernen.
 
 Nachdem wir die Grundlagen von Docker, Netzwerkmanagement, Datenspeicherung und die Verwendung von Dockerfile und Docker
 Compose behandelt haben, ist es an der Zeit, in fortgeschrittene Themen einzusteigen. In diesem Kapitel konzentrieren

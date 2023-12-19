@@ -3,7 +3,7 @@
 [105min]
 
 ```mermaid
-graph LR
+graph TD
     A[Dockerfile] -->|build| B[Docker Image]
     B -->|push| C[Repository z.B. Docker Hub]
     C -->|pull| D[Host System]
@@ -14,6 +14,7 @@ graph LR
     E -->|commit| H[Neues Image]
     H -->|push| C
 ```
+TODO: Es wäre gut, wenn diese Überschriften zu den Überschriften in den Dateien passen würden. Sonst ist es verwirrend.
 
 ## [Verständnis von Docker-Images](images_und_container/docker_images_verstehen.md)
 

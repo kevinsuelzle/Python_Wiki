@@ -10,6 +10,7 @@ Datenspeicherung in Docker und wie sie effektiv genutzt werden können.
 
 - Standardmäßig speichert jeder Docker-Container Daten in einem schreibbaren Layer, der über dem Image-Dateisystem
   liegt. Diese Daten gehen verloren, wenn der Container gelöscht wird.
+TODO: Layer?
 
 ### 2. **Volumes:**
 
@@ -32,7 +33,7 @@ Datenspeicherung in Docker und wie sie effektiv genutzt werden können.
 ```bash
 docker volume create mein-volume
 ```
-
+TODO: der Fachbegriff "Volume" ist mir unklar
 Dieser Befehl erstellt ein neues Volume namens `mein-volume`.
 
 ### 2. **Einen Container mit einem Volume starten:**
@@ -42,6 +43,7 @@ docker run -d -v mein-volume:/pfad/im/container mein-image
 ```
 
 Startet einen Container und bindet `mein-volume` an einen Pfad im Container.
+TODO: Sowas tauchte vorher schon mal auf. Kann das dann da entfernt werden?
 
 ## Verwendung von Bind Mounts
 
@@ -64,7 +66,8 @@ Bindet einen Pfad auf dem Host-System in den Container ein.
 - Achten Sie auf die Sicherheit der Daten, insbesondere wenn sensible Informationen gespeichert werden.
 
 ### 3. **Backup und Wiederherstellung:**
-
+TODO: Ich finde solche anweisungen schwierig so ohne weiteres zu formulieren. das war jetzt schon öfter
+Gut wäre es wenn man dazu schreibt, "wenn sie mehr mit Docker arbeiten, beachten sie..." oder so...
 - Implementieren Sie Strategien für das Backup und die Wiederherstellung von Volumes, um Datenverlust zu verhindern.
 
 ### 4. **Volume-Management:**
@@ -99,7 +102,7 @@ Bindet einen Pfad auf dem Host-System in den Container ein.
    docker volume create mein-volume
    docker run -d -v mein-volume:/app/data mein-image
    ```
-
+TODO; ich glaube jetzt verstehe ich es langsam. Vllt die erklärung zu volume nach oben packen.
 In diesem Beispiel wird `mein-volume` an `/app/data` im Container gemountet. Daten, die in `/app/data` geschrieben
 werden, werden im Volume gespeichert.
 

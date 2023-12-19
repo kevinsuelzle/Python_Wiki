@@ -1,4 +1,4 @@
-# **Erstellung von Docker-Images:**
+# Erstellung von Docker-Images:
 
 Docker-Images werden üblicherweise mit einem Dockerfile erstellt. Ein Dockerfile ist eine Textdatei, die eine Reihe von
 Anweisungen enthält, die beschreiben, wie das Image aufgebaut werden soll. Diese Anweisungen können das Hinzufügen von
@@ -6,7 +6,7 @@ Dateien, das Ausführen von Befehlen und das Setzen von Umgebungsvariablen umfas
 
 ## Grundlagen der Docker-Image-Erstellung
 
-Die Erstellung und Verwaltung von Docker-Images ist ein zentraler Aspekt der Arbeit mit Docker. Ein Docker-Image dient
+Ein Docker-Image dient
 als Vorlage für das Erstellen von Containern und enthält alles, was für das Ausführen einer Anwendung benötigt wird –
 von Binärdateien und Bibliotheken bis hin zu Systemeinstellungen.
 
@@ -60,7 +60,7 @@ COPY . /app
 WORKDIR /app
 CMD ["python", "app.py"]
 ```
-
+TODO: Es ist unklar, was du meinst, wenn du "**offizielles** Pythonimage" sagst.
 - Dieses Dockerfile verwendet das offizielle Python-Image als Basis, kopiert die Anwendungsdateien in das Image und
   definiert den Befehl zum Starten der Python-Anwendung.
 
@@ -72,7 +72,7 @@ CMD ["python", "app.py"]
 docker build -t hello-world-python .
 ```
 
-- Achten sie auf den Punkt am Ende der Anweisung.
+- Achten Sie auf den Punkt am Ende der Anweisung. **TODO: Warum? Welche Bedeutung hat der Punkt?**
 - Der `-t`-Flag weist Docker an, dem Image einen Namen (in diesem Fall `hello-world-python`) zu geben.
 
 ### **Ausführen des Containers:**
@@ -84,6 +84,8 @@ docker run hello-world-python
 ```
 
 - Sie sollten die Ausgabe "Hello World from Docker using Python!" im Terminal sehen.
+
+TODO: Hier wäre es vllt gut noch mal zu erklären, in wie fern jetzt ein DockerContainer läuft und ob er immernoch läuft.
 
 ### **Aufgabe: Arbeitsschritte nachvollziehen und Ausführung prüfen. 🌶️**
 

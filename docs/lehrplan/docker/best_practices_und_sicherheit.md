@@ -1,4 +1,4 @@
-# Kapitel: Best Practices und Sicherheit in Docker
+# Best Practices und Sicherheit in Docker
 
 In diesem Kapitel konzentrieren wir uns auf Best Practices und Sicherheitsaspekte beim Umgang mit Docker. Diese
 Richtlinien sind entscheidend, um die Integrität und Sicherheit Ihrer Docker-Container und -Images zu gewährleisten und
@@ -11,7 +11,7 @@ gleichzeitig eine effiziente und wartbare Umgebung zu schaffen.
       minimieren.
 
 2. **Minimale Images:**
-    - Verwenden Sie minimale Basis-Images wie Alpine, um die Angriffsfläche zu reduzieren. Je weniger im Image enthalten
+    - Verwenden Sie minimale Basis-Images wie Alpine **TODO: alpine?**, um die Angriffsfläche zu reduzieren. Je weniger im Image enthalten
       ist, desto geringer ist das Risiko.
 
 3. **Image-Größe Reduzieren:**
@@ -56,6 +56,7 @@ gleichzeitig eine effiziente und wartbare Umgebung zu schaffen.
   WORKDIR /app
   CMD ["./meineapp"]
   ```
+  TODO: bitte ausführlicher erklären
   Dieses Beispiel zeigt ein Dockerfile, das ein minimales Alpine-Image verwendet und als nicht-Root-Benutzer läuft.
 
 - **Netzwerksicherheit konfigurieren:**
@@ -64,6 +65,7 @@ gleichzeitig eine effiziente und wartbare Umgebung zu schaffen.
   docker run --network=isoliertes_netzwerk meineapp
   ```
   Erstellt ein isoliertes Netzwerk und startet einen Container darin.
+TODO: verstehe ich nicht
 
 ## Zusammenfassung
 

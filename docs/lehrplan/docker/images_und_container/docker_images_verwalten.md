@@ -1,11 +1,12 @@
-# **Arbeiten mit Docker-Registries:**
+# Arbeiten mit Docker-Registries:
 
 Nachdem Sie ein Docker-Image erstellt haben, ist der nächste Schritt oft, dieses Image in einem Repository zu sichern.
 Dies ermöglicht es Ihnen, das Image zu teilen, es auf verschiedenen Maschinen zu verwenden und eine Versionierung Ihrer
 Container-Umgebungen zu haben.
 
 ## Warum Docker-Images in Repositories speichern?
-
+TOOD: Du hast irgendwie ganz viele verschiedene Varianten, wie du Aufzählungen machst. Mal mit Überschriften,
+mal mit Nummerirung.
 ### **Versionierung und Wiederverwendbarkeit:**
 
 Repositories ermöglichen es Ihnen, verschiedene Versionen eines Images zu
@@ -115,7 +116,7 @@ Sicherheit Ihrer Docker-Images. Hier erfahren Sie, wie Sie ein privates Docker-R
 ```bash
 docker run -d -p 5000:5000 --restart=always --name registry registry:2
 ```
-
+TODO: was bedeuten die teile des befehls? -d, -p, 5000:5000, usw. kurze Erklärung genügt.
 - Dies startet eine Docker Registry, die auf Port 5000 lauscht.
 
 #### **Taggen und Pushen eines Images zur privaten Registry:**
@@ -141,13 +142,13 @@ docker push localhost:5000/hello-world-python
 
 - **HTTPS:** Es wird empfohlen, Ihre Registry mit HTTPS zu sichern, um die Übertragung von Images zu schützen.
 - **Authentifizierung:** Implementieren Sie Authentifizierungsmechanismen, um den Zugriff auf Ihre Registry zu
-  kontrollieren.
+  kontrollieren. **TODO: und wie soll das gehen? Für die Teilnehmer zu weit denke ich**
 
 ### **Aufgabe: Nacharbeiten der Schritte 🌶️**
 
-### **Aufgabe: Löschen von Containern und Images zur Erzeugung einer leeren Docker Umgebung. 🌶️🌶️.**
+### **Aufgabe: Löschen von Containern und Images zur Erzeugung einer leeren Docker Umgebung. (Recherche erforderlich) 🌶️🌶️.**
 
-### **Aufgabe: Anmelden und Abmelden am Repo, Laden des Images mit pull 🌶️🌶️.️**
+### **Aufgabe: Anmelden und Abmelden am Repo, Laden des Images mit pull (Recherche erforderlich)🌶️🌶️.️**
 
 ## Images finden
 

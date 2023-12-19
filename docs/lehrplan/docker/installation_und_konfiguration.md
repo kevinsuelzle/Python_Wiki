@@ -1,7 +1,7 @@
 # Installation und Konfiguration von Docker
 
 [60min]
-
+TODO: Diese Zielsetzungen bitte in die Checklisten einarbeiten, falls noch nicht geschehen und hier löschen.
 ## Zielsetzung
 
 - Teilnehmer sollen in der Lage sein, Docker auf verschiedenen Betriebssystemen zu installieren.
@@ -120,6 +120,8 @@ die Kernkomponente, die auf Linux-Systemen läuft und eine direktere, CLI-basier
    ![img.png](img.png)
 
 ### **Hinweis für Docker unter Linux**
+TODO: Da die Teilnehmer alle eine Mac haben, kannst du die Teile zu Windows und Linux in eine Seperate Datei packen und
+nur auf diese verlinken.
 
 #### Warum `sudo` benötigt wird:
 
@@ -229,9 +231,8 @@ und Mac-Systemen zu konfigurieren.
 - Nachdem Sie Änderungen in den Einstellungen vorgenommen haben, klicken Sie auf "Apply & Restart", um die Änderungen zu
   übernehmen und Docker neu zu starten.
 
-### **Aufgabe: Docker Menü ausprobieren und Dashboard aufrufen. Vertraut machen mit den zur Verfügung stehenden Seiten.
-
-🌶️**
+TODO: Aufgabe wirkt mir sehr unspeziefisch.
+### **Aufgabe: Docker Menü ausprobieren und Dashboard aufrufen. Vertraut machen mit den zur Verfügung stehenden Seiten.🌶️**
 
 #### Zusammenfassung
 

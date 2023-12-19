@@ -64,9 +64,14 @@ services:
     image: "redis:alpine"
 ```
 
+TODO: Könntest du hier bitte alles kurz erklären? Was ist Redis?
+
 Dieses Beispiel definiert eine einfache Anwendung mit einem Webdienst und einem Redis-Cache.
 
 Hier ist eine Tabelle mit den wichtigsten Docker Compose-Befehle und ihren Erklärungen:
+
+TODO: Wo ist der Unterschied zwischen starten und bauen?
+TODO: Die Befehle hier gehen weit über das hinaus, was man sich mit Hilfe des Beispiels vorstellen kann.
 
 | Befehl                   | Beschreibung                                                                                                                                    |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -91,3 +96,5 @@ Dockerfile und Docker Compose sind mächtige Werkzeuge in der Docker-Ökosystem.
 Erstellen von Docker-Images bilden, ermöglicht Docker Compose das einfache Management komplexer Anwendungen, die aus
 mehreren Containern bestehen. Durch die Kombination dieser Werkzeuge können Sie effiziente, reproduzierbare und
 skalierbare Anwendungsumgebungen erstellen.
+
+TODO: mir fehlt ein größeres Beispiel um zu verstehen, was hier abgehen soll.
