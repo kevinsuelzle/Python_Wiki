@@ -101,3 +101,12 @@
 - Boxplots zur Visualisierung von Ausreißern interpretieren können
 - Ausreißer mit Hilfe der Standardabweichung direkt identifizieren und rausfiltern können
 - Ausreißer mit Winsorizing entfernen
+
+# Pandas/Matplotlib/Seaborn: DateTime (Zeitstempel)
+
+- wissen, wie man aus String DateTime Objekte macht
+- Bestimmte zeitliche Ausschnitte aus einer Zeitreihe "rausschneiden" können
+- Zeitreihen mit Matplotlib oder Seaborn visualisieren können
+- Hinzufügen von zusätzlichen Spalten auf Basis eines Zeitstempels wie Wochentag, Arbeitswoche, etc.
+- Frühestes/Spätestes Datum in einer Zeitreihe ermitteln können
+- Fehlende zeitliche Daten ergänzen können

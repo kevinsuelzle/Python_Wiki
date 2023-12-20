@@ -182,6 +182,7 @@
 |  13   | [Pandas: Multiindex](datascience/unterrichte/pandas_multiindex.md) | [hier](../checklists/checklist_data_science.md#pandas_multiindex) | [hier](../begriffe/begriffe_data_science.md) |
 |  13   | [Pandas & Matplotlib: Zeitreihenanalyse](datascience/unterrichte/pandas_matplotlib_zeitreihen.md) | [hier](../checklists/checklist_data_science.md#pandas_matplotlib_zeitreihen) | [hier](../begriffe/begriffe_data_science.md) |
 |  13   | [Pandas: Outlier (Ausreißer)](datascience/unterrichte/pandas_outlier.md) | [hier](../checklists/checklist_data_science.md#pandas_outlier) | [hier](../begriffe/begriffe_data_science.md) |
+|  13   | [Pandas & Matplotlib: DateTime (Zeitstempel)](datascience/unterrichte/pandas_matplotlib_datetime.md) | [hier](../checklists/checklist_data_science.md#pandas_matplotlib_datetime) | [hier](../begriffe/begriffe_data_science.md) |
 
 
 ## Python Fortgeschritten
