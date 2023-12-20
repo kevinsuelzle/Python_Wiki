@@ -1,4 +1,4 @@
-# Data Science Skript Übersicht
+# Robotik Skript Übersicht
 
 Dieses Skript bietet eine Einführung in das Thema Robotik & Python durch einen State-of-the-Art Roboter Simulator namens "Webot" (der übrigens ein Industrie-Standard ist).
 
