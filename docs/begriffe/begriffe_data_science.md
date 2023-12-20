@@ -23,3 +23,8 @@
 | Gruppen (bei Pandas) | Gruppen in Pandas beziehen sich auf das Ergebnis der groupby-Operation, die Daten anhand gemeinsamer Merkmale in Untergruppen segmentiert, um Aggregations-, Transformations- oder Filteroperationen durchzuführen |
 | Pivottabellen | Eine Pivottabelle in Pandas ist eine Datenzusammenfassungstabelle, die häufig für die interaktive Analyse und das Umstrukturieren von Daten, insbesondere zur Segmentierung und Aggregation, verwendet wird |
 | Zeitreihe | Eine zeitlich geoordnete Folge von Werten, z.B. Sensorwerte einer Maschine oder Umsatzzahlen eines Unternehmens |
+| IQR                 | Der Interquartilbereich (IQR) ist die Differenz zwischen dem 75. und 25. Perzentil eines Datensatzes und wird verwendet, um Ausreißer zu identifizieren. |
+| Z-Score             | Der Z-Score ist eine statistische Maßzahl, die angibt, wie viele Standardabweichungen ein Datenpunkt vom Mittelwert der Datenmenge entfernt ist. |
+| Winsorizing         | Winsorizing ist eine Methode zur Reduzierung von Ausreißern, indem extrem hohe und niedrige Werte auf einen bestimmten Perzentilwert gesetzt werden. |
+| Quantil             | Ein Quantil ist ein Wert, der einen Datensatz in gleich große, aufeinanderfolgende Teile teilt, wobei das 50. Perzentil beispielsweise dem Median entspricht. |
+| Standardabweichung  | Die Standardabweichung ist ein Maß für die Streuung der Werte in einem Datensatz, wobei höhere Werte auf eine größere Variabilität hinweisen. |

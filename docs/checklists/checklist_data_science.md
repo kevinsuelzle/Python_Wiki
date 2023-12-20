@@ -91,3 +91,13 @@
 - wissen, was Zeitreihenprädiktion ist
 - Zeitreihen unterteilen und deskriptive Statistiken für die Teilzeitreihen berechnen können
 
+# Pandas: Outlier (Ausreißer)
+
+- wissen, wie Outlier entstehen (Messfehler vs. Extremwerte)
+- verstehen, wieso Outlier gefährlich sind (Verfälschung von Statistiken)
+- Z-Score und IQR-Methode kennen, um Ausreißer zu identifizieren
+- Z-Score Methode anwenden können auf Pandas DataFrames, um Ausreißer zu identifizieren
+- IQR Methode anwenden können auf Pandas DataFrames, um Ausreißer zu identifizieren
+- Boxplots zur Visualisierung von Ausreißern interpretieren können
+- Ausreißer mit Hilfe der Standardabweichung direkt identifizieren und rausfiltern können
+- Ausreißer mit Winsorizing entfernen
