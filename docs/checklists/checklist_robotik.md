@@ -35,7 +35,13 @@
 - die Entwicklung eines einfachen Fahrerassistenzsystems (für Fahrsequenz-Aufnahme und -Abspielen) durchlaufen
 - die Grenzen der Robotik / von einfachen Fahrerassistenzsystemen erfahren
 
+## Webots Navigationsverhalten eines Roboters untersuchen
 
+- eine bestehende Webots-Welt kopieren und als Ausgangspunkt für einen neues Robotik-Projekt verwenden
+- einen Lokalisationssensor, wie den GPS-Sensor, von einem Roboter in Webots aus Python auslesen können
+- Navigationsdaten speichern
+- Navigationsdaten über Scatterplots, 2D Histogramme und Heatmaps visualisieren
+- die relative Aufenthaltshäufigkeit eines Roboters in einer Welt visualisieren können
 
 
 

@@ -27,4 +27,4 @@
 | Sensor-Motor-Kopplung | Eine Verbindung, bei der jeder Nähesensor eines Roboters mit dem Motor auf der gleichen Seite verbunden ist. |
 | Sensorreichweite | Die Reichweite der Sensoren eines Roboters, die bestimmt, wie früh er auf ein Hindernis reagiert. |
 | Fahrerassistenzsystem | Eine Funktionalität in modernen Fahrzeugen, die eine Teilaufgabe des Fahrens des Fahrzeuges übernimmt, um die Sicherheit oder den Fahrkomfort zu erhöhen |
-
+| Robotertrajektorie | Die "Robotertrajektorie" bezieht sich auf den Pfad oder die Bahn, die ein Roboter im Raum während einer Bewegung oder Aufgabenausführung verfolgt. |
