@@ -8,12 +8,12 @@ Konfigurationsdateien.
 ## Was ist ein Docker-Image?
 
 Ein Docker-Image ist vergleichbar mit einer Blaupause für einen Container oder, um es mehr computertechnisch
-auszudrücken,
-eine Klasse oder ein Objekt. **TODO: Was denn jetzt? Klass oder Objekt? Ich verstehe das Image als Klasse und den Container als Instanz**
+auszudrücken, eine Klasse. 
+
 Es ist eine leichte, eigenständige, ausführbare Software, die eine spezifische Umgebung für eine Anwendung bereitstellt.
 Wenn ein Container gestartet wird, wird das Docker-Image als Basis verwendet, um eine laufende Instanz – den Container –
-zu erstellen. Das ist in etwa so zu verstehen, als würde ein Objekt aus einer Klasse erstellt werden.
-TODO: Kann man ein Image also vergleichen mit einem Commit in git?
+zu erstellen. Das ist in etwa so zu verstehen, als würde eine Instanz aus einer Klasse erstellt werden.
+
 ## Merkmale von Docker-Images
 
 1. **Unveränderlichkeit:** Einmal erstellt, wird ein Image nicht mehr verändert. Änderungen erfolgen durch Erstellen
@@ -29,6 +29,15 @@ TODO: Kann man ein Image also vergleichen mit einem Commit in git?
 4. **Portabilität:** Docker-Images können auf jedem System ausgeführt werden, das Docker unterstützt, unabhängig von der
    zugrunde liegenden Infrastruktur. Dies gewährleistet Konsistenz über verschiedene Umgebungen hinweg.
 
-TODO: Ich könnte diese Aufgabe jetzt nicht wirklich beantworten, außer die obigen Punkte zu wiederholen. 
-TODO: Aufgaben haben die Form: ### Aufgabe: Überschrift mit Chillis, in der nächsten Zeile dann den Aufgabentext.
-### **Aufgabe: Erkläre, was ein Docker Image ist und welche Merkmale es auszeichnet 🌶️**
+[//]: # ()
+[//]: # (TODO: Ich könnte diese Aufgabe jetzt nicht wirklich beantworten, außer die obigen Punkte zu wiederholen. )
+
+[//]: # (   - stimmt, mehr soll es auch gar nicht sein. Deswegen auch nur ein Chilli. Wiederholen mit eigenen Worten festigt das Wissen.)
+
+[//]: # ()
+[//]: # (TODO: Aufgaben haben die Form: ### Aufgabe: Überschrift mit Chillis, in der nächsten Zeile dann den Aufgabentext.)
+
+[//]: # (   - ok)
+
+### **Aufgabe: Definition 🌶️**
+   Erkläre, was ein Docker Image ist und welche Merkmale es auszeichnet.
