@@ -11,7 +11,8 @@ gleichzeitig eine effiziente und wartbare Umgebung zu schaffen.
       minimieren.
 
 2. **Minimale Images:**
-    - Verwenden Sie minimale Basis-Images wie Alpine **TODO: alpine?**, um die Angriffsfläche zu reduzieren. Je weniger im Image enthalten
+    - Verwenden Sie minimale Basis-Images wie Alpine **TODO: alpine?**, um die Angriffsfläche zu reduzieren. Je weniger
+      im Image enthalten
       ist, desto geringer ist das Risiko.
 
 3. **Image-Größe Reduzieren:**
@@ -47,6 +48,18 @@ gleichzeitig eine effiziente und wartbare Umgebung zu schaffen.
 
 ## Praktisches Beispiel
 
+Um die Sicherheit zu erhöhen, ist es gängige Praxis, Benutzer anzulegen.
+Das folgende Dockerfile Beispiel nutzt Linux Befehle, um im Container einen Benutzer anzulegen. Dies sichert den
+Container
+ab, da der normale und standardmäßig aktive root-Zugang damit geschlossen ist.
+
+`alpine` ist dabei ein einfaches Linux image ohne weiter Funktionalität.
+
+Der `adduser` Befehl ist ein für alpine Linux gültiger Befehl, um Benutzer anzulegen. Das kann von Distribution zu
+Distribution anders sein. Hier gilt die Dokumentation des betreffenden Systems.
+
+Der `user` Befehl legt den akzeptierten Benutzer für das System fest.
+
 - **Dockerfile für ein minimales Image:**
   ```Dockerfile
   FROM alpine:3.12
@@ -56,16 +69,32 @@ gleichzeitig eine effiziente und wartbare Umgebung zu schaffen.
   WORKDIR /app
   CMD ["./meineapp"]
   ```
-  TODO: bitte ausführlicher erklären
-  Dieses Beispiel zeigt ein Dockerfile, das ein minimales Alpine-Image verwendet und als nicht-Root-Benutzer läuft.
+
+[//]: # (  TODO: bitte ausführlicher erklären. Erledigt.) 
 
 - **Netzwerksicherheit konfigurieren:**
+
+Ein weiterer Schritt, um die Sicherheit einer Anwendung zu verbessern, ist die Verwendung eines eigenen internen
+Netzwerkes. Ein Zugriff von außen ist damit nicht mehr möglich, es sei denn, man veröffentlicht den Port eines
+Containers in die Außenwelt mit der `port` Anweisung wie in docker-compose.yml gezeigt. Das funktioniert auch mit einem
+eigenen Befehl im dockerfile.
+
+Zunächst ist es so, dass das Ganze nur Sinn macht, wenn mehrere Container in einer Multi-Container Umgebung zusammen
+arbeiten sollen. Meist gibt es einen Zugangspunkt zur App (bezeichnet die Gesamtheit aller Container in einer
+docker-compose.yml Datei). Oft macht das nginx, ein reverse proxy. Er nimmt die Anfragen an die App entgegen und
+verteilt sie auf die Container.
+
+Standardmäßig baut docker compose ein eigenes Netzwerk auf, ohne weitere Konfiguration. Man kann aber auch Netzwerke
+explizit erstellen und so die Zusammenarbeit klarer definieren.
+
   ```bash
   docker network create --driver bridge isoliertes_netzwerk
   docker run --network=isoliertes_netzwerk meineapp
   ```
-  Erstellt ein isoliertes Netzwerk und startet einen Container darin.
-TODO: verstehe ich nicht
+
+Auf diese Weise läuft der Container in einem ganz bestimmten Netzwerk und ist nur darüber erreichbar.
+
+[//]: # (TODO: verstehe ich nicht. Erledigt.) 
 
 ## Zusammenfassung
 
