@@ -8,7 +8,7 @@ Konfigurationsdateien.
 ## Was ist ein Docker-Image?
 
 Ein Docker-Image ist vergleichbar mit einer Blaupause für einen Container oder, um es mehr computertechnisch
-auszudrücken, eine Klasse. 
+auszudrücken, eine Klasse.
 
 Es ist eine leichte, eigenständige, ausführbare Software, die eine spezifische Umgebung für eine Anwendung bereitstellt.
 Wenn ein Container gestartet wird, wird das Docker-Image als Basis verwendet, um eine laufende Instanz – den Container –
@@ -21,8 +21,13 @@ zu erstellen. Das ist in etwa so zu verstehen, als würde eine Instanz aus einer
 
 2. **Schichtung und Wiederverwendung:** Docker-Images bestehen aus Schichten. Jede Schicht repräsentiert eine Reihe von
    Unterschieden zum vorherigen Image. Diese Schichtung ermöglicht es, gemeinsame Basen zu nutzen und Speicherplatz
-   effizient zu verwenden. **TODO: Ich verstehe noch nicht, was genau die Unterschiede hier sind. Dateien?**
+   effizient zu verwenden.
 
+   Die Schichtung kommt zustande, indem die Befehle zur Herstellung des Containers zu seiner aktuellen Form nacheinander
+   abgearbeitet werden. Diese Befehle werden in einer Datei gesammelt: `Dockerfile` ohne Endung.
+
+   So sieht das Laden von Images in der Konsole aus. Man erkennt, wie die einzelnen Schichten nach und nach dazu kommen:
+  [//]: # (TODO: )
 3. **Effizienz:** Durch die Wiederverwendung von Schichten sind Docker-Images sehr effizient in Bezug auf Speicherplatz
    und Geschwindigkeit. Änderungen an einem Image erfordern nur das Herunterladen der geänderten Schichten.
 
@@ -30,14 +35,17 @@ zu erstellen. Das ist in etwa so zu verstehen, als würde eine Instanz aus einer
    zugrunde liegenden Infrastruktur. Dies gewährleistet Konsistenz über verschiedene Umgebungen hinweg.
 
 [//]: # ()
+
 [//]: # (TODO: Ich könnte diese Aufgabe jetzt nicht wirklich beantworten, außer die obigen Punkte zu wiederholen. )
 
 [//]: # (   - stimmt, mehr soll es auch gar nicht sein. Deswegen auch nur ein Chilli. Wiederholen mit eigenen Worten festigt das Wissen.)
 
 [//]: # ()
+
 [//]: # (TODO: Aufgaben haben die Form: ### Aufgabe: Überschrift mit Chillis, in der nächsten Zeile dann den Aufgabentext.)
 
 [//]: # (   - ok)
 
 ### **Aufgabe: Definition 🌶️**
-   Erkläre, was ein Docker Image ist und welche Merkmale es auszeichnet.
+
+Erkläre, was ein Docker Image ist und welche Merkmale es auszeichnet.

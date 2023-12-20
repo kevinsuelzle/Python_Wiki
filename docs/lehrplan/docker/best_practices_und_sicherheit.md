@@ -11,7 +11,7 @@ gleichzeitig eine effiziente und wartbare Umgebung zu schaffen.
       minimieren.
 
 2. **Minimale Images:**
-    - Verwenden Sie minimale Basis-Images wie Alpine **TODO: alpine?**, um die Angriffsfläche zu reduzieren. Je weniger
+    - Verwenden Sie minimale Basis-Images wie [python:3.8-slim]( dockerfile_und_docker_compose.md#beispiel-eines-dockerfiles ) , um die Angriffsfläche zu reduzieren. Je weniger
       im Image enthalten
       ist, desto geringer ist das Risiko.
 
@@ -53,7 +53,7 @@ Das folgende Dockerfile Beispiel nutzt Linux Befehle, um im Container einen Benu
 Container
 ab, da der normale und standardmäßig aktive root-Zugang damit geschlossen ist.
 
-`alpine` ist dabei ein einfaches Linux image ohne weiter Funktionalität.
+`python:3.8-slim` ist dabei ein einfaches Linux image ohne weiter Funktionalität.
 
 Der `adduser` Befehl ist ein für alpine Linux gültiger Befehl, um Benutzer anzulegen. Das kann von Distribution zu
 Distribution anders sein. Hier gilt die Dokumentation des betreffenden Systems.
@@ -62,7 +62,7 @@ Der `user` Befehl legt den akzeptierten Benutzer für das System fest.
 
 - **Dockerfile für ein minimales Image:**
   ```Dockerfile
-  FROM alpine:3.12
+  FROM python:3.8-slim
   RUN adduser -S meinapp
   USER meinapp
   COPY . /app
@@ -79,7 +79,7 @@ Netzwerkes. Ein Zugriff von außen ist damit nicht mehr möglich, es sei denn, m
 Containers in die Außenwelt mit der `port` Anweisung wie in docker-compose.yml gezeigt. Das funktioniert auch mit einem
 eigenen Befehl im dockerfile.
 
-Zunächst ist es so, dass das Ganze nur Sinn macht, wenn mehrere Container in einer Multi-Container Umgebung zusammen
+Das Ganze macht nur Sinn, wenn mehrere Container in einer Multi-Container Umgebung zusammen
 arbeiten sollen. Meist gibt es einen Zugangspunkt zur App (bezeichnet die Gesamtheit aller Container in einer
 docker-compose.yml Datei). Oft macht das nginx, ein reverse proxy. Er nimmt die Anfragen an die App entgegen und
 verteilt sie auf die Container.
@@ -94,7 +94,7 @@ explizit erstellen und so die Zusammenarbeit klarer definieren.
 
 Auf diese Weise läuft der Container in einem ganz bestimmten Netzwerk und ist nur darüber erreichbar.
 
-[//]: # (TODO: verstehe ich nicht. Erledigt.) 
+[//]: # (TODO: verstehe ich nicht. Erledigt hoffe ich.) 
 
 ## Zusammenfassung
 

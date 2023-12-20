@@ -10,7 +10,8 @@ ersten Schritt unserer Lernziele in diesem Seminar.
 ## Was ist Docker?
 
 Docker ist eine Open-Source-Plattform, die die Entwicklung, den Versand und die Ausführung von Anwendungen vereinfacht.
-**Docker ermöglicht, Anwendungen in sogenannten Containern zu verpacken**. Diese Container sind leichtgewichtig, tragbar und
+**Docker ermöglicht, Anwendungen in sogenannten Containern zu verpacken**. Diese Container sind leichtgewichtig, tragbar
+und
 bieten eine konsistente Umgebung, unabhängig davon, wo die Anwendung ausgeführt wird.
 
 ## Containervirtualisierung: Ein Paradigmenwechsel
@@ -41,6 +42,7 @@ von Docker werden wir uns mit der Installation und Konfiguration von Docker befa
 praktische Übungen und fortgeschrittene Themen zu schaffen.
 
 ## Aufgaben
+
 [15min]
 
 ### **Aufgabe: Unterschied zwischen (Virtuellen Maschine) VM und Container beschreiben 🌶️**
@@ -92,6 +94,26 @@ Standards und Interoperabilität in der Softwareentwicklung zu erkennen.
 
 [Docker.com](https://docs.docker.com/)
 
-TODO: kannst du vllt noch mal ein ganz konkretes Anwendungsbeispiel einfügen?
-Ich bin jetzt schon etwas weiter im Lesen und kann mir nur weil ich VMs kenne, annähernd vorstellen,
-was genau Docker ist. Bestimmt fällt dir da was greifbares ein.
+## Beispiel einer Docker Desktop Anzeige
+
+![img_2.png](img_2.png)
+
+Wir sehen hier zwei Applikationen
+
+1. endpoint-test
+
+   - drei Container, läuft
+
+2. appfacterpbackend_m1
+
+   - viele Container, läuft nicht.
+
+Beide bestehen aus einer Reihe von Containern.
+
+In der Tabelle erkennen wir einige Informationen zu den einzelnen Containern, z.B. Name (mit ID), Name des images und
+verschieden Status Werte.
+
+Hier wird der Unterschied zur Verwendung von Virtuellen Maschinen sehr deutlich. Man müsste für jeden Container
+eigentlich eine eigene virtuelle Maschine aufsetzen. Natürlich geht das, aber der Verwaltungsaufwand und der
+Ressourcenverbrauch ist enorm. Die Container teilen sich die Ressourcen des Betriebssystems und sind in einer Anwendung
+gruppiert. So kann man viel leichter und übersichtlicher auf die einzelnen Teile des Ganzen eingehen.
