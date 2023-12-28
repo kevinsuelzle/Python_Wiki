@@ -141,3 +141,40 @@ Hier wird der Pfad `/pfad/auf/host` des Host-Systems an `/app/data` im Container
 
 In beiden Fällen ermöglichen diese Methoden der Datenspeicherung, dass Daten im Container persistent gespeichert werden
 können, unabhängig vom Lebenszyklus des Containers selbst.
+
+
+## Fortgeschrittene Datenspeicherung
+
+### 1. **Volume-Treiber:**
+
+- Erkundung verschiedener Volume-Treiber und deren Einsatz in spezifischen Szenarien, wie z.B. bei der Integration
+  mit Cloud-Speicherlösungen.
+
+### 2. **Datenpersistenz in Clustern:**
+
+- Strategien zur Datenspeicherung in Docker-Swarm- oder Kubernetes-Clustern, einschließlich der Verwendung von
+  replizierten Volumes.
+
+### 3. **Backup und Wiederherstellung:**
+
+- Entwicklung von Strategien zur Datensicherung und Wiederherstellung für Docker-Volumes, um Datenverlust zu
+  vermeiden.
+
+### 4. **Performance-Optimierung:**
+
+- Techniken zur Optimierung der Leistung von Docker-Volumes, insbesondere bei datenintensiven Anwendungen.
+
+**Sichern und Wiederherstellen eines Volumes:**
+
+```bash
+# Backup
+docker run --rm --volumes-from mein-container -v $(pwd):/backup ubuntu tar cvf /backup/backup.tar /mein-volume
+
+# Wiederherstellung
+docker run --rm -v mein-volume:/mein-volume -v $(pwd):/backup ubuntu tar xvf /backup/backup.tar
+```
+TODO: das hier scheint der einzige interessante und neue Aspekt dieses Kapitels zu sein. Willst du das 
+woanders hin übertragen und alles oder den rest rausnehmen?
+
+Sichert das Volume `mein-volume` von `mein-container` und stellt es später wieder her.
+

@@ -16,19 +16,19 @@ graph TD
 ```
 TODO: Es wäre gut, wenn diese Überschriften zu den Überschriften in den Dateien passen würden. Sonst ist es verwirrend.
 
-## [Verständnis von Docker-Images](docker_images_verstehen.md)
+## [Docker Images verstehen](docker_images_verstehen.md)
 
-## [Erstellung von Docker-Images](docker_images_erstellen.md)
+## [Docker Images erstellen](docker_images_erstellen.md)
 
-## [Verwalten von Docker-Images](docker_images_verwalten.md)
+## [Docker Images verwalten](docker_images_verwalten.md)
 
-## [Lebenszyklus der Container](docker_container_lebenszyklus.md)
+## [Lebenszyklus der Docker Container](lebenszyklus_der_docker_container.md)
 
-## [Interaktion mit Containern](docker_container_interaktion.md)
+## [Interaktion mit Docker Containern](interaktion_mit_docker_containern.md)
 
-## [Netzwerk und Kommunikation](docker_container_netzwerk.md)
+## [Kommunikation zwischen und mit Containern](kommunikation_zwischen_und_mit_docker_containern.md)
 
-## [Persistente Datenspeicherung](docker_container_daten.md)
+## [Wo und wie Docker Container Daten speichern](wo_und_wie_docker_container_daten_speichern.md)
 
-## [Fehlerbehebung und Logs](docker_container_logs.md)
+## [Fehlersuche mit Container Logs](fehlersuche_mit__container_logs.md)
 

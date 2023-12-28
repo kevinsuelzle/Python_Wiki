@@ -107,7 +107,7 @@ Wir sehen hier zwei Applikationen
 In der Tabelle erkennen wir einige Informationen zu den einzelnen Containern, z.B. Name (mit ID), Name des images und
 verschieden Status Werte.
 
-Hier wird der Unterschied zur Verwendung von Virtuellen Maschinen sehr deutlich. Man müsste für jeden Container
+Hier wird der Unterschied zur Verwendung von virtuellen Maschinen sehr deutlich. Man müsste für jeden Container
 eigentlich eine eigene virtuelle Maschine aufsetzen. Natürlich geht das, aber der Verwaltungsaufwand und der
 Ressourcenverbrauch ist enorm. Die Container teilen sich die Ressourcen des Betriebssystems und sind in einer Anwendung
 gruppiert. So kann man viel leichter und übersichtlicher auf die einzelnen Teile des Ganzen eingehen.

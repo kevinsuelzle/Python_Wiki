@@ -147,20 +147,19 @@ nav:
               - Cloud Monitoring: lehrplan/azure/unterrichte/cloud_monitoring/cloud_monitoring.md
       - Block 3:
           - Docker:
-              - Einführung: lehrplan/docker/docker.md
+              - Einführung: lehrplan/docker/docker_introduction.md
               - Installation: lehrplan/docker/docker_installation_und_konfiguration.md
               - Einführung in Images und Container: lehrplan/docker/docker_images_und_container.md
-              - Images verstehen: lehrplan/docker/images_und_container/docker_images_verstehen.md
-              - Images erstellen: lehrplan/docker/images_und_container/docker_images_erstellen.md
-              - Images verwalten: lehrplan/docker/images_und_container/docker_images_verwalten.md
-              - Container Lebenszyklus: lehrplan/docker/images_und_container/docker_container_lebenszyklus.md
-              - Container Interaktion: lehrplan/docker/images_und_container/docker_container_interaktion.md
-              - Netzwerk und Kommunikation: lehrplan/docker/images_und_container/docker_container_netzwerk.md
-              - Persistente Datenspeicherung: lehrplan/docker/images_und_container/docker_container_daten.md
-              - Fehlerbehebung und Logs: lehrplan/docker/images_und_container/docker_container_logs.md
+              - Images verstehen: lehrplan/docker/docker_images_verstehen.md
+              - Images erstellen: lehrplan/docker/docker_images_erstellen.md
+              - Images verwalten: lehrplan/docker/docker_images_verwalten.md
+              - Container Lebenszyklus: lehrplan/docker/lebenszyklus_der_docker_container.md
+              - Container Interaktion: lehrplan/docker/interaktion_mit_docker_containern.md
+              - Netzwerk und Kommunikation: lehrplan/docker/kommunikation_zwischen_und_mit_docker_containern.md
+              - Persistente Datenspeicherung: lehrplan/docker/wo_und_wie_docker_container_daten_speichern.md
+              - Fehlerbehebung und Logs: lehrplan/docker/fehlersuche_mit__container_logs.md
               - Dockerfile und Docker Compose: lehrplan/docker/docker_dockerfile_und_docker_compose.md
               - Best Practices und Sicherheit: lehrplan/docker/docker_best_practices_und_sicherheit.md
-              - Netzwerk und Datenspeicherung: lehrplan/docker/docker_netzwerk_und_datenspeicherung.md
               - Praktische Übungen: lehrplan/docker/docker_praktische_uebungen_und_szenarien.md
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
