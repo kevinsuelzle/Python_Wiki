@@ -18,7 +18,7 @@ bieten eine konsistente Umgebung, unabhängig davon, wo die Anwendung ausgeführ
 
 Traditionelle Virtualisierungstechnologien, wie sie von virtuellen Maschinen (VMs) verwendet werden, replizieren ganze
 Betriebssysteme, was zu einem hohen Ressourcenverbrauch führt. Docker hingegen nutzt die Containervirtualisierung, die
-sich durch folgende Merkmale auszeichnet:
+sich durch folgende Schlüsselkonzepte auszeichnet:
 
 1. **Leichtgewichtigkeit:** Container teilen sich den Kernel des Host-Betriebssystems und benötigen nicht das gesamte
    Betriebssystem in jeder Instanz. Dies führt zu einer erheblichen Reduzierung des Ressourcenverbrauchs.
@@ -102,9 +102,7 @@ Wir sehen hier zwei Applikationen
 
 2. appfacterpbackend_m1
 
-       viele Container, läuft nicht.
-
-Beide bestehen aus einer Reihe von Containern.
+       viele Container (nicht alle sichtbar), läuft nicht.
 
 In der Tabelle erkennen wir einige Informationen zu den einzelnen Containern, z.B. Name (mit ID), Name des images und
 verschieden Status Werte.

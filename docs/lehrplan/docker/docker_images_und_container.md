@@ -22,8 +22,6 @@ TODO: Es wäre gut, wenn diese Überschriften zu den Überschriften in den Datei
 
 ## [Verwalten von Docker-Images](docker_images_verwalten.md)
 
-## [Grundlagen der Containerisierung](docker_container_grundlagen.md)
-
 ## [Lebenszyklus der Container](docker_container_lebenszyklus.md)
 
 ## [Interaktion mit Containern](docker_container_interaktion.md)

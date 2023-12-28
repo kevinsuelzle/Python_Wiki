@@ -6,12 +6,12 @@ gleichzeitig eine effiziente und wartbare Umgebung zu schaffen.
 
 ## Best Practices in Docker
 
-1. **Verwendung Offizieller Images:**
+1. **Verwendung offizieller Images:**
     - Bevorzugen Sie offizielle Docker-Images oder solche von vertrauenswürdigen Quellen, um Sicherheitsrisiken zu
       minimieren.
 
 2. **Minimale Images:**
-    - Verwenden Sie minimale Basis-Images wie [python:3.8-slim]( docker_dockerfile_und_docker_compose#beispiel-eines-dockerfiles ) , um die Angriffsfläche zu reduzieren. Je weniger
+    - Verwenden Sie minimale Basis-Images wie [python:3.8-slim]( docker_dockerfile_und_docker_compose.md#beispiel-eines-dockerfiles ), um die Angriffsfläche zu reduzieren. Je weniger
       im Image enthalten
       ist, desto geringer ist das Risiko.
 
@@ -70,8 +70,6 @@ Der `user` Befehl legt den akzeptierten Benutzer für das System fest.
   CMD ["./meineapp"]
   ```
 
-[//]: # (  TODO: bitte ausführlicher erklären. Erledigt.) 
-
 - **Netzwerksicherheit konfigurieren:**
 
 Ein weiterer Schritt, um die Sicherheit einer Anwendung zu verbessern, ist die Verwendung eines eigenen internen
@@ -79,7 +77,7 @@ Netzwerkes. Ein Zugriff von außen ist damit nicht mehr möglich, es sei denn, m
 Containers in die Außenwelt mit der `port` Anweisung wie in docker-compose.yml gezeigt. Das funktioniert auch mit einem
 eigenen Befehl im dockerfile.
 
-Das Ganze macht nur Sinn, wenn mehrere Container in einer Multi-Container Umgebung zusammen
+Das Ganze macht nur Sinn, wenn mehrere Container in einer Multi Container Umgebung zusammen
 arbeiten sollen. Meist gibt es einen Zugangspunkt zur App (bezeichnet die Gesamtheit aller Container in einer
 docker-compose.yml Datei). Oft macht das nginx, ein reverse proxy. Er nimmt die Anfragen an die App entgegen und
 verteilt sie auf die Container.
@@ -93,8 +91,6 @@ explizit erstellen und so die Zusammenarbeit klarer definieren.
   ```
 
 Auf diese Weise läuft der Container in einem ganz bestimmten Netzwerk und ist nur darüber erreichbar.
-
-[//]: # (TODO: verstehe ich nicht. Erledigt hoffe ich.) 
 
 ## Zusammenfassung
 

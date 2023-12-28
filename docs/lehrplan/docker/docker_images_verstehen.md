@@ -28,25 +28,13 @@ zu erstellen. Das ist in etwa so zu verstehen, als würde eine Instanz aus einer
 
    So sieht das Laden von Images in der Konsole aus. Man erkennt, wie die einzelnen Schichten nach und nach dazu kommen:
 
-[//]: # (TODO: iframe einbauen)
+   [//]: # (TODO: iframe einbauen)
 
 3. **Effizienz:** Durch die Wiederverwendung von Schichten sind Docker-Images sehr effizient in Bezug auf Speicherplatz
    und Geschwindigkeit. Änderungen an einem Image erfordern nur das Herunterladen der geänderten Schichten.
 
 4. **Portabilität:** Docker-Images können auf jedem System ausgeführt werden, das Docker unterstützt, unabhängig von der
    zugrunde liegenden Infrastruktur. Dies gewährleistet Konsistenz über verschiedene Umgebungen hinweg.
-
-[//]: # ()
-
-[//]: # (TODO: Ich könnte diese Aufgabe jetzt nicht wirklich beantworten, außer die obigen Punkte zu wiederholen. )
-
-[//]: # (   - stimmt, mehr soll es auch gar nicht sein. Deswegen auch nur ein Chilli. Wiederholen mit eigenen Worten festigt das Wissen.)
-
-[//]: # ()
-
-[//]: # (TODO: Aufgaben haben die Form: ### Aufgabe: Überschrift mit Chillis, in der nächsten Zeile dann den Aufgabentext.)
-
-[//]: # (   - ok)
 
 ### **Aufgabe: Definition 🌶️**
 

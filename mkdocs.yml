@@ -153,7 +153,6 @@ nav:
               - Images verstehen: lehrplan/docker/images_und_container/docker_images_verstehen.md
               - Images erstellen: lehrplan/docker/images_und_container/docker_images_erstellen.md
               - Images verwalten: lehrplan/docker/images_und_container/docker_images_verwalten.md
-              - Container Grundlagen: lehrplan/docker/images_und_container/docker_container_grundlagen.md
               - Container Lebenszyklus: lehrplan/docker/images_und_container/docker_container_lebenszyklus.md
               - Container Interaktion: lehrplan/docker/images_und_container/docker_container_interaktion.md
               - Netzwerk und Kommunikation: lehrplan/docker/images_und_container/docker_container_netzwerk.md
