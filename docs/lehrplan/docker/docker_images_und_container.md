@@ -16,21 +16,21 @@ graph TD
 ```
 TODO: Es wäre gut, wenn diese Überschriften zu den Überschriften in den Dateien passen würden. Sonst ist es verwirrend.
 
-## [Verständnis von Docker-Images](images_und_container/docker_images_verstehen.md)
+## [Verständnis von Docker-Images](docker_images_verstehen.md)
 
-## [Erstellung von Docker-Images](images_und_container/docker_images_erstellen.md)
+## [Erstellung von Docker-Images](docker_images_erstellen.md)
 
-## [Verwalten von Docker-Images](images_und_container/docker_images_verwalten.md)
+## [Verwalten von Docker-Images](docker_images_verwalten.md)
 
-## [Grundlagen der Containerisierung](images_und_container/docker_container_grundlagen.md)
+## [Grundlagen der Containerisierung](docker_container_grundlagen.md)
 
-## [Lebenszyklus der Container](images_und_container/docker_container_lebenszyklus.md)
+## [Lebenszyklus der Container](docker_container_lebenszyklus.md)
 
-## [Interaktion mit Containern](images_und_container/docker_container_interaktion.md)
+## [Interaktion mit Containern](docker_container_interaktion.md)
 
-## [Netzwerk und Kommunikation](images_und_container/docker_container_netzwerk.md)
+## [Netzwerk und Kommunikation](docker_container_netzwerk.md)
 
-## [Persistente Datenspeicherung](images_und_container/docker_container_daten.md)
+## [Persistente Datenspeicherung](docker_container_daten.md)
 
-## [Fehlerbehebung und Logs](images_und_container/docker_container_logs.md)
+## [Fehlerbehebung und Logs](docker_container_logs.md)
 

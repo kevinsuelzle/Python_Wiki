@@ -117,7 +117,7 @@ die Kernkomponente, die auf Linux-Systemen läuft und eine direktere, CLI-basier
    Das Docker Menü zeigt ebenfalls an, dass Docker läuft und installiert ist. In dem gezeigten Status ist z. B.
    erkennbar, dass ein Update für Docker vorliegt.
 
-   ![img.png](img.png)
+   ![img.png](docker_menu.png)
 
 ### **Hinweis für Docker unter Linux**
 TODO: Da die Teilnehmer alle eine Mac haben, kannst du die Teile zu Windows und Linux in eine Seperate Datei packen und
@@ -224,7 +224,7 @@ und Mac-Systemen zu konfigurieren.
 - Sie können die Anzahl der Prozessoren erhöhen, die Docker verwenden darf, oder den Speicher erhöhen, um die Leistung
   von Containern zu verbessern.
 
-![img_1.png](img_1.png)
+![img_1.png](docker_desktop_resources.png)
 
 **Änderungen anwenden:**
 

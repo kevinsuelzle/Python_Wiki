@@ -41,13 +41,9 @@ die Welt der modernen Softwareentwicklung und -bereitstellung einzutauchen. Nach
 von Docker werden wir uns mit der Installation und Konfiguration von Docker befassen, um eine solide Basis für
 praktische Übungen und fortgeschrittene Themen zu schaffen.
 
-## Aufgaben
+### **Aufgabe: Definition 🌶️**
 
-[15min]
-
-### **Aufgabe: Unterschied zwischen (Virtuellen Maschine) VM und Container beschreiben 🌶️**
-
-### **Aufgabe: Beschreibe Umstände, in denen der Einsatz von Docker zweckmäßig erscheint 🌶️**
+Beschreibe die Unterschiede zwischen VM (Virtuellen Maschine) und Containern.
 
 ## Geschichtlicher Rückblick: Die Rolle der Open Container Initiative (OCI)
 
@@ -96,17 +92,17 @@ Standards und Interoperabilität in der Softwareentwicklung zu erkennen.
 
 ## Beispiel einer Docker Desktop Anzeige
 
-![img_2.png](img_2.png)
+![img_2.png](docker_desktop_containers.png)
 
 Wir sehen hier zwei Applikationen
 
 1. endpoint-test
 
-   - drei Container, läuft
+       drei Container, läuft
 
 2. appfacterpbackend_m1
 
-   - viele Container, läuft nicht.
+       viele Container, läuft nicht.
 
 Beide bestehen aus einer Reihe von Containern.
 

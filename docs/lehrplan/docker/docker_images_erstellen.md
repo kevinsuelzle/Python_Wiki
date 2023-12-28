@@ -56,7 +56,7 @@ print("Hello World from Docker using Python!")
 
 ```Dockerfile
 FROM python:3.8-slim
-COPY . /app
+COPY images_und_container /app
 WORKDIR /app
 CMD ["python", "app.py"]
 ```

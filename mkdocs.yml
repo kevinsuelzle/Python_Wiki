@@ -148,23 +148,21 @@ nav:
       - Block 3:
           - Docker:
               - Einführung: lehrplan/docker/docker.md
-              - Installation: lehrplan/docker/installation_und_konfiguration.md
-              - Images und Container:
-                  - Einführung: lehrplan/docker/docker_images_und_container.md
-                  - Images verstehen: lehrplan/docker/images_und_container/docker_images_verstehen.md
-                  - Images erstellen: lehrplan/docker/images_und_container/docker_images_erstellen.md
-                  - Images verwalten: lehrplan/docker/images_und_container/docker_images_verwalten.md
-                  - Container Grundlagen: lehrplan/docker/images_und_container/docker_container_grundlagen.md
-                  - Container Lebenszyklus: lehrplan/docker/images_und_container/docker_container_lebenszyklus.md
-                  - Container Interaktion: lehrplan/docker/images_und_container/docker_container_interaktion.md
-                  - Netzwerk und Kommunikation: lehrplan/docker/images_und_container/docker_container_netzwerk.md
-                  - Persistente Datenspeicherung: lehrplan/docker/images_und_container/docker_container_daten.md
-                  - Fehlerbehebung und Logs: lehrplan/docker/images_und_container/docker_container_logs.md
-              - Dockerfile und Docker Compose: lehrplan/docker/dockerfile_und_docker_compose.md
-              - Best Practices und Sicherheit: lehrplan/docker/best_practices_und_sicherheit.md
-              - Netzwerk und Datenspeicherung: lehrplan/docker/netzwerk_und_datenspeicherung.md
-              - Fortgeschrittene Themen: lehrplan/docker/fortgeschrittene_themen.md
-              - Praktische Übungen: lehrplan/docker/praktische_uebungen_und_szenarien.md
+              - Installation: lehrplan/docker/docker_installation_und_konfiguration.md
+              - Einführung in Images und Container: lehrplan/docker/docker_images_und_container.md
+              - Images verstehen: lehrplan/docker/images_und_container/docker_images_verstehen.md
+              - Images erstellen: lehrplan/docker/images_und_container/docker_images_erstellen.md
+              - Images verwalten: lehrplan/docker/images_und_container/docker_images_verwalten.md
+              - Container Grundlagen: lehrplan/docker/images_und_container/docker_container_grundlagen.md
+              - Container Lebenszyklus: lehrplan/docker/images_und_container/docker_container_lebenszyklus.md
+              - Container Interaktion: lehrplan/docker/images_und_container/docker_container_interaktion.md
+              - Netzwerk und Kommunikation: lehrplan/docker/images_und_container/docker_container_netzwerk.md
+              - Persistente Datenspeicherung: lehrplan/docker/images_und_container/docker_container_daten.md
+              - Fehlerbehebung und Logs: lehrplan/docker/images_und_container/docker_container_logs.md
+              - Dockerfile und Docker Compose: lehrplan/docker/docker_dockerfile_und_docker_compose.md
+              - Best Practices und Sicherheit: lehrplan/docker/docker_best_practices_und_sicherheit.md
+              - Netzwerk und Datenspeicherung: lehrplan/docker/docker_netzwerk_und_datenspeicherung.md
+              - Praktische Übungen: lehrplan/docker/docker_praktische_uebungen_und_szenarien.md
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md

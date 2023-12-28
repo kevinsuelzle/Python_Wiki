@@ -27,7 +27,9 @@ zu erstellen. Das ist in etwa so zu verstehen, als würde eine Instanz aus einer
    abgearbeitet werden. Diese Befehle werden in einer Datei gesammelt: `Dockerfile` ohne Endung.
 
    So sieht das Laden von Images in der Konsole aus. Man erkennt, wie die einzelnen Schichten nach und nach dazu kommen:
-  [//]: # (TODO: )
+
+[//]: # (TODO: iframe einbauen)
+
 3. **Effizienz:** Durch die Wiederverwendung von Schichten sind Docker-Images sehr effizient in Bezug auf Speicherplatz
    und Geschwindigkeit. Änderungen an einem Image erfordern nur das Herunterladen der geänderten Schichten.
 
@@ -48,4 +50,9 @@ zu erstellen. Das ist in etwa so zu verstehen, als würde eine Instanz aus einer
 
 ### **Aufgabe: Definition 🌶️**
 
-Erkläre, was ein Docker Image ist und welche Merkmale es auszeichnet.
+Was ist ein Docker Image ist und welche Merkmale zeichnet es aus.
+
+
+### **Aufgabe: Definition 🌶️**
+
+Was ist der Unterschied zwischen Image und Container?

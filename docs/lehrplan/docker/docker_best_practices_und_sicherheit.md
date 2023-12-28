@@ -11,7 +11,7 @@ gleichzeitig eine effiziente und wartbare Umgebung zu schaffen.
       minimieren.
 
 2. **Minimale Images:**
-    - Verwenden Sie minimale Basis-Images wie [python:3.8-slim]( dockerfile_und_docker_compose.md#beispiel-eines-dockerfiles ) , um die Angriffsfläche zu reduzieren. Je weniger
+    - Verwenden Sie minimale Basis-Images wie [python:3.8-slim]( docker_dockerfile_und_docker_compose#beispiel-eines-dockerfiles ) , um die Angriffsfläche zu reduzieren. Je weniger
       im Image enthalten
       ist, desto geringer ist das Risiko.
 
