@@ -104,8 +104,8 @@ kommen.
 **Ausblick:**
 
 Die NoSQL Datenbank Elasticsearch bietet Anbindungen an die Container an. So ist eine direkte
-Auswertung möglich und man kann die Ergebnisse über Werkzeuge von [Elasticsearch](/material/Elasticsearch%203.pdf) 
-(S. 27 - 28) anzeigen. 
+Auswertung möglich und man kann die Ergebnisse über Werkzeuge von Elasticsearch (see: /material/Elasticsearch-3.pdf 
+S. 27 - 28) anzeigen. 
 
 
 
