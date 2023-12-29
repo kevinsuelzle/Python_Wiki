@@ -14,7 +14,6 @@ graph TD
     E -->|commit| H[Neues Image]
     H -->|push| C
 ```
-TODO: Es wäre gut, wenn diese Überschriften zu den Überschriften in den Dateien passen würden. Sonst ist es verwirrend.
 
 ## [Docker Images verstehen](docker_images_verstehen.md)
 

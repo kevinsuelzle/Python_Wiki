@@ -77,4 +77,36 @@ identifizieren und beheben. Die Implementierung einer soliden Logging-Strategie,
 Logging-Treibern und zentralem Log-Management, ist entscheidend für die Aufrechterhaltung der Übersichtlichkeit und
 Reaktionsfähigkeit in komplexen Docker-Umgebungen.
 
-TODO: kann man hier vllt ein paar logs zeigen und etwas interpretieren?
+## Beispiel
+
+![img.png](img.png)
+
+Hier die Dartstellung der laufenden Container. Klickt man einen Container (hier endpoint-test-node-app-1) an, öffnet
+sich folgender Dialog:
+
+![img_1.png](img_1.png)
+
+Die Logs sind sehr detailreich und man muss sehr genau lesen. Macht man das öfter entwickelt sich ein "Auge" für die
+wesentlichen Dinge. Hier sehen wir zum Beispiel, dass ein Python Paket veraltet ist und man sich doch bitte um eine
+aktuelle Version bemühen möge.
+
+Zudem gibt es Probleme mit der Datenbank. Hier muss man aber wissen, dass das völlig normal ist und keinerlei Aktionen
+bedarf. Der Datenbank Container ist einfach noch nicht bereit.
+
+![img_2.png](img_2.png)
+
+Kritischere Dinge werden farblich hervorgehoben. Aber auch in diesem Fall ist das nicht von Bedeutung. Erst wenn der
+Container orange angezeigt würde oder ausgegraut bliebe und nicht läuft, müssen die Einträge näher betrachtet werden.
+
+Logs können sehr lang werden. Daher können die Meldungen kopiert und anderweitig verarbeitet werden, um zur Essenz zu
+kommen.
+
+**Ausblick:**
+
+Die NoSQL Datenbank Elasticsearch bietet Anbindungen an die Container an. So ist eine direkte
+Auswertung möglich und man kann die Ergebnisse über Werkzeuge von [Elasticsearch](/material/Elasticsearch%203.pdf) 
+(S. 27 - 28) anzeigen. 
+
+
+
+

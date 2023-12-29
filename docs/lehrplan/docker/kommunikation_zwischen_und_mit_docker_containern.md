@@ -158,8 +158,6 @@ praktischen Beispiele bieten eine Grundlage, um diese Konzepte in realen Anwendu
 
 TODO: JA!
 
-TODO: einige dieser Inhalte waren doch schon in anderen kapiteln?
-
 In diesem Kapitel vertiefen wir die Themen Netzwerk und Datenspeicherung in Docker, die bereits in den Abschnitten zu
 Docker-Images und Containern sowie in der Diskussion über persistente Datenspeicherung und Container-Kommunikation
 angesprochen wurden. Wir konzentrieren uns auf fortgeschrittene Konzepte und Best Practices, um ein umfassendes
