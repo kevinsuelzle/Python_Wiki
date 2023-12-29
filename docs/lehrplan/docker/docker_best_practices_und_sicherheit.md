@@ -92,8 +92,24 @@ explizit erstellen und so die Zusammenarbeit klarer definieren.
 
 Auf diese Weise läuft der Container in einem ganz bestimmten Netzwerk und ist nur darüber erreichbar.
 
-## Zusammenfassung
+### Zusammenfassung
 
 Die Einhaltung von Best Practices und die Berücksichtigung von Sicherheitsaspekten sind unerlässlich, um Docker effektiv
 und sicher zu nutzen. Durch die Implementierung dieser Richtlinien können Sie die Sicherheit Ihrer Container-Umgebungen
 erhöhen und gleichzeitig eine effiziente und wartbare Plattform für Ihre Anwendungen schaffen.
+
+## Backup - Sichern und Wiederherstellen eines Volumes
+
+Da die Verwaltung der Volumes Docker obliegt, ist es notwendig spezifische Backup Verfahren zu etablieren. Hier ist die
+Methode über die Konsole dargestellt.
+
+```bash
+# Backup
+docker run --rm --volumes-from mein-container -v $(pwd):/backup ubuntu tar cvf /backup/backup.tar /mein-volume
+
+# Wiederherstellung
+docker run --rm -v mein-volume:/mein-volume -v $(pwd):/backup ubuntu tar xvf /backup/backup.tar
+```
+
+Sichert das Volume `mein-volume` von `mein-container` und stellt es später wieder her.
+

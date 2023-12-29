@@ -116,8 +116,10 @@ Sicherheit Ihrer Docker-Images. Hier erfahren Sie, wie Sie ein privates Docker-R
 ```bash
 docker run -d -p 5000:5000 --restart=always --name registry registry:2
 ```
-TODO: was bedeuten die teile des befehls? -d, -p, 5000:5000, usw. kurze Erklärung genügt.
-- Dies startet eine Docker Registry, die auf Port 5000 lauscht.
+
+- Dies startet eine Docker Registry, die auf Port 5000 lauscht ( -p Option). 
+- Die registry hat in diesem Fall den Namen `registry`.
+- Die registry läuft wie ein Container im `detached` Modus, also unabhängig von der Konsole.
 
 #### **Taggen und Pushen eines Images zur privaten Registry:**
 

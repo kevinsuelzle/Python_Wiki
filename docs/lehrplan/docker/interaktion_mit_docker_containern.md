@@ -200,7 +200,7 @@ Die folgenden Kommandos beziehen sich auf die Arbeit mit einem Container.
 
 ## Aufgaben
 
-### **Aufgabe: Information 🌶️**
+### **Aufgabe: Information 🌶🌶️**
 
 1. Nutzen Sie die Kommandozeile, um sich die laufenden Container aufzulisten.
 2. Suchen Sie den Kommandozeilenbefehl über docker --help, um sich die vorhandenen Images aufzulisten.
@@ -274,6 +274,8 @@ zu erfüllen.
   ```
   Dieser Befehl macht das Skript ausführbar und führt es dann im Container aus. Sie sollten die Ausgabe "Hallo aus
   meinem Container!" sehen.
+
+  Vertiefende Übung: Wiederholen Sie Aufgabe 2 und suchen Sie die kopierte und ausgeführte Datei im Container.
 
 #### 5. Verlassen der Konsole
 

@@ -127,15 +127,12 @@ graph LR
   docker run -d --network=mein-bridge-netzwerk --name container2 nginx
   ```
   Dieses Beispiel zeigt, wie man ein benutzerdefiniertes Bridge-Netzwerk erstellt und zwei Container darin startet.
-  TODO: im letzten abschnitt gabe es bereits sowas. soll es da vllt gelöscht werden?
 
 - **Port-Weiterleitung für einen Webserver:**
   ```bash
   docker run -d -p 8080:80 --name mein-webserver nginx
   ```
   Startet einen Nginx-Webserver-Container und leitet den Port 8080 des Hosts auf den Port 80 des Containers um.
-  TODO: weiß immer noch nicht, was Nginx ist.
-  TODO: das mit den verschiedenen Ports sollte noch mal auf einem Bild erklärt werdne.
 
 ## Netzwerksicherheit
 
@@ -147,57 +144,5 @@ graph LR
     - Für sensible Anwendungen sollten Sie sichere Kommunikationsprotokolle wie HTTPS verwenden, um Datenübertragungen
       zu schützen.
 
-## Zusammenfassung
-
-Das Verständnis von Netzwerk und Kommunikation in Docker ist entscheidend für das Design und die Verwaltung von
-containerisierten Anwendungen. Durch die Nutzung verschiedener Netzwerk-Treiber und -Optionen können Sie eine effiziente
-und sichere Kommunikation zwischen Ihren Containern sowie zwischen Containern und der Außenwelt sicherstellen. Die
-praktischen Beispiele bieten eine Grundlage, um diese Konzepte in realen Anwendungsfällen anzuwenden.
-
 # Todo Beispiele zeigen erstellen
-
-TODO: JA!
-
-In diesem Kapitel vertiefen wir die Themen Netzwerk und Datenspeicherung in Docker, die bereits in den Abschnitten zu
-Docker-Images und Containern sowie in der Diskussion über persistente Datenspeicherung und Container-Kommunikation
-angesprochen wurden. Wir konzentrieren uns auf fortgeschrittene Konzepte und Best Practices, um ein umfassendes
-Verständnis dieser Schlüsselaspekte zu entwickeln.
-
-## Fortgeschrittene Netzwerkkonzepte
-
-### 1. **Benutzerdefinierte Netzwerke:**
-
-- Erstellen und Verwalten benutzerdefinierter Netzwerke in Docker, um die Kommunikation zwischen Containern zu
-  optimieren und zu isolieren.
-
-### 2. **Netzwerk-Treiber:**
-
-- Vertiefung in verschiedene Netzwerk-Treiber wie `bridge`, `overlay` und `macvlan` und deren Anwendungsfälle.
-
-### 3. **Service Discovery und DNS:**
-
-- Verstehen, wie Docker die Namensauflösung zwischen Containern in einem Netzwerk handhabt.
-
-### 4. **Netzwerksicherheit:**
-
-- Implementierung von Sicherheitsmaßnahmen wie Netzwerk-Policies und Firewalls, um den Datenverkehr zu und von
-  Containern zu kontrollieren.
-
-## Praktische Beispiele
-
-- **Erstellen eines benutzerdefinierten Netzwerks:**
-
-```bash
-docker network create --driver bridge mein-netzwerk
-```
-
-Erstellt ein neues Bridge-Netzwerk namens `mein-netzwerk`.
-
-- **Verbinden eines Containers mit einem benutzerdefinierten Netzwerk:**
-
-```bash
-docker run -d --network=mein-netzwerk mein-image
-```
-
-Startet einen Container im Netzwerk `mein-netzwerk`.
 
