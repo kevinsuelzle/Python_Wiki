@@ -145,6 +145,8 @@ nav:
               - Cloud Planung: lehrplan/azure/unterrichte/cloud_planung/cloud_planung.md
               - Blobs und Funktionen: lehrplan/azure/unterrichte/blobs_funktionen/blobs_funktionen.md
               - Cloud Monitoring: lehrplan/azure/unterrichte/cloud_monitoring/cloud_monitoring.md
+          - Datenbanken 2:
+              - Einführung NoSQL: lehrplan/datenbanken/nosql/intro.md
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md

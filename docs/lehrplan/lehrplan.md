@@ -3,7 +3,7 @@
 ## Einführung Python
 
 | Woche | Unterricht                                                                          | Lernziele                                                      | Begriffssammlung                                            |
-|-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|-------------------------------------------------------------|
+| ----- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------- |
 | 1     | [Einführung](python_grundlagen/python_grundlagen/python_grundlagen.md)              | [hier](../checklists/checklist_1.md#intro)                     | [hier](../begriffe/begriffe_1.md#intro)                     |
 | 1     | [Variablen & Datentypen](python_grundlagen/variables_types/variablen_datentypen.md) | [hier](../checklists/checklist_1.md#variablen-datentypen)      | [hier](../begriffe/begriffe_1.md#variablen-datentypen)      |
 | 1     | [Ein- und Ausgabe](python_grundlagen/input_output/input_output.md)                  | [hier](../checklists/checklist_1.md#input-output)              | [hier](../begriffe/begriffe_1.md#input-output)              |
@@ -48,7 +48,7 @@
 ## SQL Datenbanken
 
 | Woche | Unterricht                                                                                           | Lernziele                                                                         | Begriffssammlung                    |
-|-------|------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:------------------------------------|
+| ----- | ---------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- | :---------------------------------- |
 | 6     | [Einführung SQL-Datenbanken](datenbanken/datenbanken.md)                                             | [hier](../checklists/checklist_db1.md)                                            | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Arten von SQL Anweisungen](datenbanken/unterrichte/sql_types.md)                                    | [hier](../checklists/checklist_db1.md#sql-sprachtypisierung)                      | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [UML für Datenbanken](datenbanken/unterrichte/uml_diagramme.md)                                      | [hier](../checklists/checklist_db1.md#uml-diagramme)                              | [hier](../begriffe/begriffe_db1.md) |
@@ -68,8 +68,9 @@
 | 6     | [Abschluss SQL-Datenbanken](datenbanken/unterrichte/finally.md)                                      | [hier](../checklists/checklist_db1.md#schlusswort)                                | [hier](../begriffe/begriffe_db1.md) |
 
 ## Clean Code
+
 | Woche | Unterricht                                                                   | Lernziele                                                             | Begriffssammlung                                                   |
-|-------|------------------------------------------------------------------------------|:----------------------------------------------------------------------|:-------------------------------------------------------------------|
+| ----- | ---------------------------------------------------------------------------- | :-------------------------------------------------------------------- | :----------------------------------------------------------------- |
 | 6     | [Clean Code Einführung](clean_code/Introduction.md)                          | [hier](../checklists/checklist_clean_code.md#basics)                  | [hier](../begriffe/begriffe_clean_code.md#basics)                  |
 | 6     | [Benennungskonventionen](clean_code/Benennungskonventionen.md)               | [hier](../checklists/checklist_clean_code.md#benennungskonventionen)  | [hier](../begriffe/begriffe_clean_code.md#benennungskonventionen)  |
 | 6     | [DRY Prinzip](clean_code/DRY/DRY.md)                                         | [hier](../checklists/checklist_clean_code.md#dry)                     | [hier](../begriffe/begriffe_clean_code.md#dry)                     |
@@ -84,59 +85,62 @@
 | 7     | [Variablennamen](clean_code/Variablenbenennung/Variablenbenennung.md)        | [hier](../checklists/checklist_clean_code.md#benennung-von-variablen) | [hier](../begriffe/begriffe_clean_code.md#benennung-von-variablen) |
 
 ## Python & Datenbanken
-| Woche | Unterricht                                                                                             | Lernziele                                                          | Begriffssammlung                                               |
-|-------|--------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|:---------------------------------------------------------------|
-| 7     | [Python sqlite3 ](datenbanken/unterrichte/sqlite3_basic.md)                                            | [hier](../checklists/checklist_db_python.md#sqlite-in-python)      | [hier](../begriffe/begriffe_db_python.md)                      |
-| 7     | [sqlite3 weitere Funktionen](datenbanken/unterrichte/sqlite3_advanced.md)                              | [hier](../checklists/checklist_db_python.md#sqlite-in-python)      | [hier](../begriffe/begriffe_db_python.md)                      |
-| 7     | [Einführung in SQLAlchemy](datenbanken/einfuehrung.md)                                                 | [hier](../checklists/checkliste3.md#einfuehrung-sqlalchemy)        | [hier](../begriffe/begriffe3.md#einfuehrung-sqlalchemy)        |
-| 7     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.md)                                           | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte) | [hier](../begriffe/begriffe3.md#fortgeschrittene-orm-konzepte) |
-| 7     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.md)                              | [hier](../checklists/checkliste3.md#sql-expression-language)       | [hier](../begriffe/begriffe3.md#sql-expression-language)       |
-| 7     | [Best Practices und fortgeschrittene Themen](datenbanken/best_practices.md)                            | [hier](../checklists/checkliste3.md#best-practices)                | [hier](../begriffe/begriffe3.md#best-practices)                |
-<!-- | 7     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.md)                            | [hier](../checklists/checkliste3.md#integration-in-flask)          | [hier](../begriffe/begriffe3.md#integration-in-flask)          | -->
+
+| Woche | Unterricht                                                                  | Lernziele                                                                   | Begriffssammlung                                               |
+| ----- | --------------------------------------------------------------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------------------- | 
+| 7     | [Python sqlite3 ](datenbanken/unterrichte/sqlite3_basic.md)                 | [hier](../checklists/checklist_db_python.md#sqlite-in-python)               | [hier](../begriffe/begriffe_db_python.md)                      |
+| 7     | [sqlite3 weitere Funktionen](datenbanken/unterrichte/sqlite3_advanced.md)   | [hier](../checklists/checklist_db_python.md#sqlite-in-python)               | [hier](../begriffe/begriffe_db_python.md)                      |
+| 7     | [Einführung in SQLAlchemy](datenbanken/einfuehrung.md)                      | [hier](../checklists/checkliste3.md#einfuehrung-sqlalchemy)                 | [hier](../begriffe/begriffe3.md#einfuehrung-sqlalchemy)        |
+| 7     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.md)                | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte)          | [hier](../begriffe/begriffe3.md#fortgeschrittene-orm-konzepte) |
+| 7     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.md)   | [hier](../checklists/checkliste3.md#sql-expression-language)                | [hier](../begriffe/begriffe3.md#sql-expression-language)       |
+| 7     | [Best Practices und fortgeschrittene Themen](datenbanken/best_practices.md) | [hier](../checklists/checkliste3.md#best-practices)                         | [hier](../begriffe/begriffe3.md#best-practices)                |
+<!-- | 7     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.md) | [hier](../checklists/checkliste3.md#integration-in-flask)      | [hier](../begriffe/begriffe3.md#integration-in-flask) | -->
 
 ## Web
-| Woche | Unterricht                                                                                             | Lernziele                                                          | Begriffssammlung                                               |
-|-------|--------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|:---------------------------------------------------------------|
-| 8     | [Einführung in APIs](web/unterrichte/einfuehrung_apis/einfuehrung_apis.md)                             | [hier](../checklists/checklist_web.md#api-intro)                   | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [API Arten](web/unterrichte/api_arten/api_arten.md)                                                    | [hier](../checklists/checklist_web.md#api-arten)                   | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [API Kommunikation](web/unterrichte/api_kommunikation/api_kommunikation.md)                            | [hier](../checklists/checklist_web.md#api-kommunikation)           | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [API Nutzung](web/unterrichte/api_nutzung/api_nutzung.md)                                              | [hier](../checklists/checklist_web.md#api-nutzung)                 | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [HTTP Methoden](web/unterrichte/http_methoden/http_methoden.md)                                        | [hier](../checklists/checklist_web.md#http-methoden)               | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [Python Requests](web/unterrichte/python_requests/python_requests.md)                                  | [hier](../checklists/checklist_web.md#python-requests)             | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [Capstone Projekt](web/unterrichte/capstone_projekt_1/capstone_projekt_1.md)                           | [hier](../checklists/checklist_web.md)                             | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [Aufbau einer API](web/unterrichte/api_aufbau/api_aufbau.md)                                           | [hier](../checklists/checklist_web.md#aufbau-einer-api)            | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [Implementierungsprinzipien](web/unterrichte/implementierung_prinzip/implementierung_prinzip.md)       | [hier](../checklists/checklist_web.md#implementierungsprinzipien)  | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [Web API Frameworks](web/unterrichte/api_frameworks/api_frameworks.md)                                 | [hier](../checklists/checklist_web.md#web-api-frameworks)          | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [RESTful Planung](web/unterrichte/restful_planung/restful_planung.md)                                  | [hier](../checklists/checklist_web.md#restful-planning)            | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [RESTful Umsetzung](web/unterrichte/restful_umsetzung/restful_umsetzung.md)                            | [hier](../checklists/checklist_web.md#restful-umsetzung)           | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [RESTful Testing](web/unterrichte/restful_testing/restful_testing.md)                                  | [hier](../checklists/checklist_web.md#restful-testing)             | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [RESTful Dokumentation](web/unterrichte/restful_dokumentation/restful_dokumentation.md)                | [hier](../checklists/checklist_web.md#restful-dokumentation)       | [hier](../begriffe/begriffe_web.md)                            |
-| 8     | [Capstone Projekt](web/unterrichte/capstone_projekt_2/capstone_projekt_2.md)                           | [hier](../checklists/checklist_web.md)                             | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Einführung ins Web](web/unterrichte/einfuehrung_web/einfuehrung_web.md)                               | [hier](../checklists/checklist_web.md#einführung-web)              | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Web Basics](web/unterrichte/web_basics/web_basics.md)                                                 | [hier](../checklists/checklist_web.md#web-basics)                  | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [HTML](web/unterrichte/html/html.md)                                                                   | [hier](../checklists/checklist_web.md#html)                        | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [CSS](web/unterrichte/css/css.md)                                                                      | [hier](../checklists/checklist_web.md#css)                         | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Komplexes HTML](web/unterrichte/komplex_html/komplex_html.md)                                         | [hier](../checklists/checklist_web.md#komplexeres-html)            | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Komplexes CSS](web/unterrichte/komplex_css/komplex_css.md)                                            | [hier](../checklists/checklist_web.md#komplexeres-css)             | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Capstone Projekt](web/unterrichte/capstone_projekt_3/)                                                | [hier](../checklists/checklist_web.md)                             | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Einführung in interaktive Websites](web/unterrichte/einfuehrung_interaktiv/einfuehrung_interaktiv.md) | [hier](../checklists/checklist_web.md#interaktive-websites)        | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [JavaScript](web/unterrichte/javascript_basics/javascript_basics.md)                                   | [hier](../checklists/checklist_web.md#javascript)                  | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Eventhandling](web/unterrichte/eventhandling/eventhandling.md)                                        | [hier](../checklists/checklist_web.md#eventhandling)               | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Fetch API](web/unterrichte/fetch_api/fetch_api.md)                                                    | [hier](../checklists/checklist_web.md#fetch-api)                   | [hier](../begriffe/)                                           |
-| 9     | [JS Frameworks & Libraries](web/unterrichte/frameworks/frameworks.md)                                  | [hier](../checklists/checklist_web.md#js-frameworks--libraries)    | [hier](../begriffe/)                                           |
-| 9     | [Moderne Web Applications](web/unterrichte/modern_web/modern_web.md)                                   | [hier](../checklists/checklist_web.md#moderne-web-applikationen)   | [hier](../begriffe/)                                           |
-| 9     | [Serverside Javascript (NPM)](web/unterrichte/serverside_js/serverside_js.md)                          | [hier](../checklists/checklist_web.md#serverside-javascript-npm)   | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Rendering](web/unterrichte/rendering/rendering.md)                                                    | [hier](../checklists/checklist_web.md#rendering)                   | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Capstone Projekt](web/unterrichte/capstone_projekt_4/capstone_projekt_4.md)                           | [hier](../checklists/checklist_web.md)                             | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Einführung in die Web App Planung](web/unterrichte/web_planung/web_planung.md)                        | [hier](../checklists/checklist_web.md#planung-von-web-apps)        | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Projekte mit Struktur](web/unterrichte/projekte_struktur/projekte_struktur.md)                        | [hier](../checklists/checklist_web.md#projekte-mit-struktur)       | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [UML](web/unterrichte/uml/uml.md)                                                                      | [hier](../checklists/checklist_web.md#uml)                         | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Test & Domain Driven](web/unterrichte/test_domain_driven/test_domain_driven.md)                       | [hier](../checklists/checklist_web.md#test--domain-driven)         | [hier](../begriffe/begriffe_web.md)                            |
-| 9     | [Capstone Projekt](web/unterrichte/capstone_projekt_5/capstone_projekt_5.md)                           | [hier](../checklists/checklist_web.md)                             | [hier](../begriffe/begriffe_web.md)                            |
+
+| Woche | Unterricht                                                                                             | Lernziele                                                         | Begriffssammlung                    |
+| ----- | ------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------- | :---------------------------------- |
+| 8     | [Einführung in APIs](web/unterrichte/einfuehrung_apis/einfuehrung_apis.md)                             | [hier](../checklists/checklist_web.md#api-intro)                  | [hier](../begriffe/begriffe_web.md) |
+| 8     | [API Arten](web/unterrichte/api_arten/api_arten.md)                                                    | [hier](../checklists/checklist_web.md#api-arten)                  | [hier](../begriffe/begriffe_web.md) |
+| 8     | [API Kommunikation](web/unterrichte/api_kommunikation/api_kommunikation.md)                            | [hier](../checklists/checklist_web.md#api-kommunikation)          | [hier](../begriffe/begriffe_web.md) |
+| 8     | [API Nutzung](web/unterrichte/api_nutzung/api_nutzung.md)                                              | [hier](../checklists/checklist_web.md#api-nutzung)                | [hier](../begriffe/begriffe_web.md) |
+| 8     | [HTTP Methoden](web/unterrichte/http_methoden/http_methoden.md)                                        | [hier](../checklists/checklist_web.md#http-methoden)              | [hier](../begriffe/begriffe_web.md) |
+| 8     | [Python Requests](web/unterrichte/python_requests/python_requests.md)                                  | [hier](../checklists/checklist_web.md#python-requests)            | [hier](../begriffe/begriffe_web.md) |
+| 8     | [Capstone Projekt](web/unterrichte/capstone_projekt_1/capstone_projekt_1.md)                           | [hier](../checklists/checklist_web.md)                            | [hier](../begriffe/begriffe_web.md) |
+| 8     | [Aufbau einer API](web/unterrichte/api_aufbau/api_aufbau.md)                                           | [hier](../checklists/checklist_web.md#aufbau-einer-api)           | [hier](../begriffe/begriffe_web.md) |
+| 8     | [Implementierungsprinzipien](web/unterrichte/implementierung_prinzip/implementierung_prinzip.md)       | [hier](../checklists/checklist_web.md#implementierungsprinzipien) | [hier](../begriffe/begriffe_web.md) |
+| 8     | [Web API Frameworks](web/unterrichte/api_frameworks/api_frameworks.md)                                 | [hier](../checklists/checklist_web.md#web-api-frameworks)         | [hier](../begriffe/begriffe_web.md) |
+| 8     | [RESTful Planung](web/unterrichte/restful_planung/restful_planung.md)                                  | [hier](../checklists/checklist_web.md#restful-planning)           | [hier](../begriffe/begriffe_web.md) |
+| 8     | [RESTful Umsetzung](web/unterrichte/restful_umsetzung/restful_umsetzung.md)                            | [hier](../checklists/checklist_web.md#restful-umsetzung)          | [hier](../begriffe/begriffe_web.md) |
+| 8     | [RESTful Testing](web/unterrichte/restful_testing/restful_testing.md)                                  | [hier](../checklists/checklist_web.md#restful-testing)            | [hier](../begriffe/begriffe_web.md) |
+| 8     | [RESTful Dokumentation](web/unterrichte/restful_dokumentation/restful_dokumentation.md)                | [hier](../checklists/checklist_web.md#restful-dokumentation)      | [hier](../begriffe/begriffe_web.md) |
+| 8     | [Capstone Projekt](web/unterrichte/capstone_projekt_2/capstone_projekt_2.md)                           | [hier](../checklists/checklist_web.md)                            | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Einführung ins Web](web/unterrichte/einfuehrung_web/einfuehrung_web.md)                               | [hier](../checklists/checklist_web.md#einführung-web)             | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Web Basics](web/unterrichte/web_basics/web_basics.md)                                                 | [hier](../checklists/checklist_web.md#web-basics)                 | [hier](../begriffe/begriffe_web.md) |
+| 9     | [HTML](web/unterrichte/html/html.md)                                                                   | [hier](../checklists/checklist_web.md#html)                       | [hier](../begriffe/begriffe_web.md) |
+| 9     | [CSS](web/unterrichte/css/css.md)                                                                      | [hier](../checklists/checklist_web.md#css)                        | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Komplexes HTML](web/unterrichte/komplex_html/komplex_html.md)                                         | [hier](../checklists/checklist_web.md#komplexeres-html)           | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Komplexes CSS](web/unterrichte/komplex_css/komplex_css.md)                                            | [hier](../checklists/checklist_web.md#komplexeres-css)            | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Capstone Projekt](web/unterrichte/capstone_projekt_3/)                                                | [hier](../checklists/checklist_web.md)                            | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Einführung in interaktive Websites](web/unterrichte/einfuehrung_interaktiv/einfuehrung_interaktiv.md) | [hier](../checklists/checklist_web.md#interaktive-websites)       | [hier](../begriffe/begriffe_web.md) |
+| 9     | [JavaScript](web/unterrichte/javascript_basics/javascript_basics.md)                                   | [hier](../checklists/checklist_web.md#javascript)                 | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Eventhandling](web/unterrichte/eventhandling/eventhandling.md)                                        | [hier](../checklists/checklist_web.md#eventhandling)              | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Fetch API](web/unterrichte/fetch_api/fetch_api.md)                                                    | [hier](../checklists/checklist_web.md#fetch-api)                  | [hier](../begriffe/)                |
+| 9     | [JS Frameworks & Libraries](web/unterrichte/frameworks/frameworks.md)                                  | [hier](../checklists/checklist_web.md#js-frameworks--libraries)   | [hier](../begriffe/)                |
+| 9     | [Moderne Web Applications](web/unterrichte/modern_web/modern_web.md)                                   | [hier](../checklists/checklist_web.md#moderne-web-applikationen)  | [hier](../begriffe/)                |
+| 9     | [Serverside Javascript (NPM)](web/unterrichte/serverside_js/serverside_js.md)                          | [hier](../checklists/checklist_web.md#serverside-javascript-npm)  | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Rendering](web/unterrichte/rendering/rendering.md)                                                    | [hier](../checklists/checklist_web.md#rendering)                  | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Capstone Projekt](web/unterrichte/capstone_projekt_4/capstone_projekt_4.md)                           | [hier](../checklists/checklist_web.md)                            | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Einführung in die Web App Planung](web/unterrichte/web_planung/web_planung.md)                        | [hier](../checklists/checklist_web.md#planung-von-web-apps)       | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Projekte mit Struktur](web/unterrichte/projekte_struktur/projekte_struktur.md)                        | [hier](../checklists/checklist_web.md#projekte-mit-struktur)      | [hier](../begriffe/begriffe_web.md) |
+| 9     | [UML](web/unterrichte/uml/uml.md)                                                                      | [hier](../checklists/checklist_web.md#uml)                        | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Test & Domain Driven](web/unterrichte/test_domain_driven/test_domain_driven.md)                       | [hier](../checklists/checklist_web.md#test--domain-driven)        | [hier](../begriffe/begriffe_web.md) |
+| 9     | [Capstone Projekt](web/unterrichte/capstone_projekt_5/capstone_projekt_5.md)                           | [hier](../checklists/checklist_web.md)                            | [hier](../begriffe/begriffe_web.md) |
 
 ## Azure
+
 | Woche | Unterricht                                                                     | Lernziele                                                     | Begriffssammlung                      |
-|-------|--------------------------------------------------------------------------------|:--------------------------------------------------------------|:--------------------------------------|
+| ----- | ------------------------------------------------------------------------------ | :------------------------------------------------------------ | :------------------------------------ |
 | 10    | [Cloud Intro](azure/unterrichte/cloud_intro/cloud_intro.md)                    | [hier](../checklists/checklist_azure.md#cloud-intro)          | [hier](../begriffe/begriffe_azure.md) |
 | 10    | [Cloud Anbieter](azure/unterrichte/cloud_anbieter/cloud_anbieter.md)           | [hier](../checklists/checklist_azure.md#cloud-anbieter)       | [hier](../begriffe/begriffe_azure.md) |
 | 10    | [Azure Intro](azure/unterrichte/azure_intro/azure_intro.md)                    | [hier](../checklists/checklist_azure.md#azure-intro)          | [hier](../begriffe/begriffe_azure.md) |
@@ -153,28 +157,38 @@
 ## Docker
 
 | Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
+| ----- | ---------- | --------- | ---------------- |
 |       |            |           |                  |
 |       |            |           |                  |
 
 ## NoSQL Datenbanken
 
-| Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
-|       |            |           |                  |
-|       |            |           |                  |
+| Woche | Unterricht                                                       | Lernziele                                                                                 | Begriffssammlung |
+| ----- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------------- |
+|       | [NoSQL Intro Motivation](datenbanken/nosql/intro/intro.md)                                       | [hier](../checklists/checklist_db2.md#NoSQL-Intro-und-Motivation)                         |                  |
+|       | [Wiederholung SQL Datenbanken]()                                 | [hier](../checklists/checklist_db2.md#Wiederholung-SQL-Datenbanken)                       |                  |
+|       | [NoSQL Datenbanken]()                                            | [hier](../checklists/checklist_db2.md#nosql-datenbanken)                                  |                  |
+|       | [MongoDB]()                                                      | [hier](../checklists/checklist_db2.md#mongodb)                                            |                  |
+|       | [Pymongo]()                                                      | [hier](../checklists/checklist_db2.md#pymongo)                                            |                  |
+|       | [Datenbanken in der Cloud/ Datenbank Bereitstellung & Hosting]() | [hier](../checklists/checklist_db2.md#datenbanken-in-der-cloud---bereitstellung--hosting) |                  |
+|       | [Datenbank Refactoring]()                                        | [hier](../checklists/checklist_db2.md#Datenbank-Refactoring-in-NoSQL)                     |                  |
+|       | [Cosmos DB]()                                                    | [hier](../checklists/checklist_db2.md#azure-cosmos-db)                                    |                  |
+|       | [Graphdatenbanken]()                                             | [hier](../checklists/checklist_db2.md#graphdatenbanken)                                   |                  |
+|       | [SQL-Injection]()                                                | [hier](../checklists/checklist_db2.md#sicherheit-f%C3%BCr-nosql-datenbanken)              |                  |
+|       | [Datenschutz & Compliance]()                                     | [hier](../checklists/checklist_db2.md#datenschutz--compliance-f%C3%BCr-nosql-datenbanken) |                  |
 
+<!-- |  | Graphqln NEO4J?  -->
 ## Datenverarbeitung und -darstellung
 
 | Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
+| ----- | ---------- | --------- | ---------------- |
 |       |            |           |                  |
 |       |            |           |                  |
 
 ## Python Fortgeschritten
 
 | Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
+| ----- | ---------- | --------- | ---------------- |
 |       |            |           |                  |
 |       |            |           |                  |
 
@@ -184,5 +198,3 @@
 | ----- | ---------- | --------- | ---------------- |
 |       |            |           |                  |
 |       |            |           |                  |
-
-
