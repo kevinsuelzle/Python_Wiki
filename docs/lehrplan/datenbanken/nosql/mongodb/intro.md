@@ -78,11 +78,18 @@ Nachdem dieser Befehl erfolgreich ausgeführt wurde, sollte MongoDB mit einer ei
 
 ## MongoDB Shell
 
-Wir könne nun auf 2 Möglichkeiten über die MongoDB Shell mit der Datenbank interagieren. Entweder verbinden wir uns über einen connection String mit unser Datenbank, welche wir aus dem Container heraus gestartet haben, oder wir verbinden uns direkt mit dem Container. Da wir im späteren Verlauf den Zugriff über Python und den connection String verwenden, werden wir uns hier mit dem Container verbinden. Dafür können wir den Befehl `docker exec` verwenden.
+Die MongoDB Shell ist in dem Docker Container standardmäßg vorhanden. Möchten wir also aus dem Container heraus mit der Datenbank interagieren, können wir die MongoDB Shell verwenden. Dafür müssen wir uns zunächst mit dem Container verbinden. Dies können wir über den Befehl `docker exec` erreichen.
 
 ```bash
 docker exec -it mongo mongosh
 ```
+
+Alternativ können wir auch über Homebrew die MongoDB Shell installieren und uns dann mit der Datenbank verbinden. Die Installation erfolgt durch den Befehlt `brew install mongosh`. Anschließend können wir uns mit der Datenbank verbinden, indem wir den Befehl `mongosh` ausführen und uns mit dem ausgewählen Port verbinden.
+
+```bash
+mongosh --port 27017
+```
+
 
 Nach dem Ausführen dieses Befehls sollte die MongoDB-Shell geöffnet werden. Nun könnenw wir über die Konsole mit der Datenbank direkt interagieren.
 
@@ -90,7 +97,7 @@ Nach dem Ausführen dieses Befehls sollte die MongoDB-Shell geöffnet werden. Nu
 
 **Hinweis**: Wenn wir keine Collection explizit erstellen, sondern lediglich ein Dokument in eine Collection einfügen, wird diese Collection automatisch erstellt.
 
+Über den Befehl `show collections` können wir uns alle Collections anzeigen lassen, die in der aktuellen Datenbank vorhanden sind. Im nächsten Kapitel werden wir uns ausführlicher mit den CRUD Operationen beschäftigen. Das Schließen der MongoDB Shell erfolgt über den Befehl `exit`.
+
 ### Aufgabe:
 Erstelle eine Collection mit dem Namen `users` und füge ein Dokument mit dem Namen `John Doe` ein. Lass die alle Collections anzeigen.
-
-## CRUD Operationen

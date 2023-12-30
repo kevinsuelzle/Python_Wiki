@@ -147,6 +147,16 @@ nav:
               - Cloud Monitoring: lehrplan/azure/unterrichte/cloud_monitoring/cloud_monitoring.md
           - Datenbanken 2:
               - Einführung NoSQL: lehrplan/datenbanken/nosql/intro.md
+              - MongoDB: 
+                - Einführung: lehrplan/datenbanken/nosql/mongodb/intro.md
+                - CRUD: lehrplan/datenbanken/nosql/mongodb/crud.md
+                - Aggregation: lehrplan/datenbanken/nosql/mongodb/aggregation.md
+                - Indexe: lehrplan/datenbanken/nosql/mongodb/indexes.md
+                - Datenmodellierung: lehrplan/datenbanken/nosql/mongodb/data_modeling.md
+                - Sicherheit: lehrplan/datenbanken/nosql/mongodb/security.md
+                - Pymongo: lehrplan/datenbanken/nosql/mongodb/pymongo.md
+
+
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md

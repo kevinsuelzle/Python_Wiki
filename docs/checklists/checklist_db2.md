@@ -120,27 +120,6 @@
 
 - Ich bin mir bewusst über bewährte Methoden zur sicherheitsbewussten Entwicklung mit PyMongo.
 
-# Datenbanken in der Cloud - Bereitstellung & Hosting
-
-- Ich verstehe die Grundprinzipien von Cloud-Computing und seine Vorteile im Vergleich zu lokalen Umgebungen.
-
-- Ich kenne die verschiedenen Service-Modelle (IaaS, PaaS, SaaS) in der Cloud.
-
-- Ich verstehe die Unterschiede zwischen den Cloud-Deployment-Modellen (Public Cloud, Private Cloud, Hybrid Cloud).
-
-- Ich kenne verschiedene Cloud-Anbieter wie AWS, Azure, GCP und ihre Positionen am Markt.
-
-- Ich bin vertraut mit den Hauptdienstleistungen, die Cloud-Anbieter anbieten, wie Datenbankdienste, Speicher und Berechnung.
-
-- Ich verstehe die Bedeutung von Hybrid-Cloud-Konzepten und kann die Unterschiede zwischen verschiedenen Anbietern bewerten.
-
-- Ich kenne die Konzepte von Managed Database Services und ihre Vorteile.
-
-- Ich kann entscheiden, welcher Datenbanktyp (relationale, NoSQL, In-Memory) für meine Anwendung in der Cloud geeignet ist.
-
-- Ich kann eine Datenbank in der Cloud bereitstellen und konfigurieren.
-
-- Ich kann Überwachungs- und Protokollierungstools in der Cloud nutzen, um die Leistung und Integrität der Datenbanken zu überwachen.
 
 # Azure Cosmos DB
 
@@ -241,8 +220,6 @@
 - Ich kann regelmäßig Penetrationstests durchführen, um Sicherheitslücken zu identifizieren und zu beheben, bevor sie ausgenutzt werden können.
 
 # Datenschutz & Compliance für NoSQL-Datenbanken
-
-- Ich kann Daten nach Sensibilität klassifizieren, um angemessene Sicherheitsmaßnahmen für unterschiedliche Arten von Informationen zu implementieren.
 
 - Ich kann sicherstellen, dass sensible Daten sowohl in der Datenbank als auch während der Übertragung verschlüsselt sind.
 

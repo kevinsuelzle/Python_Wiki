@@ -94,7 +94,7 @@
 | 7     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.md)                | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte)          | [hier](../begriffe/begriffe3.md#fortgeschrittene-orm-konzepte) |
 | 7     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.md)   | [hier](../checklists/checkliste3.md#sql-expression-language)                | [hier](../begriffe/begriffe3.md#sql-expression-language)       |
 | 7     | [Best Practices und fortgeschrittene Themen](datenbanken/best_practices.md) | [hier](../checklists/checkliste3.md#best-practices)                         | [hier](../begriffe/begriffe3.md#best-practices)                |
-<!-- | 7     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.md) | [hier](../checklists/checkliste3.md#integration-in-flask)      | [hier](../begriffe/begriffe3.md#integration-in-flask) | -->
+ <!--  | 7                                                                           | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.md) | [hier](../checklists/checkliste3.md#integration-in-flask)      | [hier](../begriffe/begriffe3.md#integration-in-flask) | --> 
 
 ## Web
 
@@ -165,19 +165,22 @@
 
 | Woche | Unterricht                                                       | Lernziele                                                                                 | Begriffssammlung |
 | ----- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------------- |
-|       | [NoSQL Intro Motivation](datenbanken/nosql/intro/intro.md)                                       | [hier](../checklists/checklist_db2.md#NoSQL-Intro-und-Motivation)                         |                  |
+|       | [NoSQL Intro Motivation](datenbanken/nosql/intro/intro.md)       | [hier](../checklists/checklist_db2.md#NoSQL-Intro-und-Motivation)                         |                  |
 |       | [Wiederholung SQL Datenbanken]()                                 | [hier](../checklists/checklist_db2.md#Wiederholung-SQL-Datenbanken)                       |                  |
 |       | [NoSQL Datenbanken]()                                            | [hier](../checklists/checklist_db2.md#nosql-datenbanken)                                  |                  |
-|       | [MongoDB]()                                                      | [hier](../checklists/checklist_db2.md#mongodb)                                            |                  |
-|       | [Pymongo]()                                                      | [hier](../checklists/checklist_db2.md#pymongo)                                            |                  |
-|       | [Datenbanken in der Cloud/ Datenbank Bereitstellung & Hosting]() | [hier](../checklists/checklist_db2.md#datenbanken-in-der-cloud---bereitstellung--hosting) |                  |
-|       | [Datenbank Refactoring]()                                        | [hier](../checklists/checklist_db2.md#Datenbank-Refactoring-in-NoSQL)                     |                  |
+|       | [MongoDB - Einführung]()                                         | [hier](../checklists/checklist_db2.md#mongodb)                                            |                  |
+|       | [MongoDB - CRUD]()                                               | [hier](../checklists/checklist_db2.md#mongodb)                                            |                  |
+|       | [MongoDB - Aggregation]()                                        | [hier](../checklists/checklist_db2.md#mongodb)                                            |                  |
+|       | [MongoDB - Indizes]()                                            | [hier](../checklists/checklist_db2.md#mongodb)                                            |                  |
+|       | [MongoDB - Datenmodellierung]()                                  | [hier](../checklists/checklist_db2.md#mongodb)                                            |                  |
+|       | [MongoDB - Sicherheit]()                                         | [hier](../checklists/checklist_db2.md#mongodb)                                            |                  |
+|       | [MongoDB - Pymongo]()                                            | [hier](../checklists/checklist_db2.md#pymongo)                                            |                  |
+|       | [Datenbank Refactoring ???]()                                        | [hier](../checklists/checklist_db2.md#Datenbank-Refactoring-in-NoSQL)                 |                  |
 |       | [Cosmos DB]()                                                    | [hier](../checklists/checklist_db2.md#azure-cosmos-db)                                    |                  |
-|       | [Graphdatenbanken]()                                             | [hier](../checklists/checklist_db2.md#graphdatenbanken)                                   |                  |
-|       | [SQL-Injection]()                                                | [hier](../checklists/checklist_db2.md#sicherheit-f%C3%BCr-nosql-datenbanken)              |                  |
-|       | [Datenschutz & Compliance]()                                     | [hier](../checklists/checklist_db2.md#datenschutz--compliance-f%C3%BCr-nosql-datenbanken) |                  |
+<!-- |       | [Graphdatenbanken]()                                             | [hier](../checklists/checklist_db2.md#graphdatenbanken)                              |                  | -->
 
 <!-- |  | Graphqln NEO4J?  -->
+
 ## Datenverarbeitung und -darstellung
 
 | Woche | Unterricht | Lernziele | Begriffssammlung |
