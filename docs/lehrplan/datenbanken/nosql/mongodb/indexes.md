@@ -80,3 +80,89 @@ use meineDatenbank
 # Erstellen eines zusammengesetzten Indexes auf mehreren Feldern
 db.meineCollection.createIndex({ name: 1, age: -1 })
 ```
+
+## Aufgaben:
+
+1. **Index für das "name"-Feld in der Sammlung "Benutzer":**
+     - Erstelle einen einfachen Index für das Feld "name" in der Sammlung "Benutzer".
+
+2. **Zusammengesetzter Index für die Felder "datum" und "produkt" in der Sammlung "Bestellungen":**
+       - Erstelle einen zusammengesetzten Index für die Felder "datum" und "produkt" in der Sammlung "Bestellungen".
+
+3. **Text-Index für das "titel"-Feld in der Sammlung "Bücher":**
+      - Erstelle einen Text-Index für das Feld "titel" in der Sammlung "Bücher".
+
+4. **Absteigender Index für das "preis"-Feld in der Sammlung "Produkte":**
+     - Erstelle einen absteigenden Index für das Feld "preis" in der Sammlung "Produkte".
+
+5. **Geospatial-Index für das "standort"-Feld in der Sammlung "Benutzer":**
+     - Erstelle einen Geospatial-Index für das Feld "standort" in der Sammlung "Benutzer".
+
+6. **Hash-Index für das "email"-Feld in der Sammlung "Kunden":**
+     - Erstelle einen Hash-Index für das Feld "email" in der Sammlung "Kunden".
+
+7. **Teil-Index für das "produkt"-Feld in der Sammlung "Bestellungen":**
+     - Erstelle einen Teil-Index für das Feld "produkt" in der Sammlung "Bestellungen", der nur Dokumente mit einer bestimmten Bedingung enthält.
+
+8. **Einzigartiger Index für das "name"-Feld in der Sammlung "Produkte":**
+     - Erstelle einen einzigartigen Index für das Feld "name" in der Sammlung "Produkte".
+
+9. **Index mit Ablaufzeit für das "datum"-Feld in der Sammlung "Bestellungen":**
+    - Erstelle einen Index mit Ablaufzeit für das Feld "datum" in der Sammlung "Bestellungen".
+
+10. **Sparse-Index für das "alter"-Feld in der Sammlung "Benutzer":**
+     - Erstelle einen sparsen Index für das Feld "alter" in der Sammlung "Benutzer", um nur Dokumente mit diesem Feld zu indizieren.
+
+## Lösungen:
+
+Leider kann ich in dieser Umgebung keine interaktiven Codeausführungen durchführen, aber ich kann dir die grundlegende Vorgehensweise für jede Aufgabe erklären.
+
+1. **Index für das "name"-Feld in der Sammlung "Benutzer":**
+    ```javascript
+    db.benutzer.createIndex({ name: 1 });
+    ```
+
+2. **Zusammengesetzter Index für die Felder "datum" und "produkt" in der Sammlung "Bestellungen":**
+    ```javascript
+    db.bestellungen.createIndex({ datum: 1, produkt: 1 });
+    ```
+
+3. **Text-Index für das "titel"-Feld in der Sammlung "Bücher":**
+    ```javascript
+    db.bücher.createIndex({ titel: "text" });
+    ```
+
+4. **Absteigender Index für das "preis"-Feld in der Sammlung "Produkte":**
+    ```javascript
+    db.produkte.createIndex({ preis: -1 });
+    ```
+
+5. **Geospatial-Index für das "standort"-Feld in der Sammlung "Benutzer":**
+    ```javascript
+    db.benutzer.createIndex({ standort: "2dsphere" });
+    ```
+
+6. **Hash-Index für das "email"-Feld in der Sammlung "Kunden":**
+    ```javascript
+    db.kunden.createIndex({ email: "hashed" });
+    ```
+
+7. **Teil-Index für das "produkt"-Feld in der Sammlung "Bestellungen":**
+    ```javascript
+    db.bestellungen.createIndex({ produkt: 1 }, { partialFilterExpression: { produkt: { $exists: true } } });
+    ```
+
+8. **Einzigartiger Index für das "name"-Feld in der Sammlung "Produkte":**
+    ```javascript
+    db.produkte.createIndex({ name: 1 }, { unique: true });
+    ```
+
+9. **Index mit Ablaufzeit für das "datum"-Feld in der Sammlung "Bestellungen":**
+    ```javascript
+    db.bestellungen.createIndex({ datum: 1 }, { expireAfterSeconds: 0 });
+    ```
+
+10. **Sparse-Index für das "alter"-Feld in der Sammlung "Benutzer":**
+        ```javascript
+        db.benutzer.createIndex({ alter: 1 }, { sparse: true });
+        ```
