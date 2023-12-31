@@ -37,12 +37,12 @@ arr = np.arange(-5, 6)
 print(arr)
 
 print(arr[-3:])
-print(arr[-11:-7])
+print(arr[-11:-8])
 ```
 
     [-5 -4 -3 -2 -1  0  1  2  3  4  5]
     [3 4 5]
-    [-5 -4 -3 -2]
+    [-5 -4 -3]
 
 
 ### A4: Slicing mit Schrittweiten 🌶️
