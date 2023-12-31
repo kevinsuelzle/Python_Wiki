@@ -134,14 +134,7 @@ In diesem Beispiel wird ein Array arr erstellt und dann eine bedingte Slicing-Op
 
 ### A1: Wozu eigentlich Slicing? 🌶️
 
-Überlege dir Beispiele: Wo braucht man Slicing bei der Datenverarbeitung bzw. Datenanalyse?
-
-Beispiele:
-
-- ein Stück einer Zeitreihe (1D Array) "rausschneiden" 
-- von mehreren Zeitreihen (2D Array) einen Abschnitt "rausschneiden", z.B. die letzten 100 Datenpunkte oder die mittleren 100 Datenpunkte
-- ein Kanal (R,G,B) von einem Farbbild (RGB) (3D Array) "rausschneiden"
-- einen Abschnitt aus einem Farb-Video (4D Array) "rausschneiden"
+Überlegen Sie sich Beispiele: Wo braucht man Slicing bei der Datenverarbeitung bzw. Datenanalyse?
 
 ### A2: Grundlegendes Slicing 🌶️
 
