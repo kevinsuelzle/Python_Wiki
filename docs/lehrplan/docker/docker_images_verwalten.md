@@ -142,9 +142,14 @@ docker push localhost:5000/hello-world-python
 
 ### Sicherheitsaspekte
 
-- **HTTPS:** Es wird empfohlen, Ihre Registry mit HTTPS zu sichern, um die Übertragung von Images zu schützen.
-- **Authentifizierung:** Implementieren Sie Authentifizierungsmechanismen, um den Zugriff auf Ihre Registry zu
-  kontrollieren. **TODO: und wie soll das gehen? Für die Teilnehmer zu weit denke ich**
+- **HTTPS:** 
+
+    Es wird empfohlen, Ihre Registry mit HTTPS zu sichern, um die Übertragung von Images zu schützen.
+
+- **Authentifizierung:** 
+
+    Authentifizierungsmechanismen sollten eingerichtet werden, um den Zugriff auf Ihre Registry zu kontrollieren. Dies sprengt aber den Rahmen dieses Buches, 
+    
 
 ### **Aufgabe: Nacharbeiten der Schritte 🌶️**
 
