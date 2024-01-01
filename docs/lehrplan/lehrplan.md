@@ -156,15 +156,23 @@
 
 ## Docker
 
-| Woche | Unterricht                                                                         | Lernziele                                                                         | Begriffssammlung                       |
-|-------|------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|----------------------------------------|
-| 11    | [Docker](docker/docker_introduction)                                                         | [hier](../checklists/checklist_docker.md)                                         | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Einführung in Docker](docker/docker_introduction)                                           | [hier](../checklists/checklist_docker.md#grundlegendes)                           | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Docker Installation und Konfiguration](docker/docker_installation_und_konfiguration)  | [hier](../checklists/checklist_docker.md#installation-und-konfiguration)          | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Docker-Images und Container](docker/docker_images_und_container.md)               | [hier](../checklists/checklist_docker.md#docker-images-und-container)             | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Dockerfile und Docker Compose](docker/docker_dockerfile_und_docker_compose)           | [hier](../checklists/checklist_docker.md#dockerfile-und-docker-compose)           | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Docker Best Practices und Sicherheit](docker/docker_best_practices_und_sicherheit)    | [hier](../checklists/checklist_docker.md#best-practices-und-sicherheit)           | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Praktische Übungen und Szenarien](docker/docker_praktische_uebungen_und_szenarien)    | [hier](../checklists/checklist_docker.md#praktische-szenarien)                    | [hier](../begriffe/begriffe_docker.md) |
+| Woche | Unterricht                                                                                       | Lernziele                                                                | Begriffssammlung                       |
+|-------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------------------|
+| 11    | [Docker](docker/docker_introduction)                                                             | [hier](../checklists/checklist_docker.md)                                | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Einführung in Docker](docker/docker_introduction)                                               | [hier](../checklists/checklist_docker.md#grundlegendes)                  | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker Installation und Konfiguration](docker/docker_installation_und_konfiguration)            | [hier](../checklists/checklist_docker.md#installation-und-konfiguration) | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker-Images und Container](docker/docker_images_und_container.md)                             | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker Images verstehen](docker/docker_images_verstehen.md)                                            | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker Images erstellen](docker/docker_images_erstellen.md)                                            | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker Images verwalten](docker/docker_images_verwalten.md)                                            | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Lebenszyklus der Docker Container](docker/lebenszyklus_der_docker_container.md)                        | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Interaktion mit Docker Containern](docker/interaktion_mit_docker_containern.md)                        | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Kommunikation zwischen und mit Containern](docker/kommunikation_zwischen_und_mit_docker_containern.md) | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Wo und wie Docker Container Daten speichern](docker/wo_und_wie_docker_container_daten_speichern.md)    | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Fehlersuche mit Container Logs](docker/fehlersuche_mit__container_logs.md)                             | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Dockerfile und Docker Compose](docker/docker_dockerfile_und_docker_compose)                     | [hier](../checklists/checklist_docker.md#dockerfile-und-docker-compose)  | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker Best Practices und Sicherheit](docker/docker_best_practices_und_sicherheit)              | [hier](../checklists/checklist_docker.md#best-practices-und-sicherheit)  | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Praktische Übungen und Szenarien](docker/docker_praktische_uebungen_und_szenarien)              | [hier](../checklists/checklist_docker.md#praktische-szenarien)           | [hier](../begriffe/begriffe_docker.md) |
 
 
 ## NoSQL Datenbanken
