@@ -63,7 +63,7 @@ CMD ["python", "app.py"]
 
 Um ein Python-Programm auszuführen, benötigen Sie einen Python-Interpreter, der die Python-Befehle zur Laufzeit
 interpretiert und in Maschinencode übersetzt.
-Hier nutzen wir das Image python in der Version 3.8-slim, das aus
+Hier nutzen wir das Image `python` in der Version `3.8-slim`, das aus
 dem [Docker Hub Repository](https://hub.docker.com/_/python) heruntergeladen wird. Es
 handelt sich um ein offizielles Image, das für seine Zuverlässigkeit und Sicherheit bekannt ist.
 Dieses Dockerfile verwendet also das offizielle Python-Image als Basis, kopiert die Anwendungsdateien in das Image und
@@ -79,10 +79,10 @@ docker build -t hello-world-python .
 
 Achten Sie auf den Punkt am Ende der Anweisung.
 
-In dem Befehl `docker build -t hello-world-python .` gibt der Punkt (`.`) das Kontextverzeichnis für den Build-Prozess
+In dem Befehl `docker build -t hello-world-python .` gibt der Punkt `.` das Kontextverzeichnis für den Build-Prozess
 an, typischerweise das Verzeichnis, in dem sich das Dockerfile befindet. Hier sind die Details:
 
-- **Punkt (`.`):** Der Punkt repräsentiert das aktuelle Verzeichnis in Unix- und Linux-basierten Systemen. Im Kontext
+- **Punkt `.`:** Der Punkt repräsentiert das aktuelle Verzeichnis in Unix- und Linux-basierten Systemen. Im Kontext
   des `docker build`-Befehls teilt der Punkt Docker mit, dass das Build-Kontextverzeichnis das aktuelle Verzeichnis ist,
   in dem der Befehl ausgeführt wird. Docker sucht in diesem Verzeichnis nach dem Dockerfile (es sei denn, ein anderes
   wird explizit angegeben) und verwendet alle Dateien und Verzeichnisse innerhalb dieses Kontexts für den Build-Prozess,
@@ -120,6 +120,6 @@ Hier sind die Schritte, die im Detail passieren:
 
 Der Container existiert weiterhin nach seiner Ausführung, aber er befindet sich in einem gestoppten Zustand. Sie können
 auch über die Konsole
-den gestoppten Container mit Befehlen wie docker ps -a sehen, der alle Container anzeigt, einschließlich der gestoppten.
-Um den Container und seine Ressourcen zu entfernen, müssten Sie ihn explizit mit docker rm löschen. Sie können ihn auch
+den gestoppten Container mit Befehlen wie `docker ps -a` sehen, der alle Container anzeigt, einschließlich der gestoppten.
+Um den Container und seine Ressourcen zu entfernen, müssten Sie ihn explizit mit `docker rm` löschen. Sie können ihn auch
 über das Dashboard löschen.
