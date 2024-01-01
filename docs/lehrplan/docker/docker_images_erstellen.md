@@ -115,7 +115,7 @@ Hier sind die Schritte, die im Detail passieren:
 2. Skriptausführung: Das Python-Skript führt seine Befehle aus, in diesem Fall print('hello world').
 3. Prozessende: Nachdem das Skript ausgeführt wurde und keine weiteren Anweisungen vorhanden sind, endet der
    Python-Prozess.
-4. Container Stoppt: Da der Hauptprozess (Python-Skript) beendet wurde, hat der Container keine weiteren Aufgaben mehr
+4. Container Stopp: Da der Hauptprozess (Python-Skript) beendet wurde, hat der Container keine weiteren Aufgaben mehr
    und stoppt sich selbst.
 
 Der Container existiert weiterhin nach seiner Ausführung, aber er befindet sich in einem gestoppten Zustand. Sie können
