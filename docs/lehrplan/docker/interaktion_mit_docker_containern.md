@@ -1,11 +1,12 @@
-# Interaktion mit Docker-Containern: Übersicht und praktische Beispiele
+# Interaktion mit Docker-Containern
 
 ## 1. Starten und Stoppen von Containern
 
 - **Starten eines Containers:**
-  ```bash
-  docker run -d --name mein-container hello-world-python
-  ```
+
+```bash
+docker run -d --name mein-container hello-world-python
+```
 
   Das Image haben wir [hier](docker_images_erstellen.md) erstellt.
 
@@ -36,18 +37,20 @@ Hier sind einige wichtige Punkte zum detached Modus:
    Produktionsumgebungen oder beim Ausführen von Anwendungen, die als Hintergrunddienste fungieren sollen.
 
 - **Stoppen eines Containers:**
-  ```bash
-  docker stop mein-container
-  ```
+
+```bash
+docker stop mein-container
+```
+  
   Dieser Befehl stoppt den Container `mein-container`.
 
 ## 2. Zugriff auf laufende Container
 
 - **Interaktiver Modus:**
 
-  ```bash
-  docker exec -it mein-container bash
-  ```
+```bash
+docker exec -it mein-container bash
+```
 
   Mit diesem Befehl starten Sie eine interaktive Bash-Shell im Container `mein-container`.
   Der Befehl `docker exec -it ...` wird verwendet, um in einem bereits laufenden Docker-Container interaktive Befehle
@@ -87,116 +90,61 @@ einfach nur, um den Zustand und die Konfiguration von Diensten innerhalb des Con
 Die folgenden Kommandos beziehen sich auf die Arbeit mit einem Container.
 
 - **Kopieren von Dateien:**
-  ```bash
-  docker cp host_datei.txt mein-container:/container_datei.txt
-  ```
-  Kopiert `host_datei.txt` vom Host-System in den Container `mein-container`.
+
+```bash
+docker cp host_datei.txt mein-container:/container_datei.txt
+```
+
+Kopiert `host_datei.txt` vom Host-System in den Container `mein-container`.
 
 - **Persistente Daten mit Volumes:**
-  ```bash
-  docker run -d --name mein-container -v mein-volume:/app hello-world-python
-  ```
 
-  In diesem Befehl:
+```bash
+docker run -d --name mein-container -v mein-volume:/app hello-world-python
+```
 
-    - `-d` ist der Schalter für den oben beschriebenen detached mode.
-    - `--name mein-container` gibt dem container seinen Namen.
-    - `-v mein-volume:/app` sagt Docker, dass es das Volume `mein-volume` an den Pfad `/app` im Container binden soll.
-    - `hello-world-python` ist das Image, aus dem der Container erstellt wird.
+In diesem Befehl:
 
-  Näheres dazu findet sich [hier](wo_und_wie_docker_container_daten_speichern.md).
+- `-d` ist der Schalter für den oben beschriebenen detached mode.
+- `--name mein-container` gibt dem container seinen Namen.
+- `-v mein-volume:/app` sagt Docker, dass es das Volume `mein-volume` an den Pfad `/app` im Container binden soll.
+- `hello-world-python` ist das Image, aus dem der Container erstellt wird.
 
-## 4. Netzwerkkommunikation
+Näheres dazu findet sich [hier](wo_und_wie_docker_container_daten_speichern.md).
 
-- **Port-Weiterleitung:**
-  ```bash
-  docker run -d --name mein-webserver -p 8080:80 nginx
-  ```
-  Startet einen nginx-Webserver-Container und leitet den Port 8080 des Hosts auf den Port 80 des Containers um.
-
-  Funktionsweise des nginx-Webservers:
-  ```mermaid
-  graph LR
-      client[Client] -- HTTP Request :8080 --> host[Host Machine]
-      host -- Port 8080 to 80 Mapping --> nginx[Nginx Container]
-      nginx -- Static Content --> host
-      host -- Static Content :8080 --> client
-      nginx -- HTTP Request --> app[Application Server]
-      app -- Response --> nginx
-      nginx -- HTTP Response --> host
-      host -- HTTP Response :8080 --> client
-  ```
-
-  Nginx agiert als Vermittler zwischen dem Client und den Ressourcen, die der Client anfordert, sei es statischer Inhalt
-  oder dynamische Inhalte, die von einem Anwendungsserver generiert werden. Nginx ist bekannt für seine
-  Leistungsfähigkeit, Effizienz und seine Fähigkeit, eine große Anzahl von gleichzeitigen Verbindungen zu verwalten, was
-  es zu einer beliebten Wahl für moderne Webanwendungen macht.
-
-  Diese Grafik zeigt, wie der Docker-Befehl docker run -d --name mein-webserver -p 8080:80 nginx den Datenfluss zwischen
-  dem Client, dem Host und dem Nginx-Container in einem Docker-Ökosystem beeinflusst. Durch die Portweiterleitung können
-  Clients auf den Nginx-Webserver zugreifen, als ob er direkt auf dem Host auf Port 8080 laufen würde, während er
-  tatsächlich sicher und isoliert innerhalb eines Containers auf Port 80 läuft.
-
-
-- **Container in einem Netzwerk:**
-  ```bash
-  docker network create mein-netzwerk
-  docker run -d --name mein-container --network mein-netzwerk hello-world-python
-  ```
-  Erstellt ein Netzwerk `mein-netzwerk` und startet einen Container darin.
-
-  ```mermaid
-  graph LR
-      subgraph Docker Host
-          subgraph Netzwerk A [mein-netzwerk]
-              A[Container A] 
-              B[Container B]
-          end
-          subgraph Netzwerk B [anderes-netzwerk]
-              C[Container C]
-              D[Container D]
-          end
-      end
-  
-      A -- Kommunikation --> B
-      C -- Kommunikation --> D
-      A <-. Keine direkte Kommunikation .-> C
-      B <-. Keine direkte Kommunikation .-> D
-  ```
-
-  Diese Grafik veranschaulicht, wie Docker-Netzwerke zur Isolation und Kommunikation zwischen Containern beitragen.
-  Durch
-  die Verwendung von benutzerdefinierten Netzwerken können Sie sicherstellen, dass nur die gewünschten Container
-  miteinander kommunizieren können, während andere Container oder Netzwerke isoliert bleiben. Dies ist besonders wichtig
-  für die Sicherheit, das Netzwerkmanagement und die Architektur von Microservices.
-
-## 5. Überwachung und Management
+## 4. Überwachung und Management
 
 - **Container-Status überprüfen:**
-  ```bash
-  docker ps
-  ```
-  Zeigt alle laufenden Container an.
+
+```bash
+docker ps
+```
+
+Zeigt alle laufenden Container an.
 
 - **Ressourcennutzung überwachen:**
-  ```bash
-  docker stats
-  ```
-  Zeigt Echtzeitinformationen zur Ressourcennutzung aller Container.
 
-## 6. Container-Updates und -Änderungen
+```bash
+docker stats
+```
+
+Zeigt Echtzeitinformationen zur Ressourcennutzung aller Container.
+
+## 5. Container-Updates und -Änderungen
 
 - **Container aktualisieren:**
-  ```bash
-  # Stoppen des alten Containers
-  docker stop mein-container
-  # Entfernen des alten Containers
-  docker rm mein-container
-  # Starten eines neuen Containers mit dem aktualisierten Image
-  docker run -d --name mein-container hello-world-python:neue-version
-  ```
-  Wenn ein Image erstellt wird, sollte ein Tag (hier 'neue-version') als Versionsbezeichnung hintere einem Doppelpunkt
-  angegeben werden. So können Tags wie :latest dafür sorgen, dass immer das aktuellste Image verwendet wird.
+
+```bash
+# Stoppen des alten Containers
+docker stop mein-container
+# Entfernen des alten Containers
+docker rm mein-container
+# Starten eines neuen Containers mit dem aktualisierten Image
+docker run -d --name mein-container hello-world-python:neue-version
+```
+
+Wenn ein Image erstellt wird, sollte ein Tag (hier 'neue-version') als Versionsbezeichnung hintere einem Doppelpunkt
+angegeben werden. So können Tags wie `:latest` dafür sorgen, dass immer das aktuellste Image verwendet wird.
 
 ## Aufgaben
 
@@ -204,87 +152,9 @@ Die folgenden Kommandos beziehen sich auf die Arbeit mit einem Container.
 
 1. Nutzen Sie die Kommandozeile, um sich die laufenden Container aufzulisten.
 2. Suchen Sie den Kommandozeilenbefehl über docker --help, um sich die vorhandenen Images aufzulisten.
-3. Lassen Sie sich die vorhandenen Netzwerke anzeigen.
 
 ### **Aufgabe: Interaktion mit Docker-Containern 🌶🌶**
 
 In dieser Übung werden Sie praktische Erfahrungen im Umgang mit Docker-Containern sammeln. Sie werden lernen, wie man
 Container startet, stoppt, löscht und mit ihnen interagiert. Folgen Sie den untenstehenden Anweisungen, um die Aufgaben
 zu erfüllen.
-
-#### 1. Starten, Stoppen und Löschen von Containern
-
-- **Starten Sie einen Container:**
-  ```bash
-  docker run -d --name mein-container nginx  // es kann auch ein anderes Image sein
-  ```
-  Dieser Befehl startet einen neuen Container im Hintergrund mit dem Namen `mein-container` basierend auf dem `nginx`
-  Image.
-
-- **Stoppen Sie den Container:**
-  ```bash
-  docker stop mein-container
-  ```
-  Dieser Befehl stoppt den laufenden Container `mein-container`.
-
-- **Löschen Sie den Container:**
-  ```bash
-  docker rm mein-container
-  ```
-  Dieser Befehl entfernt den gestoppten Container `mein-container` aus Ihrem System.
-
-#### 2. Interaktion mit einem laufenden Container
-
-Öffnen Sie eine Konsole im Container:
-
-```bash
-    docker exec -it mein-container /bin/bash
-```
-  Dieser Befehl öffnet eine interaktive Bash-Shell im Container mein-container. Sie können nun Befehle wie ls, cd und cd .. verwenden, um die Dateistruktur zu erkunden.
-  
-  Erkunden Sie das Dateisystem:
-      Verwenden Sie ls um die Dateien im aktuellen Verzeichnis aufzulisten.
-      Navigieren Sie mit cd [Verzeichnisname] in ein Verzeichnis oder mit cd .. zurück zum übergeordneten Verzeichnis.
-  
-  Verlassen Sie die Konsole:
-      Nachdem Sie das Dateisystem erkundet haben, geben Sie `exit` ein, um die Bash-Shell zu verlassen und zum Host-System zurückzukehren.
-  
-  Nun können Sie mit dem nächsten Schritt fortfahren, um eine Textdatei zu erstellen und diese in den Container zu
-  kopieren.
-
-#### 3. Erstellen und Kopieren einer Textdatei
-
-- **Erstellen Sie eine Textdatei `mein-script.sh` auf Ihrem Host-System:**
-  ```bash
-  echo 'echo Hallo aus meinem Container!' > mein-script.sh
-  ```
-  Dieser Befehl erstellt eine einfache Shell-Skriptdatei mit dem Namen `mein-script.sh`.
-
-- **Kopieren Sie die Textdatei in den Container:**
-  ```bash
-  docker cp mein-script.sh mein-container:/usr/mein-script.sh
-  ```
-  Dieser Befehl kopiert die Datei `mein-script.sh` in das Verzeichnis `/usr/` des Containers `mein-container`.
-
-#### 4. Ausführen der Datei im Container
-
-- **Führen Sie die Datei im Container aus:**
-  ```bash
-  docker exec mein-container bash -c "chmod +x /usr/mein-script.sh && /usr/mein-script.sh"
-  ```
-  Dieser Befehl macht das Skript ausführbar und führt es dann im Container aus. Sie sollten die Ausgabe "Hallo aus
-  meinem Container!" sehen.
-
-  Vertiefende Übung: Wiederholen Sie Aufgabe 2 und suchen Sie die kopierte und ausgeführte Datei im Container.
-
-#### 5. Verlassen der Konsole
-
-- **Verlassen Sie die Konsole:**
-  Wenn Sie in der interaktiven Shell des Containers sind, können Sie `exit` eingeben, um die Shell zu verlassen und zur
-  Kommandozeile Ihres Host-Systems zurückzukehren.
-
-### **Zusammenfassung**
-
-Durch das Ausführen dieser Aufgaben haben Sie gelernt, wie man mit Docker-Containern interagiert, indem Sie sie starten,
-stoppen, löschen, auf sie zugreifen und in ihnen Befehle ausführen. Diese Fähigkeiten sind grundlegend für die Arbeit
-mit Docker und bieten Ihnen eine solide Basis für komplexere Docker-Anwendungen und -Dienste.

@@ -3,21 +3,15 @@
 Das Verständnis der Kommunikation ist entscheidend für die effektive Nutzung von Docker, insbesondere wenn
 es um die Verbindung von Containern untereinander und mit der Außenwelt geht.
 
-## Einführung
-
 Docker-Container kommunizieren mit ihrer Umgebung über mehrere Techniken, um Isolation zu gewährleisten und gleichzeitig
 notwendige Interaktionen zu ermöglichen.
 
-### Allgemeine Methoden:
+## Allgemeine Methoden
 
 1. **Netzwerke:**
-    - **Bridge-Netzwerk:** Standardmäßig verwendet Docker ein Bridge-Netzwerk, um die Kommunikation zwischen Containern
-      und dem Host zu ermöglichen. Container im selben Bridge-Netzwerk können kommunizieren, während die Bridge den
-      externen Zugriff einschränkt.
-    - **Host-Netzwerk:** Container können das Netzwerk des Hosts direkt verwenden. Dies beseitigt die Netzwerkisolation
-      zwischen dem Container und dem Host, ermöglicht aber eine einfachere Kommunikation mit externen Netzwerken.
-    - **Overlay-Netzwerk:** Für Docker im Swarm-Modus ermöglichen Overlay-Netzwerke, dass Container, die über mehrere
-      Knoten verteilt sind, kommunizieren, als wären sie auf demselben Host.
+    - Docker bietet
+      mehrere [Netzwerktypen](kommunikation_zwischen_und_mit_docker_containern.md#grundlagen-des-docker-netzwerks) an,
+      mit denen Container miteinander kommunizieren.
 
 2. **Volumes:**
     - [Volumes](wo_und_wie_docker_container_daten_speichern.md#verwendung-von-volumes) werden verwendet, um von
@@ -33,9 +27,13 @@ notwendige Interaktionen zu ermöglichen.
       zu haben.
 
 4. **Ports:**
-    - Docker ermöglicht das Weiterleiten von Ports vom Host zu den Containern. Durch das Öffnen und Zuordnen von Ports
+    - Docker ermöglicht
+      das [Weiterleiten von Ports](kommunikation_zwischen_und_mit_docker_containern.md#netzwerkkommunikation-und-port-weiterleitung)
+      vom Host zu den Containern. Durch das Öffnen und Zuordnen von Ports
       ermöglicht Docker, dass Netzwerkdienste, die innerhalb von Containern laufen, von externen Netzwerken oder anderen
       Containern aus zugänglich sind.
+    - **Ohne die Angabe von Ports kann keine Kommunikation zwischen Containern stattfinden!** Containern müssen bei ihrem
+      Bau oder in ihrer Programmierung Ports zugewiesen sein.
 
 5. **Inter-Container-Kommunikation (ICC):**
     - Container können über das Linking (eine ältere Methode) oder besser, indem sie Teil desselben Netzwerks sind,
@@ -50,22 +48,27 @@ Diese Techniken sind Teil des Designs von Docker, um die Isolation von Container
 ermöglichen, dass sie notwendige Aufgaben ausführen und effektiv mit der externen Umgebung oder anderen Containern
 kommunizieren.
 
-### Ausnahme
+## Ausnahme
 
 Das Öffnen einer Shell in einem Docker-Container, üblicherweise durchgeführt mit Befehlen
-wie `docker exec -it [container-id] /bin/bash`, unterscheidet sich etwas von den oben aufgeführten
+wie
+
+```bash
+docker exec -it [container-id] /bin/bash
+```
+
+unterscheidet sich etwas von den oben aufgeführten
 Kommunikationsmethoden. Es geht mehr um die Interaktion mit der internen Umgebung des Containers, als darum, wie der
 Container mit dem externen System oder anderen Containern kommuniziert. Hier ist der Zusammenhang:
 
-- **Interaktive Shells und Exec-Befehle:**
-    - Wenn Sie eine Shell in einem Container öffnen, nutzen Sie die Fähigkeit von Docker, Befehle innerhalb des
-      laufenden Containers auszuführen. Der Befehl `docker exec` ermöglicht es, spezifische Befehle in einem bestehenden
-      Container auszuführen, was eine Shell wie Bash oder Sh sein kann. Dies ist im Wesentlichen eine direkte
-      Interaktion mit dem Dateisystem und den Prozessen des Containers.
-    - Diese Aktion wird durch die Kontrolle des Docker-Daemons über seine verwalteten Container ermöglicht. Wenn Sie
-      einen Befehl wie `docker exec` ausgeben, weist es den Docker-Daemon an, eine interaktive Sitzung mit der
-      Prozessumgebung des Containers zu öffnen. Sie kommunizieren nicht über ein Netzwerk oder teilen Daten über
-      Volumes, sondern interagieren direkt mit der Umgebung des Containers.
+- Wenn Sie eine Shell in einem Container öffnen, nutzen Sie die Fähigkeit von Docker, Befehle innerhalb des
+  laufenden Containers auszuführen. Der Befehl `docker exec` ermöglicht es, spezifische Befehle in einem bestehenden
+  Container auszuführen, was eine Shell wie Bash oder Sh sein kann. Dies ist im Wesentlichen eine direkte
+  Interaktion mit dem Dateisystem und den Prozessen des Containers.
+- Diese Aktion wird durch die Kontrolle des Docker-Daemons über seine verwalteten Container ermöglicht. Wenn Sie
+  einen Befehl wie `docker exec` ausgeben, weist es den Docker-Daemon an, eine interaktive Sitzung mit der
+  Prozessumgebung des Containers zu öffnen. Sie kommunizieren nicht über ein Netzwerk oder teilen Daten über
+  Volumes, sondern interagieren direkt mit der Umgebung des Containers.
 
 Diese Methode wird hauptsächlich für das Debugging, die Verwaltung und die Interaktion mit containerisierten Anwendungen
 während der Entwicklung oder Wartung verwendet. Sie erleichtert nicht die Kommunikation zwischen Containern oder
@@ -74,139 +77,112 @@ direkte Verbindung in den Container für administrative oder interaktive Aufgabe
 
 ## Grundlagen des Docker-Netzwerks
 
-In diesem Kapitel werden wir die Grundlagen des Docker-Netzwerks und die verschiedenen Optionen zur
-Netzwerkkonfiguration erkunden. Es ist die allgemeinste und wichtigste Art der Kommunikation zwischen und mit
-Containern. Daher konzentriert sich dieser Kurs darauf.
+Docker-Netzwerke ermöglichen die Kommunikation zwischen Containern und dem Host-System sowie zwischen den Containern
+selbst. Sie sind entscheidend für die meisten Anwendungen, die in Containern laufen. Docker verwendet verschiedene
+Netzwerk-Treiber, um unterschiedliche Arten von Kommunikation und Isolation zu ermöglichen.
 
-Docker verwendet verschiedene Netzwerk-Treiber, um die Kommunikation zwischen Containern zu ermöglichen. Die
-gängigsten sind `bridge`, `host` und `overlay`.
+### Netzwerktypen in Docker
 
-| Netwerktyp | Erklärung                                                                                                                                                                                    |
-|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bridge`   | Das Standardnetzwerk für Docker-Container. Jeder Container, der diesem Netzwerk hinzugefügt wird, erhält eine eigene IP-Adresse, wodurch eine interne Netzwerkkommunikation ermöglicht wird. |
-| `host`     | Container, die im Host-Netzwerkmodus laufen, teilen sich den Netzwerk-Stack des Hosts. Dies ist nützlich für Dienste, die auf dem Host-Netzwerk sichtbar sein müssen.                        |
-| `overlay`  | Wird in Docker-Swarm-Umgebungen verwendet, um eine Netzwerkkommunikation zwischen Containern auf verschiedenen Docker-Hosts zu ermöglichen.                                                  |
+| Netzwerktyp | Erklärung                                                                                                                                             |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `bridge`    | Standardnetzwerktyp für Docker-Container. Jeder Container in diesem Netzwerk erhält eine eigene IP-Adresse, was die interne Kommunikation ermöglicht. |
+| `host`      | Container teilen sich den Netzwerk-Stack des Hosts. Nützlich für Dienste, die auf dem Host-Netzwerk sichtbar sein müssen.                             |
+| `overlay`   | Ermöglicht die Netzwerkkommunikation zwischen Containern auf verschiedenen Docker-Hosts, typisch in Docker-Swarm-Umgebungen.                          |
 
-## Netzwerkkommunikation und Port-Weiterleitung
+### Netzwerkkommunikation und Port-Weiterleitung
 
-1. **Port-Weiterleitung:**
-    - Docker ermöglicht die Weiterleitung von Ports vom Host-System zu Containern, was den Zugriff auf Anwendungen
-      innerhalb von Containern von außerhalb ermöglicht.
+Port-Weiterleitung (Port Mapping) ist eine Methode, um den Zugriff auf Anwendungen innerhalb von Containern von
+außerhalb des Host-Systems zu ermöglichen. Dabei werden Ports des Host-Systems auf Ports des Containers abgebildet.
 
-2. **Container-zu-Container-Kommunikation:**
-    - Container innerhalb desselben Netzwerks können über ihre internen IP-Adressen oder Container-Namen kommunizieren.
+Der Befehl `-p 8080:80` im `docker run`-Kommando leitet Anfragen vom Port 8080 des
+Host-Systems zum Port 80 des Containers um. Dies ermöglicht es Ihnen, auf Dienste zuzugreifen, die im Container
+laufen, indem Sie den entsprechenden Port auf dem Host-System ansprechen.
 
 ```mermaid
 graph LR
-    subgraph Host-System
-        Host[Host-System]
-        DockerDaemon[Docker Daemon]
-    end
-
-    subgraph Docker Container
-        C1[Container 1]
-        C2[Container 2]
-    end
-
-    Host -->|Port - Weiterleitung| DockerDaemon
-    DockerDaemon -->|Port 80 zu C1:80| C1
-    DockerDaemon -->|Port 5000 zu C2:5000| C2
-    C1 -->|Netzwerk| C2
-    C2 -->|Netzwerk| C1
-    style Host fill: #f9f, stroke: #333, stroke-width: 2px
-    style DockerDaemon fill: #bbf, stroke: #333, stroke-width: 2px
-    style C1 fill: #ccf, stroke: #333, stroke-width: 2px
-    style C2 fill: #ccf, stroke: #333, stroke-width: 2px
+    client[Client] -- HTTP Request :8080 --> host[Host Machine]
+    host -- Port 8080 to 80 Mapping --> nginx[Nginx Container]
+    nginx -- Static Content --> host
+    host -- Static Content :8080 --> client
+    nginx -- HTTP Request --> app[Application Server]
+    app -- Response --> nginx
+    nginx -- HTTP Response --> host
+    host -- HTTP Response :8080 --> client
 ```
 
-- Das Host-System ist der Server oder Computer, auf dem Docker läuft.
-- Der Docker Daemon verwaltet die Docker-Container und Netzwerke.
-- Container 1 und Container 2 sind zwei Docker-Container, die auf dem Host-System laufen.
-- Port-Weiterleitung zeigt, wie Anfragen an bestimmte Ports des Host-Systems zu den Containern weitergeleitet werden.
-- Netzwerk zwischen den Containern zeigt, wie sie innerhalb desselben Netzwerks kommunizieren können.
+In dieser Grafik:
 
-## Praktische Beispiele
+- **Client:** Sendet eine HTTP-Anfrage an den Host auf Port 8080.
+- **Host Machine:** Leitet die Anfrage von Port 8080 auf Port 80 des Nginx-Containers um.
+- **Nginx Container:** Empfängt die Anfrage auf Port 80, verarbeitet sie (z.B. liefert statischen Inhalt oder leitet die
+  Anfrage an einen Anwendungsserver weiter) und sendet die Antwort zurück zum Host.
+- **Application Server:** Ein optionaler Backend-Dienst, der von Nginx angesprochen werden kann, um dynamische Inhalte
+  zu generieren.
 
-Im Folgenden verwenden wir das Image des Webservers `nginx`, um ein Beispiel aufzuzeigen. Funktionsweise und Aufgabe
-dieses Containers sind dabei ohne Bedeutung.
+### Praktische Beispiele
 
-- **Erstellen eines Bridge-Netzwerks und Verbinden von Containern:**
-  ```bash
-  docker network create mein-bridge-netzwerk
-  docker run -d --network=mein-bridge-netzwerk --name container1 nginx
-  docker run -d --network=mein-bridge-netzwerk --name container2 nginx
-  ```
-  Dieses Beispiel zeigt, wie man ein benutzerdefiniertes Bridge-Netzwerk erstellt und zwei Container darin startet.
-  Beide Container sind vom gleichen Image abgeleitet. Sofern keine Port Weiterleitung implementiert ist, können diese
-  Container ausschließlich miteinander kommunizieren.
-
-### Port-Weiterleitung
+**Erstellen eines Netzwerks:**
 
 ```bash
-docker run -d -p 8080:80 --name mein-webserver nginx
+docker network create mein-netzwerk
 ```
 
-Dieser Befehl startet einen Nginx-Webserver in einem Docker-Container. Die Option `-p 8080:80` konfiguriert eine
-Port-Weiterleitung vom Host-System zum Container:
+Erstellt ein benutzerdefiniertes Netzwerk namens `mein-netzwerk`.
 
-- **8080:** Der Port auf dem Host-System. Anfragen, die an diesen Port gesendet werden, werden an den Container
-  weitergeleitet.
-- **80:** Der Port im Container, auf den Nginx hört. Der Webserver im Container ist so konfiguriert, dass er Anfragen
-  auf diesem Port empfängt und verarbeitet.
+**Starten von Containern in einem Netzwerk:**
 
-Wenn also eine HTTP-Anfrage an den Port 8080 des Host-Systems gesendet wird, leitet Docker diese Anfrage intern an den
-Port 80 des Containers weiter. Der Nginx-Server im Container empfängt die Anfrage, als ob sie direkt an ihn adressiert
-wäre, und verarbeitet sie entsprechend. Dies ermöglicht es Ihnen, auf den Nginx-Webserver zuzugreifen, indem Sie
-einfach `http://localhost:8080` in Ihrem Browser besuchen, während der eigentliche Webserver isoliert im Container auf
-Port 80 läuft.## Netzwerksicherheit
+```bash
+docker run -d --name mein-container --network mein-netzwerk hello-world-python
+```
 
-- **Firewall-Regeln und Netzwerk-Policies:**
-  Es ist wichtig, Firewall-Regeln und Netzwerk-Policies zu implementieren, um den Zugriff auf Container-Dienste zu
-  kontrollieren.
+Startet einen Container im `mein-netzwerk`. Container innerhalb desselben Netzwerks können miteinander kommunizieren,
+während sie von anderen Netzwerken isoliert sind.
 
-- **Sichere Kommunikation:**
-  Für sensible Anwendungen sollten Sie sichere Kommunikationsprotokolle wie HTTPS verwenden, um Datenübertragungen
-  zu schützen.
+### Netzwerksicherheit
 
-### Anmerkungen zu Docker Netzwerken
+Die Sicherheit von Docker-Netzwerken hängt von der korrekten Konfiguration und Verwaltung ab. Während Docker-Netzwerke
+selbst keine eigene Firewall implementieren, bieten sie durch Netzwerktreiber und die Integration mit Host-Firewalls
+eine Reihe von Sicherheitsfunktionen:
 
-Docker-Netzwerke selbst implementieren nicht direkt eine Firewall im traditionellen Sinne, wie man sie vielleicht von
-Netzwerkgeräten oder Betriebssystemen kennt. Stattdessen nutzen sie die Isolations- und Netzwerkfähigkeiten des
-Host-Betriebssystems, um Netzwerksegmentierung und -kontrolle zu ermöglichen. Hier sind einige Punkte zum Verständnis
-der Netzwerksicherheit in Docker:
+**Netzwerksegmentierung:**
 
-#### Isolation durch Netzwerktreiber
+Verwenden Sie Docker-Netzwerke, um Container zu segmentieren und nur die notwendige
+Kommunikation zwischen ihnen zuzulassen.
 
-- **Netzwerktreiber:** Docker verwendet verschiedene Netzwerktreiber, um Netzwerke zu erstellen. Der Standardtreiber, "
-  bridge", erstellt ein privates Netzwerk für Container auf demselben Docker-Host. Andere Treiber wie "overlay"
-  ermöglichen Netzwerkkommunikation über mehrere Docker-Hosts hinweg.
-- **Isolation:** Jedes durch Docker erstellte Netzwerk ist von anderen Netzwerken isoliert, es sei denn, Sie
-  konfigurieren explizite Routen zwischen ihnen. Diese Isolation bietet eine gewisse Ebene der Sicherheit, ähnlich einer
-  Firewall, die den Verkehr zwischen Netzwerken kontrolliert.
+```mermaid
+graph LR
+    subgraph Docker Host
+        subgraph Netzwerk A [mein-netzwerk]
+            A[Container A]
+            B[Container B]
+        end
+        subgraph Netzwerk B [anderes-netzwerk]
+            C[Container C]
+            D[Container D]
+        end
+    end
 
-#### Integration mit Host-Firewalls
+    A -- Kommunikation --> B
+    C -- Kommunikation --> D
+    A <-. Keine direkte Kommunikation .-> C
+    B <-. Keine direkte Kommunikation .-> D
+```
 
-- **Host-Firewall:** Die Sicherheit von Docker-Netzwerken hängt auch von der Konfiguration der Firewall auf dem
-  Host-System ab. Docker manipuliert die iptables-Regeln des Hosts, um Port-Weiterleitung,
-  Container-zu-Container-Kommunikation und andere Netzwerkfunktionen zu ermöglichen. Die korrekte Konfiguration und
-  Verwaltung der Host-Firewall ist entscheidend für die Sicherheit.
-- **Anpassung der iptables:** Erfahrene Benutzer können die iptables-Regeln auf dem Host anpassen, um feinkörnige
-  Kontrolle über den Netzwerkverkehr zu und von Docker-Containern und -Netzwerken zu erhalten.
+Diese Grafik veranschaulicht, wie Docker-Netzwerke zur Isolation und Kommunikation zwischen Containern beitragen.
+Durch die Verwendung von benutzerdefinierten Netzwerken können Sie sicherstellen, dass nur die gewünschten Container
+miteinander kommunizieren können, während andere Container oder Netzwerke isoliert bleiben. Dies ist besonders wichtig
+für die Sicherheit, das Netzwerkmanagement und die Architektur von Microservices.
 
-#### Docker Security Best Practices
+**Port-Management:**
 
-- **Netzwerksegmentierung:** Verwenden Sie Docker-Netzwerke, um Container zu segmentieren und nur die notwendige
-  Kommunikation zwischen ihnen zuzulassen.
-- **Port-Management:** Seien Sie vorsichtig bei der Veröffentlichung von Container-Ports auf dem Host-System. Öffnen Sie
-  nur die Ports, die unbedingt notwendig sind, und verstehen Sie die Implikationen der Port-Weiterleitung.
-- **Updates und Patches:** Halten Sie die Docker-Software und das Host-Betriebssystem aktuell, um von den neuesten
-  Sicherheitspatches und Verbesserungen zu profitieren.
+- Seien Sie vorsichtig bei der Veröffentlichung von Container-Ports auf dem Host-System.
+- Stellen Sie sicher, dass Ports eindeutig zugeordnet sind.
+- Seien Sie sich darüber im klaren, welche Ports öffentlich freigegeben sind.
 
-#### Zusammenfassung
+### Zusammenfassung
 
-Während Docker-Netzwerke selbst keine eigene Firewall implementieren, bieten sie durch Netzwerktreiber und die
-Integration mit Host-Firewalls eine Reihe von Sicherheitsfunktionen. Die effektive Nutzung dieser Funktionen, zusammen
-mit allgemeinen Security-Best-Practices, ist entscheidend für die Aufrechterhaltung der Sicherheit Ihrer Container und
-Netzwerke. Für spezifische Firewall-Anforderungen sollten Sie zusätzliche Tools oder die Firewall-Funktionen des
-Host-Betriebssystems in Betracht ziehen.
-
+Docker-Netzwerke sind ein mächtiges Werkzeug zur Isolation und Kommunikation zwischen Containern. Durch die Verwendung
+von verschiedenen Netzwerk-Treibern und Port-Weiterleitung können Sie komplexe Anwendungen und Dienste effektiv
+verwalten. Die Sicherheit dieser Netzwerke hängt von der korrekten Konfiguration und Verwaltung der Netzwerke und
+Host-Firewall-Regeln ab. Mit den richtigen Praktiken können Sie eine sichere und effiziente Umgebung für Ihre Container
+schaffen.

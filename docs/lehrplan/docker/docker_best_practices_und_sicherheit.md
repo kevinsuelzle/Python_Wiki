@@ -11,7 +11,9 @@ gleichzeitig eine effiziente und wartbare Umgebung zu schaffen.
       minimieren.
 
 2. **Minimale Images:**
-    - Verwenden Sie minimale Basis-Images wie [python:3.8-slim]( docker_dockerfile_und_docker_compose.md#beispiel-eines-dockerfiles ), um die Angriffsfläche zu reduzieren. Je weniger
+    - Verwenden Sie minimale Basis-Images
+      wie [python:3.8-slim]( docker_dockerfile_und_docker_compose.md#beispiel-eines-dockerfiles ), um die Angriffsfläche
+      zu reduzieren. Je weniger
       im Image enthalten
       ist, desto geringer ist das Risiko.
 
@@ -61,14 +63,15 @@ Distribution anders sein. Hier gilt die Dokumentation des betreffenden Systems.
 Der `user` Befehl legt den akzeptierten Benutzer für das System fest.
 
 - **Dockerfile für ein minimales Image:**
-  ```Dockerfile
-  FROM python:3.8-slim
-  RUN adduser -S meinapp
-  USER meinapp
-  COPY . /app
-  WORKDIR /app
-  CMD ["./meineapp"]
-  ```
+
+```Dockerfile
+FROM python:3.8-slim
+RUN adduser -S meinapp
+USER meinapp
+COPY . /app
+WORKDIR /app
+CMD ["./meineapp"]
+```
 
 - **Netzwerksicherheit konfigurieren:**
 
@@ -85,10 +88,10 @@ verteilt sie auf die Container.
 Standardmäßig baut docker compose ein eigenes Netzwerk auf, ohne weitere Konfiguration. Man kann aber auch Netzwerke
 explizit erstellen und so die Zusammenarbeit klarer definieren.
 
-  ```bash
-  docker network create --driver bridge isoliertes_netzwerk
-  docker run --network=isoliertes_netzwerk meineapp
-  ```
+```bash
+docker network create --driver bridge isoliertes_netzwerk
+docker run --network=isoliertes_netzwerk meineapp
+```
 
 Auf diese Weise läuft der Container in einem ganz bestimmten Netzwerk und ist nur darüber erreichbar.
 
@@ -113,3 +116,5 @@ docker run --rm -v mein-volume:/mein-volume -v $(pwd):/backup ubuntu tar xvf /ba
 
 Sichert das Volume `mein-volume` von `mein-container` und stellt es später wieder her.
 
+Im Gegensatz dazu obliegt das Sichern von Bind-Mounts dem Host Betriebssystem. Also beispielsweise der Systemsicherung
+von Windows. 
