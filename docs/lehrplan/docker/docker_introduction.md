@@ -34,61 +34,6 @@ sich durch folgende Schlüsselkonzepte auszeichnet:
 
 5. **Isolation:** Jeder Container ist von anderen Containern isoliert, was Sicherheit und Zuverlässigkeit erhöht.
 
-### Zusammenfassung
-
-Durch das Verständnis dieser Grundlagen von Docker und der Containervirtualisierung sind Sie gut gerüstet, um tiefer in
-die Welt der modernen Softwareentwicklung und -bereitstellung einzutauchen. Nach einem kleinen Ausflug in die Geschichte
-von Docker werden wir uns mit der Installation und Konfiguration von Docker befassen, um eine solide Basis für
-praktische Übungen und fortgeschrittene Themen zu schaffen.
-
-### **Aufgabe: Definition 🌶️**
-
-Beschreibe die Unterschiede zwischen VM (Virtuellen Maschine) und Containern.
-
-## Geschichtlicher Rückblick: Die Rolle der Open Container Initiative (OCI)
-
-[10min]
-
-### Die Anfänge der Container-Technologie
-
-- **Vor Docker:** Container-basierte Virtualisierung existierte bereits vor Docker, aber sie war komplex in der
-  Handhabung und nicht standardisiert. Technologien wie LXC (Linux Containers) boten zwar Container-Funktionalitäten,
-  waren aber für viele Entwickler nicht leicht zugänglich.
-
-### Die Einführung von Docker
-
-- **Docker's Revolution:** Docker, eingeführt im Jahr 2013, revolutionierte den Markt durch die Vereinfachung der
-  Container-Erstellung und -Verwaltung. Es machte Container-Technologie zugänglicher und beliebter in der
-  Entwicklergemeinschaft.
-
-### Die Entstehung der OCI
-
-- **Standardisierungsbedarf:** Mit der wachsenden Popularität von Docker und anderen Container-Technologien entstand der
-  Bedarf an Standardisierung, um Kompatibilität und Interoperabilität zwischen verschiedenen Tools und Plattformen zu
-  gewährleisten.
-- **Gründung der OCI:** Im Jahr 2015 wurde die Open Container Initiative von führenden Technologieunternehmen, darunter
-  Docker Inc., gegründet. Ihr Ziel war es, Standards für Container-Formate und -Laufzeiten zu entwickeln.
-
-### Die Bedeutung der OCI
-
-- **OCI-Standards:** Die OCI hat zwei wesentliche Standards veröffentlicht: das Container Runtime Specification (
-  runtime-spec) und das Container Image Specification (image-spec). Diese Standards definieren, wie Container-Images
-  gebaut und Container ausgeführt werden sollten.
-- **Einfluss auf Docker:** Docker hat sich diesen Standards angeschlossen und seine Technologie entsprechend angepasst.
-  Dies hat dazu beigetragen, dass Docker-Container und -Images mit anderen Tools und Systemen, die OCI-Standards
-  einhalten, kompatibel sind.
-
-### Zusammenfassung
-
-Die Einbeziehung der Geschichte der OCI in die Einführung zu Docker zeigt auf, wie wichtig die Standardisierung in der
-schnelllebigen Welt der Technologie ist. Es verdeutlicht auch, wie Docker nicht nur als ein Tool, sondern als ein
-wesentlicher Bestandteil eines größeren Ökosystems von Container-Technologien zu verstehen ist. Dieses Verständnis kann
-ihnen helfen, die Bedeutung von Docker im Kontext der gesamten Branche zu würdigen und die Wichtigkeit von
-Standards und Interoperabilität in der Softwareentwicklung zu erkennen.
-
-## Referenz
-
-[Docker.com](https://docs.docker.com/)
 
 ## Beispiel einer Docker Desktop Anzeige
 
@@ -96,13 +41,11 @@ Standards und Interoperabilität in der Softwareentwicklung zu erkennen.
 
 Wir sehen hier zwei Applikationen
 
-1. endpoint-test
+| Applikation          | Container                                     | Status  |
+|----------------------|-----------------------------------------------|---------|
+| endpoint-test        | node-app-1<br/>sql-server-1<br/>nginx-1       | Running |
+| appfacterpbackend_m1 | aferp-ui<br/>aferp-api<br/>...(viele weitere) | Exited  |
 
-       drei Container, läuft
-
-2. appfacterpbackend_m1
-
-       viele Container (nicht alle sichtbar), läuft nicht.
 
 In der Tabelle erkennen wir einige Informationen zu den einzelnen Containern, z.B. Name (mit ID), Name des images und
 verschieden Status Werte.

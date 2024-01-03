@@ -11,16 +11,11 @@ als Vorlage für das Erstellen von Containern und enthält alles, was für das A
 von Binärdateien und Bibliotheken bis hin zu Systemeinstellungen.
 
 ## Schritte zur Erstellung eines Docker-Images
+**Erstellen eines Dockerfiles:** Ein Dockerfile ist eine Textdatei, die eine Reihe von Anweisungen enthält,
+um ein Docker-Image zu erstellen. Jede Anweisung im Dockerfile fügt eine neue Schicht zum Image hinzu.
 
-### **Erstellen eines Dockerfiles:**
-
-- Ein Dockerfile ist eine Textdatei, die eine Reihe von Anweisungen enthält, um ein Docker-Image zu erstellen.
-- Jede Anweisung im Dockerfile fügt eine neue Schicht zum Image hinzu.
-
-### **Definieren der Basisumgebung:**
-
-- Die erste Anweisung in einem Dockerfile ist in der Regel `FROM`, die ein Basis-Image angibt, auf dem das neue
-  Image aufbaut.
+**Definieren der Basisumgebung:** Die erste Anweisung in einem Dockerfile ist in der Regel `FROM`, 
+die ein Basis-Image angibt, auf dem das neue Image aufbaut.
 
 ### **Hinzufügen von Anwendungsdateien:**
 

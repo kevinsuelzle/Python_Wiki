@@ -117,7 +117,7 @@ TODO: Das hier bitte in die drei-spaltige Tabellenform bringen mit Referenzen.
 | `docker-compose exec`    | Führt einen Befehl in einem laufenden Container aus. Nützlich für das Debugging oder die Interaktion mit Diensten.                                                        |
 | `docker-compose run`     | Führt einen einmaligen Befehl in einem Dienst aus. Ideal für administrative Aufgaben oder Tests.                                                                          |
 
-    Diese Tabelle deckt die grundlegenden und am häufigsten verwendeten Docker-Befehle ab. Für spezifischere
-    Anforderungen oder erweiterte Optionen ist es ratsam, die Docker-Dokumentation oder die Hilfeoption im
-    Terminal (`docker command --help`) zu konsultieren.
+Diese Tabelle deckt die grundlegenden und am häufigsten verwendeten Docker-Befehle ab. Für spezifischere
+Anforderungen oder erweiterte Optionen ist es ratsam, die Docker-Dokumentation oder die Hilfeoption im
+Terminal (`docker command --help`) zu konsultieren.
 

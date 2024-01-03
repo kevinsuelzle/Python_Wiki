@@ -5,8 +5,6 @@ die die Anweisungen zur Erstellung eines Docker-Containers enthalten. Ein Docker
 Ausführen einer Anwendung benötigt wird – den Code, eine Laufzeitumgebung, Bibliotheken, Umgebungsvariablen und
 Konfigurationsdateien.
 
-## Was ist ein Docker-Image?
-
 Ein Docker-Image ist vergleichbar mit einer Blaupause für einen Container oder, um es mehr computertechnisch
 auszudrücken, eine Klasse.
 
@@ -14,31 +12,20 @@ Es ist eine leichte, eigenständige, ausführbare Software, die eine spezifische
 Wenn ein Container gestartet wird, wird das Docker-Image als Basis verwendet, um eine laufende Instanz – den Container –
 zu erstellen. Das ist in etwa so zu verstehen, als würde eine Instanz aus einer Klasse erstellt werden.
 
-## Merkmale von Docker-Images
+Einmal erstellt, wird ein Image **nicht mehr verändert**. Änderungen erfolgen durch Erstellen
+eines neuen Images, das auf dem bestehenden Image basiert.
 
-1. **Unveränderlichkeit:** Einmal erstellt, wird ein Image nicht mehr verändert. Änderungen erfolgen durch Erstellen
-   eines neuen Images, das auf dem bestehenden Image basiert.
+Im `Dockerfile` (meistens ohne Endung) wird festgehalten,
+was in einem Image eingebunden ist und auf welchem Image dieses basiert.
 
-2. **Schichtung und Wiederverwendung:** Docker-Images bestehen aus Schichten. Jede Schicht repräsentiert eine Reihe von
-   Unterschieden zum vorherigen Image. Diese Schichtung ermöglicht es, gemeinsame Basen zu nutzen und Speicherplatz
-   effizient zu verwenden.
 
-   Die Schichtung kommt zustande, indem die Befehle zur Herstellung des Containers zu seiner aktuellen Form nacheinander
-   abgearbeitet werden. Diese Befehle werden in einer Datei gesammelt: `Dockerfile` ohne Endung.
+```mermaid
+graph LR;
+    Df0["Dockerfile"] --"ist Bauplan für"--> Di["Docker Image"] --"build"--> Dc["Docker Container"]
+```
 
-   So sieht das Laden von Images in der Konsole aus. Man erkennt, wie die einzelnen Schichten nach und nach dazu kommen:
-
-   [//]: # (TODO: iframe einbauen)
-
-3. **Effizienz:** Durch die Wiederverwendung von Schichten sind Docker-Images sehr effizient in Bezug auf Speicherplatz
-   und Geschwindigkeit. Änderungen an einem Image erfordern nur das Herunterladen der geänderten Schichten.
-
-4. **Portabilität:** Docker-Images können auf jedem System ausgeführt werden, das Docker unterstützt, unabhängig von der
-   zugrunde liegenden Infrastruktur. Dies gewährleistet Konsistenz über verschiedene Umgebungen hinweg.
-
-### **Aufgabe: Definition 🌶️**
-
-Was ist ein Docker Image ist und welche Merkmale zeichnet es aus.
+⚠ **Docker-Images können auf jedem System ausgeführt werden, das Docker unterstützt, unabhängig von der
+zugrunde liegenden Infrastruktur. Dies gewährleistet Konsistenz über verschiedene Umgebungen hinweg.**
 
 
 ### **Aufgabe: Definition 🌶️**
