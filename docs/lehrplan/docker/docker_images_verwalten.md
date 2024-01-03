@@ -6,55 +6,43 @@ Dies ermöglicht es Ihnen, das Image zu teilen, es auf verschiedenen Maschinen z
 Container-Umgebungen zu haben.
 
 ## Warum Docker-Images in Repositories speichern?
+**Versionierung und Wiederverwendbarkeit:**
+Repositories ermöglichen es Ihnen, verschiedene Versionen eines Images zu
+speichern und bei Bedarf darauf zurückzugreifen.
 
-- **Versionierung und Wiederverwendbarkeit:**
+**Kollaboration:**
+Durch das Hochladen von Images in ein Repository können Teams gemeinsam an Anwendungen arbeiten
+und sicherstellen, dass jeder auf die gleiche Umgebung zugreift.
 
-  Repositories ermöglichen es Ihnen, verschiedene Versionen eines Images zu
-  speichern und bei Bedarf darauf zurückzugreifen.
-
-- **Kollaboration:**
-
-  Durch das Hochladen von Images in ein Repository können Teams gemeinsam an Anwendungen arbeiten
-  und sicherstellen, dass jeder auf die gleiche Umgebung zugreift.
-
-- **Deployment:**
-
-  Images aus Repositories können leicht auf Produktions- oder Entwicklungsservern bereitgestellt
-  werden.
+**Deployment:**
+Images aus Repositories können leicht auf Produktions- oder Entwicklungsservern bereitgestellt
+werden.
 
 ## Schritte zum Sichern eines Docker-Images in einem Repository
 
-- **Wählen eines Docker-Repositorys:**
+**Wählen eines Docker-Repositorys:**
+Das bekannteste Docker-Repository ist Docker Hub, aber es gibt auch andere Optionen wie AWS Elastic Container
+Registry (ECR), Google Container Registry (GCR) oder private Repositories.
 
-  Das bekannteste Docker-Repository ist Docker Hub, aber es gibt auch andere Optionen wie AWS Elastic Container
-  Registry (ECR), Google Container Registry (GCR) oder private Repositories.
+**Taggen des Docker-Images:**
+Bevor Sie ein Image in ein Repository hochladen, sollten Sie es taggen. Dies gibt dem Image einen Namen und 
+optional eine Version. Befehl zum Taggen eines Images:
+```bash
+docker tag hello-world-python yourusername/hello-world-python:version
+```
+Ersetzen Sie `yourusername` mit Ihrem Benutzernamen im Repository und `version` mit dem gewünschten Versions-Tag.
 
-- **Taggen des Docker-Images:**
+**Anmelden am Docker-Repository:**
+Um Images hochzuladen, müssen Sie sich bei dem Repository anmelden.
+Befehl zum Anmelden bei Docker Hub:
 
-  Bevor Sie ein Image in ein Repository hochladen, sollten Sie es taggen. Dies gibt dem Image einen Namen und
-  optional eine Version.
+```bash
+docker login
+```
 
-  Befehl zum Taggen eines Images:
+Folgen Sie den Anweisungen, um Ihre Anmeldeinformationen einzugeben.
 
-  ```bash
-  docker tag hello-world-python yourusername/hello-world-python:version
-  ```
-
-- Ersetzen Sie `yourusername` mit Ihrem Benutzernamen im Repository und `version` mit dem gewünschten Versions-Tag.
-
-- **Anmelden am Docker-Repository:**
-
-  Um Images hochzuladen, müssen Sie sich bei dem Repository anmelden.
-  Befehl zum Anmelden bei Docker Hub:
-
-  ```bash
-  docker login
-  ```
-
-  Folgen Sie den Anweisungen, um Ihre Anmeldeinformationen einzugeben.
-
-## **Hochladen (Push) des Images:**
-
+**Hochladen (Push) des Images:**
 Nachdem das Image getaggt und Sie angemeldet sind, können Sie es in das Repository hochladen.
 Befehl zum Hochladen des Images:
 
@@ -62,8 +50,7 @@ Befehl zum Hochladen des Images:
 docker push yourusername/hello-world-python:version
 ```
 
-## **Überprüfen des Images im Repository:**
-
+**Überprüfen des Images im Repository:**
 Nach dem Hochladen können Sie sich in Ihrem Repository anmelden und überprüfen, ob das Image erfolgreich
 hochgeladen wurde.
 
@@ -77,11 +64,11 @@ hochgeladen wurde.
 
 ### **Aufgabe: Erzeugung einer leeren Docker Umgebung. 🌶️🌶️.**
 
-Löschen sie sämtliche Container und Images.
+Löschen Sie sämtliche Container und Images.
 
 ### **Aufgabe: Mit Docker Hub arbeiten 🌶️🌶️.️**
 
-Anmelden und Abmelden am Repo, Laden des Images mit pull.
+Melden Sie sich im Repository an und ab. Laden Sie das Image mit pull.
 
 ## Erstellung eines privaten Docker-Repositories
 
@@ -105,62 +92,60 @@ Sicherheit Ihrer Docker-Images. Hier erfahren Sie, wie Sie ein privates Docker-R
     - Sie können Ihr eigenes Docker-Registry auf einem Server hosten.
     - Docker bietet eine offizielle Registry-Software namens "Docker Registry", die Sie selbst hosten können.
 
-### Schritte zur Einrichtung eines selbst gehosteten Docker-Repositories
+### Exkurs: Schritte zur Einrichtung eines selbst gehosteten Docker-Repositories
 
-#### **Vorbereitung:**
+#### Vorbereitung:
 
 - Stellen Sie sicher, dass Sie einen Server haben, auf dem Sie die Registry hosten können.
 - Installieren Sie Docker auf diesem Server.
 
-#### **Starten der Docker Registry:**
+#### Starten der Docker Registry:
 
 - Führen Sie den folgenden Befehl aus, um eine Docker Registry als Container zu starten:
 
 ```bash
-docker run -d -p 5000:5000 --restart=always --name registry registry:2
+docker run -d -p 5000:5000 --restart=always --name registry myrepo:2
 ```
 
-- Dies startet eine Docker Registry, die auf Port 5000 lauscht ( -p Option).
-- Die registry hat in diesem Fall den Namen `registry` mit dem tag `2`.
-- Die registry läuft wie ein Container im `detached` Modus, also unabhängig von der Konsole.
+TODO: Was ist die Bedeutung der zweiten 5000?
+- Dies startet eine Docker Registry, die auf Port 5000 lauscht ( `-p` Option).
+- Die registry hat in diesem Fall den Namen `myrepo` mit dem tag `2` (Tags haben oft die Bedeutung von Versionsnummern).
+- Die registry läuft wie ein Container im `detached` Modus, also unabhängig von der Konsole( `-d` Option).
+- Der Befehl `restart=always` sorgt dafür, dass der Container automatisch neu gestartet wird, 
+  wenn er aus irgendeinem Grund beendet wird. Dies schließt Fälle ein, in denen der Container aufgrund eines Fehlers 
+  oder durch manuelle Beendigung gestoppt wird.
 
-#### **Taggen und Pushen eines Images zur privaten Registry:**
+#### Taggen und Pushen eines Images zur privaten Registry:
 
-- Taggen Sie Ihr lokales Image für die private Registry:
+Taggen Sie Ihr lokales Image für die private Registry:
 
 ```bash
 docker tag hello-world-python localhost:5000/hello-world-python
 ```
 
-- Pushen Sie das Image zur privaten Registry:
+Pushen Sie das Image zur privaten Registry:
 
 ```bash
 docker push localhost:5000/hello-world-python
 ```
 
-#### **Zugriff auf das private Repository:**
+#### Zugriff auf das private Repository:
 
-- Um auf Images aus der privaten Registry zuzugreifen, verwenden Sie den vollständigen Pfad in Ihren
-  Docker-Befehlen, z.B. `localhost:5000/hello-world-python`.
+Um auf Images aus der privaten Registry zuzugreifen, verwenden Sie den vollständigen Pfad in Ihren
+Docker-Befehlen, z.B. `localhost:5000/hello-world-python`.
 
 ### Sicherheitsaspekte
+**HTTPS:**
+Es wird empfohlen, Ihre Registry mit HTTPS zu sichern, um die Übertragung von Images zu schützen.
 
-- **HTTPS:**
-
-  Es wird empfohlen, Ihre Registry mit HTTPS zu sichern, um die Übertragung von Images zu schützen.
-
-- **Authentifizierung:**
-
-  Authentifizierungsmechanismen sollten eingerichtet werden, um den Zugriff auf Ihre Registry zu kontrollieren. Dies
-  sprengt aber den Rahmen dieses Buches.
+**Authentifizierung:**
+Authentifizierungsmechanismen sollten eingerichtet werden, um den Zugriff auf Ihre Registry zu kontrollieren. Dies
+sprengt aber den Rahmen dieses Kurses.
 
 ### **Aufgabe: privates repository. 🌶️🌶️.**
 
-Löschen aller Container und Images.
+Laden Sie ein Image aus deinem privaten Repository.
 
 ### **Aufgabe: privates repository. 🌶️🌶️.**
 
-Laden des Images aus dem privaten Repository.
-
-
-
+Finden Sie heraus, wie man alle Container und Images löscht.
