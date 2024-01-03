@@ -3,9 +3,6 @@ site_name: My Docs
 plugins:
   - search
   - mermaid2
-  - mkdocs-jupyter:
-      execute: false
-      kernel_name: python3
       
 markdown_extensions:
   - def_list
@@ -149,7 +146,7 @@ nav:
           - Docker:
               - Einführung: lehrplan/docker/docker_introduction.md
               - Installation: lehrplan/docker/docker_installation_und_konfiguration.md
-              - Einführung in Images und Container: lehrplan/docker/docker_images_und_container.md
+              # - Einführung in Images und Container: lehrplan/docker/docker_images_und_container.md
               - Images verstehen: lehrplan/docker/docker_images_verstehen.md
               - Images erstellen: lehrplan/docker/docker_images_erstellen.md
               - Images verwalten: lehrplan/docker/docker_images_verwalten.md

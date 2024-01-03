@@ -9,7 +9,7 @@ Die Installation von Docker unterscheidet sich je nach [Betriebssystem](docker_i
 - Es bietet eine nahtlose Integration in das macOS-System, einschließlich der Benutzeroberfläche und der Möglichkeit,
   Befehle über das Terminal auszuführen.
 
-## **Installationsanleitung Mac OS**
+## Installationsanleitung Mac OS
 
 1. **Docker Desktop herunterladen:** Besuchen Sie die [offizielle Docker-Website](https://www.docker.com/products/docker-desktop) und laden Sie Docker Desktop 
 für Mac herunter.
@@ -29,9 +29,10 @@ Diese Anleitung führt Sie durch die grundlegenden Schritte zur Installation von
 Informationen und Fehlerbehebung besuchen Sie bitte
 die [Docker-Dokumentation](https://docs.docker.com/desktop/install/mac-install/).
 
-## **Aufgabe: Installation von Docker auf dem eigenen Rechner ausführen. 🌶️**
+### Aufgabe: Installation🌶️
+Führen Sie die Installation von Docker auf Ihren Rechnern aus.
 
-## **Unterschiede zwischen Docker Desktop und Docker Engine.**
+## Exkurs: Unterschiede zwischen Docker Desktop und Docker Engine.
 
 Der Unterschied zwischen Docker Desktop und Docker Engine liegt hauptsächlich in ihrer Zielgruppe, Funktionalität und
 Einsatzumgebung.

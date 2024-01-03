@@ -18,14 +18,21 @@ eines neuen Images, das auf dem bestehenden Image basiert.
 Im `Dockerfile` (meistens ohne Endung) wird festgehalten,
 was in einem Image eingebunden ist und auf welchem Image dieses basiert.
 
+**Docker-Images können auf jedem System ausgeführt werden, das Docker unterstützt, unabhängig von der
+zugrunde liegenden Infrastruktur. Dies gewährleistet Konsistenz über verschiedene Umgebungen hinweg.**
 
 ```mermaid
-graph LR;
-    Df0["Dockerfile"] --"ist Bauplan für"--> Di["Docker Image"] --"build"--> Dc["Docker Container"]
+graph TD
+    A[Dockerfile] -->|build| B[Docker Image]
+    B -->|push| C[Repository z.B. Docker Hub]
+    C -->|pull| D[Host System]
+    B -->|run| E[Docker Container]
+    E -->|stop| F[Beendeter Container]
+    F -->|start| E
+    F -->|remove| G[Container entfernt]
+    E -->|commit| H[Neues Image]
+    H -->|push| C
 ```
-
-⚠ **Docker-Images können auf jedem System ausgeführt werden, das Docker unterstützt, unabhängig von der
-zugrunde liegenden Infrastruktur. Dies gewährleistet Konsistenz über verschiedene Umgebungen hinweg.**
 
 
 ### **Aufgabe: Definition 🌶️**

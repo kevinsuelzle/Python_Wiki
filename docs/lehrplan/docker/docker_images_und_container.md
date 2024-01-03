@@ -2,18 +2,7 @@
 
 [105min]
 
-```mermaid
-graph TD
-    A[Dockerfile] -->|build| B[Docker Image]
-    B -->|push| C[Repository z.B. Docker Hub]
-    C -->|pull| D[Host System]
-    B -->|run| E[Docker Container]
-    E -->|stop| F[Beendeter Container]
-    F -->|start| E
-    F -->|remove| G[Container entfernt]
-    E -->|commit| H[Neues Image]
-    H -->|push| C
-```
+
 
 ## [Docker Images verstehen](docker_images_verstehen.md)
 
