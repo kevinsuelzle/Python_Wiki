@@ -6,7 +6,7 @@ Datenspeicherung in Docker und wie sie effektiv genutzt werden können.
 
 ## Grundlagen der persistenten Datenspeicherung
 
-### 1. **Container-Dateisystem:**
+### Container-Dateisystem:
 
 - Standardmäßig speichert jeder Docker-Container Daten in einem schreibbaren Layer, der über dem Image-Dateisystem
   liegt. Diese Daten gehen verloren, wenn der Container gelöscht wird.
@@ -62,6 +62,8 @@ Technisch gesehen besteht ein Layer aus:
 - **Manifest:** Ein Dokument, das die Layer und deren Reihenfolge in einem Image beschreibt. Das Manifest enthält auch
   die Layer-IDs und kann Signaturen für die Verifizierung enthalten.
 
+TODO: Habe nicht so ganz verstanden, was die Layer sind. könnte man hier ein Beispiel zeigen? Oder kommt das im Video?
+
 #### Zusammenfassung
 
 Ein Layer in Docker wird technisch als eine Menge von Dateisystemänderungen definiert, die durch eine eindeutige ID
@@ -70,19 +72,18 @@ Effizienz und Integrität, indem sichergestellt wird, dass jeder Layer eindeutig
 Bausteine von Docker-Images und ermöglichen die Wiederverwendung, schnelle Verteilung und effiziente Speicherung von
 Container-Dateisystemen.
 
-### 2. **Volumes:**
+## Mögliche Speichermedien
 
-- Volumes sind der bevorzugte Weg, um persistente Daten in Docker zu speichern. Sie sind komplett vom Lebenszyklus
-  des Containers getrennt und werden von Docker verwaltet.
+**Volumes:**
+Volumes sind der bevorzugte Weg, um persistente Daten in Docker zu speichern. Sie sind komplett vom Lebenszyklus
+des Containers getrennt und werden von Docker verwaltet.
 
-### 3. **Bind Mounts:**
+**Bind Mounts:**
+Bind Mounts erlauben es, Daten auf dem Host-System zu speichern und direkt in den Container einzubinden. Sie sind
+nützlich für die Entwicklung oder wenn Sie spezifische Pfade auf Ihrem Host-System nutzen möchten.
 
-- Bind Mounts erlauben es, Daten auf dem Host-System zu speichern und direkt in den Container einzubinden. Sie sind
-  nützlich für die Entwicklung oder wenn Sie spezifische Pfade auf Ihrem Host-System nutzen möchten.
-
-### 4. **tmpfs Mounts:**
-
-- tmpfs Mounts werden hauptsächlich für temporäre Daten verwendet, die nicht auf den Host persistiert werden sollen.
+**tmpfs Mounts:**
+tmpfs Mounts werden hauptsächlich für temporäre Daten verwendet, die nicht auf den Host persistiert werden sollen.
 
 ## Verständnis von Docker Volumes und Bind Mounts
 
@@ -91,18 +92,14 @@ teilen: Volumes und Bind Mounts. Denken Sie an Volumes wie an eine externe Festp
 und an Bind Mounts wie an einen USB-Stick, den Sie direkt in Ihren Computer und Container stecken.
 
 ### Verwendung von Volumes
-
-#### 1. **Erstellen eines Volumes:**
-
+**Erstellen eines Volumes:**
 ```bash
 docker volume create mein-volume
 ```
-
 Stellen Sie sich vor, Sie reservieren einen Bereich auf Ihrer Festplatte, den Docker verwaltet. Dieser Befehl erstellt
 einen solchen reservierten Bereich, ein "Volume" genannt, mit dem Namen `mein-volume`.
 
-#### 2. **Einen Container mit einem Volume starten:**
-
+**Einen Container mit einem Volume starten:**
 ```bash
 docker run -d -v mein-volume:/pfad/im/container mein-image
 ```
@@ -112,58 +109,55 @@ unter `/pfad/im/container` gespeichert wird, wird tatsächlich im `mein-volume` 
 wenn der Container gelöscht wird.
 
 ### Verwendung von Bind Mounts
-
-#### **Starten eines Containers mit einem Bind Mount:**
-
+**Starten eines Containers mit einem Bind Mount:**
 ```bash
 docker run -d -v /pfad/auf/host:/pfad/im/container mein-image
 ```
-
 Bind Mounts sind wie das Einstecken eines USB-Sticks in Ihren Computer. Sie nehmen einen Ordner auf Ihrem
 Host-System (`/pfad/auf/host`) und stecken ihn direkt in den Container (`/pfad/im/container`). Änderungen auf einem Ende
 spiegeln sich sofort auf dem anderen Ende wider.
 
 ## Best Practices für die Datenspeicherung
 
-### 1. **Datenverlust vermeiden:**
+**Datenverlust vermeiden:**
+Verwenden Sie Volumes oder Bind Mounts für alle Daten, die persistent gespeichert werden sollen. Sie sind wie Ihre
+Sicherheitsnetze, die sicherstellen, dass wertvolle Daten nicht verloren gehen, wenn Ihr Container "umzieht" oder 
+"renoviert" wird.
 
-- Verwenden Sie Volumes oder Bind Mounts für alle Daten, die persistent gespeichert werden sollen. Sie sind wie Ihre
-  Sicherheitsnetze, die sicherstellen, dass wertvolle Daten nicht verloren gehen, wenn Ihr Container "umzieht" oder "
-  renoviert" wird.
+**Sicherheit:**
+Achten Sie auf die Sicherheit der Daten, insbesondere wenn sensible Informationen gespeichert werden. Überlegen Sie,
+wer Zugriff auf die Daten haben sollte und wie diese Zugriffe kontrolliert werden können.
 
-### 2. **Sicherheit:**
+**Backup und Wiederherstellung:**
+Denken Sie daran, regelmäßige Backups Ihrer wichtigen Daten zu machen. Docker erleichtert das Backup von Volumes, aber
+Sie sollten einen Plan haben, wie und wann Backups durchgeführt werden.
 
-- Achten Sie auf die Sicherheit der Daten, insbesondere wenn sensible Informationen gespeichert werden. Überlegen Sie,
-  wer Zugriff auf die Daten haben sollte und wie diese Zugriffe kontrolliert werden können.
-
-### 3. **Backup und Wiederherstellung:**
-
-- Denken Sie daran, regelmäßige Backups Ihrer wichtigen Daten zu machen. Docker erleichtert das Backup von Volumes, aber
-  Sie sollten einen Plan haben, wie und wann Backups durchgeführt werden.
-
-### 4. **Volume-Management:**
-
-- Überwachen und verwalten Sie Ihre Volumes regelmäßig. Stellen Sie sicher, dass sie wie erwartet funktionieren und
-  nicht unnötig Speicherplatz auf Ihrem System belegen.
+**Volume-Management:**
+Überwachen und verwalten Sie Ihre Volumes regelmäßig. Stellen Sie sicher, dass sie wie erwartet funktionieren und
+nicht unnötig Speicherplatz auf Ihrem System belegen.
 
 ## Unterschied zwischen Docker Volumes und Bind Mounts
 
 ### Docker Volumes
 
-- **Verwaltung durch Docker:** Docker kümmert sich um die Speicherung und Verwaltung. Sie müssen sich nicht um den
-  genauen Speicherort oder die Details kümmern.
-- **Isolation vom Host-System:** Volumes sind vom Host-System isoliert, was bedeutet, dass sie eine klare Trennung
-  zwischen Host und Container-Daten bieten.
-- **Verwendung im Container:** Volumes werden an einen spezifischen Pfad im Container gemountet und verhalten sich wie
-  ein Teil des Containers, obwohl sie außerhalb davon verwaltet werden.
+**Verwaltung durch Docker:** Docker kümmert sich um die Speicherung und Verwaltung. Sie müssen sich nicht um den
+genauen Speicherort oder die Details kümmern.
+
+**Isolation vom Host-System:** Volumes sind vom Host-System isoliert, was bedeutet, dass sie eine klare Trennung
+zwischen Host und Container-Daten bieten.
+
+**Verwendung im Container:** Volumes werden an einen spezifischen Pfad im Container gemountet und verhalten sich wie
+ein Teil des Containers, obwohl sie außerhalb davon verwaltet werden.
 
 ### Bind Mounts
 
-- **Direkte Zuordnung zum Host-Dateisystem:** Bind Mounts sind direkt mit dem Host-Dateisystem verbunden. Sie wählen
-  einen Ordner auf Ihrem Host und machen ihn direkt im Container verfügbar.
-- **Keine Verwaltung durch Docker:** Sie haben die volle Kontrolle und Verantwortung für den Pfad und die Daten.
-- **Verwendung im Container:** Der Container kann direkt auf den Pfad zugreifen und Änderungen werden sofort
-  reflektiert.
+**Direkte Zuordnung zum Host-Dateisystem:** Bind Mounts sind direkt mit dem Host-Dateisystem verbunden. Sie wählen
+einen Ordner auf Ihrem Host und machen ihn direkt im Container verfügbar.
+
+**Keine Verwaltung durch Docker:** Sie haben die volle Kontrolle und Verantwortung für den Pfad und die Daten.
+
+**Verwendung im Container:** Der Container kann direkt auf den Pfad zugreifen und Änderungen werden sofort
+reflektiert.
 
 ### Zusammenfassung
 

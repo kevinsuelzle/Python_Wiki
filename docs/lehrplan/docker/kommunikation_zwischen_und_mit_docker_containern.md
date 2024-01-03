@@ -23,8 +23,8 @@ und für das Teilen von Daten zwischen Containern oder zwischen dem Host und ein
 [Bind Mounts](wo_und_wie_docker_container_daten_speichern.md#verwendung-von-bind-mounts) sind eine einfache
 Möglichkeit, Daten und Dateien zwischen dem Host und dem Container zu teilen. Sie
 ermöglichen es, bestimmte Pfade des Hosts in den Container einzubinden und so direkten Zugriff auf das Dateisystem
-zu haben. Der wesentliche Unterschied zu Volumes besteht darin, dass hier das Hostsystem den Speicherplatz
-verwaltet, während bei Volumes es der Container selbst tut.
+zu haben. Die Unterschiede von Volumes und Bind Mounts werden später 
+[hier](wo_und_wie_docker_container_daten_speichern.md#unterschied-zwischen-docker-volumes-und-bind-mounts) beleuchtet
 
 4. **Ports:**
 Docker ermöglicht
