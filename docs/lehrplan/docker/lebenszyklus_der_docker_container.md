@@ -61,13 +61,3 @@ effizientes Container-Management und -Betrieb. Hier sind die Schlüsselaspekte d
   Host-System kommunizieren.
 - **Skalierung:** In produktiven Umgebungen werden Container oft skaliert, d.h. es werden mehrere Instanzen desselben
   Containers gestartet, um die Last zu verteilen.
-
-## Zusammenfassung
-
-Der Lebenszyklus von Docker-Containern umfasst die Erstellung, den Start, die Laufzeit, das Stoppen, den Neustart und
-das Entfernen von Containern. Ein tiefgehendes Verständnis dieser Phasen ist entscheidend für das effektive Management
-von Docker-Containern, insbesondere in komplexen und skalierbaren Anwendungsumgebungen. Jede Phase bietet wichtige
-Funktionen und Optionen, die für die Optimierung und das Management von Container-basierten Anwendungen genutzt werden
-können.
-
-### **Aufgabe: Erläutern sie den Lebenszyklus eines Docker Containers. 🌶️🌶️**
