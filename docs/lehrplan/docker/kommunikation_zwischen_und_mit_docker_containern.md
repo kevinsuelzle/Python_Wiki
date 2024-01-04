@@ -1,5 +1,7 @@
 # Kommunikation zwischen und mit Docker Containern
 
+TODO: Lass uns noch mal über diese Seite sprechen, hier sind mir Dinge nicht klar geworden.
+
 In diesem Kapitel setzen wir und mit der Kommunikation von Docker Containern untereinander und mit der Außenwelt
 auseinander.
 
@@ -106,21 +108,28 @@ abgeleiteter Container über den Port 5000 erreichbar ist.
 Um den Container für ihre Anwendung erreichbar zu machen setzen sie folgendes Kommando ein:
 
 ```bash
-docker run -d -p 5000:5000 team-app
+docker run -d -p 8000:8001 MyApp
 ```
 
 Das Port Mapping wird über die Option `-p` gesteuert, `-d` lässt den Container im Hintergrund laufen.
 
-Ihr Programm arbeitet dann mit HTTP Anfragen an Port 5000 zum Beispiel so: `http://localhost:5000`.
+Ihr Programm arbeitet dann mit HTTP Anfragen an Port 5000 zum Beispiel so: `http://localhost:8000`.
 Docker hört diese Anfrage und gibt sie aufgrund der Einstellungen an den Container weiter. Dieser verarbeitet die
 Anfrage und gibt die Antwort auf dem gleichen weg zurück.
 
 ```mermaid
-graph LR
-    client[Ihr Programm] -- HTTP Request :5080 --> host[localhost docker engine]
-    host -- Port 5000 to 5000 Mapping --> app[Team App]
-    app -- Response --> host
-    host -- HTTP Response :5000 --> client
+graph LR;
+    Client
+    
+    subgraph Hostsystem
+    ph[Port 8000]
+    subgraph Container
+    pc[Port 8001]
+    MyApp
+    end
+    end
+    
+    Client <-->|Kommunikation| ph <-->|Portübersetzung| pc <-->|Weiterleitung| MyApp
 ```
 
 **Fazit:**
@@ -155,6 +164,8 @@ selbst aus der Datenbank.
 Daher werden Anfragen ihres Programmes weiterhin nur über den Port 5000 gesendet.
 
 Die interne Kommunikation wird nicht nach außen geöffnet.
+
+TODO: Grafik wird nicht angezeigt im browser (chrome)
 
 ```mermaid
 graph LR
@@ -209,20 +220,20 @@ Kommunikation zwischen ihnen zuzulassen.
 ```mermaid
 graph LR
     subgraph Docker Host
-        subgraph Netzwerk A [mein-netzwerk]
+        subgraph Netzwerk_A [mein-netzwerk]
             A[Container A]
             B[Container B]
         end
-        subgraph Netzwerk B [anderes-netzwerk]
+        subgraph Netzwerk_B [anderes-netzwerk]
             C[Container C]
             D[Container D]
         end
     end
 
-    A -- Kommunikation --> B
-    C -- Kommunikation --> D
-    A <-. Keine direkte Kommunikation .-> C
-    B <-. Keine direkte Kommunikation .-> D
+    A <-- Kommunikation --> B
+    C <-- Kommunikation --> D
+    Netzwerk_A <-. Keine direkte Kommunikation .-> Netzwerk_B
+
 ```
 
 Diese Grafik veranschaulicht, wie Docker-Netzwerke zur Isolation und Kommunikation zwischen Containern beitragen.

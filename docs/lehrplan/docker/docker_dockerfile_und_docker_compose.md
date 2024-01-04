@@ -6,7 +6,7 @@ Multi-Container-Anwendungen unerlässlich sind.
 
 ## Dockerfile
 
-### **Grundlagen eines Dockerfiles:**
+### Wiederholung: Grundlagen eines Dockerfiles
 
 - Dockerfiles enthalten die Anweisungen, die benötigt werden, um ein Image zu bauen.
 - Der Dateiname ist `dockerfile` ohne Endung. Die Datei liegt im Arbeitsverzeichnis der Anwendung.
@@ -14,58 +14,80 @@ Multi-Container-Anwendungen unerlässlich sind.
   wird.
 - Jede Anweisung im Dockerfile fügt eine neue Schicht zum Docker-Image hinzu.
 
-### **Beispiel**
+### Beispiel
 
 ```Dockerfile
-FROM python:3.8-slim
+FROM python:3.12-slim
 WORKDIR /app
 COPY . /app
 RUN pip install -r requirements.txt
 CMD ["python", "app.py"]
 ```
 
-### **Erklärungen der Dockerfile-Anweisungen**
+### Aufgabe: Bedeutung der Anweisungen🌶🌶
 
-- **`FROM python:3.8-slim`**:
-    - Dies ist die erste Anweisung im Dockerfile und legt das Basis-Image fest.
-    - Hier wird das offizielle Python-Image in der Version 3.8 verwendet, das auf einer schlanken Version von Debian
-      basiert (`slim`).
-    - Dieses Basis-Image enthält bereits Python und alle notwendigen Abhängigkeiten, um Python-Anwendungen auszuführen.
-- **`WORKDIR /app`**:
-    - Diese Anweisung setzt das Arbeitsverzeichnis im Container.
-    - Wenn dieses Verzeichnis im Basis-Image nicht existiert, wird es erstellt.
-    - Nachfolgende Anweisungen wie `COPY` und `RUN` werden relativ zu diesem Verzeichnis ausgeführt.
-- **`COPY . /app`**:
-    - Kopiert Dateien und Verzeichnisse aus dem Kontextverzeichnis (in diesem Fall das Verzeichnis, in dem das
-      Dockerfile liegt) in das Image.
-    - Hier werden alle Dateien und Verzeichnisse aus dem aktuellen Verzeichnis des Hosts in das `/app` Verzeichnis im
-      Container kopiert.
-- **`RUN pip install -r requirements.txt`**:
-    - Führt Befehle aus, um das Image zu bauen.
-    - In diesem Fall wird `pip`, der Paketmanager für Python, verwendet, um alle Abhängigkeiten zu installieren, die in
-      der `requirements.txt`-Datei aufgelistet sind.
-- **`CMD ["python", "app.py"]`**:
-    - Definiert den Standardbefehl, der ausgeführt wird, wenn ein Container aus dem Image gestartet wird.
-    - Hier wird die Python-Anwendung gestartet, indem `app.py` mit dem Python-Interpreter ausgeführt wird.
-    - Dieser Befehl kann beim Starten des Containers überschrieben werden.
+Wiederhole, was die Bedeutung jeder Zeile im Dockerfile ist.
 
-Der einfache Punkt (`.`) in Dockerfiles und Docker-Befehlen hat eine spezifische Bedeutung:
+<details>
+    <summary>Lösung</summary>
 
-- **Im `COPY` Befehl**:
-    - Im Dockerfile, speziell im `COPY` Befehl, bezieht sich der Punkt auf das Kontextverzeichnis.
-    - Der Befehl `COPY . /app` bedeutet, dass alle Dateien und Verzeichnisse aus dem Kontextverzeichnis (in der Regel
-      das Verzeichnis, in dem das Dockerfile liegt) in das Verzeichnis `/app` im Docker-Image kopiert werden.
-- **Im `docker build` Befehl**:
-    - Wenn Sie ein Docker-Image bauen, verwenden Sie den Befehl `docker build`. Der Punkt am Ende dieses Befehls gibt
-      das Kontextverzeichnis für den Build-Prozess an.
-    - Zum Beispiel, `docker build -t mein_python_app:latest .` bedeutet, dass Docker das aktuelle Verzeichnis (angezeigt
-      durch `.`) als Kontext für den Build-Prozess verwenden soll.
-    - Der Kontext ist wichtig, da er alle Dateien und Verzeichnisse enthält, die für den Build-Prozess zugänglich sein
-      müssen, einschließlich des Dockerfiles und aller Dateien, die durch `COPY` oder `ADD` Befehle ins Image übertragen
-      werden.
+<b>FROM python:3.12-slim</b>
+<ul>
+<li>Dies ist die erste Anweisung im Dockerfile und legt das Basis-Image fest.</li>
+<li>Hier wird das offizielle Python-Image in der Version 3.8 verwendet, das auf einer schlanken Version von Debian basiert (slim).</li>
+<li>Dieses Basis-Image enthält bereits Python und alle notwendigen Abhängigkeiten, um Python-Anwendungen auszuführen.</li>
+</ul>
 
-In beiden Fällen ist der Punkt eine Kurzform, um das aktuelle Verzeichnis zu bezeichnen. Es ist eine gängige Praxis in
-Unix- und Linux-basierten Systemen, den aktuellen Ordner mit einem Punkt zu referenzieren.
+<b>WORKDIR /app</b>
+<ul>
+<li>Diese Anweisung setzt das Arbeitsverzeichnis im Container.</li>
+<li>Wenn dieses Verzeichnis im Basis-Image nicht existiert, wird es erstellt.</li>
+<li>Nachfolgende Anweisungen wie COPY und RUN werden relativ zu diesem Verzeichnis ausgeführt.</li>
+</ul>
+
+<b>COPY . /app</b>
+<ul>
+<li>Kopiert Dateien und Verzeichnisse aus dem Kontextverzeichnis in das Image.</li>
+<li>Hier werden alle Dateien und Verzeichnisse aus dem aktuellen Verzeichnis des Hosts in das /app Verzeichnis im Container kopiert.</li>
+</ul>
+
+<b>RUN pip install -r requirements.txt</b>
+<ul>
+<li>Führt Befehle aus, um das Image zu bauen.</li>
+<li>In diesem Fall wird pip, der Paketmanager für Python, verwendet, um alle Abhängigkeiten zu installieren, die in der requirements.txt-Datei aufgelistet sind.</li>
+</ul>
+
+<b>CMD ["python", "app.py"]</b>
+<ul>
+<li>Definiert den Standardbefehl, der ausgeführt wird, wenn ein Container aus dem Image gestartet wird.</li>
+<li>Hier wird die Python-Anwendung gestartet, indem app.py mit dem Python-Interpreter ausgeführt wird.</li>
+<li>Dieser Befehl kann beim Starten des Containers überschrieben werden.</li>
+</ul>
+
+<b>Der Punkt in Dockerfiles und Docker-Befehlen:</b>
+<ul>
+<li>
+<b>Im COPY Befehl</b>
+<ul>
+<li>Im Dockerfile, speziell im COPY Befehl, bezieht sich der Punkt auf das Kontextverzeichnis.</li>
+<li>Der Befehl `COPY . /app` bedeutet, dass alle Dateien und Verzeichnisse aus dem Kontextverzeichnis in das Verzeichnis `/app` im Docker-Image kopiert werden.</li>
+</ul>
+</li>
+
+<li>
+<b>Im docker build Befehl</b>
+<ul>
+<li>Beim Bauen eines Docker-Images wird der Befehl docker build verwendet. Der Punkt am Ende dieses Befehls gibt das Kontextverzeichnis für den Build-Prozess an.</li>
+<li>Zum Beispiel, `docker build -t mein_python_app:latest .` bedeutet, dass Docker das aktuelle Verzeichnis als Kontext für den Build-Prozess verwenden soll.</li>
+<li>Der Kontext ist wichtig, da er alle Dateien und Verzeichnisse enthält, die für den Build-Prozess zugänglich sein müssen, einschließlich des Dockerfiles und aller Dateien, die durch COPY oder ADD Befehle ins Image übertragen werden.</li>
+</ul>
+</li>
+
+<p>In beiden Fällen ist der Punkt eine Kurzform, um das aktuelle Verzeichnis zu bezeichnen. Es ist eine gängige Praxis in
+Unix- und Linux-basierten Systemen, den aktuellen Ordner mit einem Punkt zu referenzieren.</p>
+</ul>
+
+</details>
 
 ### **Erstellung des Images**
 
@@ -94,6 +116,8 @@ das `-t` Flag würde das Image nur eine generierte ID erhalten und keinen benutz
 
 - Die `docker-compose.yml`-Datei ist das Herzstück von Docker Compose und beschreibt, wie Ihre Anwendung in Docker
   ausgeführt wird.
+
+TODO: Ich verstehe das Beispiel leider nicht. Lass uns da mal bitte drüber sprechen.
 
 ### 3. **Beispiel einer `docker-compose.yml`-Datei:**
 
@@ -132,19 +156,18 @@ zusammenarbeiten. Hier ist eine detaillierte Erläuterung Ihres Beispiels:
 
 ### 4. **Struktur des `docker-compose.yml`-Files**
 
-- **Version**:
-    - `version: '3'` gibt die Version der Docker Compose-Datei an. Version 3 ist eine der neuesten Versionen und bietet
-      Unterstützung für Docker Swarm.
+**Version**: `version: '3'` gibt die Version der Docker Compose-Datei an. Version 3 ist eine der neuesten Versionen und bietet
+Unterstützung für Docker Swarm.
 
-- **Services**:
-    - Unter `services` werden die verschiedenen Container definiert, die Teil Ihrer Anwendung sind.
+**Services**: Unter `services` werden die verschiedenen Container definiert, die Teil Ihrer Anwendung sind.
 
 ### 5. **Definition der einzelnen Services**
 
 - **nginx**:
     - `nginx` ist der Name des Services.
     - `image: nginx:latest` gibt an, dass der Service das neueste offizielle nginx-Image von Docker Hub verwendet.
-    - `volumes: - ./nginx.conf:/etc/nginx/nginx.conf:ro` bindet die lokale `nginx.conf`-Datei in den Container ein.
+    - `volumes: - ./nginx.conf:/etc/nginx/nginx.conf:ro` bindet die lokale Datei `nginx.conf`-Datei in den Container ein.
+      Sie ist innerhalb des Containers unter `/etc/nginc/nginx.conf` erreichbar.
       Das `:ro` bedeutet, dass das Volume im "read-only"-Modus gemountet wird.
     - `ports: - "80:80"` leitet den Port 80 des Hosts auf den Port 80 des nginx-Containers um, was bedeutet, dass nginx
       auf dem Standard-HTTP-Port erreichbar ist.
@@ -185,15 +208,16 @@ nicht erreichbar. Innerhalb der Containerumgebung allerdings schon.
 Im Unterschied zu docker-compose.yml ist `docker compose` als Aufruf in der Kommandozeile ein Programm, dass mit
 verschiedenen Parametern die Ausführung der Multi-Container Umgebung steuern kann. Hier einige Befehle dazu:
 
-| Befehl                   | Beschreibung                                                                                                                                    |
-|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `docker compose up`      | Startet die Container, die in der `docker-compose.yml`-Datei definiert sind. Mit der Option `-d` werden die Container im Hintergrund gestartet. |
-| `docker compose down`    | Stoppt und entfernt alle Container, Netzwerke, Volumes und Images, die durch `docker-compose up` erstellt wurden.                               |
-| `docker compose build`   | Baut alle Dienste, die in der `docker-compose.yml`-Datei definiert sind und ein `build`-Attribut haben.                                         |
-| `docker compose pull`    | Lädt alle Images herunter, die in der `docker-compose.yml`-Datei definiert sind, aber nicht lokal gebaut werden.                                |
-| `docker compose restart` | Startet alle Container neu, die in der `docker-compose.yml`-Datei definiert sind.                                                               |
-| `docker compose stop`    | Stoppt alle laufenden Container, die durch `docker-compose up` gestartet wurden, ohne sie zu entfernen.                                         |
-| `docker compose start`   | Startet alle gestoppten Container, die durch `docker-compose up` erstellt wurden.                                                               |
+| Befehl                      | Beschreibung                                                                                                                                    |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| `docker compose up`         | Startet die Container, die in der `docker-compose.yml`-Datei definiert sind. Mit der Option `-d` werden die Container im Hintergrund gestartet. |
+| `docker compose down`       | Stoppt und entfernt alle Container, Netzwerke, Volumes und Images, die durch `docker-compose up` erstellt wurden.                               |
+| `docker compose build`      | Baut alle Dienste, die in der `docker-compose.yml`-Datei definiert sind und ein `build`-Attribut haben.                                         |
+| `docker compose up --build` | Baut den Container und startet ihn danach.                                                                                                      |
+| `docker compose pull`       | Lädt alle Images herunter, die in der `docker-compose.yml`-Datei definiert sind, aber nicht lokal gebaut werden.                                |
+| `docker compose restart`    | Startet alle Container neu, die in der `docker-compose.yml`-Datei definiert sind.                                                               |
+| `docker compose stop`       | Stoppt alle laufenden Container, die durch `docker-compose up` gestartet wurden, ohne sie zu entfernen.                                         |
+| `docker compose start`      | Startet alle gestoppten Container, die durch `docker-compose up` erstellt wurden.                                                               |
 
 In unserem Beispiel würde es genügen,
 
@@ -207,10 +231,3 @@ vorhanden ist oder nicht, würden Container geladen oder gebaut und als Hintergr
 Die hier gezeigt App würde den Webserver `nginx`, die `SQL Server` Datenbank und die `meine_python_app` starten. Damit
 können Netzwerkanfragen an den Port 80 angenommen und an die App weitergeleitet werden. Die App hat dann die
 Möglichkeit, ihre Daten in der Datenbank zu speichern.
-
-## Zusammenfassung
-
-Dockerfile und Docker Compose sind mächtige Werkzeuge im Docker-Ökosystem. Während Dockerfiles die Grundlage für das
-Erstellen von Docker-Images bilden, ermöglicht Docker Compose das einfache Management komplexer Anwendungen, die aus
-mehreren Containern bestehen. Durch die Kombination dieser Werkzeuge können Sie effiziente, reproduzierbare und
-skalierbare Anwendungsumgebungen erstellen.

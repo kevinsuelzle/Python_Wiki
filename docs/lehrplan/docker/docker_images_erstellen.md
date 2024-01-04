@@ -26,7 +26,7 @@ um ein Docker-Image zu erstellen. Jede Anweisung im Dockerfile fügt eine neue S
 Wir Erstellen eine Datei namens `Dockerfile`:
 
 ```Dockerfile
-FROM python:3.8-slim
+FROM python:3.12-slim
 COPY . /app
 WORKDIR /app
 CMD ["python", "app.py"]
@@ -50,6 +50,7 @@ Konfigurationen vorzunehmen. Dies ist hier nicht nötig, da alles schon fertig k
 
 **Konfigurieren von Startbefehlen:** Die `CMD`- oder `ENTRYPOINT`-Anweisungen definieren, welcher Befehl ausgeführt 
 wird, wenn ein Container aus dem Image gestartet wird. Hier wird die Datei `app.py` mit Python gestartet.
+Dieser Befehl kann auch mit der Syntax `CMD python app.py` notiert werden.
 
 ### Bauen des Docker-Images:
 Führen Sie den folgenden Befehl im Terminal aus, um das Image zu erstellen:
@@ -94,3 +95,14 @@ auch über die Konsole
 den gestoppten Container mit Befehlen wie `docker ps -a` sehen, der alle Container anzeigt, einschließlich der gestoppten.
 Um den Container und seine Ressourcen zu entfernen, müssten Sie ihn explizit mit `docker rm` löschen. Sie können ihn auch
 über das Dashboard löschen.
+
+### Aufgabe: Kopieren oder Addieren? 🌶
+Recherchiere, was der Unterschied der Befehle `COPY` und `ADD` ist.
+
+[Lösung](https://stackoverflow.com/questions/24958140/what-is-the-difference-between-the-copy-and-add-commands-in-a-dockerfile)
+
+### Aufgabe: Eingänge? 🌶🌶🌶🌶
+
+Recherchiere, was der Unterschied der Befehle `CMD` und `ENTRYPOINT` ist.
+
+[Lösung](https://stackoverflow.com/questions/21553353/what-is-the-difference-between-cmd-and-entrypoint-in-a-dockerfile)
