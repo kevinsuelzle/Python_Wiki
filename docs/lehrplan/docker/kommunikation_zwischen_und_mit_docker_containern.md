@@ -229,7 +229,24 @@ Diese Grafik veranschaulicht, wie Docker-Netzwerke zur Isolation und Kommunikati
 Durch die Verwendung von benutzerdefinierten Netzwerken können Sie sicherstellen, dass nur die gewünschten Container
 miteinander kommunizieren können, während andere Container oder Netzwerke isoliert bleiben. Dies ist besonders wichtig
 für die Sicherheit, das Netzwerkmanagement und die Architektur von Microservices.
-TODO:Ich verstehe das Bild, aber ohne Codebeispiel etwas abstrakt, wie man die Port dann da intern einstellt.
+
+Um einen Container auf einem Port lauschen zu lassen, muss dieser Port in der Anwendung selbst festgelegt werden.
+
+```python
+# sicherheit.py
+import http.server
+import socketserver
+
+PORT = 6000
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print("serving at port", PORT)
+    httpd.serve_forever()
+
+...
+```
 
 **Port-Management:**
 
