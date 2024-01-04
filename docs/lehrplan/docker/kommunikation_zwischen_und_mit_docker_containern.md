@@ -9,40 +9,40 @@ notwendige Interaktionen zu ermöglichen.
 ## Allgemeine Methoden
 
 1. **Netzwerke:**
-Docker bietet
-mehrere [Netzwerktypen](kommunikation_zwischen_und_mit_docker_containern.md#grundlagen-des-docker-netzwerks) an,
-mit denen Container miteinander kommunizieren.
+   Docker bietet
+   mehrere [Netzwerktypen](kommunikation_zwischen_und_mit_docker_containern.md#grundlagen-des-docker-netzwerks) an,
+   mit denen Container miteinander kommunizieren.
 
 2. **Volumes:**
-[Volumes](wo_und_wie_docker_container_daten_speichern.md#verwendung-von-volumes) werden verwendet, um von
-Docker-Containern generierte und genutzte Daten zu speichern. Entscheidend ist, dass die 
-im Volume gespeicherten Daten auch nach einem Neustart des Containers erhalten bleiben sollen
-und für das Teilen von Daten zwischen Containern oder zwischen dem Host und einem Container geeignet sind.
+   [Volumes](wo_und_wie_docker_container_daten_speichern.md#verwendung-von-volumes) werden verwendet, um von
+   Docker-Containern generierte und genutzte Daten zu speichern. Entscheidend ist, dass die
+   im Volume gespeicherten Daten auch nach einem Neustart des Containers erhalten bleiben sollen
+   und für das Teilen von Daten zwischen Containern oder zwischen dem Host und einem Container geeignet sind.
 
 3. **Bind Mounts:**
-[Bind Mounts](wo_und_wie_docker_container_daten_speichern.md#verwendung-von-bind-mounts) sind eine einfache
-Möglichkeit, Daten und Dateien zwischen dem Host und dem Container zu teilen. Sie
-ermöglichen es, bestimmte Pfade des Hosts in den Container einzubinden und so direkten Zugriff auf das Dateisystem
-zu haben. Die Unterschiede von Volumes und Bind Mounts werden später 
-[hier](wo_und_wie_docker_container_daten_speichern.md#unterschied-zwischen-docker-volumes-und-bind-mounts) beleuchtet
+   [Bind Mounts](wo_und_wie_docker_container_daten_speichern.md#verwendung-von-bind-mounts) sind eine einfache
+   Möglichkeit, Daten und Dateien zwischen dem Host und dem Container zu teilen. Sie
+   ermöglichen es, bestimmte Pfade des Hosts in den Container einzubinden und so direkten Zugriff auf das Dateisystem
+   zu haben. Die Unterschiede von Volumes und Bind Mounts werden später
+   [hier](wo_und_wie_docker_container_daten_speichern.md#unterschied-zwischen-docker-volumes-und-bind-mounts) beleuchtet
 
 4. **Ports:**
-Docker ermöglicht
-das [Weiterleiten von Ports](kommunikation_zwischen_und_mit_docker_containern.md#netzwerkkommunikation-und-port-weiterleitung)
-vom Host zu den Containern. Durch das Öffnen und Zuordnen von Ports
-ermöglicht Docker, dass Netzwerkdienste, die innerhalb von Containern laufen, von externen Netzwerken oder anderen
-Containern aus zugänglich sind.
-*Ohne die Angabe von Ports kann keine Kommunikation zwischen Containern stattfinden!** Containern müssen bei ihrem
-Bau oder in ihrer Programmierung Ports zugewiesen sein.
+   Docker ermöglicht
+   das [Weiterleiten von Ports](kommunikation_zwischen_und_mit_docker_containern.md#netzwerkkommunikation-und-port-weiterleitung)
+   vom Host zu den Containern. Durch das Öffnen und Zuordnen von Ports
+   ermöglicht Docker, dass Netzwerkdienste, die innerhalb von Containern laufen, von externen Netzwerken oder anderen
+   Containern aus zugänglich sind.
+   *Ohne die Angabe von Ports kann keine Kommunikation zwischen Containern stattfinden!** Containern müssen bei ihrem
+   Bau oder in ihrer Programmierung Ports zugewiesen sein.
 
 5. **Inter-Container-Kommunikation (ICC):**
-Container können über das Linking (eine ältere Methode) oder besser, indem sie Teil desselben Netzwerks sind,
-miteinander kommunizieren, was es ihnen ermöglicht, Daten oder Signale auszutauschen.
+   Container können über das Linking (eine ältere Methode) oder besser, indem sie Teil desselben Netzwerks sind,
+   miteinander kommunizieren, was es ihnen ermöglicht, Daten oder Signale auszutauschen.
 
 6. **APIs und Sockets:**
-Docker bietet eine REST-API, die zur programmatischen Steuerung und Interaktion mit Containern verwendet werden
-kann. Auch UNIX- und TCP-Sockets können für Kommunikationszwecke verwendet werden, insbesondere für das Senden von
-Befehlen an den Docker-Daemon oder für Container-Interaktionen.
+   Docker bietet eine REST-API, die zur programmatischen Steuerung und Interaktion mit Containern verwendet werden
+   kann. Auch UNIX- und TCP-Sockets können für Kommunikationszwecke verwendet werden, insbesondere für das Senden von
+   Befehlen an den Docker-Daemon oder für Container-Interaktionen.
 
 Diese Techniken sind Teil des Designs von Docker, um die Isolation von Containern zu wahren und gleichzeitig zu
 ermöglichen, dass sie notwendige Aufgaben ausführen und effektiv mit der externen Umgebung oder anderen Containern
@@ -94,35 +94,89 @@ Netzwerk-Treiber, um unterschiedliche Arten von Kommunikation und Isolation zu e
 Port-Weiterleitung (Port Mapping) ist eine Methode, um den Zugriff auf Anwendungen innerhalb von Containern von
 außerhalb des Host-Systems zu ermöglichen. Dabei werden Ports des Host-Systems auf Ports des Containers abgebildet.
 
-Der Befehl `-p 8080:80` im `docker run`-Kommando leitet Anfragen vom Port 8080 des
-Host-Systems zum Port 80 des Containers um. Dies ermöglicht es Ihnen, auf Dienste zuzugreifen, die im Container
-laufen, indem Sie den entsprechenden Port auf dem Host-System ansprechen.
-TODO: Das hier ist noch überladen. bitte vereinfachen
-```mermaid
-graph LR
-    client[Client] -- HTTP Request :8080 --> host[Host Machine]
-    host -- Port 8080 to 80 Mapping --> nginx[Nginx Container]
-    nginx -- Static Content --> host
-    host -- Static Content :8080 --> client
-    nginx -- HTTP Request --> app[Application Server]
-    app -- Response --> nginx
-    nginx -- HTTP Response --> host
-    host -- HTTP Response :8080 --> client
+#### Beispiel 1
+
+Ihr Team hat ein Programm entwickelt, dass am Port 5000 des Netzwerks auf Anweisungen lauscht.
+Dieses Programm wird als Grundlage für ein Docker Image genutzt.
+
+Sie haben die Aufgabe, ein Programm zu schreiben, dass lokal auf ihrem Rechner läuft und mit dem Programm ihrer Kollegen
+arbeiten soll. Docker ist dafür einzusetzen. Sie müssen also ihre Umgebung so konfigurieren, dass ein vom Image
+abgeleiteter Container über den Port 5000 erreichbar ist.
+
+Um den Container für ihre Anwendung erreichbar zu machen setzen sie folgendes Kommando ein:
+
+```bash
+docker run -d -p 5000:5000 team-app
 ```
 
-In dieser Grafik:
-TODO: Nginx ist nicht erklärt.
+Das Port Mapping wird über die Option `-p` gesteuert, `-d` lässt den Container im Hintergrund laufen.
 
-- **Client:** Sendet eine HTTP-Anfrage an den Host auf Port 8080.
-- **Host Machine:** Leitet die Anfrage von Port 8080 auf Port 80 des Nginx-Containers um.
-- **Nginx Container:** Empfängt die Anfrage auf Port 80, verarbeitet sie (z.B. liefert statischen Inhalt oder leitet die
-  Anfrage an einen Anwendungsserver weiter) und sendet die Antwort zurück zum Host.
-- **Application Server:** Ein optionaler Backend-Dienst, der von Nginx angesprochen werden kann, um dynamische Inhalte
-  zu generieren.
+Ihr Programm arbeitet dann mit HTTP Anfragen an Port 5000 zum Beispiel so: `http://localhost:5000`.
+Docker hört diese Anfrage und gibt sie aufgrund der Einstellungen an den Container weiter. Dieser verarbeitet die
+Anfrage und gibt die Antwort auf dem gleichen weg zurück.
 
-TODO: Application Server rausnehmen? zu kompliziert
+```mermaid
+graph LR
+    client[Ihr Programm] -- HTTP Request :5080 --> host[localhost docker engine]
+    host -- Port 5000 to 5000 Mapping --> app[Team App]
+    app -- Response --> host
+    host -- HTTP Response :5000 --> client
+```
 
-### Praktische Beispiele
+**Fazit:**
+
+Das Port-Mapping ermöglicht einer lokalen Anwendung über einen Netzwerkport mit einem Container zu kommunizieren.
+
+#### Beispiel 2
+
+Ein weiteres, etwas komplexeres Beispiel, dass die Arbeit interner und externer Netzwerkverbindungen aufzeigt:
+
+Ihr Team hat zwei weitere Programme geschrieben, die jeweils auf den Port 6000 und 7000 hören.
+Nennen wir die drei Anwendungen
+
+- Rechnung Port 5000,
+- Sicherheit Port 6000 und
+- Datenbank Port 7000
+
+Ihre Aufgabe ist es eine Web-Seite zu schreiben, die eine Liste unbezahlter Rechnungen anzeigt und beim anklicken einer
+solchen Rechnung diese anzeigt. Da wir uns in einer geschäftlichen Umgebung befinden, muss sichergestellt sein, dass ein
+Anwender die Berechtigung zu den geforderten Aufgaben hat.
+
+Ihr Programm hat nun folgende Aufgaben:
+
+- Liste der unbezahlten Rechnungen aus der Datenbank holen
+- offene Rechnung anzeigen
+
+dabei muss ihre eigene Benutzerkennung und ihr Passwort übermittelt werden, damit die Sicherheit gegeben ist.
+
+Die Sicherheitsfreigabe obliegt nicht ihrem Programm, sondern die Container prüfen selbst, ob sie berechtigt sind.
+Direkte Anfragen an die Datenbank sind ebenfalls nicht gewünscht. Der Rechnung-Container holt sich die notwendigen Daten
+selbst aus der Datenbank.
+Daher werden Anfragen ihres Programmes weiterhin nur über den Port 5000 gesendet.
+
+Die interne Kommunikation wird nicht nach außen geöffnet.
+
+```mermaid
+graph LR
+    subgraph Docker Host [localhost]
+        A[mein Programm]
+        subgraph Netzwerk B [Docker-Netzwerk]
+            C[Rechnung]
+            D[Sicherheit]
+            E[Datenbank]
+        end
+    end
+
+    A -- sendet :5000 --> C
+    C <-- fragt :6000 --> D
+    C <-- fragt :7000 --> E
+    C -- antwortet :5000 --> A
+ ```
+
+Die Grafik macht deutlich, dass die Container Sicherheit und Datenbank vom Host System nicht gesehen werden und nicht
+angesprochen werden können. In den jeweiligen `run` Kommandos darf kein Port Mapping definiert sein.
+
+### Eigene Netzwerke
 
 **Erstellen eines Netzwerks:**
 
@@ -132,7 +186,7 @@ docker network create mein-netzwerk
 
 Erstellt ein benutzerdefiniertes Netzwerk namens `mein-netzwerk`.
 
-**Starten von Containern in einem Netzwerk:**
+**Starten von Containern in diesem Netzwerk:**
 
 ```bash
 docker run -d --name mein-container --network mein-netzwerk hello-world-python
