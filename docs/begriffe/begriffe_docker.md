@@ -1,64 +1,25 @@
-# Grundbegriffe von Docker
+# Grundbegriffe von Docker:
 
-TODO: Das hier bitte in die drei-spaltige Tabellenform bringen mit Referenzen.
+| Begriff        | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Referenz                                                                                   |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| Docker         | Eine Plattform für die Entwicklung, Bereitstellung und Ausführung von Anwendungen in isolierten Umgebungen namens Containern.                                                                                                                                                                                                                                                                                                                                                       | [Docker](https://www.docker.com/)                                                          |
+| Container      | Eine leichte, eigenständige, ausführbare Softwarepaketeinheit, die alles enthält, was benötigt wird, um Code auszuführen, einschließlich Systemtools, Bibliotheken und Einstellungen.                                                                                                                                                                                                                                                                                               | [Docker Docs: Container](https://docs.docker.com/get-started/overview/#container)          |
+| Image          | Eine schreibgeschützte Vorlage mit Anweisungen zum Erstellen eines Docker-Containers. Oft basiert ein Image auf einem anderen Image, mit einigen zusätzlichen Anpassungen.                                                                                                                                                                                                                                                                                                          | [Docker Docs: Images](https://docs.docker.com/get-started/overview/#images)                |
+| Dockerfile     | Eine Textdatei, die die Schritte enthält, um ein Docker-Image zu erstellen. Sie definiert, was in der Umgebung des Containers vorhanden sein wird.                                                                                                                                                                                                                                                                                                                                  | [Docker Docs: Dockerfile](https://docs.docker.com/engine/reference/builder/)               |
+| Docker Compose | Ein Tool zur Definition und Ausführung von Multi-Container Docker-Anwendungen. Mit einer YAML-Datei können Dienste, Netzwerke und Volumes konfiguriert werden.                                                                                                                                                                                                                                                                                                                      | [Docker Docs: Compose](https://docs.docker.com/compose/)                                   |
+| Volume         | Ein Mechanismus zum Persistieren von Daten, die in Docker-Containern erzeugt werden, und zum gemeinsamen Nutzen von Daten zwischen Containern.                                                                                                                                                                                                                                                                                                                                      | [Docker Docs: Volumes](https://docs.docker.com/storage/volumes/)                           |
+| Docker Hub     | Eine Cloud-basierte Registry, in der Docker-Images gespeichert und geteilt werden können. Es ermöglicht Benutzern, Images hochzuladen und herunterzuladen.                                                                                                                                                                                                                                                                                                                          | [Docker Hub](https://hub.docker.com/)                                                      |
+| Registry       | Ein Speicher- und Verteilungssystem für Docker-Images. Docker Hub ist ein Beispiel für eine öffentliche Registry.                                                                                                                                                                                                                                                                                                                                                                   | [Docker Docs: Registry](https://docs.docker.com/registry/)                                 |
+| Swarm          | Ein Orchestrierungstool von Docker, das es ermöglicht, eine Gruppe von Docker-Hosts in einen einzigen virtuellen Host zu verwalten.                                                                                                                                                                                                                                                                                                                                                 | [Docker Docs: Swarm](https://docs.docker.com/engine/swarm/)                                |
+| Kubernetes     | Ein Open-Source-Orchestrierungssystem für Docker-Container, das ursprünglich von Google entwickelt wurde.                                                                                                                                                                                                                                                                                                                                                                           | [Kubernetes](https://kubernetes.io/)                                                       |
+| Layer          | Eine Schicht in einem Docker-Image, die Änderungen oder Ergänzungen zum Image repräsentiert. Jeder Layer wird nur einmal gespeichert, was Speicherplatz spart.                                                                                                                                                                                                                                                                                                                      | [Docker Docs: Layers](https://docs.docker.com/storage/storagedriver/)                      |
+| Docker Engine  | Die Laufzeit- und Verwaltungsumgebung für Docker-Container. Sie ermöglicht das Erstellen und Ausführen von Containern auf dem Host-System.                                                                                                                                                                                                                                                                                                                                          | [Docker Docs: Engine](https://docs.docker.com/engine/)                                     |
+| Docker Daemon  | Der Hintergrundprozess, der die Erstellung, Ausführung und Überwachung der Docker-Container verwaltet.                                                                                                                                                                                                                                                                                                                                                                              | [Docker Docs: Daemon](https://docs.docker.com/config/daemon/)                              |
+| Docker Client  | Das Kommandozeilen-Tool, das es Benutzern ermöglicht, mit dem Docker Daemon zu interagieren.                                                                                                                                                                                                                                                                                                                                                                                        | [Docker Docs: Client](https://docs.docker.com/engine/reference/commandline/cli/)           |
+| Port Binding   | Die Methode, mit der Docker externe Ports auf die internen Ports des Containers abbildet, um Netzwerkkommunikation zu ermöglichen.                                                                                                                                                                                                                                                                                                                                                  | [Docker Docs: Networking](https://docs.docker.com/config/containers/container-networking/) |
+| Bind Mounts    | Ein Bind Mount ist ein Mapping eines Host-Dateisystempfads zum Pfad eines Containers. Im Gegensatz zu Volumes, die von Docker verwaltet werden, sind Bind Mounts spezifische Pfade auf dem Host-System. Sie ermöglichen den direkten Zugriff auf das Dateisystem des Hosts und werden oft für die Entwicklung und für Daten, die nicht von Docker verwaltet werden müssen, verwendet. Änderungen an den Bind Mounts sind sofort sowohl im Container als auch auf dem Host sichtbar. | [Docker Docs: Bind Mounts](https://docs.docker.com/storage/bind-mounts/)                   |
 
-1. **Docker:**  
-   Eine Plattform für die Entwicklung, Bereitstellung und Ausführung von Anwendungen in isolierten Umgebungen namens
-   Containern.
-
-2. **Container:**  
-   Eine leichte, eigenständige, ausführbare Softwarepaketeinheit, die alles enthält, was benötigt wird, um Code
-   auszuführen, einschließlich Systemtools, Bibliotheken und Einstellungen.
-
-3. **Image:**  
-   Eine schreibgeschützte Vorlage mit Anweisungen zum Erstellen eines Docker-Containers. Oft basiert ein Image auf einem
-   anderen Image, mit einigen zusätzlichen Anpassungen.
-
-4. **Dockerfile:**  
-   Eine Textdatei, die die Schritte enthält, um ein Docker-Image zu erstellen. Sie definiert, was in der Umgebung des
-   Containers vorhanden sein wird.
-
-5. **Docker Compose:**  
-   Ein Tool zur Definition und Ausführung von Multi-Container Docker-Anwendungen. Mit einer YAML-Datei können Dienste,
-   Netzwerke und Volumes konfiguriert werden.
-
-6. **Volume:**  
-   Ein Mechanismus zum Persistieren von Daten, die in Docker-Containern erzeugt werden, und zum gemeinsamen Nutzen von
-   Daten zwischen Containern.
-
-7. **Docker Hub:**  
-   Eine Cloud-basierte Registry, in der Docker-Images gespeichert und geteilt werden können. Es ermöglicht Benutzern,
-   Images hochzuladen und herunterzuladen.
-
-8. **Registry:**  
-   Ein Speicher- und Verteilungssystem für Docker-Images. Docker Hub ist ein Beispiel für eine öffentliche Registry.
-
-9. **Swarm:**  
-   Ein Orchestrierungstool von Docker, das es ermöglicht, eine Gruppe von Docker-Hosts in einen einzigen virtuellen Host
-   zu verwalten.
-
-10. **Kubernetes:**  
-    Ein Open-Source-Orchestrierungssystem für Docker-Container, das ursprünglich von Google entwickelt wurde.
-
-11. **Layer:**  
-    Eine Schicht in einem Docker-Image, die Änderungen oder Ergänzungen zum Image repräsentiert. Jeder Layer wird nur
-    einmal gespeichert, was Speicherplatz spart.
-
-12. **Docker Engine:**  
-    Die Laufzeit- und Verwaltungsumgebung für Docker-Container. Sie ermöglicht das Erstellen und Ausführen von
-    Containern auf dem Host-System.
-
-13. **Docker Daemon:**  
-    Der Hintergrundprozess, der die Erstellung, Ausführung und Überwachung der Docker-Container verwaltet.
-
-14. **Docker Client:**  
-    Das Kommandozeilen-Tool, das es Benutzern ermöglicht, mit dem Docker Daemon zu interagieren.
-
-15. **Port Binding:**  
-    Die Methode, mit der Docker externe Ports auf die internen Ports des Containers abbildet, um Netzwerkkommunikation
-    zu ermöglichen.
-
-16. **Wichtige Docker-Kommandozeilenbefehle:**
+# Wichtige Docker-Kommandozeilenbefehle:
 
 | Befehl                   | Beschreibung                                                                                                                                                              |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

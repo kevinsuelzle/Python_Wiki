@@ -6,10 +6,16 @@ Datenspeicherung in Docker und wie sie effektiv genutzt werden können.
 
 ## Grundlagen der persistenten Datenspeicherung
 
+Ein Container ist immer so aufgebaut, dass er wie ein eigenständiger Computer funktioniert. Somit ist es auch möglich,
+Daten im Container zu speichern oder vorhandene Daten zu verändern. Der Nachteil dabei ist, dass diese Daten verloren
+gehen, sobald der Container gelöscht wird.
+
+Daher lassen sie uns zunächst die innere Struktur eines Containers näher betrachten.
+
 ### Container-Dateisystem:
 
-- Standardmäßig speichert jeder Docker-Container Daten in einem schreibbaren Layer, der über dem Image-Dateisystem
-  liegt. Diese Daten gehen verloren, wenn der Container gelöscht wird.
+Standardmäßig speichert jeder Docker-Container Daten in einem schreibbaren Layer, der über dem Image-Dateisystem
+liegt. Diese Daten gehen verloren, wenn der Container gelöscht wird.
 
 ```mermaid
 graph TD
@@ -58,11 +64,18 @@ Technisch gesehen besteht ein Layer aus:
 - **Dateien und Verzeichnissen:** Die tatsächlichen Dateien und Verzeichnisse, die geändert, hinzugefügt oder gelöscht
   wurden.
 - **Metadaten:** Informationen über die Änderungen, wie die Layer-ID, Erstellungsdatum, Beziehung zu anderen Layern und
-  möglicherweise Autorinformationen.
+  möglicherweise Autoreninformationen.
 - **Manifest:** Ein Dokument, das die Layer und deren Reihenfolge in einem Image beschreibt. Das Manifest enthält auch
   die Layer-IDs und kann Signaturen für die Verifizierung enthalten.
 
-TODO: Habe nicht so ganz verstanden, was die Layer sind. könnte man hier ein Beispiel zeigen? Oder kommt das im Video?
+Am besten vergleichen sie Layers mit einem Commit in Git. In jedem Layer stehen jeweils nur die Veränderungen zu dem
+darunter liegenden Layer. Oder betrachten sie Layer als durchsichtige Folien, die jeweils die aktuellen Änderungen am
+Programm beinhalten und ihre Vorgänger überdecken. Nicht geänderte Teile scheinen durch und formen mit den Neuerungen
+die aktuelle Funktionsweise des Programms. Man kann das ein wenig nachverfolgen, wenn große Images geladen
+werden (`docker pull`).
+Jedes `commit` wird auf den aktuellen Layer angewendet, sodass der aktuelle Stand der Anwendung nach und nach erreicht
+wird. Am Ende wird noch ein Layer hinzugefügt, der es erlaubt, während der Laufzeit des Containers Änderungen oder Daten
+im Container zu speichern.
 
 #### Zusammenfassung
 
@@ -92,14 +105,18 @@ teilen: Volumes und Bind Mounts. Denken Sie an Volumes wie an eine externe Festp
 und an Bind Mounts wie an einen USB-Stick, den Sie direkt in Ihren Computer und Container stecken.
 
 ### Verwendung von Volumes
+
 **Erstellen eines Volumes:**
+
 ```bash
 docker volume create mein-volume
 ```
+
 Stellen Sie sich vor, Sie reservieren einen Bereich auf Ihrer Festplatte, den Docker verwaltet. Dieser Befehl erstellt
 einen solchen reservierten Bereich, ein "Volume" genannt, mit dem Namen `mein-volume`.
 
 **Einen Container mit einem Volume starten:**
+
 ```bash
 docker run -d -v mein-volume:/pfad/im/container mein-image
 ```
@@ -109,11 +126,14 @@ unter `/pfad/im/container` gespeichert wird, wird tatsächlich im `mein-volume` 
 wenn der Container gelöscht wird.
 
 ### Verwendung von Bind Mounts
+
 **Starten eines Containers mit einem Bind Mount:**
+
 ```bash
 docker run -d -v /pfad/auf/host:/pfad/im/container mein-image
 ```
-Bind Mounts sind wie das Einstecken eines USB-Sticks in Ihren Computer. Sie nehmen einen Ordner auf Ihrem
+
+Die Bind Mounts sind wie das Einstecken eines USB-Sticks in Ihren Computer. Sie nehmen einen Ordner auf Ihrem
 Host-System (`/pfad/auf/host`) und stecken ihn direkt in den Container (`/pfad/im/container`). Änderungen auf einem Ende
 spiegeln sich sofort auf dem anderen Ende wider.
 
@@ -121,7 +141,7 @@ spiegeln sich sofort auf dem anderen Ende wider.
 
 **Datenverlust vermeiden:**
 Verwenden Sie Volumes oder Bind Mounts für alle Daten, die persistent gespeichert werden sollen. Sie sind wie Ihre
-Sicherheitsnetze, die sicherstellen, dass wertvolle Daten nicht verloren gehen, wenn Ihr Container "umzieht" oder 
+Sicherheitsnetze, die sicherstellen, dass wertvolle Daten nicht verloren gehen, wenn Ihr Container "umzieht" oder
 "renoviert" wird.
 
 **Sicherheit:**
@@ -151,7 +171,7 @@ ein Teil des Containers, obwohl sie außerhalb davon verwaltet werden.
 
 ### Bind Mounts
 
-**Direkte Zuordnung zum Host-Dateisystem:** Bind Mounts sind direkt mit dem Host-Dateisystem verbunden. Sie wählen
+**Direkte Zuordnung zum Host-Dateisystem:** Bind-Mounts sind direkt mit dem Host-Dateisystem verbunden. Sie wählen
 einen Ordner auf Ihrem Host und machen ihn direkt im Container verfügbar.
 
 **Keine Verwaltung durch Docker:** Sie haben die volle Kontrolle und Verantwortung für den Pfad und die Daten.

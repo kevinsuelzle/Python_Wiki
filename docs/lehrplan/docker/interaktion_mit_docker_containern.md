@@ -8,10 +8,10 @@
 docker run -d --name mein-container hello-world-python
 ```
 
-  Das Image haben wir [hier](docker_images_erstellen.md) erstellt.
+Das Image haben wir [hier](docker_images_erstellen.md) erstellt.
 
-  Dieser Befehl startet einen Container namens `mein-container` im Hintergrund (`-d`, englisch "detached") basierend auf
-  dem `hello-world-python` Image. Hier sind einige wichtige Punkte zum **detached Modus**:
+Dieser Befehl startet einen Container namens `mein-container` im Hintergrund (`-d`, englisch "detached") basierend auf
+dem `hello-world-python` Image. Hier sind einige wichtige Punkte zum **detached Modus**:
 
 1. **Hintergrundausführung:** Der Container läuft im Hintergrund, d.h. Sie erhalten sofort die Kontrolle über die
    Kommandozeile zurück, nachdem der Container gestartet wurde.
@@ -32,14 +32,14 @@ docker run -d --name mein-container hello-world-python
 ```bash
 docker stop mein-container
 ```
-  
+
 Dieser Befehl stoppt den Container `mein-container`.
 
 ## 2. Zugriff auf laufende Container
 
 **Interaktiver Modus:**
 Mit dem folgenden Befehl werden Sie in die Bash-Shell des Containers versetzt, wo Sie Befehle ausführen und
-mit dem Container interagieren können, als ob Sie direkt in ihm arbeiten würden. 
+mit dem Container interagieren können, als ob Sie direkt in ihm arbeiten würden.
 
 ```bash
 docker exec -it mein-container bash
@@ -92,8 +92,8 @@ In diesem Befehl:
 
 - `-d` ist der Schalter für den oben beschriebenen detached mode.
 - `--name mein-container` gibt dem container seinen Namen.
-- `-v mein-volume:/app` sagt Docker, dass es das Volume `mein-volume` an den Pfad `/app` im Container binden soll. 
-  Ein Volume ist ein dedizierter Speicherraum für den Container. Er wird hier automatisch ertellt. 
+- `-v mein-volume:/app` sagt Docker, dass es das Volume `mein-volume` an den Pfad `/app` im Container binden soll.
+  Ein Volume ist ein dedizierter Speicherraum für den Container. Er wird hier automatisch ertellt.
   Näheres zu Volumes findet sich [hier](wo_und_wie_docker_container_daten_speichern.md).
 - `hello-world-python` ist das Image, aus dem der Container erstellt wird.
 
@@ -138,7 +138,12 @@ angegeben werden. So können Tags wie `:latest` dafür sorgen, dass immer das ak
 
 ### Aufgabe: Interaktion mit Docker-Containern 🌶🌶
 
-In dieser Übung werden Sie praktische Erfahrungen im Umgang mit Docker-Containern sammeln. Sie werden lernen, wie man
-Container startet, stoppt, löscht und mit ihnen interagiert. Folgen Sie den untenstehenden Anweisungen, um die Aufgaben
-zu erfüllen.
-TODO: Hier scheint die Aufgabe zu fehlen.
+Üben sie die Interaktion mit Containern. Trainieren sie beide grundlegenden Arten der Interaktion: CLI und Desktop.
+
+- Starten und Stoppen sie beliebige Container.
+- Löschen sie Container.
+- Öffnen sie die Bash auf dem Container und lassen sie sich die Verzeichnisstruktur anzeigen.
+- Speichern sie eine Datei im Container.
+- Wählen sie einen für sie interessantes Image auf Docker Hub und starten sie einen Container damit.
+- Schauen sie sich die Arbeit des Containers an, indem sie ihn in Docker Desktop anklicken und sich Logs und andere
+  Reiter im folgenden Dialog ansehen.

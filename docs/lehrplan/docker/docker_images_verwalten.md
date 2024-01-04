@@ -1,4 +1,5 @@
 # Arbeiten mit Docker-Registries:
+
 [120 min]
 
 Nachdem Sie ein Docker-Image erstellt haben, ist der nächste Schritt oft, dieses Image in einem Repository zu sichern.
@@ -6,6 +7,7 @@ Dies ermöglicht es Ihnen, das Image zu teilen, es auf verschiedenen Maschinen z
 Container-Umgebungen zu haben.
 
 ## Warum Docker-Images in Repositories speichern?
+
 **Versionierung und Wiederverwendbarkeit:**
 Repositories ermöglichen es Ihnen, verschiedene Versionen eines Images zu
 speichern und bei Bedarf darauf zurückzugreifen.
@@ -25,11 +27,13 @@ Das bekannteste Docker-Repository ist Docker Hub, aber es gibt auch andere Optio
 Registry (ECR), Google Container Registry (GCR) oder private Repositories.
 
 **Taggen des Docker-Images:**
-Bevor Sie ein Image in ein Repository hochladen, sollten Sie es taggen. Dies gibt dem Image einen Namen und 
+Bevor Sie ein Image in ein Repository hochladen, sollten Sie es taggen. Dies gibt dem Image einen Namen und
 optional eine Version. Befehl zum Taggen eines Images:
+
 ```bash
 docker tag hello-world-python yourusername/hello-world-python:version
 ```
+
 Ersetzen Sie `yourusername` mit Ihrem Benutzernamen im Repository und `version` mit dem gewünschten Versions-Tag.
 
 **Anmelden am Docker-Repository:**
@@ -107,12 +111,13 @@ Sicherheit Ihrer Docker-Images. Hier erfahren Sie, wie Sie ein privates Docker-R
 docker run -d -p 5000:5000 --restart=always --name registry myrepo:2
 ```
 
-TODO: Was ist die Bedeutung der zweiten 5000?
-- Dies startet eine Docker Registry, die auf Port 5000 lauscht ( `-p` Option).
+- Dies startet eine Docker Registry (
+  mit [Port Mapping](kommunikation_zwischen_und_mit_docker_containern.md#netzwerkkommunikation-und-port-weiterleitung)),
+  die auf dem Host Port 5000 lauscht und die Anfragen an ihren internen Pot 5000 weitergibt ( `-p` Option).
 - Die registry hat in diesem Fall den Namen `myrepo` mit dem tag `2` (Tags haben oft die Bedeutung von Versionsnummern).
 - Die registry läuft wie ein Container im `detached` Modus, also unabhängig von der Konsole( `-d` Option).
-- Der Befehl `restart=always` sorgt dafür, dass der Container automatisch neu gestartet wird, 
-  wenn er aus irgendeinem Grund beendet wird. Dies schließt Fälle ein, in denen der Container aufgrund eines Fehlers 
+- Der Befehl `restart=always` sorgt dafür, dass der Container automatisch neu gestartet wird,
+  wenn er aus irgendeinem Grund beendet wird. Dies schließt Fälle ein, in denen der Container aufgrund eines Fehlers
   oder durch manuelle Beendigung gestoppt wird.
 
 #### Taggen und Pushen eines Images zur privaten Registry:
@@ -135,6 +140,7 @@ Um auf Images aus der privaten Registry zuzugreifen, verwenden Sie den vollstän
 Docker-Befehlen, z.B. `localhost:5000/hello-world-python`.
 
 ### Sicherheitsaspekte
+
 **HTTPS:**
 Es wird empfohlen, Ihre Registry mit HTTPS zu sichern, um die Übertragung von Images zu schützen.
 
