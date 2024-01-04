@@ -175,8 +175,8 @@
 |       | [MongoDB - Datenmodellierung]()                                  | [hier](../checklists/checklist_db2.md#mongodb)                                            |                  |
 |       | [MongoDB - Sicherheit]()                                         | [hier](../checklists/checklist_db2.md#mongodb)                                            |                  |
 |       | [MongoDB - Pymongo]()                                            | [hier](../checklists/checklist_db2.md#pymongo)                                            |                  |
-|       | [Datenbank Refactoring ???]()                                        | [hier](../checklists/checklist_db2.md#Datenbank-Refactoring-in-NoSQL)                 |                  |
-|       | [MongoDB & Cosmos DB]()                                                    | [hier](../checklists/checklist_db2.md#azure-cosmos-db)                                    |                  |
+|       | [Datenbank Refactoring ???]()                                    | [hier](../checklists/checklist_db2.md#Datenbank-Refactoring-in-NoSQL)                     |                  |
+|       | [MongoDB & Cosmos DB]()                                          | [hier](../checklists/checklist_db2.md#azure-cosmos-db)                                    |                  |
 <!-- |       | [Graphdatenbanken]()                                             | [hier](../checklists/checklist_db2.md#graphdatenbanken)                              |                  | -->
 
 <!-- |  | Graphqln NEO4J?  -->
