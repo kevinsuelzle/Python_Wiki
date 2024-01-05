@@ -156,8 +156,8 @@ nav:
               - Persistente Datenspeicherung: lehrplan/docker/wo_und_wie_docker_container_daten_speichern.md
               - Fehlerbehebung und Logs: lehrplan/docker/fehlersuche_mit__container_logs.md
               - Dockerfile und Docker Compose: lehrplan/docker/docker_dockerfile_und_docker_compose.md
-              - Best Practices und Sicherheit: lehrplan/docker/docker_best_practices_und_sicherheit.md
               - Praktische Übungen: lehrplan/docker/docker_praktische_uebungen_und_szenarien.md
+              - Best Practices und Sicherheit: lehrplan/docker/docker_best_practices_und_sicherheit.md
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md

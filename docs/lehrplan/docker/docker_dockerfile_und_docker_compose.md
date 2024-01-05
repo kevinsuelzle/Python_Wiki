@@ -89,9 +89,13 @@ Unix- und Linux-basierten Systemen, den aktuellen Ordner mit einem Punkt zu refe
 
 </details>
 
-### **Erstellung des Images**
+### Aufgabe: Erstellung des Images🌶🌶
 
-Das Image, das durch dieses Dockerfile erstellt wird, hat standardmäßig **keinen** spezifischen Namen. Um dem Image
+Wie erstellt man auf Basis des obigen Dockerfiles ein Image?
+<details>
+    <summary>Lösung</summary>
+
+Das Image, das durch dieses Dockerfile erstellt wird, hat standardmäßig <b>keinen</b> spezifischen Namen. Um dem Image
 einen Namen zu geben, müssen Sie den `docker build` Befehl mit dem `-t` Flag verwenden, gefolgt von dem gewünschten
 Namen und Tag. Zum Beispiel:
 
@@ -104,22 +108,15 @@ bereitstellt.
 
 Hierbei ist `meine_python_app` der Name des Images und `latest` ist der Tag, der die Version des Images angibt. Ohne
 das `-t` Flag würde das Image nur eine generierte ID erhalten und keinen benutzerfreundlichen Namen.
+</details>
+
 
 ## Docker Compose
 
-### 1. **Einführung in Docker Compose:**
+Docker Compose ist ein Tool zur Definition und Ausführung von Multi-Container Docker-Anwendungen.
+Mit einer YAML-Datei können Sie Dienste, Netzwerke und Volumes definieren.
 
-- Docker Compose ist ein Tool zur Definition und Ausführung von Multi-Container Docker-Anwendungen.
-- Mit einer YAML-Datei können Sie Dienste, Netzwerke und Volumes definieren.
-
-### 2. **Docker-Compose-Datei:**
-
-- Die `docker-compose.yml`-Datei ist das Herzstück von Docker Compose und beschreibt, wie Ihre Anwendung in Docker
-  ausgeführt wird.
-
-TODO: Ich verstehe das Beispiel leider nicht. Lass uns da mal bitte drüber sprechen.
-
-### 3. **Beispiel einer `docker-compose.yml`-Datei:**
+**Beispiel einer `docker-compose.yml`-Datei:**
 
 ```yaml
 version: '3'
@@ -150,62 +147,74 @@ services:
       - sql-server
 ```
 
-Dieses `docker-compose` Beispiel ist ein gutes Szenario, um die Funktionsweise von Docker Compose
-zu demonstrieren. Docker Compose wird verwendet, um mehrere Docker-Container zu definieren und zu betreiben, die
-zusammenarbeiten. Hier ist eine detaillierte Erläuterung Ihres Beispiels:
-
-### 4. **Struktur des `docker-compose.yml`-Files**
-
 **Version**: `version: '3'` gibt die Version der Docker Compose-Datei an. Version 3 ist eine der neuesten Versionen und bietet
 Unterstützung für Docker Swarm.
 
 **Services**: Unter `services` werden die verschiedenen Container definiert, die Teil Ihrer Anwendung sind.
 
-### 5. **Definition der einzelnen Services**
-
 - **nginx**:
-    - `nginx` ist der Name des Services.
-    - `image: nginx:latest` gibt an, dass der Service das neueste offizielle nginx-Image von Docker Hub verwendet.
-    - `volumes: - ./nginx.conf:/etc/nginx/nginx.conf:ro` bindet die lokale Datei `nginx.conf`-Datei in den Container ein.
-      Sie ist innerhalb des Containers unter `/etc/nginc/nginx.conf` erreichbar.
-      Das `:ro` bedeutet, dass das Volume im "read-only"-Modus gemountet wird.
-    - `ports: - "80:80"` leitet den Port 80 des Hosts auf den Port 80 des nginx-Containers um, was bedeutet, dass nginx
-      auf dem Standard-HTTP-Port erreichbar ist.
+Nginx dient als Eingangspunkt für unsere Applikations. Alle Anfragen von Außen werden von Nginx entgegengenommen
+      und innerhalb der Container verteilt.
+      - `nginx` ist der Name des Services.
+      - `image: nginx:latest` gibt an, dass der Service das neueste offizielle nginx-Image von Docker Hub verwendet.
+      - `volumes: - ./nginx.conf:/etc/nginx/nginx.conf:ro` bindet die lokale Datei `nginx.conf`-Datei in den Container ein.
+    Sie ist innerhalb des Containers unter `/etc/nginc/nginx.conf` erreichbar.
+    Das `:ro` bedeutet, dass das Volume im "read-only"-Modus gemountet wird.
+      - `ports: - "80:80"` leitet den Port 80 des Hosts auf den Port 80 des nginx-Containers um, was bedeutet, dass nginx
+    auf dem Standard-HTTP-Port erreichbar ist.
 
-- **sql-server**:
+- **sql-server**: Hier liegt die Datenbank der Applikation.
     - `sql-server` ist der Name dieses Services.
     - `image: mcr.microsoft.com/mssql/server:2019-latest` verwendet das neueste SQL Server 2019-Image von Microsoft.
-    - `environment:` definiert Umgebungsvariablen im Container:
+    - `environment:` definiert Umgebungsvariablen innerhalb des Containers:
         - `ACCEPT_EULA=Y` akzeptiert die Endbenutzer-Lizenzvereinbarung.
         - `SA_PASSWORD=Sql12345` setzt das Passwort für den SQL Server.
-    - `ports: - "1433:1433"` leitet den SQL Server-Port 1433 des Hosts auf den Port 1433 des Containers um.
+    - `ports: - "1433:1433"` leitet den SQL Server-Port 1433 des Hosts auf den Port 1433 des Containers um. Der SQL
+      Server ist somit von außen erreichbar. Diese Erreichbarkeit dient jedoch nur der Wartung der Datenbank.
     - `volumes: - ./mydatabase:/var/opt/mssql` bindet das lokale Verzeichnis `mydatabase` in den Container ein, um Daten
-      dauerhaft zu speichern.
+      dauerhaft zu speichern. Innerhalb des Containers ist dieses Verzeichnis unter `/var/opt/mssql` erreichbar.
 
-- **meine_python_app**:
+- **meine_python_app**: In diesem Container läuft die eigentlich interessante Applikation.
     - `meine_python_app` ist der Name dieses Services.
-    - `build:` gibt an, dass das Image aus einem Dockerfile gebaut werden soll. Das startet den o.a. build Prozess.
-        - `context: .` setzt den Kontext für den Build auf das aktuelle Verzeichnis.
-        - `dockerfile: Dockerfile` gibt an, welches Dockerfile für den Build verwendet werden soll.
+    - `build:` gibt an, dass das Image aus einem Dockerfile gebaut werden soll. Das startet den oben angegebenen build Prozess.
+        - `context: .` Im aktuellen Ordner (deswegen `.`) findet sich alles, was zum Bau des Containers benötigt wird.
+        - `dockerfile: Dockerfile` gibt an, welches Dockerfile für den Build verwendet werden soll. Hier einfach die Datei `Dockerfile`.
     - `network_mode: service:nginx` bedeutet, dass der `node-app`-Service das gleiche Netzwerk wie der `nginx`-Service
       verwendet.
     - `depends_on: - sql-server` stellt sicher, dass der `sql-server`-Service gestartet wird, bevor der `node-app`
       -Service gestartet wird.
 
-Dieses `docker-compose.yml`-File definiert eine Multi-Container-Anwendung mit drei Services: einem nginx-Webserver,
-einem SQL Server und einer eigenen Anwendung. Die Konfiguration sorgt dafür, dass die Services miteinander kommunizieren
-können, wobei nginx als Webserver, SQL Server als Datenbank und die Anwendung als Backend fungieren. Durch die
-Verwendung von Docker Compose können diese Services einfach und konsistent gestartet, gestoppt und verwaltet werden.
 
-**Hinweis:** Die Kommunikation zwischen den Containern läuft
-über [Netzwerke](kommunikation_zwischen_und_mit_docker_containern.md). Dafür werden von den einzelnen Containern
-Ports festgelegt, über die sie erreichbar sind. Die `port` Anweisung ist dafür nicht zuständig! Sie definiert den Port,
-über den der Container von außen zugänglich ist. Kurz gesagt: der Container ist ohne `port` Anweisung für die Außenwelt
-nicht erreichbar. Innerhalb der Containerumgebung allerdings schon.
+TODO: network_mode Testen
 
-### 5. **Verwendung von compose Befehlen**
+```mermaid
+graph TD
 
-Im Unterschied zu docker-compose.yml ist `docker compose` als Aufruf in der Kommandozeile ein Programm, dass mit
+    subgraph Docker System
+    subgraph CN["Container NGINX"]
+    Conf[[<b>NGINX Config:</b><br/> meine_python_app = 3000]] 
+    end
+    PN([Port 80]) <--> CN
+    PB([Port 3000]) <--> CB["Container<br/>meine_python_app"]
+    PA([Port 1433]) <--> CA["Container<br/>sql-server"]
+    CN <---> PB    
+    PA <--> PB
+    end  
+
+    
+    HPort([öffentlicher Host Port<br/>Port 80]) <-->|Portmapping| PN
+    H2Port([lokaler Host Port<br/>Port 1433]) <-->|Portmapping| PA
+
+    Client <-->|localhost/meine_python_app| HPort
+    
+    style CN fill:#ECECFF, stroke:#9370DB
+    style Conf fill:#e8dcbc ,stroke:#f7be20
+```
+
+
+### Wichtigste compose Befehle
+
+Im Unterschied zu `docker-compose.yml` ist `docker compose` als Aufruf in der Kommandozeile ein Programm, dass mit
 verschiedenen Parametern die Ausführung der Multi-Container Umgebung steuern kann. Hier einige Befehle dazu:
 
 | Befehl                      | Beschreibung                                                                                                                                    |
@@ -220,14 +229,6 @@ verschiedenen Parametern die Ausführung der Multi-Container Umgebung steuern ka
 | `docker compose start`      | Startet alle gestoppten Container, die durch `docker-compose up` erstellt wurden.                                                               |
 
 In unserem Beispiel würde es genügen,
+`docker compose up -d`
+in der Kommandozeile aufzurufen, um die vollständige Anwendung zu starten. 
 
-```bash
-   docker compose up -d 
-```
-
-in der Kommandozeile aufzurufen, um die vollständige Anwendung zu starten. Je nachdem, was im Arbeitsverzeichnis
-vorhanden ist oder nicht, würden Container geladen oder gebaut und als Hintergrundprozess gestartet.
-
-Die hier gezeigt App würde den Webserver `nginx`, die `SQL Server` Datenbank und die `meine_python_app` starten. Damit
-können Netzwerkanfragen an den Port 80 angenommen und an die App weitergeleitet werden. Die App hat dann die
-Möglichkeit, ihre Daten in der Datenbank zu speichern.
