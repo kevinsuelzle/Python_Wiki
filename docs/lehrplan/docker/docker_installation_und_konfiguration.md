@@ -107,35 +107,10 @@ Setzen Sie die Anzahl der für Docker zur Verfügung stehenden Prozessorkerne au
 
 Setzen Sie den für Docker zur Verfügung stehenden Systemspeicher auf die Hälfte des gesamten Speichers ihres Systems.
 
-### **Grundlegende Docker-Befehle**
-
-Hier ist eine Tabelle mit wichtigen Befehlen, die sich auf System- und Verwaltungsaufgaben beziehen:
-
-| Befehl                   | Beschreibung                                                                                                                                                              |
-|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `docker info`            | Zeigt Systemweite Informationen über Docker, einschließlich der Anzahl der Container und Images, Speicher- und Netzwerkkonfiguration, Kernel-Version usw.                 |
-| `docker version`         | Zeigt Informationen über die Docker-Version, einschließlich der Client- und Server-Version (Docker-Daemon).                                                               |
-| `docker system df`       | Zeigt die belegte Speichermenge durch Docker-Images, Container, Volumes und Build Cache.                                                                                  |
-| `docker system prune`    | Entfernt ungenutzte Daten, um Speicherplatz freizugeben. Dies umfasst ungenutzte Container, Netzwerke, Images (sowohl hängende als auch ungenutzte) und optional Volumes. |
-| `docker network ls`      | Listet alle Netzwerke auf, die von Docker verwaltet werden.                                                                                                               |
-| `docker network create`  | Erstellt ein neues Netzwerk.                                                                                                                                              |
-| `docker network inspect` | Zeigt detaillierte Informationen zu einem oder mehreren Netzwerken an.                                                                                                    |
-| `docker network rm`      | Entfernt ein oder mehrere Netzwerke.                                                                                                                                      |
-| `docker volume ls`       | Listet alle Volumes auf, die von Docker verwaltet werden.                                                                                                                 |
-| `docker volume create`   | Erstellt ein neues Volume.                                                                                                                                                |
-| `docker volume inspect`  | Zeigt detaillierte Informationen zu einem oder mehreren Volumes an.                                                                                                       |
-| `docker volume rm`       | Entfernt ein oder mehrere Volumes.                                                                                                                                        |
-| `docker login`           | Meldet sich bei einer Docker-Registry an.                                                                                                                                 |
-| `docker logout`          | Meldet sich von einer Docker-Registry ab.                                                                                                                                 |
-| `docker context ls`      | Listet alle Docker-Kontexte auf. Ein Kontext definiert, wie Befehle mit einem bestimmten Docker-Host und einer Docker-Registry interagieren.                              |
-| `docker context create`  | Erstellt einen neuen Docker-Kontext.                                                                                                                                      |
-| `docker context use`     | Wechselt zu einem anderen Docker-Kontext.                                                                                                                                 |
-| `docker context rm`      | Entfernt einen Docker-Kontext.                                                                                                                                            |
+### Starten von Docker Desktop
 
 In Docker gibt es spezifische Befehle zum Starten oder Stoppen der Docker Engine bzw. des Docker Desktops, die je nach
 Betriebssystem variieren können. Hier sind einige grundlegende Befehle und Methoden:
-
-### Starten von Docker Desktop
 
 - **Windows:** Docker Desktop startet normalerweise automatisch beim Hochfahren. Es kann auch manuell gestartet werden, 
 indem man die Docker Desktop-Anwendung über das Startmenü oder die Verknüpfung auf dem Desktop öffnet.

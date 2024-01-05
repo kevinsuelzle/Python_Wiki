@@ -1,89 +1,94 @@
 # Kommunikation zwischen und mit Docker Containern
 
-TODO: Lass uns noch mal über diese Seite sprechen, hier sind mir Dinge nicht klar geworden.
-
 In diesem Kapitel setzen wir und mit der Kommunikation von Docker Containern untereinander und mit der Außenwelt
 auseinander.
 
 Docker-Container kommunizieren mit ihrer Umgebung über mehrere Techniken, um Isolation zu gewährleisten und gleichzeitig
 notwendige Interaktionen zu ermöglichen.
 
-## Allgemeine Methoden
+Docker-Container kommunizieren im Allgemeinen über Netzwerke (TCP/IP) untereinander und mit der Außenwelt.
 
-1. **Netzwerke:**
-   Docker bietet
-   mehrere [Netzwerktypen](kommunikation_zwischen_und_mit_docker_containern.md#grundlagen-des-docker-netzwerks) an,
-   mit denen Container miteinander kommunizieren.
+Um die Dockercontainer voneinander Unterscheiden zu können, müssen sie mit einer Nummer versehen werden.
+Diese Nummer bezeichnet man in der Netzwerktechnik als **Port**. Man kann es sich bildlich vorstellen, wie eine
+Hausnummer bei der Post. 
 
-2. **Volumes:**
-   [Volumes](wo_und_wie_docker_container_daten_speichern.md#verwendung-von-volumes) werden verwendet, um von
-   Docker-Containern generierte und genutzte Daten zu speichern. Entscheidend ist, dass die
-   im Volume gespeicherten Daten auch nach einem Neustart des Containers erhalten bleiben sollen
-   und für das Teilen von Daten zwischen Containern oder zwischen dem Host und einem Container geeignet sind.
+**Kommunikation zwischen den Container**:
+Werden mehrere Container gleichzeitig betrieben und sollen sie miteinander 
+kommunizieren können, so müssen sie die Ports der jeweils anderen Container genau kennen.
 
-3. **Bind Mounts:**
-   [Bind Mounts](wo_und_wie_docker_container_daten_speichern.md#verwendung-von-bind-mounts) sind eine einfache
-   Möglichkeit, Daten und Dateien zwischen dem Host und dem Container zu teilen. Sie
-   ermöglichen es, bestimmte Pfade des Hosts in den Container einzubinden und so direkten Zugriff auf das Dateisystem
-   zu haben. Die Unterschiede von Volumes und Bind Mounts werden später
-   [hier](wo_und_wie_docker_container_daten_speichern.md#unterschied-zwischen-docker-volumes-und-bind-mounts) beleuchtet
+**Kommunikation von Containern mit dem Hostsystem**: 
+Um jetzt einen Container mit der Außenwelt (dem Hostsystem) zu verbinden, muss ein Port veröffentlicht werden
 
-4. **Ports:**
-   Docker ermöglicht
-   das [Weiterleiten von Ports](kommunikation_zwischen_und_mit_docker_containern.md#netzwerkkommunikation-und-port-weiterleitung)
-   vom Host zu den Containern. Durch das Öffnen und Zuordnen von Ports
-   ermöglicht Docker, dass Netzwerkdienste, die innerhalb von Containern laufen, von externen Netzwerken oder anderen
-   Containern aus zugänglich sind.
-   *Ohne die Angabe von Ports kann keine Kommunikation zwischen Containern stattfinden!** Containern müssen bei ihrem
-   Bau oder in ihrer Programmierung Ports zugewiesen sein.
+```mermaid
+graph LR
 
-5. **Inter-Container-Kommunikation (ICC):**
-   Container können über das Linking (eine ältere Methode) oder besser, indem sie Teil desselben Netzwerks sind,
-   miteinander kommunizieren, was es ihnen ermöglicht, Daten oder Signale auszutauschen.
+    subgraph CN[Container Netzwerk]
+        subgraph C1["Container 1"]
+        C1Port([Port 5050]) <--> C1A[Anwendung 1]
+    end
 
-6. **APIs und Sockets:**
-   Docker bietet eine REST-API, die zur programmatischen Steuerung und Interaktion mit Containern verwendet werden
-   kann. Auch UNIX- und TCP-Sockets können für Kommunikationszwecke verwendet werden, insbesondere für das Senden von
-   Befehlen an den Docker-Daemon oder für Container-Interaktionen.
+        subgraph C2["Container 2"]
+        C2Port([Port 5060]) <--> C2A[Anwendung 2]
+    end
 
-Diese Techniken sind Teil des Designs von Docker, um die Isolation von Containern zu wahren und gleichzeitig zu
-ermöglichen, dass sie notwendige Aufgaben ausführen und effektiv mit der externen Umgebung oder anderen Containern
-kommunizieren.
+        subgraph C3["Container 3"]
+        C3Port([Port 5070]) <--> C3A[Anwendung 3]
+    end
+    end
 
-## Ausnahme
+    C1Port <-..-> C2Port <-..-> C3Port <-..-> C1Port
 
-Das Öffnen einer Shell in einem Docker-Container, üblicherweise durchgeführt mit Befehlen
-wie
-
-```bash
-docker exec -it [container-id] /bin/bash
+    HPort([Host Port<br/>Port 8000]) <-.Portmapping.-> C1Port
 ```
 
-unterscheidet sich etwas von den oben aufgeführten
-Kommunikationsmethoden. Es geht mehr um die Interaktion mit der internen Umgebung des Containers, als darum, wie der
-Container mit dem externen System oder anderen Containern kommuniziert. Hier ist der Zusammenhang:
+Starte Container 1 mit dem Portmapping von 8000 zu 5050.
 
-- Wenn Sie eine Shell in einem Container öffnen, nutzen Sie die Fähigkeit von Docker, Befehle innerhalb des
-  laufenden Containers auszuführen. Der Befehl `docker exec` ermöglicht es, spezifische Befehle in einem bestehenden
-  Container auszuführen, was eine Shell wie Bash oder Sh sein kann. Dies ist im Wesentlichen eine direkte
-  Interaktion mit dem Dateisystem und den Prozessen des Containers.
-- Diese Aktion wird durch die Kontrolle des Docker-Daemons über seine verwalteten Container ermöglicht. Wenn Sie
-  einen Befehl wie `docker exec` ausgeben, weist es den Docker-Daemon an, eine interaktive Sitzung mit der
-  Prozessumgebung des Containers zu öffnen. Sie kommunizieren nicht über ein Netzwerk oder teilen Daten über
-  Volumes, sondern interagieren direkt mit der Umgebung des Containers.
+```bash
+docker run -d -p 8000:5050 container_1
+```
 
-Diese Methode wird hauptsächlich für das Debugging, die Verwaltung und die Interaktion mit containerisierten Anwendungen
-während der Entwicklung oder Wartung verwendet. Sie erleichtert nicht die Kommunikation zwischen Containern oder
-zwischen Containern und dem Hostsystem in der gleichen Weise, wie es Netzwerke oder Volumes tun. Stattdessen ist es eine
-direkte Verbindung in den Container für administrative oder interaktive Aufgaben.
+Container 2 und 3 werden mit den folgenden Befehlen gestartet:
 
-## Grundlagen des Docker-Netzwerks
+```bash
+docker run -d container_2
+docker run -d container_3
+```
 
-Docker-Netzwerke ermöglichen die Kommunikation zwischen Containern und dem Host-System sowie zwischen den Containern
-selbst. Sie sind entscheidend für die meisten Anwendungen, die in Containern laufen. Docker verwendet verschiedene
-Netzwerk-Treiber, um unterschiedliche Arten von Kommunikation und Isolation zu ermöglichen.
+Und was ist nun mit den Ports `5060` und `5070` von den Anwendungen 2 und 3?
+Diese müssen nicht im Dockerfile oder so angelegt werden, sondern werden in den Anwendungen selbst definiert
+und hinterlegt.
 
-### Netzwerktypen in Docker
+D.h. bei Anwendung 1 gibt es Code, der wie folgt aussehen könnte, um sich selbst auf Port 5050 ansprechbar zu machen:
+
+```python
+import http.server
+import socketserver
+
+PORT = 5050
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print("serving at port", PORT)
+    httpd.serve_forever()
+
+...
+```
+
+Andererseits gibt es in Anwendung 1 dann auch Code, um mit den beiden anderen Anwendungen zu kommunizieren,
+in etwa so:
+
+TODO: Code füllen
+```python
+
+```
+
+Ähnliche Codes wären dann auch in Anwendung 2 und 3 vorhanden.
+
+
+### Exkurs: Netzwerktypen in Docker
+
+Docker bietet verschiedene Netzwerktypen an, um die Kommunikation zu realisieren.
 
 | Netzwerktyp | Erklärung                                                                                                                                             |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -91,103 +96,19 @@ Netzwerk-Treiber, um unterschiedliche Arten von Kommunikation und Isolation zu e
 | `host`      | Container teilen sich den Netzwerk-Stack des Hosts. Nützlich für Dienste, die auf dem Host-Netzwerk sichtbar sein müssen.                             |
 | `overlay`   | Ermöglicht die Netzwerkkommunikation zwischen Containern auf verschiedenen Docker-Hosts, typisch in Docker-Swarm-Umgebungen.                          |
 
-### Netzwerkkommunikation und Port-Weiterleitung
 
-Port-Weiterleitung (Port Mapping) ist eine Methode, um den Zugriff auf Anwendungen innerhalb von Containern von
-außerhalb des Host-Systems zu ermöglichen. Dabei werden Ports des Host-Systems auf Ports des Containers abgebildet.
+### Beispiel
 
-#### Beispiel 1
+Wir werden mit `docker compose` ein Werkzeug kennenlernen, mit dem mehrere Container gestartet werden können.
+Dort werden wir dann auch ein ausführliches Beispiel für die Kommunikation von Docker Containern und der Außenwelt
+betrachten.
 
-Ihr Team hat ein Programm entwickelt, dass am Port 5000 des Netzwerks auf Anweisungen lauscht.
-Dieses Programm wird als Grundlage für ein Docker Image genutzt.
 
-Sie haben die Aufgabe, ein Programm zu schreiben, dass lokal auf ihrem Rechner läuft und mit dem Programm ihrer Kollegen
-arbeiten soll. Docker ist dafür einzusetzen. Sie müssen also ihre Umgebung so konfigurieren, dass ein vom Image
-abgeleiteter Container über den Port 5000 erreichbar ist.
 
-Um den Container für ihre Anwendung erreichbar zu machen setzen sie folgendes Kommando ein:
+### Vom Nutzer definierte Netzwerke
 
-```bash
-docker run -d -p 8000:8001 MyApp
-```
-
-Das Port Mapping wird über die Option `-p` gesteuert, `-d` lässt den Container im Hintergrund laufen.
-
-Ihr Programm arbeitet dann mit HTTP Anfragen an Port 5000 zum Beispiel so: `http://localhost:8000`.
-Docker hört diese Anfrage und gibt sie aufgrund der Einstellungen an den Container weiter. Dieser verarbeitet die
-Anfrage und gibt die Antwort auf dem gleichen weg zurück.
-
-```mermaid
-graph LR;
-    Client
-    
-    subgraph Hostsystem
-    ph[Port 8000]
-    subgraph Container
-    pc[Port 8001]
-    MyApp
-    end
-    end
-    
-    Client <-->|Kommunikation| ph <-->|Portübersetzung| pc <-->|Weiterleitung| MyApp
-```
-
-**Fazit:**
-
-Das Port-Mapping ermöglicht einer lokalen Anwendung über einen Netzwerkport mit einem Container zu kommunizieren.
-
-#### Beispiel 2
-
-Ein weiteres, etwas komplexeres Beispiel, dass die Arbeit interner und externer Netzwerkverbindungen aufzeigt:
-
-Ihr Team hat zwei weitere Programme geschrieben, die jeweils auf den Port 6000 und 7000 hören.
-Nennen wir die drei Anwendungen
-
-- Rechnung Port 5000,
-- Sicherheit Port 6000 und
-- Datenbank Port 7000
-
-Ihre Aufgabe ist es eine Web-Seite zu schreiben, die eine Liste unbezahlter Rechnungen anzeigt und beim anklicken einer
-solchen Rechnung diese anzeigt. Da wir uns in einer geschäftlichen Umgebung befinden, muss sichergestellt sein, dass ein
-Anwender die Berechtigung zu den geforderten Aufgaben hat.
-
-Ihr Programm hat nun folgende Aufgaben:
-
-- Liste der unbezahlten Rechnungen aus der Datenbank holen
-- offene Rechnung anzeigen
-
-dabei muss ihre eigene Benutzerkennung und ihr Passwort übermittelt werden, damit die Sicherheit gegeben ist.
-
-Die Sicherheitsfreigabe obliegt nicht ihrem Programm, sondern die Container prüfen selbst, ob sie berechtigt sind.
-Direkte Anfragen an die Datenbank sind ebenfalls nicht gewünscht. Der Rechnung-Container holt sich die notwendigen Daten
-selbst aus der Datenbank.
-Daher werden Anfragen ihres Programmes weiterhin nur über den Port 5000 gesendet.
-
-Die interne Kommunikation wird nicht nach außen geöffnet.
-
-TODO: Grafik wird nicht angezeigt im browser (chrome)
-
-```mermaid
-graph LR
-    subgraph Docker Host [localhost]
-        A[mein Programm]
-        subgraph Netzwerk B [Docker-Netzwerk]
-            C[Rechnung]
-            D[Sicherheit]
-            E[Datenbank]
-        end
-    end
-
-    A -- sendet :5000 --> C
-    C <-- fragt :6000 --> D
-    C <-- fragt :7000 --> E
-    C -- antwortet :5000 --> A
- ```
-
-Die Grafik macht deutlich, dass die Container Sicherheit und Datenbank vom Host System nicht gesehen werden und nicht
-angesprochen werden können. In den jeweiligen `run` Kommandos darf kein Port Mapping definiert sein.
-
-### Eigene Netzwerke
+In dem obigen Beispiel haben wir von Docker automatisch ein Netzwerk anlegen lassen. Wir können jedoch auch 
+zunächst ein eigenes Netzwerk anlegen und dann Container zu diesem hinzufügen:
 
 **Erstellen eines Netzwerks:**
 
@@ -206,69 +127,53 @@ docker run -d --name mein-container --network mein-netzwerk hello-world-python
 Startet einen Container im `mein-netzwerk`. Container innerhalb desselben Netzwerks können miteinander kommunizieren,
 während sie von anderen Netzwerken isoliert sind.
 
-### Netzwerksicherheit
+### Mehrere Netzwerke
 
-Die Sicherheit von Docker-Netzwerken hängt von der korrekten Konfiguration und Verwaltung ab. Während Docker-Netzwerke
-selbst keine eigene Firewall implementieren, bieten sie durch Netzwerktreiber und die Integration mit Host-Firewalls
-eine Reihe von Sicherheitsfunktionen:
-
-**Netzwerksegmentierung:**
-
-Verwenden Sie Docker-Netzwerke, um Container zu segmentieren und nur die notwendige
-Kommunikation zwischen ihnen zuzulassen.
+Wir können nun auch mehrere Netzwerke definieren und Container so in verschiedenen Netzwerken separieren.
 
 ```mermaid
 graph LR
-    subgraph Docker Host
-        subgraph Netzwerk_A [mein-netzwerk]
-            A[Container A]
-            B[Container B]
+    subgraph Docker System
+        subgraph Netzwerk_A [Netzwerk A]
+            A[Container A1] <--> PA([Port 5001]) <-.-> PB([Port 5002])  <--> B[Container A2]
         end
-        subgraph Netzwerk_B [anderes-netzwerk]
-            C[Container C]
-            D[Container D]
+        subgraph Netzwerk_B [Netzwerk B]
+            C[Container B1] <--> PC([Port 5001]) <-.-> PD([Port 5002])  <--> D[Container B2]
         end
     end
 
-    A <-- Kommunikation --> B
-    C <-- Kommunikation --> D
-    Netzwerk_A <-. Keine direkte Kommunikation .-> Netzwerk_B
+    Netzwerk_A x-. Keine direkte Kommunikation .-x Netzwerk_B
 
 ```
-
-Diese Grafik veranschaulicht, wie Docker-Netzwerke zur Isolation und Kommunikation zwischen Containern beitragen.
 Durch die Verwendung von benutzerdefinierten Netzwerken können Sie sicherstellen, dass nur die gewünschten Container
 miteinander kommunizieren können, während andere Container oder Netzwerke isoliert bleiben. Dies ist besonders wichtig
 für die Sicherheit, das Netzwerkmanagement und die Architektur von Microservices.
 
-Um einen Container auf einem Port lauschen zu lassen, muss dieser Port in der Anwendung selbst festgelegt werden.
+## Exkurs: Nginx
+TODO: Text hinzufügen
 
-```python
-# sicherheit.py
-import http.server
-import socketserver
+```mermaid
+graph TD
 
-PORT = 6000
+    subgraph Docker System
+    subgraph CN["Container NGINX"]
+    Conf[[<b>NGINX Config:</b><br/><span style="color:#f54242">app_security = 5000</span><br/> app_rechnung = 6000<br/> app_datenbank = 7000]] 
+    end
+    PN([Port 80]) <--> CN
+    PA([Port 5000]) <--> CA["Container<br/>app_security"]
+    PB([Port 6000]) <--> CB["Container<br/>app_rechnung"]
+    PC([Port 7000]) <--> CC["Container<br/>app_datenbank"]
+    
+    end
 
-Handler = http.server.SimpleHTTPRequestHandler
+    CN <-->|Weiterleitung| PA
 
-with socketserver.TCPServer(("", PORT), Handler) as httpd:
-    print("serving at port", PORT)
-    httpd.serve_forever()
+    
+    HPort([öffentlicher Host Port<br/>Port 80]) <-->|Portmapping| PN
 
-...
+    Client <-->|localhost/app_security| HPort
+    
+    style CN fill:#ECECFF, stroke:#9370DB
+    style Conf fill:#e8dcbc ,stroke:#f7be20
+
 ```
-
-**Port-Management:**
-
-- Seien Sie vorsichtig bei der Veröffentlichung von Container-Ports auf dem Host-System.
-- Stellen Sie sicher, dass Ports eindeutig zugeordnet sind.
-- Seien Sie sich darüber im klaren, welche Ports öffentlich freigegeben sind.
-
-### Zusammenfassung
-
-Docker-Netzwerke sind ein mächtiges Werkzeug zur Isolation und Kommunikation zwischen Containern. Durch die Verwendung
-von verschiedenen Netzwerk-Treibern und Port-Weiterleitung können Sie komplexe Anwendungen und Dienste effektiv
-verwalten. Die Sicherheit dieser Netzwerke hängt von der korrekten Konfiguration und Verwaltung der Netzwerke und
-Host-Firewall-Regeln ab. Mit den richtigen Praktiken können Sie eine sichere und effiziente Umgebung für Ihre Container
-schaffen.
