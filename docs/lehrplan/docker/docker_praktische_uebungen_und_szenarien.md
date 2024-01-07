@@ -86,8 +86,6 @@ Konfiguration:
     - dass das Programm auf Port 3000 hören soll
     - dass das Programm mit der Anweisung `node` und der Option `app.js` gestartet wird.
 
-TODO: eventuell in Python umschreiben.
-
 - docker-compose.yaml
 
 ```yaml

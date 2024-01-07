@@ -19,6 +19,7 @@ Multi-Container-Anwendungen unerlässlich sind.
 ```Dockerfile
 FROM python:3.12-slim
 WORKDIR /app
+RUN apt-get update
 COPY . /app
 RUN pip install -r requirements.txt
 CMD ["python", "app.py"]
@@ -45,6 +46,16 @@ Wiederhole, was die Bedeutung jeder Zeile im Dockerfile ist.
 <li>Nachfolgende Anweisungen wie COPY und RUN werden relativ zu diesem Verzeichnis ausgeführt.</li>
 </ul>
 
+<b>RUN app-get update \
+&& apt-get install curl
+<ul>
+
+Dies ist ein wichtiger Punkt. Er zeigt, wie ein Image durch Installation von Paketen in die Lage versetzt wird, eine
+Anwendung erfolgreich auszuführen.
+<li>startet das Packet Management Tool im Container und bringt die Pakete auf den neuesten Stand. Danach wird das Paket <b>curl</b> installiert. Es ist ein weiterer Paketmanager für besondere Pakete.</li>
+<li>Es entsteht ein neuer layer im Container. </li>
+</ul>
+
 <b>COPY . /app</b>
 <ul>
 <li>Kopiert Dateien und Verzeichnisse aus dem Kontextverzeichnis in das Image.</li>
@@ -52,6 +63,8 @@ Wiederhole, was die Bedeutung jeder Zeile im Dockerfile ist.
 </ul>
 
 <b>RUN pip install -r requirements.txt</b>
+Dieser Befehl gleich dem <b>RUN</b> Befehl weiter oben. Das zeigt, dass dieser Befehl durchaus mehrfach und an verschiedenen Stellen eingesetzt werden kann.
+In diesem Fall werden über pip die notwendigen Abhängigkeiten für die Python Anwendung selbst installiert.
 <ul>
 <li>Führt Befehle aus, um das Image zu bauen.</li>
 <li>In diesem Fall wird pip, der Paketmanager für Python, verwendet, um alle Abhängigkeiten zu installieren, die in der requirements.txt-Datei aufgelistet sind.</li>
@@ -110,7 +123,6 @@ Hierbei ist `meine_python_app` der Name des Images und `latest` ist der Tag, der
 das `-t` Flag würde das Image nur eine generierte ID erhalten und keinen benutzerfreundlichen Namen.
 </details>
 
-
 ## Docker Compose
 
 Docker Compose ist ein Tool zur Definition und Ausführung von Multi-Container Docker-Anwendungen.
@@ -147,21 +159,23 @@ services:
       - sql-server
 ```
 
-**Version**: `version: '3'` gibt die Version der Docker Compose-Datei an. Version 3 ist eine der neuesten Versionen und bietet
+**Version**: `version: '3'` gibt die Version der Docker Compose-Datei an. Version 3 ist eine der neuesten Versionen und
+bietet
 Unterstützung für Docker Swarm.
 
 **Services**: Unter `services` werden die verschiedenen Container definiert, die Teil Ihrer Anwendung sind.
 
 - **nginx**:
-Nginx dient als Eingangspunkt für unsere Applikations. Alle Anfragen von Außen werden von Nginx entgegengenommen
-      und innerhalb der Container verteilt.
-      - `nginx` ist der Name des Services.
-      - `image: nginx:latest` gibt an, dass der Service das neueste offizielle nginx-Image von Docker Hub verwendet.
-      - `volumes: - ./nginx.conf:/etc/nginx/nginx.conf:ro` bindet die lokale Datei `nginx.conf`-Datei in den Container ein.
-    Sie ist innerhalb des Containers unter `/etc/nginc/nginx.conf` erreichbar.
-    Das `:ro` bedeutet, dass das Volume im "read-only"-Modus gemountet wird.
-      - `ports: - "80:80"` leitet den Port 80 des Hosts auf den Port 80 des nginx-Containers um, was bedeutet, dass nginx
-    auf dem Standard-HTTP-Port erreichbar ist.
+  Nginx dient als Eingangspunkt für unsere Applikations. Alle Anfragen von Außen werden von Nginx entgegengenommen
+  und innerhalb der Container verteilt.
+    - `nginx` ist der Name des Services.
+    - `image: nginx:latest` gibt an, dass der Service das neueste offizielle nginx-Image von Docker Hub verwendet.
+    - `volumes: - ./nginx.conf:/etc/nginx/nginx.conf:ro` bindet die lokale Datei `nginx.conf`-Datei in den Container
+      ein.
+      Sie ist innerhalb des Containers unter `/etc/nginc/nginx.conf` erreichbar.
+      Das `:ro` bedeutet, dass das Volume im "read-only"-Modus gemountet wird.
+    - `ports: - "80:80"` leitet den Port 80 des Hosts auf den Port 80 des nginx-Containers um, was bedeutet, dass nginx
+      auf dem Standard-HTTP-Port erreichbar ist.
 
 - **sql-server**: Hier liegt die Datenbank der Applikation.
     - `sql-server` ist der Name dieses Services.
@@ -172,45 +186,46 @@ Nginx dient als Eingangspunkt für unsere Applikations. Alle Anfragen von Außen
     - `ports: - "1433:1433"` leitet den SQL Server-Port 1433 des Hosts auf den Port 1433 des Containers um. Der SQL
       Server ist somit von außen erreichbar. Diese Erreichbarkeit dient jedoch nur der Wartung der Datenbank.
     - `volumes: - ./mydatabase:/var/opt/mssql` bindet das lokale Verzeichnis `mydatabase` in den Container ein, um Daten
-      dauerhaft zu speichern. Innerhalb des Containers ist dieses Verzeichnis unter `/var/opt/mssql` erreichbar.
+      dauerhaft zu speichern. Innerhalb des Containers ist dieses Verzeichnis unter `/var/opt/mssql` erreichbar. Dies
+      ist ein 'bind-mont' und kein 'Volume'! Ein Volume hätte mit 'docker create volume ...' erstellt werden müssen.
 
 - **meine_python_app**: In diesem Container läuft die eigentlich interessante Applikation.
     - `meine_python_app` ist der Name dieses Services.
-    - `build:` gibt an, dass das Image aus einem Dockerfile gebaut werden soll. Das startet den oben angegebenen build Prozess.
+    - `build:` gibt an, dass das Image aus einem Dockerfile gebaut werden soll. Das startet den oben angegebenen build
+      Prozess.
         - `context: .` Im aktuellen Ordner (deswegen `.`) findet sich alles, was zum Bau des Containers benötigt wird.
-        - `dockerfile: Dockerfile` gibt an, welches Dockerfile für den Build verwendet werden soll. Hier einfach die Datei `Dockerfile`.
+        - `dockerfile: Dockerfile` gibt an, welches Dockerfile für den Build verwendet werden soll. Hier einfach die
+          Datei `Dockerfile`.
     - `network_mode: service:nginx` bedeutet, dass der `node-app`-Service das gleiche Netzwerk wie der `nginx`-Service
       verwendet.
     - `depends_on: - sql-server` stellt sicher, dass der `sql-server`-Service gestartet wird, bevor der `node-app`
       -Service gestartet wird.
 
+**Netzwerk testen**
 
-TODO: network_mode Testen
+Um ein Netzwerk zu testen hilft nur die Ausprobieren-Methode und Erfahrung. Lösungen sucht man in den Dokumentationen
+der einzelnen Container-Dokumentationen und startet dann einen Trial-And-Error Prozess, um zu sehen, ob alles
+funktioniert. Dabei helfen die Logs der Container erheblich.
 
 ```mermaid
 graph TD
-
     subgraph Docker System
-    subgraph CN["Container NGINX"]
-    Conf[[<b>NGINX Config:</b><br/> meine_python_app = 3000]] 
+        subgraph CN["Container NGINX"]
+            Conf[[<b>NGINX Config:</b><br/> meine_python_app = 3000]]
+        end
+        PN([Port 80]) <--> CN
+        PB([Port 3000]) <--> CB["Container<br/>meine_python_app"]
+        PA([Port 1433]) <--> CA["Container<br/>sql-server"]
+        CN <---> PB
+        PA <--> PB
     end
-    PN([Port 80]) <--> CN
-    PB([Port 3000]) <--> CB["Container<br/>meine_python_app"]
-    PA([Port 1433]) <--> CA["Container<br/>sql-server"]
-    CN <---> PB    
-    PA <--> PB
-    end  
 
-    
     HPort([öffentlicher Host Port<br/>Port 80]) <-->|Portmapping| PN
     H2Port([lokaler Host Port<br/>Port 1433]) <-->|Portmapping| PA
-
     Client <-->|localhost/meine_python_app| HPort
-    
-    style CN fill:#ECECFF, stroke:#9370DB
-    style Conf fill:#e8dcbc ,stroke:#f7be20
+    style CN fill: #ECECFF, stroke: #9370DB
+    style Conf fill: #e8dcbc , stroke: #f7be20
 ```
-
 
 ### Wichtigste compose Befehle
 
