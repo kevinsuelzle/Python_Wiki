@@ -1,4 +1,5 @@
 # Sicherheit in MongoDB
+[20 min]
 
 Da unsere Datenbanken häufig über das Internet erreichbar sind und teilweise sensible Daten beinhalten, ist es wichtig, dass wir uns mit dem Thema Sicherheit auseinandersetzen. In diesem Abschnitt werden wir uns mit den Sicherheitsfunktionen von MongoDB beschäftigen und einige Sicherheitsmaßnahmen kennenlernen, die wir ergreifen können, um unsere Datenbanken zu schützen.
 
@@ -46,6 +47,7 @@ MONGODB_NAME=fakultaet73
 ```
 
 ## Authentifizierung
+[10 min]
 
 Über eine authentifizierung können wir bereits eine erste, effektive Sicherheitsmaßnahme ergreifen. Durch die Implementierung von robusten Authentifizierungsmaßnahmen können wir sicherstellen, dass nur autorisierte Benutzer auf die Datenbank zugreifen und Aktionen durchführen können. Dies kann durch das anpassen der datei mongod.conf erreicht werden.
 
@@ -93,11 +95,13 @@ db.updateUser("deinBenutzername", {
 ```
 
 ## Verschlüsselung
+[5 min]
 
 Um die Daten in der Datenbank zu verschlüsseln, können wir TLS/SSL verwenden. Dies ist eine Möglichkeit, die Daten sowohl im Ruhezustand als auch während der Übertragung zu verschlüsseln. In cloud Umgebungen wird die Verschlüsselung häufig bereits über die cloud Anbieter realisiert. 
 
 
 ## Auditing und Logging
+[10 min]
 
 Die Überwachung von Aktivitäten in der Datenbank ist eine weitere wichtige Sicherheitsmaßnahme. MongoDB bietet die Möglichkeit, die Überwachungsfunktionen zu aktivieren, um Aktivitäten zu protokollieren. Dies kann über die Konfigurationsdatei `mongod.conf` erreicht werden.
 

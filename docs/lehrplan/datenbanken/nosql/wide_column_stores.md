@@ -1,4 +1,5 @@
 # Spaltenorientierte Datenbanken
+[20 min]
 
 Spaltenspeicherdatenbanken speichern Daten spaltenweise anstelle von zeilenweise. In herkömmlichen Datenbanken werden Daten als zweidimensionale Tabellen aus Zeilen und Spalten dargestellt. Diese müssen jedoch in einer eindimensionalen Form auf der Festplatte und im Arbeitsspeicher des Computers gespeichert werden. Die spaltenorientierte Datenbank löst diese Herausforderung, indem sie die Daten spaltenweise abspeichert. Spaltenorientierte Systeme bieten Vorteile bei Anwendungen wie Data Warehousing, bei denen Aggregate über große Mengen ähnlicher Elemente gebildet werden. Der effiziente Zugriff auf Festplattendaten steht im Fokus von Vergleichen zwischen zeilenorientierten und spaltenorientierten Systemen. Ein Megabyte sequentiell gespeicherter Daten kann genauso lang dauern wie ein einzelner Direktzugriff.
 

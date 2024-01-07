@@ -1,4 +1,5 @@
 ## Dokumentenorientierte Datenbanken
+[20 min]
 
 Dokumentenorientierte Datenbanken speichern Daten in semi-strukturierten Dokumenten, oft im JSON- oder BSON-Format. Dies ermöglicht eine einfache Handhabung von komplexen Datenstrukturen und eine schnelle Anpassung an sich ändernde Anforderungen. Dokumentenorienterite Datenbanken sind besonders gut für Anwendungen geeignet, die mit großen Mengen von Daten arbeiten, wie zum Beispiel Content-Management-Systeme, E-Commerce-Plattformen und Anwendungen des IOT Berechs.
 

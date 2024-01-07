@@ -1,4 +1,5 @@
 # Indexes 
+[15 min]
 
 In MongoDB sind Indizes spezielle Datenstrukturen, die die Abfrageleistung verbessern, indem sie den Zugriff auf Daten beschleunigen. Indizes sind eine Möglichkeit, die Geschwindigkeit von Abfragen zu erhöhen, insbesondere wenn Sie nach bestimmten Werten suchen, sortieren oder Join-Operationen durchführen. MongoDB verwendet B-Baum-Indizes, um den schnellen Zugriff auf Daten zu ermöglichen. Diese Struktur erlaubt es, Werte effizient zu suchen und zu sortieren. Indizes können auf einzelnen Feldern oder auf mehreren Feldern erstellt werden. Zusammengesetze Indizes sind insbesondere dann nützlich, wenn Sie nach mehreren Feldern suchen oder sortieren möchten. In MongoDB werden Indizes automatisch auf dem `_id` Feld erstellt. Sie können jedoch auch manuell erstellt werden.
 
@@ -16,6 +17,7 @@ Beim Einfügen eines neuen Werts wird zunächst die Position gefunden, an der de
 Die logarithmische Höhe des B-Baums sorgt dafür, dass die Suchzeiten effizient bleiben, selbst wenn die Anzahl der Datensätze zunimmt. Dies stellt einen klaren Vorteil im Vergleich zu unsortierten Listen oder Arrays dar.
 
 ## Index erstellen
+[5 min]
 
 Um einen Index in MongoDB zu erstellen, können wir die `createIndex()` Methode verwenden. Diese Methode erwartet ein Objekt als Parameter, das die Felder enthält, auf denen der Index erstellt werden soll. Das Objekt enthält die Feldnamen als Schlüssel und die Sortierreihenfolge als Wert. Die Sortierreihenfolge kann entweder `1` für aufsteigend oder `-1` für absteigend sein. Die Methode gibt ein `CreateIndexesResult` Objekt zurück, das die Namen der erstellten Indizes enthält.
 
@@ -28,6 +30,7 @@ db.meineCollection.createIndex({ name: 1 })
 ```
 
 ## Index löschen
+[5 min]
 
 Um einen Index in MongoDB zu löschen, können wir die `dropIndex()` Methode verwenden. Diese Methode erwartet ein Objekt als Parameter, das die Felder enthält, auf denen der Index erstellt wurde. Das Objekt enthält die Feldnamen als Schlüssel und die Sortierreihenfolge als Wert. Die Sortierreihenfolge kann entweder `1` für aufsteigend oder `-1` für absteigend sein. Die Methode gibt ein `DropIndexesResult` Objekt zurück, das die Namen der gelöschten Indizes enthält.
 
@@ -40,9 +43,12 @@ db.meineCollection.dropIndex({ name: 1 })
 ```
 
 ### Aufgabe:
+[15 min]
+
 Erstelle einen Index auf dem Feld `name` in der Collection `meineCollection`. Überprüfe, ob der Index erstellt wurde. Lösche den Index wieder.
 
 ## Indexe anzeigen
+[5 min]
 
 Um die Indizes einer Collection in MongoDB anzuzeigen, können wir die `getIndexes()` Methode verwenden. Diese Methode gibt ein Array von Objekten zurück, die die Indizes der Collection enthalten.
 
@@ -55,6 +61,7 @@ db.meineCollection.getIndexes()
 ```
 
 ## Indexeigenschaften
+[5 min]
 
 Um die Eigenschaften eines Indexes in MongoDB anzuzeigen, können wir die `stats()` Methode verwenden. Diese Methode gibt ein Objekt zurück, das die Eigenschaften des Indexes enthält.
 
@@ -67,6 +74,8 @@ db.meineCollection.stats()
 ```
 
 ### Aufgabe:
+[10 min]
+
 Erstelle einen Index auf dem Feld `name` in der Collection `meineCollection`. Überprüfe, ob der Index erstellt wurde. Gib die Eigenschaften des Indexes aus. Welche Eigenschaften werden dir angezeigt und was bedeuten sie?
 
 ## Zusammengesetzte Indexe
@@ -82,6 +91,7 @@ db.meineCollection.createIndex({ name: 1, age: -1 })
 ```
 
 ## Aufgaben:
+[90 min]
 
 1. **Index für das "name"-Feld in der Sammlung "Benutzer":**
      - Erstelle einen einfachen Index für das Feld "name" in der Sammlung "Benutzer".

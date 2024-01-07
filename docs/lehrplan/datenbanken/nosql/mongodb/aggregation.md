@@ -1,7 +1,7 @@
 # Weitere Funktionen
 
-
 ### aggregate()
+[20 min]
 
 Die `aggregate()` Methode führt eine Aggregation auf der Collection aus. Diese Methode erwartet ein Array von Objekten als Parameter, die die Aggregationsschritte enthalten. Das Vorgehen über mehrere Schritte in der Agrregation wird auch als als Pipeline bezeichnet.
 
@@ -74,6 +74,7 @@ db.meineCollection.aggregate([
 
 
 ### mapReduce()
+[20 min]
 
 Die `mapReduce()` Methode führt eine Map-Reduce-Operation auf der Collection aus. Diese Methode erwartet zwei Funktionen als Parameter: eine Map-Funktion und eine Reduce-Funktion.
 
@@ -149,6 +150,7 @@ In diesem Beispiel haben wir eine einfache Zählung der Vorkommen jedes Namens i
 
 
 ## Aufgaben
+[90 min]
 
 1. **Gesamtpreis der Bestellungen pro Produkt:**
       - Verwende MapReduce, um den Gesamtpreis der Bestellungen pro Produkt zu berechnen.

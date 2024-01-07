@@ -162,6 +162,9 @@ nav:
                 - Sicherheit: lehrplan/datenbanken/nosql/mongodb/security.md
                 - Pymongo: lehrplan/datenbanken/nosql/mongodb/pymongo.md
                 - Projekt: lehrplan/datenbanken/nosql/mongodb/project.md
+                - Refactoring: lehrplan/datenbanken/nosql/mongodb/refactoring.md
+                - Migrationen: lehrplan/datenbanken/nosql/mongodb/migration.md
+                
 
 
   - Begriffssammlung:

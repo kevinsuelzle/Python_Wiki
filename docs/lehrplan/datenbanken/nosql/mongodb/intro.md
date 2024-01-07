@@ -1,4 +1,5 @@
-**MongoDB: Eine Einführung**
+# MongoDB: 
+[10 min]
 
 MongoDB ist eine dokumentenorientierte NoSQL-Datenbank, die auf hohe Flexibilität und Skalierbarkeit ausgelegt ist. Im Gegensatz zu relationalen Datenbanken speichert MongoDB Daten in einem flexiblen, JSON-ähnlichen Format, das als BSON (Binary JSON) bekannt ist. Wie auch andere Dokumentenbasierte Datenbanken ist MongoDB frei von Schemaanforderungen. Insgesamt gelten for MongoDB die 
 
@@ -6,10 +7,13 @@ MongoDB eignet sich besonders gut für Anwendungsfälle mit unstrukturierten ode
 
 
 ## BSON
+[5 min]
+
 BSON (Binary JSON) ist ein Binärformat, das zur Serialisierung von JSON-ähnlichen Dokumenten verwendet wird. Es wurde speziell für die Verwendung mit MongoDB entwickelt und ermöglicht die effiziente Speicherung und Übertragung von Daten in MongoDB-Dokumenten. BSON unterstützt im Gegensatz zu JSON nicht nur Text, sondern auch andere Datentypen wie Datum/Uhrzeit, Binärdaten und reguläre Ausdrücke. Die binäre Repräsentation macht BSON effizienter für die Speicherung und Übertragung von Daten. BSON-Dokumente können auch komprimiert werden, um die Effizienz weiter zu verbessern. Die Verarbeitung der Binärdateien ist sowohl auf Server- als auch auf Clientseite möglich.
 
 
 ## Installation und Hosting
+[20 min]
 
 MongoDB kann auf verschiedene Arten bereitgestellt und verwendet werden. Hier sind einige Möglichkeiten, MongoDB-Server zu verwenden:
 
@@ -40,43 +44,46 @@ MongoDB kann auf verschiedene Arten bereitgestellt und verwendet werden. Hier si
 Wir werden MongoDB zunächst über einen Docker Container ausführen.
 
 ### Aufgabe:
+[20 min]
+
 Erstelle ein Docker-Compose File, das einen MongoDB Container startet. Achte darauf, dass die Datenbank auch nach einem Neustart des Containers erhalten bleibt.
 
 ***Lösung***:
-Um MongoDB mit einer eigenen Datenbank über `docker-compose` bereitzustellen, kannst du eine `docker-compose.yml`-Datei erstellen. Hier ist ein einfaches Beispiel:
+Um MongoDB mit einer eigenen Datenbank über `docker-compose` bereitzustellen, kannst du eine `docker-compose.yml`-Datei erstellen. Hier ist ein Beispiel:
 
-1. Erstelle eine Datei mit dem Namen `docker-compose.yml` und füge den folgenden Inhalt ein:
+- Erstelle eine Datei mit dem Namen `docker-compose.yml` und füge den folgenden Inhalt ein:
 
-   ```yaml
-   version: '3'
-   services:
-     mongodb:
-       image: mongo
-       container_name: my-mongodb
-       ports:
-         - "27017:27017"
-       environment:
-         MONGO_INITDB_ROOT_USERNAME: root
-         MONGO_INITDB_ROOT_PASSWORD: example
-       volumes:
-         - ./data:/data/db
-   ```
+```yaml
+version: '3'
+services:
+mongodb:
+   image: mongo
+   container_name: my-mongodb
+   ports:
+      - "27017:27017"
+   environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+   volumes:
+      - ./data:/data/db
+```
 
-   Dieses Beispiel verwendet das offizielle MongoDB-Image aus dem Docker Hub (`mongo`). Es definiert einen MongoDB-Container mit dem Namen `my-mongodb`, der auf Port `27017` lauscht. Die Umgebungsvariablen `MONGO_INITDB_ROOT_USERNAME` und `MONGO_INITDB_ROOT_PASSWORD` werden verwendet, um einen Benutzer mit Root-Rechten zu erstellen. Der Container bindet außerdem ein Volumen (`./data:/data/db`), um die Datenbankdaten dauerhaft zu speichern.
+Dieses Beispiel verwendet das offizielle MongoDB-Image aus dem Docker Hub (`mongo`). Es definiert einen MongoDB-Container mit dem Namen `my-mongodb`, der auf Port `27017` lauscht. Die Umgebungsvariablen `MONGO_INITDB_ROOT_USERNAME` und `MONGO_INITDB_ROOT_PASSWORD` werden verwendet, um einen Benutzer mit Root-Rechten zu erstellen. Der Container bindet außerdem ein Volumen (`./data:/data/db`), um die Datenbankdaten dauerhaft zu speichern.
 
-2. Erstelle einen Ordner namens `data` im gleichen Verzeichnis wie deine `docker-compose.yml`-Datei. Dieser Ordner wird das Volumen für die MongoDB-Datenbank sein.
+- Erstelle einen Ordner namens `data` im gleichen Verzeichnis wie deine `docker-compose.yml`-Datei. Dieser Ordner wird das Volumen für die MongoDB-Datenbank sein.
 
-3. Öffne ein Terminal im Verzeichnis, das die `docker-compose.yml`-Datei enthält, und führe den folgenden Befehl aus:
+- Öffne ein Terminal im Verzeichnis, das die `docker-compose.yml`-Datei enthält, und führe den folgenden Befehl aus:
 
-   ```bash
-   docker-compose up -d
-   ```
+```bash
+docker-compose up -d
+```
 
-   Dieser Befehl startet die Docker-Container im Hintergrund (`-d`).
+Dieser Befehl startet die Docker-Container im Hintergrund (`-d`).
 
 Nachdem dieser Befehl erfolgreich ausgeführt wurde, sollte MongoDB mit einer eigenen Datenbank bereitgestellt sein. Du kannst dies überprüfen, indem du dich zum MongoDB-Server verbindest (z. B. mit einem MongoDB-Client wie [MongoDB Compass](https://www.mongodb.com/products/compass)) und die erstellte Datenbank verwendest. In diesem Beispiel wäre die Datenbank standardmäßig "admin" aufgrund der Umgebungsvariablen, die wir in der `docker-compose.yml`-Datei festgelegt haben.
 
 ## MongoDB Shell
+[10 min]
 
 Die MongoDB Shell ist in dem Docker Container standardmäßg vorhanden. Möchten wir also aus dem Container heraus mit der Datenbank interagieren, können wir die MongoDB Shell verwenden. Dafür müssen wir uns zunächst mit dem Container verbinden. Dies können wir über den Befehl `docker exec` erreichen.
 
@@ -100,4 +107,6 @@ Nach dem Ausführen dieses Befehls sollte die MongoDB-Shell geöffnet werden. Nu
 Über den Befehl `show collections` können wir uns alle Collections anzeigen lassen, die in der aktuellen Datenbank vorhanden sind. Im nächsten Kapitel werden wir uns ausführlicher mit den CRUD Operationen beschäftigen. Das Schließen der MongoDB Shell erfolgt über den Befehl `exit`.
 
 ### Aufgabe:
+[20 min]
+
 Erstelle eine Collection mit dem Namen `users` und füge ein Dokument mit dem Namen `John Doe` ein. Lass die alle Collections anzeigen.

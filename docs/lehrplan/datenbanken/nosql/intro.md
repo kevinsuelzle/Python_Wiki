@@ -1,4 +1,5 @@
 # NoSQL Intro und Motivation
+[20 min]
 
 NoSQL steht für "Not only SQL" und bezeichnet eine Vielzahl von Datenbankmanagementsystemen, die sich von traditionellen relationalen Datenbanken unterscheiden. Der Begriff "NoSQL" bedeutet nicht zwangsläufig "kein SQL", sondern betont, dass diese Systeme zusätzlich zu SQL-basierten Datenbanken existieren. NoSQL Datenbanken sind in der Regel nicht relational und verzichten auf starre Schemata. Dadurch sind sie flexibler und können besser mit sich ändernden Anforderungen umgehen.
 

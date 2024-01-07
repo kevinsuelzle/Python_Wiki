@@ -3,6 +3,7 @@
 In dem letzten Abschnitt haben wir uns angesehen, wie wir über einen Docker Container eine MongoDB Datenbank starten können und wie wir uns mit dieser Datenbank verbinden können. In diesem Abschnitt werden wir uns nun mit den CRUD Operationen beschäftigen. Die CRUD Operationen kennen wir bereits aus den vergangenen Einheiten zu Datenbanken.
 
 ## Create
+[5 min]
 
 Um Daten in MongoDB zu erstellen, können wir die `insert_one()` Methode verwenden. Diese Methode erwartet ein Dictionary als Parameter. Das Dictionary enthält die Daten, die wir in die Datenbank einfügen möchten. Die Methode gibt ein `InsertOneResult` Objekt zurück, das die ID des eingefügten Dokuments enthält.
 
@@ -19,6 +20,7 @@ db.meineCollection.insertOne({
 ```
 
 ## Read
+[5 min]
 
 Um Daten aus MongoDB zu lesen, können wir die `find()` Methode verwenden. Diese Methode gibt ein `Cursor` Objekt zurück, das alle Dokumente in der Collection enthält. Um die Daten aus dem Cursor zu lesen, können wir die `forEach()` Methode verwenden. Diese Methode erwartet eine Funktion als Parameter, die für jedes Dokument in der Collection ausgeführt wird. Die Funktion erhält das aktuelle Dokument als Parameter.
 
@@ -40,6 +42,7 @@ db.meineCollection.find().forEach(function(doc) {
 ```
 
 ## Update
+[5 min]
 
 Um Daten in MongoDB zu aktualisieren, können wir die `updateOne()` Methode verwenden. Diese Methode erwartet zwei Parameter: ein Objekt, das das zu aktualisierende Dokument enthält, und ein Objekt, das die Aktualisierungen enthält. Die Methode gibt ein `UpdateResult` Objekt zurück, das die Anzahl der aktualisierten Dokumente enthält.
 
@@ -55,6 +58,7 @@ db.meineCollection.updateOne(
 ```
 
 ## Delete
+[5 min]
 
 Um Daten in MongoDB zu löschen, können wir die `deleteOne()` Methode verwenden. Diese Methode erwartet ein Objekt, das das zu löschende Dokument enthält. Die Methode gibt ein `DeleteResult` Objekt zurück, das die Anzahl der gelöschten Dokumente enthält.
 
@@ -70,6 +74,7 @@ db.meineCollection.deleteMany({})
 ```
 
 ## Weitere Methoden
+[20 min]
 
 Neben den hier vorgestellten Methoden gibt es noch viele weitere Methoden, die wir verwenden können. Eine vollständige Liste der Methoden findest du in der [MongoDB Dokumentation](https://docs.mongodb.com/manual/reference/method/). Hier werden wir lediglich einige der weiteren Methoden gemeinsam ansehen.
 
@@ -136,6 +141,8 @@ db.meineCollection.find().skip(5)
 Dies sind einfache Funktionen, welche wir in Ähnlicher Weise bereits aus den SQL Datenbanken kennen. In den folgenden Abschnitten werden wir uns mit etwas komplexeren Funktionen beschäftigen, die MongoDB uns bietet.
 
 ## Aufgaben
+[90 min]
+
 Für die folgenden Aufgaben kannst du folgenden Code kopieren, umd ie entsprechenden Sammlungen zu erstellen:
 
 ```bash
