@@ -20,6 +20,6 @@ Diese Images sind klein und können auf allen Betriebssystemen auf denen das Doc
 12. [Praktische Übungen](lehrplan/docker/praktische_uebungen.md) 
 13. [Best Practices und Sicherheit](lehrplan/docker/best_practices_und_sicherheit.md)
 
-##[Lernziele](../../checklists/checklist_docker.md))
+##[Lernziele](../../checklists/checklist_docker.md)
 
-##[Begriffssammlung](../../begriffe/begriffe_docker.md))
+##[Begriffssammlung](../../begriffe/begriffe_docker.md)
