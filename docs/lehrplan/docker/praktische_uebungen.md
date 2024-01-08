@@ -161,7 +161,7 @@ services:
       - "80:80"
 
   sql-server:
-    image: mcr.microsoft.com/mssql/server:2019-latest
+    image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Sql12345
@@ -170,7 +170,7 @@ services:
     volumes:
       - ./mydatabase:/var/opt/mssql
 
-  node-app:
+  web:
     build:
       context: .
       dockerfile: Dockerfile
@@ -245,10 +245,12 @@ docker compose up -d
 ```
 
 Dies weist die Docker Engine an, die docker-compose.yml Datei abzuarbeiten. Sie sehen, wie die Images geladen werden
-und wie das IMage für das Python Programm gebaut wird. Viele Schritte laufen ab, bis das Image endlich fertig ist.
+und wie das IMage für das Python-Programm gebaut wird. Viele Schritte laufen ab, bis das Image endlich fertig ist.
 Endlich werden die drei Container gestartet.
 
-Prüfen sie in Docker Desktop den Status der Container, schauen sie in die Log Dateien hinein. Ist alles in Ordnung?
+Prüfen sie in Docker Desktop den Status der Container, schauen sie in die Log-Dateien hinein.
+
+So sollte es aussehen.
 
 ![img_3.png](img_3.png)
 
@@ -262,16 +264,18 @@ Prüfen sie in Docker Desktop den Status der Container, schauen sie in die Log D
     - `insertWorkItem` diese Route nimmt ein JSON Objekt mit den Daten einer Arbeitseinheit und sendet es an die
       Datenbank.
 
-  Erkennen sie, wie die Flask/SQLAlchemy die SQL Kommandos für INSERT und SELECT in den Befehlen kapselt.
+  Wir erkennen, dass Flask/SQLAlchemy die SQL Kommandos für INSERT und SELECT in den Befehlen kapselt.
   In App.py bewirkt der Aufruf von `db.create.all()` die Erstellung der Tabellen. Auch hier wird der
   Befehl `CREATE TABLE ...` völlig verschleiert.
 
-  Was die App nicht kann ist aber das Erstellen der Datenbank. Deswegen waren die Schritte vorweg notwendig.
+  Was die App nicht kann, ist aber das Erstellen der Datenbank. Deswegen waren die Schritte vorweg notwendig.
 
 - Arbeiten mit dem Programm
 
   Um mit dem Programm arbeiten zu können, müssen HTTP Anfragen gesendet werden.
   Hier die Version mit Postman Daten senden (POST request):
+- 
+- TODO request hinschreiben
 
   ![img_4.png](img_4.png)
 
@@ -281,24 +285,24 @@ Prüfen sie in Docker Desktop den Status der Container, schauen sie in die Log D
 
 Wenn die Anfragen erfolgreich abgearbeitet werden, ist unsere Anwendung einsatzbereit.
 
-Sie arbeiten alle im selben Netzwerk. Finden sie die Adresse ihres Computers über
+Sie arbeiten alle im selben Netzwerk. Finden sie die IP-Adresse ihres Computers über
 `Systemsteuereung->Netzwerk->WLAN-details`
 
 ![img_6.png](img_6.png)
 
-Versuchen sie folgendes:
+Versuchen sie Folgendes:
 
-- Verändern sie die Daten im POST Request so, dass der Text im Feld `activity` sie eindeutig erkenntlich macht.
-- Verändern sie auch Uhrzeiten oder Datum, beachten sie dabei die amerikanische Schreibweise.
-- Geben sie mehrere Datensätze ein.
-- Prüfen sie mit dem GET Request die erfolgreiche Übertragung und Speicherung ihrer Eingabe
-- tauschen sie untereinander die IP-Adressen und ersetzen sie in den POST/GET Requests `localhost` durch die
+- Verändern Sie die Daten im POST Request so, dass der Text im Feld `activity` sie eindeutig erkenntlich macht. //TODO umformulieren
+- Verändern Sie auch Uhrzeiten oder Datum, beachten sie dabei die amerikanische Schreibweise.
+- Geben Sie einen oder mehrere Datensätze ein.
+- Prüfen Sie mit dem GET Request die erfolgreiche Übertragung und Speicherung ihrer Eingabe
+- tauschen Sie untereinander ihre IP-Adressen und ersetzen sie in den POST/GET Requests `localhost` durch die
   IP-Adresse: `http://192.168.178.42/insertWorkItem` zum Beispiel.
-
-Sie sollten jetzt die Daten ihres Tauschpartners sehen oder neue Daten zu seiner Datenbank hinzufügen können.
+- Führen Sie erneut GET oder POST Request aus. Sie sollten jetzt die Daten ihres Tauschpartners sehen oder neue Daten zu seiner Datenbank hinzufügen können.
 
 ## Zusammenfassung
 
+TODO: weglassen und im Video erwähnen.
 Das Beispiel soll ihnen einen Eindruck verschaffen, welches Aufwandes es bedarf, um eine solch einfache Funktion
 bereitzustellen.
 Andererseits erkennen sie auch, das ein einfaches `docker compose up -d` durchaus in der Lage ist, eine hochkomplexe
