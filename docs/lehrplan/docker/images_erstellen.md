@@ -1,4 +1,4 @@
-# Erstellung von Docker-Images:
+# Images erstellen
 
 Docker-Images werden üblicherweise mit einem **Dockerfile** erstellt. Ein Dockerfile ist eine Textdatei, die eine Reihe von
 Anweisungen enthält, die beschreiben, wie das Image aufgebaut werden soll. Diese Anweisungen können das Hinzufügen von

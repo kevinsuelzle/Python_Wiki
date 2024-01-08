@@ -1,4 +1,4 @@
-# Arbeiten mit Docker-Registries:
+# Images verwalten
 
 [120 min]
 

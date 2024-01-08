@@ -1,4 +1,4 @@
-# Exkurs: Fehlerbehebung und Logs in Docker
+# Exkurs: Fehlersuche mit Container-Logs
 
 Die Fähigkeit zur effektiven Fehlerbehebung und zum Umgang mit Logs ist wertvoll für die Verwaltung und Wartung von
 Docker-Containern. In diesem Kapitel werden wir uns auf die grundlegenden Techniken und Tools konzentrieren, die für die
