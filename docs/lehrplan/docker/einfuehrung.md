@@ -11,8 +11,7 @@ ersten Schritt unserer Lernziele in diesem Seminar.
 
 Docker ist eine Open-Source-Plattform, die die Entwicklung, den Versand und die Ausführung von Anwendungen vereinfacht.
 **Docker ermöglicht, Anwendungen in sogenannten Containern zu verpacken**. Diese Container sind leichtgewichtig, tragbar
-und
-bieten eine konsistente Umgebung, unabhängig davon, wo die Anwendung ausgeführt wird.
+und bieten eine konsistente Umgebung, unabhängig davon, wo die Anwendung ausgeführt wird.
 
 ## Containervirtualisierung: Ein Paradigmenwechsel
 

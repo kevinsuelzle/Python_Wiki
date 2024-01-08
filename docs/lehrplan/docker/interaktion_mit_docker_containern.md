@@ -8,7 +8,7 @@
 docker run -d --name mein-container hello-world-python
 ```
 
-Das Image haben wir [hier](docker_images_erstellen.md) erstellt.
+Das Image haben wir [hier](images_erstellen) erstellt.
 
 Dieser Befehl startet einen Container namens `mein-container` im Hintergrund (`-d`, englisch "detached") basierend auf
 dem `hello-world-python` Image. Hier sind einige wichtige Punkte zum **detached Modus**:
@@ -21,7 +21,7 @@ dem `hello-world-python` Image. Hier sind einige wichtige Punkte zum **detached 
 
 3. **Zugriff auf Logs:** Obwohl der Container im Hintergrund läuft und keine Ausgabe direkt im Terminal anzeigt, können
    Sie die Logs des Containers jederzeit mit dem Befehl `docker logs [CONTAINER_ID oder NAME]` oder über Docker
-   Desktop einsehen, wie [hier](fehlersuche_mit__container_logs.md) beschrieben.
+   Desktop einsehen, wie [hier](fehlersuche_mit_container_logs) beschrieben.
 
 4. **Verwendung:** Der detached Modus wird häufig verwendet, wenn Sie einen Container als langlaufenden Dienst oder
    Prozess ausführen möchten, ohne dass dieser Ihre Terminal-Sitzung blockiert. Dies ist besonders nützlich in
