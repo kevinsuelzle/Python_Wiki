@@ -41,6 +41,8 @@ Für die Kommunikation mit der datenbank gibt es eine ganze Reihe von Programmen
 - DBeaver
 - Kommandozeilen Tool von Microsoft
 - Visual Studio Code
+- PyCharm Professionel
+- DataGrip (JetBrains)
 - etc...
 
 Nahezu jede Entwicklungsumgebung kann HTTP Anfragen senden und empfangen. Da wir mit PyCharm arbeiten ist hier der
@@ -50,134 +52,136 @@ Konfiguration:
 
 - nginx.conf
 
-    ```nginx
-    events {}
-    
-    http {
-        server {
-          listen 80;
-    
-          location / {
-             proxy_pass http://localhost:3000;
-             proxy_http_version 1.1;
-             proxy_set_header Upgrade $http_upgrade;
-             proxy_set_header Host $host;
-             proxy_set_header content-type "application/json";
-             proxy_cache_bypass $http_upgrade;
-             proxy_set_header Connection 'upgrade';
-         }
-        }
+```nginx
+events {}
+
+http {
+    server {
+      listen 80;
+
+      location / {
+         proxy_pass http://localhost:3000;
+         proxy_http_version 1.1;
+         proxy_set_header Upgrade $http_upgrade;
+         proxy_set_header Host $host;
+         proxy_set_header content-type "application/json";
+         proxy_cache_bypass $http_upgrade;
+         proxy_set_header Connection 'upgrade';
+     }
     }
-    ```
+}
+```
 
-  **Anmerkung:**
+**Anmerkung:**
 
-  Wir gehen hier nicht auf alle Punkte der nginx.conf ein.
+Wir gehen hier nicht auf alle Punkte der nginx.conf ein.
 
-  Wichtig zu sehen ist,
-    - dass dieser Webserver Anfragen auf die Basisadresse `/` (location)
-    - am externen Port 80 (listen 80) entgegennimmt
-    - und dann an den internen Port 3000 weiterleitet (proxy_pass).
+Wichtig zu sehen ist,
+- dass dieser Webserver Anfragen auf die Basisadresse `/` (location)
+- am externen Port 80 (listen 80) entgegennimmt
+- und dann an den internen Port 3000 weiterleitet (proxy_pass).
 
 - dockerfile
 
   Das Dockerfile fällt etwas komplexer aus, da die Konfiguration des Images auf die Verwendung des Microsoft SQL Servers
   eingestellt werden muss. Es müssen Treiber geladen werden und in den Container eingebaut werden.
-  ```dockerfile
-  
-  # Use an official Python runtime as a parent image
-  # This is the latest official image based on debian linux
-  # We ensure to use a amd64 image. That is needed to make the sql drivers work
-  FROM --platform=linux/amd64 python:3.9.18-slim
-  
-  # Set the working directory in the container
-  WORKDIR /app
-  
-  # Install dependencies required for pyodbc and the ODBC driver
-  # apt is the debian package manger for installing programs 
-  # At first we update all packages in the container to their latest version
-  RUN apt-get update \
-      # Then we install some programs that we need
-      && apt-get install -y --no-install-recommends \
-          # curl is a program to get stuff from a certain internet repository
-          curl \
-          # gnupg is a program to deal with certificates, a security measure
-          gnupg \
-          # the unix/linux version of odbc driver \
-          # odbc means Open DataBase Connector \
-          unixodbc \
-          unixodbc-dev \
-          # g++ is the GNU C++ compiler needed for several programs 
-          g++ \
-      # this curl command loads a security key from microsoft and add it to the key list
-      && curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
-      # this curl command loads some stuff from microsoft to enable the installation of the needed driver
-      && curl https://packages.microsoft.com/config/debian/10/prod.list > /etc/apt/sources.list.d/mssql-release.list \
-      # again update all packages to their latest versions  
-      && apt-get update \
-      # accept the rules of use for microsoft products and finally install the driver
-      && ACCEPT_EULA=Y apt-get install -y --no-install-recommends msodbcsql18 \
-      # Clean up
-      && apt-get clean \
-      && rm -rf /var/lib/apt/lists/*
-  # now we copy the list of packages required for our python program into the container
-  COPY ./requirements.txt /app
-  # Install any needed packages specified in requirements.txt
-  RUN pip install --no-cache-dir -r requirements.txt
-  
-  # Copy the current directory contents into the container at /usr/src/app
-  # This now the program we have written
-  COPY . .
-  # An environment variable should be set to enable us command line commands for this app. 
-  ENV FLASK_APP=App.py
-  # Finally run app.py when the container launches
-  CMD ["python", "./app.py"]
-  ```
-  **Fazit:**
 
-  Wenn wir ein Python Programm auf unserem Computer erstellen, müssen wir über `ìmport` Pakete einbinden, die uns
-  notwendige Funktionen bereitstellen. Im Hintergrund laufen Prozess, die den Pythoncode zur Laufzeit des Programmes
-  interpretieren und damit erst ausführbar machen.
+```bash
 
-  All das weiß ein offizielles Basis-Image nicht.
+# Use an official Python runtime as a parent image
+# This is the latest official image based on debian linux
+# We ensure to use a amd64 image. That is needed to make the sql drivers work
+FROM --platform=linux/amd64 python:3.9.18-slim
 
-  Über das `RUN` Kommando im Dockerfile arbeiten wir alle Schritte ab, die notwendig sind, um das Python Programm
-  lauffähig und ausführbar zu machen. Es stellt unsere Umgebung so her, dass sie unserer lokalen Umgebung entspricht.
+# Set the working directory in the container
+WORKDIR /app
+
+# Install dependencies required for pyodbc and the ODBC driver
+# apt is the debian package manger for installing programs 
+# At first we update all packages in the container to their latest version
+RUN apt-get update \
+    # Then we install some programs that we need
+    && apt-get install -y --no-install-recommends \
+        # curl is a program to get stuff from a certain internet repository
+        curl \
+        # gnupg is a program to deal with certificates, a security measure
+        gnupg \
+        # the unix/linux version of odbc driver \
+        # odbc means Open DataBase Connector \
+        unixodbc \
+        unixodbc-dev \
+        # g++ is the GNU C++ compiler needed for several programs 
+        g++ \
+    # this curl command loads a security key from microsoft and add it to the key list
+    && curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
+    # this curl command loads some stuff from microsoft to enable the installation of the needed driver
+    && curl https://packages.microsoft.com/config/debian/10/prod.list > /etc/apt/sources.list.d/mssql-release.list \
+    # again update all packages to their latest versions  
+    && apt-get update \
+    # accept the rules of use for microsoft products and finally install the driver
+    && ACCEPT_EULA=Y apt-get install -y --no-install-recommends msodbcsql18 \
+    # Clean up
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+# now we copy the list of packages required for our python program into the container
+COPY ./requirements.txt /app
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the current directory contents into the container at /usr/src/app
+# This now the program we have written
+COPY . .
+# An environment variable should be set to enable us command line commands for this app. 
+ENV FLASK_APP=App.py
+# Finally run app.py when the container launches
+CMD ["python", "./app.py"]
+```
+
+**Fazit:**
+
+Wenn wir ein Python Programm auf unserem Computer erstellen, müssen wir über `ìmport` Pakete einbinden, die uns
+notwendige Funktionen bereitstellen. Im Hintergrund laufen Prozess, die den Pythoncode zur Laufzeit des Programmes
+interpretieren und damit erst ausführbar machen.
+
+All das weiß ein offizielles Basis-Image nicht.
+
+Über das `RUN` Kommando im Dockerfile arbeiten wir alle Schritte ab, die notwendig sind, um das Python Programm
+lauffähig und ausführbar zu machen. Es stellt unsere Umgebung so her, dass sie unserer lokalen Umgebung entspricht.
 
 - docker-compose.yaml
 
-  ```yaml
-  version: '3'
-  services:
-    nginx:
-      image: nginx:latest
-      volumes:
-        - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      ports:
-        - "80:80"
-  
-    sql-server:
-      image: mcr.microsoft.com/mssql/server:2019-latest
-      environment:
-        - ACCEPT_EULA=Y
-        - SA_PASSWORD=Sql12345
-      ports:
-        - "1433:1433"
-      volumes:
-        - ./mydatabase:/var/opt/mssql
-  
-    node-app:
-      build:
-        context: .
-        dockerfile: Dockerfile
-      network_mode: service:nginx
-      depends_on:
-        - sql-server
-  ```
+```yaml
+version: '3'
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"
 
-  **Anmerkung:**
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Sql12345
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./mydatabase:/var/opt/mssql
 
-  Diese YAML-Datei definiert drei Services:
+  node-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: service:nginx
+    depends_on:
+      - sql-server
+```
+
+**Anmerkung:**
+
+Diese YAML-Datei definiert drei Services:
 
     - nginx: der Webserver mit dem Bind-Mount nginx.conf und dem Port Mapping 80:80.
       So kann die Konfigurationsdatei von der Festplatte gelesen werden und Anfragen an den Port 80 werden registriert
@@ -236,25 +240,33 @@ Konfiguration:
 
   Öffnen sie nun die Konsole in PyCharm und führen sie folgenden Befehl aus:
 
-  ```bash
-  docker compose up -d 
-  ```
-  Dies weist die Docker Engine an, die docker-compose.yml Datei abzuarbeiten. Sie sehen, wie die Images geladen werden
-  und wie das IMage für das Python Programm gebaut wird. Viele Schritte laufen ab, bis das Image endlich fertig ist.
-  Endlich werden die drei Container gestartet.
+```bash
+docker compose up -d 
+```
 
-  Prüfen sie in Docker Desktop den Status der Container, schauen sie in die Log Dateien hinein. Ist alles in Ordnung?
+Dies weist die Docker Engine an, die docker-compose.yml Datei abzuarbeiten. Sie sehen, wie die Images geladen werden
+und wie das IMage für das Python Programm gebaut wird. Viele Schritte laufen ab, bis das Image endlich fertig ist.
+Endlich werden die drei Container gestartet.
 
-  ![img_3.png](img_3.png)
+Prüfen sie in Docker Desktop den Status der Container, schauen sie in die Log Dateien hinein. Ist alles in Ordnung?
+
+![img_3.png](img_3.png)
 
 - Das Python-Programm
 
   Im Verzeichnis `/routes/` werden drei möglich Routen für das Programm definiert:
-    - `/` die Wurzel Route. Hier wird nur ein einfache Text ausgegeben.
+
+    - `/` die Wurzel Route. Hier wird nur ein einfacher Text ausgegeben.
     - `getAllWorkItems` die Route holt alle erfassten Arbeitszeiten aus der Datenbank und gibt sie als JSON Objekte
       zurück.
     - `insertWorkItem` diese Route nimmt ein JSON Objekt mit den Daten einer Arbeitseinheit und sendet es an die
       Datenbank.
+
+  Erkennen sie, wie die Flask/SQLAlchemy die SQL Kommandos für INSERT und SELECT in den Befehlen kapselt.
+  In App.py bewirkt der Aufruf von `db.create.all()` die Erstellung der Tabellen. Auch hier wird der
+  Befehl `CREATE TABLE ...` völlig verschleiert.
+
+  Was die App nicht kann ist aber das Erstellen der Datenbank. Deswegen waren die Schritte vorweg notwendig.
 
 - Arbeiten mit dem Programm
 

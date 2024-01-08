@@ -17,7 +17,7 @@ Diese Images sind klein und können auf allen Betriebssystemen auf denen das Doc
 9. [Persistente Datenspeicherung](lehrplan/docker/wo_und_wie_docker_container_daten_speichern.md) 
 10. [Fehlerbehebung und Logs](lehrplan/docker/fehlersuche_mit__container_logs.md) 
 11. [Dockerfile und Docker Compose](lehrplan/docker/dockerfile_und_docker_compose.md) 
-12. [Praktische Übungen](lehrplan/docker/praktische_uebungen_und_szenarien.md) 
+12. [Praktische Übungen](lehrplan/docker/praktische_uebungen.md) 
 13. [Best Practices und Sicherheit](lehrplan/docker/best_practices_und_sicherheit.md)
 
 ##[Lernziele](../../checklists/checklist_docker.md))
