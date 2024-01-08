@@ -1,4 +1,4 @@
-# Pandas: Gruppieren und Pivotisieren
+# Exkurs: Pandas: Gruppieren und Pivotisieren
 
 ## Einführung [10 min]
 

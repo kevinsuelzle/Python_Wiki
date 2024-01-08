@@ -189,7 +189,7 @@ Erstelle einen Linienplot für die Funktion y = x^2 auf dem Intervall [1, 4]. Ve
 
 ### A7: Linienplots mit Legende 🌶️🌶️🌶
 
-Erzeuge 5 Linienplots mit Legenden für x, x^2, x^3, x^4, x^5 im Bereich -100 bis +100.
+Erzeuge 5 Linienplots mit Legenden für $x$, x^2, x^3, x^4, x^5 im Bereich -100 bis +100.
 Zeige auch noch ein Gitter an.
 
 [Lösungen](matplotlib_linienplots_loesungen.md)

@@ -66,15 +66,44 @@ nav:
           - Gruppenarbeit: lehrplan/datenbanken/unterrichte/projects.md
           - Fragen an die Datenbank: lehrplan/datenbanken/unterrichte/joins_and_views.md
           - Abschluss SQL-Datenbanken: lehrplan/datenbanken/unterrichte/finally.md
+      - Block 3:
+          - Datenverarbeitung und -darstellung:
+              - Einführung in Data Science: lehrplan/datascience/unterrichte/data_science_einfuehrung.md
+              - Pandas Einführung: lehrplan/datascience/unterrichte/pandas_einfuehrung.md
+              - Pandas Import/Export von Daten: lehrplan/datascience/unterrichte/pandas_import_export.md
+              - Pandas Fehlende Werte: lehrplan/datascience/unterrichte/pandas_fehlende_werte.md
+              - NumPy Arrays: lehrplan/datascience/unterrichte/numpy_arrays.md
+              - NumPy Slicing: lehrplan/datascience/unterrichte/numpy_slicing.md
+              - Matplotlib Linienplots: lehrplan/datascience/unterrichte/matplotlib_linienplots.md
+              - Matplotlib Subplots: lehrplan/datascience/unterrichte/matplotlib_subplots.md
+              - Seaborn Einführung: lehrplan/datascience/unterrichte/seaborn_einfuehrung.md
+              - Pandas Gruppieren und Pivotisieren: lehrplan/datascience/unterrichte/pandas_gruppieren_und_pivotisieren.md
+              - Matplotlib Ticks: lehrplan/datascience/unterrichte/matplotlib_ticks.md
+              - Pandas Multiindex: lehrplan/datascience/unterrichte/pandas_multiindex.md
+              - Pandas & Matplotlib Zeitreihenanalyse: lehrplan/datascience/unterrichte/pandas_matplotlib_zeitreihen.md
+              - Pandas Outlier (Ausreißer): lehrplan/datascience/unterrichte/pandas_outlier.md
+              - Pandas & Matplotlib DateTime (Zeitstempel): lehrplan/datascience/unterrichte/pandas_matplotlib_datetime.md
+          - Robotik:
+              - Einführung Robotik & Robotersimulatoren: lehrplan/robotik/unterrichte/einfuehrung_robotik.md
+              - Einen Webots-Roboter aus Python heraus steuern: lehrplan/robotik/unterrichte/webots_roboter_aus_python_steuern.md
+              - Reaktiver Robotercontroller: lehrplan/robotik/unterrichte/webots_reaktiver_controller.md
+              - Webots Fahrzeug aus Python heraus steuern: lehrplan/robotik/unterrichte/webots_fahrzeug_steuern_aus_python.md
+              - Fahrsequenz-Assistent in Python/Webots: lehrplan/robotik/unterrichte/webots_fahrerassistenzsystem.md
+              - Roboternavigationsverhalten untersuchen: lehrplan/robotik/unterrichte/webots_navigationsverhalten.md
+
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md
       - Clean Code: begriffe/begriffe_clean_code.md
       - SQL-Datenbanken: begriffe/begriffe_db1.md
+      - Datenverarbeitung und -darstellung: begriffe/begriffe_data_science.md
+      - Robotik: begriffe/begriffe_robotik.md
   - Checklisten:
       - Python Grundlagen: checklists/checklists_1.md
       - git: checklists/checklist_git.md
       - Clean Code: checklists/checklist_clean_code.md
       - SQL-Datenbanken: checklists/checklist_db1.md
+      - Datenverarbeitung und -darstellung: checklists/checklist_data_science.md
+      - Robotik: checklists/checklist_robotik.md
   - Werkzeuge:
       - git: lehrplan/git/git.md

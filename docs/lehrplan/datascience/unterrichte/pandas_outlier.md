@@ -1,4 +1,4 @@
-# Thema: Pandas und Outlier (Ausreißer)
+# Exkurs: Pandas und Outlier (Ausreißer)
 
 ## Einführung [20 min]
 

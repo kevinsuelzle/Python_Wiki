@@ -6,19 +6,19 @@ Roboter sind komplexe Systeme, die durch verschiedene Kontrollarchitekturen gest
 
 ## Grundlegende Klassifizierung der Roboterkontrollarchitekturen
 
-1. Reaktive Architekturen
+### 1. Reaktive Architekturen
 
 Reaktive Architekturen basieren auf dem Prinzip des direkten Reagierens auf Umweltstimuli, ohne dass ein internes Modell der Welt oder eine komplexe Verarbeitung erforderlich ist. Diese Architekturen sind schnell und robust gegenüber Veränderungen in der Umgebung.
 
 Beispiel: Die subsumption Architektur, entwickelt von Rodney Brooks, ist ein bekanntes Beispiel für eine reaktive Architektur. Sie strukturiert das Verhalten des Roboters in Ebenen, wobei jede Ebene eine bestimmte Aufgabe kontrolliert.
 
-2. Deliberative Architekturen
+### 2. Deliberative Architekturen
 
 Deliberative Architekturen nutzen interne Modelle der Welt und führen komplexe Planungen durch, bevor sie handeln. Der Roboter "überlegt" was er macht, daher die Bezeichnung "deliberativ". Diese Architekturen sind geeignet für Aufgaben, die eine detaillierte Analyse und Langzeitplanung erfordern.
 
 Beispiel: Die hierarchische Kontrollarchitektur, die oft in industriellen Robotersystemen verwendet wird, wo eine sequentielle Planung und präzise Kontrolle erforderlich sind.
 
-3. Hybride Architekturen
+### 3. Hybride Architekturen
 
 Hybride Architekturen kombinieren Elemente aus reaktiven und deliberativen Ansätzen. Sie ermöglichen es Robotern, sowohl schnell auf Umweltänderungen zu reagieren als auch komplexe Planungen durchzuführen.
 
@@ -28,11 +28,11 @@ Hybride Architekturen kombinieren Elemente aus reaktiven und deliberativen Ansä
 
 Die Klassifizierung von Roboterkontrollarchitekturen kann anhand verschiedener Kriterien erfolgen:
 
-- Reaktionsschnelligkeit: Wie schnell kann der Roboter auf Änderungen in seiner Umgebung reagieren?
-- Planungsfähigkeit: Kann der Roboter komplexe Aufgaben planen und ausführen?
-- Lernfähigkeit: Ist der Roboter in der Lage, aus Erfahrungen zu lernen und sein Verhalten anzupassen?
-- Flexibilität: Wie gut kann der Roboter in verschiedenen Umgebungen und unter verschiedenen Bedingungen arbeiten?
-- Robustheit: Wie widerstandsfähig ist der Roboter gegenüber Fehlern und unvorhergesehenen Ereignissen?
+- **Reaktionsschnelligkeit**: Wie schnell kann der Roboter auf Änderungen in seiner Umgebung reagieren?
+- **Planungsfähigkeit**: Kann der Roboter komplexe Aufgaben planen und ausführen?
+- **Lernfähigkeit**: Ist der Roboter in der Lage, aus Erfahrungen zu lernen und sein Verhalten anzupassen?
+- **Flexibilität**: Wie gut kann der Roboter in verschiedenen Umgebungen und unter verschiedenen Bedingungen arbeiten?
+- **Robustheit**: Wie widerstandsfähig ist der Roboter gegenüber Fehlern und unvorhergesehenen Ereignissen?
 
 ## Zukünftige Trends und Entwicklungen
 

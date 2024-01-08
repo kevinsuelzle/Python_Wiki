@@ -10,7 +10,10 @@ Genau hier setzt Data Science an. Data Science ist ein Bereich, bei dem wir mitt
 
 Um es kurz zu machen: Data Science ist ein Prozess, der aus Daten Wissen generiert.
 
-    Daten --> DATA SCIENCE --> Wissen
+```mermaid
+graph LR;
+    D(Daten) --> B["DATA SCIENCE"] --> W(Wissen)
+```
 
 # Der Data Science Prozess [20 min]
 
@@ -60,7 +63,10 @@ Der CRISP-DM Data Science Prozess kann nun hierbei so aussehen:
                                            
 und Machine Learning Algorithmen versuchen dann den Zusammenhang zwischen x und y zu erlernen und liefern ein Modell zurück, dass bei Eingabe von x dann y zurückgibt:
 
-        x --> Modell --> y
+```mermaid
+graph LR;
+    x([x]) --> Modell --> y([y])
+```
 
 Ein kleiner Hinweis: es muss aber nicht immer Machine Learning sein!
 
@@ -76,9 +82,9 @@ Python ist auch so beliebt, weil es so unglaublich viele hilfreiche Module für 
 
 Für die Analyse von Daten mit Python sind dabei vor allem folgende vier Module wichtig:
 
-| Modulname    | Projektwebseite | Wozu brauche ich das?  |
-| ------------ | --------------- | ---------------------- |
-| Pandas       | https://pandas.pydata.org  | Das ist quasi das "Excel für Python" |
-| Matplotlib   | https://matplotlib.org     | Erzeugung beliebiger Diagramme  |
-| Seaborn      | https://seaborn.pydata.org | Baut direkt auf Matplotlib auf, um Statistikplots einfacher als Matplotlib zur Verfügung zu stellen |
-| Scikit-learn | https://scikit-learn.org   | Enthält alle wichtigen Machine Learning Algorithmen |
+| Modulname    | Projektwebseite                                          | Wozu brauche ich das?                                                                               |
+|--------------|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Pandas       | [https://pandas.pydata.org](https://pandas.pydata.org)   | Das ist quasi das "Excel für Python"                                                                |
+| Matplotlib   | [https://matplotlib.org](https://matplotlib.org)         | Erzeugung beliebiger Diagramme                                                                      |
+| Seaborn      | [https://seaborn.pydata.org](https://seaborn.pydata.org) | Baut direkt auf Matplotlib auf, um Statistikplots einfacher als Matplotlib zur Verfügung zu stellen |
+| Scikit-learn | [https://scikit-learn.org](https://scikit-learn.org)     | Enthält alle wichtigen Machine Learning Algorithmen                                                 |

@@ -1,4 +1,4 @@
-# Thema: Zeitstempel und Pandas / Matplotlib / Seaborn
+# Exkurs: Zeitstempel und Pandas / Matplotlib / Seaborn
 
 ## Einführung [5 min]
 

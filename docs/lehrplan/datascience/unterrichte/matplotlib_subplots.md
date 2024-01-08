@@ -207,19 +207,19 @@ Dieses Beispiel erzeugt vier Subplots in einem 2x2 Gitter.
 
 Jeder Subplot stellt eine andere mathematische Funktion von x dar: Sinus, Kosinus, Sinus mal Kosinus, und Sinus-Quadrat minus Kosinus-Quadrat.
 
-plt.subplots(2, 2) erstellt ein Gitter von Subplots mit 2 Reihen und 2 Spalten.
+`plt.subplots(2, 2)` erstellt ein Gitter von Subplots mit 2 Reihen und 2 Spalten.
 
-figsize=(10, 10) definiert die Größe des Gesamtbildes.
+`figsize=(10, 10)` definiert die Größe des Gesamtbildes.
 
-plt.tight_layout() wird verwendet, um sicherzustellen, dass die Subplots ordentlich angeordnet sind und es keine Überlappung der Titel oder Achsenbeschriftungen gibt.
+`plt.tight_layout()` wird verwendet, um sicherzustellen, dass die Subplots ordentlich angeordnet sind und es keine Überlappung der Titel oder Achsenbeschriftungen gibt.
 
 Wieso tab?
 
-tab:blue, tab:orange, tab:green und tab:red auf die Farbnamen, die in Matplotlib verwendet werden, um die Linien in den verschiedenen Subplots zu zeichnen. Diese Farbnamen sind Teil der erweiterten Farbpalette, die in Matplotlib verfügbar ist.
+`tab:blue`, `tab:orange`, `tab:green` und `tab:red` auf die Farbnamen, die in Matplotlib verwendet werden, um die Linien in den verschiedenen Subplots zu zeichnen. Diese Farbnamen sind Teil der erweiterten Farbpalette, die in Matplotlib verfügbar ist.
 
 Die Präfix tab steht für "tableau", eine Palette von Farben, die speziell für ihre gute Sichtbarkeit und Unterscheidbarkeit in Grafiken und Diagrammen entwickelt wurde. Diese Farben sind so ausgewählt, dass sie auch für Farbblindheit gut erkennbar sind und auf Bildschirmen gut aussehen.
 
-tab:blue, tab:orange, tab:green und tab:red sind also spezifische Farbtöne aus dieser Tableau-Palette. Sie bieten eine Alternative zu den grundlegenden Farbnamen wie blue, orange, green und red.
+`tab:blue`, `tab:orange`, `tab:green` und `tab:red` sind also spezifische Farbtöne aus dieser Tableau-Palette. Sie bieten eine Alternative zu den grundlegenden Farbnamen wie blue, orange, green und red.
 
 ## Aufgaben [120 min]
 
@@ -227,13 +227,13 @@ tab:blue, tab:orange, tab:green und tab:red sind also spezifische Farbtöne aus 
 
 Erstelle ein Subplot mit 3 Zeilen und 2 Spalten und den gleichen Plot in allen 6 Subplots.
 
-Benutze dabei den Befehl plt.subplot().
+Benutze dabei den Befehl `plt.subplot()`.
 
 ### A2: Subplot mit 3x2 Anordnung mittels plt.subplot()s 🌶️🌶️🌶️
 
 Erstelle ein Subplot mit 3 Zeilen und 2 Spalten und den gleichen Plot in allen 6 Subplots.
 
-Benutze dabei den Befehl plt.subplots() (ja! den mit dem s am Ende)
+Benutze dabei den Befehl `plt.subplots()` (ja! den mit dem s am Ende)
 
 Versuche alle 6 Subplots im Rahmen einer Schleife zu erzeugen!
 

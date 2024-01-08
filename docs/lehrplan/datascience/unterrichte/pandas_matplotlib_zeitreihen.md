@@ -1,4 +1,4 @@
-# Thema: Zeitreihenanalyse mit Pandas und Matplotib 
+# Exkurs: Thema: Zeitreihenanalyse mit Pandas und Matplotib 
 
 ## Einführung [10 min]
 

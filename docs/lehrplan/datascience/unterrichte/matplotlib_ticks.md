@@ -1,4 +1,4 @@
-# Matplotlib: Ticks
+# Exkurs: Matplotlib: Ticks
 
 ## Einführung [10 min]
 

@@ -1,4 +1,4 @@
-# Pandas: Multiindex
+# Exkurs: Pandas: Multiindex
 
 ## Einführung [10 min]
 

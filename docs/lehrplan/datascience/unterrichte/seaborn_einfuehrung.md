@@ -138,7 +138,7 @@ plt.show()
     
 
 
-In diesem Beispiel laden wir den flights-Datensatz (der enthält historische Flugpassagierzahlen) und erstellen eine Heatmap, die zeigt, wie viele Passagiere in jedem Monat eines Jahres geflogen sind. Die annot=True-Option fügt die Anzahl der Passagiere in jede Zelle der Heatmap ein, was ein schnelles Ablesen der Werte ermöglicht.
+In diesem Beispiel laden wir den flights-Datensatz (der enthält historische Flugpassagierzahlen) und erstellen eine Heatmap, die zeigt, wie viele Passagiere in jedem Monat eines Jahres geflogen sind. Die `annot=True`-Option fügt die Anzahl der Passagiere in jede Zelle der Heatmap ein, was ein schnelles Ablesen der Werte ermöglicht.
 
 ### Beispiel 4: Erstellen eines Pair Plots
 
