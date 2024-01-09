@@ -1,3 +1,5 @@
+
+## NoSQL
 | Begriff                           | Kurzerklärung                                                                                                                                                                                                                                                                                                                                                                         | Link zur Referenz                |
 | :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------- |
 | NoSQL                             | Der Begriff "NoSQL" steht für "Not only SQL" und bezeichnet eine Gruppe von Datenbankmanagementsystemen, die sich von traditionellen relationalen Datenbanken unterscheiden. Diese Systeme sind nicht ausschließlich auf SQL beschränkt und bieten unterschiedliche Ansätze für die Speicherung und Abfrage von Daten.                                                                | [Referenz](#)                    |
@@ -12,6 +14,11 @@
 | OrientDB                          | [OrientDB](http://orientdb.org) kombiniert Funktionalitäten von Dokumenten- und Graphdatenbanken. Es unterstützt eine breite Palette von Anwendungsfällen und erlaubt die Verwaltung unterschiedlicher Datenstrukturen in einer einzigen Datenbank.                                                                                                                                   | [OrientDB](http://orientdb.org)  |
 | ArangoDB                          | [ArangoDB](https://arangodb.com) kombiniert Dokumenten-, Graphen- und Schlüssel-Wert-Modelle. Es ermöglicht die Verwaltung unterschiedlicher Datenstrukturen in einer einzigen Datenbank.                                                                                                                                                                                             | [ArangoDB](https://arangodb.com) |
 | MongoDB | MongoDB ist eine dokumentenorientierte NoSQL-Datenbank, die auf Flexibilität und Skalierbarkeit ausgelegt ist. Sie speichert Daten in einem flexiblen, JSON-ähnlichen Format namens BSON (Binary JSON) und ist frei von Schemaanforderungen. | [MongoDB](https://www.mongodb.com/) |
+
+
+## MongoDB
+| Begriff                           | Kurzerklärung                                                                                                                                                                                                                                                                                                                                                                         | Link zur Referenz                |
+| :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------- |
 | BSON | BSON (Binary JSON) ist ein Binärformat zur Serialisierung von JSON-ähnlichen Dokumenten. Es wurde speziell für die Verwendung mit MongoDB entwickelt und ermöglicht effiziente Speicherung und Übertragung von Daten. | [BSON](https://docs.mongodb.com/manual/reference/bson-types/) |
 | MongoDB-Shell | Die MongoDB-Shell ist eine interaktive JavaScript-Shell, mit der Benutzer direkt mit einer MongoDB-Datenbank interagieren können. Sie ermöglicht das Ausführen von Befehlen und Skripten zur Verwaltung und Abfrage von Daten in MongoDB. | [MongoDB Shell](https://docs.mongodb.com/mongodb-shell/) |
 | MongoDB-CLI (mongosh) | Die MongoDB Command-Line Interface (CLI), auch als mongosh bekannt, ist eine interaktive Shell für MongoDB. Sie ermöglicht das Ausführen von MongoDB-Befehlen und Skripten für Datenbankverwaltung und -abfrage direkt über die Kommandozeile. | [mongosh](https://docs.mongodb.com/mongodb-shell/) |
@@ -51,6 +58,9 @@
 | Versionierung von Dokumenten | Das Hinzufügen von Versionsinformationen zu Dokumenten, um unterschiedliche Datenmodellversionen zu bewältigen. | [MongoDB Dokumentation - Model Versioning](https://docs.mongodb.com/manual/tutorial/model-versioning/) |
 | Feature-Schalter | Mechanismen, die die Aktivierung oder Deaktivierung von Funktionen basierend auf der Datenbankversion ermöglichen. | [Feature Toggles (Martin Fowler)](https://martinfowler.com/articles/feature-toggles.html) |
 | Testumgebung | Eine dedizierte Umgebung, in der Änderungen vor der Implementierung in der Produktionsumgebung ausgiebig getestet werden können. | - |
+
+
+# PyMongo
 | pymongo | Eine Python-Bibliothek, die den direkten Zugriff auf MongoDB-Datenbanken ermöglicht. | [pymongo Dokumentation](https://pymongo.readthedocs.io/en/stable/) |
 | MongoClient | Eine Klasse in pymongo, die die Verbindung zu einem MongoDB-Server herstellt. | [MongoClient Dokumentation](https://pymongo.readthedocs.io/en/stable/api/pymongo/mongo_client.html) |
 | insert_one() | Eine Methode, um ein Dokument in eine MongoDB-Sammlung einzufügen. | [insert_one() Dokumentation](https://pymongo.readthedocs.io/en/stable/api/pymongo/collection.html#pymongo.collection.Collection.insert_one) |
@@ -59,10 +69,14 @@
 | update_one() | Eine Methode, um ein Dokument in einer MongoDB-Sammlung zu aktualisieren. | [update_one() Dokumentation](https://pymongo.readthedocs.io/en/stable/api/pymongo/collection.html#pymongo.collection.Collection.update_one) |
 | delete_one() | Eine Methode, um ein Dokument aus einer MongoDB-Sammlung zu löschen. | [delete_one() Dokumentation](https://pymongo.readthedocs.io/en/stable/api/pymongo/collection.html#pymongo.collection.Collection.delete_one) |
 | MongoDB Query Language | Die Abfragesprache, die in MongoDB verwendet wird, basierend auf JSON-ähnlichen Dokumenten. | [MongoDB Query Language](https://docs.mongodb.com/manual/tutorial/query-documents/) |
+
+## Datenbank Refactoring in NoSQL
 | Datenbank-Refactoring | Der Prozess der Überarbeitung der Datenbankstruktur, um die Effizienz, Leistung und Wartbarkeit zu verbessern. | - |
 | Index-Optimierung | Der Prozess der Überprüfung und Optimierung von Indizes, um die Abfrageleistung in einer MongoDB-Datenbank zu verbessern. | [Indexing Strategies](https://docs.mongodb.com/manual/indexes/) |
 | Aggregation Framework | Ein mächtiges Framework in MongoDB zur Verarbeitung von Daten, Transformation von Dokumenten und Aggregation von Ergebnissen direkt in der Datenbank. | [Aggregation Framework](https://docs.mongodb.com/manual/aggregation/) |
 | Embedded vs. Referenzierte Daten | Die Entscheidung, ob Daten direkt in einem Dokument eingebettet oder durch Referenzen verknüpft werden sollen, um die Abfrageleistung und Wartbarkeit zu optimieren. | [Model Relationships Between Documents](https://docs.mongodb.com/manual/tutorial/model-relationships-between-documents/) |
+
+## Sicherheit für NoSQL-Datenbanken
 | Datentypen und Validierung | Die korrekte Verwendung von Datentypen in MongoDB-Dokumenten und die Möglichkeit der Datenvalidierung, um die Datenintegrität zu gewährleisten und Speicherplatz effizient zu nutzen. | [Datentypen in MongoDB](https://docs.mongodb.com/manual/reference/bson-types/) |
 | Sharding | Eine Technik zur Skalierung von MongoDB-Datenbanken, bei der Daten horizontal über mehrere Server verteilt werden. Dies verbessert die Leistung und Kapazität der Datenbankinfrastruktur. | [Sharding in MongoDB](https://docs.mongodb.com/manual/sharding/) |
 | Datenbereinigung | Der Prozess der Entfernung nicht mehr benötigter Daten, Indizes oder Sammlungen, um Speicherplatz zu optimieren und die Effizienz der Datenbank zu verbessern. | [Remove Documents](https://docs.mongodb.com/manual/tutorial/remove-documents/) |
