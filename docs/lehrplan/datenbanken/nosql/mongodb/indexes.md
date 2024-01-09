@@ -42,7 +42,7 @@ use meineDatenbank
 db.meineCollection.dropIndex({ name: 1 })
 ```
 
-### Aufgabe:
+### Aufgabe: 🌶
 [15 min]
 
 Erstelle einen Index auf dem Feld `name` in der Collection `meineCollection`. Überprüfe, ob der Index erstellt wurde. Lösche den Index wieder.
@@ -73,7 +73,7 @@ use meineDatenbank
 db.meineCollection.stats()
 ```
 
-### Aufgabe:
+### Aufgabe: 🌶
 [10 min]
 
 Erstelle einen Index auf dem Feld `name` in der Collection `meineCollection`. Überprüfe, ob der Index erstellt wurde. Gib die Eigenschaften des Indexes aus. Welche Eigenschaften werden dir angezeigt und was bedeuten sie?
@@ -93,34 +93,34 @@ db.meineCollection.createIndex({ name: 1, age: -1 })
 ## Aufgaben:
 [90 min]
 
-1. **Index für das "name"-Feld in der Sammlung "Benutzer":**
+1. **Index für das "name"-Feld in der Sammlung "Benutzer":** 🌶
      - Erstelle einen einfachen Index für das Feld "name" in der Sammlung "Benutzer".
 
-2. **Zusammengesetzter Index für die Felder "datum" und "produkt" in der Sammlung "Bestellungen":**
+2. **Zusammengesetzter Index für die Felder "datum" und "produkt" in der Sammlung "Bestellungen":** 🌶
        - Erstelle einen zusammengesetzten Index für die Felder "datum" und "produkt" in der Sammlung "Bestellungen".
 
-3. **Text-Index für das "titel"-Feld in der Sammlung "Bücher":**
+3. **Text-Index für das "titel"-Feld in der Sammlung "Bücher":** 🌶
       - Erstelle einen Text-Index für das Feld "titel" in der Sammlung "Bücher".
 
-4. **Absteigender Index für das "preis"-Feld in der Sammlung "Produkte":**
+4. **Absteigender Index für das "preis"-Feld in der Sammlung "Produkte":** 🌶
      - Erstelle einen absteigenden Index für das Feld "preis" in der Sammlung "Produkte".
 
-5. **Geospatial-Index für das "standort"-Feld in der Sammlung "Benutzer":**
+5. **Geospatial-Index für das "standort"-Feld in der Sammlung "Benutzer":** 🌶🌶
      - Erstelle einen Geospatial-Index für das Feld "standort" in der Sammlung "Benutzer".
 
-6. **Hash-Index für das "email"-Feld in der Sammlung "Kunden":**
+6. **Hash-Index für das "email"-Feld in der Sammlung "Kunden":** 🌶🌶
      - Erstelle einen Hash-Index für das Feld "email" in der Sammlung "Kunden".
 
-7. **Teil-Index für das "produkt"-Feld in der Sammlung "Bestellungen":**
+7. **Teil-Index für das "produkt"-Feld in der Sammlung "Bestellungen":** 🌶🌶
      - Erstelle einen Teil-Index für das Feld "produkt" in der Sammlung "Bestellungen", der nur Dokumente mit einer bestimmten Bedingung enthält.
 
-8. **Einzigartiger Index für das "name"-Feld in der Sammlung "Produkte":**
+8. **Einzigartiger Index für das "name"-Feld in der Sammlung "Produkte":** 🌶🌶
      - Erstelle einen einzigartigen Index für das Feld "name" in der Sammlung "Produkte".
 
-9. **Index mit Ablaufzeit für das "datum"-Feld in der Sammlung "Bestellungen":**
+9. **Index mit Ablaufzeit für das "datum"-Feld in der Sammlung "Bestellungen":** 🌶🌶
     - Erstelle einen Index mit Ablaufzeit für das Feld "datum" in der Sammlung "Bestellungen".
 
-10. **Sparse-Index für das "alter"-Feld in der Sammlung "Benutzer":**
+10. **Sparse-Index für das "alter"-Feld in der Sammlung "Benutzer":** 🌶🌶
      - Erstelle einen sparsen Index für das Feld "alter" in der Sammlung "Benutzer", um nur Dokumente mit diesem Feld zu indizieren.
 
 ## Lösungen:

@@ -43,7 +43,7 @@ MongoDB kann auf verschiedene Arten bereitgestellt und verwendet werden. Hier si
 
 Wir werden MongoDB zunächst über einen Docker Container ausführen.
 
-### Aufgabe:
+### Aufgabe 🌶🌶
 [20 min]
 
 Erstelle ein Docker-Compose File, das einen MongoDB Container startet. Achte darauf, dass die Datenbank auch nach einem Neustart des Containers erhalten bleibt.
@@ -106,7 +106,7 @@ Nach dem Ausführen dieses Befehls sollte die MongoDB-Shell geöffnet werden. Nu
 
 Über den Befehl `show collections` können wir uns alle Collections anzeigen lassen, die in der aktuellen Datenbank vorhanden sind. Im nächsten Kapitel werden wir uns ausführlicher mit den CRUD Operationen beschäftigen. Das Schließen der MongoDB Shell erfolgt über den Befehl `exit`.
 
-### Aufgabe:
+### Aufgabe 🌶
 [20 min]
 
 Erstelle eine Collection mit dem Namen `users` und füge ein Dokument mit dem Namen `John Doe` ein. Lass die alle Collections anzeigen.

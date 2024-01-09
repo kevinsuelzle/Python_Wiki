@@ -58,6 +58,6 @@ Dies bezieht sich darauf, dass ein Dokument in einer Sammlung auf ein anderes Do
 MongoDB unterstützt spezielle Strukturen namens DBRefs, die als Referenzen auf Dokumente in anderen Sammlungen dienen. Eine DBRef enthält normalerweise drei Schlüssel: `$ref` (Sammlungsname), `$id` (ID des referenzierten Dokuments) und optional `$db` (Datenbankname). Dies erleichtert das Arbeiten mit Referenzen, da alle notwendigen Informationen in einem speziellen Format bereitgestellt werden.
 
 
-### Aufgabe:
+### Aufgabe: 🌶🌶🌶🌶
 [240 min] + [120 min Präsentation]
 Teilt euch in Gruppen auf und bearbeitet jeweils ein Design Pattern. Erstellt eine Präsentation inklusive Live-Coding, in der ihr das Schema Design Pattern vorstellt und anhand eines Beispiels erklärt. Die Präsentation sollte einen Umfang von ca. 5 - 10 Minuten haben.

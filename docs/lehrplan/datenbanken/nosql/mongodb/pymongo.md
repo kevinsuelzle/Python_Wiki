@@ -207,22 +207,22 @@ Erstelle eine ToDo-Liste-Anwendung, die MongoDB als Datenbank verwendet. Die Anw
 
 **Schritte:**
 
-1. **Datenbank und Sammlung erstellen:**
+1. **Datenbank und Sammlung erstellen:** 🌶
     - Erstelle eine MongoDB-Datenbank mit dem Namen "ToDoDB".
     - In dieser Datenbank erstelle eine Sammlung mit dem Namen "tasks".
 
-2. **PyMongo-Verbindung einrichten:**
+2. **PyMongo-Verbindung einrichten:** 🌶
     - Nutze PyMongo, um eine Verbindung zur MongoDB-Datenbank herzustellen.
 
-3. **Funktionen für CRUD-Operationen erstellen:**
+3. **Funktionen für CRUD-Operationen erstellen:** 🌶🌶
     - Implementiere Funktionen für das Erstellen, Lesen, Aktualisieren und Löschen von Aufgaben in der Datenbank.
     - Beispiel: `create_task(title, description, status)`, `get_tasks()`, `update_task(task_id, new_title, new_description, new_status)`, `delete_task(task_id)`.
 
-4. **CLI-Benutzerschnittstelle erstellen:**
+4. **CLI-Benutzerschnittstelle erstellen:** 🌶🌶🌶
     - Erstelle eine einfache Befehlszeilenschnittstelle (CLI), die es dem Benutzer ermöglicht, Aufgaben hinzuzufügen, anzuzeigen, zu aktualisieren und zu löschen.
     - Beispiel: `python todo_app.py add "Task Title" "Task Description" "To Do"`, `python todo_app.py list`, `python todo_app.py update task_id "New Title" "New Description" "In Progress"`, `python todo_app.py delete task_id`.
 
-5. **Zusätzliche Funktionen (optional):**
+5. **Zusätzliche Funktionen (optional):** 🌶🌶🌶🌶
     - Implementiere eine Funktion zum Suchen von Aufgaben nach Titel oder Status.
     - Füge eine Funktion hinzu, um alle Aufgaben nach ihrem Status zu zählen.
     - Erweitere die Datenbankstruktur, um Benutzerinformationen zu speichern und weise Aufgaben bestimmten Benutzern zu.

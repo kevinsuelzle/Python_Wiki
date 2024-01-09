@@ -48,7 +48,7 @@ Die Einrichtung einer dedizierten Testumgebung ist unerlässlich. Hier können �
 
 Erstelle eine MongoDB-Datenbank mit PyMongo und Migration in zwei Umgebungen**
 
-**Teil 1: Datenbankerstellung und Testumgebung**
+**Teil 1: Datenbankerstellung und Testumgebung** 🌶🌶🌶
 
 1. **Datenbankerstellung mit PyMongo:**
    - Schreibe ein Python-Skript, das eine MongoDB-Datenbank mit PyMongo erstellt.
@@ -60,7 +60,7 @@ Erstelle eine MongoDB-Datenbank mit PyMongo und Migration in zwei Umgebungen**
    - Konfiguriere die Containerumgebung für den Zugriff auf die erstellte Datenbank und Sammlung.
    - Starte den Container und überprüfe, ob die Testdaten korrekt eingefügt wurden.
 
-**Teil 2: Datenbankmigration und Produktionsumgebung**
+**Teil 2: Datenbankmigration und Produktionsumgebung** 🌶🌶🌶
 
 3. **Datenbankmigrationsskript:**
    - Entwickle ein Python-Skript für die Migration der Datenbank. Beispiel: Ändere den Datentyp eines Feldes oder füge ein neues Feld hinzu.

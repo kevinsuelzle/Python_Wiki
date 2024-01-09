@@ -165,7 +165,7 @@
 
 | Woche | Unterricht                                                                  | Lernziele                                                               | Begriffssammlung                                                    |
 | ----- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------- | 
-|       | [NoSQL Intro Motivation](datenbanken/nosql/intro/intro.md)                  | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md)                                 |
+|       | [NoSQL Intro Motivation](datenbanken/nosql/intro.md)                  | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md)                                 |
 |       | [Key-Value Stores](datenbanken/nosql/key_value_stores.md)                   | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md)                                 |
 |       | [Document Stores](datenbanken/nosql/document_stores.md)                     | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md)                                 |
 |       | [Graphen Datenbanken](datenbanken/datenbanken/nosql/graphen_datenbanken.md) | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md)                                 |

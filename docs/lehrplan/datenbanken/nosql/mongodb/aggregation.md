@@ -152,40 +152,40 @@ In diesem Beispiel haben wir eine einfache Zählung der Vorkommen jedes Namens i
 ## Aufgaben
 [90 min]
 
-1. **Gesamtpreis der Bestellungen pro Produkt:**
+1. **Gesamtpreis der Bestellungen pro Produkt:** 🌶🌶🌶
       - Verwende MapReduce, um den Gesamtpreis der Bestellungen pro Produkt zu berechnen.
 
-2. **Durchschnittsalter der Benutzer in jeder Stadt:**
+2. **Durchschnittsalter der Benutzer in jeder Stadt:** 🌶🌶🌶
       - Berechne mithilfe von MapReduce das Durchschnittsalter der Benutzer in jeder Stadt.
 
-3. **Anzahl der Bestellungen pro Tag:**
+3. **Anzahl der Bestellungen pro Tag:** 🌶🌶🌶
       - Verwende MapReduce, um die Anzahl der Bestellungen für jeden Tag zu zählen.
 
-4. **Gesamtpreis der Produkte in jedem Warenkorb:**
+4. **Gesamtpreis der Produkte in jedem Warenkorb:** 🌶🌶🌶
       - Berechne mithilfe von MapReduce den Gesamtpreis der Produkte in jedem Warenkorb.
 
-5. **Anzahl der Bestellungen pro Kunde:**
+5. **Anzahl der Bestellungen pro Kunde:** 🌶🌶🌶
       - Zähle mithilfe von MapReduce die Anzahl der Bestellungen für jeden Kunden.
 
-6. **Durchschnittliche Anzahl der Produkte in den Warenkörben:**
+6. **Durchschnittliche Anzahl der Produkte in den Warenkörben:** 🌶🌶🌶
       - Berechne mithilfe von MapReduce die durchschnittliche Anzahl der Produkte in den Warenkörben.
 
-7. **Durchschnittlicher Warenkorbpreis:**
+7. **Durchschnittlicher Warenkorbpreis:** 🌶🌶🌶
     - Berechne den durchschnittlichen Gesamtpreis aller Artikel im Warenkorb (Sammlung: Warenkorb).
 
-8. **Häufigkeit der Produktkäufe:**
+8. **Häufigkeit der Produktkäufe:** 🌶🌶🌶
     - Gruppiere die Bestellungen nach Produkt und zähle, wie oft jedes Produkt gekauft wurde (Sammlungen: Bestellungen, Produkte).
 
-9. **Gesamtwert aller Bestellungen:**
+9. **Gesamtwert aller Bestellungen:** 🌶🌶🌶
     - Berechne den Gesamtwert aller Bestellungen unter Berücksichtigung der Produktmenge und des Einzelpreises (Sammlungen: Bestellungen, Produkte).
 
-10. **Anzahl der Kunden pro Stadt:**
+10. **Anzahl der Kunden pro Stadt:** 🌶🌶
     - Zähle die Anzahl der Kunden pro Stadt in der Benutzersammlung.
 
-11. **Durchschnittsalter der Kunden:**
+11. **Durchschnittsalter der Kunden:** 🌶🌶
     - Berechne das durchschnittliche Alter aller Kunden in der Benutzersammlung.
 
-12. **Liste der Bücher pro Autor:**
+12. **Liste der Bücher pro Autor:** 🌶🌶
     - Gruppiere die Bücher nach Autoren und erstelle eine Liste der Büchertitel für jeden Autor (Sammlungen: Bücher).
 
 
