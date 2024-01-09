@@ -1,16 +1,16 @@
 # Praktische Übungen
 
-**Projekt Arbeitszeiterfassung**
-
-    Das Projekt besteht aus einem Pyton Programm, einem nginx Webserver und einer MS SQL Server Datenbank.
-    
-    Die Absicht ist es, über Postman geeignete REST Anfragen an das Projekt zu senden.
-    
-    Im Anschluss daran können die übertragenen Daten per REST Anfrage abgerufen werden.
-
 ### **Aufgabe: Projekt 🌶️🌶️🌶️**
 
-Projektbeschreibung:
+## Projekt Arbeitszeiterfassung
+
+Das Projekt besteht aus einem Pyton Programm, einem nginx Webserver und einer MS SQL Server Datenbank.
+
+Die Absicht ist es, über Postman geeignete REST Anfragen an das Projekt zu senden.
+
+Im Anschluss daran können die übertragenen Daten per REST Anfrage abgerufen werden.
+
+### Projektbeschreibung
 
 Das Projekt
 
@@ -35,7 +35,7 @@ Dargestellt wird das mit Containern, die auf folgenden Images basieren:
 - python:3.9.18-slim (ein oft verwendetes stabiles linux) darauf basiert unser Python Programm
 - mcr.microsoft.com/mssql/server:2019-latest (die Datenbank)
 
-Für die Kommunikation mit der datenbank gibt es eine ganze Reihe von Programmen:
+Für die Kommunikation mit der Datenbank gibt es eine ganze Reihe von Programmen:
 
 - Azure Data Studio
 - DBeaver
@@ -45,12 +45,37 @@ Für die Kommunikation mit der datenbank gibt es eine ganze Reihe von Programmen
 - DataGrip (JetBrains)
 - etc...
 
-Nahezu jede Entwicklungsumgebung kann HTTP Anfragen senden und empfangen. Da wir mit PyCharm arbeiten ist hier der
-Menüpunkt `Tools`->`HTTP-Client`->`Create Http Request` der Weg zum Ziel.
+Nahezu jede Entwicklungsumgebung kann HTTP Anfragen senden und empfangen. In PyCharm arbeiten gibt es leider nicht die
+Möglichkeit, wie in der Professional Version, HTTP Requests zu generieren.
 
-Konfiguration:
+### Laden des Programmcodes und der Konfigurationsdateien
 
-- nginx.conf
+Starten sie PyCharm und erstellen sie ein neues Projekt aus folgender öffentlicher
+Quelle: `https://github.com/Joeatc/endpoint-app-python.git`.
+
+Da dieser Kurs sich auf Docker bezieht, werden wir nicht auf alle Details der Python Programmierung eingehen.
+
+Das Programm ist nach dem Laden des Repositories nicht lauffähig. Hierzu wären noch einige Schritte zur
+Konfiguration des Rechners notwendig. Da auch die Bedienung anders ist, wenn die Anwendung nicht aus dem Container
+heraus gestartet wird, lassen wir diesen Teil bewusst weg.
+
+### Konfiguration:
+
+#### requirements.txt
+
+* blinker==1.7.0
+* click==8.1.7
+* Flask==3.0.0
+* Flask-SQLAlchemy==3.1.1
+* itsdangerous==2.1.2
+* Jinja2==3.1.2
+* MarkupSafe==2.1.3
+* pyodbc==5.0.1
+* SQLAlchemy==2.0.25
+* typing_extensions==4.9.0
+* Werkzeug==3.0.1
+
+#### nginx.conf
 
 ```nginx
 events {}
@@ -72,26 +97,25 @@ http {
 }
 ```
 
-**Anmerkung:**
-
 Wir gehen hier nicht auf alle Punkte der nginx.conf ein.
 
-Wichtig zu sehen ist,
+Wichtig ist,
+
 - dass dieser Webserver Anfragen auf die Basisadresse `/` (location)
-- am externen Port 80 (listen 80) entgegennimmt
-- und dann an den internen Port 3000 weiterleitet (proxy_pass).
+- am internen Port 80 (listen 80) entgegennimmt
+- und dann an den Port 3000 des Docker internen Netzwerks weiterleitet (proxy_pass).
 
-- dockerfile
+#### Dockerfile
 
-  Das Dockerfile fällt etwas komplexer aus, da die Konfiguration des Images auf die Verwendung des Microsoft SQL Servers
-  eingestellt werden muss. Es müssen Treiber geladen werden und in den Container eingebaut werden.
+Das Dockerfile fällt etwas komplexer aus, da die Konfiguration des Images auf die Verwendung des Microsoft SQL Servers
+eingestellt werden muss. Es müssen Treiber geladen werden und in den Container eingebaut werden.
 
 ```bash
 
 # Use an official Python runtime as a parent image
 # This is the latest official image based on debian linux
 # We ensure to use a amd64 image. That is needed to make the sql drivers work
-FROM --platform=linux/amd64 python:3.9.18-slim
+FROM --platform=linux/amd64 python:3.12.0-slim
 
 # Set the working directory in the container
 WORKDIR /app
@@ -137,8 +161,6 @@ ENV FLASK_APP=App.py
 CMD ["python", "./app.py"]
 ```
 
-**Fazit:**
-
 Wenn wir ein Python Programm auf unserem Computer erstellen, müssen wir über `ìmport` Pakete einbinden, die uns
 notwendige Funktionen bereitstellen. Im Hintergrund laufen Prozess, die den Pythoncode zur Laufzeit des Programmes
 interpretieren und damit erst ausführbar machen.
@@ -148,7 +170,7 @@ All das weiß ein offizielles Basis-Image nicht.
 Über das `RUN` Kommando im Dockerfile arbeiten wir alle Schritte ab, die notwendig sind, um das Python Programm
 lauffähig und ausführbar zu machen. Es stellt unsere Umgebung so her, dass sie unserer lokalen Umgebung entspricht.
 
-- docker-compose.yaml
+#### docker-compose.yaml
 
 ```yaml
 version: '3'
@@ -161,7 +183,7 @@ services:
       - "80:80"
 
   sql-server:
-    image: mcr.microsoft.com/mssql/server:2019-latest
+    image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Sql12345
@@ -179,136 +201,174 @@ services:
       - sql-server
 ```
 
-**Anmerkung:**
-
 Diese YAML-Datei definiert drei Services:
 
-    - nginx: der Webserver mit dem Bind-Mount nginx.conf und dem Port Mapping 80:80.
-      So kann die Konfigurationsdatei von der Festplatte gelesen werden und Anfragen an den Port 80 werden registriert
-      und
-      weiter verarbeitet wie in
-      der Konfigurationsdatei beschrieben.
-    - sql-server: der SQL Server von Microsoft wird in der aktuellen Version 2019 geladen, seine Lizenzbestimmungen
-      werden
-      akzeptiert und das Passwort für den allgemeinen Nutzer `sa`wird festgelegt. Der Port 1433, der Standardport von
-      SQL-Server, wird intern verwendet und nach außen hin freigegeben. So können wir von anderen Anwendungen auf dem
-      lokalen Rechner auf die Datenbank zugreifen.
-    - node-app: ein Container, der nach Vorschriften des Dockerfile zu bauen ist und der auf den Webserver hören soll.
-      Zudem
-      ist er abhängig von der Datenbank.
+- nginx: der Webserver mit dem Bind-Mount nginx.conf und dem Port Mapping 80:80.
+  So kann die Konfigurationsdatei von der Festplatte gelesen werden und Anfragen an den Port 80 werden registriert
+  und
+  weiter verarbeitet wie in
+  der Konfigurationsdatei beschrieben.
+- sql-server: der SQL Server von Microsoft wird in der aktuellen Version 2019 geladen, seine Lizenzbestimmungen
+  werden
+  akzeptiert und das Passwort für den allgemeinen Nutzer `sa`wird festgelegt. Der Port 1433, der Standardport von
+  SQL-Server, wird intern verwendet und nach außen hin freigegeben. So können wir von anderen Anwendungen auf dem
+  lokalen Rechner auf die Datenbank zugreifen.
+- node-app: ein Container, der nach Vorschriften des Dockerfile zu bauen ist und der auf den Webserver hören soll.
+  Zudem
+  ist er abhängig von der Datenbank.
 
-- Vorbereitung der Datenbank
+#### Vorbereitung der Datenbank
 
-  Jede Verbindung zu einer Datenbank braucht mindestens vier Verbindungsparameter:
-    - host: der Computer, auf dem die Datenbank läuft. Hier `localhost`
-    - port: der Port, auf dem die Datenbank auf dem Host erreichbar ist. Hier `1433`
-    - user: der Benutzername. Hier `sa`
-    - password: das Passwort des Benutzers. Hier `Sql12345`
+Was die App nicht kann ist das Erstellen der Datenbank. Deswegen sind die Schritte vorweg notwendig.
 
-  Hier ein Beispiel aus PyCharm Professional:
+Um mit der Datenbank kommunizieren zu können, muss der Container dazu laufen.
 
-  ![img_8.png](img_8.png)
+Wir starten den Container über ein Terminal in PyCharm. Gehen Sie in PyCharm, im offenen Projekt, auf das Terminal:
 
-  Stellen wir also die Verbindung zur Datenbank her. Die Tools verwenden unter Umständen eigene Treiber. Hier muss
-  individuell geschaut und recherchiert werden.
+![img_18.png](img_18.png)
 
-  Sobald die Verbindung steht, brauchen wir eine Kommandozeile, um mit der Datenbank zu reden. Diese öffnet sich oft
-  schon automatisch und es wird auch ein Strukturbaum der Datenbank angezeigt. Falls nicht, suchen sie nach
-  Einstellungen, die diesen Strukturbaum anzeigt.
+Starten Sie den Datenbank Container mit folgendem Kommando:
 
-  In unserer Anwendung wollen wir eine Verbindung zur Datenbank herstellen. Diese existiert aber noch nicht. Daher muss
-  über ein Tool unserer Wahl, die Datenbank mit dem Kommando `CREATE DATABASE Zeiterfassung;` erstellt werden.
+```bash
+docker compose up -d sql-server
+```
 
-  ![img_9.png](img_9.png)
+Damit wird ausschließlich der Datenbank Container gestartet. Wie in der docker-compose.yml Datei bezeichnet heißt der
+Service `sql-server`. Das ist notwendig, damit beim Starten des web Services keine Fehlermeldung entsteht und der
+Container stoppt.
 
-  Geben sie das Kommando in die Konsole ein und führen sie es aus. Im Strukturbaum sollte jetzt die Datenbank zu sehen
-  sein.
+Jede Verbindung zu einer Datenbank braucht mindestens vier Verbindungsparameter:
 
-  Damit sind alle Vorbereitungen für die Datenbank abgeschlossen.
+- host: der Computer, auf dem die Datenbank läuft. Hier `localhost`
+- port: der Port, auf dem die Datenbank auf dem Host erreichbar ist. Hier `1433` (Microsoft Standard)
+- user: der Benutzername. Hier `sa`
+- password: das Passwort des Benutzers. Hier `Sql12345`
 
-- Das Python-Programm
+Um eine Verbindung zur Datenbank herzustellen, benötigen wir Visual Studio Code mit der Erweiterung SQL Server.
 
-  Starten sie PyCharm und erstellen sie ein neues Projekt aus folgender öffentlicher
-  Quelle: `https://github.com/Joeatc/endpoint-app-python.git`.
+![img_10.png](img_10.png)
 
-  Da dieser Kurs sich auf Docker bezieht, werden wir nicht im Detail auf die Python Programmierung eingehen.
+Nach dem Auswählen des Datenbanksymbols links im Menü sollte der Dialog so aussehen:
 
-  Das Programm ist so nicht lauffähig. Hierzu wären einige Schritte zu erledigen, die wir uns aus dem gleichen Grund
-  sparen.
+![img_11.png](img_11.png)
 
-- Container erstellen und starten
+Legen Sie eine neue Verbindung an:
 
-  Öffnen sie nun die Konsole in PyCharm und führen sie folgenden Befehl aus:
+![img_12.png](img_12.png)
+
+Geben Sie die Anmeldedaten nacheinander ein und bestätigen Sie die Zertifikatsmeldung.
+
+![img_13.png](img_13.png)
+
+Sobald die Verbindung steht, brauchen wir eine Kommandozeile, um mit der Datenbank zu reden. Diese öffnet sich oft
+schon automatisch und es wird auch ein Strukturbaum der Datenbank angezeigt. Falls nicht, suchen sie nach
+Einstellungen, die diesen Strukturbaum anzeigt.
+
+In unserer Anwendung wollen wir eine Verbindung zur Datenbank herstellen. Diese existiert aber noch nicht. Daher muss
+die Datenbank erstellt werden.
+
+Wählen Sie im Strukturbaum die Datenbank `master` aus und öffnen Sie mit einem Rechtsklick eine neue Abfrage
+Geben Sie das Kommando `CREATE DATABASE Zeiterfassung;` ein und führen Sie es mit einem Klick auf das grüne Dreieck oben
+rechts aus.
+
+![img_16.png](img_16.png)
+
+Mit einem Rechtsklick auf `Datenbanken -> aktualisieren` wird auch die neue Datenbank angezeigt. In den Messages wird
+ebenfalls der Erfolg der Operation angezeigt.
+
+![img_17.png](img_17.png)
+
+Damit sind alle Vorbereitungen für die Datenbank abgeschlossen.
+
+### Das Python-Programm
+
+#### Container erstellen und starten
+
+Öffnen sie nun die Konsole in PyCharm und führen sie folgenden Befehl aus:
 
 ```bash
 docker compose up -d 
 ```
 
-Dies weist die Docker Engine an, die docker-compose.yml Datei abzuarbeiten. Sie sehen, wie die Images geladen werden
-und wie das IMage für das Python Programm gebaut wird. Viele Schritte laufen ab, bis das Image endlich fertig ist.
-Endlich werden die drei Container gestartet.
+Dies weist die Docker Engine an, die docker-compose.yml vollständig Datei abzuarbeiten. Dabei ist es unerheblich, ob bereits Container laufen. Sie sehen, wie die Images geladen werden
+und wie das Image für das Python Programm gebaut wird. Viele Schritte laufen ab, bis das Image endlich fertig ist.
 
-Prüfen sie in Docker Desktop den Status der Container, schauen sie in die Log Dateien hinein. Ist alles in Ordnung?
+Prüfen sie in Docker Desktop den Status der Container, schauen sie in die Log Dateien hinein.
 
 ![img_3.png](img_3.png)
 
-- Das Python-Programm
+Wechseln Sie zur Python App in PyCharm. 
+Im Verzeichnis `/routes/` werden drei möglich Routen für das Programm definiert:
 
-  Im Verzeichnis `/routes/` werden drei möglich Routen für das Programm definiert:
+- `/` die Wurzel Route. Hier wird nur ein einfacher Text ausgegeben.
+- `getAllWorkItems` die Route holt alle erfassten Arbeitszeiten aus der Datenbank und gibt sie als JSON Objekte
+  zurück.
+- `insertWorkItem` diese Route nimmt ein JSON Objekt mit den Daten einer Arbeitseinheit und sendet es an die
+  Datenbank.
 
-    - `/` die Wurzel Route. Hier wird nur ein einfacher Text ausgegeben.
-    - `getAllWorkItems` die Route holt alle erfassten Arbeitszeiten aus der Datenbank und gibt sie als JSON Objekte
-      zurück.
-    - `insertWorkItem` diese Route nimmt ein JSON Objekt mit den Daten einer Arbeitseinheit und sendet es an die
-      Datenbank.
+Sie sehen, wie die Flask/SQLAlchemy die SQL Kommandos für INSERT und SELECT in den Befehlen kapselt.
+In App.py bewirkt der Aufruf von `db.create.all()` die Erstellung der Tabellen. Auch hier wird der
+Befehl `CREATE TABLE ...` völlig verschleiert.
 
-  Erkennen sie, wie die Flask/SQLAlchemy die SQL Kommandos für INSERT und SELECT in den Befehlen kapselt.
-  In App.py bewirkt der Aufruf von `db.create.all()` die Erstellung der Tabellen. Auch hier wird der
-  Befehl `CREATE TABLE ...` völlig verschleiert.
+### Arbeiten mit dem Programm
 
-  Was die App nicht kann ist aber das Erstellen der Datenbank. Deswegen waren die Schritte vorweg notwendig.
+Um mit dem Programm arbeiten zu können, müssen HTTP Anfragen gesendet werden.
+Hier die Version mit Postman Daten senden (POST request):
 
-- Arbeiten mit dem Programm
+POST Adresse: `http://localhost/insertWorkItem`
 
-  Um mit dem Programm arbeiten zu können, müssen HTTP Anfragen gesendet werden.
-  Hier die Version mit Postman Daten senden (POST request):
+Das JSON Datenobjekt:
 
-  ![img_4.png](img_4.png)
+```JSON
+{
+  "date": "2023-06-30",
+  "startTime": "06:30",
+  "endTime": "11:30",
+  "breakDuration": 0,
+  "projectNumber": 5,
+  "subprojectNumber": 17,
+  "activity": "Applikationen an den Büroserver angepasst, damit der Workflow für die Registrierung der Stunden dort funktioniert.",
+  "reviewRequired": false
+}
+```
 
-  Hier die Abfrage der Datenbank (GET request):
+Hier die Abfrage der Datenbank (GET request):
 
-  ![img_5.png](img_5.png)
+GET Adresse: `http:://localhost/getAllWorkItems`
+
+Zum Senden dieser Anfragen nutzen wir erneut Visual Studio Code mit dem Paket REST Client:
+
+![img_19.png](img_19.png)
+
+Wechseln Sie in das Applikationsverzeichnis und laden sie die Datei `requests.http`.
+
+![img_20.png](img_20.png)
+
+Sie können die einzelnen Requests auswählen und mit Rechtsklick auf `Send Request` ausführen.
+
+![img_21.png](img_21.png)
 
 Wenn die Anfragen erfolgreich abgearbeitet werden, ist unsere Anwendung einsatzbereit.
 
-Sie arbeiten alle im selben Netzwerk. Finden sie die Adresse ihres Computers über
+### Variationen
+
+Sie arbeiten alle im selben Netzwerk. Finden sie die IP-Adresse ihres Computers über
 `Systemsteuereung->Netzwerk->WLAN-details`
 
 ![img_6.png](img_6.png)
 
-Versuchen sie folgendes:
+Machen sie folgendes:
 
-- Verändern sie die Daten im POST Request so, dass der Text im Feld `activity` sie eindeutig erkenntlich macht.
-- Verändern sie auch Uhrzeiten oder Datum, beachten sie dabei die amerikanische Schreibweise.
-- Geben sie mehrere Datensätze ein.
-- Prüfen sie mit dem GET Request die erfolgreiche Übertragung und Speicherung ihrer Eingabe
-- tauschen sie untereinander die IP-Adressen und ersetzen sie in den POST/GET Requests `localhost` durch die
+- Geben Sie mit dem POST Request einen oder mehrere Datensätze ein, in denen Sie die Uhrzeiten, das Datum oder den
+  Inhalt des Feldes `activity` verändern. **Achtung:** Das Format des Datums ist zwingend `yyyy-mm-dd`. Schreiben Sie
+  zusätzlich ihren Namen in den Text für das `activity` Feld.
+- Prüfen Sie mit dem GET Request die erfolgreiche Übertragung und Speicherung ihrer Eingabe.
+- Tauschen Sie untereinander ihre IP-Adressen und ersetzen Sie sie in den POST/GET Requests `localhost` durch die
   IP-Adresse: `http://192.168.178.42/insertWorkItem` zum Beispiel.
+- Geben Sie erneut GET und POST Requests ein.
 
 Sie sollten jetzt die Daten ihres Tauschpartners sehen oder neue Daten zu seiner Datenbank hinzufügen können.
 
-## Zusammenfassung
-
-Das Beispiel soll ihnen einen Eindruck verschaffen, welches Aufwandes es bedarf, um eine solch einfache Funktion
-bereitzustellen.
-Andererseits erkennen sie auch, das ein einfaches `docker compose up -d` durchaus in der Lage ist, eine hochkomplexe
-Anwendung aus dem Internet zu laden, aufzubauen und zu starten.
-Würden wir unseren selbst gebautes Image auf Docker Hub ablegen, so würde der Bau des Images noch entfallen.
-
-Nicht berücksichtigt in dieser Applikation wurden Sicherheitsaspekte, Datenschutz und Benutzerverifizierung.
-Solche Arbeiten könnten weitere Container erledigen. Die App würde als zentrale Stelle dafür infrage kommen, meist
-werden jedoch einige Routen von nginx direkt an die passenden Container weitergeleitet (proxy_pass und location). Dies
-hängt ganz von der Anwendung selbst ab.  
 
 
 
