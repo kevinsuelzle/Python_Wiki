@@ -26,7 +26,7 @@ um ein Docker-Image zu erstellen. Jede Anweisung im Dockerfile fügt eine neue S
 Wir Erstellen eine Datei namens `Dockerfile`:
 
 ```Dockerfile
-FROM python:3.12-slim
+FROM python:3.12.0-slim
 COPY . /app
 WORKDIR /app
 CMD ["python", "app.py"]
@@ -36,7 +36,7 @@ In den Zeilen passiert nacheinander das folgendes:
 
 **Definieren der Basisumgebung:** Die erste Anweisung in einem Dockerfile ist in der Regel `FROM`, 
 die ein Basis-Image angibt, auf dem das neue Image aufbaut. Hier nutzen wir das Image `python` 
-in der Version `3.8-slim`, das aus
+in der Version `3.12.0-slim`, das aus
 dem [Docker Hub Repository](https://hub.docker.com/_/python) heruntergeladen wird. 
 Es enthält einen Python-Interpreter, sodass wir Pythoncode in unserer `app.py` innerhalb des Containers
 ausführen können. Es handelt sich um ein offizielles Image, das für seine Zuverlässigkeit und Sicherheit bekannt ist.

@@ -21,62 +21,57 @@
 
 # Wichtige Docker-Kommandozeilenbefehle:
 
-| Befehl                   | Beschreibung                                                                                                                                                              |
-|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `docker run`             | Erstellt und startet einen Container aus einem Image.                                                                                                                     |
-| `docker build`           | Baut ein Image aus einem Dockerfile.                                                                                                                                      |
-| `docker pull`            | Lädt ein Image oder ein Repository aus einer Registry herunter.                                                                                                           |
-| `docker push`            | Lädt ein Image oder ein Repository in eine Registry hoch.                                                                                                                 |
-| `docker images`          | Listet alle lokal gespeicherten Docker-Images auf.                                                                                                                        |
-| `docker rmi`             | Entfernt ein oder mehrere Docker-Images.                                                                                                                                  |
-| `docker ps`              | Zeigt laufende Container an. Mit `-a` werden alle Container angezeigt.                                                                                                    |
-| `docker stop`            | Stoppt einen oder mehrere laufende Container.                                                                                                                             |
-| `docker start`           | Startet einen oder mehrere gestoppte Container.                                                                                                                           |
-| `docker restart`         | Startet einen oder mehrere Container neu.                                                                                                                                 |
-| `docker rm`              | Entfernt einen oder mehrere Container.                                                                                                                                    |
-| `docker exec`            | Führt einen Befehl in einem laufenden Container aus.                                                                                                                      |
-| `docker logs`            | Holt die Logs eines Containers.                                                                                                                                           |
-| `docker inspect`         | Gibt detaillierte Informationen über Container oder Images aus.                                                                                                           |
-| `docker network`         | Verwaltet Docker-Netzwerke.                                                                                                                                               |
-| `docker volume`          | Verwaltet Docker-Volumes für die Datenspeicherung.                                                                                                                        |
-| `docker compose`         | Verwendet Docker Compose zum Verwalten von Multi-Container-Anwendungen.                                                                                                   |
-| `docker stats`           | Zeigt eine Live-Stream-Statistik laufender Container an.                                                                                                                  |
-| `docker attach`          | Verbindet die lokale Eingabe, Ausgabe und Fehlerausgabe mit einem laufenden Container.                                                                                    |
-| `docker cp`              | Kopiert Dateien oder Verzeichnisse zwischen einem Container und dem lokalen Dateisystem.                                                                                  |
-| `docker diff`            | Zeigt Änderungen an Dateien oder Verzeichnissen in einem Container-Dateisystem an.                                                                                        |
-| `docker port`            | Zeigt die öffentlichen Port-Bindungen eines Containers an.                                                                                                                |
-| `docker search`          | Sucht nach Images in einer Docker-Registry.                                                                                                                               |
-| `docker save`            | Speichert ein Image in einer TAR-Datei.                                                                                                                                   |
-| `docker load`            | Lädt ein Image aus einer TAR-Datei.                                                                                                                                       |
-| `docker info`            | Zeigt Systemweite Informationen über Docker, einschließlich der Anzahl der Container und Images, Speicher- und Netzwerkkonfiguration, Kernel-Version usw.                 |
-| `docker version`         | Zeigt Informationen über die Docker-Version, einschließlich der Client- und Server-Version (Docker-Daemon).                                                               |
-| `docker system df`       | Zeigt die belegte Speichermenge durch Docker-Images, Container, Volumes und Build Cache.                                                                                  |
-| `docker system prune`    | Entfernt ungenutzte Daten, um Speicherplatz freizugeben. Dies umfasst ungenutzte Container, Netzwerke, Images (sowohl hängende als auch ungenutzte) und optional Volumes. |
-| `docker network ls`      | Listet alle Netzwerke auf, die von Docker verwaltet werden.                                                                                                               |
-| `docker network create`  | Erstellt ein neues Netzwerk.                                                                                                                                              |
-| `docker network inspect` | Zeigt detaillierte Informationen zu einem oder mehreren Netzwerken an.                                                                                                    |
-| `docker network rm`      | Entfernt ein oder mehrere Netzwerke.                                                                                                                                      |
-| `docker volume ls`       | Listet alle Volumes auf, die von Docker verwaltet werden.                                                                                                                 |
-| `docker volume create`   | Erstellt ein neues Volume.                                                                                                                                                |
-| `docker volume inspect`  | Zeigt detaillierte Informationen zu einem oder mehreren Volumes an.                                                                                                       |
-| `docker volume rm`       | Entfernt ein oder mehrere Volumes.                                                                                                                                        |
-| `docker login`           | Meldet sich bei einer Docker-Registry an.                                                                                                                                 |
-| `docker logout`          | Meldet sich von einer Docker-Registry ab.                                                                                                                                 |
-| `docker context ls`      | Listet alle Docker-Kontexte auf. Ein Kontext definiert, wie Befehle mit einem bestimmten Docker-Host und einer Docker-Registry interagieren.                              |
-| `docker context create`  | Erstellt einen neuen Docker-Kontext.                                                                                                                                      |
-| `docker context use`     | Wechselt zu einem anderen Docker-Kontext.                                                                                                                                 |
-| `docker context rm`      | Entfernt einen Docker-Kontext.                                                                                                                                            |
-| `docker-compose up`      | Startet die Container, die in der `docker-compose.yml`-Datei definiert sind. Mit der Option `-d` werden die Container im Hintergrund gestartet.                           |
-| `docker-compose down`    | Stoppt und entfernt alle Container, Netzwerke, Volumes und Images, die durch `docker-compose up` erstellt wurden.                                                         |
-| `docker-compose build`   | Baut alle Dienste, die in der `docker-compose.yml`-Datei definiert sind und ein `build`-Attribut haben.                                                                   |
-| `docker-compose pull`    | Lädt alle Images herunter, die in der `docker-compose.yml`-Datei definiert sind, aber nicht lokal gebaut werden.                                                          |
-| `docker-compose push`    | Lädt alle Images zu einem Registry-Server hoch, die in der `docker-compose.yml`-Datei definiert sind und ein `build`-Attribut haben.                                      |
-| `docker-compose restart` | Startet alle Container neu, die in der `docker-compose.yml`-Datei definiert sind.                                                                                         |
-| `docker-compose stop`    | Stoppt alle laufenden Container, die durch `docker-compose up` gestartet wurden, ohne sie zu entfernen.                                                                   |
-| `docker-compose start`   | Startet alle gestoppten Container, die durch `docker-compose up` erstellt wurden.                                                                                         |
-| `docker-compose logs`    | Zeigt die Log-Ausgaben aller Container an. Mit der Option `-f` können die Logs live verfolgt werden.                                                                      |
-| `docker-compose exec`    | Führt einen Befehl in einem laufenden Container aus. Nützlich für das Debugging oder die Interaktion mit Diensten.                                                        |
-| `docker-compose run`     | Führt einen einmaligen Befehl in einem Dienst aus. Ideal für administrative Aufgaben oder Tests.                                                                          |
+| Befehl                   | Beschreibung                                                                                                                                                              | Referenz      |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| `docker run`             | Erstellt und startet einen Container aus einem Image.                                                                                                                     | docker --help |
+| `docker build`           | Baut ein Image aus einem Dockerfile.                                                                                                                                      | docker --help |
+| `docker pull`            | Lädt ein Image oder ein Repository aus einer Registry herunter.                                                                                                           | docker --help |
+| `docker push`            | Lädt ein Image oder ein Repository in eine Registry hoch.                                                                                                                 | docker --help |
+| `docker images`          | Listet alle lokal gespeicherten Docker-Images auf.                                                                                                                        | docker --help |
+| `docker rmi`             | Entfernt ein oder mehrere Docker-Images.                                                                                                                                  | docker --help |
+| `docker ps`              | Zeigt laufende Container an. Mit `-a` werden alle Container angezeigt.                                                                                                    | docker --help |
+| `docker stop`            | Stoppt einen oder mehrere laufende Container.                                                                                                                             | docker --help |
+| `docker start`           | Startet einen oder mehrere gestoppte Container.                                                                                                                           | docker --help |
+| `docker restart`         | Startet einen oder mehrere Container neu.                                                                                                                                 | docker --help |
+| `docker rm`              | Entfernt einen oder mehrere Container.                                                                                                                                    | docker --help |
+| `docker exec`            | Führt einen Befehl in einem laufenden Container aus.                                                                                                                      | docker --help |
+| `docker logs`            | Holt die Logs eines Containers.                                                                                                                                           | docker --help |
+| `docker inspect`         | Gibt detaillierte Informationen über Container oder Images aus.                                                                                                           | docker --help |
+| `docker network`         | Verwaltet Docker-Netzwerke.                                                                                                                                               | docker --help |
+| `docker volume`          | Verwaltet Docker-Volumes für die Datenspeicherung.                                                                                                                        | docker --help |
+| `docker compose`         | Verwendet Docker Compose zum Verwalten von Multi-Container-Anwendungen.                                                                                                   | docker --help |
+| `docker stats`           | Zeigt eine Live-Stream-Statistik laufender Container an.                                                                                                                  | docker --help |
+| `docker attach`          | Verbindet die lokale Eingabe, Ausgabe und Fehlerausgabe mit einem laufenden Container.                                                                                    | docker --help |
+| `docker cp`              | Kopiert Dateien oder Verzeichnisse zwischen einem Container und dem lokalen Dateisystem.                                                                                  | docker --help |
+| `docker port`            | Zeigt die öffentlichen Port-Bindungen eines Containers an.                                                                                                                | docker --help |
+| `docker search`          | Sucht nach Images in einer Docker-Registry.                                                                                                                               | docker --help |
+| `docker save`            | Speichert ein Image in einer TAR-Datei.                                                                                                                                   | docker --help |
+| `docker load`            | Lädt ein Image aus einer TAR-Datei.                                                                                                                                       | docker --help |
+| `docker info`            | Zeigt Systemweite Informationen über Docker, einschließlich der Anzahl der Container und Images, Speicher- und Netzwerkkonfiguration, Kernel-Version usw.                 | docker --help |
+| `docker version`         | Zeigt Informationen über die Docker-Version, einschließlich der Client- und Server-Version (Docker-Daemon).                                                               | docker --help |
+| `docker system df`       | Zeigt die belegte Speichermenge durch Docker-Images, Container, Volumes und Build Cache.                                                                                  | docker --help |
+| `docker system prune`    | Entfernt ungenutzte Daten, um Speicherplatz freizugeben. Dies umfasst ungenutzte Container, Netzwerke, Images (sowohl hängende als auch ungenutzte) und optional Volumes. | docker --help |
+| `docker network ls`      | Listet alle Netzwerke auf, die von Docker verwaltet werden.                                                                                                               | docker --help |
+| `docker network create`  | Erstellt ein neues Netzwerk.                                                                                                                                              | docker --help |
+| `docker network inspect` | Zeigt detaillierte Informationen zu einem oder mehreren Netzwerken an.                                                                                                    | docker --help |
+| `docker network rm`      | Entfernt ein oder mehrere Netzwerke.                                                                                                                                      | docker --help |
+| `docker volume ls`       | Listet alle Volumes auf, die von Docker verwaltet werden.                                                                                                                 | docker --help |
+| `docker volume create`   | Erstellt ein neues Volume.                                                                                                                                                | docker --help |
+| `docker volume inspect`  | Zeigt detaillierte Informationen zu einem oder mehreren Volumes an.                                                                                                       | docker --help |
+| `docker volume rm`       | Entfernt ein oder mehrere Volumes.                                                                                                                                        | docker --help |
+| `docker login`           | Meldet sich bei einer Docker-Registry an.                                                                                                                                 | docker --help |
+| `docker logout`          | Meldet sich von einer Docker-Registry ab.                                                                                                                                 | docker --help |
+| `docker-compose up`      | Startet die Container, die in der `docker-compose.yml`-Datei definiert sind. Mit der Option `-d` werden die Container im Hintergrund gestartet.                           | docker --help |
+| `docker-compose down`    | Stoppt und entfernt alle Container, Netzwerke, Volumes und Images, die durch `docker-compose up` erstellt wurden.                                                         | docker --help |
+| `docker-compose build`   | Baut alle Dienste, die in der `docker-compose.yml`-Datei definiert sind und ein `build`-Attribut haben.                                                                   | docker --help |
+| `docker-compose pull`    | Lädt alle Images herunter, die in der `docker-compose.yml`-Datei definiert sind, aber nicht lokal gebaut werden.                                                          | docker --help |
+| `docker-compose push`    | Lädt alle Images zu einem Registry-Server hoch, die in der `docker-compose.yml`-Datei definiert sind und ein `build`-Attribut haben.                                      | docker --help |
+| `docker-compose restart` | Startet alle Container neu, die in der `docker-compose.yml`-Datei definiert sind.                                                                                         | docker --help |
+| `docker-compose stop`    | Stoppt alle laufenden Container, die durch `docker-compose up` gestartet wurden, ohne sie zu entfernen.                                                                   | docker --help |
+| `docker-compose start`   | Startet alle gestoppten Container, die durch `docker-compose up` erstellt wurden.                                                                                         | docker --help |
+| `docker-compose logs`    | Zeigt die Log-Ausgaben aller Container an. Mit der Option `-f` können die Logs live verfolgt werden.                                                                      | docker --help |
+| `docker-compose exec`    | Führt einen Befehl in einem laufenden Container aus. Nützlich für das Debugging oder die Interaktion mit Diensten.                                                        | docker --help |
+| `docker-compose run`     | Führt einen einmaligen Befehl in einem Dienst aus. Ideal für administrative Aufgaben oder Tests.                                                                          | docker --help |
 
 Diese Tabelle deckt die grundlegenden und am häufigsten verwendeten Docker-Befehle ab. Für spezifischere
 Anforderungen oder erweiterte Optionen ist es ratsam, die Docker-Dokumentation oder die Hilfeoption im

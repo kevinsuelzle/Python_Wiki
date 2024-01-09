@@ -2,7 +2,7 @@
 
 [60min]
 
-Die Installation von Docker unterscheidet sich je nach [Betriebssystem](installation_nicht_mac).
+Die Installation von Docker unterscheidet sich je nach [Betriebssystem](installation_nicht_mac.md).
 
 - Auf dem Mac wird Docker ähnlich wie bei Windows über Docker Desktop installiert.
 - Docker Desktop für Mac verwendet eine virtuelle Maschine im Hintergrund, um Linux-Container auszuführen.

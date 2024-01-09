@@ -11,7 +11,7 @@ minimieren.
 
 **Minimale Images:**
 Verwenden Sie minimale Basis-Images
-wie [python:3.12-slim]( dockerfile_und_docker_compose#beispiel-eines-dockerfiles ), um die Angriffsfläche
+wie [python:3.12.0-slim]( dockerfile_und_docker_compose#beispiel-eines-dockerfiles ), um die Angriffsfläche
 zu reduzieren. Je weniger
 im Image enthalten
 ist, desto geringer ist das Risiko.
@@ -64,7 +64,7 @@ Der `user` Befehl legt den akzeptierten Benutzer für das System fest.
 **Dockerfile für ein minimales Image:**
 
 ```Dockerfile
-FROM python:3.12-slim
+FROM python:3.12.0-slim
 RUN adduser -S meinapp
 USER meinapp
 COPY . /app
