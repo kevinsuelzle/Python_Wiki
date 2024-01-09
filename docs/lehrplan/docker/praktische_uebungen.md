@@ -6,7 +6,7 @@
 
 Das Projekt besteht aus einem Pyton Programm, einem nginx Webserver und einer MS SQL Server Datenbank.
 
-Die Absicht ist es, über Postman geeignete REST Anfragen an das Projekt zu senden.
+Die Absicht ist es, geeignete REST Anfragen an das Projekt zu senden.
 
 Im Anschluss daran können die übertragenen Daten per REST Anfrage abgerufen werden.
 
@@ -32,8 +32,8 @@ Wir benötigen dazu:
 Dargestellt wird das mit Containern, die auf folgenden Images basieren:
 
 - nginx:latest (der Webserver)
-- python:3.9.18-slim (ein oft verwendetes stabiles linux) darauf basiert unser Python Programm
-- mcr.microsoft.com/mssql/server:2019-latest (die Datenbank)
+- python:3.12.0-slim (ein oft verwendetes stabiles linux) darauf basiert unser Python Programm
+- mcr.microsoft.com/mssql/server:2022-latest (die Datenbank)
 
 Für die Kommunikation mit der Datenbank gibt es eine ganze Reihe von Programmen:
 
@@ -41,12 +41,12 @@ Für die Kommunikation mit der Datenbank gibt es eine ganze Reihe von Programmen
 - DBeaver
 - Kommandozeilen Tool von Microsoft
 - Visual Studio Code
-- PyCharm Professionel
+- PyCharm Professional
 - DataGrip (JetBrains)
 - etc...
 
 Nahezu jede Entwicklungsumgebung kann HTTP Anfragen senden und empfangen. In PyCharm arbeiten gibt es leider nicht die
-Möglichkeit, wie in der Professional Version, HTTP Requests zu generieren.
+Möglichkeit, wie in der Professional Version, HTTP Requests zu generieren. Visual Studio Code wird hier verwendet.
 
 ### Laden des Programmcodes und der Konfigurationsdateien
 
@@ -55,25 +55,27 @@ Quelle: `https://github.com/Joeatc/endpoint-app-python.git`.
 
 Da dieser Kurs sich auf Docker bezieht, werden wir nicht auf alle Details der Python Programmierung eingehen.
 
-Das Programm ist nach dem Laden des Repositories nicht lauffähig. Hierzu wären noch einige Schritte zur
-Konfiguration des Rechners notwendig. Da auch die Bedienung anders ist, wenn die Anwendung nicht aus dem Container
-heraus gestartet wird, lassen wir diesen Teil bewusst weg.
+Das Programm ist nach dem Laden des Repositories nicht einfach lauffähig. Hierzu wären noch einige Schritte zur
+Konfiguration des Rechners notwendig (Paket- und Treiberinstallation). Da auch die Bedienung anders ist, wenn die
+Anwendung nicht aus dem Container heraus gestartet wird, lassen wir diesen Teil bewusst weg.
 
 ### Konfiguration:
 
 #### requirements.txt
 
-* blinker==1.7.0
-* click==8.1.7
-* Flask==3.0.0
-* Flask-SQLAlchemy==3.1.1
-* itsdangerous==2.1.2
-* Jinja2==3.1.2
-* MarkupSafe==2.1.3
-* pyodbc==5.0.1
-* SQLAlchemy==2.0.25
-* typing_extensions==4.9.0
-* Werkzeug==3.0.1
+```text
+blinker==1.7.0
+click==8.1.7
+Flask==3.0.0
+Flask-SQLAlchemy==3.1.1
+itsdangerous==2.1.2
+Jinja2==3.1.2
+MarkupSafe==2.1.3
+pyodbc==5.0.1
+SQLAlchemy==2.0.25
+typing_extensions==4.9.0
+Werkzeug==3.0.1
+```
 
 #### nginx.conf
 
@@ -110,7 +112,7 @@ Wichtig ist,
 Das Dockerfile fällt etwas komplexer aus, da die Konfiguration des Images auf die Verwendung des Microsoft SQL Servers
 eingestellt werden muss. Es müssen Treiber geladen werden und in den Container eingebaut werden.
 
-```bash
+```dockerfile
 
 # Use an official Python runtime as a parent image
 # This is the latest official image based on debian linux
@@ -163,7 +165,7 @@ CMD ["python", "./app.py"]
 
 Wenn wir ein Python Programm auf unserem Computer erstellen, müssen wir über `ìmport` Pakete einbinden, die uns
 notwendige Funktionen bereitstellen. Im Hintergrund laufen Prozess, die den Pythoncode zur Laufzeit des Programmes
-interpretieren und damit erst ausführbar machen.
+interpretieren und damit erst ausführbar machen. Oft sind Treiber vorinstalliert.
 
 All das weiß ein offizielles Basis-Image nicht.
 
@@ -223,11 +225,13 @@ Was die App nicht kann ist das Erstellen der Datenbank. Deswegen sind die Schrit
 
 Um mit der Datenbank kommunizieren zu können, muss der Container dazu laufen.
 
-Wir starten den Container über ein Terminal in PyCharm. Gehen Sie in PyCharm, im offenen Projekt, auf das Terminal:
+Wir starten den Container über ein Terminal in PyCharm. Die Docker Engine kann nur dort gestartet werden, wo die
+Konfigurationsdateien und die docker-compose.yml Datei liegen. Gehen Sie in PyCharm, im offenen Projekt, auf das
+Terminal. Dann sind Sie im richtigen Verzeichnis:
 
 ![img_18.png](img_18.png)
 
-Starten Sie den Datenbank Container mit folgendem Kommando:
+Starten Sie den Datenbank-Container mit folgendem Kommando:
 
 ```bash
 docker compose up -d sql-server
@@ -237,14 +241,23 @@ Damit wird ausschließlich der Datenbank Container gestartet. Wie in der docker-
 Service `sql-server`. Das ist notwendig, damit beim Starten des web Services keine Fehlermeldung entsteht und der
 Container stoppt.
 
-Jede Verbindung zu einer Datenbank braucht mindestens vier Verbindungsparameter:
+**Hinweis:**
+Der Begriff Datenbank wird oft in zwei verschiedenen Bedeutungen verwendet. Dies führt gelegentlich zu Verwirrungen.
+
+- `Datenbank` als Synonym für die Datenbank Engine
+- `Datenabnk` als Synonym für eine benannte Datenstruktur. In unserem Fall `Zeiterfassung`.
+
+Um ganz klarzumachen, worum es sich handelt, verwende wird im Weiteren den Begriff `Engine`, wenn das
+Datenbankprogramm selbst gemeint ist.
+
+Jede Verbindung zu einer Engine braucht mindestens vier Verbindungsparameter:
 
 - host: der Computer, auf dem die Datenbank läuft. Hier `localhost`
 - port: der Port, auf dem die Datenbank auf dem Host erreichbar ist. Hier `1433` (Microsoft Standard)
 - user: der Benutzername. Hier `sa`
 - password: das Passwort des Benutzers. Hier `Sql12345`
 
-Um eine Verbindung zur Datenbank herzustellen, benötigen wir Visual Studio Code mit der Erweiterung SQL Server.
+Wir nutzen Visual Studio Code mit der Erweiterung SQL Server.
 
 ![img_10.png](img_10.png)
 
@@ -260,12 +273,11 @@ Geben Sie die Anmeldedaten nacheinander ein und bestätigen Sie die Zertifikatsm
 
 ![img_13.png](img_13.png)
 
-Sobald die Verbindung steht, brauchen wir eine Kommandozeile, um mit der Datenbank zu reden. Diese öffnet sich oft
-schon automatisch und es wird auch ein Strukturbaum der Datenbank angezeigt. Falls nicht, suchen sie nach
-Einstellungen, die diesen Strukturbaum anzeigt.
+Sobald die Verbindung steht, wird der Strukturbaum der Engine angezeigt.
+Wir brauchen eine Kommandozeile, um mit der Engine zu reden.
 
-In unserer Anwendung wollen wir eine Verbindung zur Datenbank herstellen. Diese existiert aber noch nicht. Daher muss
-die Datenbank erstellt werden.
+In unserer Python Anwendung wollen wir eine Verbindung zur Datenbank `Zeiterfassung` herstellen. Diese existiert aber
+noch nicht. Daher muss sie erstellt werden.
 
 Wählen Sie im Strukturbaum die Datenbank `master` aus und öffnen Sie mit einem Rechtsklick eine neue Abfrage
 Geben Sie das Kommando `CREATE DATABASE Zeiterfassung;` ein und führen Sie es mit einem Klick auf das grüne Dreieck oben
@@ -278,44 +290,45 @@ ebenfalls der Erfolg der Operation angezeigt.
 
 ![img_17.png](img_17.png)
 
-Damit sind alle Vorbereitungen für die Datenbank abgeschlossen.
+Damit sind alle Vorbereitungen abgeschlossen.
 
 ### Das Python-Programm
 
 #### Container erstellen und starten
 
-Öffnen sie nun die Konsole in PyCharm und führen sie folgenden Befehl aus:
+Öffnen Sie nun erneut das Terminal in PyCharm und führen Sie folgenden Befehl aus:
 
 ```bash
 docker compose up -d 
 ```
 
-Dies weist die Docker Engine an, die docker-compose.yml vollständig Datei abzuarbeiten. Dabei ist es unerheblich, ob bereits Container laufen. Sie sehen, wie die Images geladen werden
-und wie das Image für das Python Programm gebaut wird. Viele Schritte laufen ab, bis das Image endlich fertig ist.
+Dies weist die Docker Engine an, die docker-compose.yml Datei vollständig abzuarbeiten. Dabei ist es unerheblich, ob
+bereits Container laufen. Sie sehen, wie die Images geladen werden
+und wie das Image für das Python-Programm gebaut wird. Viele Schritte laufen ab, bis das Image endlich fertig ist.
 
-Prüfen sie in Docker Desktop den Status der Container, schauen sie in die Log Dateien hinein.
+Prüfen Sie in Docker Desktop den Status der Container, schauen Sie in die Log-Dateien hinein.
 
 ![img_3.png](img_3.png)
 
-Wechseln Sie zur Python App in PyCharm. 
-Im Verzeichnis `/routes/` werden drei möglich Routen für das Programm definiert:
+Wechseln Sie zur Python App in PyCharm.
+Im Verzeichnis `/routes/` werden drei mögliche Routen für das Programm definiert:
 
-- `/` die Wurzel Route. Hier wird nur ein einfacher Text ausgegeben.
+- `index` die Wurzel Route. Hier wird nur ein einfacher Text ausgegeben.
 - `getAllWorkItems` die Route holt alle erfassten Arbeitszeiten aus der Datenbank und gibt sie als JSON Objekte
   zurück.
 - `insertWorkItem` diese Route nimmt ein JSON Objekt mit den Daten einer Arbeitseinheit und sendet es an die
   Datenbank.
 
-Sie sehen, wie die Flask/SQLAlchemy die SQL Kommandos für INSERT und SELECT in den Befehlen kapselt.
+Flask/SQLAlchemy kapselt die SQL Kommandos für INSERT und SELECT in den Befehlen `db.session.add(work_item)`
+und `WorkItem.query.all()`.
 In App.py bewirkt der Aufruf von `db.create.all()` die Erstellung der Tabellen. Auch hier wird der
 Befehl `CREATE TABLE ...` völlig verschleiert.
 
 ### Arbeiten mit dem Programm
 
 Um mit dem Programm arbeiten zu können, müssen HTTP Anfragen gesendet werden.
-Hier die Version mit Postman Daten senden (POST request):
 
-POST Adresse: `http://localhost/insertWorkItem`
+Adresse: `http://localhost/insertWorkItem`
 
 Das JSON Datenobjekt:
 
@@ -334,7 +347,7 @@ Das JSON Datenobjekt:
 
 Hier die Abfrage der Datenbank (GET request):
 
-GET Adresse: `http:://localhost/getAllWorkItems`
+Adresse: `http:://localhost/getAllWorkItems`
 
 Zum Senden dieser Anfragen nutzen wir erneut Visual Studio Code mit dem Paket REST Client:
 
@@ -344,7 +357,8 @@ Wechseln Sie in das Applikationsverzeichnis und laden sie die Datei `requests.ht
 
 ![img_20.png](img_20.png)
 
-Sie können die einzelnen Requests auswählen und mit Rechtsklick auf `Send Request` ausführen.
+Sie können die einzelnen Requests auswählen (mit der Maus vollständig auswählen) und mit Rechtsklick auf `Send Request`
+ausführen.
 
 ![img_21.png](img_21.png)
 
@@ -356,8 +370,6 @@ Sie arbeiten alle im selben Netzwerk. Finden sie die IP-Adresse ihres Computers 
 `Systemsteuereung->Netzwerk->WLAN-details`
 
 ![img_6.png](img_6.png)
-
-Machen sie folgendes:
 
 - Geben Sie mit dem POST Request einen oder mehrere Datensätze ein, in denen Sie die Uhrzeiten, das Datum oder den
   Inhalt des Feldes `activity` verändern. **Achtung:** Das Format des Datums ist zwingend `yyyy-mm-dd`. Schreiben Sie
