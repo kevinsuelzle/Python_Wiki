@@ -75,6 +75,24 @@ Auf dem Markt gibt es mehrere Robotersimulatoren unter denen man auswählen kann
 | Erweiterbarkeit                    | Möglichkeit zur Erweiterung des Simulators, um zukünftige Anforderungen und Technologien zu integrieren. |
 
 
+## Simulierte und reale Roboter
+
+Viele der Roboter, die man in Webots finden kann, gibt es auch real. Teilweise sind dies sehr kostspielige Industrieroboter oder Forschungsplattformen, teilweise aber auch kostengünstige Roborerplattformen für die Lehre / Didaktik der Robotik:
+
+| Roboterbezeichnung     | Simulierter Roboter in Webots | Link zum realen Roboter | Preis des echten Roboters (ca.) |
+|------------------------|-------------------------------|-------------------------|---------------------------------|
+| Softbank Robotics' Nao | [Referenz](https://www.cyberbotics.com/doc/guide/nao?version=cyberbotics:R2019a) | [Referenz](https://www.generationrobots.com/de/403100-programmierbarer-humanoider-roboter-nao-version-6.html) | 10.000€ |
+| Clearpath Robotics' R2 | [Referenz](https://www.cyberbotics.com/doc/guide/pr2?version=R2021a) | [Referenz](https://clearpathrobotics.com/blog/2023/03/pr2-designs-now-available-on-clearpath-robotics-documentation-website/) | 400.000$ |
+| Robotis TurtleBot3 Burger | [Referenz](https://www.cyberbotics.com/doc/guide/turtlebot3-burger?version=R2021a) | [Referenz](https://www.generationrobots.com/de/402707-turtlebot3-burger.html) | 840€ |
+| iRobot Create 3        | [Referenz](https://www.cyberbotics.com/doc/guide/create?version=R2021a) | [Referenz](https://www.mybotshop.de/iRobot-Create-3-Educational-Robot) | 525€ |
+
+Eine Liste aller Roboter in Webots kann man hier finden:
+
+[Link](https://www.cyberbotics.com/doc/guide/robots?version=R2021a)
+
+
+
+
 ## Aufgaben [200 min]
 
 ### A1: Internetrecherche zu Robotersimulatoren (90min) 🌶️🌶️
