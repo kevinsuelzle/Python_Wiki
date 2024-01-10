@@ -48,7 +48,7 @@ plt.show()
     
 
 
-In diesem Beispiel wird ein einfaches Liniendiagramm erstellt. Die set_xticks und set_yticks Funktionen von Matplotlib werden verwendet, um die Position der Ticks auf der x- und y-Achse anzupassen. Dies sorgt für eine klare Darstellung der Datenpunkte bei 0, 1, 2, 3 auf der x-Achse und 10, 20, 25, 30 auf der y-Achse.
+In diesem Beispiel wird ein einfaches Liniendiagramm erstellt. Die `set_xticks` und `set_yticks` Funktionen von Matplotlib werden verwendet, um die Position der Ticks auf der x- und y-Achse anzupassen. Dies sorgt für eine klare Darstellung der Datenpunkte bei 0, 1, 2, 3 auf der x-Achse und 10, 20, 25, 30 auf der y-Achse.
 
 ### Beispiel 2: Formatierung der Tick-Beschriftungen
 

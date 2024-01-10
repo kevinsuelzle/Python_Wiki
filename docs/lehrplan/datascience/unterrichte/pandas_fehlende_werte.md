@@ -6,7 +6,7 @@ In der Welt der Datenanalyse und des maschinellen Lernens ist der Umgang mit feh
 
 ## Erkennung fehlender Daten
 
-Der erste Schritt im Umgang mit fehlenden Daten ist ihre Identifizierung. In Pandas werden fehlende Daten typischerweise als NaN (Not a Number) oder None dargestellt. Die Methoden `isna()` oder `isnull()` können verwendet werden, um eine boolesche Maske zu erstellen, die angibt, wo in einem DataFrame oder einer Series fehlende Werte vorliegen. Dies ist ein entscheidender Schritt, da das Verständnis des Ausmaßes und der Verteilung fehlender Daten die Strategie für deren Behandlung beeinflussen kann.
+Der erste Schritt im Umgang mit fehlenden Daten ist ihre Identifizierung. In Pandas werden fehlende Daten typischerweise als `NaN` (Not a Number) oder `None` dargestellt. Die Methoden `isna()` oder `isnull()` können verwendet werden, um eine boolesche Maske zu erstellen, die angibt, wo in einem DataFrame oder einer Series fehlende Werte vorliegen. Dies ist ein entscheidender Schritt, da das Verständnis des Ausmaßes und der Verteilung fehlender Daten die Strategie für deren Behandlung beeinflussen kann.
 
 
 ## Entfernung vs. Imputation

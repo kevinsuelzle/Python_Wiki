@@ -53,7 +53,7 @@ plt.show()
     
 
 
-Dieses Beispiel zeigt, wie man zwei Subplots in einer vertikalen Anordnung erstellt. Im ersten Subplot wird eine Sinuskurve und im zweiten eine Kosinuskurve dargestellt. Hier wird plt.subplots(2) verwendet, um zwei Subplots zu erzeugen.
+Dieses Beispiel zeigt, wie man zwei Subplots in einer vertikalen Anordnung erstellt. Im ersten Subplot wird eine Sinuskurve und im zweiten eine Kosinuskurve dargestellt. Hier wird `plt.subplots(2)` verwendet, um zwei Subplots zu erzeugen.
 
 ### Beispiel 2: Subplots mit gemeinsamer Achse
 
@@ -86,7 +86,7 @@ plt.show()
     
 
 
-In diesem Beispiel werden zwei Subplots mit einer gemeinsamen x-Achse erstellt, was nützlich ist, wenn man Datenreihen mit demselben x-Wertebereich vergleichen möchte. Die sharex=True Option sorgt dafür, dass beide Subplots dieselbe x-Achse verwenden.
+In diesem Beispiel werden zwei Subplots mit einer gemeinsamen x-Achse erstellt, was nützlich ist, wenn man Datenreihen mit demselben x-Wertebereich vergleichen möchte. Die `sharex=True` Option sorgt dafür, dass beide Subplots dieselbe x-Achse verwenden.
 
 ### Beispiel 3: Subplots mit unterschiedlichen Diagrammtypen
 
@@ -156,7 +156,7 @@ plt.show()
     
 
 
-Dieses Beispiel zeigt, wie man die Achsenlimits in Subplots anpasst, um die Darstellung der Plots zu verfeinern. Mit set_xlim und set_ylim werden die Grenzen der x- und y-Achsen festgelegt. Damit können wir die Achsenbereiche für jeden Subplot ganz genau festlegen.
+Dieses Beispiel zeigt, wie man die Achsenlimits in Subplots anpasst, um die Darstellung der Plots zu verfeinern. Mit `set_xlim` und `set_ylim` werden die Grenzen der x- und y-Achsen festgelegt. Damit können wir die Achsenbereiche für jeden Subplot ganz genau festlegen.
 
 ### Beispiel 5: 2x2 Subplot Anordnung
 

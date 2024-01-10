@@ -47,7 +47,7 @@ print(sliced_arr)
     [2 3 4]
 
 
-In diesem Beispiel wird ein eindimensionales NumPy-Array arr erstellt. Dann wird ein Teil des Arrays durch Slicing ausgewählt. arr[1:4] wählt die Elemente an den Positionen 1 bis 3 aus (das Element an Position 4 ist nicht inbegriffen), was zu [2, 3, 4] führt.
+In diesem Beispiel wird ein eindimensionales NumPy-Array arr erstellt. Dann wird ein Teil des Arrays durch Slicing ausgewählt. `arr[1:4]` wählt die Elemente an den Positionen 1 bis 3 aus (das Element an Position 4 ist nicht inbegriffen), was zu [2, 3, 4] führt.
 
 ### Beispiel 2: Slicing mit Schrittweiten
 
@@ -65,7 +65,7 @@ print(sliced_arr)
     [1 3 5 7 9]
 
 
-Hier wird ein eindimensionales Array arr erstellt und dann mit einer Schrittweite von 2 gesliced. arr[::2] wählt jedes zweite Element im Array aus, beginnend mit dem ersten, was zu [1, 3, 5, 7, 9] führt.
+Hier wird ein eindimensionales Array arr erstellt und dann mit einer Schrittweite von 2 gesliced. `arr[::2]` wählt jedes zweite Element im Array aus, beginnend mit dem ersten, was zu [1, 3, 5, 7, 9] führt.
 
 ### Beispiel 3: Slicing von mehrdimensionalen Arrays
 
@@ -92,7 +92,7 @@ print("Erste Spalte:", first_column)
     Erste Spalte: [1 4 7]
 
 
-In diesem Beispiel wird ein zweidimensionales Array arr erstellt. Durch arr[0, :] wird die erste Zeile des Arrays ausgewählt und durch arr[:, 0] die erste Spalte. Die Ausgabe ist die erste Zeile [1, 2, 3] und die erste Spalte [1, 4, 7].
+In diesem Beispiel wird ein zweidimensionales Array arr erstellt. Durch `arr[0, :]` wird die erste Zeile des Arrays ausgewählt und durch `arr[:, 0]` die erste Spalte. Die Ausgabe ist die erste Zeile [1, 2, 3] und die erste Spalte [1, 4, 7].
 
 ### Beispiel 4: Slicing mit negativen Indizes
 
@@ -128,7 +128,7 @@ print(sliced_arr)
     [4 5]
 
 
-In diesem Beispiel wird ein Array arr erstellt und dann eine bedingte Slicing-Operation angewendet. arr[arr > 3] wählt alle Elemente aus, die größer als 3 sind. Das Ergebnis ist [4, 5].
+In diesem Beispiel wird ein Array `arr` erstellt und dann eine bedingte Slicing-Operation angewendet. `arr[arr > 3]` wählt alle Elemente aus, die größer als 3 sind. Das Ergebnis ist [4, 5].
 
 ## Aufgaben [120 min]
 

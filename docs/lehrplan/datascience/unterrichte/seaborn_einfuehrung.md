@@ -163,7 +163,7 @@ plt.show()
     
 
 
-In diesem Beispiel verwenden wir den iris-Datensatz, um einen Pair Plot zu erstellen. Dieser Plot zeigt Scatter Plots für jedes Paar von Merkmalen im Datensatz und farblich nach Spezies unterschieden (hue="species"). Pair Plots sind nützlich, um Beziehungen zwischen mehreren Variablen zu visualisieren.
+In diesem Beispiel verwenden wir den iris-Datensatz, um einen Pair Plot zu erstellen. Dieser Plot zeigt Scatter Plots für jedes Paar von Merkmalen im Datensatz und farblich nach Spezies unterschieden (`hue="species"`). Pair Plots sind nützlich, um Beziehungen zwischen mehreren Variablen zu visualisieren.
 
 Der iris-Datensatz enthält hierbei Informationen über die Blattdimensionen dreier verschiedener Blumenarten:
 

@@ -52,7 +52,7 @@ plt.show()
     
 
 
-Dieses Beispiel zeigt einen einfachen Linienplot. Hier wird eine Liste von x-Werten (x) und ihre entsprechenden y-Werte (y) definiert. Mit plt.plot(x, y) wird der Linienplot erstellt. Titel und Achsenbeschriftungen werden mit plt.title, plt.xlabel und plt.ylabel hinzugefügt. plt.show() zeigt den Plot an.
+Dieses Beispiel zeigt einen einfachen Linienplot. Hier wird eine Liste von x-Werten (`x`) und ihre entsprechenden y-Werte (`y`) definiert. Mit `plt.plot(x, y)` wird der Linienplot erstellt. Titel und Achsenbeschriftungen werden mit `plt.title`, `plt.xlabel` und `plt.ylabel` hinzugefügt. `plt.show()` zeigt den Plot an.
 
 ### Beispiel 2: Linienplot mit Stiloptionen
 
@@ -77,7 +77,7 @@ plt.show()
     
 
 
-In diesem Beispiel werden Stiloptionen verwendet. Die Linie wird als gestrichelte Linie (linestyle='--') in Rot (color='red') mit Kreismarkierungen an jedem Datenpunkt (marker='o') dargestellt. plt.grid(True) fügt ein Gitternetz zum Plot hinzu, um die Lesbarkeit zu verbessern.
+In diesem Beispiel werden Stiloptionen verwendet. Die Linie wird als gestrichelte Linie (`linestyle='--'`) in Rot (`color='red'`) mit Kreismarkierungen an jedem Datenpunkt (`marker='o'`) dargestellt. `plt.grid(True)` fügt ein Gitternetz zum Plot hinzu, um die Lesbarkeit zu verbessern.
 
 ### Beispiel 3: Mehrere Linien in einem Plot
 
@@ -104,7 +104,7 @@ plt.show()
     
 
 
-Hier werden zwei Linien in einem einzigen Plot dargestellt. Die erste Linie (y1) zeigt x zum Quadrat, die zweite Linie (y2) zeigt x zur dritten Potenz. Mit plt.legend() wird eine Legende hinzugefügt, um zwischen den beiden Linien zu unterscheiden.
+Hier werden zwei Linien in einem einzigen Plot dargestellt. Die erste Linie (`y1`) zeigt `x` zum Quadrat, die zweite Linie (`y2`) zeigt `x` zur dritten Potenz. Mit `plt.legend()` wird eine Legende hinzugefügt, um zwischen den beiden Linien zu unterscheiden.
 
 ### Beispiel 4: Linienplot mit Achsenbereich
 
@@ -131,7 +131,7 @@ plt.show()
     
 
 
-Dieses Beispiel zeigt einen Linienplot der Sinusfunktion. np.linspace wird verwendet, um eine Sequenz von x-Werten zu erstellen. plt.xlim und plt.ylim werden genutzt, um den Anzeigebereich der Achsen zu begrenzen.
+Dieses Beispiel zeigt einen Linienplot der Sinusfunktion. `np.linspace` wird verwendet, um eine Sequenz von x-Werten zu erstellen. `plt.xlim` und `plt.ylim` werden genutzt, um den Anzeigebereich der Achsen zu begrenzen.
 
 ### Beispiel 5: Linienplot mit Anmerkungen
 
@@ -159,7 +159,7 @@ plt.show()
     
 
 
-In diesem Beispiel werden Anmerkungen zu jedem Punkt des Linienplots hinzugefügt. Die plt.annotate-Funktion wird verwendet, um Text an den Koordinaten jedes Punktes (xi, yi) zu platzieren. Die Textposition wird relativ zu den Datenpunkten mit xytext und textcoords angepasst
+In diesem Beispiel werden Anmerkungen zu jedem Punkt des Linienplots hinzugefügt. Die `plt.annotate`-Funktion wird verwendet, um Text an den Koordinaten jedes Punktes `(xi, yi)` zu platzieren. Die Textposition wird relativ zu den Datenpunkten mit `xytext` und `textcoords` angepasst
 
 ## Aufgaben [90 min]
 

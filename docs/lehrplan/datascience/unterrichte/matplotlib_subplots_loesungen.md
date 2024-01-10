@@ -33,7 +33,7 @@ plt.show()
 
 Erstelle ein Subplot mit 3 Zeilen und 2 Spalten und den gleichen Plot in allen 6 Subplots.
 
-Benutze dabei den Befehl plt.subplots() (ja! den mit dem s am Ende)
+Benutze dabei den Befehl `plt.subplots()` (ja! den mit dem s am Ende)
 
 Versuche alle 6 Subplots im Rahmen einer Schleife zu erzeugen!
 
