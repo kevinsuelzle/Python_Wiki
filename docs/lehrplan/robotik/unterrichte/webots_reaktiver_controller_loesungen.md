@@ -80,7 +80,7 @@ Lösung:
 
 Die Dokumentation von Webots zeigt sehr schön die Anordnung der Sensoren des epuck-Roboters:
 
-https://cyberbotics.com/doc/guide/tutorial-4-more-about-controllers?tab-language=python 
+[Link](https://cyberbotics.com/doc/guide/tutorial-4-more-about-controllers?tab-language=python)
 
 ps6 und ps1 scheinen hiernach gut geeignet zu sein, um die Rolle von S1 und S2 zu übernehmen.
 

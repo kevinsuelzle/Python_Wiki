@@ -39,6 +39,7 @@ Lösung:
 |Webots|https://cyberbotics.com/|J|J|J|J|
 
 Referenzen CoppeliaSim:
+
 - [CoppeliamSim bietet einen einfachen Installer für Win/Mac/Linux](https://www.coppeliarobotics.com/downloads)
 - [CoppeliaSim bietet viele Robotermodelle](https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#ModelBrowser)
 - [CoppeliaSim: Programmierung in Python möglich](https://www.coppeliarobotics.com/helpFiles/en/writingCode.htm#sixMethods)
@@ -47,12 +48,14 @@ Referenzen CoppeliaSim:
 - ["CoppeliaSim pro"](https://www.coppeliarobotics.com/downloads) ist vollfunktonsfähig. Firmen müssen aber bezahlen. Daher in der Tabelle ein "N"
 
 Referenzen Gazebo:
+
 - [Gazebo Harmonic Installation unter Windows ist problematisch](https://gazebosim.org/docs/harmonic/install_windows) Dort: "WARNING: Current Windows support is experimental."
 - [Gazebo bietet viele Modelle](https://app.gazebosim.org/search;q=robot)
 - [Gazebo bietet über ROS-Nodes die Möglichkeit Python Skripte anzubinden](https://gazebosim.org/features)
 - [Gazebo ist kostenfrei für den kommerziellen Bereich](https://learn.e.ros4.pro/en/robotic_simulators/comparison/)
 
 Referenzen Webots:
+
 - [Webots lässt sich unter Win/Mac/Linux installieren](https://cyberbotics.com/#download)
 - [Webots bietet viele Standardroboter](https://cyberbotics.com/doc/guide/samples-demos)
 - [Webots Roboter lassen sich in Python programmieren](https://cyberbotics.com/doc/guide/using-python)
@@ -122,7 +125,8 @@ Firmen, die Webots einsetzen (u.a.):
 - Toyota
 - Vorwerk
 
-Renomierte Forschungsinstituionen, die Webots einsetzen:
+Renomierte Forschungsinstituionen, die Webots einsetzen (u.a.):
+
 - Berkely University
 - University of Edinburgh
 - University of Michigan

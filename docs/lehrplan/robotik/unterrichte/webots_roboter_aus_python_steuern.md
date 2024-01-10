@@ -64,11 +64,11 @@ Die folgenden Aufgaben dienen dazu, dass Sie Schritt-für-Schritt
 
 Für Webots gibt es bereits eine eigene Dokumentation. Sie finden Sie unter
 
-https://cyberbotics.com/doc/guide/index
+[https://cyberbotics.com/doc/guide/index](https://cyberbotics.com/doc/guide/index)
 
 Ein guter Einstieg bietet dabei das folgende Tutorial "Your First Simulation in Webots (30min)":
 
-https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots
+[https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots](https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots)
 
 Arbeiten Sie dieses Tutorial nun durch! Angeblich braucht man nur 30min. Der Ersteller dieses Skriptteils schätzt die Zeit für Anfänger aber deutlich höher ein, eher 90min!
 

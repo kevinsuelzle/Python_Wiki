@@ -14,14 +14,14 @@ Ja, Webots unterstützt die Simulation von Fahrzeugen:
 
 ![Webots for automobiles](images/webots_for_automobiles.png)
 
-Quelle: https://cyberbotics.com/doc/automobile/introduction
+Quelle: [Link](https://cyberbotics.com/doc/automobile/introduction)
 
 
 Folgende Fahrzeuge sind bereits verfügbar:
 
 ![In Webots verfügbare Fahrzeuge](images/webots_bereits_verfuegbare_fahrzeuge.png)
 
-Quelle: https://cyberbotics.com/doc/automobile/proto-nodes 
+Quelle: [Link](https://cyberbotics.com/doc/automobile/proto-nodes)
 
 ### A2: Code-Snippet zur Steuerung eines Fahrzeugs [45 min] 🌶️🌶️
 
@@ -33,13 +33,13 @@ Lösung:
 
 Die Steuerung eines Autos in Webots ist ziemlich simpel:
 
-https://cyberbotics.com/doc/automobile/cpp-java-and-python-wrappers-of-the-automobile-libraries
+[Link](https://cyberbotics.com/doc/automobile/cpp-java-and-python-wrappers-of-the-automobile-libraries)
 
 Das folgende Codestückchen zeigt wie man den Lenkwinkel und die Geschwindigkeit (in km/h) setzen kann.
 
 Man kann es hier finden:
 
-https://cyberbotics.com/doc/automobile/cpp-java-and-python-wrappers-of-the-automobile-libraries?tab-language=python
+[Link](https://cyberbotics.com/doc/automobile/cpp-java-and-python-wrappers-of-the-automobile-libraries?tab-language=python)
 
 
 ```python
