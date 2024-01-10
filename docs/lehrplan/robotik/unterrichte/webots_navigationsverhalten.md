@@ -1,4 +1,4 @@
-# Thema: Roboternavigationsverhalten untersuchen
+# Exkurs: Roboternavigationsverhalten untersuchen
 
 ## Einführung [5 min]
 

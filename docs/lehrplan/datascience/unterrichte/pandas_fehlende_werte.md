@@ -165,26 +165,6 @@ print(df.fillna(df.median()))
     2  3.0  6  9.0
 
 
-### Beispiel 5: Fortgeschrittene Imputationstechniken
-
-
-```python
-#!pip install fancyimpute
-```
-
-
-```python
-from fancyimpute import KNN
-df_filled = KNN(k=3).fit_transform(df)
-print(df_filled)
-```
-
-    Imputing row 1/3 with 1 missing, elapsed time: 0.000
-    [[1. 4. 9.]
-     [2. 5. 9.]
-     [3. 6. 9.]]
-
-
 ## Aufgaben [90min]
 
 ### A1: Anzahl fehlender Werte 🌶️🌶️
