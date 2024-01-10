@@ -7,6 +7,14 @@ import pandas as pd
 
 ## A1
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ThAGVYN1xa8?si=XXLka7hPyjkb5Ugj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 
 ```python
 data = {'Spalte1': [1, 2, 3, 4],
@@ -25,6 +33,14 @@ print(df)
 
 ## A2
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gYA7zDyB8t8?si=GXsOnD6uK9ow7pU2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 
 ```python
 ser = pd.Series([10, 20, 30, 40, 50])
@@ -41,6 +57,14 @@ print(ser)
 
 ## A3
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zzIkoYRrxy8?si=zLBDCH12A1LxJkmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 
 ```python
 element = df.iloc[2, 1] # Drittes Element der zweiten Spalte
@@ -51,6 +75,14 @@ print(element)
 
 
 ## A4
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GmiFX3PzLcs?si=llVpdAiR9DLZZUHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 
 ```python
@@ -65,6 +97,14 @@ print(zeile)
 
 
 ## A5
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4kDDV7wPSvY?si=sF52dCxk_oJtiDqN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 
 ```python
@@ -81,6 +121,14 @@ print(spalte)
 
 ## A6
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LhWH5lCD3cA?si=EAnYOm0nVexPsLNr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 
 ```python
 df_indexed = pd.DataFrame(data, index=['i1', 'i2', 'i3', 'i4'])
@@ -96,6 +144,14 @@ print(df_indexed)
 
 ## A7
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B-1NU_Tx5H8?si=VexzC9GAiFyYrqed" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 
 ```python
 df.columns = ['NeueSpalte1', 'NeueSpalte2', 'NeueSpalte3']
@@ -110,6 +166,14 @@ print(df)
 
 
 ## A8
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3byVCDN8XAI?si=h_MzuuB3iReyMxtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 
 ```python
@@ -162,6 +226,14 @@ pd.Series(neue_zeile)
 
 ## A9
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xk7TriqGo1Y?si=LWhCt-jW-KbC-KAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 
 ```python
 data = {'Spalte1': [1, 2, 3, 4],
@@ -181,6 +253,14 @@ print(df)
 
 
 ## A10
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eK5KwMaAl6k?si=KyprGb6Q-Gp0CcpS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 
 ```python

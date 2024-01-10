@@ -7,6 +7,13 @@ import pandas as pd
 
 ### A1: Selektives Lesen von Spalten
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TqFBU2-u1zA?si=zzWmIeoXNmhPL2OZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Lese eine Tabelle aus einer `.csv`-Datei ein. Lese dabei aber nur bestimmte Spalten ein, d.h. nicht alle!
 
 
@@ -25,6 +32,14 @@ print(df.head())
 
 ### A2: Erzeugen eines Python Dictionaries aus einer Tabelle?
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AL-YkLWAFYs?si=AZXEGA8oNoApvCmS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Wie kannst du eine Pandas Tabelle in Python Dictionary umwandeln?
 
 
@@ -40,6 +55,14 @@ for key in daten_dict:
 
 ### A3: Speichern einer Tabelle als Pickle-Datei
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QuBJZ6TuRGw?si=7Wm15yKdK5XZrg82" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Wie kann man eine Tabelle in eine Pickle-Datei serialisieren (=wegschreiben)?
 
 
@@ -48,6 +71,14 @@ df.to_pickle('zeitreihen.pkl')
 ```
 
 ### A4: Laden einer Tabelle aus einerPickle-Datei
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gKXs2BPY72I?si=QDRsWvqFKegc1bwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Wie kann man dann eine Tabelle aus einer Pickle-Datei wieder einlesen?
 
@@ -66,6 +97,14 @@ print(df.head())
 
 
 ### A5: Exportieren einer Tabelle in eine SQLite-Datenbank
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JZkgruA77jg?si=uPeoJX_b4u_kdutc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Wie kannst du eine Tabelle in eine SQLite-Datenbank schreiben?
 
@@ -96,6 +135,14 @@ Der Parameter `if_exists='replace'` gibt an, dass die Tabelle überschrieben wir
 
 ### A6: Einlesen einer Tabelle aus einer SQLite-Datenbank
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B-SKppkooFk?si=-1zZ_er0stlzHMp6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Wie kannst du die Tabelle dann wieder aus der SQLite-Datenbank einlesen?
 
 
@@ -122,6 +169,14 @@ print(df.head())
 
 
 ### A7: Einlesen einer .csv-Datei mit anderem Separator
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CYbAYlBnNy8?si=Mk7oBGRVKlHKkdKC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Führe folgenden Code aus, um eine `.csv-Datei` zu erzeugen.
 

@@ -2,6 +2,13 @@
 
 ### A1: Subplot mit 3x2 Anordnung mittels plt.subplot() 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s7UfvewUcZE?si=kNFf6Y-yvWeoedwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Erstelle ein Subplot mit 3 Zeilen und 2 Spalten und den gleichen Plot in allen 6 Subplots.
 
 Benutze dabei den Befehl plt.subplot().
@@ -30,6 +37,13 @@ plt.show()
 
 
 ### A2: Subplot mit 3x2 Anordnung mittels plt.subplot()s 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K_xLFccB7TU?si=o02nbembDzz8mJrp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 Erstelle ein Subplot mit 3 Zeilen und 2 Spalten und den gleichen Plot in allen 6 Subplots.
 
@@ -74,6 +88,13 @@ plt.show()
 
 ### A3: Anpassen der Subplot-Abstände 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bXrS5XtAcaM?si=xwuVeZlr3NGLuKIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Erstelle vier Subplots in einem Gitter und passe die Abstände zwischen ihnen an.
 
 Der Abstand soll vertikal und horizontal geregelt werden können.
@@ -102,6 +123,13 @@ plt.show()
 
 
 ### A4: Ein großer und zwei kleine Subplots 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UoqdLcs5iZY?si=E1cTwOwHuYwL-lQR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 Erstelle ein Layout mit einem großen Subplot oben und zwei kleineren Subplots unten.
 
@@ -134,6 +162,13 @@ plt.show()
 
 ### A5: Subplots in L-Form 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uEmCP8qsT4Y?si=nONd0HFXXejeEcz9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Erstelle ein Subplot-Layout in L-Form, bei dem sich ein vertikales Subplot links und ein horizontales Subplot unten befinden.
 
 
@@ -159,6 +194,13 @@ plt.show()
 
 ### A6: Schachbrett-Layout 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/flIpcC72dxY?si=vOujAykA0_Wbn7eh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Erstelle ein 3x3 Schachbrett-Layout, wobei abwechselnd Subplots und leere Räume sind.
 
 
@@ -182,6 +224,13 @@ plt.show()
 
 
 ### A7: Zwei Horizontale Subplots Nebeneinander 🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0bpj4U3y1fg?si=AbXevzmkCb75FLeW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 Erstelle zwei horizontale Subplots nebeneinander, wobei der linke Subplot doppelt so breit ist wie der rechte.
 
@@ -207,6 +256,14 @@ plt.show()
 
 
 ### A8: T-förmiges Layout 🌶️🌶️
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pG4NCkvnXAg?si=NmnB2SRrCBCjPRRV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 
 Erstelle ein T-förmiges Layout mit drei Subplots.
 

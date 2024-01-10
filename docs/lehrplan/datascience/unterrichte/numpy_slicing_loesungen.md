@@ -2,6 +2,13 @@
 
 ### A1: Wozu eigentlich Slicing? 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YTr8tDwVtCA?si=pWEMaa-U6SmZ2Xhi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Überlege dir Beispiele: Wo braucht man Slicing bei der Datenverarbeitung bzw. Datenanalyse?
 
 Beispiele:
@@ -12,6 +19,14 @@ Beispiele:
 - einen Abschnitt aus einem Farb-Video (4D Array) "rausschneiden"
 
 ### A2: Grundlegendes Slicing 🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F7KLEMSCFyc?si=msYlVw1pAxuF96Pn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie ein eindimensionales NumPy-Array mit den Zahlen von 1 bis 10 und wählen Sie die Elemente von Index 3 bis 7 aus.
 
@@ -28,6 +43,14 @@ print(sliced_arr)
 
 
 ### A3: Slicing mit negativen Indizes 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NaegO5Jt9so?si=Xg2NbgKsONLOAyUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie ein Array mit den Zahlen von -5 bis 5 und wählen Sie die letzten drei und die ersten drei Elemente *nur* mithilfe negativer Indizes aus.
 
@@ -47,6 +70,14 @@ print(arr[-11:-8])
 
 ### A4: Slicing mit Schrittweiten 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WHV_U1yCC5Y?si=OuVw1gZlgdNtKShV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstellen Sie ein Array von 1 bis 10 und slicen Sie das 2,4,6,... Element heraus!
 
 
@@ -64,6 +95,14 @@ print(sliced_arr)
 
 ### A5: Reverse Slicing 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fdsLWN4xKU8?si=WlpNbMewtL1G8E9C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstellen Sie ein Array mit den Zahlen von 1 bis 10 und kehren Sie die Reihenfolge der Elemente durch Slicing um.
 
 
@@ -78,6 +117,14 @@ print(reversed_arr)
 
 ### A6: Slicing von zweidimensionalen Arrays 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/frEQ49eirTs?si=gVzMNRmwHNkWc6l_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstellen Sie ein 3x3-Array mit den Zahlen von 1 bis 9 und wählen Sie die zweite Zeile aus.
 
 
@@ -91,6 +138,14 @@ print(second_row)
 
 
 ### A7: Slicing von Spalten 🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/irt-8lag8Lc?si=OU7yE5x0s9Vt8tnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie ein 4x4-Array mit beliebigen Zahlen und wählen Sie die dritte Spalte aus.
 
@@ -108,6 +163,14 @@ print(third_column)
 
 
 ### A8: Slicing mit Bedingungen 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w9fYXPho5bE?si=4fq7oBg-ou8j0mJm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie ein Array mit den Zahlen von -10 bis 10 und wählen Sie alle Elemente aus, die größer als 5 oder kleiner als -3 sind.
 
@@ -134,6 +197,14 @@ print(selected_elements)
 
 ### A9: Diagonales Slicing 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ujmEDIt_IH4?si=aD5hzShQLSETXUD-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstellen Sie ein 3x3-Array mit den Zahlen von 1 bis 9 und wählen Sie die Elemente der Diagonale aus.
 
 
@@ -152,6 +223,14 @@ print(diagonal)
 
 
 ### A10: Slicing von Submatrizen 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1mkRWaqSFtg?si=D_mcdBgsuk9xRBro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie ein 4x4-Array und wählen Sie eine 2x2-Submatrix aus der oberen linken Ecke des Arrays aus.
 
@@ -173,6 +252,14 @@ print(sub_matrix)
 
 
 ### A11: Komplexes Slicing 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N0c8ojZfZH0?si=lhEM1nfLqQbQtCan" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie ein 5x5-Array mit den Zahlen von 1 bis 25 und wählen Sie jede zweite Zeile und Spalte aus.
 

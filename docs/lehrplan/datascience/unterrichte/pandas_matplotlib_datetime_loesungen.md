@@ -2,6 +2,13 @@
 
 ### A1: Auswahl von Daten in einem bestimmten Monat 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KzYHVs84M4k?si=75xmyiRT32sbDq82" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Erstellen Sie einen DataFrame mit einer Datumsreihe vom 1. Januar 2023 bis zum 31. Dezember 2023 und wählen Sie alle Daten aus, die im März 2023 liegen.
 
 
@@ -49,6 +56,14 @@ print(march_data)
 
 ### A2: Erstellen eines Liniendiagramms 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
+
 Erstellen Sie einen DataFrame mit täglichen Daten vom 1. bis 15. Januar 2023 und zufälligen Werten. Visualisieren Sie diese Daten mit einem Liniendiagramm in Matplotlib.
 
 
@@ -74,6 +89,14 @@ plt.show()
 
 ### A3: Erstellen eines Barplots mit Seaborn 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
+
 Erstellen Sie einen DataFrame mit täglichen Daten vom 1. bis 10. Januar 2023 und zufälligen Werten. Visualisieren Sie diese Daten mit einem Barplot in Seaborn.
 
 
@@ -95,6 +118,14 @@ plt.show()
 
 
 ### A4: Gruppierung und Durchschnittsberechnung 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
 
 Erstellen Sie einen DataFrame mit täglichen Daten und zufälligen Werten für das ganze Jahr 2023. Gruppieren Sie die Daten nach Monaten und berechnen Sie den Durchschnittswert für jeden Monat.
 
@@ -144,6 +175,14 @@ print("\nmonthly_avg:\n", monthly_avg)
 
 ### A5: Finden des frühesten und spätesten Datums 🌶️🌶️🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
+
 Erzeugen Sie ein DataFrame mit einer Spalte date, die zufällige Datumsangaben im Jahr 2023 enthält. Finden Sie das früheste und das späteste Datum im DataFrame.
 
 
@@ -159,6 +198,14 @@ print(f"Frühestes Datum: {earliest}, Spätestes Datum: {latest}")
 
 
 ### A6: Hinzufügen einer Spalte für den Wochentag 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
 
 Fügen Sie in einem DataFrame mit täglichen Daten für das Jahr 2023 eine neue Spalte hinzu, die den Wochentag als String enthält (z.B. "Montag", "Dienstag", etc.).
 
@@ -187,6 +234,14 @@ print(df)
 
 ### A7: Umwandlung von UTC zu lokaler Zeitzone 🌶️🌶️🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
+
 Konvertieren Sie eine Serie von DateTime-Objekten, die in UTC vorliegen, in die lokale Zeitzone "Europe/Berlin".
 
 
@@ -210,6 +265,14 @@ print(df)
 
 
 ### A8: Erstellung einer Zeitreihe mit fehlenden Daten und deren Auffüllung 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
 
 Erstellen Sie einen DataFrame mit einer unvollständigen Zeitreihe für Januar 2023 (einige Tage fehlen) und füllen Sie die fehlenden Tage mit dem vorherigen gültigen Wert auf.
 

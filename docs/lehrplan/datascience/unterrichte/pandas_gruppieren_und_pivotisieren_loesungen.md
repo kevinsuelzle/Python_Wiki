@@ -2,6 +2,13 @@
 
 ### A1: Grundlegende Gruppierung 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SedImcrD0nk?si=Q_bEJd_5xJVQcOs6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Erstellen Sie einen Pandas DataFrame mit drei Spalten: 'Name', 'Kategorie' und 'Punkte'. Gruppieren Sie diesen DataFrame nach 'Kategorie' und berechnen Sie die durchschnittlichen Punkte je Kategorie.
 
 
@@ -36,6 +43,14 @@ print(durchschnitt)
 
 ### A2: Aggregation mit mehreren Funktionen 🌶️🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fBUp1INUJog?si=hJ721qOWoz0BSvTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Verwenden Sie den gleichen DataFrame wie in Aufgabe 1. Gruppieren Sie die Daten nach 'Kategorie' und wenden Sie mehrere Aggregatfunktionen an: Berechnen Sie für jede Kategorie die Gesamtanzahl, den Durchschnitt und die maximale Punktzahl.
 
 
@@ -52,6 +67,14 @@ print(aggregiert)
 
 
 ### A3: Erstellen einer Pivot-Tabelle 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lIfMgmg0sHA?si=hiRGJlaWxLxn-X59" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie einen DataFrame mit Spalten 'Datum', 'Produkt' und 'Verkaufsmenge'. Erzeugen Sie eine Pivot-Tabelle, die die Gesamtverkaufsmenge für jedes Produkt nach Datum gruppiert.
 
@@ -87,6 +110,14 @@ print(pivot)
 
 ### A4: Gruppierung nach mehreren Spalten 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5OdoX0NqKjE?si=GDnTnbBzA70Kyr8i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstellen Sie einen DataFrame mit den Spalten 'Region', 'Produkt' und 'Verkaufsmenge'. Gruppieren Sie die Daten nach 'Region' und 'Produkt' und berechnen Sie die Gesamtverkaufsmenge für jede Kombination.
 
 
@@ -119,6 +150,14 @@ print(gruppen)
 
 
 ### A5: Pivotisieren mit Multi-Index 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/amENE_A0304?si=b2XuaHhd_UHV0nvS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Verwenden Sie einen DataFrame mit den Spalten 'Datum', 'Region', 'Produkt' und 'Verkaufsmenge'. Erstellen Sie eine Pivot-Tabelle mit einem Multi-Index aus 'Datum' und 'Region', wobei 'Produkt' als Spalten verwendet wird.
 
@@ -159,6 +198,14 @@ Beachten Sie, dass es NaN Einträge gibt, da wir nicht für jede Kombination Dat
 
 ### A6: Filtern nach Gruppierungsaggregat 🌶️🌶️🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bBiuYFgIf6Q?si=4_FbPAfcJFsU1bbb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstellen Sie einen DataFrame mit den Spalten 'Team', 'Spieler' und 'Punkte'. Gruppieren Sie die Daten nach 'Team' und filtern Sie die Gruppen, sodass nur Teams mit einer durchschnittlichen Punktzahl von über 15 Punkten angezeigt werden.
 
 
@@ -190,6 +237,14 @@ print(gefiltert)
 
 
 ### A7: Erweiterte Pivot-Tabellen 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-0hStraUinw?si=Gjm_YI-zNwmE2p-K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie einen DataFrame mit den Spalten 'Datum', 'Produkt', 'Region' und 'Verkaufsmenge'. Erzeugen Sie eine Pivot-Tabelle, die die durchschnittliche Verkaufsmenge für jedes Produkt nach Region und Datum gruppiert.
 
@@ -229,6 +284,14 @@ print(pivot)
 
 
 ### A8: Kombiniertes Gruppieren und Pivotisieren 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ofqW0XkEHo4?si=M4v8FGMo_KXc2Lf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie einen DataFrame mit den Spalten 'Monat', 'Verkäufer' und 'Verkaufsmenge'. Gruppieren Sie die Daten nach 'Verkäufer' und erstellen Sie eine Pivot-Tabelle, die die Gesamtverkaufsmenge pro Monat für jeden Verkäufer anzeigt.
 
@@ -277,6 +340,14 @@ print(pivot)
 
 ### A9: Gruppieren und Berechnen von kumulativen Summen 🌶️🌶️🌶
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
+
 Erstellen Sie einen DataFrame mit den Spalten 'Datum', 'Kategorie' und 'Wert'. Gruppieren Sie die Daten nach 'Kategorie' und berechnen Sie die kumulative Summe der Werte innerhalb jeder Kategorie.
 
 
@@ -308,6 +379,14 @@ print(df)
 
 
 ### A10: Erweitertes Pivotisieren mit Füllen von fehlenden Werten 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f8VWCPV2YjQ?si=DLbq3vBTO7Q8j_Ub" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie einen DataFrame mit den Spalten 'Datum', 'Produkt' und 'Verkaufsmenge'. Erzeugen Sie eine Pivot-Tabelle, die die Gesamtverkaufsmenge für jedes Produkt nach Datum anzeigt, und füllen Sie fehlende Werte mit Nullen.
 

@@ -8,6 +8,13 @@ import numpy as np
 
 ### A1: Anzahl fehlender Werte 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P4wErO73j58?si=UXOIGyyMFuI97Sw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Identifizieren Sie die Anzahl der fehlenden Werte in jeder Spalte des DataFrame df.
 
 
@@ -50,6 +57,14 @@ df.info()
 
 
 ### A2: Schalter `thresh` von `dropna()` 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/39gnj0RNSxw?si=evrQrOEg8iJKG9g-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Finden Sie heraus was der Schalter `thresh` von `dropna()` macht!
 
@@ -99,6 +114,14 @@ print("\ndropna mit thresh=3:\n", df.dropna(thresh=3))
 
 ### A3: Füllen einer Spalte 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lqQh3AyCOBs?si=Myg56Lzs3Np_zMfJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Füllen Sie die fehlenden Werte in der Spalte 'A' mit dem Mittelwert dieser Spalte.
 
 
@@ -131,6 +154,14 @@ print(df)
 
 ### A4: Neue Spalte mit Median 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7ITAh-FtVcU?si=Zf_WVa5Lpj3vA4Sq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstellen Sie eine neue Spalte 'D', die den Median der Spalten 'A', 'B' und 'C' für jede Zeile enthält.
 
 
@@ -162,6 +193,14 @@ print(df)
 
 
 ### A5: Tabelle mit Lücken erzeugen, fehlende Werte auf 0 setzen 🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vxkyYPYJikM?si=VA-UrOsCOfOudDLW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie einen neuen DataFrame df2 mit den Spalten 'X', 'Y', und 'Z', der zufällige Werte und einige fehlende Werte (NaN) enthält. Verwenden Sie dann die Methode `fillna()` um alle fehlenden Werte mit dem Wert 0 zu ersetzen.
 
@@ -210,6 +249,14 @@ print("\nMit gestopften Lücken:\n", df2)
 
 ### A6: Fehlende Werte durch Durchschnittswerte ersetzen 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rilyi8I9vd0?si=vhxFknauet7zkzZB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Ersetzen Sie in df2 die fehlenden Werte in der Spalte 'Y' durch den Durchschnitt der vorhandenen Werte in dieser Spalte.
 
 
@@ -256,6 +303,14 @@ print(df2)
 
 
 ### A7: Interpolation fehlender Werte 🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t1zu9aM2nSs?si=QrGAka57WL8cL9hu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Verwenden Sie die Methode `interpolate()` von Pandas, um die fehlenden Werte in folgender Tabelle linear zu interpolieren.
 

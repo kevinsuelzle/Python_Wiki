@@ -2,6 +2,13 @@
 
 ### A1: Erstellen eines NumPy Arrays 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WXiLq-vmXww?si=RdpivN32J9fYm9Yq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Erstellen Sie ein NumPy Array mit den Werten von 10 bis 20.
 
 
@@ -26,6 +33,14 @@ print(arr)
 
 ### A2: Summe der Elemente eines Arrays 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7fx5ETzCXq4?si=0ZkRnrtBhvAMAVOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Berechnen Sie die Summe aller Elemente in einem NumPy Array [8, 4, 6, 0, 2].
 
 
@@ -39,6 +54,14 @@ print(summe)
 
 
 ### A3: Maximalwert in einem Array finden 🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jAwy_VNEkQY?si=ZX8AKjqIWjNoW3J7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Bestimmen Sie den größten Wert in dem Array [3, -1, 7, 4, 2]. Wie können wir herausfinden an welcher Stelle dieser Maximalwert steht?
 
@@ -62,6 +85,14 @@ print(max_pos)
 
 
 ### A4: 2D-Array erstellen 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p6VmUaFuMNA?si=uhHj1DvU5y6Pgqgf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie ein 2D-Array der Größe 3x3, das die Zahlen von 1 bis 9 enthält.
 
@@ -89,6 +120,14 @@ print(arr)
 
 ### A5: Zeilensummen einer Matrix berechnen 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QFdPRTw8JdI?si=nf1L31-3S_yQfkOL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Berechnen Sie die Summe jeder Zeile in der Matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]].
 
 
@@ -107,6 +146,14 @@ print(row_sums)
 
 
 ### A6: Spaltensummen einer Matrix berechnen 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C3SgGdinp1s?si=Hs7EzxyvnGIskje8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Berechnen Sie die Spaltensummen der Matrix [[1, 2, 3], [4, 5, 6], [7, 8, 9]].
 
@@ -127,6 +174,14 @@ print(col_sums)
 
 ### A7: Elementweise Multiplikation zweier Arrays 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zofVh35CQ8o?si=obcwRMNzP0U1c1Xf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Multiplizieren Sie die Elemente der Arrays [1, 2, 3] und [4, 5, 6] elementweise.
 
 
@@ -142,6 +197,14 @@ print(product)
 
 ### A8: Zufälliges Array erzeugen 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1h0NJ2pBXjQ?si=Cs1BNdX5z_E3o83O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erzeugen Sie ein eindimensionales Array mit 5 zufälligen Ganzzahlen zwischen 0 und 10.
 
 
@@ -154,6 +217,14 @@ print(arr)
 
 
 ### A9: Negative Werte in einem Array 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o_xGwNTSquQ?si=mn95k7k_vluw7GYb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Ersetzen Sie alle negativen Werte in dem Array [-1, 2, -3, 4, -5] durch 0.
 
@@ -168,6 +239,14 @@ print(arr)
 
 
 ### A10: Transposition einer Matrix 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/le7D2v3re4g?si=LsveH1sVL6VOcjO_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Transponieren Sie die Matrix [[1, 2], [3, 4], [5, 6]].
 

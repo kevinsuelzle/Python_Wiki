@@ -2,6 +2,13 @@
 
 ### A1: Erstellen eines weiteren Violin-Plots 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
 Erstellen Sie einen Violin Plot für die 'total_bill'-Variable im 'tips'-Datensatz, wobei die Violins nach 'time' getrennt sind. Stellen Sie sicher, dass der Plot innere Quartile anzeigt.
 
 Können wir aus dem Plot eine Erkenntnis gewinnen, ob es einen Unterschied gibt zwischen den Trinkgeldern die Mittags und Abends gegegeben werden?
@@ -33,6 +40,14 @@ plt.show()
 
 
 ### A2: Count-Plot 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
 
 Verwenden Sie den 'titanic'-Datensatz von Seaborn, um einen Count Plot zu erstellen, der die Anzahl der Passagiere in jeder 'class' anzeigt.
 
@@ -70,6 +85,14 @@ plt.show()
 
 
 ### A3: Boxplots und Anpassen der Achsenbeschriftungen 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
 
 Erstellen Sie einen Boxplot für die 'total_bill' im 'tips'-Datensatz.
 
@@ -111,6 +134,14 @@ Durch die Betrachtung dieses Boxplots können Sie eine Vorstellung von der zentr
 
 ### A4: Scatterplot mit Regressionslinie 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
+
 Erstellen Sie einen Scatter Plot für 'total_bill' gegen 'tip' aus dem 'tips'-Datensatz und fügen Sie eine Regressionslinie hinzu.
 
 
@@ -131,6 +162,14 @@ plt.show()
 
 
 ### A5: Erstellung eines Facet Grids 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
 
 Versuchen Sie zu verstehen was ein Facet Grid ist und erstellen Sie ein Codebeispiel hierzu!
 
@@ -166,6 +205,14 @@ Wir verwenden die map-Funktion, um eine Art von Plot (in diesem Fall ein Histogr
 
 ### A6: Anpassen von Plot-Legenden 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
+
 Erstellen Sie einen Scatter Plot mit 'total_bill' gegen 'tip' aus dem 'tips'-Datensatz. Unterscheiden Sie die Punkte nach 'smoker' und passen Sie die Legende entsprechend an.
 
 
@@ -186,6 +233,14 @@ plt.show()
 
 
 ### A7: Neuer Plottyp: jointplots 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
 
 Finden Sie heraus was jointplots sind und erstellen Sie ein eigenes Beispiel!
 
@@ -213,6 +268,14 @@ plt.show()
 In diesem Beispiel wird ein Scatterplot erstellt, der die Beziehung zwischen der Gesamtrechnung (total_bill) und dem Trinkgeld (tip) aus dem tips-Datensatz darstellt. Zusätzlich zeigt es die Verteilungen von total_bill und tip an den Rändern des Plots.
 
 ### A8: Neuer Plottyp: kdeplot 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+
+</details>
+
 
 Finden Sie heraus was kdeplots sind und erstellen Sie ein eigenes Beispiel!
 
