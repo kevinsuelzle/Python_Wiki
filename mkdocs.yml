@@ -3,9 +3,6 @@ site_name: My Docs
 plugins:
   - search
   - mermaid2
-  - mkdocs-jupyter:
-      execute: false
-      kernel_name: python3
       
 markdown_extensions:
   - def_list
@@ -175,6 +172,7 @@ nav:
       - Python und SQL: begriffe/begriffe_db_python.md
       - Web: begriffe/begriffe_web.md
       - Azure: begriffe/begriffe_azure.md
+      - NoSQL-Datenbanken: begriffe/begriffe_db2.md
   - Checklisten:
       - Python Grundlagen: checklists/checklist_1.md
       - git: checklists/checklist_git.md
@@ -183,6 +181,7 @@ nav:
       - Python und SQL: checklists/checklist_db_python.md
       - Web: checklists/checklist_web.md
       - Azure: checklists/checklist_azure.md
+      - NoSQL-Datenbanken: checklists/checklist_db2.md
 
   - Werkzeuge:
       - git: lehrplan/git/git.md

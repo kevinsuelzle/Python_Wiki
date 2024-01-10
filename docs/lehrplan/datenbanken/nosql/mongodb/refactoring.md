@@ -1,4 +1,4 @@
-# Refactoring von Datenbanken (MongoDB)
+# Exkurs: Refactoring von Datenbanken (MongoDB)
 [20 min]
 
 In der Praxis können sich Anforderungen an die Datenbank im Laufe der Zeit ändern, sodass sich Optimierungspotenziale ergeben. In diesem Fall kann es sinnvoll sein, die Datenbankstruktur zu überarbeiten, um die Effizienz, Leistung und Wartbarkeit der Datenbank zu verbessern. Dieser Prozess wird als Datenbank-Refactoring bezeichnet.
@@ -120,6 +120,8 @@ Angenommen, wir haben ein Datenmodell für Bücher mit umfassenden Informationen
   // Andere Felder...
 }
 ```
+
+TODO: Sollte man hier nicht auch den Code zeigen, mit dem man diese Aufsplittung hinbekommt?
 
 Hier könnten Informationen über den Autor und den Verlag in separaten Dokumenten kombiniert werden, wenn dies zu einer effizienteren Datenabfrage führt.
 
@@ -334,12 +336,9 @@ Die Verwendung von Sharding in MongoDB ermöglicht eine horizontale Skalierung, 
 Neben den angesprochenen Strategien zur Optimierung von Datenbanken gibt es weitere Möglichkeiten, die Effizienz, Leistung und Sicherheit von MongoDB-Datenbanken zu verbessern. Diese umfassen unter anderem die folgenden Aspekte und Empfehlungen, welche im Rahmen dieses Kurses nicht genauer betrachtet werden:
 
 
-1. **Sicherheit:**
-    - Überprüfe die Sicherheitskonfiguration, Benutzerzugriffe und Rollen.
+1. **Sicherheit:** Überprüfe die Sicherheitskonfiguration, Benutzerzugriffe und Rollen.
 
-2. **Dokumentation:**
-    - Aktualisiere die Dokumentation deiner MongoDB-Datenbankstruktur für das Entwicklerteam.
+2. **Dokumentation:** Aktualisiere die Dokumentation deiner MongoDB-Datenbankstruktur für das Entwicklerteam.
 
-3.  **Backup-Strategie:**
-    - Überprüfe und optimiere deine Backup-Strategie, um die Datensicherheit zu gewährleisten.
+3.  **Backup-Strategie:** Überprüfe und optimiere deine Backup-Strategie, um die Datensicherheit zu gewährleisten.
 

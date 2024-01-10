@@ -1,4 +1,4 @@
-# Datenmodellierung und Design Patterns
+# Exkurs: Datenmodellierung und Design Patterns
 [30 min]
 
 ## Schema Design Patterns in MongoDB:

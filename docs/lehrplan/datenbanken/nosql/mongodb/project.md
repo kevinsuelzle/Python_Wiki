@@ -1,6 +1,8 @@
 # Aufgabe: Kanban Board mit Flask und PyMongo 🌶🌶🌶
 [1 - 2 Tage]
 
+TODO: Lösung!
+
 Erweitere das zuvor erstellte ToDo-Liste-Projekt, um ein Kanban Board als Webanwendung mit Flask zu entwickeln. Das Board soll es Benutzern ermöglichen, Aufgaben in verschiedenen Phasen zu organisieren, z.B., "To Do", "In Progress", "Done".
 
 **Schritte:**

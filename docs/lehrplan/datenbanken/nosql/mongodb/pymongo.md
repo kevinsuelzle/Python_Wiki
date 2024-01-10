@@ -25,7 +25,7 @@ Nachdem die Verbindung zum MongoDB-Server mit der `MongoClient`-Klasse hergestel
 database = client['mydatabase']
 ```
 
-Dokuemnte werden in python als Dictionary dargestellt. Ein Dokument könnte also wie folgt aussehen:
+Dokumente werden in python als Dictionary dargestellt. Ein Dokument könnte also wie folgt aussehen:
 
 ```python
 my_document = {
@@ -43,7 +43,7 @@ my_document = {
 ### Einfügen von Dokumenten:
 [10 min]
 
-Möchten wir dokumente in eine Sammlung einfügen, können wir die `insert_one()` Methode verwenden. Diese Methode erwartet ein Dictionary als Parameter, das das einzufügende Dokument enthält. Die Methode gibt ein `InsertOneResult` Objekt zurück, das die ID des eingefügten Dokuments enthält.
+Möchten wir Dokumente in eine Sammlung einfügen, können wir die `insert_one()` Methode verwenden. Diese Methode erwartet ein Dictionary als Parameter, das das einzufügende Dokument enthält. Die Methode gibt ein `InsertOneResult` Objekt zurück, das die ID des eingefügten Dokuments enthält.
 
 ```python
 # Beispiel: Einfügen eines Dokuments in eine Sammlung mit dem Namen 'mycollection'

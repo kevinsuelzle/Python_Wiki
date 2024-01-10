@@ -3,6 +3,8 @@
 
 In MongoDB sind Indizes spezielle Datenstrukturen, die die Abfrageleistung verbessern, indem sie den Zugriff auf Daten beschleunigen. Indizes sind eine Möglichkeit, die Geschwindigkeit von Abfragen zu erhöhen, insbesondere wenn Sie nach bestimmten Werten suchen, sortieren oder Join-Operationen durchführen. MongoDB verwendet B-Baum-Indizes, um den schnellen Zugriff auf Daten zu ermöglichen. Diese Struktur erlaubt es, Werte effizient zu suchen und zu sortieren. Indizes können auf einzelnen Feldern oder auf mehreren Feldern erstellt werden. Zusammengesetze Indizes sind insbesondere dann nützlich, wenn Sie nach mehreren Feldern suchen oder sortieren möchten. In MongoDB werden Indizes automatisch auf dem `_id` Feld erstellt. Sie können jedoch auch manuell erstellt werden.
 
+TODO: Die Teilnehmer haben keine Ahnung, was Bäume, Wurzeln usw. sind. Ich würde vorschlagen, dass du hier ein Bild erstellt und eifnügst, dass die meisten Fragen klären sollte.
+
 ### Exkurs: B-Baum
 Der B-Baum (Balanced Tree) ist eine Datenstruktur, die in vielen Datenbanksystemen, darunter auch MongoDB, für die Implementierung von Indizes verwendet wird. Seine Konstruktion ermöglicht das schnelle Suchen, Einfügen und Löschen von Daten in großen Mengen, und dabei bleibt er stets ausbalanciert.
 

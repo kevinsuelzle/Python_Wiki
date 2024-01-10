@@ -1,4 +1,4 @@
-# Sicherheit in MongoDB
+# Exkurs: Sicherheit in MongoDB
 [20 min]
 
 Da unsere Datenbanken häufig über das Internet erreichbar sind und teilweise sensible Daten beinhalten, ist es wichtig, dass wir uns mit dem Thema Sicherheit auseinandersetzen. In diesem Abschnitt werden wir uns mit den Sicherheitsfunktionen von MongoDB beschäftigen und einige Sicherheitsmaßnahmen kennenlernen, die wir ergreifen können, um unsere Datenbanken zu schützen.

@@ -1,4 +1,4 @@
-# Migrationsstrategien
+# Exkurs: Migrationsstrategien
 [60 min]
 
 Die Migration von Datenbankenversionen beschreibt den Prozess des Aktualisieren der Datenbankstruktur. Sie wird insbesondere beim Refactoring von Datenbanken notwendig, um den Verlust von Daten und unerwartete Fehler zu vermeiden. Dabei sind verschiedene Techniken und Ansätze verfügbar, um einen reibungslosen Übergang von einer Datenbankversion zur nächsten zu gewährleisten.
@@ -50,32 +50,38 @@ Erstelle eine MongoDB-Datenbank mit PyMongo und Migration in zwei Umgebungen**
 
 **Teil 1: Datenbankerstellung und Testumgebung** 🌶🌶🌶
 
-1. **Datenbankerstellung mit PyMongo:**
+**Datenbankerstellung mit PyMongo:**
+
    - Schreibe ein Python-Skript, das eine MongoDB-Datenbank mit PyMongo erstellt.
    - Definiere eine Sammlung (Collection) namens "users".
    - Füge einige Testdatensätze in die "users"-Sammlung ein.
 
-2. **Docker-Container für Testumgebung:**
+**Docker-Container für Testumgebung:**
+   
    - Erstelle einen Docker-Container für die MongoDB-Testumgebung.
    - Konfiguriere die Containerumgebung für den Zugriff auf die erstellte Datenbank und Sammlung.
    - Starte den Container und überprüfe, ob die Testdaten korrekt eingefügt wurden.
 
 **Teil 2: Datenbankmigration und Produktionsumgebung** 🌶🌶🌶
 
-3. **Datenbankmigrationsskript:**
+**Datenbankmigrationsskript:**
+
    - Entwickle ein Python-Skript für die Migration der Datenbank. Beispiel: Ändere den Datentyp eines Feldes oder füge ein neues Feld hinzu.
    - Berücksichtige Fehlererkennung und Protokollierung im Skript.
 
-4. **Docker-Container für Produktionsumgebung:**
+**Docker-Container für Produktionsumgebung:**
+
    - Erstelle einen separaten Docker-Container für die MongoDB-Produktionsumgebung.
    - Konfiguriere die Containerumgebung, um auf die produktive Datenbank zuzugreifen.
    - Starte den Produktionscontainer und überprüfe, ob das Migrationsskript erfolgreich angewendet wurde.
 
-5. **Rollback-Plan:**
+**Rollback-Plan:**
+
    - Entwickle einen klaren Rollback-Plan für den Fall von Problemen während der Migration.
    - Simuliere einen Rollback in der Testumgebung und überprüfe, ob alle Schritte korrekt durchgeführt werden.
 
-6. **Kommunikation und Dokumentation:**
+**Kommunikation und Dokumentation:**
+
    - Implementiere eine Funktion, um den Fortschritt und mögliche Fehler während der Migration zu protokollieren.
    - Dokumentiere den gesamten Prozess, einschließlich der Skriptänderungen und der Docker-Konfiguration.
 

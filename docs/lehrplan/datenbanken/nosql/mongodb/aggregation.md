@@ -1,4 +1,4 @@
-# Weitere Funktionen
+# Exkurs: Weitere Funktionen
 
 ### aggregate()
 [20 min]
@@ -15,6 +15,8 @@ db.meineCollection.aggregate([
   { $group: { _id: '$name', count: { $sum: 1 } } }
 ])
 ```
+
+TODO: Ich verstehe hier nicht ganz die Bedeutung der `1` hinter `$sum:`. Auch bei den späteren Magic numbers erklären, was die bedeuten.
 
 ***Beispiel***
 
@@ -75,6 +77,8 @@ db.meineCollection.aggregate([
 
 ### mapReduce()
 [20 min]
+
+TODO: Kannst du hier noch was zum JavaScript sagen, das hier verwendet wird?
 
 Die `mapReduce()` Methode führt eine Map-Reduce-Operation auf der Collection aus. Diese Methode erwartet zwei Funktionen als Parameter: eine Map-Funktion und eine Reduce-Funktion.
 
