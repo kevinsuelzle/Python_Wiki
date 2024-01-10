@@ -163,22 +163,23 @@
 
 ## NoSQL Datenbanken
 
-| Woche | Unterricht                                                                  | Lernziele                                                               | Begriffssammlung                                                    |
-| ----- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------- | 
-|       | [NoSQL Intro Motivation](datenbanken/nosql/intro.md)                  | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [Key-Value Stores](datenbanken/nosql/key_value_stores.md)                   | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [Document Stores](datenbanken/nosql/document_stores.md)                     | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [Graphen Datenbanken](datenbanken/datenbanken/nosql/graphen_datenbanken.md) | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [Wide Column Stores](datenbanken/nosql/wide_column_stores.md)               | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [MongoDB - Einführung](atenbanken/nosql/mongodb/intro.md)                   | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [MongoDB - CRUD](datenbanken/nosql/mongodb/crud.md)                         | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [MongoDB - Aggregation](datenbanken/nosql/mongodb/aggregation.md)           | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [MongoDB - Indizes](datenbanken/nosql/mongodb/indexes.md)                   | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [MongoDB - Datenmodellierung](datenbanken/nosql/mongodb/data_modeling.md)   | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [MongoDB - Sicherheit](datenbanken/nosql/mongodb/security.md)               | [hier](../checklists/checklist_db2.md#sicherheit-für-noaql-datenbanken) | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [MongoDB - Pymongo](datenbanken/nosql/mongodb/pymongo.md)                   | [hier](../checklists/checklist_db2.md#pymongo)                          | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [Datenbank Refactoring](datenbanken/nosql/mongodb/refactoring.md)           | [hier](../checklists/checklist_db2.md#datenbank-refactoring-in-nosql)   | [hier](../begriffe/begriffe_db2.md)                                 |
-|       | [Datenbank Migration](datenbanken/nosql/mongodb/migration.md)               | [hier](../checklists/checklist_db2.md#datenbank-refactoring-in-nosql)   | [hier](../begriffe/begriffe_db2.md)                                 |
+| Woche | Unterricht                                                                  | Lernziele                                                               | Begriffssammlung                    |
+|-------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|-------------------------------------| 
+|       | [NoSQL Intro Motivation](datenbanken/nosql/intro.md)                        | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md) |
+|       | [Key-Value Stores](datenbanken/nosql/key_value_stores.md)                   | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md) |
+|       | [Document Stores](datenbanken/nosql/document_stores.md)                     | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md) |
+|       | [Graphen Datenbanken](datenbanken/datenbanken/nosql/graphen_datenbanken.md) | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md) |
+|       | [Wide Column Stores](datenbanken/nosql/wide_column_stores.md)               | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md) |
+|       | [MongoDB - Einführung](datenbanken/nosql/mongodb/intro.md)                  | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md) |
+|       | [MongoDB - CRUD](datenbanken/nosql/mongodb/crud.md)                         | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md) |
+|       | [MongoDB - Aggregation](datenbanken/nosql/mongodb/aggregation.md)           | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md) |
+|       | [MongoDB - Indizes](datenbanken/nosql/mongodb/indexes.md)                   | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md) |
+|       | [MongoDB - Datenmodellierung](datenbanken/nosql/mongodb/data_modeling.md)   | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md) |
+|       | [MongoDB - Sicherheit](datenbanken/nosql/mongodb/security.md)               | [hier](../checklists/checklist_db2.md#sicherheit-für-noaql-datenbanken) | [hier](../begriffe/begriffe_db2.md) |
+|       | [MongoDB - Pymongo](datenbanken/nosql/mongodb/pymongo.md)                   | [hier](../checklists/checklist_db2.md#pymongo)                          | [hier](../begriffe/begriffe_db2.md) |
+|       | [Datenbank Refactoring](datenbanken/nosql/mongodb/refactoring.md)           | [hier](../checklists/checklist_db2.md#datenbank-refactoring-in-nosql)   | [hier](../begriffe/begriffe_db2.md) |
+|       | [Datenbank Migration](datenbanken/nosql/mongodb/migration.md)               | [hier](../checklists/checklist_db2.md#datenbank-refactoring-in-nosql)   | [hier](../begriffe/begriffe_db2.md) |
+
 <!--  |                                                                             | [Wiederholung SQL Datenbanken]()                                        | [hier](../checklists/checklist_db2.md#Wiederholung-SQL-Datenbanken) |     | --> 
 <!--  |                                                                             | [MongoDB & Cosmos DB]()                                                 | [hier](../checklists/checklist_db2.md#azure-cosmos-db)              |     | --> 
 

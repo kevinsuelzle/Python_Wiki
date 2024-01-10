@@ -6,7 +6,7 @@ Das Schlüssel-Wert-Datenbankmodell ist wie eine Sammlung von Dictionaries oder 
 
 ## Anwendungsfälle:
 
-Schlüssel-Wert Datenbanken werden vor allem für Anwendungsfälle eingesetzt, bei denen die Daten schnell abgerufen werden müssen. Sie eignen sich besonders gut für die Speicherung von Daten, die nicht in Beziehung zueinander stehen. Beispiele für Anwendungsfälle sind:
+Schlüssel-Wert Datenbanken werden vor allem für Anwendungsfälle eingesetzt, bei denen die Daten schnell abgerufen werden müssen. Sie eignen sich besonders gut für die Speicherung von Daten, die **nicht in Beziehung** zueinander stehen. Beispiele für Anwendungsfälle sind:
 
 **Caching:**
 Schlüssel-Wert-Datenbanken sind ideal für das Zwischenspeichern häufig abgerufener Daten, um Antwortzeiten zu verbessern.

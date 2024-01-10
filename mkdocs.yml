@@ -145,14 +145,14 @@ nav:
               - Cloud Planung: lehrplan/azure/unterrichte/cloud_planung/cloud_planung.md
               - Blobs und Funktionen: lehrplan/azure/unterrichte/blobs_funktionen/blobs_funktionen.md
               - Cloud Monitoring: lehrplan/azure/unterrichte/cloud_monitoring/cloud_monitoring.md
-          - Datenbanken 2:
+      - Block 3:
+          - NoSQL Datenbanken:
               - NoSQL:
                 - Einführung: lehrplan/datenbanken/nosql/intro.md
                 - Key-Value Stores: lehrplan/datenbanken/nosql/key_value_stores.md
                 - Document Stores: lehrplan/datenbanken/nosql/document_stores.md
                 - Graphen Datenbanken: lehrplan/datenbanken/nosql/graphen_datenbanken.md
-                - Wide Column Stores: lehrplan/datenbanken/nosql/wide_column_stores.md 
-
+                - Wide Column Stores: lehrplan/datenbanken/nosql/wide_column_stores.md
               - MongoDB: 
                 - Einführung: lehrplan/datenbanken/nosql/mongodb/intro.md
                 - CRUD: lehrplan/datenbanken/nosql/mongodb/crud.md
