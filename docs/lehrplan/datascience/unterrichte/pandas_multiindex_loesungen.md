@@ -65,7 +65,7 @@ print(df.groupby(level='Jahr').sum())
 
 ### A4: Multiindex mit from_product 🌶️🌶️
 
-Erstellen Sie einen Multiindex DataFrame mit pd.MultiIndex.from_product. Verwenden Sie die Produktkategorien ['Elektronik', 'Lebensmittel'] und die Jahre [2020, 2021] als Index. Fügen Sie eine Spalte 'Umsatz' mit beliebigen Werten hinzu.
+Erstellen Sie einen Multiindex DataFrame mit `pd.MultiIndex.from_product`. Verwenden Sie die Produktkategorien ['Elektronik', 'Lebensmittel'] und die Jahre [2020, 2021] als Index. Fügen Sie eine Spalte 'Umsatz' mit beliebigen Werten hinzu.
 
 
 ```python

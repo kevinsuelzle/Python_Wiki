@@ -84,7 +84,7 @@ print(ausreißer)
 
 ### A5: Winsorizing von Daten 🌶️🌶️
 
-Wende die Winsorizing-Technik auf df['Werte'] an, um extreme Ausreißer zu begrenzen.
+Wende die Winsorizing-Technik auf `df['Werte']` an, um extreme Ausreißer zu begrenzen.
 
 
 ```python
@@ -114,7 +114,7 @@ print(df)
 
 ### A6: Erstellung eines bereinigten Datensatzes 🌶️🌶️
 
-Erstelle ein DataFrame mit einer Spalte 'Werte' und dann einen bereinigten DataFrame df_clean, indem du Ausreißer in df['Werte'] entfernst, die mehr als 1.5 IQR vom oberen oder unteren Quartil entfernt sind.
+Erstelle ein DataFrame mit einer Spalte 'Werte' und dann einen bereinigten DataFrame `df_clean`, indem du Ausreißer in `df['Werte']` entfernst, die mehr als 1.5 IQR vom oberen oder unteren Quartil entfernt sind.
 
 
 ```python
@@ -136,7 +136,7 @@ print(df_clean)
 
 ### A7: Mittelwertberechnung mit und ohne Ausreißer 🌶️🌶️
 
-Berechne den Mittelwert von df['Werte'] sowohl mit als auch ohne Ausreißer, die mehr als zwei Standardabweichungen vom Mittelwert entfernt sind.
+Berechne den Mittelwert von `df['Werte']` sowohl mit als auch ohne Ausreißer, die mehr als zwei Standardabweichungen vom Mittelwert entfernt sind.
 
 
 ```python
@@ -163,7 +163,7 @@ print("Mittelwert ohne Ausreißer:", mittelwert_ohne_ausreißer)
 
 ### A8: Erkennung von Ausreißern in mehreren Spalten 🌶️🌶️🌶️
 
-Gegeben ist ein DataFrame df mit den Spalten 'Werte1' und 'Werte2'. Identifiziere Ausreißer in beiden Spalten mit der Z-Score-Methode.
+Gegeben ist ein DataFrame `df` mit den Spalten 'Werte1' und 'Werte2'. Identifiziere Ausreißer in beiden Spalten mit der Z-Score-Methode.
 
 
 ```python
@@ -193,7 +193,7 @@ print("\nausreißer:\n",ausreißer)
 
 ### A9: Filtern von Ausreißern mit einem benutzerdefinierten Schwellenwert 🌶️🌶️🌶️
 
-Erstelle eine Funktion filter_ausreißer(df, schwellenwert), die Ausreißer aus df['Werte'] entfernt, die mehr als den angegebenen Schwellenwert vom Mittelwert entfernt sind.
+Erstelle eine Funktion `filter_ausreißer(df, schwellenwert)`, die Ausreißer aus `df['Werte']` entfernt, die mehr als den angegebenen Schwellenwert vom Mittelwert entfernt sind.
 
 
 ```python
@@ -228,7 +228,7 @@ print("\ndf_clean:\n", df_clean)
 
 ### A10: Anwendung von Winsorizing auf einen Datensatz 🌶️🌶️🌶️
 
-Wende Winsorizing auf df['Werte'] an, um die oberen und unteren 10% der Werte zu begrenzen, und vergleiche die Mittelwerte vor und nach dem Winsorizing.
+Wende Winsorizing auf `df['Werte']` an, um die oberen und unteren 10% der Werte zu begrenzen, und vergleiche die Mittelwerte vor und nach dem Winsorizing.
 
 
 ```python

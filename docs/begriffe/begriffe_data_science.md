@@ -117,79 +117,56 @@
 
 # Pandas: Multiindex
 
-| Begriff                   | Kurzerklärung                                                                   | Link zur Referenz                                                                                      |
-|---------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
+| Begriff                   | Kurzerklärung                                                                                             | Link zur Referenz                                                                                      |
+|---------------------------|-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Multiindex                | Ein Multiindex in Pandas ermöglicht es, mehrere Indexebenen in einem DataFrame oder einer Series zu haben | [Referenz](https://pandas.pydata.org/docs/user_guide/advanced.html)                                    |
+| `Multiindex()`            | Erzeugung eines Multiindex                                                                                | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.MultiIndex.html)                        |
+| `from_arrays()`           | Erzeugt einen Multiindex aus Arrays                                                                       | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.MultiIndex.from_arrays.html)            |
+| `from_product()`          | Erzeugt einen Multiindex aus dem Produkt von Mengen                                                       | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.MultiIndex.from_product.html)           |
+
 
 # Pandas: Gruppieren und Pivotisieren
 
-| Begriff                   | Kurzerklärung                                                                   | Link zur Referenz                                                                                      |
-|---------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
+| Begriff                   | Kurzerklärung                                                                         | Link zur Referenz                                                                                            |
+|---------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| `groupby()`               | Erzeugt aus einem DataFrame Gruppen-Objekte (unterteilt das DataFrame in Gruppen)     | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html)                       |
+| Aggregationsfunktion      | Eine Funktion, die auf den Gruppen angewendet wird (z.B. `min`, `mean`, etc.)         | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.core.groupby.DataFrameGroupBy.aggregate.html) |
+| `pivot_table()`           | Erzeugt eine neue Tabelle aus einer bestehenden Tabelle, gruppiert nach einem Merkmal | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.pivot_table.html)                             |
+
 
 # Pandas & Matplotlib: Zeitreihenanalyse
 
-| Begriff                   | Kurzerklärung                                                                   | Link zur Referenz                                                                                      |
-|---------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
+| Begriff                   | Kurzerklärung                                                                         | Link zur Referenz                                                                                          |
+|---------------------------|---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| Zeitreihe                 | Eine zeitlich geoordnete Folge von Werten, Bsp: Sensorwerte oder Umsatzzahlen         | [Referenz](https://de.wikipedia.org/wiki/Zeitreihenanalyse)                                                |
+| `rolling()`               | Erzeugt ein gleitendes Fenster, z.B. um einen gleitenden Mittelwert zu berechnen      | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rolling.html)                     |
+| `resample()`              | Erzeugt eine neue zeitliche Sicht auf eine Zeitreihe                                  | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.resample.html)                    |
+| Lineare Regression        | Verfahren, das Datenpunkte versucht durch eine Gerade zu beschreiben                  | [Referenz](https://de.wikipedia.org/wiki/Lineare_Regression)                                               |
+| scikit-learn              | Python Bibliothek mit sehr vielen Machine-Learning-Verfahren, u.a. Lineare Regression | [Referenz](https://scikit-learn.org/stable/)                                                               |
+| `LinearRegression`        | Klasse aus scikit-learn, um eine lineare Regression zu lernen                         | [Referenz](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)   |
+
 
 # Pandas: Outlier (Ausreißer)
 
-| Begriff                   | Kurzerklärung                                                                   | Link zur Referenz                                                                                      |
-|---------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
+| Begriff                  | Kurzerklärung                                                                                                                                                | Link zur Referenz                                                                                      |
+|------------------------ -|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| IQR                      | Der Interquartilbereich (IQR) ist die Differenz zwischen dem 75. und 25. Perzentil eines Datensatzes und wird verwendet, um Ausreißer zu identifizieren      | [Referenz](https://de.wikipedia.org/wiki/Interquartilsabstand_(deskriptive_Statistik))                 |
+| Z-Score                  | Der Z-Score ist eine statistische Maßzahl, die angibt, wie viele Standardabweichungen ein Datenpunkt vom Mittelwert der Datenmenge entfernt ist              | [Referenz](https://help.tableau.com/current/pro/desktop/de-de/calculating_z_scores.htm)                |
+| Winsorizing              | Winsorizing ist eine Methode zur Reduzierung von Ausreißern, indem extrem hohe und niedrige Werte auf einen bestimmten Perzentilwert gesetzt werden          | [Referenz](https://en.wikipedia.org/wiki/Winsorizing)                                                  |
+| Quantil                  | Ein Quantil ist ein Wert, der einen Datensatz in gleich große, aufeinanderfolgende Teile teilt, wobei das 50. Perzentil beispielsweise dem Median entspricht | [Referenz](https://de.wikipedia.org/wiki/Empirisches_Quantil)                                          |
+| Standardabweichung       | Die Standardabweichung ist ein Maß für die Streuung der Werte in einem Datensatz, wobei höhere Werte auf eine größere Variabilität hinweisen                 | [Referenz](https://de.wikipedia.org/wiki/Stichprobenvarianz_(Sch%C3%A4tzfunktion))                     |
+| `zscore()`               | Funktion zur Berechnung des Z-Scores                       | [Referenz](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.zscore.html)           |
+| `quantile()`             | Berechnet Quantile, z.B. zur Berechnung des 95% Perzentils | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.quantile.html)            |
+| `winsorize()`            | Funktion zur Begrenzung von Ausreißern                     | [Referenz](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mstats.winsorize.html) |
+
 
 # Pandas & Matplotlib: DateTime (Zeitstempel)
 
-| Begriff                   | Kurzerklärung                                                                   | Link zur Referenz                                                                                      |
-|---------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-|                    |            | [Referenz]() |
-
-
-
-
-
-| Fachbegriff                          | Erläuterung                                                                                                                          |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-
-
-
-| Multiindex | Ein Multiindex in Pandas ermöglicht es, mehrere Indexebenen in einem DataFrame oder einer Series zu haben, wodurch komplexere Datenstrukturen dargestellt werden können |
-| Gruppen (bei Pandas) | Gruppen in Pandas beziehen sich auf das Ergebnis der groupby-Operation, die Daten anhand gemeinsamer Merkmale in Untergruppen segmentiert, um Aggregations-, Transformations- oder Filteroperationen durchzuführen |
-| Pivottabellen | Eine Pivottabelle in Pandas ist eine Datenzusammenfassungstabelle, die häufig für die interaktive Analyse und das Umstrukturieren von Daten, insbesondere zur Segmentierung und Aggregation, verwendet wird |
-| Zeitreihe | Eine zeitlich geoordnete Folge von Werten, z.B. Sensorwerte einer Maschine oder Umsatzzahlen eines Unternehmens |
-| IQR                 | Der Interquartilbereich (IQR) ist die Differenz zwischen dem 75. und 25. Perzentil eines Datensatzes und wird verwendet, um Ausreißer zu identifizieren. |
-| Z-Score             | Der Z-Score ist eine statistische Maßzahl, die angibt, wie viele Standardabweichungen ein Datenpunkt vom Mittelwert der Datenmenge entfernt ist. |
-| Winsorizing         | Winsorizing ist eine Methode zur Reduzierung von Ausreißern, indem extrem hohe und niedrige Werte auf einen bestimmten Perzentilwert gesetzt werden. |
-| Quantil             | Ein Quantil ist ein Wert, der einen Datensatz in gleich große, aufeinanderfolgende Teile teilt, wobei das 50. Perzentil beispielsweise dem Median entspricht. |
-| Standardabweichung  | Die Standardabweichung ist ein Maß für die Streuung der Werte in einem Datensatz, wobei höhere Werte auf eine größere Variabilität hinweisen. |
+| Begriff                  | Kurzerklärung                                                                                       | Link zur Referenz                                                                                      |
+|--------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| datetime                 | Modul aus der Python Standard-Bibliothek, um Zeitstempel (Datum-Uhrzeit) zu speichern               | [Referenz](https://docs.python.org/3/library/datetime.html#module-datetime)                            |
+| `date_range()`           | Erzeugt ein Intervall von Zeitstempeln                                                              | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.date_range.html)                        |
+| `dt.day`                 | Liefert den Tag eines datetime Objektes zurück                                                      | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.Series.dt.day.html)                     |
+| `dt.month`               | Liefert den Monat eines datetime Objektes zurück                                                    | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.Series.dt.month.html)                   |
+| `dt.year`                | Liefert das Jahr eines datetime Objektes zurück                                                     | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.Series.dt.year.html)                    |
+| `dt.dayofweek`           | Liefert den Wochentag eines datetime Objektes zurück                                                | [Referenz](https://pandas.pydata.org/docs/reference/api/pandas.Series.dt.dayofweek.html)               |

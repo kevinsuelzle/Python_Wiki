@@ -55,7 +55,7 @@ print(df)
     2023-01-05   290
 
 
-In diesem Beispiel wird zuerst ein Pandas DataFrame df mit einer Spalte für Daten ('Datum') und einer Spalte für Werte ('Wert') erstellt. Anschließend wird die 'Datum'-Spalte in ein Python Datumsformat umgewandelt, damit Pandas sie als Zeitreihe behandeln kann. Schließlich wird diese Spalte als Index des DataFrames gesetzt, was eine wichtige Voraussetzung für die meisten Zeitreihenoperationen ist.
+In diesem Beispiel wird zuerst ein Pandas DataFrame `df` mit einer Spalte für Daten ('Datum') und einer Spalte für Werte ('Wert') erstellt. Anschließend wird die 'Datum'-Spalte in ein Python Datumsformat umgewandelt, damit Pandas sie als Zeitreihe behandeln kann. Schließlich wird diese Spalte als Index des DataFrames gesetzt, was eine wichtige Voraussetzung für die meisten Zeitreihenoperationen ist.
 
 ### Beispiel 2: Zeitreihendaten glätten
 
@@ -116,7 +116,7 @@ plt.show()
     
 
 
-In diesem Beispiel wird eine einfache Zeitreihe ts mit zufälligen Werten erzeugt. Die Zeitreihe wird dann mit der Methode rolling() geglättet, die einen gleitenden Durchschnitt berechnet (hier über ein Fenster von 5 Tagen). Die Original- und die geglättete Zeitreihe werden anschließend mit Matplotlib geplottet, um den Glättungseffekt zu visualisieren.
+In diesem Beispiel wird eine einfache Zeitreihe ts mit zufälligen Werten erzeugt. Die Zeitreihe wird dann mit der Methode `rolling()` geglättet, die einen gleitenden Durchschnitt berechnet (hier über ein Fenster von 5 Tagen). Die Original- und die geglättete Zeitreihe werden anschließend mit Matplotlib geplottet, um den Glättungseffekt zu visualisieren.
 
 ### Beispiel 3: Zeitreihendaten auf eine bestimmte Periode resampling
 
@@ -151,11 +151,11 @@ plt.show()
     
 
 
-In diesem Beispiel wird die zuvor erstellte Zeitreihe ts auf eine wöchentliche Frequenz umgerechnet, indem das resample()-Verfahren verwendet wird. Für jede Woche wird der Durchschnitt der Werte berechnet. Das Ergebnis wird dann als Linienplot dargestellt, um die wöchentlichen Durchschnittswerte zu visualisieren.
+In diesem Beispiel wird die zuvor erstellte Zeitreihe `ts` auf eine wöchentliche Frequenz umgerechnet, indem das `resample()`-Verfahren verwendet wird. Für jede Woche wird der Durchschnitt der Werte berechnet. Das Ergebnis wird dann als Linienplot dargestellt, um die wöchentlichen Durchschnittswerte zu visualisieren.
 
 ### Beispiel 4: Zeitreihe auf Trend und Saisonalität untersuchen
 
-Installieren Sie jetzt zuerst das Paket statsmodels mit:
+Installieren Sie jetzt zuerst das Paket `statsmodels` mit:
 
     pip install statsmodels
 
@@ -196,7 +196,7 @@ plt.show()
     
 
 
-Hier wird die Bibliothek statsmodels verwendet, um eine Zeitreihe in ihre Komponenten zu zerlegen: Trend, Saisonalität und Restkomponente. Dies geschieht mit der Funktion seasonal_decompose, wobei angenommen wird, dass die Zeitreihe eine monatliche Frequenz hat und die Saisonalität auf einer jährlichen Basis (Periodenlänge 12 Monate) auftritt. Das Ergebnis wird in separaten Plots dargestellt, um die verschiedenen Komponenten der Zeitreihe zu visualisieren.
+Hier wird die Bibliothek statsmodels verwendet, um eine Zeitreihe in ihre Komponenten zu zerlegen: Trend, Saisonalität und Restkomponente. Dies geschieht mit der Funktion `seasonal_decompose`, wobei angenommen wird, dass die Zeitreihe eine monatliche Frequenz hat und die Saisonalität auf einer jährlichen Basis (Periodenlänge 12 Monate) auftritt. Das Ergebnis wird in separaten Plots dargestellt, um die verschiedenen Komponenten der Zeitreihe zu visualisieren.
 
 ### Beispiel 5: Zeitreihen-Daten anhand von Monatsdurchschnitten aggregieren
 

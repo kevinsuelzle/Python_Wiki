@@ -29,7 +29,7 @@ print(date_times)
     DatetimeIndex(['2023-01-01', '2023-02-01', '2023-03-01'], dtype='datetime64[ns]', freq=None)
 
 
-In diesem Beispiel wird die Pandas-Funktion to_datetime verwendet, um eine Liste von Datumsstrings in DateTime-Objekte umzuwandeln. Dies ist eine grundlegende Operation in Pandas, die nützlich ist, um Datumsinformationen aus Textdaten zu extrahieren und in ein Format umzuwandeln, das für Zeitreihenanalysen geeignet ist.
+In diesem Beispiel wird die Pandas-Funktion `to_datetime` verwendet, um eine Liste von Datumsstrings in DateTime-Objekte umzuwandeln. Dies ist eine grundlegende Operation in Pandas, die nützlich ist, um Datumsinformationen aus Textdaten zu extrahieren und in ein Format umzuwandeln, das für Zeitreihenanalysen geeignet ist.
 
 ### Beispiel 2: Zeitreihen-Daten in Pandas filtern
 
@@ -131,7 +131,7 @@ plt.show()
     
 
 
-Hier wird eine Zeitreihe mit Matplotlib visualisiert. Der DataFrame enthält eine Datumsreihe und eine Reihe von Werten. Mit plt.plot wird ein Liniendiagramm erstellt, wobei das Datum auf der X-Achse und die Werte auf der Y-Achse abgetragen sind. Diese Art der Darstellung ist nützlich, um Trends und Muster in Zeitreihendaten zu erkennen.
+Hier wird eine Zeitreihe mit Matplotlib visualisiert. Der DataFrame enthält eine Datumsreihe und eine Reihe von Werten. Mit `plt.plot` wird ein Liniendiagramm erstellt, wobei das Datum auf der X-Achse und die Werte auf der Y-Achse abgetragen sind. Diese Art der Darstellung ist nützlich, um Trends und Muster in Zeitreihendaten zu erkennen.
 
 ### Beispiel 4: Erstellen eines Zeitreihen-Barplots mit Seaborn
 

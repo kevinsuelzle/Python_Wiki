@@ -56,7 +56,7 @@ print(gruppen)
     Banane              75
 
 
-In diesem Beispiel wird ein DataFrame df erstellt, der Verkaufsdaten für Produkte enthält. Wir gruppieren die Daten nach der Spalte 'Produkt' und berechnen die Gesamtverkaufsmenge für jedes Produkt. Das Ergebnis ist ein neuer DataFrame, der die Gesamtverkaufsmenge für Äpfel und Bananen anzeigt.
+In diesem Beispiel wird ein DataFrame `df` erstellt, der Verkaufsdaten für Produkte enthält. Wir gruppieren die Daten nach der Spalte 'Produkt' und berechnen die Gesamtverkaufsmenge für jedes Produkt. Das Ergebnis ist ein neuer DataFrame, der die Gesamtverkaufsmenge für Äpfel und Bananen anzeigt.
 
 ### Beispiel 2: Gruppieren und Anwenden mehrerer Aggregatfunktionen
 
@@ -91,7 +91,7 @@ print(ergebnis)
     Banane              75  0.500000
 
 
-Hier gruppieren wir den DataFrame df nach der Spalte 'Produkt'. Für die 'Verkaufsmenge' berechnen wir die Summe, und für den 'Preis' das arithmetische Mittel. Das Ergebnis ist ein DataFrame, der die Gesamtverkaufsmenge und den durchschnittlichen Preis für jedes Produkt zeigt.
+Hier gruppieren wir den DataFrame `df` nach der Spalte 'Produkt'. Für die 'Verkaufsmenge' berechnen wir die Summe, und für den 'Preis' das arithmetische Mittel. Das Ergebnis ist ein DataFrame, der die Gesamtverkaufsmenge und den durchschnittlichen Preis für jedes Produkt zeigt.
 
 ### Beispiel 3: Pivot-Tabelle erstellen
 
@@ -127,7 +127,7 @@ print(pivot)
     2023-01-02     20      25
 
 
-In diesem Beispiel erstellen wir eine Pivot-Tabelle aus dem DataFrame df. Wir setzen 'Datum' als Index, 'Produkt' als Spalten und summieren die 'Verkaufsmenge'. Das Ergebnis zeigt die Verkaufsmengen für Äpfel und Bananen getrennt nach Datum.
+In diesem Beispiel erstellen wir eine Pivot-Tabelle aus dem DataFrame `df`. Wir setzen 'Datum' als Index, 'Produkt' als Spalten und summieren die 'Verkaufsmenge'. Das Ergebnis zeigt die Verkaufsmengen für Äpfel und Bananen getrennt nach Datum.
 
 ### Beispiel 4: Gruppieren mit mehreren Spalten
 
@@ -162,7 +162,7 @@ print(gruppen)
            Banane              25
 
 
-Hier gruppieren wir den DataFrame df nach den Spalten 'Region' und 'Produkt'. Das Ergebnis ist ein DataFrame, der die Gesamtverkaufsmengen für Äpfel und Bananen in den jeweiligen Regionen anzeigt.
+Hier gruppieren wir den DataFrame `df` nach den Spalten 'Region' und 'Produkt'. Das Ergebnis ist ein DataFrame, der die Gesamtverkaufsmengen für Äpfel und Bananen in den jeweiligen Regionen anzeigt.
 
 ### Beispiel 5: Pivotisieren mit Multi-Index
 
@@ -198,7 +198,7 @@ print(pivot)
                Süd       NaN    25.0
 
 
-In diesem Beispiel verwenden wir eine Pivot-Tabelle, um den DataFrame df zu pivotisieren. Wir setzen 'Datum' und 'Region' als Multi-Index für die Zeilen und 'Produkt' als Spalten. Die Werte in der Tabelle repräsentieren die 'Verkaufsmenge'. Dies erzeugt eine mehrdimensionale Ansicht der Daten, die es ermöglicht, die Verkaufsmengen von Äpfeln und Bananen nach Datum und Region zu analysieren. Das Ergebnis ist eine übersichtliche Darstellung der Verkaufsmengen, die auf einen Blick zeigt, wie sich die Verkäufe über verschiedene Produkte und Regionen verteilen.
+In diesem Beispiel verwenden wir eine Pivot-Tabelle, um den DataFrame `df` zu pivotisieren. Wir setzen 'Datum' und 'Region' als Multi-Index für die Zeilen und 'Produkt' als Spalten. Die Werte in der Tabelle repräsentieren die 'Verkaufsmenge'. Dies erzeugt eine mehrdimensionale Ansicht der Daten, die es ermöglicht, die Verkaufsmengen von Äpfeln und Bananen nach Datum und Region zu analysieren. Das Ergebnis ist eine übersichtliche Darstellung der Verkaufsmengen, die auf einen Blick zeigt, wie sich die Verkäufe über verschiedene Produkte und Regionen verteilen.
 
 ## Aufgaben [120 min]
 

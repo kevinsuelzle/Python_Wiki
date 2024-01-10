@@ -51,7 +51,7 @@ print(df)
                2               40
 
 
-In diesem Beispiel wird ein einfacher Pandas DataFrame mit einem Multiindex erstellt. Zuerst importieren wir pandas. Dann definieren wir zwei Listen, die die Werte für die beiden Ebenen unseres Multiindex enthalten: 'Obergruppe' (mit den Werten 'A' und 'B') und 'Untergruppe' (mit den Werten 1 und 2). Diese Listen werden zu Tupeln kombiniert, die als Index für unseren DataFrame verwendet werden. Schließlich erstellen wir den DataFrame df mit einer Spalte 'Daten'. Der Multiindex ermöglicht es, Daten in einer hierarchischen Struktur zu organisieren und darauf zuzugreifen.
+In diesem Beispiel wird ein einfacher Pandas DataFrame mit einem Multiindex erstellt. Zuerst importieren wir pandas. Dann definieren wir zwei Listen, die die Werte für die beiden Ebenen unseres Multiindex enthalten: 'Obergruppe' (mit den Werten 'A' und 'B') und 'Untergruppe' (mit den Werten 1 und 2). Diese Listen werden zu Tupeln kombiniert, die als Index für unseren DataFrame verwendet werden. Schließlich erstellen wir den DataFrame `df` mit einer Spalte 'Daten'. Der Multiindex ermöglicht es, Daten in einer hierarchischen Struktur zu organisieren und darauf zuzugreifen.
 
 ### Beispiel 2: Zugriff auf Daten in einem Multiindex DataFrame
 
@@ -96,13 +96,13 @@ print("\nSlicing von 'A'1 bis 'B'1:\n", df.loc[('A', 1):('B', 1)])
 
 In diesem Beispiel zeigen wir verschiedene Arten des Zugriffs auf Daten in einem DataFrame mit Multiindex.
 
-- Zugriff auf eine ganze Obergruppe: Mit df.loc['A'] greifen wir auf alle Zeilen zu, in denen die 'Obergruppe' den Wert 'A' hat. Dies gibt uns alle Datenzeilen in dieser Gruppe.
+- Zugriff auf eine ganze Obergruppe: Mit `df.loc['A']` greifen wir auf alle Zeilen zu, in denen die 'Obergruppe' den Wert 'A' hat. Dies gibt uns alle Datenzeilen in dieser Gruppe.
 
-- Zugriff auf eine spezifische Untergruppe innerhalb einer Obergruppe: Mit df.loc[('A', 2)] greifen wir spezifisch auf die Daten zu, bei denen die 'Obergruppe' 'A' und die 'Untergruppe' 2 ist.
+- Zugriff auf eine spezifische Untergruppe innerhalb einer Obergruppe: Mit `df.loc[('A', 2)]` greifen wir spezifisch auf die Daten zu, bei denen die 'Obergruppe' 'A' und die 'Untergruppe' 2 ist.
 
-- Zugriff auf eine bestimmte Untergruppe über alle Obergruppen hinweg: Mit df.xs(1, level='Untergruppe') erhalten wir alle Zeilen, in denen die 'Untergruppe' 1 ist, unabhängig davon, welcher 'Obergruppe' sie angehören.
+- Zugriff auf eine bestimmte Untergruppe über alle Obergruppen hinweg: Mit `df.xs(1, level='Untergruppe')` erhalten wir alle Zeilen, in denen die 'Untergruppe' 1 ist, unabhängig davon, welcher 'Obergruppe' sie angehören.
 
-- Slicing über Multiindex-Ebenen hinweg: Mit df.loc[('A', 1):('B', 1)] führen wir ein Slicing durch, das von der Obergruppe 'A', Untergruppe 1 bis zur Obergruppe 'B', Untergruppe 1 reicht.
+- Slicing über Multiindex-Ebenen hinweg: Mit `df.loc[('A', 1):('B', 1)]` führen wir ein Slicing durch, das von der Obergruppe 'A', Untergruppe 1 bis zur Obergruppe 'B', Untergruppe 1 reicht.
 
 ### Beispiel 3: Multiindex aus Produkt von Arrays erstellen
 
@@ -131,7 +131,7 @@ print(df)
                3               5
 
 
-In diesem Beispiel erstellen wir einen Multiindex durch das kartesische Produkt von zwei Arrays: obergruppe und untergruppe. Der Multiindex multi_index wird dann verwendet, um einen DataFrame df zu erstellen. Dieser Ansatz ist besonders nützlich, wenn jede Kombination von Werten aus den beiden Arrays als Index verwendet werden soll. Der resultierende DataFrame hat für jede Kombination aus Ober- und Untergruppe einen entsprechenden Eintrag.
+In diesem Beispiel erstellen wir einen Multiindex durch das kartesische Produkt von zwei Arrays: `obergruppe` und `untergruppe`. Der Multiindex `multi_index` wird dann verwendet, um einen DataFrame `df` zu erstellen. Dieser Ansatz ist besonders nützlich, wenn jede Kombination von Werten aus den beiden Arrays als Index verwendet werden soll. Der resultierende DataFrame hat für jede Kombination aus Ober- und Untergruppe einen entsprechenden Eintrag.
 
 ### Beispiel 4: Sortieren eines DataFrames mit Multiindex
 
@@ -173,11 +173,11 @@ print("\nNach dem Sortieren:\n", sortierter_df)
                2             100
 
 
-In diesem Beispiel erstellen wir zuerst einen DataFrame df mit einem Multiindex, bei dem die Reihenfolge der Indexwerte zunächst nicht sortiert ist (zuerst kommt 'B', dann 'A').
+In diesem Beispiel erstellen wir zuerst einen DataFrame `df` mit einem Multiindex, bei dem die Reihenfolge der Indexwerte zunächst nicht sortiert ist (zuerst kommt 'B', dann 'A').
 
 Beim Ausdrucken des ursprünglichen DataFrames sehen Sie, dass die Indexwerte nicht in einer natürlichen Reihenfolge vorliegen. Dies kann das Verständnis und die Analyse der Daten erschweren.
 
-Nachdem wir df.sort_index() aufgerufen haben, erstellen wir den DataFrame sortierter_df, bei dem die Indexwerte in einer logischen Reihenfolge sortiert sind (zuerst 'A', dann 'B', und innerhalb jeder Obergruppe sind die Untergruppen von 1 bis 2 sortiert).
+Nachdem wir `df.sort_index()` aufgerufen haben, erstellen wir den DataFrame `sortierter_df`, bei dem die Indexwerte in einer logischen Reihenfolge sortiert sind (zuerst 'A', dann 'B', und innerhalb jeder Obergruppe sind die Untergruppen von 1 bis 2 sortiert).
 
 Das Sortieren eines Multiindex DataFrame hilft, die Daten besser zu strukturieren und macht sie leichter lesbar, vor allem, wenn man auf bestimmte Abschnitte des DataFrames zugreifen oder diese analysieren möchte.
 
@@ -238,7 +238,7 @@ print("\n\npivot_df:\n", pivot_df)
     Süd      200   250
 
 
-In diesem Beispiel erstellen wir zuerst einen einfachen DataFrame df mit den Spalten 'Region', 'Jahr' und 'Umsatz'. Dann verwenden wir die pivot-Methode, um diesen DataFrame in einen DataFrame mit einem Multiindex umzuwandeln.
+In diesem Beispiel erstellen wir zuerst einen einfachen DataFrame `df` mit den Spalten 'Region', 'Jahr' und 'Umsatz'. Dann verwenden wir die `pivot`-Methode, um diesen DataFrame in einen DataFrame mit einem Multiindex umzuwandeln.
 
 Durch das Pivotieren wird 'Region' als Index und 'Jahr' als Spaltenüberschriften verwendet. Jeder Zellenwert entspricht dem 'Umsatz' für die jeweilige Region und das jeweilige Jahr. Das Ergebnis ist ein DataFrame, der eine zweidimensionale Darstellung unserer Daten bietet, wobei die Indexhierarchie klar ersichtlich ist. In diesem Fall haben wir einen einfachen Index (nur 'Region'), aber die Spalten bilden eine hierarchische Struktur, die einem Multiindex ähnelt, mit 'Jahr' als zweiter Ebene.
 
@@ -260,7 +260,7 @@ Aggregieren Sie dann die Bevölkerungsdaten aus Aufgabe 1, um die Gesamtbevölke
 
 ### A4: Multiindex mit from_product 🌶️🌶️
 
-Erstellen Sie einen Multiindex DataFrame mit pd.MultiIndex.from_product. Verwenden Sie die Produktkategorien ['Elektronik', 'Lebensmittel'] und die Jahre [2020, 2021] als Index. Fügen Sie eine Spalte 'Umsatz' mit beliebigen Werten hinzu.
+Erstellen Sie einen Multiindex DataFrame mit `pd.MultiIndex.from_product`. Verwenden Sie die Produktkategorien ['Elektronik', 'Lebensmittel'] und die Jahre [2020, 2021] als Index. Fügen Sie eine Spalte 'Umsatz' mit beliebigen Werten hinzu.
 
 ### A5: Sortieren eines Multiindex DataFrame 🌶️🌶️
 

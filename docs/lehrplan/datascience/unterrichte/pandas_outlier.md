@@ -12,7 +12,7 @@ Ausreißer sind Datenpunkte, die signifikant von anderen Beobachtungen abweichen
 
 ## Ausreißererkennung mit Pandas
 
-Die Identifizierung von Ausreißern beginnt mit der grundlegenden Datenexploration. Pandas stellt Funktionen wie describe(), mean(), median(), und std() zur Verfügung, um einen ersten Überblick über die Daten zu erhalten. Diese statistischen Maßnahmen helfen dabei, Anomalien in den Daten zu erkennen.
+Die Identifizierung von Ausreißern beginnt mit der grundlegenden Datenexploration. Pandas stellt Funktionen wie `describe()`, `mean()`, `median()`, und `std`() zur Verfügung, um einen ersten Überblick über die Daten zu erhalten. Diese statistischen Maßnahmen helfen dabei, Anomalien in den Daten zu erkennen.
 
 ## Methoden zur Ausreißererkennung
 
@@ -257,26 +257,26 @@ Identifiziere dann Ausreißer, die mehr als zwei Standardabweichungen vom Mittel
 
 ### A5: Winsorizing von Daten 🌶️🌶️
 
-Wende die Winsorizing-Technik auf df['Werte'] an, um extreme Ausreißer zu begrenzen.
+Wende die Winsorizing-Technik auf `df['Werte']` an, um extreme Ausreißer zu begrenzen.
 
 ### A6: Erstellung eines bereinigten Datensatzes 🌶️🌶️
 
-Erstelle ein DataFrame mit einer Spalte 'Werte' und dann einen bereinigten DataFrame df_clean, indem du Ausreißer in df['Werte'] entfernst, die mehr als 1.5 IQR vom oberen oder unteren Quartil entfernt sind.
+Erstelle ein DataFrame mit einer Spalte 'Werte' und dann einen bereinigten DataFrame `df_clean`, indem du Ausreißer in df['Werte'] entfernst, die mehr als 1.5 IQR vom oberen oder unteren Quartil entfernt sind.
 
 ### A7: Mittelwertberechnung mit und ohne Ausreißer 🌶️🌶️
 
-Berechne den Mittelwert von df['Werte'] sowohl mit als auch ohne Ausreißer, die mehr als zwei Standardabweichungen vom Mittelwert entfernt sind.
+Berechne den Mittelwert von `df['Werte']` sowohl mit als auch ohne Ausreißer, die mehr als zwei Standardabweichungen vom Mittelwert entfernt sind.
 
 ### A8: Erkennung von Ausreißern in mehreren Spalten 🌶️🌶️🌶️
 
-Gegeben ist ein DataFrame df mit den Spalten 'Werte1' und 'Werte2'. Identifiziere Ausreißer in beiden Spalten mit der Z-Score-Methode.
+Gegeben ist ein DataFrame `df` mit den Spalten 'Werte1' und 'Werte2'. Identifiziere Ausreißer in beiden Spalten mit der Z-Score-Methode.
 
 ### A9: Filtern von Ausreißern mit einem benutzerdefinierten Schwellenwert 🌶️🌶️🌶️
 
-Erstelle eine Funktion filter_ausreißer(df, schwellenwert), die Ausreißer aus df['Werte'] entfernt, die mehr als den angegebenen Schwellenwert vom Mittelwert entfernt sind.
+Erstelle eine Funktion `filter_ausreißer(df, schwellenwert)`, die Ausreißer aus `df['Werte']` entfernt, die mehr als den angegebenen Schwellenwert vom Mittelwert entfernt sind.
 
 ### A10: Anwendung von Winsorizing auf einen Datensatz 🌶️🌶️🌶️
 
-Wende Winsorizing auf df['Werte'] an, um die oberen und unteren 10% der Werte zu begrenzen, und vergleiche die Mittelwerte vor und nach dem Winsorizing.
+Wende Winsorizing auf `df['Werte']` an, um die oberen und unteren 10% der Werte zu begrenzen, und vergleiche die Mittelwerte vor und nach dem Winsorizing.
 
 [Lösungen](pandas_outlier_loesungen.md)
