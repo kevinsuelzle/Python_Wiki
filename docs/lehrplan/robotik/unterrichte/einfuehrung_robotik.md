@@ -77,7 +77,7 @@ Auf dem Markt gibt es mehrere Robotersimulatoren unter denen man auswählen kann
 
 ## Simulierte und reale Roboter
 
-Viele der Roboter, die man in Webots finden kann, gibt es auch real. Teilweise sind dies sehr kostspielige Industrieroboter oder Forschungsplattformen, teilweise aber auch kostengünstige Roborerplattformen für die Lehre / Didaktik der Robotik:
+Viele der Roboter, die man in Webots finden kann, gibt es auch real. Teilweise sind dies sehr kostspielige Industrieroboter oder Forschungsplattformen, teilweise aber auch kostengünstige Roboterplattformen für die Lehre / Didaktik der Robotik:
 
 | Roboterbezeichnung     | Simulierter Roboter in Webots | Link zum realen Roboter | Preis des echten Roboters (ca.) |
 |------------------------|-------------------------------|-------------------------|---------------------------------|
