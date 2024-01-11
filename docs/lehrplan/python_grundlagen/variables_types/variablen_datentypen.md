@@ -347,6 +347,8 @@ Erstelle eine Liste mit den Zahlen von 1 bis 10.
 Konvertiere das Tupel `(1, 2, 3)` in eine Liste.
 ### 3. **Liste invertieren**:
 Kehre die Reihenfolge der Elemente in der Liste von Aufgabe 1 um.
+<!-- wir hatten hier noch kein Slicing -->
+
 ### 4. **Tupel aus Listen** 🌶️:
 Erstelle ein Tupel aus den ersten drei Elementen der Liste von Aufgabe 1.
 ### 5. **Liste von Tupeln** 🌶️🌶️: 
