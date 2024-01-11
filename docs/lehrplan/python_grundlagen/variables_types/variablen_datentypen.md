@@ -156,24 +156,30 @@ Multipliziere zwei Integers und gib das Ergebnis aus.
 Konvertiere einen Float in einen Integer und gib das Ergebnis aus.
 ### 6. **Vergleich von Integers** 🌶️: 
 Was ist das Ergebnis von:
-    1. `1 < 3`
-    2. `10 > 11`
-    3. `22 != 23`
-    4. `567 <= 890`
-    5. `444 >= 444`
-    6. `42 =< 42`
+
+* `1 < 3`
+* `10 > 11`
+* `22 != 23`
+* `567 <= 890`
+* `444 >= 444`
+* `42 =< 42`
+
 ### 7. **Booleansches AND** 🌶️: 
 Was ist das Ergebnis von:
-    1. `1 < 3 and 4 < 3`
+
+`1 < 3 and 4 < 3`
+
 ### 8. **Booleansches OR** 🌶️: 
 Es gelte `a=1` und `b=2`. Was ist das Ergebnis?
-    1. `a < 3 or b > 3`
+
+`a < 3 or b > 3`
+
 ### 9. **Umwandlung von Integer in Boolean** 🌶️: 
 Konvertiere einen Integer in einen Boolean und gib das Ergebnis aus.
 ### 10. **Modulo-Operator mit Integers** 🌶️: 
 Verwende den Modulo-Operator, um den Rest zweier Integers zu finden.
 ### 11. **Potenzierung von Floats** 🌶️: 
-Berechne die Potenz eines Floats (z.B. 5.5^3) und gib das Ergebnis aus.
+Berechne die Potenz eines Floats (z.B. $5.5^3$) und gib das Ergebnis aus.
 ### 12. **Vergleich von Floats** 🌶️: 
 Vergleiche zwei Floats miteinander und gib das Ergebnis (True oder False) aus.
 ### 13. **Integer in Float konvertieren** 🌶️: 
