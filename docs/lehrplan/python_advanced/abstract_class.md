@@ -1,20 +1,18 @@
 # Abstract Class, Dataclass
 
-## Introduction to Python Abstract Classes
+## Python und Abstract Classes
 
-In object-oriented programming, an abstract class is a class that cannot be instantiated. However, you can create classes that inherit from an abstract class.
+Die objektorientierte Programmierung kennt Klassen, die man NICHT instanziieren kann! Wow! :D
 
-Typically, you use an abstract class to create a blueprint for other classes.
+Wozu sind die denn dann überhaupt da? Aaaahhh.. man kann aber dennoch Unterklassen aus ihnen bilden. 
+Dadurch dienen sie als Blaupausen für den Code.
 
-Similarly, an abstract method is an method without an implementation. An abstract class may or may not include abstract methods.
+Analgo gibt es dann auch sogenannte Abstract Methods. Wie das konnkret aussieht zeigen die folgenden Zeilen, Beispiele und Erklärungen.
+Es ist so, dass Python nicht direkt das Konzept von abstrakten Klassen liefert. Dafür gibt es aber ein Modul mit dem Namen "ABC"
 
-Python doesn’t directly support abstract classes. But it does offer a module that allows you to define abstract classes.
 
-To define an abstract class, you use the abc (abstract base class) module.
 
-The abc module provides you with the infrastructure for defining abstract base classes.
-
-For example:
+Ein erstes Beispiel:
 
 ```python 
 from abc import ABC
@@ -31,26 +29,14 @@ class AbstractClassName(ABC):
     @abstractmethod
     def abstract_method_name(self):
         pass
-
 ```
 
-#### Python abstract class example
-Suppose that you need to develop a payroll program for a company.
+#### Ein konkretes Python 
 
-The company has two groups of employees: full-time employees and hourly employees. The full-time employees get a fixed salary while the hourly employees get paid by hourly wages for their services.
+Ein super seltenes Beispiel, welches überhaupt nicht oft vorkommt dreht sich um das Thema Mitarbeiter, Daten der Mitarbeiter, Gehaltsmanagement von Mitarbeiter und so ein Kram. und genau darum soll es auch jetzt wieder gehen:
 
-The payroll program needs to print out a payroll that includes employee names and their monthly salaries.
+Die Employee-Klasse soll dabei als Blaupause für alle anderen spezifischen Mitarbeiter-Klassen dienen:
 
-To model the payroll program in an object-oriented way, you may come up with the following classes: Employee, FulltimeEmployee, HourlyEmployee, and Payroll.
-
-To structure the program, we’ll use modules, where each class is placed in a separate module (or file).
-
-The Employee class
-The Employee class represents an employee, either full-time or hourly. The Employee class should be an abstract class because there’re only full-time employees and hourly employees, no general employees exist.
-
-The Employee class should have a property that returns the full name of an employee. In addition, it should have a method that calculates salary. The method for calculating salary should be an abstract method.
-
-The following defines the Employee abstract class:
 
 ```python 
 from abc import ABC, abstractmethod
@@ -67,14 +53,11 @@ class Employee(ABC):
     @abstractmethod
     def get_salary(self):
         pass
-
 ```
-#### The FulltimeEmployee class
-The FulltimeEmployee class inherits from the Employee class. It’ll provide the implementation for the get_salary() method.
 
-Since full-time employees get fixed salaries, you can initialize the salary in the constructor of the class.
+#### Die FulltimeEmployee Klasse
 
-The following illustrates the FulltimeEmployee class:
+Der FulltimeEmployee ist ein Employee und bekommt monatlich ein festen Einkommen.
 
 ```python 
 class FulltimeEmployee(Employee):
@@ -87,12 +70,7 @@ class FulltimeEmployee(Employee):
 
 ```
 
-The HourlyEmployee class
-The HourlyEmployee also inherits from the Employee class. However, hourly employees get paid by working hours and their rates. Therefore, you can initialize this information in the constructor of the class.
-
-To calculate the salary for the hourly employees, you multiply the working hours and rates.
-
-The following shows the HourlyEmployee class:
+Der HourlyEmployee ist auch ein Employee bekommt aber nicht immer das gleiche Gehalt.
 
 ```python 
 class HourlyEmployee(Employee):
@@ -105,12 +83,9 @@ class HourlyEmployee(Employee):
         return self.worked_hours * self.rate
 ```
 
-#### The Payroll class
-The Payroll class will have a method that adds an employee to the employee list and print out the payroll.
+#### Die Payroll Klasse
 
-Since fulltime and hourly employees share the same interfaces (full_time property and get_salary() method). Therefore, the Payroll class doesn’t need to distinguish them.
-
-The following shows the Payroll class:
+Wir wollen eine  Übersicht aller Mitarbeiter generieren und die Auszahlungen abbilden.
 
 ```python 
 class Payroll:
@@ -125,8 +100,9 @@ class Payroll:
             print(f"{e.full_name} \t ${e.get_salary()}")
 
 ```
-#### The main program
-The following app.py uses the FulltimeEmployee, HourlyEmployee, and Payroll classes to print out the payroll of five employees.
+#### Das Hauptprogramm
+
+Hier ein Programm, welches sich die eingeführten Klassen zunutze macht und ein praktisches Ergebnis generiert.
 
 ```python 
 from fulltimeemployee import FulltimeEmployee
@@ -144,12 +120,16 @@ payroll.add(HourlyEmployee('Kevin', 'Miller', 100, 150))
 payroll.print()
 ```
 
-When to use abstract classes
-In practice, you use abstract classes to share the code among several closely related classes. In the payroll program, all subclasses of the Employee class share the same full_name property.
 
-Summary
-Abstract classes are classes that you cannot create instances from.
-Use abc module to define abstract classes.
+#### Wann man abstrakte Klassen verwendet:
+
+Wie chatGPT es sagen würde:
+Wann man abstrakte Klassen rockt
+In der Praxis schmeißt man abstrakte Klassen in den Code-Party-Mixer, um den Spaß zwischen mehreren eng miteinander verbundenen Klassen zu teilen. Stell dir das Gehaltsabrechnungsprogramm vor - alle Mitarbeiter-Klassen-Nachkommen tanzen gemeinsam zu dem gleichen "full_name"-Beat.
+
+Zusammenfassung
+Abstrakte Klassen sind die Klassen, die keine Instanz-Partygänger sein dürfen.
+Das abc-Modul ist sozusagen der Türsteher für die abstrakten Klassen-Party.
 
 
 ## Beispielaufgaben:

@@ -1,21 +1,21 @@
 # Anonyme Funktionen
 
-#### History
-Alonzo Church formalized lambda calculus, a language based on pure abstraction, in the 1930s. Lambda functions are also referred to as lambda abstractions, a direct reference to the abstraction model of Alonzo Church’s original creation.
+#### Ein geschichtlicher Hintergrund
+Alonzo Church hat in den 1930er Jahren die Lambda-Kalkül formalisiert, eine Sprache, die auf reiner Abstraktion basiert. Lambda-Funktionen werden auch als Lambda-Abstraktionen bezeichnet, was direkt auf das Abstraktionsmodell von Alonzo Church's Originalkreation verweist.
 
-Lambda calculus can encode any computation. It is Turing complete, but contrary to the concept of a Turing machine, it is pure and does not keep any state.
+Der Lambda-Kalkül kann jede Berechnung codieren. Er ist Turing-vollständig, aber im Gegensatz zum Konzept einer Turing-Maschine ist er rein und behält keinen Zustand.
 
-Functional languages get their origin in mathematical logic and lambda calculus, while imperative programming languages embrace the state-based model of computation invented by Alan Turing. The two models of computation, lambda calculus and Turing machines, can be translated into each another. This equivalence is known as the Church-Turing hypothesis.
+Funktionale Sprachen haben ihren Ursprung in mathematischer Logik und dem Lambda-Kalkül, während imperative Programmiersprachen das zustandsbasierte Berechnungsmodell von Alan Turing übernommen haben. Die beiden Berechnungsmodelle, Lambda-Kalkül und Turing-Maschinen, können ineinander übersetzt werden. Diese Äquivalenz wird als die Church-Turing-Hypothese bezeichnet.
 
-Functional languages directly inherit the lambda calculus philosophy, adopting a declarative approach of programming that emphasizes abstraction, data transformation, composition, and purity (no state and no side effects). Examples of functional languages include Haskell, Lisp, or Erlang.
+Funktionale Sprachen übernehmen direkt die Philosophie des Lambda-Kalküls und setzen auf einen deklarativen Programmieransatz, der Abstraktion, Datenverarbeitung, Komposition und Reinheit (kein Zustand und keine Seiteneffekte) betont. Beispiele für funktionale Sprachen sind Haskell, Lisp oder Erlang.
 
-By contrast, the Turing Machine led to imperative programming found in languages like Fortran, C, or Python.
+Im Gegensatz dazu führte die Turing-Maschine zur imperativen Programmierung, die in Sprachen wie Fortran, C oder Python zu finden ist.
 
-The imperative style consists of programming with statements, driving the flow of the program step by step with detailed instructions. This approach promotes mutation and requires managing state.
+Der imperative Stil besteht darin, mit Anweisungen zu programmieren und den Programmfluss schrittweise mit detaillierten Anweisungen zu steuern. Dieser Ansatz fördert Mutation und erfordert das Management von Zuständen.
 
-The separation in both families presents some nuances, as some functional languages incorporate imperative features, like OCaml, while functional features have been permeating the imperative family of languages in particular with the introduction of lambda functions in Java, or Python.
+Die Trennung in beiden Sprachfamilien hat einige Nuancen, da einige funktionale Sprachen imperative Funktionen integrieren, wie zum Beispiel OCaml, während funktionale Funktionen die imperative Sprachfamilie durch die Einführung von Lambda-Funktionen in Java oder Python durchdrungen haben.
 
-Python is not inherently a functional language, but it adopted some functional concepts early on. In January 1994, map(), filter(), reduce(), and the lambda operator were added to the language.
+Python ist an sich keine funktionale Sprache, hat aber frühzeitig einige funktionale Konzepte übernommen. Im Januar 1994 wurden map(), filter(), reduce() und der Lambda-Operator der Sprache hinzugefügt.
 
 ```python 
 def identity(x):
@@ -30,7 +30,7 @@ lambda x: x
 lambda x: x + 1
 ```
 
-You can apply the function above to an argument by surrounding the function and its argument with parentheses:
+Die Funktion oben lässt sich dann so schreiben:
 ```python 
 (lambda x: x + 1)(2)
 
@@ -57,8 +57,8 @@ high_ord_func(2, lambda x: x * x)
 high_ord_func(2, lambda x: x + 3)
 ```
 
-#### No Statements
-A lambda function can’t contain any statements. In a lambda function, statements like return, pass, assert, or raise will raise a SyntaxError exception. Here’s an example of adding assert to the body of a lambda:
+#### Statements sind verboten!
+ in einer Lambda-Funktion können keine Anweisungen verwendet werden. Statements wie return, pass, assert oder raise führen zu einer SyntaxError-Ausnahme. Hier ist ein Beispiel, wenn versucht wird, assert im Körper einer Lambda-Funktion zu verwenden:
 
 ```python 
 (lambda x: assert x == 2)(2) # SyntaxError: invalid syntax
@@ -68,15 +68,16 @@ A lambda function can’t contain any statements. In a lambda function, statemen
 ```python 
 lambda first: str, last: str: first.title() + " " + last.title() -> str
 ```
-#### Arguments
-Like a normal function object defined with def, Python lambda expressions support all the different ways of passing arguments. This includes:
 
-Positional arguments
-Named arguments (sometimes called keyword arguments)
-Variable list of arguments (often referred to as varargs)
-Variable list of keyword arguments
-Keyword-only arguments
-The following examples illustrate options open to you in order to pass arguments to lambda expressions:
+#### Argumente
+Wie bei einem normalen Funktionsobjekt, das mit def definiert ist, unterstützen Python Lambda-Ausdrücke alle verschiedenen Arten der Argumentübergabe. Dazu gehören:
+
+Positionale Argumente
+Benannte Argumente (manchmal als Schlüsselwortargumente bezeichnet)
+Variable Liste von Argumenten (oft als Varargs bezeichnet)
+Variable Liste von Schlüsselwortargumenten
+Nur-Schlüsselwortargumente
+Die folgenden Beispiele veranschaulichen die Möglichkeiten, wie Sie Argumente an Lambda-Ausdrücke übergeben können:
 
 ```python 
 (lambda x, y, z: x + y + z)(1, 2, 3)
@@ -88,7 +89,7 @@ The following examples illustrate options open to you in order to pass arguments
 ```
 
 #### Decorators
-A decorator can be applied to a lambda. Although it’s not possible to decorate a lambda with the @decorator syntax, a decorator is just a function, so it can call the lambda function:
+Sogar ein Dekorator kann auf eine Lambda-Funktion angewendet werden. Obwohl es nicht möglich ist, eine Lambda-Funktion mit der @decorator-Syntax zu dekorieren, ist ein Dekorateur einfach eine Funktion. Daher kann er die Lambda-Funktion aufrufen:
 
 ```python 
 # Defining a decorator
@@ -110,10 +111,14 @@ add_two(3)
 # Applying decorator to a lambda
 print((trace(lambda x: x ** 2))(3))
 ```
-add_two(), decorated with @trace on line 11, is invoked with argument 3 on line 15. By contrast, on line 18, a lambda function is immediately involved and embedded in a call to trace(), the decorator. When you execute the code above you obtain the following:
+
+
+Oben add_two(), dekoriert mit @trace. Im Gegensatz dazu wird in Zeile 18 eine Lambda-Funktion sofort aufgerufen und in einen Aufruf von trace(), dem Dekorator, eingebettet. Wenn Sie den obigen Code ausführen, erhalten Sie folgendes:
 
 #### Closures:
-A lambda can also be a closure. Here’s the same example with a Python lambda function:
+
+Closures gefällig? Kein Problem!
+
 ```python 
 def outer_func(x):
     y = 4
@@ -126,9 +131,10 @@ for i in range(3):
 
 
 #### Evaluation Time
-In some situations involving loops, the behavior of a Python lambda function as a closure may be counterintuitive. It requires understanding when free variables are bound in the context of a lambda. The following examples demonstrate the difference when using a regular function vs using a Python lambda.
 
-Test the scenario first using a regular function:
+In Schleifen verhält sich eine Python-Lambda-Funktion als Closure manchmal unerwartet. Es erfordert ein Verständnis dafür, wann freie Variablen im Kontext einer Lambda gebunden werden. Die folgenden Beispiele zeigen den Unterschied zwischen der Verwendung einer regulären Funktion und der Verwendung einer Python-Lambda.
+
+Wir testen das Szenario zunächst mit einer regulären Funktion:
 
 ```python 
 def wrap(n):
@@ -144,9 +150,8 @@ for n in numbers:
 for f in funcs:
     f()
 ```
-In a normal function, n is evaluated at definition time, on line 9, when the function is added to the list: funcs.append(wrap(n)).
 
-Now, with the implementation of the same logic with a lambda function, observe the unexpected behavior:
+Als La,bda Funktion führt das zu folgendem anderen Verhalten.
 
 ```python 
 numbers = 'one', 'two', 'three'
@@ -157,9 +162,9 @@ for n in numbers:
 for f in funcs:
     f()
 ```
-The unexpected result occurs because the free variable n, as implemented, is bound at the execution time of the lambda expression. The Python lambda function on line 4 is a closure that captures n, a free variable bound at runtime. At runtime, while invoking the function f on line 7, the value of n is three.
+Das unerwartete Ergebnis tritt auf, weil die freie Variable n, wie implementiert, zur Ausführungszeit des Lambda-Ausdrucks gebunden wird.
 
-To overcome this issue, you can assign the free variable at definition time as follows:
+Auf folgende Art und Weise kann man das Problem lösen:
 
 ```python 
 numbers = 'one', 'two', 'three'
@@ -170,12 +175,10 @@ for n in numbers:
 for f in funcs:
     f()
 ```
-Testing Lambdas
-Python lambdas can be tested similarly to regular functions. It’s possible to use both unittest and doctest.
 
-unittest
+#### unittest
 
-The unittest module handles Python lambda functions similarly to regular functions:
+Auch Unittests sind kein Problem mit lambda-Functions.
 
 ```python 
 import unittest
@@ -196,7 +199,8 @@ class LambdaTest(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main(verbosity=2)
 ```
-LambdaTest defines a test case with three test methods, each of them exercising a test scenario for addtwo() implemented as a lambda function. The execution of the Python file lambda_unittest.py that contains LambdaTest produces the following:
+
+Hier bildet die Klasse LambdaTest ein Testszenario mit drei Test Methods. 
 
 ```shell
 $ python lambda_unittest.py
@@ -217,11 +221,11 @@ Ran 3 tests in 0.001s
 
 FAILED (failures=1)
 ```
-As expected, we have two successful test cases and one failure for test_add_three: the result is 5, but the expected result was 6. This failure is due to an intentional mistake in the test case. Changing the expected result from 6 to 5 will satisfy all the tests for LambdaTest.
 
-doctest
 
-The doctest module extracts interactive Python code from docstring to execute tests. Although the syntax of Python lambda functions does not support a typical docstring, it is possible to assign a string to the __doc__ element of a named lambda:
+#### Doctest
+
+Das doctest-Modul extrahiert interaktiven Python-Code aus Docstrings, um Tests auszuführen. Obwohl die Syntax von Python-Lambda-Funktionen keine typische Docstring unterstützt, ist es möglich, einem benannten Lambda eine Zeichenkette zuzuweisen und sie dem __doc__ Element zuzuordnen:
 
 ```python 
 addtwo = lambda x: x + 2
@@ -238,9 +242,9 @@ if __name__ == '__main__':
     import doctest
     doctest.testmod(verbose=True)
 ```
-The doctest in the doc comment of lambda addtwo() describes the same test cases as in the previous section.
 
-When you execute the tests via doctest.testmod(), you get the following:
+Als nächstes in der Shell ausführen:
+
 
 ```shell
 $ python lambda_doctest.py
@@ -276,42 +280,40 @@ Got:
 ***Test Failed*** 1 failures.
 ```
 
-#### Lambda Expression Abuses
-Several examples in this article, if written in the context of professional Python code, would qualify as abuses.
+#### Lambda Expression No-Go
 
-If you find yourself trying to overcome something that a lambda expression does not support, this is probably a sign that a normal function would be better suited. The docstring for a lambda expression in the previous section is a good example. Attempting to overcome the fact that a Python lambda function does not support statements is another red flag.
+Mehrere Beispiele in diesem Artikel würden, wenn sie im Kontext professionellen Python-Codes geschrieben wären, als No-Go gelten.
 
-The next sections illustrate a few examples of lambda usages that should be avoided. Those examples might be situations where, in the context of Python lambda, the code exhibits the following pattern:
+Stellst du fest, dass du versuchst, etwas zu überwinden, was eine Lambda-Funktion nicht unterstützt, ist dies wahrscheinlich ein Zeichen dafür, dass eine normale Funktion besser geeignet wäre. Die Docstring für einen Lambda-Ausdruck im vorherigen Abschnitt ist ein gutes Beispiel. Der Versuch, die Tatsache zu überwinden, dass eine Python-Lambda-Funktion keine Anweisungen unterstützt, ist ein weiteres Warnsignal.
 
-It doesn’t follow the Python style guide (PEP 8)
-It’s cumbersome and difficult to read.
-It’s unnecessarily clever at the cost of difficult readability.
+Die nächsten Abschnitte zeigen einige Beispiele für die Verwendung von Lambdas, die vermieden werden sollten. Diese Beispiele könnten Situationen sein, in denen der Code im Kontext von Python-Lambda das folgende Muster aufweist:
+
+Es folgt nicht dem Python-Style-Guide (PEP 8).
+Es ist umständlich und schwer zu lesen.
+Es ist unnötig clever auf Kosten der Lesbarkeit.
 
 
-#### Raising an Exception
-Trying to raise an exception in a Python lambda should make you think twice. There are some clever ways to do so, but even something like the following is better to avoid:
+#### Keine Ausnahmen in Lambda-Functions erzeugen
 
 ```python 
 def throw(ex): raise ex
 (lambda: throw(Exception('Something bad happened')))()
 ```
-Because a statement is not syntactically correct in a Python lambda body, the workaround in the example above consists of abstracting the statement call with a dedicated function throw(). Using this type of workaround should be avoided. If you encounter this type of code, you should consider refactoring the code to use a regular function.
+Merke: Siehst du solchen Code, solltest du den Code sofort umzugestalten, dass eine reguläre Funktion verwendet wird. 
 
-#### Cryptic Style
-As in any programming languages, you will find Python code that can be difficult to read because of the style used. Lambda functions, due to their conciseness, can be conducive to writing code that is difficult to read.
-
-The following lambda example contains several bad style choices:
+#### Cryptischer Stil
+Wie in jeder Programmiersprache finden Sie auch in Python Code, der aufgrund des verwendeten Stils schwer zu lesen sein kann. Lambda-Funktionen können aufgrund ihrer Kürze dazu neigen, schwer lesbaren Code zu schreiben.
 
 ```python 
 (lambda _: list(map(lambda _: _ // 2, _)))([1,2,3,4,5,6,7,8,9,10])
 ```
-The underscore (_) refers to a variable that you don’t need to refer to explicitly. But in this example, three _ refer to different variables. An initial upgrade to this lambda code could be to name the variables:
+Es ist viel besser den Variablen Namen zu geben als sie nicht explizit zu benennen.
 
 ```python 
 (lambda some_list: list(map(lambda n: n // 2, some_list)))([1,2,3,4,5,6,7,8,9,10])
 
 ```
-Admittedly, it’s still difficult to read. By still taking advantage of a lambda, a regular function would go a long way to render this code more readable, spreading the logic over a few lines and function calls:
+Zugegebenermaßen ist es immer noch schwierig zu lesen. Indem man weiterhin von einer Lambda Gebrauch macht, könnte eine normale Funktion dazu beitragen, diesen Code lesbarer zu gestalten, indem man die Logik auf mehrere Zeilen und Funktionsaufrufe verteilt:
 
 ```python 
 def div_items(some_list):
@@ -320,10 +322,10 @@ def div_items(some_list):
 
 list(div_items([1,2,3,4,5,6,7,8,9,10]))
 ```
-This is still not optimal but shows you a possible path to make code, and Python lambda functions in particular, more readable. In Alternatives to Lambdas, you’ll learn to replace map() and lambda with list comprehensions or generator expressions. This will drastically improve the readability of the code.
+Das ist immer noch nicht optimal, zeigt aber einen möglichen Weg, Code und insbesondere Python-Lambda-Funktionen, lesbarer zu gestalten. Man kann map() und lambda durch Listenabstraktionen oder Generatorausdrücke ersetzen. Dies wird die Lesbarkeit des Codes erheblich verbessern.
 
-#### Python Classes
-You can but should not write class methods as Python lambda functions. The following example is perfectly legal Python code but exhibits unconventional Python code relying on lambda. For example, instead of implementing __str__ as a regular function, it uses a lambda. Similarly, brand and year are properties also implemented with lambda functions, instead of regular functions or decorators:
+#### Python Klassen
+Class-Methods als Lambda Ausdrücke sind schlecht. Das folgende Beispiel ist gültiger Python-Code, zeigt jedoch unkonventionellen Python-Code, der auf Lambda basiert. Zum Beispiel verwendet es anstelle der Implementierung von __str__ als reguläre Funktion ein Lambda. Ebenso sind brand und year Eigenschaften, die ebenfalls mit Lambda-Funktionen implementiert sind, anstelle von regulären Funktionen oder Decorators:
 
 ```python 
 class Car:
@@ -343,20 +345,20 @@ class Car:
     honk = lambda self: print('Honk!')     # 2: error E731
 ```
 
-Running a tool like flake8, a style guide enforcement tool, will display the following errors for __str__ and honk:
+
+Das Guide Enforcement Tool flake8 würde folgende Bemerkung ausspucken:
 
 ```shell
 E731 do not assign a lambda expression, use a def
 ```
-Although flake8 doesn’t point out an issue for the usage of the Python lambda functions in the properties, they are difficult to read and prone to error because of the usage of multiple strings like '_brand' and '_year'.
-
-Proper implementation of __str__ would be expected to be as follows:
+So kann man es besser machen:
 
 ```python 
 def __str__(self):
     return f'{self.brand} {self.year}'
 ```
-brand would be written as follows:
+
+Brand würde man dann so schreiben:
 
 ```python 
 @property
@@ -367,22 +369,21 @@ def brand(self):
 def brand(self, value):
     self._brand = value
 ```
-As a general rule, in the context of code written in Python, prefer regular functions over lambda expressions. Nonetheless, there are cases that benefit from lambda syntax, as you will see in the next section.
+Als allgemeine Regel im Kontext von in Python geschriebenem Code einfach reguläre Funktionen gegenüber Lambda-Ausdrücken bevorzugen. Dennoch gibt es Fälle, in denen die Lambda-Syntax von Vorteil ist, wie Sie im nächsten Abschnitt sehen werden.
 
 
-#### Appropriate Uses of Lambda Expressions
-Lambdas in Python tend to be the subject of controversies. Some of the arguments against lambdas in Python are:
+#### Angemessene Verwendung von Lambda-Ausdrücken
+Lambdas in Python neigen dazu, Gegenstand von Kontroversen zu sein. Einige der Argumente gegen Lambdas in Python sind:
 
-Issues with readability
-The imposition of a functional way of thinking
-Heavy syntax with the lambda keyword
-Despite the heated debates questioning the mere existence of this feature in Python, lambda functions have properties that sometimes provide value to the Python language and to developers.
+Probleme mit der Lesbarkeit
+Die Auferlegung einer funktionalen Denkweise
+Schwere Syntax mit dem Schlüsselwort lambda
+Trotz der hitzigen Debatten über die bloße Existenz dieses Features in Python haben Lambda-Funktionen Eigenschaften, die manchmal einen Mehrwert für die Python-Sprache und Entwickler bieten.
 
-The following examples illustrate scenarios where the use of lambda functions is not only suitable but encouraged in Python code.
+Die folgenden Beispiele veranschaulichen Szenarien, in denen die Verwendung von Lambda-Funktionen angemessen ist.
 
-#### Classic Functional Constructs
-Lambda functions are regularly used with the built-in functions map() and filter(), as well as functools.reduce(), exposed in the module functools. The following three examples are respective illustrations of using those functions with lambda expressions as companions:
-
+#### Classicche functionale Konstrukte
+Lambda Ausdrücke verwendet man häufig in Kombination mit map(), filter() und functools.reduce()
 
 ```python 
 list(map(lambda x: x.upper(), ['cat', 'dog', 'cow']))
@@ -392,74 +393,34 @@ list(filter(lambda x: 'o' in x, ['cat', 'dog', 'cow']))
 from functools import reduce
 reduce(lambda acc, x: f'{acc} | {x}', ['cat', 'dog', 'cow'])
 ```
-You may have to read code resembling the examples above, albeit with more relevant data. For that reason, it’s important to recognize those constructs. Nevertheless, those constructs have equivalent alternatives that are considered more Pythonic. In Alternatives to Lambdas, you’ll learn how to convert higher-order functions and their accompanying lambdas into other more idiomatic forms.
 
-#### Key Functions
-Key functions in Python are higher-order functions that take a parameter key as a named argument. key receives a function that can be a lambda. This function directly influences the algorithm driven by the key function itself. Here are some key functions:
-
-sort(): list method
-sorted(), min(), max(): built-in functions
-nlargest() and nsmallest(): in the Heap queue algorithm module heapq
-Imagine that you want to sort a list of IDs represented as strings. Each ID is the concatenation of the string id and a number. Sorting this list with the built-in function sorted(), by default, uses a lexicographic order as the elements in the list are strings.
-
-To influence the sorting execution, you can assign a lambda to the named argument key, such that the sorting will use the number associated with the ID:
-
-```python 
-ids = ['id1', 'id2', 'id30', 'id3', 'id22', 'id100']
-print(sorted(ids)) # Lexicographic sort
-
-sorted_ids = sorted(ids, key=lambda x: int(x[2:])) # Integer sort
-print(sorted_ids)
-```
-
-#### UI Frameworks
-UI frameworks like Tkinter, wxPython, or .NET Windows Forms with IronPython take advantage of lambda functions for mapping actions in response to UI events.
-
-The naive Tkinter program below demonstrates the usage of a lambda assigned to the command of the Reverse button:
-
-```python 
-import tkinter as tk
-import sys
-
-window = tk.Tk()
-window.grid_columnconfigure(0, weight=1)
-window.title("Lambda")
-window.geometry("300x100")
-label = tk.Label(window, text="Lambda Calculus")
-label.grid(column=0, row=0)
-button = tk.Button(
-    window,
-    text="Reverse",
-    command=lambda: label.configure(text=label.cget("text")[::-1]),
-)
-button.grid(column=0, row=1)
-window.mainloop()
-```
 
 #### Python Interpreter
-When you’re playing with Python code in the interactive interpreter, Python lambda functions are often a blessing. It’s easy to craft a quick one-liner function to explore some snippets of code that will never see the light of day outside of the interpreter. The lambdas written in the interpreter, for the sake of speedy discovery, are like scrap paper that you can throw away after use.
+Im interaktiven Interpreter sind Python-Lambda-Funktionen oft ein Segen. Es ist einfach, eine schnelle Einzeiler-Funktion zu erstellen, um einige Code-Schnipsel zu erkunden, die außerhalb des Interpreters nie das Licht der Welt erblicken werden. Die in diesem Sinne im Interpreter geschriebenen Lambdas sind wie Schmierpapier, das Sie nach Gebrauch wegwerfen können.
 
 timeit
-In the same spirit as the experimentation in the Python interpreter, the module timeit provides functions to time small code fragments. timeit.timeit() in particular can be called directly, passing some Python code in a string. Here’s an example:
+Insbesondere kann timeit.timeit() direkt aufgerufen werden, indem man Python-Code in einem String übergibt. Hier ist ein Beispiel:
 
 ```python 
 from timeit import timeit
 timeit("factorial(999)", "from math import factorial", number=10)
 ```
-When the statement is passed as a string, timeit() needs the full context. In the example above, this is provided by the second argument that sets up the environment needed by the main function to be timed. Not doing so would raise a NameError exception.
+Wenn die Anweisung als Zeichenkette übergeben wird, benötigt timeit() den vollständigen Kontext. Im obigen Beispiel wird dies durch das zweite Argument bereitgestellt, das die Umgebung einrichtet, die von der Hauptfunktion benötigt wird, um gemessen zu werden. Wenn dies nicht getan wird, würde dies eine NameError-Ausnahme auslösen.
 
-Another approach is to use a lambda:
+Und jetzt der Lambda-Ansatz:
 
 ```python 
 from math import factorial
 timeit(lambda: factorial(999), number=10)
 ```
-This solution is cleaner, more readable, and quicker to type in the interpreter. Although the execution time was slightly less for the lambda version, executing the functions again may show a slight advantage for the string version. The execution time of the setup is excluded from the overall execution time and shouldn’t have any impact on the result.
+
+Diese Lösung ist sauberer, besser lesbar und schneller einzugeben im Interpreter. Obwohl die Ausführungszeit für die Lambda-Version geringfügig kürzer war, könnte die Ausführung der Funktionen erneut einen leichten Vorteil für die Zeichenketten-Version zeigen. Die Ausführungszeit des Setups wird aus der Gesamtausführungszeit ausgeschlossen und sollte keinen Einfluss auf das Ergebnis haben.
 
 #### Monkey Patching
-For testing, it’s sometimes necessary to rely on repeatable results, even if during the normal execution of a given software, the corresponding results are expected to differ, or even be totally random.
 
-Let’s say you want to test a function that, at runtime, handles random values. But, during the testing execution, you need to assert against predictable values in a repeatable manner. The following example shows how, with a lambda function, monkey patching can help you:
+Für Tests ist es manchmal notwendig, sich auf reproduzierbare Ergebnisse zu verlassen, auch wenn während der normalen Ausführung einer bestimmten Software davon ausgegangen wird, dass die entsprechenden Ergebnisse unterschiedlich oder sogar völlig zufällig sind.
+
+Angenommen, man möchte eine Funktion testen, die zur Laufzeit zufällige Werte verarbeitet. Während der Testausführung muss man jedoch vorhersehbare Werte auf reproduzierbare Weise überprüfen. Das folgende Beispiel zeigt, wie mit einer Lambda-Funktion das Monkey Patching helfen kann:
 
 ```python 
 from contextlib import contextmanager
@@ -486,13 +447,13 @@ def test_gen_token():
 
 test_gen_token()
 ```
-A context manager helps with insulating the operation of monkey patching a function from the standard library (secrets, in this example). The lambda function assigned to secrets.token_hex() substitutes the default behavior by returning a static value.
+Ein Kontext-Manager hilft dabei, die Operation des Monkey Patching einer Funktion aus der Standardbibliothek (in diesem Beispiel secrets) zu isolieren. Die Lambda-Funktion, die secrets.token_hex() zugewiesen ist, ersetzt das Standardverhalten durch die Rückgabe eines statischen Werts.
 
-This allows testing any function depending on token_hex() in a predictable fashion. Prior to exiting from the context manager, the default behavior of token_hex() is reestablished to eliminate any unexpected side effects that would affect other areas of the testing that may depend on the default behavior of token_hex().
+Dies ermöglicht das Testen jeder Funktion, die von token_hex() abhängt, auf vorhersehbare Weise. Vor dem Verlassen des Kontext-Managers wird das Standardverhalten von token_hex() wiederhergestellt, um unerwartete Nebenwirkungen zu beseitigen, die andere Bereiche des Tests beeinträchtigen könnten, die vom Standardverhalten von token_hex() abhängig sein können.
 
-Unit test frameworks like unittest and pytest take this concept to a higher level of sophistication.
+Unit-Test-Frameworks wie unittest und pytest heben dieses Konzept auf eine höhere Ebene der Raffinesse.
 
-With pytest, still using a lambda function, the same example becomes more elegant and concise :
+Mit pytest wird das gleiche Beispiel, unter Verwendung einer Lambda-Funktion, eleganter und kürzer:
 
 ```python 
 import secrets
@@ -504,9 +465,9 @@ def test_gen_token(monkeypatch):
     monkeypatch.setattr('secrets.token_hex', lambda _: 'feedfacecafebeef')
     assert gen_token() == f"TOKEN_{'feedfacecafebeef'}"
 ```
-With the pytest monkeypatch fixture, secrets.token_hex() is overwritten with a lambda that will return a deterministic value, feedfacecafebeef, allowing to validate the test. The pytest monkeypatch fixture allows you to control the scope of the override. In the example above, invoking secrets.token_hex() in subsequent tests, without using monkey patching, would execute the normal implementation of this function.
 
-Executing the pytest test gives the following result:
+
+Und jetzt den Test ausführen:
 
 ```shell 
 $ pytest test_token.py -v
@@ -521,27 +482,17 @@ test_token.py::test_gen_token PASSED                                     [100%]
 =========================== 1 passed in 0.01 seconds ===========================
 ```
 
-#### Are Lambdas Pythonic or Not?
-PEP 8, which is the style guide for Python code, reads:
 
-Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier. (Source)
+#### Zusammenfassung
+Was wir gelernt haben: 
 
-This strongly discourages using lambda bound to an identifier, mainly where functions should be used and have more benefits. PEP 8 does not mention other usages of lambda. As you have seen in the previous sections, lambda functions may certainly have good uses, although they are limited.
+Python-Lambdas schreiben und anonyme Funktionen nutzen
+Zwischen Lambdas und normalen Python-Funktionen wählen
+Übermäßigen Gebrauch von Lambdas vermeiden
+Lambdas mit High-Order-Functions oder Python-Key-Functions verwenden
+Lambda für mathematische Formeln
 
-A possible way to answer the question is that lambda functions are perfectly Pythonic if there is nothing more Pythonic available. I’m staying away from defining what “Pythonic” means, leaving you with the definition that best suits your mindset, as well as your personal or your team’s coding style.
-
-Beyond the narrow scope of Python lambda, How to Write Beautiful Python Code With PEP 8 is a great resource that you may want to check out regarding code style in Python.
-
-#### Conclusion
-You now know how to use Python lambda functions and can:
-
-Write Python lambdas and use anonymous functions
-Choose wisely between lambdas or normal Python functions
-Avoid excessive use of lambdas
-Use lambdas with higher-order functions or Python key functions
-If you have a penchant for mathematics, you may have some fun exploring the fascinating world of lambda calculus.
-
-Python lambdas are like salt. A pinch in your spam, ham, and eggs will enhance the flavors, but too much will spoil the dish.
+Python-Lambdas sind wie Salz. Eine Prise zuviel wird das Gericht verderben.
 
 
 ## Beispielaufgaben:
