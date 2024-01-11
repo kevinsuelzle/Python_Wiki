@@ -157,6 +157,14 @@ nav:
               - Dockerfile und Docker Compose: lehrplan/docker/dockerfile_und_docker_compose.md
               - Praktische Übungen: lehrplan/docker/praktische_uebungen.md
               - Best Practices und Sicherheit: lehrplan/docker/best_practices_und_sicherheit.md
+          - Python Fortgeschritten:
+              - Generatoren und Iteratoren: lehrplan/python_advanced/generators_and_iterators.md
+              - Dekoratoren (Memoisation): lehrplan/python_advanced/dekoratoren.md
+              - Anonyme Funktionen: lehrplan/python_advanced/anonymous_functions.md
+              - Abstrakte Klassen: lehrplan/python_advanced/abstract_class.md
+              - Dataclass: lehrplan/python_advanced/dataclass.md
+              - Weitere fortgeschrittene Themen: lehrplan/python_advanced/advanced_topics.md
+
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md
@@ -166,6 +174,7 @@ nav:
       - Web: begriffe/begriffe_web.md
       - Azure: begriffe/begriffe_azure.md
       - Docker: begriffe/begriffe_docker.md
+      - Python Fortgeschritten: begriffe/begriffe_python_advanced.md
   - Checklisten:
       - Python Grundlagen: checklists/checklist_1.md
       - git: checklists/checklist_git.md
@@ -175,6 +184,7 @@ nav:
       - Web: checklists/checklist_web.md
       - Azure: checklists/checklist_azure.md
       - Docker: checklists/checklist_docker.md
+      - Python Fortgeschritten: checklists/checklist_python_advanced.md
 
   - Werkzeuge:
       - git: lehrplan/git/git.md

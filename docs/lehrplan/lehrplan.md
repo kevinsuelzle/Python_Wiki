@@ -191,10 +191,14 @@
 
 ## Python Fortgeschritten
 
-| Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
-|       |            |           |                  |
-|       |            |           |                  |
+| Woche | Unterricht                                                                | Lernziele                                                                          | Begriffssammlung                                                                |
+|-------|---------------------------------------------------------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| 14    | [Generatoren und Iteratoren](python_advanced/generators_and_iterators.md) | [hier](../checklists/checklist_python_advanced.md#generatoren-und-iteratoren)      | [hier](../begriffe/begriffe_python_advanced.md#generatoren-und-iteratoren)      |
+| 14    | [Dekoratoren (Memoisation)](python_advanced/dekoratoren.md)               | [hier](../checklists/checklist_python_advanced.md#dekoratoren-memoisation)         | [hier](../begriffe/begriffe_python_advanced.md#dekoratoren-memoisation)         |
+| 14    | [Anonyme Funktionen](python_advanced/anonymous_functions.md)              | [hier](../checklists/checklist_python_advanced.md#anonyme-funktionen)              | [hier](../begriffe/begriffe_python_advanced.md#anonyme-funktionen)              |
+| 14    | [Abstrakte Klassen](python_advanced/abstract_class.md)                    | [hier](../checklists/checklist_python_advanced.md#abstrakte-klassen)               | [hier](../begriffe/begriffe_python_advanced.md#abstrakte-klassen)               |
+| 14    | [Abstrakte Klassen](python_advanced/dataclass.md)                         | [hier](../checklists/checklist_python_advanced.md#dataclass)                       | [hier](../begriffe/begriffe_python_advanced.md#dataclass)                       |
+| 14    | [Weitere fortgeschrittene Themen](python_advanced/advanced_topics.md)     | [hier](../checklists/checklist_python_advanced.md#weitere-fortgeschrittene-themen) | [hier](../begriffe/begriffe_python_advanced.md#weitere-fortgeschrittene-themen) |
 
 ## Robotik
 
