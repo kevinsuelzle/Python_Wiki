@@ -7,7 +7,7 @@
 | 1     | [Einführung](python_grundlagen/python_grundlagen/python_grundlagen.md)              | [hier](../checklists/checklist_1.md#intro)                     | [hier](../begriffe/begriffe_1.md#intro)                     |
 | 1     | [Variablen & Datentypen](python_grundlagen/variables_types/variablen_datentypen.md) | [hier](../checklists/checklist_1.md#variablen-datentypen)      | [hier](../begriffe/begriffe_1.md#variablen-datentypen)      |
 | 1     | [Ein- und Ausgabe](python_grundlagen/input_output/input_output.md)                  | [hier](../checklists/checklist_1.md#input-output)              | [hier](../begriffe/begriffe_1.md#input-output)              |
-| 1     | [Mathematische Operationen](python_grundlagen/math_operations/math_operations.md)   | [hier](../checklists/checklist_1.md#mathemetische-operationen) | [hier](../begriffe/begriffe_1.md#mathemetische-operationen) |
+| 1     | [Mathematische Operationen](python_grundlagen/math_operations/math_operations.md)   | [hier](../checklists/checklist_1.md#mathematische-operationen) | [hier](../begriffe/begriffe_1.md#mathematische-operationen) |
 | 1     | [Der Debugger](python_grundlagen/debugging/debugging.md)                            | [hier](../checklists/checklist_1.md#debugging)                 | [hier](../begriffe/begriffe_1.md#debugging)                 |
 | 1     | [Verzweigungen](python_grundlagen/if_elif_else/if_elif_else.md)                     | [hier](../checklists/checklist_1.md#verzweigungen)             | [hier](../begriffe/begriffe_1.md#verzweigungen)             |
 | 2     | [Listen](python_grundlagen/lists/lists.md)                                          | [hier](../checklists/checklist_1.md#listen)                    | [hier](../begriffe/begriffe_1.md#listen)                    |
@@ -158,20 +158,22 @@
 
 | Woche | Unterricht                                                                                              | Lernziele                                                                | Begriffssammlung                       |
 |-------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------------------|
-| 11    | [Docker](docker/einfuehrung)                                                                            | [hier](../checklists/checklist_docker.md)                                | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Einführung in Docker](docker/einfuehrung)                                                              | [hier](../checklists/checklist_docker.md#grundlegendes)                  | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Docker Installation und Konfiguration](docker/installation)                                            | [hier](../checklists/checklist_docker.md#installation-und-konfiguration) | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Docker Images verstehen](docker/images_verstehen)                                                      | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Docker Images erstellen](docker/images_erstellen)                                                      | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Docker Images verwalten](docker/images_verwalten)                                                      | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker](docker/einfuehrung.md)                                                                         | [hier](../checklists/checklist_docker.md)                                | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Einführung in Docker](docker/einfuehrung.md)                                                           | [hier](../checklists/checklist_docker.md#grundlegendes)                  | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker Installation und Konfiguration](docker/installation.md)                                         | [hier](../checklists/checklist_docker.md#installation-und-konfiguration) | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker Images verstehen](docker/images_verstehen.md)                                                   | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker Images erstellen](docker/images_erstellen.md)                                                   | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker Images verwalten](docker/images_verwalten.md)                                                   | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
 | 11    | [Lebenszyklus der Docker Container](docker/lebenszyklus_der_docker_container.md)                        | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
 | 11    | [Interaktion mit Docker Containern](docker/interaktion_mit_docker_containern.md)                        | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
 | 11    | [Kommunikation zwischen und mit Containern](docker/kommunikation_zwischen_und_mit_docker_containern.md) | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
 | 11    | [Wo und wie Docker Container Daten speichern](docker/wo_und_wie_docker_container_daten_speichern.md)    | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Fehlersuche mit Container Logs](docker/fehlersuche_mit_container_logs)                                 | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Dockerfile und Docker Compose](docker/dockerfile_und_docker_compose)                                   | [hier](../checklists/checklist_docker.md#dockerfile-und-docker-compose)  | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Praktische Übungen und Szenarien](docker/praktische_uebungen)                                          | [hier](../checklists/checklist_docker.md#praktische-szenarien)           | [hier](../begriffe/begriffe_docker.md) |
-| 11    | [Docker Best Practices und Sicherheit](docker/best_practices_und_sicherheit)                            | [hier](../checklists/checklist_docker.md#best-practices-und-sicherheit)  | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Fehlersuche mit Container Logs](docker/fehlersuche_mit_container_logs.md)                              | [hier](../checklists/checklist_docker.md#docker-images-und-container)    | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Dockerfile und Docker Compose](docker/dockerfile_und_docker_compose.md)                                | [hier](../checklists/checklist_docker.md#dockerfile-und-docker-compose)  | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Praktische Übungen und Szenarien](docker/praktische_uebungen.md)                                       | [hier](../checklists/checklist_docker.md#praktische-szenarien)           | [hier](../begriffe/begriffe_docker.md) |
+| 11    | [Docker Best Practices und Sicherheit](docker/best_practices_und_sicherheit.md)                         | [hier](../checklists/checklist_docker.md#best-practices-und-sicherheit)  | [hier](../begriffe/begriffe_docker.md) |
+
+[//]: # (| 11    | [Docker-Images und Container]&#40;docker/docker_images_und_container.md&#41;                                    | [hier]&#40;../checklists/checklist_docker.md#docker-images-und-container&#41;    | [hier]&#40;../begriffe/begriffe_docker.md&#41; |)
 
 ## NoSQL Datenbanken
 
