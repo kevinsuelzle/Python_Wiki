@@ -15,7 +15,7 @@ else:
     # Anweisungen, wenn Bedingung falsch ist
 ```
 
-Die `bedingung` ist ein Ausdruck, der entweder wahr (`True`) oder falsch (`False`) ergibt.
+Die `bedingung` ist ein Ausdruck, der entweder wahr (`True`) oder falsch (`False`) ergibt. Die Anweisungen müssen eingerückt sein! Dies ist ein fundamentales Prinzip in Python, mit dem wir sehr schnell vertraut sein werden.
 
 ### Bedingungen
 [50min]
@@ -89,7 +89,7 @@ else:
     print("Die Zahl ist kleiner als 10.")
 ```
 
-Die Verwendung von if, elif und else in Python ermöglicht es, basierend auf Bedingungen unterschiedliche Wege im 
+Die Verwendung von `if`, `elif` und `else` in Python ermöglicht es, basierend auf Bedingungen unterschiedliche Wege im 
 Programm einzuschlagen. Das findet man eigentlich in jedem Programm, da die Unterscheidung von Aktionen basierend auf
 einer oder mehrere Bedingungen ein zentraler Bestandteil der Softwareentwicklung ist.
 
@@ -143,7 +143,7 @@ Erstelle ein Programm, das unterschiedliche Eintrittspreise basierend auf dem Wo
 ### 19. **Schaltjahr**: 🌶️🌶️🌶️
 Schreibe ein Programm, das überprüft, ob ein gegebenes Jahr ein Schaltjahr ist oder nicht.
 
-# Komplex-Aufgaben
+# Anspruchsvolle Aufgaben
 [30min]
 ### **Benutzereingaben filtern und sortieren** 🌶️🌶️🌶️
 
