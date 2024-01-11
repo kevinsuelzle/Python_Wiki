@@ -68,7 +68,7 @@ for row in result:
 
 Die SQL Expression Language in SQLAlchemy ermöglicht es, SQL-Statements direkt in Python zu erstellen, und bietet eine leistungsfähige Alternative zum ORM für komplexe Abfragen und spezielle Datenbankoperationen. Mit der Einführung von SQLAlchemy 1.4+ hat sich die Syntax leicht verändert, wobei die `select()`-Funktion nun direkt Spalten als Argumente akzeptiert, was die Nutzung intuitiver und Pythonischer macht.
 
-### Übungsaufgabe: Erkundung der SQL Expression Language in SQLAlchemy 🌶️🌶️🌶️
+### Übungsaufgabe: Erkundung der SQL Expression Language in SQLAlchemy 🌶️️🌶️️🌶️️
 [60 min]
 
 
@@ -235,7 +235,7 @@ conn.execute(delete(user_table).where(user_table.c.name == 'Unknown'))
 
 CRUD-Operationen bilden die Grundlage der Datenbankinteraktion in SQLAlchemy's SQL Expression Language. Sie ermöglichen es uns, Daten effizient zu erstellen, abzufragen, zu aktualisieren und zu löschen. Bulk-Operationen erweitern diese Funktionalität, indem sie die Bearbeitung großer Datensätze optimieren. Durch das Erlernen dieser Grundlagen können wir die Daten in unser Anwendung effektiv verwalten und manipulieren.
 
-### Übungsaufgabe: CRUD-Operationen mit SQL Expression Language 🌶️🌶️
+### Übungsaufgabe: CRUD-Operationen mit SQL Expression Language 🌶️️🌶️️
 [60 min]
 
 1. **Tabellenerstellung**:
@@ -388,7 +388,7 @@ for row in result:
 
 Die Verwendung von Indexierung und Performance-Tuning-Techniken kann die Effizienz Ihrer Anwendung erheblich verbessern, insbesondere bei großen Datenmengen. Ebenso ermöglicht die Nutzung von Funktionen und Stored Procedures eine erweiterte Interaktion mit der Datenbank, die über einfache CRUD-Operationen hinausgeht. SQLAlchemy bietet eine reichhaltige Palette an Möglichkeiten, um diese fortgeschrittenen Features effektiv zu nutzen.
 
-### Übungsaufgabe: Erweiterte Funktionen und Performance in SQLAlchemy 🌶️🌶️🌶️
+### Übungsaufgabe: Erweiterte Funktionen und Performance in SQLAlchemy 🌶️️🌶️️🌶️️
 [60 min]
 
 1. **Tabellenerstellung mit Index**:

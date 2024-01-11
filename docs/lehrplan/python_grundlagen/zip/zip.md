@@ -136,91 +136,91 @@ nützlich sein kann.
 # Aufgaben
 [50min]
 
-### 1: Einführung in `zip` 🌶️
+### 1: Einführung in `zip` 🌶️️
 
 Schreibe ein Python-Programm, das zwei Listen `liste1` und `liste2` nimmt und sie mithilfe von `zip` zusammenführt.
 
-### 2: Liste der Tupel 🌶️
+### 2: Liste der Tupel 🌶️️
 
 Erstelle eine Liste von Tupeln aus den Elementen von `liste1` und `liste2` unter Verwendung von `zip`.
 
-### 3: Elementweise Addition 🌶️🌶️
+### 3: Elementweise Addition 🌶️️🌶️️
 
 Nimm zwei Listen von Ganzzahlen und addiere sie elementweise mithilfe von `zip`.
 
-### 4: Parallele Zuweisung 🌶️
+### 4: Parallele Zuweisung 🌶️️
 
 Verwende `zip`, um Werte aus zwei Listen `namen` und `alter` parallel zuzuweisen.
 
-### 5: Elemente filtern 🌶️🌶️
+### 5: Elemente filtern 🌶️️🌶️️
 
 Schreibe eine Funktion, die mithilfe von `zip` alle geraden Zahlen aus zwei Listen `liste1` und `liste2` filtert.
 
-### 6: Dictionary erstellen 🌶️🌶️
+### 6: Dictionary erstellen 🌶️️🌶️️
 
 Erstelle ein Dictionary aus zwei Listen `schlüssel` und `werte` mithilfe von `zip`.
 
-### 7: Sortierte Paare 🌶️🌶️
+### 7: Sortierte Paare 🌶️️🌶️️
 
 Nimm zwei Listen von Zahlen und verwende `zip`, um Paare zu erstellen und sie nach der Summe der Paare zu sortieren.
 
-### 8: Zusammenführen von Wörtern 🌶️🌶️
+### 8: Zusammenführen von Wörtern 🌶️️🌶️️
 
 Gegeben sind zwei Listen von Strings `adjektive` und `nomen`. Verwende `zip`, um alle möglichen Kombinationen von
 Adjektiven und Nomen zu erstellen.
 
-### 9: Elemente multiplizieren 🌶️🌶️
+### 9: Elemente multiplizieren 🌶️️🌶️️
 
 Erstelle eine Liste, in der jedes Element das Produkt der entsprechenden Elemente aus `liste1` und `liste2` ist, indem
 du `zip` verwendest.
 
-### 10: Elemente vergleichen 🌶️🌶️
+### 10: Elemente vergleichen 🌶️️🌶️️
 
 Schreibe eine Funktion, die mithilfe von `zip` die Unterschiede zwischen zwei Listen `liste1` und `liste2` ermittelt und
 zurückgibt.
 
-### 11: Maximaler Wert pro Position 🌶️🌶️
+### 11: Maximaler Wert pro Position 🌶️️🌶️️
 
 Gegeben sind zwei Listen von Zahlen `liste1` und `liste2`. Verwende `zip`, um eine Liste der maximalen Werte pro
 Position zu erstellen.
 
-### 12: Mittelwert berechnen 🌶️🌶️
+### 12: Mittelwert berechnen 🌶️️🌶️️
 
 Berechne den Mittelwert von zwei Listen `liste1` und `liste2`, indem du `zip` und eine Schleife verwendest.
 
-### 13: Elemente gruppieren 🌶️🌶️
+### 13: Elemente gruppieren 🌶️️🌶️️
 
 Gegeben ist eine Liste von Tupeln. Verwende `zip`, um die Tupel nach ihrem ersten Element zu gruppieren.
 
-### 14: Teile und erobere 🌶️🌶️🌶️
+### 14: Teile und erobere 🌶️️🌶️️🌶️️
 
 Nimm eine Liste von Zahlen `zahlen`. Verwende `zip`, um die Liste in zwei Teillisten aufzuteilen - eine für gerade und
 eine für ungerade Zahlen.
 
-### 15: Prüfung von Bedingungen 🌶️🌶️
+### 15: Prüfung von Bedingungen 🌶️️🌶️️
 
 Schreibe eine Funktion, die mithilfe von `zip` überprüft, ob die Elemente zweier Listen `liste1` und `liste2` eine
 bestimmte Bedingung erfüllen.
 
-### 16: Entfernen von Duplikaten 🌶️🌶️
+### 16: Entfernen von Duplikaten 🌶️️🌶️️
 
 Gegeben ist eine Liste von Elementen. Verwende `zip`, um Duplikate aus der Liste zu entfernen.
 
-### 17: Anzahl der Übereinstimmungen zählen 🌶️🌶️🌶️
+### 17: Anzahl der Übereinstimmungen zählen 🌶️️🌶️️🌶️️
 
 Erstelle eine Funktion, die mithilfe von `zip` die Anzahl der Übereinstimmungen zwischen zwei Listen `liste1`
 und `liste2` zählt.
 
-### 18: Slices erstellen 🌶️🌶️🌶️
+### 18: Slices erstellen 🌶️️🌶️️🌶️️
 
 Nimm eine Liste von Zahlen `zahlen` und verwende `zip`, um Slices dieser Liste zu erstellen, die bestimmten Bedingungen
 entsprechen.
 
-### 19: Elemente tauschen 🌶️🌶️
+### 19: Elemente tauschen 🌶️️🌶️️
 
 Vertausche die Plätze der Elemente in den Listen `liste1` und `liste2` mithilfe von `zip`.
 
-### 20: Verschlüsselung mit `zip` 🌶️🌶️🌶️
+### 20: Verschlüsselung mit `zip` 🌶️️🌶️️🌶️️
 
 Erstelle eine einfache Verschlüsselungsfunktion, die Text mithilfe von `zip` verschlüsselt und dann entschlüsselt.
 
@@ -229,19 +229,19 @@ Erstelle eine einfache Verschlüsselungsfunktion, die Text mithilfe von `zip` ve
 # Komplex-Aufgaben
 [75min]
 
-### Aufgabe 1: Datenanalyse mit `zip` und Bedingungen 🌶️🌶️
+### Aufgabe 1: Datenanalyse mit `zip` und Bedingungen 🌶️️🌶️️
 
 Gegeben sind zwei Listen `temperaturen` und `städte`, wobei `temperaturen` die aktuellen Temperaturen in verschiedenen
 Städten enthält und `städte` die zugehörigen Stadtnamen. Schreibe ein Programm, das die heißeste Stadt (mit der höchsten
 Temperatur) und die kälteste Stadt (mit der niedrigsten Temperatur) identifiziert und ausgibt.
 
-### Aufgabe 2: Wörter zählen mit `zip` und Dictionaries 🌶️🌶️
+### Aufgabe 2: Wörter zählen mit `zip` und Dictionaries 🌶️️🌶️️
 
 Gegeben ist ein Text in Form eines Strings. Schreibe eine Funktion, die die Anzahl der Vorkommen jedes Worts im Text
 zählt und ein Dictionary zurückgibt, in dem die Wörter als Schlüssel und die Anzahl der Vorkommen als Werte gespeichert
 sind. Verwende `zip`, um den Text in Wörter aufzuteilen und die Zählung durchzuführen.
 
-### Aufgabe 3: Multi-dimensionale Datenanalyse 🌶️🌶️🌶️
+### Aufgabe 3: Multi-dimensionale Datenanalyse 🌶️️🌶️️🌶️️
 
 Du erhältst eine Liste von Schülern, die in verschiedenen Fächern Noten erhalten haben. Jeder Schüler ist durch seinen
 Namen und eine Liste von Noten in verschiedenen Fächern repräsentiert. Schreibe ein Programm, das den Durchschnitt für

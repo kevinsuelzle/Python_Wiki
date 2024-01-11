@@ -31,7 +31,7 @@ Probleme gelöst, die ein Unternehmen oder dessen Kunden haben.
 - **Benutzerinteraktion**: Viele Programme erfordern Interaktionen mit Benutzern. Das Design dieser Interaktionen ist
    ein wichtiger Teil der Entwicklung einer benutzerfreundlichen Software.
   
-### Aufgabe: 🌶️🌶️
+### Aufgabe: 🌶️️🌶️️
 [15 Min + 20 Min]
 
 1. Diskutiert, die Wichtigkeit dieser Aspekte
@@ -144,7 +144,7 @@ Auch den Python-Interpreter selbst kann man als interaktive Programmierumgebung 
 Hier lassen sich kleine Dinge sehr einfach ausprobieren, aber es ist nicht empfehlenswert diese zur Programmierung zu 
 verwenden.
 
-## Aufgabe: Das erste Programm 🌶️
+## Aufgabe: Das erste Programm 🌶️️
 [25min; bis es bei jedem klappt]
 
 1. Führe den folgenden Code mit der Python-Konsole aus

@@ -19,7 +19,7 @@ Ziel ist eine langfristige Wartbarkeit und Skalierbarkeit des Softwareprojekts m
 3. **Qualität**: Sauberer Code führt zu weniger Fehlern und höherer Softwarequalität.
 4. **Skalierbarkeit**: Projekte sind einfacher zu erweitern und anzupassen, wenn der zugrunde liegende Code sauber ist.
 
-### Disskussionsaufgabe: 🌶️
+### Disskussionsaufgabe: 🌶️️
 [15 min]
 
 Überlege dir für jeden der folgenden 4 Merkmale von Clean Code jeweils eine Verabredung du in deinem
@@ -30,7 +30,7 @@ Entwicklerteam treffen kannst, umd diese Ziele zu erfüllen:
 - **Wartbarkeit**: Leicht zu ändern und zu erweitern.
 - **Effizienz**: Der Code sollte nicht nur funktionieren, sondern auch effizient sein.
 
-### Aufgabe: Zen of Python 🌶️
+### Aufgabe: Zen of Python 🌶️️
 [30 min]
 
 Öffne deine Console und führe `import this` aus , um das [Zen of Python](https://gist.github.com/corysimmons/8b94c08421dec18bbaa4)

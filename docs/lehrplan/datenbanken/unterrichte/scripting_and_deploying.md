@@ -127,10 +127,10 @@ ROLLBACK;
 In diesem Fall wird keine der Änderungen, die nach `BEGIN TRANSACTION;` gemacht wurden, in der Datenbank gespeichert,
 und der Zustand der Datenbank bleibt unverändert, als ob die Transaktion nie stattgefunden hätte.
 
-### **Aufgabe: Eine Skripte mit Transaktionen🌶️🌶️🌶️**
+### **Aufgabe: Eine Skripte mit Transaktionen🌶️️🌶️️🌶️️**
 [40min] Entwickeln sie eigene Scripte, die mehrere Anweisungen enthalten und in eine Transaktion eingebunden sind. 
 
-### **Aufgabe: Funktionsweise von Commit und Rollback 🌶️🌶️🌶️**
+### **Aufgabe: Funktionsweise von Commit und Rollback 🌶️️🌶️️🌶️️**
 [40min] Untersuchen sie die Funktionalität von COMMIT und ROLLBACK.
 
 ### Externe Fehlerbehandlung

@@ -108,31 +108,31 @@ def secure_area():
 ## Aufgaben
 [90 min]
 
-### Einfache GET-Route für Benutzerliste 🌶️
+### Einfache GET-Route für Benutzerliste 🌶️️
 Erstelle eine Route, die eine simulierte Liste von Benutzern zurückgibt.
 
-### POST-Route zum Hinzufügen neuer Benutzer 🌶️🌶️
+### POST-Route zum Hinzufügen neuer Benutzer 🌶️️🌶️️
 Erstelle eine Route, um neue Benutzer hinzuzufügen. Nimm Benutzerdaten aus der Anfrage auf und füge sie der Benutzerliste hinzu.
 
 
-### PUT-Route zum Aktualisieren von Benutzerdaten 🌶️🌶️🌶️
+### PUT-Route zum Aktualisieren von Benutzerdaten 🌶️️🌶️️🌶️️
 Implementiere eine PUT-Route (`/users/<id>`), um die Daten eines bestehenden Benutzers zu aktualisieren.
 
-### DELETE-Route zum Löschen eines Benutzers 🌶️🌶️🌶️
+### DELETE-Route zum Löschen eines Benutzers 🌶️️🌶️️🌶️️
 Implementiere eine DELETE-Route, um einen Benutzer zu löschen.
 
 
 ## Komplex-Aufgaben
 [90 min]
 
-### Kombinierte GET- und POST-Anfragen mit Fehlerhandling 🌶️🌶️🌶️
+### Kombinierte GET- und POST-Anfragen mit Fehlerhandling 🌶️️🌶️️🌶️️
 Kombiniere GET- und POST-Anfragen und implementiere umfassendes Fehlerhandling.
 
 - Sende zuerst eine GET-Anfrage, um Daten abzurufen.
 - Verwende die Daten aus der GET-Anfrage, um eine Bedingung für eine POST-Anfrage zu definieren.
 - Implementiere Fehlerhandling für beide Anfragen.
 
-### Authentifizierung für eine sichere Route hinzufügen 🌶️🌶️🌶️🌶️
+### Authentifizierung für eine sichere Route hinzufügen 🌶️️🌶️️🌶️️🌶️️
 Erstelle eine gesicherte Route, die eine Authentifizierung erfordert.
 
 **Schritte**:

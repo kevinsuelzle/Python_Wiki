@@ -57,15 +57,15 @@ INSERT INTO Nutzer (NutzerID, Name, Email, Passwort) VALUES (3, 'Julia Beispiel'
 ## Aufgaben
 [45 min]
 
-### Datenbank erstellen und Tabelle mit Daten einfügen 🌶️🌶️
+### Datenbank erstellen und Tabelle mit Daten einfügen 🌶️️🌶️️
 Erstelle deine erste Datenbank in Azure und lege eine Tabelle Inventory an. Lege manuell einzelne Einträge mit Items und deren Lagerstand an.
 
-### Verbinde deine SWA mit der Datenbank 🌶️🌶️🌶️
+### Verbinde deine SWA mit der Datenbank 🌶️️🌶️️🌶️️
 Zeige die manuell eingefügten Daten zum Lagerbestand der einzelnen Einträge in einem Frontend deiner Wahl (SWA oder Flask Web App) an.
 
 
 ## Komplex-Aufgaben
 [90 min]
 
-### Inventory Management SWA 🌶️🌶️🌶️🌶️
+### Inventory Management SWA 🌶️️🌶️️🌶️️🌶️️
 Erstelle eine simple statische Webapp mit einem Formular um Inventaritems in die Datenbank zu schreiben. Zeige die Inventarliste in der SWA direkt an.

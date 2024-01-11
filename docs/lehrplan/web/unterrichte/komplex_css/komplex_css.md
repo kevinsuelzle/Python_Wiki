@@ -113,20 +113,20 @@ Im **traditionellen CSS** werden Media Queries verwendet, um ähnliche responsiv
 ## Aufgaben
 [90 min]
 
-### Responsive Card-Layout mit Flexbox 🌶️
+### Responsive Card-Layout mit Flexbox 🌶️️
 Erstelle ein responsives Card-Layout mit Flexbox, das Produkte oder Dienstleistungen darstellt.
 
 - Jede "Card" sollte ein Bild, eine Überschrift, einen kurzen Text und einen Button enthalten.
 - Verwende Flexbox, um die Cards nebeneinander in einer Zeile anzuordnen.
 - Implementiere Media Queries, damit sich das Layout auf kleineren Bildschirmen anpasst (z.B. die Cards untereinander statt nebeneinander).
 
-### Erstellung eines responsiven Menüs mit Bootstrap 🌶️🌶️
+### Erstellung eines responsiven Menüs mit Bootstrap 🌶️️🌶️️
 Erstelle eine Navigationsleiste mit Bootstrap, die auf kleineren Bildschirmen zu einem Hamburger-Menü wird.
 
 - Nutze Bootstrap-Klassen, um eine Navigationsleiste mit Links zu erstellen.
 - Implementiere das Hamburger-Menü für kleinere Bildschirme mithilfe von Bootstrap's eingebautem JavaScript.
 
-### Fortgeschrittenes Grid-Layout mit CSS Grid 🌶️🌶️🌶️
+### Fortgeschrittenes Grid-Layout mit CSS Grid 🌶️️🌶️️🌶️️
 Erstelle ein komplexes Grid-Layout mit dem CSS Grid-System, um Inhalte wie einen Blog oder eine Nachrichtenseite anzuordnen.
 
 - Verwende das CSS Grid-System, um einen Hauptbereich und mehrere Nebenbereiche zu erstellen.

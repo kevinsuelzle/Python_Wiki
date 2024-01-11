@@ -86,8 +86,8 @@ Für Produktionsumgebungen sollten auf jeden Fall robustere Serverlösungen wie 
 ## Aufgaben
 [45 min]
 
-### Hello World Flask & Django API 🌶️🌶️
+### Hello World Flask & Django API 🌶️️🌶️️
 Erstellt jeweils einen GET Endpunkt der den Text "Hallo Welt!" als Response zurückgibt in Flask und Django.
 
-### Reflexionsrunden Django vs Flask 🌶️ 
+### Reflexionsrunden Django vs Flask 🌶️️ 
 In Gruppen von 2, vergleicht gemeinsam die Lesbarkeit, Einfachheit und den Syntax der beiden Frameworks.

@@ -131,12 +131,12 @@ docker run -d --name mein-container hello-world-python:neue-version
 Wenn ein Image erstellt wird, sollte ein Tag (hier 'neue-version') als Versionsbezeichnung hintere einem Doppelpunkt
 angegeben werden. So können Tags wie `:latest` dafür sorgen, dass immer das aktuellste Image verwendet wird.
 
-### Aufgabe: Information 🌶🌶
+### Aufgabe: Information 🌶️🌶️
 
 1. Nutzen Sie die Kommandozeile, um sich die laufenden Container aufzulisten.
 2. Suchen Sie den Kommandozeilenbefehl über `docker --help`, um sich die vorhandenen Images aufzulisten.
 
-### Aufgabe: Interaktion mit Docker-Containern 🌶🌶
+### Aufgabe: Interaktion mit Docker-Containern 🌶️🌶️
 
 Üben sie die Interaktion mit Containern. Trainieren sie beide grundlegenden Arten der Interaktion: CLI und Desktop.
 

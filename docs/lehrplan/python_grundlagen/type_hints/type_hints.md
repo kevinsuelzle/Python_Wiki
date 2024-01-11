@@ -115,41 +115,41 @@ Sicherheit von Python-Programmen bei und fördert die Entwicklung von robustem u
 # Aufgaben
 [25min]
 
-### 1. **Typisierte Variable** 🌶️: 
+### 1. **Typisierte Variable** 🌶️️: 
 Definiere eine Variable `alter` vom Typ `int`.
 
-### 2. **Typisierte Funktion** 🌶️: 
+### 2. **Typisierte Funktion** 🌶️️: 
 Schreibe eine Funktion `quadrat`, die einen `int` als Parameter nimmt und einen `int`
    zurückgibt.
 
-### 3. **Mehrere Parameter** 🌶️: 
+### 3. **Mehrere Parameter** 🌶️️: 
 Schreibe eine Funktion `addiere`, die zwei `float`-Parameter annimmt und ihr Ergebnis
    als `float` zurückgibt.
 
-### 4. **Optionale Parameter** 🌶️🌶️: 
+### 4. **Optionale Parameter** 🌶️️🌶️️: 
 Schreibe eine Funktion `begruessen`, die einen `str`-Parameter und einen optionalen
    Parameter `alter` vom Typ `Optional[int]` hat.
 
-### 5. **Rückgabewert None** 🌶️: 
+### 5. **Rückgabewert None** 🌶️️: 
 Schreibe eine Funktion `drucke_hallo`, die einen `str` entgegennimmt und `None` zurückgibt.
 
-### 6. **Listen als Parameter** 🌶️🌶️: 
+### 6. **Listen als Parameter** 🌶️️🌶️️: 
 Schreibe eine Funktion `durchschnitt`, die eine Liste von `int` annimmt und einen `float`
    zurückgibt.
 
-### 7. **Dictionary als Rückgabewert** 🌶️🌶️: 
+### 7. **Dictionary als Rückgabewert** 🌶️️🌶️️: 
 Schreibe eine Funktion `erstelle_dict`, die zwei `str`-Parameter annimmt und
    ein `Dict[str, str]` zurückgibt.
 
-### 8. **Komplexe Typen** 🌶️🌶️: 
+### 8. **Komplexe Typen** 🌶️️🌶️️: 
 Schreibe eine Funktion `verarbeite_daten`, die eine `List[Dict[str, int]]` annimmt und
    eine `List[int]` zurückgibt.
 
-### 9. **Typisierte Tuples** 🌶️🌶️: 
+### 9. **Typisierte Tuples** 🌶️️🌶️️: 
 Schreibe eine Funktion `min_max`, die eine `List[int]` annimmt und ein `Tuple[int, int]`
    zurückgibt (das Minimum und Maximum der Liste).
 
-### 10. **Union Type Hints** 🌶️🌶️: 
+### 10. **Union Type Hints** 🌶️️🌶️️: 
 Schreibe eine Funktion `id_oder_name`, die einen Parameter annimmt, der entweder `int`
     oder `str` sein kann, und denselben Typ zurückgibt.
 

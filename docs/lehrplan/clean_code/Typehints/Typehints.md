@@ -60,7 +60,7 @@ def hole_erstes_element(elemente: List[T]) -> T:
 
 **Typenhinweise werden zur Laufzeit nicht durchgesetzt**, was bedeutet, dass Python keinen Fehler auslöst, wenn die tatsächlichen Datentypen nicht mit den Hinweisen übereinstimmen. Typüberprüfer wie mypy können jedoch Ihren Code analysieren und typbezogene Probleme melden, um Ihnen bei der Erstellung robusteren und wartbareren Code zu helfen.
 
-### Aufgabe 1: Typehints hinzufügen 🌶🌶
+### Aufgabe 1: Typehints hinzufügen 🌶️🌶️
 [20 min]
 
 Füge Typehints zu den folgenden Funktionen hinzu, um die erwarteten Datentypen der Parameter und Rückgabewerte anzugeben.
@@ -100,7 +100,7 @@ print(message)
 
 [Lösung](solution.md#lsung-aufgabe-1)
 
-### Aufgabe 2: Typehints für komplexe Datentypen 🌶🌶🌶
+### Aufgabe 2: Typehints für komplexe Datentypen 🌶️🌶️🌶️
 [20 min]
 
 Füge Typehints zu den folgenden Funktionen hinzu, um die erwarteten Datentypen der Parameter und Rückgabewerte anzugeben.

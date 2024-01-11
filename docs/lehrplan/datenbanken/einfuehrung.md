@@ -226,7 +226,7 @@ session.commit()
 session.close()
 ```
 
-### Übungsaufgabe: Erstellen und Verwalten von Daten mit SQLAlchemy ORM 🌶️🌶️
+### Übungsaufgabe: Erstellen und Verwalten von Daten mit SQLAlchemy ORM 🌶️️🌶️️
 [60 min]
 
 1. **Definiere ein Modell 'Book'**:

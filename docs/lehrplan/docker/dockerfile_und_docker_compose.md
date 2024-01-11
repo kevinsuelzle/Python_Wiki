@@ -25,7 +25,7 @@ RUN pip install -r requirements.txt
 CMD ["python", "app.py"]
 ```
 
-### Aufgabe: Bedeutung der Anweisungen🌶🌶
+### Aufgabe: Bedeutung der Anweisungen🌶️🌶️
 
 Wiederhole, was die Bedeutung jeder Zeile im Dockerfile ist.
 
@@ -102,7 +102,7 @@ Unix- und Linux-basierten Systemen, den aktuellen Ordner mit einem Punkt zu refe
 
 </details>
 
-### Aufgabe: Erstellung des Images🌶🌶
+### Aufgabe: Erstellung des Images🌶️🌶️
 
 Wie erstellt man auf Basis des obigen Dockerfiles ein Image?
 <details>

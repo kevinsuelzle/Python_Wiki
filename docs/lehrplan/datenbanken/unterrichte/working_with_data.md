@@ -27,7 +27,7 @@ INSERT INTO personen (id, name, alter)
 VALUES (1, 'Max Mustermann', 30);
 ```
 
-### **Aufgabe: Daten manuell einfügen 🌶️**
+### **Aufgabe: Daten manuell einfügen 🌶️️**
 [10min]
 Wiederholen Sie diesen Vorgang für einige Datensätze, um zu üben, wie Daten manuell eingefügt werden.
 
@@ -41,11 +41,11 @@ VALUES (2, 'Maria Musterfrau', 28),
        (3, 'John Doe', 25);
 ```
 
-### **Aufgabe: Mehrere Datesätze manuell einfügen 🌶️**
+### **Aufgabe: Mehrere Datesätze manuell einfügen 🌶️️**
 [15min]
 Wiederholen sie den Vorgang und fügen sie weitere Datensätze in das Kommando ein.
 
-### **Aufgabe: Überprüfung der Einfügungen 🌶️**:
+### **Aufgabe: Überprüfung der Einfügungen 🌶️️**:
 [10min]
 Um zu überprüfen, ob die Daten korrekt eingefügt wurden, verwenden Sie das `SELECT`-Statement:
 
@@ -87,7 +87,7 @@ SELECT *
 FROM personen;
 ```
 
-### **Aufgabe: Beispieldaten finden und einfügen 🌶️🌶️🌶️**
+### **Aufgabe: Beispieldaten finden und einfügen 🌶️️🌶️️🌶️️**
 [40 min]
 
 1. Suchen sie im Internet nach Datentabellen, die im CSV Format geladen werden können. Hier bieten sich fake Datenbanken
@@ -128,10 +128,10 @@ CREATE TABLE mitarbeiter
 );
 ```
 
-### **Aufgabe: Testdaten 🌶️🌶️**
+### **Aufgabe: Testdaten 🌶️️🌶️️**
 [40min] Fülle die Tabelle mit Testdaten.
 
-### **Aufgabe: Alter nutzen 🌶️🌶️**
+### **Aufgabe: Alter nutzen 🌶️️🌶️️**
 [30min]  Erweitere die Tabelle mit dem ALTER Befehl und fülle mit Daten
 
 ### Liste von Abfragebeispielen
@@ -251,7 +251,7 @@ FROM mitarbeiter
 ORDER BY abteilung, gehalt DESC; -- alternativ ASC
 ```
 
-### **Aufgabe: Befehle anwenden 🌶️🌶️🌶️**
+### **Aufgabe: Befehle anwenden 🌶️️🌶️️🌶️️**
 [60min] Wende die Befehle auf selbst zugefügte Spalten und Daten an
 
 ### Zusammenfassung

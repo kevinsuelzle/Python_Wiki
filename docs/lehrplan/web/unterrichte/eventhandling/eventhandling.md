@@ -104,22 +104,22 @@ zuEntfernendesElement.parentNode.removeChild(zuEntfernendesElement);
 ## Aufgaben
 [60 min]
 
-### Toggle-Schalter 🌶️
+### Toggle-Schalter 🌶️️
 Erstelle einen Button, der bei jedem Klick die Farbe eines Div-Elements zwischen Rot und Grün wechselt.
 
-### Dynamische Liste 🌶️🌶️
+### Dynamische Liste 🌶️️🌶️️
 Erstelle ein Formular, das es Benutzern ermöglicht, Elemente zu einer Liste hinzuzufügen.
 
-### Tastatur-Event-Handler 🌶️🌶️
+### Tastatur-Event-Handler 🌶️️🌶️️
 Erstelle eine Anwendung, die auf Tastendrücke reagiert und eine Aktion ausführt.
 
-### Bildergalerie mit Hover-Effekt 🌶️🌶️🌶️
+### Bildergalerie mit Hover-Effekt 🌶️️🌶️️🌶️️
 Erstelle eine Bildergalerie, bei der das Überfahren eines Bildes mit der Maus Informationen zum Bild anzeigt.
 
 ## Komplex-Aufgaben
 [45 min]
 
-### Drag-and-Drop-Interface 🌶️🌶️🌶️🌶️🌶️
+### Drag-and-Drop-Interface 🌶️️🌶️️🌶️️🌶️️🌶️️
 Implementiere eine Drag-and-Drop-Funktionalität, bei der Elemente auf der Seite verschoben werden können.
 
 - Erstelle mehrere draggable Elemente und einen Drop-Bereich.

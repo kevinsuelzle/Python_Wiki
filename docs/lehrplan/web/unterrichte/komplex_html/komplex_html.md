@@ -114,7 +114,7 @@ Das `<script>`-Tag wird verwendet, um JavaScript-Code in eine HTML-Seite einzubi
 ## Aufgaben
 [90 min]
 
-### Kontaktformular mit Validierung 🌶️
+### Kontaktformular mit Validierung 🌶️️
 Erstelle ein Kontaktformular mit verschiedenen Eingabefeldern und füge einfache Validierung hinzu.
 
 - Das Formular sollte Felder für Namen, E-Mail, Nachricht und einen „Absenden“-Button enthalten.
@@ -122,7 +122,7 @@ Erstelle ein Kontaktformular mit verschiedenen Eingabefeldern und füge einfache
 - Füge required-Attribute hinzu, um sicherzustellen, dass alle Felder ausgefüllt werden müssen.
 - Implementiere ein Dropdown-Menü (`<select>`) für die Auswahl eines Betreffs.
 
-### Tabellarische Darstellung von Daten 🌶️🌶️
+### Tabellarische Darstellung von Daten 🌶️️🌶️️
 Erstelle eine Tabelle, die Daten dynamisch darstellt.
 
 - Nutze das `<table>`-Element, um eine Tabelle mit mindestens 4 Spalten (z.B. Produktname, Preis, Kategorie, Bewertung) zu erstellen.
@@ -130,7 +130,7 @@ Erstelle eine Tabelle, die Daten dynamisch darstellt.
 - Füge Kopfzeilen mit `<th>`-Elementen hinzu und nutze `<td>` für die Datenzellen.
 - Optional: Style die Tabelle mit CSS, um sie visuell ansprechender zu gestalten.
 
-### Integration einer OpenStreetMap-Karte mit `<iframe>` 🌶️🌶️🌶️
+### Integration einer OpenStreetMap-Karte mit `<iframe>` 🌶️️🌶️️🌶️️
 Integriere eine interaktive Karte von OpenStreetMap auf der Webseite.
 
 - Verwende das `<iframe>`-Element, um eine OpenStreetMap-Karte einzubetten.

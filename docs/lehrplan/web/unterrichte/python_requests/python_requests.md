@@ -70,22 +70,22 @@ except requests.exceptions.RequestException as e:
 
 ## Aufgaben
 [90 min]
-### Abrufen und Anzeigen von Header-Informationen 🌶️
+### Abrufen und Anzeigen von Header-Informationen 🌶️️
 Sende Sie eine GET-Anfrage an die [JSON-Placeholder API](https://jsonplaceholder.typicode.com/) und zeige die Header der Antwort an.
 
-### Abrufen und Anzeigen von Cookie-Informationen 🌶️
+### Abrufen und Anzeigen von Cookie-Informationen 🌶️️
 Sende eine GET-Anfrage an die [JSON-Placeholder API](https://jsonplaceholder.typicode.com/) und gib die empfangenen Cookies aus.
 
-### Senden und Verarbeiten einer POST-Anfrage 🌶️🌶️
+### Senden und Verarbeiten einer POST-Anfrage 🌶️️🌶️️
 Sende eine POST-Anfrage an die [JSON-Placeholder API](https://jsonplaceholder.typicode.com/) und verarbeiten Sie die Antwort.
 
-### Abrufen und Speichern von Bildinhalten 🌶️🌶️🌶️
+### Abrufen und Speichern von Bildinhalten 🌶️️🌶️️🌶️️
 Lade [dieses Bild](https://via.placeholder.com/150) über GET-Anfrage herunter und speichere es lokal.
 
 
 ## Komplex-Aufgaben
 [45 min]
-### Kombinierte GET- und POST-Anfragen mit Fehlerhandling 🌶️🌶️🌶️
+### Kombinierte GET- und POST-Anfragen mit Fehlerhandling 🌶️️🌶️️🌶️️
 Kombinieren Sie GET- und POST-Anfragen und implementieren Sie umfassendes Fehlerhandling.
 
 - Sende zuerst eine GET-Anfrage, um Daten abzurufen.

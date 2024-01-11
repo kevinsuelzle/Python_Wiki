@@ -98,7 +98,7 @@ print(str(differenz))  # Ausgabe: (-2, 2)
 # Aufgaben
 [240min]
 
-## 1. **Punkt-Klasse erweitern** 🌶️
+## 1. **Punkt-Klasse erweitern** 🌶️️
 
    Gegeben ist eine einfache `Punkt`-Klasse mit den Koordinaten `x` und `y`. 
 
@@ -113,18 +113,18 @@ Implementiere die magische Methode `__sub__`, um zwei `Punkt`-Objekte voneinande
 
 _Tipp_: Du kannst dich an dem Beispiel zum addieren zweiter Punkte orientieren.
 
-## 2. **Benutzerfreundliche Ausgabe** 🌶️🌶️
+## 2. **Benutzerfreundliche Ausgabe** 🌶️️🌶️️
 
    Erstelle eine Klasse `Person` mit den Attributen `name` und `alter`. Implementiere die magische Methode `__str__`, um eine benutzerfreundliche Darstellung eines `Person`-Objekts zu ermöglichen, z.B., "Name: Max, Alter: 30".
 
-## 3. **Listenvergleich** 🌶️🌶️🌶️
+## 3. **Listenvergleich** 🌶️️🌶️️🌶️️
 
    Implementiere eine Klasse `BenutzerListe`, die eine Liste von Benutzerobjekten speichert. Implementiere die magische Methode `__eq__`, um zwei `BenutzerListe`-Objekte zu vergleichen. Die Gleichheit soll bedeuten, dass beide Listen die gleichen Benutzerobjekte in der gleichen Reihenfolge enthalten.
 
-## 4. **Matrizen addieren** 🌶️🌶️
+## 4. **Matrizen addieren** 🌶️️🌶️️
 
    Erstelle eine Klasse `Matrix`, die eine 2D-Matrix repräsentiert. Implementiere die magische Methode `__add__`, um zwei `Matrix`-Objekte zu addieren. Beachte die Regeln der Matrixaddition.
 
-## 5. **Indizierte Wörterbuchklasse** 🌶️🌶️🌶️🌶️
+## 5. **Indizierte Wörterbuchklasse** 🌶️️🌶️️🌶️️🌶️️
 
    Erstelle eine Klasse `IndiziertesWörterbuch`, die wie ein Wörterbuch funktioniert, aber zusätzlich zur normalen Funktionalität auch den Zugriff auf Einträge über den Index ermöglicht. Implementiere die magischen Methoden `__getitem__` und `__setitem__` entsprechend.

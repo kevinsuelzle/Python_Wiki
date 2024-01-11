@@ -74,11 +74,11 @@ Beim Erstellen eines virtuellen Computers (VM) in Microsoft Azure müssen eine R
 ## Aufgaben
 [60 min]
 
-### Erster Zugang zu Azure 🌶️
+### Erster Zugang zu Azure 🌶️️
 Logge dich mit deinem 365 Account bei Azure ein und finde dich in der Oberfläche zurecht.
 
-### Der erste virtuelle Server 🌶️🌶️
+### Der erste virtuelle Server 🌶️️🌶️️
 Erstelle eine VM mit Azure, logge dich über die Azure CLI ein und erstelle mit Bash ein Python Skript, dass bei Ausführung "Hallo Welt" printed.
 
-### Server offline nehmen 🌶️
+### Server offline nehmen 🌶️️
 Verlasse den Server über die CLI und Lösche die VM wieder.

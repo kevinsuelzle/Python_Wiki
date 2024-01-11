@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
 [Lösung](solution.md#lsung-aufgabe-1)
 
-### Aufgabe 2: Code lesbarer machen 🌶🌶
+### Aufgabe 2: Code lesbarer machen 🌶️🌶️
 [20 min]
 
 Überarbeite den folgenden Python-Code, der eine Textanalyse durchführt. Der aktuelle Code nutzt unklare und
@@ -93,7 +93,7 @@ print("Durchschn:", l[2])
 
 [Lösung](solution.md#lsung-aufgabe-2)
 
-### Aufgabe 3: Listenmanipulation und String- Verarbeitung 🌶🌶
+### Aufgabe 3: Listenmanipulation und String- Verarbeitung 🌶️🌶️
 [30 min]
 Gegeben ist eine Liste von Wörtern. Schreiben Sie eine Python-Funktion, die folgende Anforderungen erfüllt:
 

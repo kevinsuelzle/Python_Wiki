@@ -153,36 +153,36 @@ und Operationen auf Tupel-Datenstrukturen durchzuführen.
 # Aufgaben
 [60min]
 
-### 1. Tupel erstellen 🌶️
+### 1. Tupel erstellen 🌶️️
 Erstelle ein Tupel mit den Namen von fünf verschiedenen Früchten.
-### 2. Auf Tupelelemente zugreifen 🌶️
+### 2. Auf Tupelelemente zugreifen 🌶️️
 Zugriff auf das zweite Element im Tupel von Aufgabe 1.
-### 3.Tupelelemente ändern 🌶️
+### 3.Tupelelemente ändern 🌶️️
 Ändere das zweite Element im Tupel von Aufgabe 1 auf "Erdbeere" (Trickfrage).
-### 4. Ist das Element im Tupel? 🌶️
+### 4. Ist das Element im Tupel? 🌶️️
 Überprüfe, ob "Apfel" in dem Tupel von Aufgabe 1 enthalten ist.
-### 5. Zählen 🌶️
+### 5. Zählen 🌶️️
 Zähle, wie oft die Frucht "Banane" im Tupel von Aufgabe 1 vorkommt.
-### 6. Umgekehrte Reihenfolge 🌶️🌶️
+### 6. Umgekehrte Reihenfolge 🌶️️🌶️️
 Erstelle ein neues Tupel, das die Elemente des Originaltupels in umgekehrter Reihenfolge enthält.
-### 7. Tupel vom Tupel 🌶️
+### 7. Tupel vom Tupel 🌶️️
 Erstelle ein Tupel aus den ersten drei Elementen des Tupels von Aufgabe 1.
-### 8. Tupel kombinieren 🌶️🌶️
+### 8. Tupel kombinieren 🌶️️🌶️️
 Kombiniere das Tupel von Aufgabe 1 mit einem neuen Tupel, das drei Gemüsesorten enthält.
-### 9. Multiplikation 🌶️
+### 9. Multiplikation 🌶️️
 Multipliziere das Tupel von Aufgabe 1, um ein Tupel zu erstellen, das jedes Element dreimal enthält.
-### 10. Tupel verschachteln 🌶️
+### 10. Tupel verschachteln 🌶️️
 Erstelle ein verschachteltes Tupel, das das Originaltupel von Aufgabe 1 und das Gemüsetupel von Aufgabe 8 enthält.
-### 11. Index zum Element finden 🌶️
+### 11. Index zum Element finden 🌶️️
 Finde den Index des Elements "Kirsche" im Tupel von Aufgabe 1.
-### 12. Summe der Tupelelemente 🌶️🌶️
+### 12. Summe der Tupelelemente 🌶️️🌶️️
 Erstelle ein Tupel mit Zahlen von 1 bis 5 und berechne die Summe der Zahlen.
-### 13. Sortieren 🌶️🌶️
+### 13. Sortieren 🌶️️🌶️️
 Sortiere das Tupel von Aufgabe 12 in absteigender Reihenfolge (Hinweis: Tupel können nicht sortiert werden, aber es
 gibt einen Workaround).
-### 14. Subtupel 🌶️
+### 14. Subtupel 🌶️️
 Überprüfe, ob das Tupel von Aufgabe 1 ein Subtupel von dem in Aufgabe 10 erstellten verschachtelten Tupel ist.
-### 15. Reingelegt 🌶️
+### 15. Reingelegt 🌶️️
 Welchen Typ haben `a=(3,)` und `b=(3)`? 
 
 # Komplex-Aufgaben
@@ -190,7 +190,7 @@ Welchen Typ haben `a=(3,)` und `b=(3)`?
 
 #### Aufgabe 1: Einkaufsliste Manager
 
-**Aufgabenstellung:** 🌶️🌶️🌶️
+**Aufgabenstellung:** 🌶️️🌶️️🌶️️
 Schreibe ein Programm, das eine Einkaufsliste verwaltet. Der Benutzer kann folgende Aktionen durchführen:
 
 1. Ein neues Produkt zur Liste hinzufügen (mit Name und Menge als Tupel).

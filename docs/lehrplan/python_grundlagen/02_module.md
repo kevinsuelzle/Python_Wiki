@@ -119,14 +119,14 @@ Module und Pakete sind wichtig, um Code zu organisieren und wiederzuverwenden. D
 # Aufgaben
 [120min]
 
-## 1. Einfache Modulnutzung 🌶️
+## 1. Einfache Modulnutzung 🌶️️
    - Erstelle ein einfaches Python-Modul mit einer Funktion, die eine Begrüßung ausgibt. Importiere und verwende dieses Modul in einem anderen Python-Skript.
 
-## 2. Modul mit Alias importieren 🌶️
+## 2. Modul mit Alias importieren 🌶️️
    - Erstelle ein weiteres Modul und importiere es in einem neuen Skript mit einem Alias. Verwende dann das Alias, um auf Funktionen oder Variablen aus dem Modul zuzugreifen.
 
-## 3. Selektiven Import durchführen 🌶️
+## 3. Selektiven Import durchführen 🌶️️
    - Erstelle ein Modul mit mehreren Funktionen und Variablen. Importiere nur eine ausgewählte Funktion in einem neuen Skript und verwende sie.
 
-## 4. Verwendung von `__init__.py` 🌶️🌶️
+## 4. Verwendung von `__init__.py` 🌶️️🌶️️
    - Erstelle ein Paket mit mehreren Modulen. Nutze die Datei `__init__.py`, um das Paket zu initialisieren und den Zugriff auf Module zu erleichtern. Importiere dann Module aus dem Paket in einem Skript.

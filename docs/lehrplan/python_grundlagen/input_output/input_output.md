@@ -52,43 +52,43 @@ nicht nur theoretisch besprechen folgen jetzt erstmal eine Reihe an Übungsaufga
 [40min]
 
 
-### 1. **Einfache Ausgabe**: 🌶️
+### 1. **Einfache Ausgabe**: 🌶️️
 Verwende `print`, um "Hallo Welt" auszugeben. 
-### 2. **Variable ausgeben**: 🌶️
+### 2. **Variable ausgeben**: 🌶️️
 Erstelle eine Variable `text` mit dem Wert "Python" und gib sie mit `print` aus.
-### 3. **Zahlen ausgeben**: 🌶️
+### 3. **Zahlen ausgeben**: 🌶️️
 Gib mit `print` die Zahl 100 aus. 
-### 4. **Mehrere Argumente**: 🌶️🌶️🌶️
+### 4. **Mehrere Argumente**: 🌶️️🌶️️🌶️️
 Rufe `print` mit _zwei_ Argumenten "Hallo" und "Welt" auf. Die Ausgabe soll `"Hallo Welt"` sein.
 auszugeben. 
-### 5. **Zeilenende ändern**: 🌶️🌶️
+### 5. **Zeilenende ändern**: 🌶️️🌶️️
 Finde heraus, welchen Wert `option` haben muss, damit `mein_string` in 
 ```python
 print(mein_string, option)
 ```
 mit einem Ausrufezeichen am Ende ausgedruckt wird.
 
-### 6. **Begrüßung**: 🌶️🌶️
+### 6. **Begrüßung**: 🌶️️🌶️️
 * Verwende `input`, um den Benutzer nach seinem Namen zu fragen und speichere das Ergebnis in
 einer Variablen. 
 * Begrüße ihn anschließend mit `print`. 
 
-### 7. **Kombinierte Eingabe und Ausgabe**: 🌶️🌶️
+### 7. **Kombinierte Eingabe und Ausgabe**: 🌶️️🌶️️
 Frage den Benutzer nach seinem Lieblingsessen und sage ihm mit `print`, dass du 
 es auch magst. 
-### 8. **Formatierte Ausgabe**: 🌶️🌶️
+### 8. **Formatierte Ausgabe**: 🌶️️🌶️️
 Frage den Benutzer nach seinem Namen und Alter und gib beides formatiert mit einem
 f-String aus. 
-### 9. **Mehrere Eingaben**: 🌶️🌶️
+### 9. **Mehrere Eingaben**: 🌶️️🌶️️
 Frage den Benutzer nacheinander nach seinem Vornamen und Nachnamen und gib dann den
 vollständigen Namen aus. 
-### 10. **Rechnung mit Eingabe**: 🌶️🌶️
+### 10. **Rechnung mit Eingabe**: 🌶️️🌶️️
 Bitte den Benutzer, zwei Zahlen einzugeben, addiere sie und gib das Ergebnis aus. 
 
-### 11. **Eingabe in Liste speichern**: 🌶️🌶️🌶️
+### 11. **Eingabe in Liste speichern**: 🌶️️🌶️️🌶️️
 Bitte den Benutzer um drei Lieblingsfarben und speichere sie in einer Liste. Gib 
 dann die Liste aus. 
-### 12. **Benutzereingaben vergleichen**: 🌶️🌶️🌶️
+### 12. **Benutzereingaben vergleichen**: 🌶️️🌶️️🌶️️
 Frage den Benutzer zweimal nach einem Passwort. Gib eine Erfolgsmeldung aus, 
 wenn beide Eingaben übereinstimmen, ansonsten eine Fehlermeldung.
 
@@ -96,7 +96,7 @@ wenn beide Eingaben übereinstimmen, ansonsten eine Fehlermeldung.
 
 ## Anspruchsvollere Aufgaben
 
-### **Aufgabe 1: Persönliche Statistik** 🌶️🌶️🌶️
+### **Aufgabe 1: Persönliche Statistik** 🌶️️🌶️️🌶️️
 
 [45min]
 

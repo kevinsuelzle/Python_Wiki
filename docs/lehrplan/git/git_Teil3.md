@@ -64,25 +64,25 @@ Wir begannen mit der Installation und Konfiguration von Git und erstellten dann 
 [320min]
 
 
-## 1. Branch erzeugen. 🌶️
+## 1. Branch erzeugen. 🌶️️
 Auf dem Repository von gestern erzeuge einen eigenen Branch.
 Mache hier eine Änderung, commite sie und veröffentliche sie.
 
-## 1. Branches zusammenführen. 🌶️
+## 1. Branches zusammenführen. 🌶️️
 Führe deinen Branch mit dem master zusammen.
 Erzeuge danach zwei neue Branches. Auf jedem Banch erstellst du eine neue Datei mit unterschiedlichen Namen. Commite und veröffentliche.
 Führe beide Branches nacheinander zusammen.
 
-## 2. Ein externes Repository klonen 🌶️🌶️
+## 2. Ein externes Repository klonen 🌶️️🌶️️
 Mache die Aufgabe wie oben aber provuziere einen Konflikt.
 
-## 3. Konflikt auflösen. 🌶️🌶️
+## 3. Konflikt auflösen. 🌶️️🌶️️
 Löse den Konflikt von oben auf einem Weg deiner Wahl auf.
 
-## 4. Provuziere unterschiedliche Konflikte. 🌶️🌶️
+## 4. Provuziere unterschiedliche Konflikte. 🌶️️🌶️️
 Erstelle unterschiedliche Konflikte und löse sie jeweils mit einer anderen Methode auf.
 
-## 5. Arbeitet gemeinsam. 🌶️🌶️
+## 5. Arbeitet gemeinsam. 🌶️️🌶️️
 Einigt euch ein gemeinsames Projekt in einem Remote Repository zu erstellen. Dort sollen bestimmte Dateien enthalten sein.
 Bildet Arbeitsgruppen und erstellt je einen Branch pro Arbeitsgruppe.
 Erzeugt eigene Beiträge innerhalb der Branches. Commitet dann und löst Konflikte ggf auf. Veröffentlicht eure Commits.

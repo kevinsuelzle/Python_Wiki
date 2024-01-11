@@ -33,7 +33,7 @@ def calculate_difference_of(primary_summand, secondary_summand, primary_factor, 
     return difference
 ```
 
-### Aufgabe 1: Variablenumbenennug 🌶🌶
+### Aufgabe 1: Variablenumbenennug 🌶️🌶️
 [15 min]
 
 Gegeben ist ein Code-Ausschnitt, welcher den Warenwert eines Einkaufskorbes bereichnet. Leider hat der Entwicker wenig Wert auf die Namenskonventionen gelegt. Benennen Sie die Variablen entsprechend der Konventionen um und führen sie sprechende Variablennamen ein.
@@ -59,7 +59,7 @@ print("Warenwert: $" + str(c))
 
 [Lösung](solution.md#lsung-aufgabe-1)
 
-### Aufgabe 2: Verbesserung der Variablennamen 🌶🌶🌶
+### Aufgabe 2: Verbesserung der Variablennamen 🌶️🌶️🌶️
 [30 min]
 
 In diesem Python-Code für Tic Tac Toe sind einige Variablennamen zu kurz oder nicht intuitiv. Deine Aufgabe ist es, die Variablennamen so zu ändern, dass sie lesbarer und verständlicher werden. Hier sind einige Vorschläge, worauf du dich konzentrieren kannst:

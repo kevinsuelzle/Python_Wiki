@@ -47,7 +47,7 @@ word_lengths = [len(word) for word in sentence.split() if len(word) > 3]
 * **Einfache Integration mehrerer Iteratoren:** Komplexe List Comprehensions können mehrere Iteratoren und verschachtelte Schleifen in einer einzigen Zeile integrieren, was in traditionellen Schleifenstrukturen oft umständlicher ist.
 * **Gute Unterstützung in der Python-Community:** List Comprehensions sind ein beliebtes Feature in Python und werden von der Community gut unterstützt, was bedeutet, dass viele Ressourcen und Beispiele zur Verfügung stehen.
 
-### Aufgabe 1: Filtern und Umwandeln von Zahlen 🌶🌶
+### Aufgabe 1: Filtern und Umwandeln von Zahlen 🌶️🌶️
 [15 min]
 Gegeben ist eine Liste von Zahlen. Erstelle eine neue Liste, die das Quadrat jeder ungeraden Zahl aus der ursprünglichen Liste enthält, sofern die Zahl größer als 10 ist.
 
@@ -55,7 +55,7 @@ Beispiel-Liste: `numbers = [9, 12, 17, 21, 28, 33, 35]`
 
 [Lösung](solution.md#lsung-aufgabe-1)
 
-### Aufgabe 2: Extrahieren von Anfangsbuchstaben 🌶
+### Aufgabe 2: Extrahieren von Anfangsbuchstaben 🌶️
 [10min]
 Gegeben ist eine Liste von Namen. Erstelle eine neue Liste, die den ersten Buchstaben jedes Namens enthält.
 
@@ -63,7 +63,7 @@ Beispiel-Liste: `names = ["Alice", "Bob", "Charlie", "Diana"]`
 
 [Lösung](solution.md#lsung-aufgabe-2)
 
-### Aufgabe 3: Temperaturkonverter 🌶🌶
+### Aufgabe 3: Temperaturkonverter 🌶️🌶️
 [15 min]
 Du hast eine Liste von Temperaturen in Grad Celsius. Konvertiere jede Temperatur in Grad Fahrenheit und erstelle eine neue Liste mit den konvertierten Werten. Die Formel zur Umrechnung ist: Fahrenheit = (Celsius * 9/5) + 32.
 

@@ -48,7 +48,7 @@ Die Klasse `Car` dient als Schnittstelle, und die konkreten Klassen `CompactCar`
 # Aufgaben:
 [220min]
 
-## 1. Autorennen mit Factory Method Pattern 🌶️🌶️🌶️
+## 1. Autorennen mit Factory Method Pattern 🌶️️🌶️️🌶️️
 
 ### Teilschritte:
 
@@ -62,7 +62,7 @@ d. Implementiere konkrete Fabriken, die von `RaceFactory` erben, z. B. `CarFacto
 
 e. Demonstriere die Verwendung, indem du eine Rennsimulation erstellst und verschiedene Fahrzeugtypen erstellst.
 
-## 2. Kaffeemaschine 🌶️🌶️
+## 2. Kaffeemaschine 🌶️️🌶️️
 
 ### Teilschritte:
 
