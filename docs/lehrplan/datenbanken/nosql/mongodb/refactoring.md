@@ -47,6 +47,7 @@ Um die Struktur zu optimieren, wurde beschlossen, Autoreninformationen in einem 
 
 Das Refactoring des Datenmodells bringt mehrere Vorteile mit sich. Durch die Auslagerung der Autoreninformationen in ein separates Dokument wird die Datenbank normalisiert, was die Wartbarkeit und Konsistenz verbessert. Zusätzlich wird die Flexibilität gesteigert, da neue Informationen über Autoren einfach hinzugefügt werden können, ohne das Bücherdokument zu ändern. Die Beziehung zwischen Büchern und Autoren ist nun klar durch die Verwendung von `author_id` definiert. Dadurch können Abfragen nach Autoreninformationen effizienter durchgeführt werden, was zu einer insgesamt verbesserten Leistung der Datenbank führt.
 
+
 Wir werden uns im Folgenden einige Ansätze ansehen, wie Datenbank-Refactoring bei Dokumentendatenbanken beidurchgeführt werden kann.
 
 ## Index-Optimierung:
@@ -121,7 +122,6 @@ Angenommen, wir haben ein Datenmodell für Bücher mit umfassenden Informationen
 }
 ```
 
-TODO: Sollte man hier nicht auch den Code zeigen, mit dem man diese Aufsplittung hinbekommt?
 
 Hier könnten Informationen über den Autor und den Verlag in separaten Dokumenten kombiniert werden, wenn dies zu einer effizienteren Datenabfrage führt.
 
@@ -161,7 +161,53 @@ Hier könnten Informationen über den Autor und den Verlag in separaten Dokument
 }
 ```
 
-Durch dieses Refactoring könnten Abfragen nach Büchern effizienter gestaltet werden, insbesondere wenn nur Informationen über den Autor oder den Verlag benötigt werden. Es ist wichtig, solche Entscheidungen basierend auf den tatsächlichen Anwendungsanforderungen und Nutzungsverhalten zu treffen.
+Durch dieses Refactoring könnten Abfragen nach Büchern effizienter gestaltet werden, insbesondere wenn nur Informationen über den Autor oder den Verlag benötigt werden. Es ist wichtig, solche Entscheidungen basierend auf den tatsächlichen Anwendungsanforderungen und Nutzungsverhalten zu treffen. Eine Umsetzung mit Pymongo könnte wie folgt aussehen:
+
+```python
+from pymongo import MongoClient
+
+# Verbindung zur MongoDB
+client = MongoClient("mongodb://localhost:27017/")
+db = client["deineDatenbank"]
+
+# Bücherkollektion erstellen
+books_collection = db["books"]
+
+# Autorenkollektion erstellen
+authors_collection = db["authors"]
+
+# Verlagskollektion erstellen
+publishers_collection = db["publishers"]
+
+# Iteriere über alle Bücher
+for book in books_collection.find():
+    # Extrahiere Informationen über den Autor und den Verlag
+    author_info = book.get("author", {})
+    publisher_info = book.get("publisher", {})
+
+    # Suche oder füge den Autor zur Autorenkollektion hinzu
+    author = authors_collection.find_one({"name": author_info.get("name")})
+    if not author:
+        author_id = authors_collection.insert_one(author_info).inserted_id
+    else:
+        author_id = author["_id"]
+
+    # Suche oder füge den Verlag zur Verlagskollektion hinzu
+    publisher = publishers_collection.find_one({"name": publisher_info.get("name")})
+    if not publisher:
+        publisher_id = publishers_collection.insert_one(publisher_info).inserted_id
+    else:
+        publisher_id = publisher["_id"]
+
+    # Aktualisiere das Buchdokument, um auf den Autor und den Verlag zu verweisen
+    books_collection.update_one(
+        {"_id": book["_id"]},
+        {"$set": {"author_id": author_id, "publisher_id": publisher_id}}
+    )
+
+# Entferne die veralteten Felder "author" und "publisher" aus den Büchern
+books_collection.update_many({}, {"$unset": {"author": "", "publisher": ""}})
+```
 
 ## Embedded vs. Referenzierte Daten:
 [20 min]
@@ -226,7 +272,41 @@ Wenn hingegen Aktualisierungen oder Änderungen an den eingebetteten Daten häuf
 }
 ```
 
-In diesem Beispiel wurden die Kommentare als separate Dokumente referenziert. Diese Herangehensweise kann den Schreibaufwand verringern, insbesondere wenn Kommentare häufig aktualisiert oder gelöscht werden.
+In diesem Beispiel wurden die Kommentare als separate Dokumente referenziert. Diese Herangehensweise kann den Schreibaufwand verringern, insbesondere wenn Kommentare häufig aktualisiert oder gelöscht werden. Die Umsetzung könnte wie folgt aussehen:
+
+```python
+from pymongo import MongoClient
+
+# Verbindung zur MongoDB
+client = MongoClient("mongodb://localhost:27017/")
+db = client["deineDatenbank"]
+
+# Blogposts-Kollektion erstellen
+blogposts_collection = db["blogposts"]
+
+# Kommentare-Kollektion erstellen
+comments_collection = db["comments"]
+
+# Iteriere über alle Blogposts
+for blogpost in blogposts_collection.find():
+    # Extrahiere Kommentare aus dem Blogpost
+    comments_info = blogpost.get("comments", [])
+
+    # Erstelle separate Kommentare und erhalte die Kommentar-IDs
+    comment_ids = []
+    for comment_info in comments_info:
+        comment_id = comments_collection.insert_one(comment_info).inserted_id
+        comment_ids.append(comment_id)
+
+    # Aktualisiere das Blogpost-Dokument mit den Kommentar-IDs
+    blogposts_collection.update_one(
+        {"_id": blogpost["_id"]},
+        {"$set": {"comments": comment_ids}}
+    )
+
+# Entferne das veraltete eingebettete Kommentarfeld aus den Blogposts
+blogposts_collection.update_many({}, {"$unset": {"comments": ""}})
+```
 
 
 

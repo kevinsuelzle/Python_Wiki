@@ -16,7 +16,7 @@ db.meineCollection.aggregate([
 ])
 ```
 
-TODO: Ich verstehe hier nicht ganz die Bedeutung der `1` hinter `$sum:`. Auch bei den späteren Magic numbers erklären, was die bedeuten.
+Die 1 bei der $sum -Operation wird verwendet, um die Anzahl der Dokumente in jeder Gruppe zu zählen. Genauer bedeutet die 1, dass für jeden gefundennen Treffer 1 addiert wird.
 
 ***Beispiel***
 
@@ -74,11 +74,10 @@ db.meineCollection.aggregate([
 
 ```
 
+In diesem Beispiel wird nach dem Status 'aktiv' gefiltert, die Dokumente nach Abteilung gruppierti und die Gesamtsumme der Gehälter berechnet. Zusätzlich wird absteigend nach der nach der Gesamtsumme sortiert und die ersten 5 Ergebnisse zurückgegeben.
 
 ### mapReduce()
 [20 min]
-
-TODO: Kannst du hier noch was zum JavaScript sagen, das hier verwendet wird?
 
 Die `mapReduce()` Methode führt eine Map-Reduce-Operation auf der Collection aus. Diese Methode erwartet zwei Funktionen als Parameter: eine Map-Funktion und eine Reduce-Funktion.
 
@@ -93,6 +92,8 @@ db.meineCollection.mapReduce(
   { out: 'map_reduce_example' }
 )
 ```
+
+In der Map-Funktion wird ein Dictionary nurch die Funktion `emit()` erstellt und mit Schlüssel-Wert-Paaren gefüllt. Dieses wird an die Reduce-Funktion übergeben, welche die Werte des Dictionaries summiert und das Ergebnis zurückgibt. Die Rückgabe erfolgt in Form eines neuer neue Collection `map_reduce_example`.
 
 ***Beispiel***
 
@@ -153,7 +154,7 @@ Das Ergebnis in der `map_reduce_example`-Collection wäre:
 In diesem Beispiel haben wir eine einfache Zählung der Vorkommen jedes Namens in der `meineCollection` durchgeführt.
 
 
-## Aufgaben
+## Aufgaben: Aggregationen
 [90 min]
 
 1. **Gesamtpreis der Bestellungen pro Produkt:** 🌶🌶🌶
@@ -194,111 +195,4 @@ In diesem Beispiel haben wir eine einfache Zählung der Vorkommen jedes Namens i
 
 
 
-## Lösungen
-
-
-1. **Gesamtpreis der Bestellungen pro Produkt:**
-      - Verwende MapReduce, um den Gesamtpreis der Bestellungen pro Produkt zu berechnen.
-      ```javascript
-      db.bestellungen.mapReduce(
-        function() { emit(this.produkt, this.menge * db.produkte.findOne({ name: this.produkt }).preis); },
-        function(key, values) { return Array.sum(values); },
-        { out: { inline: 1 } }
-      )
-      ```
-
-2. **Durchschnittsalter der Benutzer in jeder Stadt:**
-      - Berechne mithilfe von MapReduce das Durchschnittsalter der Benutzer in jeder Stadt.
-      ```javascript
-      db.benutzer.mapReduce(
-        function() { emit(this.stadt, this.alter); },
-        function(key, values) { return Array.avg(values); },
-        { out: { inline: 1 } }
-      )
-      ```
-
-3. **Anzahl der Bestellungen pro Tag:**
-      - Verwende MapReduce, um die Anzahl der Bestellungen für jeden Tag zu zählen.
-      ```javascript
-      db.bestellungen.mapReduce(
-        function() { emit(this.datum.toISOString().split('T')[0], 1); },
-        function(key, values) { return Array.sum(values); },
-        { out: { inline: 1 } }
-      )
-      ```
-
-4. **Gesamtpreis der Produkte in jedem Warenkorb:**
-      - Berechne mithilfe von MapReduce den Gesamtpreis der Produkte in jedem Warenkorb.
-      ```javascript
-      db.warenkorb.mapReduce(
-        function() { emit(this._id, this.preis * this.menge); },
-        function(key, values) { return Array.sum(values); },
-        { out: { inline: 1 } }
-      )
-      ```
-
-5. **Anzahl der Bestellungen pro Kunde:**
-      - Zähle mithilfe von MapReduce die Anzahl der Bestellungen für jeden Kunden.
-      ```javascript
-      db.bestellungen.mapReduce(
-        function() { emit(this.kunde, 1); },
-        function(key, values) { return Array.sum(values); },
-        { out: { inline: 1 } }
-      )
-      ```
-
-6. **Durchschnittliche Anzahl der Produkte in den Warenkörben:**
-      - Berechne mithilfe von MapReduce die durchschnittliche Anzahl der Produkte in den Warenkörben.
-      ```javascript
-      db.warenkorb.mapReduce(
-        function() { emit(this._id, 1); },
-        function(key, values) { return Array.avg(values); },
-        { out: { inline: 1 } }
-      )
-      ```
-
-
-
-7. **Durchschnittlicher Warenkorbpreis:**
-   ```javascript
-   db.warenkorb.aggregate([
-     { $group: { _id: null, total: { $sum: { $multiply: ["$preis", "$menge"] } } } }
-   ])
-   ```
-
-8. **Häufigkeit der Produktkäufe:**
-   ```javascript
-   db.bestellungen.aggregate([
-     { $group: { _id: "$produkt", count: { $sum: 1 } } }
-   ])
-   ```
-
-9. **Gesamtwert aller Bestellungen:**
-   ```javascript
-   db.bestellungen.aggregate([
-     { $lookup: { from: "produkte", localField: "produkt", foreignField: "name", as: "productInfo" } },
-     { $unwind: "$productInfo" },
-     { $group: { _id: null, totalValue: { $sum: { $multiply: ["$menge", "$productInfo.preis"] } } } }
-   ])
-   ```
-
-10. **Anzahl der Kunden pro Stadt:**
-   ```javascript
-   db.benutzer.aggregate([
-     { $group: { _id: "$stadt", count: { $sum: 1 } } }
-   ])
-   ```
-
-11. **Durchschnittsalter der Kunden:**
-   ```javascript
-   db.benutzer.aggregate([
-     { $group: { _id: null, averageAge: { $avg: "$alter" } } }
-   ])
-   ```
-
-12. **Liste der Bücher pro Autor:**
-   ```javascript
-   db.bücher.aggregate([
-     { $group: { _id: "$autor", books: { $push: "$titel" } } }
-   ])
-   ```
+[Link zur Lösung](../lösungen/aufgabe4.md)

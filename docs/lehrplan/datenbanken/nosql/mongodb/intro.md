@@ -1,12 +1,7 @@
 # MongoDB: 
 [10 min]
 
-MongoDB ist eine dokumentenorientierte NoSQL-Datenbank, die auf hohe Flexibilität und Skalierbarkeit ausgelegt ist. Im Gegensatz zu relationalen Datenbanken speichert MongoDB Daten in einem flexiblen, JSON-ähnlichen Format, das als BSON (Binary JSON) bekannt ist. Wie auch andere Dokumentenbasierte Datenbanken ist MongoDB frei von Schemaanforderungen. Insgesamt gelten for MongoDB die 
-
-TODO: Hier fehlt der Rest vom Satz...
-
-
-MongoDB eignet sich besonders gut für Anwendungsfälle mit unstrukturierten oder stark variierenden Daten, darunter Content-Management-Systeme, Echtzeitanwendungen und Big-Data-Anwendungen.
+MongoDB ist eine dokumentenorientierte NoSQL-Datenbank, die auf hohe Flexibilität und Skalierbarkeit ausgelegt ist. Im Gegensatz zu relationalen Datenbanken speichert MongoDB Daten in einem flexiblen, JSON-ähnlichen Format, das als BSON (Binary JSON) bekannt ist. Wie auch andere Dokumentenbasierte Datenbanken ist MongoDB frei von Schemaanforderungen. Trotzdem gelten für MonoDB die ACID Eigenschaften (Atomicity, Consistency, Isolation, Durability). MongoDB eignet sich besonders gut für Anwendungsfälle mit unstrukturierten oder stark variierenden Daten, darunter Content-Management-Systeme, Echtzeitanwendungen und Big-Data-Anwendungen.
 
 
 ## BSON
@@ -50,40 +45,7 @@ TODO: Lösungen von Aufgaben in eigene Dateien packen und verlinken. Bitte für 
 Erstelle ein Docker-Compose File, das einen MongoDB Container startet. Achte darauf, dass die Datenbank auch nach einem Neustart des Containers erhalten bleibt.
 Recherchiere dazu im Internet.
 
-***Lösung***:
-Um MongoDB mit einer eigenen Datenbank über `docker-compose` bereitzustellen, kannst du eine `docker-compose.yml`-Datei erstellen. Hier ist ein Beispiel:
-
-- Erstelle eine Datei mit dem Namen `docker-compose.yml` und füge den folgenden Inhalt ein:
-
-```yaml
-version: '3'
-services:
-mongodb:
-   image: mongo
-   container_name: my-mongodb
-   ports:
-      - "27017:27017"
-   environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
-   volumes:
-      - ./data:/data/db
-```
-
-Dieses Beispiel verwendet das offizielle MongoDB-Image aus dem Docker Hub (`mongo`). Es definiert einen MongoDB-Container mit dem Namen `my-mongodb`, der auf Port `27017` lauscht. Die Umgebungsvariablen `MONGO_INITDB_ROOT_USERNAME` und `MONGO_INITDB_ROOT_PASSWORD` werden verwendet, um einen Benutzer mit Root-Rechten zu erstellen. Der Container bindet außerdem ein Volumen (`./data:/data/db`), um die Datenbankdaten dauerhaft zu speichern.
-
-- Erstelle einen Ordner namens `data` im gleichen Verzeichnis wie deine `docker-compose.yml`-Datei. Dieser Ordner wird das Volumen für die MongoDB-Datenbank sein.
-
-- Öffne ein Terminal im Verzeichnis, das die `docker-compose.yml`-Datei enthält, und führe den folgenden Befehl aus:
-
-```bash
-docker-compose up -d
-```
-
-Dieser Befehl startet die Docker-Container im Hintergrund (`-d`).
-
-Nachdem dieser Befehl erfolgreich ausgeführt wurde, sollte MongoDB mit einer eigenen Datenbank bereitgestellt sein. Du kannst dies überprüfen, indem du dich zum MongoDB-Server verbindest (z. B. mit einem MongoDB-Client wie [MongoDB Compass](https://www.mongodb.com/products/compass)) und die erstellte Datenbank verwendest. In diesem Beispiel wäre die Datenbank standardmäßig "admin" aufgrund der Umgebungsvariablen, die wir in der `docker-compose.yml`-Datei festgelegt haben.
-
+[Link zur Lösung](../lösungen/aufgabe1.md)
 ## MongoDB Shell
 [10 min]
 
@@ -108,9 +70,10 @@ Nach dem Ausführen dieses Befehls sollte die MongoDB-Shell geöffnet werden. Nu
 
 Über den Befehl `show collections` können wir uns alle Collections anzeigen lassen, die in der aktuellen Datenbank vorhanden sind. Im nächsten Kapitel werden wir uns ausführlicher mit den CRUD Operationen beschäftigen. Das Schließen der MongoDB Shell erfolgt über den Befehl `exit`.
 
-TODO: Lösung für die Aufgabe erstellen und verlinken.
 
-### Aufgabe 🌶
+### Aufgabe: Collection erstellen und User einfügen 🌶
 [20 min]
 
 Erstelle eine Collection mit dem Namen `users` und füge ein Dokument mit dem Namen `John Doe` ein. Lass die alle Collections anzeigen.
+
+[Link zur Lösung](../lösungen/aufgabe2.md)

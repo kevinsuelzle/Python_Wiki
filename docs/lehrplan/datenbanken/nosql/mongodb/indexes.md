@@ -3,7 +3,7 @@
 
 In MongoDB sind Indizes spezielle Datenstrukturen, die die Abfrageleistung verbessern, indem sie den Zugriff auf Daten beschleunigen. Indizes sind eine Möglichkeit, die Geschwindigkeit von Abfragen zu erhöhen, insbesondere wenn Sie nach bestimmten Werten suchen, sortieren oder Join-Operationen durchführen. MongoDB verwendet B-Baum-Indizes, um den schnellen Zugriff auf Daten zu ermöglichen. Diese Struktur erlaubt es, Werte effizient zu suchen und zu sortieren. Indizes können auf einzelnen Feldern oder auf mehreren Feldern erstellt werden. Zusammengesetze Indizes sind insbesondere dann nützlich, wenn Sie nach mehreren Feldern suchen oder sortieren möchten. In MongoDB werden Indizes automatisch auf dem `_id` Feld erstellt. Sie können jedoch auch manuell erstellt werden.
 
-TODO: Die Teilnehmer haben keine Ahnung, was Bäume, Wurzeln usw. sind. Ich würde vorschlagen, dass du hier ein Bild erstellt und eifnügst, dass die meisten Fragen klären sollte.
+![B-Baum](../../images/b-baum.png)
 
 ### Exkurs: B-Baum
 Der B-Baum (Balanced Tree) ist eine Datenstruktur, die in vielen Datenbanksystemen, darunter auch MongoDB, für die Implementierung von Indizes verwendet wird. Seine Konstruktion ermöglicht das schnelle Suchen, Einfügen und Löschen von Daten in großen Mengen, und dabei bleibt er stets ausbalanciert.
@@ -44,10 +44,12 @@ use meineDatenbank
 db.meineCollection.dropIndex({ name: 1 })
 ```
 
-### Aufgabe: 🌶
+### Aufgabe: Index erstellen🌶
 [15 min]
 
 Erstelle einen Index auf dem Feld `name` in der Collection `meineCollection`. Überprüfe, ob der Index erstellt wurde. Lösche den Index wieder.
+
+[Link zur Lösung](../lösungen/aufgabe5.md)
 
 ## Indexe anzeigen
 [5 min]
@@ -75,10 +77,12 @@ use meineDatenbank
 db.meineCollection.stats()
 ```
 
-### Aufgabe: 🌶
+### Aufgabe: Eigenschaften des Index🌶
 [10 min]
 
 Erstelle einen Index auf dem Feld `name` in der Collection `meineCollection`. Überprüfe, ob der Index erstellt wurde. Gib die Eigenschaften des Indexes aus. Welche Eigenschaften werden dir angezeigt und was bedeuten sie?
+
+[Link zur Lösung](../lösungen/aufgabe6.md)
 
 ## Zusammengesetzte Indexe
 
@@ -92,7 +96,7 @@ use meineDatenbank
 db.meineCollection.createIndex({ name: 1, age: -1 })
 ```
 
-## Aufgaben:
+## Aufgaben: Indizes
 [90 min]
 
 1. **Index für das "name"-Feld in der Sammlung "Benutzer":** 🌶
@@ -125,56 +129,4 @@ db.meineCollection.createIndex({ name: 1, age: -1 })
 10. **Sparse-Index für das "alter"-Feld in der Sammlung "Benutzer":** 🌶🌶
      - Erstelle einen sparsen Index für das Feld "alter" in der Sammlung "Benutzer", um nur Dokumente mit diesem Feld zu indizieren.
 
-## Lösungen:
-
-Leider kann ich in dieser Umgebung keine interaktiven Codeausführungen durchführen, aber ich kann dir die grundlegende Vorgehensweise für jede Aufgabe erklären.
-
-1. **Index für das "name"-Feld in der Sammlung "Benutzer":**
-    ```javascript
-    db.benutzer.createIndex({ name: 1 });
-    ```
-
-2. **Zusammengesetzter Index für die Felder "datum" und "produkt" in der Sammlung "Bestellungen":**
-    ```javascript
-    db.bestellungen.createIndex({ datum: 1, produkt: 1 });
-    ```
-
-3. **Text-Index für das "titel"-Feld in der Sammlung "Bücher":**
-    ```javascript
-    db.bücher.createIndex({ titel: "text" });
-    ```
-
-4. **Absteigender Index für das "preis"-Feld in der Sammlung "Produkte":**
-    ```javascript
-    db.produkte.createIndex({ preis: -1 });
-    ```
-
-5. **Geospatial-Index für das "standort"-Feld in der Sammlung "Benutzer":**
-    ```javascript
-    db.benutzer.createIndex({ standort: "2dsphere" });
-    ```
-
-6. **Hash-Index für das "email"-Feld in der Sammlung "Kunden":**
-    ```javascript
-    db.kunden.createIndex({ email: "hashed" });
-    ```
-
-7. **Teil-Index für das "produkt"-Feld in der Sammlung "Bestellungen":**
-    ```javascript
-    db.bestellungen.createIndex({ produkt: 1 }, { partialFilterExpression: { produkt: { $exists: true } } });
-    ```
-
-8. **Einzigartiger Index für das "name"-Feld in der Sammlung "Produkte":**
-    ```javascript
-    db.produkte.createIndex({ name: 1 }, { unique: true });
-    ```
-
-9. **Index mit Ablaufzeit für das "datum"-Feld in der Sammlung "Bestellungen":**
-    ```javascript
-    db.bestellungen.createIndex({ datum: 1 }, { expireAfterSeconds: 0 });
-    ```
-
-10. **Sparse-Index für das "alter"-Feld in der Sammlung "Benutzer":**
-        ```javascript
-        db.benutzer.createIndex({ alter: 1 }, { sparse: true });
-        ```
+[Link zur Lösung](../lösungen/aufgabe7.md)

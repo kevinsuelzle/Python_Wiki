@@ -201,7 +201,7 @@ Mit Abschluss der Aufgabe schließen wir noch die Verbindung zur Datenbank.
 client.close()
 ```
 
-## Aufgabe:
+## Aufgabe TODO-APP:
 [90 min]
 Erstelle eine ToDo-Liste-Anwendung, die MongoDB als Datenbank verwendet. Die Anwendung sollte CRUD-Operationen (Create, Read, Update, Delete) für Aufgaben ermöglichen. Jede Aufgabe besteht aus einem Titel, einer Beschreibung und einem Status (z.B., "To Do", "In Progress", "Done").
 
@@ -227,3 +227,4 @@ Erstelle eine ToDo-Liste-Anwendung, die MongoDB als Datenbank verwendet. Die Anw
     - Füge eine Funktion hinzu, um alle Aufgaben nach ihrem Status zu zählen.
     - Erweitere die Datenbankstruktur, um Benutzerinformationen zu speichern und weise Aufgaben bestimmten Benutzern zu.
 
+[Link zur Lösung](../lösungen/aufgabe8.md)
