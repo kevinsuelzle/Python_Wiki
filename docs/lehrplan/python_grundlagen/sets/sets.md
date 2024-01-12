@@ -82,35 +82,35 @@ Struktur vorhanden sind als Listen.
 
 [40min]
 
-### 1. **Set Erstellung**: 🌶️
+### 1. **Set Erstellung**: 🌶️️
 Erstelle ein Set aus den Zahlen 1 bis 5 und gib es aus.
-### 2. **Duplikatentfernung**: 🌶️
+### 2. **Duplikatentfernung**: 🌶️️
 Konvertiere die Liste `[1, 2, 2, 3, 4, 5, 5, 6]` in ein Set, um Duplikate zu entfernen.
-### 3. **Elemente Hinzufügen**:  🌶️
+### 3. **Elemente Hinzufügen**:  🌶️️
 Füge die Zahlen 6, 7 und 8 zu dem Set aus Aufgabe 1 hinzu.
-### 4. **Element Entfernen**:  🌶️
+### 4. **Element Entfernen**:  🌶️️
 Entferne die Zahl 5 aus dem Set, das du in Aufgabe 3 erstellt hast.
-### 5. **Set Durchlaufen**: 🌶️
+### 5. **Set Durchlaufen**: 🌶️️
 Durchlaufe ein Set und drucke jedes Element aus.
-### 6. **Set Union**: 🌶️
+### 6. **Set Union**: 🌶️️
 Erstelle zwei Sets, `set1 = {1, 2, 3}` und `set2 = {3, 4, 5}`, und finde ihre Union.
-### 7. **Set Schnittmenge**: 🌶️
+### 7. **Set Schnittmenge**: 🌶️️
 Finde die Schnittmenge von `set1` und `set2` aus der vorherigen Aufgabe.
-### 8. **Set Differenz**: 🌶️
+### 8. **Set Differenz**: 🌶️️
 Ermittle die Differenz zwischen `set1` und `set2`.
-### 9. **Symmetrische Differenz**: 🌶️
+### 9. **Symmetrische Differenz**: 🌶️️
 Finde die symmetrische Differenz zwischen `set1` und `set2`.
-### 10. **Set Länge**: 🌶️
+### 10. **Set Länge**: 🌶️️
 Ermittle die Anzahl der Elemente in einem Set deiner Wahl.
-### 11. **Set Mitgliedschaftstest**: 🌶️
+### 11. **Set Mitgliedschaftstest**: 🌶️️
 Überprüfe, ob ein bestimmtes Element in einem Set vorhanden ist.
-### 12. **Set Leeren**: 🌶️
+### 12. **Set Leeren**: 🌶️️
 Entferne alle Elemente aus einem Set.
-### 13. **Subsets**: 🌶️🌶️
+### 13. **Subsets**: 🌶️️🌶️️
 Überprüfe, ob ein Set ein Subset eines anderen Sets ist.
-### 14. **Supersets**: 🌶️🌶️
+### 14. **Supersets**: 🌶️️🌶️️
 Überprüfe, ob ein Set ein Superset eines anderen Sets ist.
-### 15. **Frozen Set**:  🌶️🌶️
+### 15. **Frozen Set**:  🌶️️🌶️️
 Erstelle ein `frozenset` aus der Liste `[1, 2, 3, 4, 5]` und erkläre den Unterschied zwischen
     einem `set` und einem `frozenset`.
 

@@ -1,4 +1,4 @@
-# Args & Kwargs in Python 🌶️🌶️
+# Args & Kwargs in Python 🌶️️🌶️️
 [60min]
 
 In Python gibt es zwei wichtige Konzepte im Zusammenhang mit Funktionen, nämlich `*args` und `**kwargs`. Diese ermöglichen es, Funktionen flexibler zu gestalten und mit variabler Anzahl von Argumenten umzugehen.
@@ -50,19 +50,19 @@ drucke_infos("Max", alter=23, stadt="Wolfsburg", beruf="Softwareentwickler")
 # Aufgaben:
 [240min]
 
-## 1. `*args` Verwendung 🌶️
+## 1. `*args` Verwendung 🌶️️
 
 Schreibe eine Funktion, die eine beliebige Anzahl von Zahlen akzeptiert und ihre Summe zurückgibt. Verwende dabei `*args`.
 
-## 2. `**kwargs` Verwendung 🌶️
+## 2. `**kwargs` Verwendung 🌶️️
 
 Implementiere eine Funktion, die verschiedene Informationen (Name, Alter, Geschlecht) als schlüsselwortbasierte Argumente annimmt und ausdruckt. Verwende dabei `**kwargs`.
 
-## 3. Kombination aus beidem 🌶️🌶️
+## 3. Kombination aus beidem 🌶️️🌶️️
 
 Erstelle eine Funktion, die sowohl `*args` als auch `**kwargs` verwendet. Die Funktion sollte die Summe der Zahlen aus `*args` berechnen und zusätzlich alle Informationen aus `**kwargs` ausdrucken.
 
-## 4. Personalinformationen verarbeiten 🌶️🌶️🌶️
+## 4. Personalinformationen verarbeiten 🌶️️🌶️️🌶️️
 
 Schreibe eine Funktion namens `verarbeite_personalinformationen`, die personenbezogene Informationen entgegennimmt. Die Funktion sollte folgende Anforderungen erfüllen:
 

@@ -129,26 +129,26 @@ Definiert einen Navigationsbereich.
 ## Aufgaben
 [60 min]
 
-### Grundgerüst einer HTML-Seite 🌶️
+### Grundgerüst einer HTML-Seite 🌶️️
 Erstelle eine einfache HTML-Seite mit Basisstruktur.
 
-### Einfache Navigation und Inhalte 🌶️🌶️
+### Einfache Navigation und Inhalte 🌶️️🌶️️
 Erweitere die HTML-Seite um eine Navigationsleiste und mehr Inhalt.
 
-### Listen und Fußzeile 🌶️🌶️
+### Listen und Fußzeile 🌶️️🌶️️
 Füge der Seite eine ungeordnete Liste und eine Fußzeile hinzu.
 
-### Layout mit Divs 🌶️🌶️🌶️
+### Layout mit Divs 🌶️️🌶️️🌶️️
 Strukturiere die Seite mit `<div>`-Elementen.
 
-### Externes Styling und Komplexer Inhalt 🌶️🌶️🌶️
+### Externes Styling und Komplexer Inhalt 🌶️️🌶️️🌶️️
 Erweitere die Seite um ein externes Stylesheet und komplexeren Inhalt.
 
 
-## Komplex-Aufgaben
+## Anspruchsvolle Aufgaben
 [60 min]
 
-### Grundstruktur einer Automobil-Website 🌶️🌶️
+### Grundstruktur einer Automobil-Website 🌶️️🌶️️
 Erstelle das Grundgerüst einer HTML-Seite für ein Automobilunternehmen. Diese Seite soll als Basis für die weiteren Schritte dienen und die grundlegenden Elemente wie Header, Hauptinhalt und Footer enthalten.
 Anforderungen:
 
@@ -156,7 +156,7 @@ Anforderungen:
 - Im Hauptteil (`<body>`) soll ein Absatz (`<p>`) mit einer kurzen Beschreibung des Unternehmens stehen.
 - Der Footer (`<footer>`) soll Kontaktinformationen wie eine E-Mail-Adresse enthalten.
 
-### Navigationsleiste 🌶️🌶️
+### Navigationsleiste 🌶️️🌶️️
 Erweitere die Website um eine Navigationsleiste, die eine verbesserte Benutzerführung ermöglicht. Diese Leiste soll Links zu verschiedenen Abschnitten der Webseite enthalten.
 Anforderungen:
 
@@ -164,7 +164,7 @@ Anforderungen:
 - Erstelle Links zu fiktiven Seiten wie "Home", "Modelle" und "Kontakt".
 
 
-### Bildergalerie für Automodelle 🌶️🌶️🌶️
+### Bildergalerie für Automodelle 🌶️️🌶️️🌶️️
 Erstelle eine Bildergalerie, die verschiedene Modelle des Autoherstellers präsentiert. Ziel ist es, visuellen Content ansprechend zu integrieren.
 
 - Füge unterhalb der Unternehmensbeschreibung eine Bildergalerie ein.

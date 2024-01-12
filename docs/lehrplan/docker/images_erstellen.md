@@ -96,12 +96,12 @@ den gestoppten Container mit Befehlen wie `docker ps -a` sehen, der alle Contain
 Um den Container und seine Ressourcen zu entfernen, müssten Sie ihn explizit mit `docker rm` löschen. Sie können ihn auch
 über das Dashboard löschen.
 
-### Aufgabe: Kopieren oder Addieren? 🌶
+### Aufgabe: Kopieren oder Addieren? 🌶️
 Recherchiere, was der Unterschied der Befehle `COPY` und `ADD` ist.
 
 [Lösung](https://stackoverflow.com/questions/24958140/what-is-the-difference-between-the-copy-and-add-commands-in-a-dockerfile)
 
-### Aufgabe: Eingänge? 🌶🌶🌶🌶
+### Aufgabe: Eingänge? 🌶️🌶️🌶️🌶️
 
 Recherchiere, was der Unterschied der Befehle `CMD` und `ENTRYPOINT` ist.
 

@@ -56,7 +56,7 @@ und anzuwenden. Das Erkennen und Umstrukturieren von wiederholtem Code in effizi
 modulare Strukturen ist eine Fähigkeit, die sich Entwickler im Laufe der Zeit aneignen und die für die Erstellung
 wartbarer, skalierbarer und effizienter Software unerlässlich ist.
 
-### Aufgabe: Codeduplikation 🌶🌶
+### Aufgabe: Codeduplikation 🌶️🌶️
 [15min]
 * Löse die Codeduplikation im folgenden Code durch die Definition neuer Funktionen auf.
 * Notiere, welche Vorteile die Überarbeitung des Codes hat.

@@ -270,20 +270,20 @@ Passt das Layout an basierend auf der Größe des Browserfensters oder Gerätes 
 ## Aufgaben
 [60 min]
 
-### Grundlegendes CSS-Styling 🌶️🌶️**
+### Grundlegendes CSS-Styling 🌶️️🌶️️**
 Wende grundlegende CSS-Styles auf die Komplex-Aufgabe von HTML an, um das visuelle Erscheinungsbild der Webseite zu verbessern. Dies umfasst die Farbgebung, Schriftarten und grundlegende Layout-Anpassungen.
 
 - Erstelle und verlinke eine CSS-Datei mit Ihrem HTML-Dokument.
 - Setze eine Hintergrundfarbe und Textfarbe für den Header.
 - Gestalte den Footer mit einer anderen Hintergrundfarbe und zentriertem Text.
 
-### Navigationsleiste stylen 🌶️
+### Navigationsleiste stylen 🌶️️
 Nutze CSS, um die Navigationsleiste horizontal anzuordnen und die Links ansprechend zu gestalten.
 
-### Bildergalerie für Automodelle stylen 🌶️🌶️
+### Bildergalerie für Automodelle stylen 🌶️️🌶️️
 Verwende CSS, um die Bilder nebeneinander anzuordnen und ästhetisch zu rahmen.
 
-### Responsive Design 🌶️🌶️🌶️
+### Responsive Design 🌶️️🌶️️🌶️️
 Passe das Design der Webseite an, damit sie auf verschiedenen Bildschirmgrößen und Geräten gut aussieht und funktioniert. Dies ist ein wichtiger Schritt, um die Zugänglichkeit und Benutzerfreundlichkeit der Website zu gewährleisten.
 
 - Implementiere CSS-Media-Queries, um das Layout der Seite für kleinere Bildschirme wie Smartphones und Tablets anzupassen.

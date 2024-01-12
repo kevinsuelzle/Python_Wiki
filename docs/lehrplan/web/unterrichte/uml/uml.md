@@ -107,7 +107,7 @@ Diese Struktur zeigt die Beziehungen und Abhängigkeiten zwischen den Klassen un
 ## Aufgaben
 [90 min]
 
-### Einfaches Klassendiagramm 🌶️ 
+### Einfaches Klassendiagramm 🌶️️ 
 Erstelle ein einfaches UML-Klassendiagramm für ein Bibliothekssystem.
    - Modelliere die Klassen Buch und Mitglied.
    - Die Klasse Buch sollte die Attribute Titel und Autor und eine Methode ausleihen() haben.
@@ -115,14 +115,14 @@ Erstelle ein einfaches UML-Klassendiagramm für ein Bibliothekssystem.
    - Stelle eine Assoziation zwischen Buch und Mitglied dar, um das Ausleihen zu visualisieren.
 
 
-### Erweitertes Klassendiagramm mit Aggregation 🌶️🌶️
+### Erweitertes Klassendiagramm mit Aggregation 🌶️️🌶️️
 Erweitere das Bibliothekssystem um Aggregationsbeziehungen.
    - Füge eine Klasse Bibliothek hinzu, die mehrere Buch-Objekte aggregiert.
    - Die Klasse Bibliothek sollte eine Methode BuchHinzufügen() enthalten.
    - Zeige eine Aggregationsbeziehung zwischen Bibliothek und Buch
 
 
-### Komplexes Klassendiagramm mit Vererbung und Komposition 🌶️🌶️🌶️
+### Komplexes Klassendiagramm mit Vererbung und Komposition 🌶️️🌶️️🌶️️
 Entwickle ein umfassendes Modell mit Vererbung und Komposition.
    - Erstelle eine abstrakte Klasse Person mit den Attributen Name und Adresse.
    - Leite die Klassen Mitglied und Mitarbeiter von Person ab.
@@ -131,7 +131,7 @@ Entwickle ein umfassendes Modell mit Vererbung und Komposition.
    - Visualisiere die Vererbung zwischen Person, Mitglied und Mitarbeiter und die Kompositionsbeziehung zwischen Mitglied und Ausleihhistorie.
 
 
-### Komplexe UML-Modellierung mit Schnittstellen und Mehrfachvererbung 🌶️🌶️🌶️
+### Komplexe UML-Modellierung mit Schnittstellen und Mehrfachvererbung 🌶️️🌶️️🌶️️
 Entwickle ein erweitertes UML-Klassendiagramm, das Schnittstellen und Mehrfachvererbung für ein Online-Shop-System umfasst.
    - Definiere eine Schnittstelle Zahlbar mit der Methode bezahlen().
    - Erstelle Klassen Rechnung und PayPalZahlung, die die Schnittstelle Zahlbar implementieren.

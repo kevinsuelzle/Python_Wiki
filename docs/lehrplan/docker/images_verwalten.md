@@ -66,11 +66,11 @@ hochgeladen wurde.
 - **Regelmäßige Updates:** Halten Sie Ihre Images im Repository aktuell, um von Sicherheitsupdates und neuen Features zu
   profitieren.
 
-### **Aufgabe: Erzeugung einer leeren Docker Umgebung. 🌶️🌶️.**
+### **Aufgabe: Erzeugung einer leeren Docker Umgebung. 🌶️️🌶️️.**
 
 Löschen Sie sämtliche Container und Images.
 
-### **Aufgabe: Mit Docker Hub arbeiten 🌶️🌶️.️**
+### **Aufgabe: Mit Docker Hub arbeiten 🌶️️🌶️️.️**
 
 Melden Sie sich im Repository an und ab. Laden Sie das Image mit pull.
 
@@ -148,10 +148,10 @@ Es wird empfohlen, Ihre Registry mit HTTPS zu sichern, um die Übertragung von I
 Authentifizierungsmechanismen sollten eingerichtet werden, um den Zugriff auf Ihre Registry zu kontrollieren. Dies
 sprengt aber den Rahmen dieses Kurses.
 
-### **Aufgabe: privates repository. 🌶️🌶️.**
+### **Aufgabe: privates repository. 🌶️️🌶️️.**
 
 Laden Sie ein Image aus deinem privaten Repository.
 
-### **Aufgabe: privates repository. 🌶️🌶️.**
+### **Aufgabe: privates repository. 🌶️️🌶️️.**
 
 Finden Sie heraus, wie man alle Container und Images löscht.

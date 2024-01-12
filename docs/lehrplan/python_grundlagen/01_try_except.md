@@ -86,30 +86,30 @@ Es ist wichtig zu betonen, dass Exception Handling nicht als Mechanismus zur Abl
 
 [180min]
 
-### 1. Division durch Null verhindern 🌶️
+### 1. Division durch Null verhindern 🌶️️
    - Schreibe einen Python-Code, der eine einfache Division durch Null in einem `try`-Block enthält. Behandle die `ZeroDivisionError`-Ausnahme im `except`-Block, indem du eine aussagekräftige Fehlermeldung ausgibst.
 
-### 2. Benutzereingabe und Integer-Konvertierung 🌶️
+### 2. Benutzereingabe und Integer-Konvertierung 🌶️️
    - Erstelle ein Programm, das den Benutzer nach einer Zahl fragt. Verwende einen `try`-Block, um die eingegebene Zeichenkette in einen Integer umzuwandeln. Behandle mögliche `ValueError`-Ausnahmen im `except`-Block und gib eine entsprechende Meldung aus.
 
-### 3. Datei öffnen mit Fehlerbehandlung 🌶️
+### 3. Datei öffnen mit Fehlerbehandlung 🌶️️
    - Schreibe einen Code, der versucht, eine Datei mit dem Namen "beispiel.txt" zu öffnen. Verwende einen `try`-Block und behandle die `FileNotFoundError`-Ausnahme im `except`-Block, indem du eine Meldung ausgibst.
 
-### 4. Benutzerdefinierte Ausnahme 🌶️🌶️
+### 4. Benutzerdefinierte Ausnahme 🌶️️🌶️️
    - Erstelle eine benutzerdefinierte Ausnahme mit dem Namen `NegativeZahlFehler`. Schreibe einen Code, der eine Zahl entgegennimmt. Wenn die Zahl negativ ist, löse die `NegativeZahlFehler`-Ausnahme aus und gib eine entsprechende Meldung aus.
 
-### 5. Dynamisches Laden von Modulen 🌶️🌶️
+### 5. Dynamisches Laden von Modulen 🌶️️🌶️️
    - Schreibe eine Funktion, die den Benutzer nach dem Namen eines Python-Moduls fragt und es dann dynamisch lädt. Behandle mögliche `ModuleNotFoundError`-Ausnahmen im `except`-Block und gib eine Meldung aus.
 
-### 6. Fortgeschrittene Benutzereingabe 🌶️🌶️🌶️
+### 6. Fortgeschrittene Benutzereingabe 🌶️️🌶️️🌶️️
    - Implementiere einen interaktiven Taschenrechner. Lass den Benutzer nacheinander zwei Zahlen und einen Operator (+, -, *, /) eingeben. Verwende `try`- und `except`-Blöcke, um mögliche `ValueError`-Ausnahmen und unbekannte Operationen zu behandeln. Gib das Ergebnis aus.
 
-### 7. Komplexes Exception Handling 🌶️🌶️🌶️
+### 7. Komplexes Exception Handling 🌶️️🌶️️🌶️️
    - Erstelle einen Code, der eine Datei öffnet, ihren Inhalt liest und in eine andere Datei schreibt. Behandle dabei `FileNotFoundError`, `PermissionError` und `IOError` mit spezifischen Ausnahmen. Gib eine Meldung aus, wenn eine Ausnahme auftritt.
 
-### 8. Fehlerbehandlung bei Dateioperationen 🌶️🌶️🌶️
+### 8. Fehlerbehandlung bei Dateioperationen 🌶️️🌶️️🌶️️
    - Schreibe einen Code, der versucht, den Inhalt einer Datei zu lesen und in eine andere Datei zu schreiben. Behandle mögliche `FileNotFoundError` und `PermissionError`-Ausnahmen im `except`-Block und gib entsprechende Meldungen aus.
 
 
-### 9. Fehlerbehandlung in Rekursion 🌶️🌶️🌶️
+### 9. Fehlerbehandlung in Rekursion 🌶️️🌶️️🌶️️
    - Schreibe eine rekursive Funktion zur Berechnung der Fakultät einer Zahl. Behandle den Basisfall und mögliche `RecursionError`-Ausnahmen durch eine angemessene Fehlerbehandlung.

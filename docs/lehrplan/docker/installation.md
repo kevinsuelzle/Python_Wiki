@@ -29,7 +29,7 @@ Diese Anleitung führt Sie durch die grundlegenden Schritte zur Installation von
 Informationen und Fehlerbehebung besuchen Sie bitte
 die [Docker-Dokumentation](https://docs.docker.com/desktop/install/mac-install/).
 
-### Aufgabe: Installation🌶️
+### Aufgabe: Installation🌶️️
 Führen Sie die Installation von Docker auf Ihren Rechnern aus.
 
 ## Exkurs: Unterschiede zwischen Docker Desktop und Docker Engine.
@@ -99,11 +99,11 @@ von Containern zu verbessern.
 **Änderungen anwenden:** Nachdem Sie Änderungen in den Einstellungen vorgenommen haben, klicken Sie auf "Apply & Restart", um die Änderungen zu
 übernehmen und Docker neu zu starten.
 
-### **Aufgabe: Resource einstellen🌶️**
+### **Aufgabe: Resource einstellen🌶️️**
 
 Setzen Sie die Anzahl der für Docker zur Verfügung stehenden Prozessorkerne auf die Hälfte aller Kerne ihres Systems.
 
-### **Aufgabe: Resource einstellen🌶️**
+### **Aufgabe: Resource einstellen🌶️️**
 
 Setzen Sie den für Docker zur Verfügung stehenden Systemspeicher auf die Hälfte des gesamten Speichers ihres Systems.
 

@@ -85,7 +85,7 @@ die es zu einer der beliebtesten Sprachen in der modernen Programmierung machen.
 [//]: # ([20min])
 ## Was ist ein IDE?
 
-Ein Integrated Development Environment (IDE) ist eine Softwareanwendung, die umfangreiche Werkzeuge für Programmierer
+Eine Integrated Development Environment (IDE) ist eine Softwareanwendung, die umfangreiche Werkzeuge für Programmierer
 bereitstellt, um die Entwicklung von Software zu erleichtern. Ein typisches IDE umfasst einen Code-Editor,
 Compiler/Interpreter, Debugger und oft weitere hilfreiche Werkzeuge.
 
@@ -128,7 +128,7 @@ umfangreicher als VSCode.
 - Integration mit gängigen Frameworks und Tools wie Django, Flask, Google App Engine, und mehr.
 
 PyCharm bietet eine tiefe Integration mit Python-spezifischen Werkzeugen und eine reichhaltige Entwicklungsumgebung,
-ie besonders für größere Projekte nützlich ist.
+die besonders für größere Projekte nützlich ist.
 
 Pycharm besitzt eine kostenfreie "Community Edition" und eine kostenpflichtige "Professional Edition".
 
@@ -181,6 +181,3 @@ IDEs sind ein wesentlicher Bestandteil des Werkzeugkastens eines jeden Entwickle
 Während VSCode und PyCharm umfassende Entwicklungsplattformen bieten, eignen sich Jupyter Notebooks hervorragend für
 interaktive und explorative Programmierung, insbesondere in der Datenwissenschaft. Die Wahl des richtigen IDE hängt
 von den spezifischen Anforderungen des Projekts und den persönlichen Vorlieben des Entwicklers ab.
-
-
-

@@ -9,31 +9,31 @@ drei Anführungszeichen erstellt werden. (`''' ''' ` oder `""" """`).
 
 Hier sind die Eigenschaften von Strings in Python im Markdown-Format:
 
-1. **Sequenz von Zeichen: 🌶️** Ein String ist eine geordnete Sequenz von Zeichen. Jedes Zeichen in einem String hat eine
+1. **Sequenz von Zeichen:** Ein String ist eine geordnete Sequenz von Zeichen. Jedes Zeichen in einem String hat eine
    Position, die durch einen Index dargestellt wird.
 
-2. **Unveränderbarkeit (Immutable): 🌶️** Strings sind in Python unveränderlich, d.h. sie können nach ihrer Erstellung nicht
+2. **Unveränderbarkeit (Immutable):** Strings sind in Python unveränderlich, d.h. sie können nach ihrer Erstellung nicht
    geändert werden. Sie können jedoch neue Strings durch Manipulation von vorhandenen Strings erstellen.
 
-3. **Indizierbarkeit: 🌶️** Jedes Zeichen in einem String hat einen eindeutigen Index, beginnend mit 0 für das erste
+3. **Indizierbarkeit:** Jedes Zeichen in einem String hat einen eindeutigen Index, beginnend mit 0 für das erste
    Zeichen, 1 für das zweite Zeichen und so weiter.
 
-4. **Slicing (Ausschneiden): 🌶️🌶️** Strings unterstützen das Slicing, d.h. es können Teilzeichenketten aus einem String
+4. **Slicing (Ausschneiden):** Strings unterstützen das Slicing, d.h. es können Teilzeichenketten aus einem String
    extrahiert werden, indem man einen Bereich von Indizes angibt.
 
-5. **Länge (Length): 🌶️🌶️** Die Länge eines Strings, d.h. die Anzahl der Zeichen in einem String, kann mit der Funktion `len()`
+5. **Länge (Length):** Die Länge eines Strings, d.h. die Anzahl der Zeichen in einem String, kann mit der Funktion `len()`
    ermittelt werden.
 
-6. **Concatenation (Verkettung): 🌶️** Strings können mithilfe des `+`-Operators zu einem einzigen String verkettet werden, um
+6. **Concatenation (Verkettung):** Strings können mithilfe des `+`-Operators zu einem einzigen String verkettet werden, um
    längere Zeichenketten zu erstellen.
 
-7. **Escape-Zeichen: 🌶️** Strings können Escape-Zeichen wie `\n` (für Zeilenumbruch) und `\t` (für Tabulator) enthalten, um
+7. **Escape-Zeichen:** Strings können Escape-Zeichen wie `\n` (für Zeilenumbruch) und `\t` (für Tabulator) enthalten, um
    spezielle Zeichen darzustellen.
 
-8. **String-Methoden: 🌶️🌶️** Python bietet eine Vielzahl von eingebauten String-Methoden, die helfen, Zeichenketten zu
+8. **String-Methoden:** Python bietet eine Vielzahl von eingebauten String-Methoden, die helfen, Zeichenketten zu
    manipulieren, zu durchsuchen, zu überprüfen und zu formatieren.
 
-9. **Unicode-Unterstützung: 🌶️** Strings in Python sind Unicode-zeichenketten, d.h. sie können Zeichen aus verschiedenen
+9. **Unicode-Unterstützung:** Strings in Python sind Unicode-zeichenketten, d.h. sie können Zeichen aus verschiedenen
    Sprachen und Schriften darstellen.
 
 ## Beispiel
@@ -189,63 +189,63 @@ von Symbolen und Emojis in Anwendungen sehr nützlich ist.
 # Aufgaben
 [40min]
 
-### 1. Länge eines Strings ermitteln: 🌶️🌶️
+### 1. Länge eines Strings ermitteln: 🌶️️🌶️️
 Schreibe ein Programm, um die Länge eines Strings zu ermitteln.
 
-### 2. String rückwärts ausgeben: 🌶️🌶️
+### 2. String rückwärts ausgeben: 🌶️️🌶️️
 Erstelle einen String und gib ihn rückwärts aus.
 
-### 3. String in Großbuchstaben konvertieren: 🌶️🌶️
+### 3. String in Großbuchstaben konvertieren: 🌶️️🌶️️
 Erstelle einen String und konvertiere ihn in Großbuchstaben.
 
-### 4. Anzahl der Vokale zählen: 🌶️🌶️
+### 4. Anzahl der Vokale zählen: 🌶️️🌶️️
 Erstelle einen String und zähle die Anzahl der Vokale in ihm.
 
-### 5. Erster und letzter Buchstabe eines Strings: 🌶️
+### 5. Erster und letzter Buchstabe eines Strings: 🌶️️
 Schreibe einen Python-Code, um den ersten und den letzten Buchstaben eines Strings auszugeben.
 
-### 6. Zeichen ersetzen:  🌶️
+### 6. Zeichen ersetzen:  🌶️️
 Erstelle einen String und ersetze ein bestimmtes Zeichen darin durch ein anderes.
 
-### 7. Funktion zur Überprüfung einer E-Mail-Adresse: 🌶️🌶️
+### 7. Funktion zur Überprüfung einer E-Mail-Adresse: 🌶️️🌶️️
 Schreibe eine Funktion, die prüft, ob ein gegebener String ein gültiger E-Mail-Adresse ist.
 
-### 8. Leerzeichen entfernen: 🌶️
+### 8. Leerzeichen entfernen: 🌶️️
 Erstelle einen String und entferne alle Leerzeichen daraus.
 
-### 9. String in Wörter aufteilen: 🌶️
+### 9. String in Wörter aufteilen: 🌶️️
 Erstelle einen String und teile ihn in Wörter auf.
 
-### 10. Häufigster Buchstabe in einem String finden: 🌶️🌶️
+### 10. Häufigster Buchstabe in einem String finden: 🌶️️🌶️️
 Schreibe einen Python-Code, um den häufigsten Buchstaben in einem String zu finden.
 
-### 11. Überprüfung, ob ein String nur aus Zahlen besteht: 🌶️🌶️
+### 11. Überprüfung, ob ein String nur aus Zahlen besteht: 🌶️️🌶️️
 Erstelle einen String und überprüfe, ob er nur aus Zahlen besteht.
 
-### 12. Funktion zur Überprüfung von Anagrammen: 🌶️🌶️
+### 12. Funktion zur Überprüfung von Anagrammen: 🌶️️🌶️️
 Schreibe eine Funktion, die zwei Strings nimmt und überprüft, ob sie Anagramme sind (dh dieselben Buchstaben in
     unterschiedlicher Reihenfolge).
 
-### 13. Anzahl der Wörter in einem String zählen: 🌶️🌶️
+### 13. Anzahl der Wörter in einem String zählen: 🌶️️🌶️️
 Erstelle einen String und zähle die Anzahl der Wörter darin.
 
-### 14. Anzahl der Zeichen in einem String zählen: 🌶️
+### 14. Anzahl der Zeichen in einem String zählen: 🌶️️
 Schreibe einen Python-Code, um alle Zeichen in einem String zu zählen.
 
-### 15. Überprüfung, ob ein String eine gültige URL ist: 🌶️🌶️
+### 15. Überprüfung, ob ein String eine gültige URL ist: 🌶️️🌶️️
 Erstelle einen String und überprüfe, ob er eine gültige URL ist.
 
-### 16. String in Titel-Case umwandeln: 🌶️
+### 16. String in Titel-Case umwandeln: 🌶️️
 Schreibe eine Funktion, die einen gegebenen String in einen Titel-Case-String umwandelt (jedes Wort beginnt mit
     einem Großbuchstaben).
 
-### 17. Anzahl der Zeichen, die keine Buchstaben oder Zahlen sind, zählen: 🌶️🌶️
+### 17. Anzahl der Zeichen, die keine Buchstaben oder Zahlen sind, zählen: 🌶️️🌶️️
 Erstelle einen String und zähle die Anzahl der Zeichen, die keine Buchstaben oder Zahlen sind (
     Sonderzeichen und Leerzeichen).
 
-### 18. Extrahieren von URLs aus einem Text: 🌶️🌶️
+### 18. Extrahieren von URLs aus einem Text: 🌶️️🌶️️
 Schreibe einen Python-Code, um alle URLs in einem gegebenen Text zu extrahieren.
 
-### 19. Funktion für Palindrom-Überprüfung: 🌶️🌶️
+### 19. Funktion für Palindrom-Überprüfung: 🌶️️🌶️️
 Schreibe eine Funktion, die überprüft, ob ein String ein Palindrom ist (d.h. rückwärts gelesen dasselbe wie
     vorwärts).

@@ -50,7 +50,7 @@ Die folgenden Beispiele zeigen, wie die verschiedenen Operationen ausgeführt we
 # Tabelle erstellen
 cursor.execute('''CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)''')
 ```
-### **Aufgabe 1: Datenbank erstellen 🌶️**
+### **Aufgabe 1: Datenbank erstellen 🌶️️**
 [3min]
 Erstelle eine SQLite-Datenbank mit dem Namen "School.db". Füge eine Tabelle "Students" hinzu, die die Spalten "StudentID" (INTEGER), "Name" (TEXT) und "Grade" (INTEGER) enthält.
 
@@ -60,7 +60,7 @@ Erstelle eine SQLite-Datenbank mit dem Namen "School.db". Füge eine Tabelle "St
 cursor.execute('''INSERT INTO users (name, age) VALUES ('Max', 25)''')
 ```
 
-### **Aufgabe 2: Daten einfügen 🌶️**
+### **Aufgabe 2: Daten einfügen 🌶️️**
 [3min]
 Füge drei Datensätze in die "Students"-Tabelle ein. Verwende Platzhalter für StudentID, Name und Grade.
 
@@ -70,7 +70,7 @@ Füge drei Datensätze in die "Students"-Tabelle ein. Verwende Platzhalter für 
 # Daten aktualisieren
 cursor.execute('''UPDATE users SET age = 26 WHERE id = 1''')
 ```
-### **Aufgabe 3: Daten aktualisieren 🌶️**
+### **Aufgabe 3: Daten aktualisieren 🌶️️**
 [3min]
 Aktualisiere den Namen eines Schülers mit der StudentID 1 auf "Emily Johnson".
 
@@ -84,11 +84,11 @@ for row in rows:
     print(row)
 ```
 
-### **Aufgabe 4: Daten abfragen 🌶️**
+### **Aufgabe 4: Daten abfragen 🌶️️**
 [3min]
 Schreibe eine SQL-Abfrage, um alle Datensätze aus der "Students"-Tabelle abzurufen.
 
-### **Aufgabe 5: Bedingte Abfrage 🌶️🌶️**
+### **Aufgabe 5: Bedingte Abfrage 🌶️️🌶️️**
 [6min]
 Schreibe eine Abfrage, um alle Schüler mit einer Note besser als 3 abzurufen.
 
@@ -98,22 +98,22 @@ Schreibe eine Abfrage, um alle Schüler mit einer Note besser als 3 abzurufen.
 cursor.execute('''DELETE FROM users WHERE id = 1''')
 ```
 
-### **Aufgabe 6: Daten löschen 🌶️**
+### **Aufgabe 6: Daten löschen 🌶️️**
 [3min]
 Lösche einen Schüler mit der StudentID 2 aus der Tabelle.
 
-### **Aufgabe 7: Transaktionen 🌶️**
+### **Aufgabe 7: Transaktionen 🌶️️**
 [3min]
 Führe eine Transaktion durch, um zwei neue Schüler in einer einzigen Operation einzufügen. Bestätige die Transaktion.
 
-### **Aufgabe 8: Aggregatfunktionen 🌶️🌶️**
+### **Aufgabe 8: Aggregatfunktionen 🌶️️🌶️️**
 [6min]
 Schreibe eine Abfrage, um den Durchschnitt der Noten aller Schüler zu berechnen.
 
-### **Aufgabe 9: Join-Operation 🌶️🌶️**
+### **Aufgabe 9: Join-Operation 🌶️️🌶️️**
 [10min]
 Erstelle eine zweite Tabelle "Courses" mit den Spalten "CourseID" (INTEGER) und "CourseName" (TEXT). Schreibe eine SQL-Abfrage, die die Schülerdaten mit den Kursdaten verbindet.
 
-### **Aufgabe 10: Indizes erstellen 🌶️🌶️**
+### **Aufgabe 10: Indizes erstellen 🌶️️🌶️️**
 [6min]
 Erstelle einen Index auf der Spalte "Name" der "Students"-Tabelle, um Abfragen nach Schülernamen zu optimieren.

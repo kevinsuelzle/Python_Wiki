@@ -76,32 +76,32 @@ class Auto:
 # Aufgaben zu Klassen
 [360min]
 
-## 1. **Bibliotheksverwaltungssystem 🌶️🌶️🌶️**
+## 1. **Bibliotheksverwaltungssystem 🌶️️🌶️️🌶️️**
 Entwickle ein einfaches System zur Verwaltung von Büchern in einer Bibliothek. Erstelle Klassen für Bücher und Bibliotheken. Die Bücherklasse sollte Attribute wie Titel, Autor und Verfügbarkeit haben. Die Bibliotheksklasse sollte Methoden zum Ausleihen und Zurückgeben von Büchern enthalten.
 
-## 2. **Fahrzeugvermietungssystem 🌶️🌶️**
+## 2. **Fahrzeugvermietungssystem 🌶️️🌶️️**
 Implementiere ein System zur Vermietung von Fahrzeugen. Erstelle Klassen für Fahrzeuge (Auto, Motorrad usw.) und Vermietungsagenturen. Die Fahrzeugklasse sollte Informationen wie Modell, Baujahr und Verfügbarkeit enthalten. Die Vermietungsagenturklasse sollte Methoden zum Vermieten und Zurückgeben von Fahrzeugen haben.
 
-## 3. **Online-Shop mit Warenkorb 🌶️🌶️🌶️**
+## 3. **Online-Shop mit Warenkorb 🌶️️🌶️️🌶️️**
 Entwickle ein einfaches System für einen Online-Shop. Erstelle Klassen für Produkte und einen Warenkorb. Die Produkteklasse sollte Attribute wie Name, Preis und Lagerbestand haben. Die Warenkorbklasse sollte Methoden zum Hinzufügen von Produkten, Berechnen des Gesamtpreises und zum Abschließen des Kaufs haben.
 
-## 4. **Schüler- und Kursverwaltung 🌶️🌶️**
+## 4. **Schüler- und Kursverwaltung 🌶️️🌶️️**
 Baue ein System zur Verwaltung von Schülern und Kursen. Erstelle Klassen für Schüler, Kurse und Lehrer. Die Schülerklasse sollte Informationen wie Name, Alter und Kurse haben. Die Kursklasse sollte Methoden zum Hinzufügen von Schülern und Lehrern enthalten.
 
-## 5. **Zeitverwaltung mit Aufgabenliste 🌶️🌶️🌶️🌶️**
+## 5. **Zeitverwaltung mit Aufgabenliste 🌶️️🌶️️🌶️️🌶️️**
 Entwickle eine Anwendung zur Zeitverwaltung. Erstelle Klassen für Aufgaben und eine Aufgabenliste. Die Aufgabenklasse sollte Attribute wie Titel, Beschreibung und Fälligkeitsdatum haben. Die Aufgabenlistenklasse sollte Methoden zum Hinzufügen, Löschen und Anzeigen von Aufgaben enthalten.
 
-## 6. **Bankkonto-Transaktionen 🌶️🌶️**
+## 6. **Bankkonto-Transaktionen 🌶️️🌶️️**
 Implementiere ein einfaches System für Bankkonto-Transaktionen. Erstelle Klassen für Konten und Transaktionen. Die Kontenklasse sollte Informationen wie Kontostand und Kontoinhaber haben. Die Transaktionsklasse sollte Methoden zum Einzahlen, Abheben und Anzeigen von Transaktionen enthalten.
 
-## 7. **Flugbuchungssystem 🌶️🌶️🌶️**
+## 7. **Flugbuchungssystem 🌶️️🌶️️🌶️️**
 Entwickle ein System zur Buchung von Flügen. Erstelle Klassen für Flüge, Passagiere und Buchungen. Die Flugklasse sollte Informationen wie Abflugort, Zielort und verfügbare Plätze haben. Die Passagierklasse sollte Attribute wie Name und Alter enthalten. Die Buchungsklasse sollte Methoden zum Buchen und Stornieren von Flügen haben.
 
-## 8. **Fitness-Tracker 🌶️🌶️🌶️**
+## 8. **Fitness-Tracker 🌶️️🌶️️🌶️️**
 Baue eine Anwendung zur Verfolgung von Fitnessaktivitäten. Erstelle Klassen für Benutzer, Übungen und Trainingseinheiten. Die Benutzerklasse sollte Informationen wie Name, Alter und Trainingshistorie haben. Die Übungsklasse sollte Attribute wie Name, Kalorienverbrauch und Muskelgruppen enthalten. Implementiere Methoden zum Hinzufügen von Trainingseinheiten und Berechnen des Kalorienverbrauchs.
 
-## 9. **Musikbibliothek 🌶️🌶️🌶️**
+## 9. **Musikbibliothek 🌶️️🌶️️🌶️️**
 Entwickle ein System für die Verwaltung einer Musikbibliothek. Erstelle Klassen für Songs, Künstler und Alben. Die Songklasse sollte Attribute wie Titel, Dauer und Genre haben. Die Künstlerklasse sollte Informationen wie Name und Genre enthalten. Die Albumklasse sollte Methoden zum Hinzufügen von Songs und Anzeigen der Songliste haben.
 
-## 10. **Restaurantreservierungssystem 🌶️🌶️🌶️🌶️**
+## 10. **Restaurantreservierungssystem 🌶️️🌶️️🌶️️🌶️️**
 Baue ein System zur Reservierung von Restauranttischen. Erstelle Klassen für Restaurants, Tische und Reservierungen. Die Restaurantklasse sollte Informationen wie Name und verfügbare Tische haben. Die Tischklasse sollte Attribute wie Kapazität und Verfügbarkeit enthalten. Die Reservierungsklasse sollte Methoden zum Reservieren und Stornieren von Tischen haben.

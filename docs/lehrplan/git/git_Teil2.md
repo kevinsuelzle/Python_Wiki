@@ -390,7 +390,7 @@ Tadaaaa! Wir sind fertig!
 [60min]
 
 
-## 1. Ein Repository bei GitLab / GitHub einrichten. 🌶️🌶️🌶️
+## 1. Ein Repository bei GitLab / GitHub einrichten. 🌶️️🌶️️🌶️️
 Erstelle dein eigenes Remote Repository.
 Erzeuge eine Datei, mache deinen Commit und veröffentliche diesen in deinem Remote Repository.
 

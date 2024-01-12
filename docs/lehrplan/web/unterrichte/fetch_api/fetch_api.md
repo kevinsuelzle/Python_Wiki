@@ -70,19 +70,19 @@ fetch('https://api.example.com/data')
 ## Aufgaben
 [60 min]
 
-### Abrufen und Anzeigen von Header-Informationen 🌶️🌶️
+### Abrufen und Anzeigen von Header-Informationen 🌶️️🌶️️
 Verwende JavaScript, um eine GET-Anfrage an die JSON-Placeholder API zu senden und die Header der Antwort anzuzeigen.
 
-### Aktuelle Wetterdaten abrufen 🌶️🌶️
+### Aktuelle Wetterdaten abrufen 🌶️️🌶️️
 Verwende die Fetch API, um aktuelle Wetterdaten von der [Open-Meteo API](https://open-meteo.com/) abzurufen und in der Konsole anzuzeigen.
 
-### Wetteranfrage basierend auf Benutzereingabe 🌶️🌶️🌶️
+### Wetteranfrage basierend auf Benutzereingabe 🌶️️🌶️️🌶️️
 Erstelle eine interaktive Benutzeroberfläche, bei der Benutzer einen Standort eingeben können und das Wetter für diesen Ort angezeigt wird.
 
-## Komplex-Aufgaben
+## Anspruchsvolle Aufgaben
 [45 min]
 
-### Wettervorhersage für mehrere Tage abrufen 🌶️🌶️🌶️🌶️
+### Wettervorhersage für mehrere Tage abrufen 🌶️️🌶️️🌶️️🌶️️
 Entwickle eine Anwendung, die eine 7-Tage-Wettervorhersage für einen eingegebenen Standort liefert.
 
 - Sende eine GET-Anfrage an die Open-Meteo API, um die 7-Tage-Wettervorhersage für den angegebenen Standort zu erhalten.

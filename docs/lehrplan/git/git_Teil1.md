@@ -202,18 +202,18 @@ Git verwendet diese links, um weitere Änderungen zu verwalten.
 # Aufgaben:
 [320min]
 
-## 1. Neues Repository anlegen. 🌶️
+## 1. Neues Repository anlegen. 🌶️️
 Neues Repository anlegen.
 Dateien erstellen, bearbeiten und dem Index hinzufügen.
 Mindestens zwei Commits erstellen.
 
-## 2. Mit Repository arbeiten. 🌶️
+## 2. Mit Repository arbeiten. 🌶️️
 Den Zustand eines alten Commits wiederherstellen.
 Von diesem aus neue Commits erstellen.
 Untersuche Strucktur der Commits mit git log --all --graph --oneline
 Passiert es dir, dass Commits plötzlich nicht mehr sichtbar sind?
 
-## 3. Ein externes Repository klonen 🌶️🌶️
+## 3. Ein externes Repository klonen 🌶️️🌶️️
 Klone ein externes Repository aus dem Internet. 
 Mache eine Änderung im Code.
 Commite deine Änderung.

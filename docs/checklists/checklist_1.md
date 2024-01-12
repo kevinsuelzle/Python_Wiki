@@ -3,12 +3,12 @@
 - Ich weiß, was man unter Programmierung versteht.
 - Ich kenne 5 Kernaspekte der Programmierung
 - Ich weiß, was Python ist.
-- Ich weiß, was ein IDE ist.
+- Ich weiß, was ein (oder eine) IDE ist.
 
 # Variablen Datentypen
 
 - Ich weiß, was Variablen sind und wieso sie wichtig sind
-- Ich weiß, wie ich Variablen definieren
+- Ich weiß, wie ich Variablen definieren kann
 - Ich kenne 8 Datentypen: Integer, Float, Boolean, Strings, List, Tupel, Set, Dictionares
 - Ich weiß, wie ich Variablen dieser Datentypen anlege
 
@@ -34,7 +34,7 @@
 # Verzweigungen
 
 - Ich weiß, wieso Verzweigungen wichtig sind.
-- Ich weiß, wie ich einfache Verzweigungen mit `if`-`else` und `elif` programmiere.
+- Ich weiß, wie ich einfache Verzweigungen mit `if`, `else` und `elif` programmiere.
 - Ich weiß, wie ich einfache und komplexer Bedingungen formulieren kann.
 - Ich weiß, wie ich Verzweigungen mit mehreren Optionen aufbaue.
 

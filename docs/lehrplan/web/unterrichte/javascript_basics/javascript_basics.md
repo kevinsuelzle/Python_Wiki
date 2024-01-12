@@ -157,16 +157,16 @@ except Exception as error:
 ## Aufgaben
 [60 min]
 
-### Einfache Nachrichtenausgabe 🌶️
+### Einfache Nachrichtenausgabe 🌶️️
 Schreibe ein JavaScript-Programm, das mit `console.log()` eine Willkommensnachricht in der Konsole ausgibt.
 
-### Einfache Berechnung und Ausgabe 🌶️
+### Einfache Berechnung und Ausgabe 🌶️️
 Schreibe ein JavaScript-Programm, das zwei Zahlen addiert und das Ergebnis in der Konsole ausgibt.
 
-### Interaktive Benutzerbegrüßung 🌶️🌶️
+### Interaktive Benutzerbegrüßung 🌶️️🌶️️
 Schreibe ein JavaScript-Programm, das den Benutzernamen abfragt und eine personalisierte Begrüßungsnachricht ausgibt.
 
-### Einfaches Farbwechsel-Skript 🌶️🌶️
+### Einfaches Farbwechsel-Skript 🌶️️🌶️️
 Erstelle ein JavaScript-Programm, das die Farbe eines `<div>`-HTML-Elements ändert.
 
 [Lösungen](./solutions.md)

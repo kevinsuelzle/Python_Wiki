@@ -65,7 +65,7 @@ mein_nested_dict = {
 print(mein_nested_dict["person1"]["Name"])  # Gibt "Max" aus
 ```
 
-# Komplex-Aufgaben
+# Anspruchsvolle Aufgaben
 
 Hier sind die Lösungen für die vorgeschlagenen komplexen Aufgaben mit Python Dictionaries:
 

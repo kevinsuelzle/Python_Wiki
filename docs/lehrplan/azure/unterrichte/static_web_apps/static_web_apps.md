@@ -46,10 +46,10 @@ pipelines:
 ## Aufgaben
 [60 min]
 
-### Statische Website in der Cloud 🌶️🌶️
+### Statische Website in der Cloud 🌶️️🌶️️
 Erstelle ein neues Bitbucket Projekt, folge dabei dem Azure SWA Template und deploye eine Azure SWA.
 
-### "Realtime" changes mit Git 🌶️🌶️
+### "Realtime" changes mit Git 🌶️️🌶️️
 Passe das HTML Dokument deines deployten Bitbucket-Projektes an und commite die Änderungen. Wie verhält sich die Azure SWA?
 
 [Lösungs Tutorial](https://learn.microsoft.com/de-de/azure/static-web-apps/bitbucket?tabs=vanilla-javascript)

@@ -95,42 +95,42 @@ Hier eine Übersicht
 # Aufgaben:
 [240min]
 
-## 1. Verwendung von `with open` in Dateioperationen 🌶️
+## 1. Verwendung von `with open` in Dateioperationen 🌶️️
 
 Erläutere die Verwendung der `with open` Anweisung und warum sie bevorzugt wird, insbesondere im Zusammenhang mit Dateioperationen.
 
-## 2. Lesen und Schreiben von CSV-Dateien 🌶️🌶️
+## 2. Lesen und Schreiben von CSV-Dateien 🌶️️🌶️️
 
 Unterscheide zwischen dem Lesen und Schreiben von CSV-Dateien in Python. Verwende dazu die `csv`-Bibliothek und erkläre die grundlegenden Schritte.
 
-## 3. Methoden im Kontext von Dateioperationen 🌶️🌶️🌶️
+## 3. Methoden im Kontext von Dateioperationen 🌶️️🌶️️🌶️️
 
 Erkläre die Bedeutung der Methoden `read()`, `write()`, `seek()` und `close()` im Kontext von Dateioperationen. Warum ist es wichtig, die Datei nach dem Lesen oder Schreiben zu schließen?
 
-## 4. Erstellung und Schreiben von Dateien 🌶️
+## 4. Erstellung und Schreiben von Dateien 🌶️️
 
 Erläutere, wie man eine Datei in Python erstellt und schreibt. Verwende dazu den `with open`-Ansatz und zeige, wie man Text in eine Datei schreibt.
 
-## 5. Textmodus und Binärmodus in Dateioperationen 🌶️🌶️
+## 5. Textmodus und Binärmodus in Dateioperationen 🌶️️🌶️️
 
 Beschreibe den Unterschied zwischen dem Lesen einer Datei im Textmodus (`'r'`) und dem Binärmodus (`'rb'`) in Bezug auf die `open`-Funktion.
 
-## 6. Umkehrung einer Datei 🌶️🌶️🌶️
+## 6. Umkehrung einer Datei 🌶️️🌶️️🌶️️
 
 Schreibe eine Funktion, die den Inhalt einer Textdatei umkehrt. Das heißt, die erste Zeile wird zur letzten, die zweite zur vorletzten, usw.
 
-## 7. CSV-Datei filtern 🌶️🌶️
+## 7. CSV-Datei filtern 🌶️️🌶️️
 
 Erstelle eine Funktion, die eine CSV-Datei liest, bestimmte Zeilen filtert und das Ergebnis in eine neue Datei schreibt. Die Filterkriterien sollten anpassbar sein.
 
-## 8. Dateigröße berechnen 🌶️🌶️
+## 8. Dateigröße berechnen 🌶️️🌶️️
 
 Schreibe eine Funktion, die die Größe einer Datei in Kilobyte berechnet und ausgibt.
 
-## 9. Zeichen zählen 🌶️🌶️
+## 9. Zeichen zählen 🌶️️🌶️️
 
 Erstelle eine Funktion, die die Anzahl der Zeichen in einer Textdatei zählt und zurückgibt. Berücksichtige dabei auch Leerzeichen und Sonderzeichen.
 
-## 10. Datei verschlüsseln 🌶️🌶️🌶️🌶️
+## 10. Datei verschlüsseln 🌶️️🌶️️🌶️️🌶️️
 
 Implementiere eine einfache Verschlüsselungsfunktion, die den Inhalt einer Datei verschlüsselt und in eine neue Datei schreibt. Verwende dazu eine geeignete Verschlüsselungsmethode deiner Wahl.

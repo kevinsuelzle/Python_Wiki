@@ -45,7 +45,7 @@ Hier ist, wie Sie die Spalte `Gewicht` aus Ihrer Tabelle `Werkzeuge` entfernen k
 
 ## Aufgaben:
 [30min]
-### **1. Erstellen Sie eine neue Tabelle 🌶**
+### **1. Erstellen Sie eine neue Tabelle 🌶️**
 
 Erstellen Sie eine neue Tabelle, die identisch mit der ursprünglichen Tabelle `Werkzeuge` ist, aber ohne die 
 Spalte `Gewicht`.
@@ -59,21 +59,21 @@ CREATE TABLE Werkzeuge_neu (
 );
 ```
 
-### **2. Kopieren Sie die Daten 🌶**
+### **2. Kopieren Sie die Daten 🌶️**
 
 Kopieren Sie alle Daten von der alten Tabelle `Werkzeuge` in die neue Tabelle `Werkzeuge_neu`, ohne die Spalte `Gewicht`.
 ```sql
 INSERT INTO Werkzeuge_neu (id, bezeichnung, farbe, Warengruppe, Warenuntergruppe)
 SELECT id, bezeichnung, farbe, Warengruppe, Warenuntergruppe FROM Werkzeuge;
 ```
-### 3. **Löschen Sie die alte Tabelle 🌶️**
+### 3. **Löschen Sie die alte Tabelle 🌶️️**
 
 Löschen Sie nun die alte Tabelle `Werkzeuge`.
 ```sqlite
 DROP TABLE Werkzeuge;
 ```
 
-### 4. **Benennen Sie die neue Tabelle um 🌶️**:
+### 4. **Benennen Sie die neue Tabelle um 🌶️️**:
 Benennen Sie die neue Tabelle `Werkzeuge_neu` in `Werkzeuge` um.
 ```sqlite
 ALTER TABLE Werkzeuge_neu RENAME TO Werkzeuge;
@@ -101,7 +101,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass die Tabellen, auf die sich die Frem
 Angenommen, Sie haben zwei Tabellen `Warengruppen` und `Warenuntergruppen`, und jede hat eine Spalte `ID` vom Typ `INT`,
 die als Primärschlüssel dient.
 
-### **Aufgabe: Lösen sie das Problem nach dem vorgegebenen Schema 🌶️🌶️**
+### **Aufgabe: Lösen sie das Problem nach dem vorgegebenen Schema 🌶️️🌶️️**
 [30min]
 
 1. **Erstellen Sie eine neue Tabelle**:
@@ -122,7 +122,7 @@ Hinzufügen oder Ändern von Fremdschlüsseln in einer bestehenden Tabelle nicht
 gewünschten Fremdschlüsselbeziehungen erstellen, die Daten übertragen, die alte Tabelle löschen und die neue Tabelle
 umbenennen.
 
-### **Aufgabe: Wir haben vergessen, die FOREIGN KEYS anzugeben. 🌶️🌶️** 
+### **Aufgabe: Wir haben vergessen, die FOREIGN KEYS anzugeben. 🌶️️🌶️️** 
 [30min]
 
 1. **Erstellen Sie eine neue Tabelle mit Fremdschlüsseln**:

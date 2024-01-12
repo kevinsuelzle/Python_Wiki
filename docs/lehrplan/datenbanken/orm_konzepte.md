@@ -14,7 +14,7 @@ result = session.query(MyModel).all()
 
 Hierbei ist `MyModel` ein SQLAlchemy-Modell, das eine Datenbanktabelle repräsentiert. Die `all()`-Methode gibt alle Datensätze in der Tabelle zurück. Wir können auch andere Methoden verwenden, um die Abfrage zu verfeinern und die Ergebnisse zu filtern, zu sortieren oder zu aggregieren.
 
-### Aufgabe:🌶️
+### Aufgabe:🌶️️
 [10min]
 
 Suche in der SQLAlchemy-Dokumentation nach weiteren Methoden, um die Datensätze eines `Query`-Objektes zurückzugeben.
@@ -87,7 +87,7 @@ result = session.query(Parent).join(Child).filter(Child.column == 'wert').all()
   Dies ermöglicht das effiziente Abfragen von Daten über Tabellengrenzen hinweg unter Ausnutzung der relationalen Struktur Ihrer Datenbank.
 
 
-## Übungsaufgabe: Abfragen und Beziehungen in SQLAlchemy 🌶️🌶️🌶️
+## Übungsaufgabe: Abfragen und Beziehungen in SQLAlchemy 🌶️️🌶️️🌶️️
 [60 min]
 
 1. Definiere zwei Modelle: `Author` und `Book`. `Author` soll die Felder `id` und `name` haben, `Book` die Felder `id`, `title`, `published_year` und `author_id`.
@@ -191,7 +191,7 @@ session.close()
     Anzahl der Bücher pro Autor: [('Autor 1', 2), ('Autor 2', 1)]
 
 
-## Übungsaufgabe: Komplexe Abfragen und Joins in SQLAlchemy 🌶️🌶️🌶️
+## Übungsaufgabe: Komplexe Abfragen und Joins in SQLAlchemy 🌶️️🌶️️🌶️️
 [60 min]
 
 ### Aufgabenstellung
@@ -369,7 +369,7 @@ Das Unit-of-Work-Muster ist ein Entwurfsmuster, das sicherstellt, dass alle Änd
 
 Das Verständnis von Sitzungen und Transaktionen sowie des Unit-of-Work-Musters ist entscheidend für die effektive Nutzung von SQLAlchemy. Es ermöglicht uns, Änderungen an den Daten auf konsistente und kontrollierte Weise zu verwalten. Durch die Verwendung von Sessions können wir sicherstellen, dass unsere Datenbankoperationen atomar, konsistent, isoliert und dauerhaft (ACID-Eigenschaften) sind.
 
-## Übungsaufgabe: Transaktionen und Sitzungsmanagement in SQLAlchemy 🌶️🌶️🌶️
+## Übungsaufgabe: Transaktionen und Sitzungsmanagement in SQLAlchemy 🌶️️🌶️️🌶️️
 [60 min]
 
 1. **Modell- und Datenbanksetup**:

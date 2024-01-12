@@ -131,60 +131,60 @@ unerlässlich für die Erstellung von sauberem und effizientem Code.
 
 # Aufgaben
 [90]
-### 1. **Einfache Begrüßungsfunktion**: 🌶️
+### 1. **Einfache Begrüßungsfunktion**: 🌶️️
 Schreibe eine Funktion `begruesse()`, die "Hallo Welt!" ausgibt.
 
-### 2. **Quadratzahlen**: 🌶️
+### 2. **Quadratzahlen**: 🌶️️
 Schreibe eine Funktion `quadrat()`, die das Quadrat einer übergebenen Zahl zurückgibt.
 
-### 3. **Maximum von zwei Zahlen**: 🌶️
+### 3. **Maximum von zwei Zahlen**: 🌶️️
 Schreibe eine Funktion `max_zwei()`, die zwei Zahlen als Argumente nimmt und die größere
    Zahl zurückgibt.
 
-### 4. **Summierung**: 🌶️
+### 4. **Summierung**: 🌶️️
 Schreibe eine Funktion `summiere()`, die die Summe von drei übergebenen Zahlen berechnet und
    zurückgibt.
 
-### 5. **String-Wiederholung**: 🌶️
+### 5. **String-Wiederholung**: 🌶️️
 Schreibe eine Funktion `wiederhole_string(str, n)`, die einen String `str` und eine Zahl `n`
    nimmt und den String `n`-mal wiederholt.
 
-### 6. **Fahrenheit in Celsius**: 🌶️
+### 6. **Fahrenheit in Celsius**: 🌶️️
 Schreibe eine Funktion `fahrenheit_in_celsius()`, die eine Temperatur in Fahrenheit nimmt
    und in Celsius umrechnet.
 
-### 7. **Kreisumfang**: 🌶️
+### 7. **Kreisumfang**: 🌶️️
 Schreibe eine Funktion `kreisumfang()`, die den Radius eines Kreises als Parameter nimmt und den
    Umfang des Kreises berechnet.
 
-### 8. **Listenelemente addieren**: 🌶️🌶️
+### 8. **Listenelemente addieren**: 🌶️️🌶️️
 Schreibe eine Funktion `addiere_liste()`, die eine Liste von Zahlen nimmt und ihre Summe
    zurückgibt.
 
-### 9. **Check Gerade Zahl**: 🌶️
+### 9. **Check Gerade Zahl**: 🌶️️
 Schreibe eine Funktion `ist_gerade()`, die prüft, ob eine übergebene Zahl gerade ist.
 
-### 10. **Countdown**: 🌶️
+### 10. **Countdown**: 🌶️️
 Schreibe eine Funktion `countdown()`, die eine Zahl nimmt und einen Countdown von dieser Zahl bis 0
     ausgibt.
 
-### 11. **Minimum in Liste finden**: 🌶️
+### 11. **Minimum in Liste finden**: 🌶️️
 Schreibe eine Funktion `finde_minimum()`, die eine Liste von Zahlen nimmt und das
     kleinste Element zurückgibt.
 
-### 12. **Länge eines Strings**: 🌶️
+### 12. **Länge eines Strings**: 🌶️️
 Schreibe eine Funktion `laenge_string()`, die die Länge eines übergebenen Strings
     zurückgibt.
 
-### 13. **Multiplikationstabelle**: 🌶️
+### 13. **Multiplikationstabelle**: 🌶️️
 Schreibe eine Funktion `multiplikationstabelle()`, die eine Zahl nimmt und ihre
     Multiplikationstabelle bis 10 ausgibt.
 
-### 14. **Palindrome prüfen**: 🌶️🌶️
+### 14. **Palindrome prüfen**: 🌶️️🌶️️
 Schreibe eine Funktion `ist_palindrom()`, die einen String nimmt und prüft, ob es ein
     Palindrom ist.
 
-### 15. **Fibonacci-Folge**: 🌶️🌶️
+### 15. **Fibonacci-Folge**: 🌶️️🌶️️
 Schreibe eine Funktion `fibonacci()`, die eine Zahl `n` nimmt und die ersten `n` Zahlen der
     Fibonacci-Folge zurückgibt.
 
@@ -277,30 +277,30 @@ Programm gespeichert und zugänglich gemacht werden. Es hilft auch dabei, Fehler
 
 ## Übungsaufgaben zum Thema Scopes in Python
 [60min]
-### 1. **Globale Variable**: 🌶️
+### 1. **Globale Variable**: 🌶️️
 Definiere eine globale Variable und gib sie innerhalb einer Funktion aus.
-### 2. **Lokale Variable**: 🌶️
+### 2. **Lokale Variable**: 🌶️️
 Definiere eine lokale Variable innerhalb einer Funktion und gib sie innerhalb dieser Funktion
    aus.
-### 3. **Globale und lokale Variable mit demselben Namen**: 🌶️
+### 3. **Globale und lokale Variable mit demselben Namen**: 🌶️️
 Definiere eine globale und eine lokale Variable mit demselben
    Namen und gib beide innerhalb der Funktion aus.
-### 4. **Änderung einer globalen Variable**: 🌶️
+### 4. **Änderung einer globalen Variable**: 🌶️️
 Versuche, eine globale Variable innerhalb einer
    Funktion zu ändern, ohne das `global`-Keyword zu verwenden.
-### 5. **Verwenden des `global`-Keywords**: 🌶️
+### 5. **Verwenden des `global`-Keywords**: 🌶️️
 Ändere eine globale Variable innerhalb einer Funktion mit Hilfe des `global`
    -Keywords.
-### 6. **Nested Functions Scope**: 🌶️
+### 6. **Nested Functions Scope**: 🌶️️
 Definiere eine verschachtelte Funktion und greife auf eine Variable aus der umgebenden
    Funktion zu.
-### 7. **Lokale Variable in einer Schleife**: 🌶️
+### 7. **Lokale Variable in einer Schleife**: 🌶️️
 Definiere eine lokale Variable innerhalb einer for-Schleife in einer Funktion
    und gib sie aus.
-### 8. **Funktionsargument Scope**: 🌶️
+### 8. **Funktionsargument Scope**: 🌶️️
 Übergebe eine Variable als Argument an eine Funktion und ändere sie innerhalb der
    Funktion.
-### 9. **Rückgabewerte und Scope**: 🌶️
+### 9. **Rückgabewerte und Scope**: 🌶️️
 Gib einen Wert aus einer Funktion zurück und weise ihn einer globalen Variable zu.
 
 [Lösungen](solutions.md#scopes)

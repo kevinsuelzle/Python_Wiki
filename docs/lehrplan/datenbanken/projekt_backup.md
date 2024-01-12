@@ -1,4 +1,4 @@
-## Projekt: Integration von SQLAlchemy in einem Flask-Projekt 🌶️🌶️🌶️🌶️
+## Projekt: Integration von SQLAlchemy in einem Flask-Projekt 🌶️️🌶️️🌶️️🌶️️
 [120 min]
 
 Entwickel ein einfaches Flask-Webprojekt mit SQLAlchemy, das ein Auto-Datenmodell verwendet. Sie werden CRUD-Operationen implementieren und die Funktionalität über HTTP-Endpoints bereitstellen.

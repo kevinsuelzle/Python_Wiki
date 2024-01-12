@@ -667,7 +667,7 @@ Schreibe erst einen Test, führe den Test aus (er sollte fehlschlagen), schreibe
 
 # Aufgaben
 
-## 1. Primzzahlenfunktion testen 🌶️
+## 1. Primzzahlenfunktion testen 🌶️️
    - Modultest: Schreibe Tests für das Modul `primzahlen.py`, um sicherzustellen, dass die Primzahlberechnung korrekt funktioniert.
    - Unittest: Erstelle Unittests für die Funktionen in `primzahlen.py` mit dem `unittest`-Framework.
    - Doctest: Integriere Beispiele und Tests direkt in die Docstrings des Moduls.
@@ -682,12 +682,12 @@ def ist_primzahl(n):
     return True
 ```
 
-## 2. Geo-Funktionssammlung: 🌶️🌶️
+## 2. Geo-Funktionssammlung: 🌶️️🌶️️
    - Implementiere eine Funktionssammlung namens `Geo`, die geometrische Objekte berechnen kann (z.B., Rechteck, Quadrat, Kreis).
    - Füge Berechnungsmethoden für Umfang und Fläche hinzu.
    - Schreibe doctest-Tests, um die Korrektheit der Implementierung sicherzustellen.
 
-## 3. Mathe-Funktionssammlung (TDD): 🌶️🌶️
+## 3. Mathe-Funktionssammlung (TDD): 🌶️️🌶️️
    - Nutze TDD, um eine Funktionssammlung für mathematische Grundoperationen (`add()`, `sub()`, `mul()`, `div()`) zu entwickeln.
    - Schreibe zuerst die Unit-Tests und dann die Implementierung.
    - Achte auf eine hohe Testabdeckung.

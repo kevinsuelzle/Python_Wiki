@@ -39,7 +39,7 @@ print(f"Adapter Voltage: {adapter.voltage()}V (adapted)")
 # Aufgaben:
 [150min]
 
-## 1. Fahrzeugservice 🌶️🌶️🌶️
+## 1. Fahrzeugservice 🌶️️🌶️️🌶️️
 
 Angenommen, du hast eine Anwendung, die mit einem externen Fahrzeugservice kommuniziert. Der Service liefert Informationen über Fahrzeuge, jedoch nicht in dem Format, das deine Anwendung erwartet. Implementiere ein Adapter Pattern, um die Schnittstelle des Fahrzeugservices an die Anforderungen deiner Anwendung anzupassen.
 
@@ -51,7 +51,7 @@ b. Erstelle eine Klasse `FahrzeugAdapter`, die die Schnittstelle implementiert u
 
 c. Integriere den `FahrzeugAdapter` in deine Anwendung und zeige, dass die Anwendung erfolgreich mit dem Fahrzeugservice zusammenarbeitet.
 
-## Adapter für Temperaturkonvertierung 🌶️🌶️
+## Adapter für Temperaturkonvertierung 🌶️️🌶️️
 
 Angenommen, du hast eine bestehende Klasse, die Temperaturen in Grad Celsius verarbeitet. Du möchtest diese Anwendung mit einer neuen Temperaturquelle verbinden, die Temperaturen in Fahrenheit bereitstellt. 
 Implementiere ein Adapter Pattern, um die Integration zu ermöglichen.

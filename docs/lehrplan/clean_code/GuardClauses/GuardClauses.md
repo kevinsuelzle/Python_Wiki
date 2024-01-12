@@ -30,7 +30,7 @@ def can_drink(person):
 
 Diese Technik ausschließlich `if`-Statements zu verwenden wird **Guard Clauses** genannt.
 
-### 1. Aufgabe 🌶🌶 
+### 1. Aufgabe 🌶️🌶️ 
 [15min]
 Wandeln Sie den Code so um, dass Guard Clauses verwendet werden. Wie viele Testfälle benötigt der Code mindestens?
 
@@ -50,7 +50,7 @@ def calculate_discount(price, discount, is_member):
 
 [Lösung](solution.md#lsung-aufgabe-1)
 
-### 2. Aufgabe 🌶🌶
+### 2. Aufgabe 🌶️🌶️
 [15min]
 Wandeln Sie den Code so um, dass Guard Clauses verwendet werden. Wie viele Testfälle benötigt der Code mindestens?
 
@@ -70,7 +70,7 @@ def check_access(age, has_ticket, special_pass):
 
 [Lösung](solution.md#lsung-aufgabe-2)
 
-### 3. Aufgabe 🌶🌶
+### 3. Aufgabe 🌶️🌶️
 [15min]
 Wandeln Sie den Code so um, dass Guard Clauses verwendet werden. Wie viele Testfälle benötigt der Code mindestens?
 

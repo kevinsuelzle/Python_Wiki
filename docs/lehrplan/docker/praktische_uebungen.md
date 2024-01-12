@@ -1,6 +1,6 @@
 # Praktische Übungen
 
-### **Aufgabe: Projekt 🌶️🌶️🌶️**
+### **Aufgabe: Projekt 🌶️️🌶️️🌶️️**
 
 ## Projekt Arbeitszeiterfassung
 

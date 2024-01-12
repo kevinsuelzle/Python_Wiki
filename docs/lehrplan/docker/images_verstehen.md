@@ -35,6 +35,6 @@ graph TD
 ```
 
 
-### **Aufgabe: Definition 🌶️**
+### **Aufgabe: Definition 🌶️️**
 
 Was ist der Unterschied zwischen Image und Container?

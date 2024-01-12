@@ -81,7 +81,7 @@ def addiere(a, b):
 ```
 In diesem Beispiel enthält das Modul, die Klasse BeispielKlasse sowie die Methode quadrat und die Funktion addiere jeweils einen Docstring, der beschreibt, was sie tun. Docstrings sind besonders wertvoll, da sie nicht nur den Entwicklern helfen, den Code zu verstehen, sondern auch in der automatisierten Dokumentation oder in interaktiven Umgebungen wie Jupyter Notebooks verwendet werden können, um schnell Informationen über die Verwendung einer Klasse oder Funktion zu erhalten.
 
-### Aufgabe: Ergänzen von Docstrings 🌶🌶
+### Aufgabe: Ergänzen von Docstrings 🌶️🌶️
 [30 min]
 
 Gegeben ist folgender Code:

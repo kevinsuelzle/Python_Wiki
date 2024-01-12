@@ -72,24 +72,24 @@ Durch diese Befehle wird Pip angewiesen, den angegebenen Proxy zu verwenden, wen
 # Aufgaben
 [60min]
 
-## 1. Installation eines Pakets 🌶️
+## 1. Installation eines Pakets 🌶️️
    - Verwende den Befehl `pip install` und installiere das Paket "requests".
 
-## 2. Aktualisierung eines Pakets 🌶️
+## 2. Aktualisierung eines Pakets 🌶️️
    - Aktualisiere das Paket "requests" auf die neueste verfügbare Version mit dem Befehl `pip install --upgrade`.
 
-## 3. Deinstallation eines Pakets 🌶️
+## 3. Deinstallation eines Pakets 🌶️️
    - Deinstalliere das Paket "requests" mit dem Befehl `pip uninstall`.
 
-## 4. Anzeige installierter Pakete 🌶️
+## 4. Anzeige installierter Pakete 🌶️️
    - Zeige alle installierten Pakete mit dem Befehl `pip list`.
 
-## 5. Suche nach einem Paket 🌶️
+## 5. Suche nach einem Paket 🌶️️
    - Suche nach dem Paket "numpy" mit dem Befehl `pip search numpy`.
 
-## 6. Installation einer bestimmten Paketversion 🌶️
+## 6. Installation einer bestimmten Paketversion 🌶️️
    - Installiere eine spezifische Version des Pakets "requests" mit dem Befehl `pip install requests==2.25.1`.
 
-## 7. Upgrade eines Pakets auf eine bestimmte Version 🌶️
+## 7. Upgrade eines Pakets auf eine bestimmte Version 🌶️️
    - Upgrade das Paket "requests" auf eine bestimmte Version mit dem Befehl `pip install --upgrade requests==2.26.0`.
    

@@ -108,7 +108,7 @@ inspizieren und steuern.
 ### Aufgaben
 [60min]
 
-### 1. **Haltepunkt setzen**: 🌶️
+### 1. **Haltepunkt setzen**: 🌶️️
 Füge in der folgenden Funktion einen Haltepunkt hinzu und führe das Programm aus. 
 
 Untersuche die Werte von `a` und `b`, bevor die Summe berechnet wird.
@@ -121,7 +121,7 @@ ergebnis = addiere(5, 7)
 print(ergebnis)
 ```
 
-###  2. **Nächste Zeile ausführen**: 🌶️
+###  2. **Nächste Zeile ausführen**: 🌶️️
 Betrachte das folgende Python-Skript. Führe es mit pdb aus und benutze den Befehl n (next), um die Ausführung bis zur 
 print-Anweisung Zeile für Zeile zu durchlaufen.
 ```python 
@@ -135,7 +135,7 @@ def quadriere(zahl):
 print(quadriere(4))
 ```
 
-### 3. **In eine Funktion eintreten**: 🌶️
+### 3. **In eine Funktion eintreten**: 🌶️️
 In dem folgenden Code, tritt mit dem s (step) Befehl in die Funktion berechne_differenz 
 ein. Prüfe die Variablen innerhalb der Funktion.
 ```python
@@ -149,7 +149,7 @@ ergebnis = berechne_differenz(10, 5)
 print(ergebnis)
 ```
 
-### 4. **Werte ausdrucken**: 🌶️
+### 4. **Werte ausdrucken**: 🌶️️
 Verwende p (print), um den Wert von ergebnis in dem folgenden Programm auszugeben, bevor es mit 
 dem c (continue) Befehl fortgesetzt wird.
 ```python
@@ -163,7 +163,7 @@ ergebnis = multipliziere(6, 7)
 print(ergebnis)
 ```
 
-### 5. **Haltepunkte dynamisch setzen**: 🌶️🌶️
+### 5. **Haltepunkte dynamisch setzen**: 🌶️️🌶️️
 Anstatt pdb.set_trace() direkt im Code zu verwenden, starte das folgende Programm mit 
 dem Python-Interpreter im Debug-Modus (`python -m pdb script.py`). Setze dann einen Haltepunkt bei der Zeile, die die 
 Multiplikation ausführt. Führe das Programm bis zu diesem Haltepunkt aus und überprüfe die Werte von x und y.

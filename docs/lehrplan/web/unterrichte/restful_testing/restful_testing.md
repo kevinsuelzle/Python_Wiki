@@ -65,13 +65,13 @@ Zusätzlich bietet Postman die Möglichkeit, Collections über die [Postman API]
 ## Aufgaben
 [45 min]
 
-### Testen der GET-Route für Benutzerliste 🌶️
+### Testen der GET-Route für Benutzerliste 🌶️️
 Schreibe einen Python-Test, der die GET-Route für die Benutzerliste testet.
 
-### Testen der POST-Route für das Hinzufügen eines neuen Benutzers 🌶️🌶️
+### Testen der POST-Route für das Hinzufügen eines neuen Benutzers 🌶️️🌶️️
 Schreibe einen Python-Test, um das Hinzufügen eines neuen Benutzers zu testen.
 
-### Testen der DELETE-Route für das Löschen eines Benutzers 🌶️🌶️
+### Testen der DELETE-Route für das Löschen eines Benutzers 🌶️️🌶️️
 Schreibe einen Python-Test, um das Löschen eines Benutzers zu testen.
 
 [Lösungen](./solutions.md)

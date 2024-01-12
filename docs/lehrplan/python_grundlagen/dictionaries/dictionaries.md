@@ -100,52 +100,52 @@ Zugriff sowie flexible Datenstrukturen.
 
 # Aufgaben
 [35min]
-### 1. **Grundlegendes Dictionary**: 🌶️
+### 1. **Grundlegendes Dictionary**: 🌶️️
 Erstelle ein Dictionary mit drei Schlüssel-Wert-Paaren und gib es aus.
-### 2. **Zugriff auf Werte**: 🌶️
+### 2. **Zugriff auf Werte**: 🌶️️
 Greife auf einen Wert in einem Dictionary zu und gib ihn aus.
-### 3. **Hinzufügen eines Eintrags**: 🌶️
+### 3. **Hinzufügen eines Eintrags**: 🌶️️
 Füge einem bestehenden Dictionary einen neuen Schlüssel-Wert-Eintrag hinzu.
-### 4. **Ändern eines Wertes**: 🌶️
+### 4. **Ändern eines Wertes**: 🌶️️
 Ändere den Wert eines bestehenden Eintrags in einem Dictionary.
-### 5. **Entfernen eines Eintrags**: 🌶️🌶️
+### 5. **Entfernen eines Eintrags**: 🌶️️🌶️️
 Entferne einen Eintrag aus einem Dictionary.
-### 6. **Durchlaufen mit Schleifen**: 🌶️🌶️
+### 6. **Durchlaufen mit Schleifen**: 🌶️️🌶️️
 Durchlaufe ein Dictionary und gib alle Schlüssel und deren zugehörige Werte aus.
-### 7. **Nur Schlüssel durchlaufen**: 🌶️🌶️
+### 7. **Nur Schlüssel durchlaufen**: 🌶️️🌶️️
 Durchlaufe ein Dictionary und gib nur die Schlüssel aus.
-### 8. **Nur Werte durchlaufen**: 🌶️🌶️
+### 8. **Nur Werte durchlaufen**: 🌶️️🌶️️
 Durchlaufe ein Dictionary und gib nur die Werte aus.
-### 9. **Schlüssel-Existenz prüfen**: 🌶️🌶️🌶️
+### 9. **Schlüssel-Existenz prüfen**: 🌶️️🌶️️🌶️️
 Überprüfe, ob ein bestimmter Schlüssel in einem Dictionary existiert.
-### 10. **Nested Dictionary**: 🌶️🌶️🌶️
+### 10. **Nested Dictionary**: 🌶️️🌶️️🌶️️
 Erstelle ein verschachteltes Dictionary (ein Dictionary innerhalb eines anderen Dictionaries)
     und greife auf ein Element des inneren Dictionaries zu.
 
 [Lösungen](solution.md#lösungen)
 
-# Komplex-Aufgaben
+# Anspruchsvolle Aufgaben
 [75min]
 
-### Aufgabe 1: Wortzähler 🌶️🌶️
+### Aufgabe 1: Wortzähler 🌶️️🌶️️
 
 Schreibe ein Programm, das einen Text (String) entgegennimmt und ein Dictionary zurückgibt, das die Häufigkeit jedes
 Wortes im Text zählt. Wörter sollen unabhängig von Groß- und Kleinschreibung gezählt werden. Verwende `input()` zur
 Eingabe des Textes.
 
-### Aufgabe 2: Telefonbuch 🌶️🌶️
+### Aufgabe 2: Telefonbuch 🌶️️🌶️️
 
 Erstelle ein einfaches Telefonbuch-Programm, das es dem Benutzer ermöglicht, Namen und Telefonnummern hinzuzufügen, zu
 suchen, zu ändern und zu löschen. Verwende ein Dictionary zur Speicherung der Daten. Das Programm soll fortlaufend
 laufen, bis der Benutzer sich entscheidet, es zu beenden.
 
-### Aufgabe 3: Lagerbestandsverwaltung 🌶️🌶️🌶️
+### Aufgabe 3: Lagerbestandsverwaltung 🌶️️🌶️️🌶️️
 
 Implementiere ein Lagerbestandsverwaltungssystem. Erstelle ein Dictionary, das Produkte und ihre Mengen enthält. Das
 Programm soll es dem Benutzer ermöglichen, neue Produkte hinzuzufügen, vorhandene zu aktualisieren und Produkte zu
 löschen. Zusätzlich soll das Programm eine Übersicht über alle Produkte und Mengen anzeigen können.
 
-### Aufgabe 4: Verschachteltes Dictionary analysieren 🌶️🌶️🌶️
+### Aufgabe 4: Verschachteltes Dictionary analysieren 🌶️️🌶️️🌶️️
 
 Gegeben sei ein verschachteltes Dictionary, das Daten von Studenten und ihren Noten in verschiedenen Fächern enthält (
 z.B. `studenten = {"Anna": {"Mathe": 1, "Englisch": 2}, "Max": {"Mathe": 3, "Englisch": 2}}`). Schreibe ein Programm,
@@ -156,4 +156,4 @@ Diese Aufgaben kombinieren die Nutzung von Dictionaries mit anderen grundlegende
 Bedingungsanweisungen. Sie sind darauf ausgelegt, das Verständnis und die Fähigkeiten im Umgang mit Dictionaries und
 Datenstrukturen im Allgemeinen zu verbessern.
 
-[Lösungen](solution.md#komplex-aufgaben)
+[Lösungen](solution.md#Anspruchsvolle Aufgaben)

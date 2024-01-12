@@ -109,7 +109,7 @@ with MeinKontextManager() as manager:
     ...
 ```
 
-### Aufgabe: Context Manager 🌶🌶🌶
+### Aufgabe: Context Manager 🌶️🌶️🌶️
 Gegeben ist eine Beispielklasse `MeineRessource`, die das Context Management Protocol implementiert,
 um sicherzustellen, dass Ressourcen ordnungsgemäß geöffnet und geschlossen werden.
 Ihre Aufgabe ist es, die Klasse so zu modifizieren, dass sie das `with`-Statement unterstützt,

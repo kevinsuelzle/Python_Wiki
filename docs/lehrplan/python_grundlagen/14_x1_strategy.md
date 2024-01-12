@@ -43,7 +43,7 @@ cart2.checkout(150)
 
 # Aufgaben:
 
-## 1. Rabattberechnung 🌶️🌶️🌶️
+## 1. Rabattberechnung 🌶️️🌶️️🌶️️
 
 ### Teilschritte:
 
@@ -57,7 +57,7 @@ d. Die Methode `apply_discount` der Klasse `ShoppingCart` sollte die Rabattberec
 
 e. Demonstriere die Verwendung, indem du einen Einkaufswagen erstellst und verschiedene Rabattstrategien anwendest.
 
-## 2. Benutzeranmeldungssystem 🌶️🌶️
+## 2. Benutzeranmeldungssystem 🌶️️🌶️️
 
 ### Teilschritte:
 

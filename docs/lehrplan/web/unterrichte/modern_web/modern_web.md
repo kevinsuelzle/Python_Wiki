@@ -100,13 +100,13 @@ new Vue({
 </div>
 ```
 
-## Komplex-Aufgaben
+## Anspruchsvolle Aufgaben
 [90 min]
 
-### Standortbasierte Wetteranzeige mit Geolocation API 🌶️🌶️🌶️🌶️
+### Standortbasierte Wetteranzeige mit Geolocation API 🌶️️🌶️️🌶️️🌶️️
 Erstelle eine Webanwendung, die die Geolocation API verwendet, um den aktuellen Standort des Benutzers zu ermitteln und darauf basierend Wetterinformationen von einer externen API (z.B. Open-Meteo) anzeigt.
 
-### Interaktiver Zeichenbereich mit Canvas API 🌶️🌶️🌶️🌶️
+### Interaktiver Zeichenbereich mit Canvas API 🌶️️🌶️️🌶️️🌶️️
 Erstelle eine Webanwendung, die die Canvas API nutzt, um einen interaktiven Zeichenbereich zu implementieren. Benutzer sollen in der Lage sein, mit der Maus auf dem Canvas zu zeichnen.
 
 [Lösungen](./solutions.md)

@@ -174,7 +174,7 @@ Dieses Diagramm bietet eine vereinfachte Darstellung eines B-Baums. In realen Da
 sein und zusätzliche Regeln für das Einfügen und Löschen von Schlüsseln enthalten, um die Baumstruktur ausgewogen zu
 halten.
 
-### **Aufgabe: B-Baum Recherche 🌶🌶**
+### **Aufgabe: B-Baum Recherche 🌶️🌶️**
 [30 min]
 Beschäftigen sie sich mit dem Flußdiagramm und versuchen sie zu verstehen, wie das System des B-Baumes funktioniert.
 

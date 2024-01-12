@@ -146,25 +146,25 @@ print(finale_liste) # gibt [1,2,3,4,5,4,3,2,1] aus
 # Aufgaben
 [30min]
 
-### 1. **Erstellen einer Liste:** 🌶️
+### 1. **Erstellen einer Liste:** 🌶️️
 Erstelle eine Liste mit den Zahlen 1 bis 5.
-### 2. **Hinzufügen von Elementen:** 🌶️
+### 2. **Hinzufügen von Elementen:** 🌶️️
 Füge die Zahl 6 zur Liste `zahlen` hinzu.
-### 3. **Entfernen von Elementen:** 🌶️
+### 3. **Entfernen von Elementen:** 🌶️️
 Entferne die Zahl 3 aus der Liste `zahlen`.
-### 4. **Zugreifen auf ein Listenelement:** 🌶️
+### 4. **Zugreifen auf ein Listenelement:** 🌶️️
 Greife auf das dritte Element in der Liste `zahlen` zu.
-### 5. **Listenlänge:** 🌶️
+### 5. **Listenlänge:** 🌶️️
 Finde heraus, wie lang die Liste `zahlen` ist.
-### 6. **Slicing:** 🌶️🌶️
+### 6. **Slicing:** 🌶️️🌶️️
 Erstelle eine neue Liste, die die ersten drei Elemente von `zahlen` enthält.
-### 7. **Elemente zählen:** 🌶️🌶️
+### 7. **Elemente zählen:** 🌶️️🌶️️
 Zähle, wie oft die Zahl 2 in der Liste `zahlen` vorkommt.
-### 8. **Liste umkehren:** 🌶️🌶️
+### 8. **Liste umkehren:** 🌶️️🌶️️
 Kehre die Reihenfolge der Elemente in der Liste `zahlen` um.
-### 9. **Liste sortieren:** 🌶️🌶️
+### 9. **Liste sortieren:** 🌶️️🌶️️
 Sortiere die Liste `zahlen` in absteigender Reihenfolge.
-### 10. **Listen verschachteln:** 🌶️🌶️🌶️
+### 10. **Listen verschachteln:** 🌶️️🌶️️🌶️️
 Erstelle eine neue Liste `verschachtelt`, die zwei Listen enthält: die ursprüngliche
     Liste `zahlen` und eine Liste mit den Buchstaben ['a', 'b', 'c'].
 

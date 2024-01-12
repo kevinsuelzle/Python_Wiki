@@ -83,7 +83,7 @@ Das folgende Beispiel zeigt, wie DDD dabei helfen kann, ein komplexes System in 
 ## Aufgaben
 [45 min]
 
-### Modellierung eines Domain-Modells für ein Autohaus 🌶️🌶️
+### Modellierung eines Domain-Modells für ein Autohaus 🌶️️🌶️️
 Entwickle ein vereinfachtes Domain-Modell für ein Autohaus, das den Verkauf und die Reparatur von Autos verwaltet. Berücksichtige dabei die Kernkonzepte von DDD.
 
 - Identifiziere relevante Entitäten und Wertobjekte, wie Kunde, Auto, Reparaturauftrag und Adresse.
@@ -91,7 +91,7 @@ Entwickle ein vereinfachtes Domain-Modell für ein Autohaus, das den Verkauf und
 - Erstelle Aggregates, die logische Gruppen von Entitäten und Wertobjekten darstellen, z.B. Verkaufsauftrag als Aggregate, das Kunde, Auto und Adresse enthält.
 - Skizziere Repositories für den Zugriff auf die Aggregate, wie KundenRepository und AutoRepository.
 
-### Entwicklung eines Bounded Contexts für die Lagerverwaltung 🌶️🌶️🌶️
+### Entwicklung eines Bounded Contexts für die Lagerverwaltung 🌶️️🌶️️🌶️️
 Entwerfe einen Bounded Context für die Lagerverwaltung innerhalb einer größeren Domäne eines Automobilherstellers.
 
 - Definiere den Bounded Context für die Lagerverwaltung, einschließlich der Abgrenzung zu anderen Bereichen wie Produktion oder Vertrieb.

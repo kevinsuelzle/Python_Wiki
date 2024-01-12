@@ -6,22 +6,22 @@ Um ein besseres Verständnis mit dem Umgang mit API aufzubauen, nutzen wir zwei 
 ## Aufgaben
 [90 min]
 
-### Terminal CURL Wetter API abrufen 🌶️
+### Terminal CURL Wetter API abrufen 🌶️️
 Nutze CURL im Terminal, um die Wetterdaten von https://open-meteo.com/ für einen bestimmten Ort abzufragen.
 
-### Python Wetter API abrufen 🌶️🌶️
+### Python Wetter API abrufen 🌶️️🌶️️
 Verwende die Python Request Library, um die Wetterdaten von https://open-meteo.com/ für einen bestimmten Ort abzufragen.
 
-### Postman Wetter API abrufen 🌶️🌶️
+### Postman Wetter API abrufen 🌶️️🌶️️
 Nutze Postman, um die Wetterdaten von https://open-meteo.com/ für einen bestimmten Ort abzufragen.
 
-### API Request an weiteren Wetterservice 🌶️
+### API Request an weiteren Wetterservice 🌶️️
 Führe mit einer Methode deiner Wahl einen API Request für die selben Geokoordinaten an https://brightsky.dev/ aus.
 
-### Analyse und Vergleich der API Responses 🌶️🌶️
+### Analyse und Vergleich der API Responses 🌶️️🌶️️
 Analysiere und vergleiche die Antworten beider APIs. Was fällt auf? Was ist der Grund dafür? 
 
-### Vergleichsdiskussion 🌶️
+### Vergleichsdiskussion 🌶️️
 Setzt euch in 2er Teams zusammen und tauscht euch über die drei Methoden zur API-Ansprache aus. Besprecht die Unterschiede, unerwartete Ergebnisse sowie Vor- und Nachteile jeder Methode.
 
 [Lösungen](./solutions.md)

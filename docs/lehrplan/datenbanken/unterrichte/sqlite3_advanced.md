@@ -186,37 +186,37 @@ In diesem Beispiel wird `sqlite3.connect` als Context Manager verwendet. Die Ver
 
 
 
-### **Projektaufgabe: Online-Shop Datenbank modellieren und verwenden 🌶️🌶️🌶️**
+### **Projektaufgabe: Online-Shop Datenbank modellieren und verwenden 🌶️️🌶️️🌶️️**
 [80min]
 
 Angenommen, du bist damit beauftragt, eine SQLite-Datenbank für einen Online-Shop zu erstellen und zu verwalten. Die Datenbank soll Informationen über Produkte, Kunden und Bestellungen speichern. Hier sind mehrere Aufgaben, um die Funktionalität der Datenbank zu überprüfen:
 
-1. **Datenbank erstellen 🌶️:**
+1. **Datenbank erstellen 🌶️️:**
    Erstelle eine SQLite-Datenbank mit dem Namen "OnlineShop.db". Lege die notwendigen Tabellen für Produkte, Kunden und Bestellungen an. Achte darauf, Beziehungen zwischen den Tabellen herzustellen.
 
-2. **Daten einfügen 🌶️🌶️:**
+2. **Daten einfügen 🌶️️🌶️️:**
     Füge einige Beispieldaten für Produkte, Kunden und Bestellungen in die entsprechenden Tabellen ein.
 
-1. **Kundendaten abfragen 🌶️:**
+1. **Kundendaten abfragen 🌶️️:**
     Schreibe eine Abfrage, um alle Kundendaten abzurufen, einschließlich ihrer Bestellungen.
 
-1. **Produkte mit Bestellinformationen 🌶️🌶️:**
+1. **Produkte mit Bestellinformationen 🌶️️🌶️️:**
     Erstelle eine Abfrage, um alle Produkte anzuzeigen, die bestellt wurden, und füge Informationen über die Anzahl der verkauften Einheiten hinzu.
 
-1. **Bestellhistorie eines Kunden 🌶️🌶️:**
+1. **Bestellhistorie eines Kunden 🌶️️🌶️️:**
     Schreibe eine Abfrage, um die Bestellhistorie eines bestimmten Kunden anzuzeigen, einschließlich der Produkte, die in jeder Bestellung enthalten sind.
 
-1. **Gesamtumsatz berechnen 🌶️🌶️🌶️:**
+1. **Gesamtumsatz berechnen 🌶️️🌶️️🌶️️:**
     Schreibe eine SQL-Abfrage, um den Gesamtumsatz des Online-Shops zu berechnen. Berücksichtige dabei alle abgeschlossenen Bestellungen.
 
-1. **Aktualisiere Produktpreise 🌶️:**
+1. **Aktualisiere Produktpreise 🌶️️:**
     Aktualisiere die Preise aller Produkte um 10%. Stelle sicher, dass dies nur für zukünftige Bestellungen gilt und nicht die Preise bereits abgeschlossener Bestellungen beeinflusst.
 
-1. **Neuen Kunden hinzufügen 🌶️🌶️:**
+1. **Neuen Kunden hinzufügen 🌶️️🌶️️:**
     Füge einen neuen Kunden zur Datenbank hinzu und platziere eine Testbestellung für einige Produkte.
 
-1.  **Rabatt auf bestimmte Produkte 🌶️🌶️:**
+1.  **Rabatt auf bestimmte Produkte 🌶️️🌶️️:**
     Gewähre einen Rabatt von 15% auf alle Produkte der Kategorie "Elektronik" für alle Kunden, die bereits mindestens zwei Bestellungen getätigt haben.
 
-1.  **Lagerbestand überprüfen 🌶️🌶️:**
+1.  **Lagerbestand überprüfen 🌶️️🌶️️:**
     Schreibe eine Abfrage, um den aktuellen Lagerbestand jedes Produkts anzuzeigen und markiere diejenigen, die unter einem bestimmten Schwellenwert liegen (z.B., weniger als 10 Einheiten).

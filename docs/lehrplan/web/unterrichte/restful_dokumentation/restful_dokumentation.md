@@ -59,7 +59,7 @@ Beispielantwort (JSON):
 ## Aufgaben
 [30 min]
 
-### Erstellen einer Swagger-Dokumentation. 🌶️🌶️
+### Erstellen einer Swagger-Dokumentation. 🌶️️🌶️️
 Integriere Swagger in Ihre Flask-API, um eine interaktive Dokumentation zu erstellen.
 
 #### Schritte

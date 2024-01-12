@@ -47,17 +47,17 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 ## Aufgaben
 [60 min]
 
-### Simpler Blob Store Upload 🌶️🌶️
+### Simpler Blob Store Upload 🌶️️🌶️️
 Erstelle ein Azure Speicherkonto und einen Container. Schreibe dann ein Skript, um eine Datei in den Blob Container hochzuladen.
 
-### Hallo Welt! der Azure Funktionen 🌶️🌶️
+### Hallo Welt! der Azure Funktionen 🌶️️🌶️️
 Erstelle eine einfache HTTP-Trigger-Funktion, die einen Namen als Parameter akzeptiert und eine Begrüßung zurückgibt.
 
-### Blob-Triggered Azure Funktion 🌶️🌶️🌶️
+### Blob-Triggered Azure Funktion 🌶️️🌶️️🌶️️
 Erweitere die Funktion, um auf einen Blob-Trigger zu reagieren, der eine Textdatei liest und deren Inhalt zurückgibt.
 
 
-## Komplex-Aufgabe: Simples Excel Zeittracking (2er Teams) 🌶️🌶️🌶️🌶️🌶️
+## Komplex-Aufgabe: Simples Excel Zeittracking (2er Teams) 🌶️️🌶️️🌶️️🌶️️🌶️️
 [240 min]
 
 Erstelle einen simplen Dokumentupload für eine Zeiterfassungs-Excel Dokument. Sobald das Dokument im Blob Store liegt, wird eine Azure Funktion getriggert, die die Stunden pro Woche summiert und die Über- oder Fehlstunden für den angegebenen Monat anzeigt. 

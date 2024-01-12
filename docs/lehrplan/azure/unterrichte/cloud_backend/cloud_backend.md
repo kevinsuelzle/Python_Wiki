@@ -93,10 +93,10 @@ az group delete --name msdocs-python-webapp-quickstart --no-wait
 ## Aufgaben
 [60 min]
 
-### Deployment der Beispiel Flask API 🌶️🌶️
+### Deployment der Beispiel Flask API 🌶️️🌶️️
 Nutze das [Flask Beispielprojekt von Microsoft](https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart) um eine erste Flask API als Azure Web App zu deployen.
 
-### Deployment einer eigenen REST Flask API 🌶️🌶️🌶️
+### Deployment einer eigenen REST Flask API 🌶️️🌶️️🌶️️
 Erstelle eine simple REST Flask API und deploye diese mit der Azure-CLI. Nutze anschließend Postman um die Funktionalität deiner Endpunkte zu überprüfen.
 
 

@@ -94,49 +94,49 @@ ist und die jeder kennen und verstehen sollte.
 # Aufgaben
 [75min]
 
-### 1. **Quadrate erstellen**: 🌶️
+### 1. **Quadrate erstellen**: 🌶️️
 Erstelle eine Liste der Quadrate der Zahlen von 1 bis 10.
-### 2. **Gerade Zahlen**: 🌶️
+### 2. **Gerade Zahlen**: 🌶️️
 Erzeuge eine Liste aller geraden Zahlen zwischen 1 und 20.
-### 3. **Ungerade Zahlen umwandeln**: 🌶️
+### 3. **Ungerade Zahlen umwandeln**: 🌶️️
 Verwandle jede ungerade Zahl in einer Liste von 1 bis 10 in ihr Quadrat.
-### 4. **Zeichenkettenlängen**: 🌶️
+### 4. **Zeichenkettenlängen**: 🌶️️
 Erstelle eine Liste mit den Längen jedes Wortes in einer vorgegebenen Liste von Wörtern.
-### 5. **Absolute Werte**: 🌶️
+### 5. **Absolute Werte**: 🌶️️
 Wandele eine Liste von Zahlen in eine Liste ihrer absoluten Werte um.
-### 6. **Filtern nach Bedingung**: 🌶️
+### 6. **Filtern nach Bedingung**: 🌶️️
 Erzeuge eine Liste aller Zahlen von 1 bis 20, die durch 3 teilbar sind.
-### 7. **String in Großbuchstaben**: 🌶️🌶️
+### 7. **String in Großbuchstaben**: 🌶️️🌶️️
 Konvertiere jede Zeichenkette in einer Liste in Großbuchstaben.
-### 8. **Tupel erstellen**: 🌶️
+### 8. **Tupel erstellen**: 🌶️️
 Erstelle eine Liste von Tupeln `(x, x*x)` für jede Zahl x von 1 bis 10.
-### 9. **Nicht-leere Strings**: 🌶️
+### 9. **Nicht-leere Strings**: 🌶️️
 Filtere eine Liste von Strings und behalte nur die nicht-leeren bei.
-### 10. **Negative Zahlen umkehren**: 🌶️
+### 10. **Negative Zahlen umkehren**: 🌶️️
 Erstelle eine Liste, in der alle negativen Zahlen einer vorgegebenen Liste positiv
     sind.
-### 11. **Fizz Buzz**: 🌶️🌶️
+### 11. **Fizz Buzz**: 🌶️️🌶️️
 Erstelle eine Liste von Strings "Fizz", "Buzz" oder "FizzBuzz" für Zahlen von 1 bis 15, abhängig
     davon, ob die Zahl durch 3, 5 oder beide teilbar ist.
-### 12. **Wurzeln ziehen**: 🌶️
+### 12. **Wurzeln ziehen**: 🌶️️
 Berechne die Quadratwurzel jeder Zahl in einer Liste von Zahlen.
-### 13. **Filtern und Umwandeln**: 🌶️
+### 13. **Filtern und Umwandeln**: 🌶️️
 Filtere eine Liste von Zahlen und behalte nur die geraden Zahlen bei, die dann verdoppelt
     werden.
-### 14. **Teile von Strings**: 🌶️🌶️
+### 14. **Teile von Strings**: 🌶️️🌶️️
 Erstelle eine Liste der ersten Zeichen jedes Wortes in einer Liste von Wörtern.
-### 15. **Vokale entfernen**: 🌶️🌶️
+### 15. **Vokale entfernen**: 🌶️️🌶️️
 Entferne alle Vokale aus jeder Zeichenkette in einer Liste von Strings.
-### 16. **Einzigartige Werte**: 🌶️🌶️🌶️
+### 16. **Einzigartige Werte**: 🌶️️🌶️️🌶️️
 Erstelle eine Liste einzigartiger Zahlen aus einer Liste mit Duplikaten.
-### 17. **Index und Wert**: 🌶️🌶️
+### 17. **Index und Wert**: 🌶️️🌶️️
 Erstelle eine Liste von Tupeln, die den Index und den Wert jedes Elements in einer vorgegebenen
     Liste enthalten.
-### 18. **Summe von Paaren**: 🌶️🌶️
+### 18. **Summe von Paaren**: 🌶️️🌶️️
 Erstelle eine Liste aller Paare von Zahlen in einer Liste, deren Summe 10 ergibt.
-### 19. **Durchschnittswerte**: 🌶️🌶️
+### 19. **Durchschnittswerte**: 🌶️️🌶️️
 Berechne den Durchschnitt von jedem Paar aufeinanderfolgender Zahlen in einer Liste.
-### 20. **Liste von Listen abflachen**: 🌶️🌶️🌶️
+### 20. **Liste von Listen abflachen**: 🌶️️🌶️️🌶️️
 Flache eine Liste von Listen zu einer einzigen Liste ab.
 
 [Lösungen](solutions.md)
