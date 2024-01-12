@@ -94,7 +94,7 @@ wenn beide Eingaben übereinstimmen, ansonsten eine Fehlermeldung.
 
 [Lösungen](solutions.md#lösungen)
 
-## Anspruchsvollere Aufgaben
+## Anspruchsvolle Aufgaben
 
 ### **Aufgabe 1: Persönliche Statistik** 🌶️️🌶️️🌶️️
 

@@ -226,7 +226,7 @@ Erstelle eine einfache Verschlüsselungsfunktion, die Text mithilfe von `zip` ve
 
 [Lösungen](solutions.md#lösungen)
 
-# Komplex-Aufgaben
+# Anspruchsvolle Aufgaben
 [75min]
 
 ### Aufgabe 1: Datenanalyse mit `zip` und Bedingungen 🌶️️🌶️️

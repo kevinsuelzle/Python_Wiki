@@ -145,7 +145,7 @@ Strukturiere die Seite mit `<div>`-Elementen.
 Erweitere die Seite um ein externes Stylesheet und komplexeren Inhalt.
 
 
-## Komplex-Aufgaben
+## Anspruchsvolle Aufgaben
 [60 min]
 
 ### Grundstruktur einer Automobil-Website 🌶️️🌶️️

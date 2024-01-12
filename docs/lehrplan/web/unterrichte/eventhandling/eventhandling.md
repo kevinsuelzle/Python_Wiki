@@ -116,7 +116,7 @@ Erstelle eine Anwendung, die auf Tastendrücke reagiert und eine Aktion ausführ
 ### Bildergalerie mit Hover-Effekt 🌶️️🌶️️🌶️️
 Erstelle eine Bildergalerie, bei der das Überfahren eines Bildes mit der Maus Informationen zum Bild anzeigt.
 
-## Komplex-Aufgaben
+## Anspruchsvolle Aufgaben
 [45 min]
 
 ### Drag-and-Drop-Interface 🌶️️🌶️️🌶️️🌶️️🌶️️

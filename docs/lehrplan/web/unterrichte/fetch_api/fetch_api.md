@@ -79,7 +79,7 @@ Verwende die Fetch API, um aktuelle Wetterdaten von der [Open-Meteo API](https:/
 ### Wetteranfrage basierend auf Benutzereingabe 🌶️️🌶️️🌶️️
 Erstelle eine interaktive Benutzeroberfläche, bei der Benutzer einen Standort eingeben können und das Wetter für diesen Ort angezeigt wird.
 
-## Komplex-Aufgaben
+## Anspruchsvolle Aufgaben
 [45 min]
 
 ### Wettervorhersage für mehrere Tage abrufen 🌶️️🌶️️🌶️️🌶️️

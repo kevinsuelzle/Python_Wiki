@@ -185,7 +185,7 @@ gibt einen Workaround).
 ### 15. Reingelegt 🌶️️
 Welchen Typ haben `a=(3,)` und `b=(3)`? 
 
-# Komplex-Aufgaben
+# Anspruchsvolle Aufgaben
 [60min]
 
 #### Aufgabe 1: Einkaufsliste Manager

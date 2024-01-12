@@ -155,7 +155,7 @@ Berechne den Wert von `(3 + 4) * (5 - 2) ** 2`.
 
 [Lösungen](solutions.md)
 
-# Anspruchsvollere Aufgaben
+# Anspruchsvolle Aufgaben
 ### **Zinsrechner**🌶️🌶️🌶️
 
 [40 min] 

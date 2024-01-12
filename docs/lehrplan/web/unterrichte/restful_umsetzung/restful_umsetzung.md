@@ -122,7 +122,7 @@ Implementiere eine PUT-Route (`/users/<id>`), um die Daten eines bestehenden Ben
 Implementiere eine DELETE-Route, um einen Benutzer zu löschen.
 
 
-## Komplex-Aufgaben
+## Anspruchsvolle Aufgaben
 [90 min]
 
 ### Kombinierte GET- und POST-Anfragen mit Fehlerhandling 🌶️️🌶️️🌶️️

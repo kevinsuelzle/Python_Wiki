@@ -9,31 +9,31 @@ drei Anführungszeichen erstellt werden. (`''' ''' ` oder `""" """`).
 
 Hier sind die Eigenschaften von Strings in Python im Markdown-Format:
 
-1. **Sequenz von Zeichen: 🌶️️** Ein String ist eine geordnete Sequenz von Zeichen. Jedes Zeichen in einem String hat eine
+1. **Sequenz von Zeichen:** Ein String ist eine geordnete Sequenz von Zeichen. Jedes Zeichen in einem String hat eine
    Position, die durch einen Index dargestellt wird.
 
-2. **Unveränderbarkeit (Immutable): 🌶️️** Strings sind in Python unveränderlich, d.h. sie können nach ihrer Erstellung nicht
+2. **Unveränderbarkeit (Immutable):** Strings sind in Python unveränderlich, d.h. sie können nach ihrer Erstellung nicht
    geändert werden. Sie können jedoch neue Strings durch Manipulation von vorhandenen Strings erstellen.
 
-3. **Indizierbarkeit: 🌶️️** Jedes Zeichen in einem String hat einen eindeutigen Index, beginnend mit 0 für das erste
+3. **Indizierbarkeit:** Jedes Zeichen in einem String hat einen eindeutigen Index, beginnend mit 0 für das erste
    Zeichen, 1 für das zweite Zeichen und so weiter.
 
-4. **Slicing (Ausschneiden): 🌶️️🌶️️** Strings unterstützen das Slicing, d.h. es können Teilzeichenketten aus einem String
+4. **Slicing (Ausschneiden):** Strings unterstützen das Slicing, d.h. es können Teilzeichenketten aus einem String
    extrahiert werden, indem man einen Bereich von Indizes angibt.
 
-5. **Länge (Length): 🌶️️🌶️️** Die Länge eines Strings, d.h. die Anzahl der Zeichen in einem String, kann mit der Funktion `len()`
+5. **Länge (Length):** Die Länge eines Strings, d.h. die Anzahl der Zeichen in einem String, kann mit der Funktion `len()`
    ermittelt werden.
 
-6. **Concatenation (Verkettung): 🌶️️** Strings können mithilfe des `+`-Operators zu einem einzigen String verkettet werden, um
+6. **Concatenation (Verkettung):** Strings können mithilfe des `+`-Operators zu einem einzigen String verkettet werden, um
    längere Zeichenketten zu erstellen.
 
-7. **Escape-Zeichen: 🌶️️** Strings können Escape-Zeichen wie `\n` (für Zeilenumbruch) und `\t` (für Tabulator) enthalten, um
+7. **Escape-Zeichen:** Strings können Escape-Zeichen wie `\n` (für Zeilenumbruch) und `\t` (für Tabulator) enthalten, um
    spezielle Zeichen darzustellen.
 
-8. **String-Methoden: 🌶️️🌶️️** Python bietet eine Vielzahl von eingebauten String-Methoden, die helfen, Zeichenketten zu
+8. **String-Methoden:** Python bietet eine Vielzahl von eingebauten String-Methoden, die helfen, Zeichenketten zu
    manipulieren, zu durchsuchen, zu überprüfen und zu formatieren.
 
-9. **Unicode-Unterstützung: 🌶️️** Strings in Python sind Unicode-zeichenketten, d.h. sie können Zeichen aus verschiedenen
+9. **Unicode-Unterstützung:** Strings in Python sind Unicode-zeichenketten, d.h. sie können Zeichen aus verschiedenen
    Sprachen und Schriften darstellen.
 
 ## Beispiel

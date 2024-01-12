@@ -83,7 +83,7 @@ Sende eine POST-Anfrage an die [JSON-Placeholder API](https://jsonplaceholder.ty
 Lade [dieses Bild](https://via.placeholder.com/150) über GET-Anfrage herunter und speichere es lokal.
 
 
-## Komplex-Aufgaben
+## Anspruchsvolle Aufgaben
 [45 min]
 ### Kombinierte GET- und POST-Anfragen mit Fehlerhandling 🌶️️🌶️️🌶️️
 Kombinieren Sie GET- und POST-Anfragen und implementieren Sie umfassendes Fehlerhandling.

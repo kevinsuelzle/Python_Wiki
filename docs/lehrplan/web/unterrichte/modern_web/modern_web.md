@@ -100,7 +100,7 @@ new Vue({
 </div>
 ```
 
-## Komplex-Aufgaben
+## Anspruchsvolle Aufgaben
 [90 min]
 
 ### Standortbasierte Wetteranzeige mit Geolocation API 🌶️️🌶️️🌶️️🌶️️

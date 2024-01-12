@@ -208,7 +208,7 @@ while i < len(liste):
     i += 1
 ```
 
-## Komplex-Aufgaben
+## Anspruchsvolle Aufgaben
 
 ### Lösung zu Aufgabe 1: Benutzerdefinierte Passwortüberprüfung
 

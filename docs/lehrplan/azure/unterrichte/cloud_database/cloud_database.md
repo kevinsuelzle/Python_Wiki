@@ -64,7 +64,7 @@ Erstelle deine erste Datenbank in Azure und lege eine Tabelle Inventory an. Lege
 Zeige die manuell eingefügten Daten zum Lagerbestand der einzelnen Einträge in einem Frontend deiner Wahl (SWA oder Flask Web App) an.
 
 
-## Komplex-Aufgaben
+## Anspruchsvolle Aufgaben
 [90 min]
 
 ### Inventory Management SWA 🌶️️🌶️️🌶️️🌶️️

@@ -344,7 +344,7 @@ Schleifenbedingung beendet wird.
 - Er ist optional und wird nicht häufig verwendet, aber in bestimmten Situationen kann er den Code klarer und
   verständlicher machen.
 
-# Komplex-Aufgaben
+# Anspruchsvolle Aufgaben
 
 [60min]
 
@@ -376,4 +376,4 @@ Preisen auf. Der Benutzer kann Artikel auswählen und die gewünschte Menge ange
 Summe der Bestellung. Nachdem der Benutzer seine Auswahl abgeschlossen hat, zeigt das Programm die Gesamtsumme der
 Bestellung an und fragt, ob der Benutzer bar oder mit Karte zahlen möchte.
 
-[Lösungen](solutions.md#komplex-aufgaben)
+[Lösungen](solutions.md#Anspruchsvolle Aufgaben)

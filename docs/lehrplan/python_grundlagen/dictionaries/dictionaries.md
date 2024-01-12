@@ -124,7 +124,7 @@ Erstelle ein verschachteltes Dictionary (ein Dictionary innerhalb eines anderen 
 
 [Lösungen](solution.md#lösungen)
 
-# Komplex-Aufgaben
+# Anspruchsvolle Aufgaben
 [75min]
 
 ### Aufgabe 1: Wortzähler 🌶️️🌶️️
@@ -156,4 +156,4 @@ Diese Aufgaben kombinieren die Nutzung von Dictionaries mit anderen grundlegende
 Bedingungsanweisungen. Sie sind darauf ausgelegt, das Verständnis und die Fähigkeiten im Umgang mit Dictionaries und
 Datenstrukturen im Allgemeinen zu verbessern.
 
-[Lösungen](solution.md#komplex-aufgaben)
+[Lösungen](solution.md#Anspruchsvolle Aufgaben)
