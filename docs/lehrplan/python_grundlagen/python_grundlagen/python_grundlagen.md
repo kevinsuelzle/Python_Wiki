@@ -1,7 +1,14 @@
 # Einführung
 
 # Was ist Programmierung?
-[20min]
+
+[//]: # ([20min])
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NOahBOThdoA?si=5P1c772PP5lTsPtp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 Programmierung ist für uns der Prozess der Erstellung von Anweisungen, die von einem Computer ausgeführt werden, um
 bestimmte Aufgaben zu erfüllen oder Probleme zu lösen.
@@ -32,14 +39,23 @@ Probleme gelöst, die ein Unternehmen oder dessen Kunden haben.
    ein wichtiger Teil der Entwicklung einer benutzerfreundlichen Software.
   
 ### Aufgabe: 🌶️🌶️
-[15 Min + 20 Min]
+
+[//]: # ([15 Min + 20 Min])
 
 1. Diskutiert, die Wichtigkeit dieser Aspekte
 2. Ordnet sie entsprechend ihrer Wichtigkeit und begründet kurz wieso.
 
 
 ## Die Rolle von Python in der Programmierung
-[20min]
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zWHl_x-LWiM?si=_443HW8zEZ13KGvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+[//]: # ([20min])
 
 Python ist eine weit verbreitete und vielseitige Programmiersprache, die sich durch ihre klare Syntax und Lesbarkeit
 auszeichnet.
@@ -65,7 +81,8 @@ die es zu einer der beliebtesten Sprachen in der modernen Programmierung machen.
 ---
 
 # Programmierumgebungen und IDEs
-[20min]
+
+[//]: # ([20min])
 ## Was ist ein IDE?
 
 Ein Integrated Development Environment (IDE) ist eine Softwareanwendung, die umfangreiche Werkzeuge für Programmierer
@@ -79,7 +96,8 @@ konzentrieren können.
 Auf euren Rechnern sind sowohl VSCode als auch PyCharm vorinstalliert, sodass wir direkt loslegen können.
 
 ## Beliebte Tools für Python
-[70min]
+
+[//]: # ([70min])
 ### 1. Visual Studio Code (VSCode)
 
 ![VSCode](../images/vscode.png)
@@ -144,8 +162,9 @@ Auch den Python-Interpreter selbst kann man als interaktive Programmierumgebung 
 Hier lassen sich kleine Dinge sehr einfach ausprobieren, aber es ist nicht empfehlenswert diese zur Programmierung zu 
 verwenden.
 
-## Aufgabe: Das erste Programm 🌶️
-[25min; bis es bei jedem klappt]
+### Aufgabe: Das erste Programm 🌶️
+
+[//]: # ([25min; bis es bei jedem klappt])
 
 1. Führe den folgenden Code mit der Python-Konsole aus
 2. Führe den folgenden Code in VSCode aus

@@ -3,13 +3,19 @@ site_name: My Docs
 plugins:
   - search
   - mermaid2
-      
+#  - mkdocs-jupyter:
+#      execute: false
+#      kernel_name: python3
+
 markdown_extensions:
   - def_list
   - attr_list
   - md_in_html
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.arithmatex
+
+use_directory_urls: false
 
 nav:
   - Lehrplan: lehrplan/lehrplan.md
@@ -157,6 +163,40 @@ nav:
               - Dockerfile und Docker Compose: lehrplan/docker/dockerfile_und_docker_compose.md
               - Praktische Übungen: lehrplan/docker/praktische_uebungen.md
               - Best Practices und Sicherheit: lehrplan/docker/best_practices_und_sicherheit.md
+          - NoSQL Datenbanken:
+              - NoSQL:
+                - Einführung: lehrplan/datenbanken/nosql/intro.md
+                - Key-Value Stores: lehrplan/datenbanken/nosql/key_value_stores.md
+                - Document Stores: lehrplan/datenbanken/nosql/document_stores.md
+                - Graphen Datenbanken: lehrplan/datenbanken/nosql/graphen_datenbanken.md
+                - Wide Column Stores: lehrplan/datenbanken/nosql/wide_column_stores.md
+              - MongoDB:
+                - Einführung: lehrplan/datenbanken/nosql/mongodb/intro.md
+                - CRUD: lehrplan/datenbanken/nosql/mongodb/crud.md
+                - Aggregation: lehrplan/datenbanken/nosql/mongodb/aggregation.md
+                - Indexe: lehrplan/datenbanken/nosql/mongodb/indexes.md
+                - Datenmodellierung: lehrplan/datenbanken/nosql/mongodb/data_modeling.md
+                - Sicherheit: lehrplan/datenbanken/nosql/mongodb/security.md
+                - Pymongo: lehrplan/datenbanken/nosql/mongodb/pymongo.md
+                - Projekt: lehrplan/datenbanken/nosql/mongodb/project.md
+                - Refactoring: lehrplan/datenbanken/nosql/mongodb/refactoring.md
+                - Migrationen: lehrplan/datenbanken/nosql/mongodb/migration.md
+          - Datenverarbeitung und -darstellung:
+              - Einführung in Data Science: lehrplan/datascience/unterrichte/data_science_einfuehrung.md
+              - Pandas Einführung: lehrplan/datascience/unterrichte/pandas_einfuehrung.md
+              - Pandas Import/Export von Daten: lehrplan/datascience/unterrichte/pandas_import_export.md
+              - Pandas Fehlende Werte: lehrplan/datascience/unterrichte/pandas_fehlende_werte.md
+              - NumPy Arrays: lehrplan/datascience/unterrichte/numpy_arrays.md
+              - NumPy Slicing: lehrplan/datascience/unterrichte/numpy_slicing.md
+              - Matplotlib Linienplots: lehrplan/datascience/unterrichte/matplotlib_linienplots.md
+              - Matplotlib Subplots: lehrplan/datascience/unterrichte/matplotlib_subplots.md
+              - Seaborn Einführung: lehrplan/datascience/unterrichte/seaborn_einfuehrung.md
+              - Pandas Gruppieren und Pivotisieren: lehrplan/datascience/unterrichte/pandas_gruppieren_und_pivotisieren.md
+              - Matplotlib Ticks: lehrplan/datascience/unterrichte/matplotlib_ticks.md
+              - Pandas Multiindex: lehrplan/datascience/unterrichte/pandas_multiindex.md
+              - Pandas & Matplotlib Zeitreihenanalyse: lehrplan/datascience/unterrichte/pandas_matplotlib_zeitreihen.md
+              - Pandas Outlier (Ausreißer): lehrplan/datascience/unterrichte/pandas_outlier.md
+              - Pandas & Matplotlib DateTime (Zeitstempel): lehrplan/datascience/unterrichte/pandas_matplotlib_datetime.md
           - Python Fortgeschritten:
               - Generatoren und Iteratoren: lehrplan/python_advanced/generators_and_iterators.md
               - Dekoratoren (Memoisation): lehrplan/python_advanced/dekoratoren.md
@@ -164,27 +204,40 @@ nav:
               - Abstrakte Klassen: lehrplan/python_advanced/abstract_class.md
               - Dataclass: lehrplan/python_advanced/dataclass.md
               - Weitere fortgeschrittene Themen: lehrplan/python_advanced/advanced_topics.md
+          - Robotik:
+              - Einführung Robotik & Robotersimulatoren: lehrplan/robotik/unterrichte/einfuehrung_robotik.md
+              - Einen Webots-Roboter aus Python heraus steuern: lehrplan/robotik/unterrichte/webots_roboter_aus_python_steuern.md
+              - Reaktiver Robotercontroller: lehrplan/robotik/unterrichte/webots_reaktiver_controller.md
+              - Webots Fahrzeug aus Python heraus steuern: lehrplan/robotik/unterrichte/webots_fahrzeug_steuern_aus_python.md
+              - Fahrsequenz-Assistent in Python/Webots: lehrplan/robotik/unterrichte/webots_fahrerassistenzsystem.md
+              - Roboternavigationsverhalten untersuchen: lehrplan/robotik/unterrichte/webots_navigationsverhalten.md
 
   - Begriffssammlung:
       - Python Grundlagen: begriffe/begriffe_1.md
       - git: begriffe/begriffe_git.md
-      - SQL-Datenbanken: begriffe/begriffe_db1.md
       - Clean Code: begriffe/begriffe_clean_code.md
+      - SQL-Datenbanken: begriffe/begriffe_db1.md
       - Python und SQL: begriffe/begriffe_db_python.md
       - Web: begriffe/begriffe_web.md
       - Azure: begriffe/begriffe_azure.md
       - Docker: begriffe/begriffe_docker.md
+      - NoSQL-Datenbanken: begriffe/begriffe_db2.md
+      - Datenverarbeitung und -darstellung: begriffe/begriffe_data_science.md
       - Python Fortgeschritten: begriffe/begriffe_python_advanced.md
+      - Robotik: begriffe/begriffe_robotik.md
   - Checklisten:
       - Python Grundlagen: checklists/checklist_1.md
       - git: checklists/checklist_git.md
-      - SQL-Datenbanken: checklists/checklist_db1.md
       - Clean Code: checklists/checklist_clean_code.md
+      - SQL-Datenbanken: checklists/checklist_db1.md
       - Python und SQL: checklists/checklist_db_python.md
       - Web: checklists/checklist_web.md
       - Azure: checklists/checklist_azure.md
       - Docker: checklists/checklist_docker.md
+      - NoSQL-Datenbanken: checklists/checklist_db2.md
+      - Datenverarbeitung und -darstellung: checklists/checklist_data_science.md
       - Python Fortgeschritten: checklists/checklist_python_advanced.md
+      - Robotik: checklists/checklist_robotik.md
 
   - Werkzeuge:
       - git: lehrplan/git/git.md

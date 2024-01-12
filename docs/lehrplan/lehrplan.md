@@ -53,7 +53,7 @@
 | 6     | [Arten von SQL Anweisungen](datenbanken/unterrichte/sql_types.md)                                    | [hier](../checklists/checklist_db1.md#sql-sprachtypisierung)                      | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [UML für Datenbanken](datenbanken/unterrichte/uml_diagramme.md)                                      | [hier](../checklists/checklist_db1.md#uml-diagramme)                              | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Normalisierung von Daten](datenbanken/unterrichte/normalization.md)                                 | [hier](../checklists/checklist_db1.md#normalisierung-von-daten)                   | [hier](../begriffe/begriffe_db1.md) |
-| 6     | [Indizes und referentielle Integrität](datenbanken/unterrichte/indices_and_referential_integrity.md) | [hier](../checklists/checklist_db1.md#indizes-und-referentielle-integritaet)      | [hier](../begriffe/begriffe_db1.md) |
+| 6     | [Indizes und referentielle Integrität](datenbanken/unterrichte/indices_and_referential_integrity.md) | [hier](../checklists/checklist_db1.md#indizes-und-referentielle-integritt)        | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Arbeitsumgebung einrichten](datenbanken/unterrichte/how_we_will_work.md)                            | [hier](../checklists/checklist_db1.md#arbeitsumgebung)                            | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Reservierte Ausdrücke](datenbanken/unterrichte/reserved_words_sqlite.md)                            | [hier](../checklists/checklist_db1.md#reservierte-worte)                          | [hier](../begriffe/begriffe_db1.md) |
 | 6     | [Datentypen](datenbanken/unterrichte/daten_typen_sqlite.md)                                          | [hier](../checklists/checklist_db1.md#datentypen)                                 | [hier](../begriffe/begriffe_db1.md) |
@@ -85,16 +85,16 @@
 | 7     | [Variablennamen](clean_code/Variablenbenennung/Variablenbenennung.md)        | [hier](../checklists/checklist_clean_code.md#benennung-von-variablen) | [hier](../begriffe/begriffe_clean_code.md#benennung_von_variablen) |
 
 ## Python & Datenbanken
+| Woche | Unterricht                                                                  | Lernziele                                                          | Begriffssammlung                                                        |
+|-------|-----------------------------------------------------------------------------|:-------------------------------------------------------------------|:------------------------------------------------------------------------|
+| 7     | [Python sqlite3 ](datenbanken/unterrichte/sqlite3_basic.md)                 | [hier](../checklists/checklist_db_python.md#sqlite-in-python)      | [hier](../begriffe/begriffe_db_python.md)                               |
+| 7     | [sqlite3 weitere Funktionen](datenbanken/unterrichte/sqlite3_advanced.md)   | [hier](../checklists/checklist_db_python.md#sqlite-in-python)      | [hier](../begriffe/begriffe_db_python.md)                               |
+| 7     | [Einführung in SQLAlchemy](datenbanken/einfuehrung.md)                      | [hier](../checklists/checkliste3.md#einfuehrung-sqlalchemy)        | [hier](../begriffe/begriffe_db_python.md#einfuehrung-sqlalchemy)        |
+| 7     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.md)                | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte) | [hier](../begriffe/begriffe_db_python.md#fortgeschrittene-orm-konzepte) |
+| 7     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.md)   | [hier](../checklists/checkliste3.md#sql-expression-language)       | [hier](../begriffe/begriffe_db_python.md#sql-expression-language)       |
+| 7     | [Best Practices und fortgeschrittene Themen](datenbanken/best_practices.md) | [hier](../checklists/checkliste3.md#best-practices)                | [hier](../begriffe/begriffe_db_python.md#best-practices)                |
 
-| Woche | Unterricht                                                                  | Lernziele                                                          | Begriffssammlung                                               |
-|-------|-----------------------------------------------------------------------------|:-------------------------------------------------------------------|:---------------------------------------------------------------|
-| 7     | [Python sqlite3 ](datenbanken/unterrichte/sqlite3_basic.md)                 | [hier](../checklists/checklist_db_python.md#sqlite_in_python)      | [hier](../begriffe/begriffe_db_python.md)                      |
-| 7     | [sqlite3 weitere Funktionen](datenbanken/unterrichte/sqlite3_advanced.md)   | [hier](../checklists/checklist_db_python.md#sqlite-in-python)      | [hier](../begriffe/begriffe_db_python.md)                      |
-| 7     | [Einführung in SQLAlchemy](datenbanken/einfuehrung.md)                      | [hier](../checklists/checkliste3.md#einfuehrung-sqlalchemy)        | [hier](../begriffe/begriffe3.md#einfuehrung-sqlalchemy)        |
-| 7     | [Fortgeschrittene ORM Konzepte](datenbanken/orm_konzepte.md)                | [hier](../checklists/checkliste3.md#fortgeschrittene-orm-konzepte) | [hier](../begriffe/begriffe3.md#fortgeschrittene-orm-konzepte) |
-| 7     | [Arbeiten mit dem SQL Expression Language](datenbanken/sql_expression.md)   | [hier](../checklists/checkliste3.md#sql-expression-language)       | [hier](../begriffe/begriffe3.md#sql-expression-language)       |
-| 7     | [Best Practices und fortgeschrittene Themen](datenbanken/best_practices.md) | [hier](../checklists/checkliste3.md#best-practices)                | [hier](../begriffe/begriffe3.md#best-practices)                |
-| 7     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.md) | [hier](../checklists/checkliste3.md#integration-in-flask)          | [hier](../begriffe/begriffe3.md#integration-in-flask)          |
+<!-- | 7     | [Integration von SQLAlchemy in einem Flask-Projekt](datenbanken/projekt.md)                            | [hier](../checklists/checkliste3.md#integration-in-flask)          | [hier](../begriffe/begriffe3.md#integration-in-flask)          | -->
 
 ## Web
 
@@ -177,17 +177,46 @@
 
 ## NoSQL Datenbanken
 
-| Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
-|       |            |           |                  |
-|       |            |           |                  |
+| Woche | Unterricht                                                                | Lernziele                                                               | Begriffssammlung                    |
+|-------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|-------------------------------------| 
+| 11    | [NoSQL Intro Motivation](datenbanken/nosql/intro.md)                      | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md) |
+| 11    | [Key-Value Stores](datenbanken/nosql/key_value_stores.md)                 | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md) |
+| 11    | [Document Stores](datenbanken/nosql/document_stores.md)                   | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md) |
+| 11    | [Graphen Datenbanken](datenbanken/nosql/graphen_datenbanken.md)           | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md) |
+| 11    | [Wide Column Stores](datenbanken/nosql/wide_column_stores.md)             | [hier](../checklists/checklist_db2.md#NoSQL)                            | [hier](../begriffe/begriffe_db2.md) |
+| 12    | [MongoDB - Einführung](datenbanken/nosql/mongodb/intro.md)                | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md) |
+| 12    | [MongoDB - CRUD](datenbanken/nosql/mongodb/crud.md)                       | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md) |
+| 12    | [MongoDB - Aggregation](datenbanken/nosql/mongodb/aggregation.md)         | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md) |
+| 12    | [MongoDB - Indizes](datenbanken/nosql/mongodb/indexes.md)                 | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md) |
+| 12    | [MongoDB - Datenmodellierung](datenbanken/nosql/mongodb/data_modeling.md) | [hier](../checklists/checklist_db2.md#mongodb)                          | [hier](../begriffe/begriffe_db2.md) |
+| 12    | [MongoDB - Sicherheit](datenbanken/nosql/mongodb/security.md)             | [hier](../checklists/checklist_db2.md#sicherheit-für-nosql-datenbanken) | [hier](../begriffe/begriffe_db2.md) |
+| 12    | [MongoDB - Pymongo](datenbanken/nosql/mongodb/pymongo.md)                 | [hier](../checklists/checklist_db2.md#pymongo)                          | [hier](../begriffe/begriffe_db2.md) |
+| 12    | [Projektaufgabe](datenbanken/nosql/mongodb/pymongo.md)                    |                                                                         |                                     |
+| 12    | [Datenbank Refactoring](datenbanken/nosql/mongodb/refactoring.md)         | [hier](../checklists/checklist_db2.md#datenbank-refactoring-in-nosql)   | [hier](../begriffe/begriffe_db2.md) |
+| 12    | [Datenbank Migration](datenbanken/nosql/mongodb/migration.md)             | [hier](../checklists/checklist_db2.md#datenbank-refactoring-in-nosql)   | [hier](../begriffe/begriffe_db2.md) |
+
+<!--  |                                                                             | [Wiederholung SQL Datenbanken]()                                        | [hier](../checklists/checklist_db2.md#Wiederholung-SQL-Datenbanken) |     | --> 
+<!--  |                                                                             | [MongoDB & Cosmos DB]()                                                 | [hier](../checklists/checklist_db2.md#azure-cosmos-db)              |     | --> 
 
 ## Datenverarbeitung und -darstellung
 
-| Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
-|       |            |           |                  |
-|       |            |           |                  |
+| Woche | Unterricht                                                                                           | Lernziele                                                                          | Begriffssammlung                             |
+|-------|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------|
+| 12    | [Einführung in Data Science](datascience/unterrichte/data_science_einfuehrung.md)                    | [hier](../checklists/checklist_data_science.md#einfuehrung)                        | [hier](../begriffe/begriffe_data_science.md) |
+| 12    | [Pandas: Einführung](datascience/unterrichte/pandas_einfuehrung.md)                                  | [hier](../checklists/checklist_data_science.md#pandas_einfuehrung)                 | [hier](../begriffe/begriffe_data_science.md) |
+| 12    | [Pandas: Import/Export von Daten](datascience/unterrichte/pandas_import_export.md)                   | [hier](../checklists/checklist_data_science.md#pandas_import_export)               | [hier](../begriffe/begriffe_data_science.md) |
+| 12    | [Pandas: Fehlende Werte](datascience/unterrichte/pandas_fehlende_werte.md)                           | [hier](../checklists/checklist_data_science.md#pandas_fehlende_werte)              | [hier](../begriffe/begriffe_data_science.md) |
+| 12    | [NumPy: Arrays](datascience/unterrichte/numpy_arrays.md)                                             | [hier](../checklists/checklist_data_science.md#numpy_arrays)                       | [hier](../begriffe/begriffe_data_science.md) |
+| 13    | [NumPy: Slicing](datascience/unterrichte/numpy_slicing.md)                                           | [hier](../checklists/checklist_data_science.md#numpy_slicing)                      | [hier](../begriffe/begriffe_data_science.md) |
+| 13    | [Matplotlib: Linienplots](datascience/unterrichte/matplotlib_linienplots.md)                         | [hier](../checklists/checklist_data_science.md#matplotlib_linienplots)             | [hier](../begriffe/begriffe_data_science.md) |
+| 13    | [Matplotlib: Subplots](datascience/unterrichte/matplotlib_subplots.md)                               | [hier](../checklists/checklist_data_science.md#matplotlib_subplots)                | [hier](../begriffe/begriffe_data_science.md) |
+| 13    | [Seaborn: Einführung](datascience/unterrichte/seaborn_einfuehrung.md)                                | [hier](../checklists/checklist_data_science.md#seaborn_einfuehrung)                | [hier](../begriffe/begriffe_data_science.md) |
+| 13    | [Matplotlib: Ticks](datascience/unterrichte/matplotlib_ticks.md)                                     | [hier](../checklists/checklist_data_science.md#matplotlib_ticks)                   | [hier](../begriffe/begriffe_data_science.md) |
+| 13    | [Pandas: Multiindex](datascience/unterrichte/pandas_multiindex.md)                                   | [hier](../checklists/checklist_data_science.md#pandas_multiindex)                  | [hier](../begriffe/begriffe_data_science.md) |
+| 13    | [Pandas: Gruppieren und Pivotisieren](datascience/unterrichte/pandas_gruppieren_und_pivotisieren.md) | [hier](../checklists/checklist_data_science.md#pandas_gruppieren_und_pivotisieren) | [hier](../begriffe/begriffe_data_science.md) |
+| 13    | [Pandas & Matplotlib: Zeitreihenanalyse](datascience/unterrichte/pandas_matplotlib_zeitreihen.md)    | [hier](../checklists/checklist_data_science.md#pandas_matplotlib_zeitreihen)       | [hier](../begriffe/begriffe_data_science.md) |
+| 13    | [Pandas: Outlier (Ausreißer)](datascience/unterrichte/pandas_outlier.md)                             | [hier](../checklists/checklist_data_science.md#pandas_outlier)                     | [hier](../begriffe/begriffe_data_science.md) |
+| 13    | [Pandas & Matplotlib: DateTime (Zeitstempel)](datascience/unterrichte/pandas_matplotlib_datetime.md) | [hier](../checklists/checklist_data_science.md#pandas_matplotlib_datetime)         | [hier](../begriffe/begriffe_data_science.md) |
 
 ## Python Fortgeschritten
 
@@ -202,9 +231,11 @@
 
 ## Robotik
 
-| Woche | Unterricht | Lernziele | Begriffssammlung |
-|-------|------------|-----------|------------------|
-|       |            |           |                  |
-|       |            |           |                  |
-
-
+| Woche | Unterricht                                                                                                 | Lernziele                                  | Begriffssammlung                        |
+|-------|------------------------------------------------------------------------------------------------------------|--------------------------------------------|-----------------------------------------|
+| 15    | [Einführung: Robotik & Robotersimulatoren](robotik/unterrichte/einfuehrung_robotik.md)                     | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |
+| 15    | [Einen Webots-Roboter aus Python heraus steuern](robotik/unterrichte/webots_roboter_aus_python_steuern.md) | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |
+| 15    | [Reaktiver Robotercontroller](robotik/unterrichte/webots_reaktiver_controller.md)                          | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |
+| 15    | [Webots Fahrzeug aus Python heraus steuern](robotik/unterrichte/webots_fahrzeug_steuern_aus_python.md)     | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |
+| 15    | [Fahrsequenz-Assistent in Python/Webots](robotik/unterrichte/webots_fahrerassistenzsystem.md)              | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |
+| 15    | [Roboternavigationsverhalten untersuchen](robotik/unterrichte/webots_navigationsverhalten.md)              | [hier](../checklists/checklist_robotik.md) | [hier](../begriffe/begriffe_robotik.md) |

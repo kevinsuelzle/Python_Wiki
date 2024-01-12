@@ -1,7 +1,8 @@
 .DS_Store
 site
 .idea
-/venv
+venv
+__pycache__
 .firebase
 .DS_Store
 *.db
