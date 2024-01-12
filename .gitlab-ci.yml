@@ -1,6 +1,10 @@
 image: python:3.11.7-bullseye
 
 before_script:
+  - git remote remove origin
+  - git config user.email "software@co-dex.de"
+  - git config user.name "Software-Bot"
+  - git remote add origin https://oauth2:$GITLAB_TOKEN@git.co-dex.de/fakultaet-73/python-g5/wiki.git
   - pip install -r requirements.txt
 
 test:
@@ -16,7 +20,11 @@ test:
 pages:
   stage: deploy
   script:
-  - mkdocs build --site-dir public # --strict --verbose
+    - git checkout deployment
+    - mkdocs build --site-dir public # --strict --verbose
+    - git add .
+    - git commit -m "Deployment commit"
+    - git push origin deployment
   artifacts:
     paths:
     - public
