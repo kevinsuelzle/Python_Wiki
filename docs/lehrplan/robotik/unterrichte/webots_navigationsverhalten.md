@@ -1,5 +1,13 @@
 # Exkurs: Roboternavigationsverhalten untersuchen
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NZksdNfPjfA?si=csr_AxQHSI_7ZN0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einführung [5 min]
 
 Wir haben bereits ein Navigationsverhalten für einen Roboter implementiert: ein Braitenberg-Vehikel zur Hindernissvermeidung.

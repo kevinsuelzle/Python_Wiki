@@ -1,5 +1,13 @@
 # Reaktiver Robotercontroller
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ruvbl1fUWTY?si=tHelXIDSdy59ItkV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einführung [20 min]
 
 Roboter sind komplexe Systeme, die durch verschiedene Kontrollarchitekturen gesteuert werden. Diese Architekturen ermöglichen es Robotern, Aufgaben autonom oder semi-autonom auszuführen. Die Auswahl der geeigneten Kontrollarchitektur ist entscheidend für die Effektivität und Effizienz eines Roboters in seiner spezifischen Anwendung.

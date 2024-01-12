@@ -1,5 +1,13 @@
 # Webots: Entwicklung eines einfachen Fahrerassistenzsystems
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bhLvo51myvw?si=RLK4vGXS36rzHI0j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einführung [10 min]
 
 Die nächste Zielsetzung ist es ein kleines (sehr einfaches) Fahrerassistenzsystem für das Fahrrzeug in Webots in Python zu entwickeln.
@@ -15,6 +23,8 @@ Natürlich ist das nur bedingt realistisch. Für ein echtes Fahrerasistenzsystem
 Solche Hindernisse können dynamischer Natur sein (eine Katze oder eine Person, die den Fahrweg kreuzt) oder statischer Natur sein (da steht noch ausnahmsweise heute eine Mülltonne im Weg, die nur Donnerstags Morgen für die Müllabfuhr rausgeräumt wird).
 
 Wir konzentrieren uns hier der Einfachheit halber nur auf den Steueranteil, d.h. schreiben einen Controller, der Sequenzen aufnehmen und dann abspielen kann. Den Regelungsanteil, d.h. das Reagieren auf Objekte über Sensordaten blenden wir hier aus.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZDcYn0_F6KE?si=bL3uIOjk-H4GcIrx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Aufgaben [300 min]
 

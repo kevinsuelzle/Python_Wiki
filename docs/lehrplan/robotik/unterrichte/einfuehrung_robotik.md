@@ -1,5 +1,12 @@
 # Einführung Robotik & Robotersimulatoren
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/89-Zp-k8hZY?si=4sx5HKJugt6Ot07O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 ## Einführung [45 min]
 
 Die Automobilindustrie ist seit Langem ein Vorreiter in der Anwendung von Robotertechnologie. Von der Montage über die Lackierung bis hin zur Qualitätskontrolle werden Roboter eingesetzt, um Effizienz, Präzision und Sicherheit in der Produktion zu steigern.
