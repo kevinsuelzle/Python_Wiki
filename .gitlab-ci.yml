@@ -4,7 +4,7 @@ before_script:
   - git remote remove origin
   - git config user.email "software@co-dex.de"
   - git config user.name "Software-Bot"
-  - git remote add origin https://oauth2:$GITLAB_TOKEN@git.co-dex.de/fakultaet-73/python-g5/wiki.git
+  - git remote add origin https://oauth2:$GITLAB_TOKEN@git.qualidy.de/fakultaet73/python/wiki.git
   - pip install -r requirements.txt
 
 test:
