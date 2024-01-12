@@ -37,8 +37,6 @@ docker run --name mein-mongodb -p 27017:27017 -d mongo
 
 _Wir werden MongoDB zunächst über einen Docker Container ausführen._
 
-TODO: Lösungen von Aufgaben in eigene Dateien packen und verlinken. Bitte für jede Aufgabe eine kleine Überschrift ausdenken. Hier mache ich es
-
 ### Aufgabe: MongoDB mit Docker laden 🌶🌶
 [20 min]
 
@@ -46,6 +44,7 @@ Erstelle ein Docker-Compose File, das einen MongoDB Container startet. Achte dar
 Recherchiere dazu im Internet.
 
 [Link zur Lösung](../lösungen/aufgabe1.md)
+
 ## MongoDB Shell
 [10 min]
 

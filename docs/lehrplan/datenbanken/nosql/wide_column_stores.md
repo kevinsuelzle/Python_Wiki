@@ -6,7 +6,7 @@ Spaltenspeicherdatenbanken speichern Daten spaltenweise anstelle von zeilenweise
 **_Beispiel:_**
 
 | Personalnr | Nachname | Vorname | Gehalt |
-| ---------- | -------- | ------- | ------ |
+|------------|----------|---------|--------|
 | 10001      | Becker   | Thomas  | 55000  |
 | 10002      | Wagner   | Sabine  | 48000  |
 | 10003      | Schulz   | Andreas | 60000  |
@@ -34,7 +34,7 @@ OLAP steht für "Online Analytical Processing" und bezieht sich auf Systeme, die
 ## Unterschiede zwischen OLTP und OLAP
 
 | Merkmal          | OLTP                                            | OLAP                                           |
-| ---------------- | ----------------------------------------------- | ---------------------------------------------- |
+|------------------|-------------------------------------------------|------------------------------------------------|
 | Hauptziel        | Verarbeitung von Einzeltransaktionen            | Analyse großer Datenmengen                     |
 | Art der Abfragen | Einfache Abfragen auf Einzeldatensätzen         | Komplexe Abfragen und Analyse von Aggregaten   |
 | Datenmodell      | Normalisierte Datenmodelle                      | Denormalisierte oder stark strukturierte Daten |
