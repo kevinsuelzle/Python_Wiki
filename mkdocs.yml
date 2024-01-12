@@ -1,4 +1,6 @@
-site_name: My Docs
+site_name: Python Wiki
+site_url: http://fakultaet-73.pages.co-dex.de/python-g5/wiki
+
 
 plugins:
   - search
