@@ -2,6 +2,14 @@
 
 ### A1: Erkennung von Ausreißern mit Z-Score 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J5nE1iFNjWA?si=pYtN3-ITkiEIZQuN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Gegeben ist ein DataFrame df mit einer Spalte 'Werte'. Berechne den Z-Score für jeden Wert und identifiziere Werte, die als Ausreißer gelten (Z-Score > 2 oder < -2).
 
 
@@ -20,6 +28,14 @@ print(ausreißer)
 
 
 ### A2: Entfernen von Ausreißern mit IQR 🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lYkUWdGDvpg?si=nDaPsYa5fYhUiUmh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Gegeben ist ein DataFrame df mit einer Spalte 'Werte'. Entferne Ausreißer mit der IQR-Methode.
 
@@ -44,6 +60,14 @@ print(df)
 
 ### A3: Visualisierung von Ausreißern 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IQBluAxXnns?si=vVrBZvJAq3etaVrW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstelle einen Boxplot für den DataFrame df mit der Spalte 'Werte', um Ausreißer zu visualisieren.
 
 
@@ -65,6 +89,14 @@ plt.show()
 
 ### A4: Ausreißererkennung mit Standardabweichung 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0GHOwDpVc0g?si=ktCToa6ymLWDB9lT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstelle zuerst ein DataFrame df mit Werten.
 
 Identifiziere dann Ausreißer, die mehr als zwei Standardabweichungen vom Mittelwert entfernt sind.
@@ -83,6 +115,14 @@ print(ausreißer)
 
 
 ### A5: Winsorizing von Daten 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s3r7wpDJCO8?si=k41OdGAtcuxxXNGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Wende die Winsorizing-Technik auf `df['Werte']` an, um extreme Ausreißer zu begrenzen.
 
@@ -114,6 +154,14 @@ print(df)
 
 ### A6: Erstellung eines bereinigten Datensatzes 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Np8vNBzyZzQ?si=w3FTmriLmzEP8sCW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstelle ein DataFrame mit einer Spalte 'Werte' und dann einen bereinigten DataFrame `df_clean`, indem du Ausreißer in `df['Werte']` entfernst, die mehr als 1.5 IQR vom oberen oder unteren Quartil entfernt sind.
 
 
@@ -135,6 +183,14 @@ print(df_clean)
 
 
 ### A7: Mittelwertberechnung mit und ohne Ausreißer 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jOT9A65rRes?si=pYS0oQwpbxAPXm2X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Berechne den Mittelwert von `df['Werte']` sowohl mit als auch ohne Ausreißer, die mehr als zwei Standardabweichungen vom Mittelwert entfernt sind.
 
@@ -162,6 +218,14 @@ print("Mittelwert ohne Ausreißer:", mittelwert_ohne_ausreißer)
 
 
 ### A8: Erkennung von Ausreißern in mehreren Spalten 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gBwsYim3jPw?si=6xMJTGrGIYgxcDuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Gegeben ist ein DataFrame `df` mit den Spalten 'Werte1' und 'Werte2'. Identifiziere Ausreißer in beiden Spalten mit der Z-Score-Methode.
 
@@ -192,6 +256,14 @@ print("\nausreißer:\n",ausreißer)
 
 
 ### A9: Filtern von Ausreißern mit einem benutzerdefinierten Schwellenwert 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6sdMZFKALCE?si=ApeW-QctVj4HghFi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstelle eine Funktion `filter_ausreißer(df, schwellenwert)`, die Ausreißer aus `df['Werte']` entfernt, die mehr als den angegebenen Schwellenwert vom Mittelwert entfernt sind.
 
@@ -227,6 +299,14 @@ print("\ndf_clean:\n", df_clean)
 
 
 ### A10: Anwendung von Winsorizing auf einen Datensatz 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C2YJ6B9IuwI?si=H8wd-8sne4ClsHDt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Wende Winsorizing auf `df['Werte']` an, um die oberen und unteren 10% der Werte zu begrenzen, und vergleiche die Mittelwerte vor und nach dem Winsorizing.
 

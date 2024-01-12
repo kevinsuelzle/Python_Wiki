@@ -2,6 +2,13 @@
 
 ### A1: Zeitreihendatensatz erstellen 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y9-xkfsY1Ro?si=iepuH5D_uphCKqep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Erstellen Sie eine Pandas Zeitreihe aus einem Datensatz mit täglichen Daten für ein Jahr. Verwenden Sie dabei zufällige Werte.
 Zudem soll es einen linearen Trend geben.
 
@@ -29,6 +36,14 @@ print(time_series.head())
 
 ### A2: Zeitreihe visualisieren 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Edko1ulcQug?si=tPBwLv3657Ku_BER" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Visualisieren Sie die erstellte Zeitreihe aus Aufgabe 1 mit Matplotlib.
 
 
@@ -50,6 +65,14 @@ plt.show()
 
 
 ### A3: Gleitenden Durchschnitt berechnen 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LlRAK8gkli4?si=M884urL7D6woOHQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Berechnen Sie den gleitenden Durchschnitt über 7 Tage für die Zeitreihe aus Aufgabe 1 und plotten Sie das Ergebnis.
 
@@ -74,6 +97,14 @@ plt.show()
 
 ### A4: Zeitreihe auf Monatsbasis aggregieren 🌶️🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Rfb1O6lfL8?si=iqdTvd2OmUmQLeKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Aggregieren Sie die Daten aus Aufgabe 1 auf Monatsbasis und visualisieren Sie die monatlichen Durchschnittswerte.
 
 
@@ -97,6 +128,14 @@ plt.show()
 
 ### A5: Zeitreihen-Daten normalisieren 🌶️🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mES3-YpmXiw?si=-zOpcnNdueOzw5tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Normalisieren Sie die Werte der ersten Zeitreihe aus Aufgabe 1, so dass sie zwischen 0 und 1 liegen, und visualisieren Sie das Ergebnis.
 
 
@@ -119,6 +158,14 @@ plt.show()
 
 
 ### A6: Zeitreihe mit saisonalem Muster 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nyb-S-F-iqU?si=CWOlPE-bFRzaLGLX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie eine Zeitreihe mit einem klaren saisonalen Muster und visualisieren Sie diese.
 
@@ -145,6 +192,14 @@ plt.show()
 
 
 ### A7: Zeitreihen mit Seaborn als Heatmap visualisieren 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MV2aNVbTIoU?si=z-fXrkR3J2YoR2at" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Verwenden Sie Seaborn, um eine Heatmap der monatlichen Daten aus Aufgabe 4 zu erstellen.
 
@@ -173,6 +228,14 @@ plt.show()
 In dieser Aufgabe wird die ursprüngliche Zeitreihe auf eine zweidimensionale Form umstrukturiert, um eine Heatmap zu erstellen. Dabei wird jeder Monat gegen jeden Tag im Monat abgebildet. Seaborn's heatmap-Funktion wird verwendet, um die Daten zu visualisieren, wobei unterschiedliche Farben die Intensität der Werte an jedem Tag anzeigen.
 
 ### A8: Zukünftige Werte einer Zeitreihe prognostizieren 🌶️🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kntr1N1ld5E?si=sAbPMrS5sG_8deMO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Verwenden Sie eine einfache lineare Regression aus scikit-learn, um die nächsten 30 Tage der Zeitreihe aus Aufgabe 1 zu prognostizieren.
 
@@ -211,6 +274,14 @@ plt.show()
 
 
 ### A9: Zeitreihen-Daten in Perioden unterteilen und vergleichen 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LFWNZqMR2Dk?si=Ha-R-n9MkU_VKp5D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Unterteilen Sie die Zeitreihe aus Aufgabe 1 in zwei gleiche Perioden und vergleichen Sie die statistischen Kennzahlen (Mittelwert, Median, Standardabweichung) dieser Perioden.
 

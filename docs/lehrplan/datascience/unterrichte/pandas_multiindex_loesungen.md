@@ -2,6 +2,14 @@
 
 ### A1: Erstellung eines Multiindex DataFrame nach Vorgaben 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yu7-a0O2nT0?si=j9bfqLYa9r13J2aR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstellen Sie einen Pandas DataFrame mit einem Multiindex, der aus zwei Ebenen besteht: 'Stadt' und 'Jahr'. Fügen Sie eine Datenreihe mit dem Namen 'Bevölkerung' hinzu. Verwenden Sie folgende Städte und Jahre: Städte - ['Berlin', 'Hamburg'], Jahre - [2020, 2021].
 
 
@@ -24,6 +32,14 @@ print(df)
 
 ### A2: Zugriff auf Multiindex Daten 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PblNyLpd-RI?si=z1yRxIdKwYvBWsV6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Gegeben sei der in Aufgabe 1 erstellte DataFrame. Greifen Sie auf die Daten für 'Berlin' im Jahr 2021 zu.
 
 
@@ -36,6 +52,14 @@ print(df.loc[('Berlin', 2021)])
 
 
 ### A3: Aggregation auf Multiindex Ebene 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yiIx8bXIpmQ?si=HPF6dBT1N7U5dkbW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Aggregieren Sie die Bevölkerungsdaten aus Aufgabe 1, um die Gesamtbevölkerung pro Stadt über alle Jahre zu erhalten.
 
@@ -65,6 +89,14 @@ print(df.groupby(level='Jahr').sum())
 
 ### A4: Multiindex mit from_product 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eUy_m9JhIJM?si=jQkhVOpWX13rDdVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstellen Sie einen Multiindex DataFrame mit `pd.MultiIndex.from_product`. Verwenden Sie die Produktkategorien ['Elektronik', 'Lebensmittel'] und die Jahre [2020, 2021] als Index. Fügen Sie eine Spalte 'Umsatz' mit beliebigen Werten hinzu.
 
 
@@ -87,6 +119,14 @@ print(df)
 
 
 ### A5: Sortieren eines Multiindex DataFrame 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/edLfuCux4Cc?si=t_xTfr3VcbvSNbCD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Sortieren Sie den DataFrame aus Aufgabe 4 zuerst nach 'Jahr' und dann nach 'Kategorie'.
 
@@ -115,6 +155,14 @@ print("\n\n", sortierter_df)
 
 
 ### A6: Umstrukturierung mit Pivot 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vZwPbKpPaJs?si=yeGHnZyh0W5cl93V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie einen DataFrame mit Spalten 'Stadt', 'Jahr' und 'Umsatz'. Verwenden Sie 'Stadt' als Index, 'Jahr' als Spalten und 'Umsatz' als Werte, um den DataFrame in einen Multiindex DataFrame zu pivotieren.
 
@@ -146,6 +194,14 @@ print("\n\n", pivot_df)
 
 
 ### A7: Multiindex Slicing 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BqpRK7p8OF0?si=OH6d5v9mHWJpmYVB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Folgende Tabelle ist gegeben:
 
@@ -199,6 +255,14 @@ Die xs-Methode ermöglicht es, eine bestimmte Ebene des Multiindex zu selektiere
 
 ### A8: Umwandlung von Multiindex in Spalten 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ff5Szjd0-68?si=Xtl66SPTeZ4ahbjx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Wandeln Sie den Multiindex des DataFrame aus Aufgabe 8 in Spalten um, sodass 'Stadt' und 'Jahr' zu normalen Spalten werden.
 
 
@@ -215,6 +279,14 @@ print(df_reset)
 
 
 ### A9: Hinzufügen einer Ebene zum Multiindex 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uFJxKiB3UT4?si=7hsYRMmNsnZagqJf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Fügen Sie dem DataFrame aus Aufgabe 7 eine zusätzliche Ebene im Multiindex hinzu, ohne die bestehenden Daten zu verändern. Die neue Ebene soll 'Monat' heißen und für alle Einträge den Wert 'Januar' haben.
 

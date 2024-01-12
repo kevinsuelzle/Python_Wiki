@@ -6,8 +6,7 @@
 <summary>
 🎦 Lösungsvideo
 </summary>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KzYHVs84M4k?si=75xmyiRT32sbDq82" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</details>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mBXzPmTm400?si=I8tUKg_EKveEZcCa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></details>
 
 Erstellen Sie einen DataFrame mit einer Datumsreihe vom 1. Januar 2023 bis zum 31. Dezember 2023 und wählen Sie alle Daten aus, die im März 2023 liegen.
 
@@ -60,7 +59,7 @@ print(march_data)
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lsFuMphUjwU?si=2-_m7GYW4kPcQBS-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -93,7 +92,7 @@ plt.show()
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GQ5I_7pGl2Y?si=zqi8q8n79iM6-kDu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -123,7 +122,7 @@ plt.show()
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y3fEGw-7qVk?si=un_HoLwOQFZEpql8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -179,7 +178,7 @@ print("\nmonthly_avg:\n", monthly_avg)
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9xeprazVk5I?si=VNblDSNHArkh9xSR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -203,7 +202,7 @@ print(f"Frühestes Datum: {earliest}, Spätestes Datum: {latest}")
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5kSK9L0rVsU?si=DaV-eJ6V1t3Ad1kT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -238,7 +237,7 @@ print(df)
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aDUpDFQV51Y?si=dv74t8BXUPZQUGsx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -270,7 +269,7 @@ print(df)
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B72aGSNKQHk?si=AxaF3-gS4VpTfyoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 

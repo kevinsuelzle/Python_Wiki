@@ -6,7 +6,7 @@
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/k1Wa5m7wfYA?si=au-Hb1AryvjNUlls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 Erstellen Sie einen Violin Plot für die 'total_bill'-Variable im 'tips'-Datensatz, wobei die Violins nach 'time' getrennt sind. Stellen Sie sicher, dass der Plot innere Quartile anzeigt.
@@ -45,7 +45,7 @@ plt.show()
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_FwRBiU60xM?si=iS2KFH_6InK7iVEP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -90,7 +90,7 @@ plt.show()
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nQ2Wj9Wx7Lc?si=4jUr9jZoqSty-3dP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -138,7 +138,7 @@ Durch die Betrachtung dieses Boxplots können Sie eine Vorstellung von der zentr
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s5BkbUD2NW8?si=tCXiR35etDaysNUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -167,7 +167,7 @@ plt.show()
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zp_euTSfXMg?si=DldKs6WBrXReJkIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -209,7 +209,7 @@ Wir verwenden die map-Funktion, um eine Art von Plot (in diesem Fall ein Histogr
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pC5iFwXT9pY?si=6yZ53QPl32g7meCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -238,7 +238,7 @@ plt.show()
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vllGhfYLwGs?si=6aPE5SFAWBzHxnuT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
@@ -273,7 +273,7 @@ In diesem Beispiel wird ein Scatterplot erstellt, der die Beziehung zwischen der
 <summary>
 🎦 Lösungsvideo
 </summary>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HrZzo0_fTa4?si=numYqa5dmTeYuWvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 
