@@ -20,7 +20,7 @@ test:
 pages:
   stage: deploy
   script:
-    - git checkout deployment
+    - git checkout -b deployment
     - mkdocs build --site-dir public # --strict --verbose
     - git add .
     - git commit -m "Deployment commit"
