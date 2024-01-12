@@ -6,7 +6,7 @@ plugins:
 #  - mkdocs-jupyter:
 #      execute: false
 #      kernel_name: python3
-      
+
 markdown_extensions:
   - def_list
   - attr_list
@@ -197,6 +197,13 @@ nav:
               - Pandas & Matplotlib Zeitreihenanalyse: lehrplan/datascience/unterrichte/pandas_matplotlib_zeitreihen.md
               - Pandas Outlier (Ausreißer): lehrplan/datascience/unterrichte/pandas_outlier.md
               - Pandas & Matplotlib DateTime (Zeitstempel): lehrplan/datascience/unterrichte/pandas_matplotlib_datetime.md
+          - Python Fortgeschritten:
+              - Generatoren und Iteratoren: lehrplan/python_advanced/generators_and_iterators.md
+              - Dekoratoren (Memoisation): lehrplan/python_advanced/dekoratoren.md
+              - Anonyme Funktionen: lehrplan/python_advanced/anonymous_functions.md
+              - Abstrakte Klassen: lehrplan/python_advanced/abstract_class.md
+              - Dataclass: lehrplan/python_advanced/dataclass.md
+              - Weitere fortgeschrittene Themen: lehrplan/python_advanced/advanced_topics.md
           - Robotik:
               - Einführung Robotik & Robotersimulatoren: lehrplan/robotik/unterrichte/einfuehrung_robotik.md
               - Einen Webots-Roboter aus Python heraus steuern: lehrplan/robotik/unterrichte/webots_roboter_aus_python_steuern.md
@@ -216,6 +223,7 @@ nav:
       - Docker: begriffe/begriffe_docker.md
       - NoSQL-Datenbanken: begriffe/begriffe_db2.md
       - Datenverarbeitung und -darstellung: begriffe/begriffe_data_science.md
+      - Python Fortgeschritten: begriffe/begriffe_python_advanced.md
       - Robotik: begriffe/begriffe_robotik.md
   - Checklisten:
       - Python Grundlagen: checklists/checklist_1.md
@@ -228,6 +236,7 @@ nav:
       - Docker: checklists/checklist_docker.md
       - NoSQL-Datenbanken: checklists/checklist_db2.md
       - Datenverarbeitung und -darstellung: checklists/checklist_data_science.md
+      - Python Fortgeschritten: checklists/checklist_python_advanced.md
       - Robotik: checklists/checklist_robotik.md
 
   - Werkzeuge:
