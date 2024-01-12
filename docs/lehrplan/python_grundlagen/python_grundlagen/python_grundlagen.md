@@ -3,11 +3,15 @@
 # Was ist Programmierung?
 
 [//]: # ([20min])
-<details>
-<summary>
-🎦 Video
-</summary>
-</details>
+[//]: # (<details>)
+
+[//]: # (<summary>)
+
+[//]: # (🎦 Video)
+
+[//]: # (</summary>)
+
+[//]: # (</details>)
 
 Programmierung ist für uns der Prozess der Erstellung von Anweisungen, die von einem Computer ausgeführt werden, um
 bestimmte Aufgaben zu erfüllen oder Probleme zu lösen.
@@ -47,12 +51,17 @@ Probleme gelöst, die ein Unternehmen oder dessen Kunden haben.
 
 ## Die Rolle von Python in der Programmierung
 
-<details>
-<summary>
-🎦 Video
-</summary>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zWHl_x-LWiM?si=_443HW8zEZ13KGvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</details>
+[//]: # (<details>)
+
+[//]: # (<summary>)
+
+[//]: # (🎦 Video)
+
+[//]: # (</summary>)
+
+[//]: # (<iframe width="560" height="315" src="https://www.youtube.com/embed/zWHl_x-LWiM?si=_443HW8zEZ13KGvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>)
+
+[//]: # (</details>)
 
 [//]: # ([20min])
 
@@ -153,11 +162,15 @@ da dieses speziell auf dieses Dateiformat ausgelegt ist.
 
 ### 4. Python-Interpreter als interaktive Umgebung
 
-<details>
-<summary>
-🎦 Video
-</summary>
-</details>
+[//]: # (<details>)
+
+[//]: # (<summary>)
+
+[//]: # (🎦 Video)
+
+[//]: # (</summary>)
+
+[//]: # (</details>)
 
 ![Python](../images/py_console.png)
 
