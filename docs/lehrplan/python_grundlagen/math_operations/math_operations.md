@@ -6,41 +6,41 @@ die wir mit Ganzzahlen und Fließkommazahlen verwenden können.
 ## Abschnitt 1: Grundoperationen
 [30min]
 
-1. **Addition (`+`)**: Addiert zwei Zahlen.
+**Addition (`+`)**: Addiert zwei Zahlen.
 ```python
 summe = 5 + 3  # Ergibt 8
 ```
-2. **Subtraktion (`-`)**: Subtrahiert eine Zahl von einer anderen.
+**Subtraktion (`-`)**: Subtrahiert eine Zahl von einer anderen.
 
 ```python
 differenz = 10 - 2  # Ergibt 8
 ```
 
-3. **Multiplikation (`*`)**: Multipliziert zwei Zahlen.
+**Multiplikation (`*`)**: Multipliziert zwei Zahlen.
 
 ```python
 produkt = 4 * 2  # Ergibt 8
 ```
 
-4. **Division (`/`)**: Teilt eine Zahl durch eine andere.
+**Division (`/`)**: Teilt eine Zahl durch eine andere.
 
 ```python
 quotient = 16 / 2  # Ergibt 8
 ```
 
-5. **Ganzzahlige Division (`//`)**: Teilt eine Zahl durch eine andere und rundet das Ergebnis auf die nächste ganze Zahl ab.
+**Ganzzahlige Division (`//`)**: Teilt eine Zahl durch eine andere und rundet das Ergebnis auf die nächste ganze Zahl ab.
 
 ```python
 ganzzahliger_quotient = 17 // 2  # Ergibt 8
 ```
 
-6. **Modulo (`%`)**: Gibt den Rest einer Division zurück.
+**Modulo (`%`)**: Gibt den Rest einer Division zurück.
 
 ```python
 rest = 18 % 10  # Ergibt 8
 ```
 
-7. **Potenzierung (`**`)**: Erhebt eine Zahl in die Potenz einer anderen.
+**Potenzierung (`**`)**: Erhebt eine Zahl in die Potenz einer anderen.
 
 ```python
 potenz = 2 ** 3  # Ergibt 8
@@ -59,21 +59,21 @@ import math
 
 Hier sind einige Beispiele:
 
-1. **Quadratwurzel (`math.sqrt(x)`)**: Berechnet die Quadratwurzel einer Zahl.
+**Quadratwurzel (`math.sqrt(x)`)**: Berechnet die Quadratwurzel einer Zahl.
 
 ```python
 import math
 wurzel = math.sqrt(64)  # Ergibt 8
 ```
 
-2. **Exponentialfunktion (`math.exp(x)`)**: Berechnet $e^x$, wobei $e\approx 2,718282...$ die Eulersche Zahl ist.
+**Exponentialfunktion (`math.exp(x)`)**: Berechnet $e^x$, wobei $e\approx 2,718282...$ die Eulersche Zahl ist.
 
 ```python
 import math
 exponent = math.exp(3)  # Berechnet e^3
 ```
 
-3. **Logarithmus (`math.log(x, base)`)**: Berechnet den Logarithmus einer Zahl zu einer bestimmten Basis.
+**Logarithmus (`math.log(x, base)`)**: Berechnet den Logarithmus einer Zahl zu einer bestimmten Basis.
 
 ```python
 import math

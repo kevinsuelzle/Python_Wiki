@@ -97,13 +97,15 @@ print(num > 0)
 ```
 
 ### 16. **Diskussion**:
-    Integer: Wenn es nur ganze Zahlen Sinn ergeben, z.B. Alter, Geburtsjahr
-    Floats: Wenn auch Bruchteile relevant sind, z.B. Gewicht
+
+**Integer**: Wenn es nur ganze Zahlen Sinn ergeben, z.B. Alter, Geburtsjahr
+
+**Floats**: Wenn auch Bruchteile relevant sind, z.B. Gewicht
 
 ### 17. **Diskussion**:
-    Nein, Fließkommazahlen haben keine unendlich hohe Genauigkeit. Für viele Anwendungen reicht dies aus, aber
-    inbesondere
-    wenn sehr viele Berechnungen durchgeführt werden, können diese Ungenauigkeiten zu signifikanten Abweichungen führen.
-    Deswegen verwendet man zum Beispiel für Geldbeträge auch immer Integer und nutzt die kleines WÄhrungseinheit. Erst
-    zur
-    Ausgabe wird umgerechnet.
+Nein, Fließkommazahlen haben keine unendlich hohe Genauigkeit. Für viele Anwendungen reicht dies aus, aber
+inbesondere
+wenn sehr viele Berechnungen durchgeführt werden, können diese Ungenauigkeiten zu signifikanten Abweichungen führen.
+Deswegen verwendet man zum Beispiel für Geldbeträge auch immer Integer und nutzt die kleines WÄhrungseinheit. Erst
+zur
+Ausgabe wird umgerechnet.

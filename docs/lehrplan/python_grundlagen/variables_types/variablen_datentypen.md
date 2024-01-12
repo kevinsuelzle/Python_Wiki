@@ -1,11 +1,19 @@
 # Variablen und Datentypen
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4umrj_L6grQ?si=jTK_7DsrNdTpJirf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 In diesem Abschnitt lernen wir die Grundlagen von Variablen und verschiedenen Datentypen in Python kennen. Variablen
 sind wie Behälter, in denen wir Daten speichern können, während Datentypen die Art der Daten bestimmen, die in diesen
 Variablen gespeichert werden können.
 
 ## Bedeutung von Variablen in der Programmierung
-[60min]
+
+[//]: # ([60min])
 Variablen sind ein unverzichtbarer Bestandteil der meisten Programmiersprachen, einschließlich Python. Sie erfüllen
 mehrere wichtige Funktionen:
 
@@ -53,8 +61,16 @@ Grundlage für fast alle Operationen und Logiken in der Programmierung.
 
 ----
 
-# Variablen
-[75min]
+# Variablenbenennung
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vh9EhNoBbUg?si=00nEOu7edngNqrXx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+[//]: # ([75min])
 
 Eine Variable in Python kann erstellt werden, indem man ihr einen Namen gibt und
 ihr einen Wert zuweist. Dabei steht links immer der Variablenname und rechts der Wert, der in dieser gespeichert werden
@@ -75,7 +91,8 @@ print(willkommens_text)
 ```
 
 ## Namenskonventionen:
-[20min]
+
+[//]: # ([20min])
 - Variablennamen sollten klar und beschreibend sein. In Python verwenden wir oft Snake-Case,
   bei dem Wörter durch Unterstriche getrennt werden (z.B. `meine_variable`).
 - Variablennamen dürften nicht mit einer Zahl anfangen und keine Sonderzeichen außer dem Unterstrich enthalten.
@@ -85,10 +102,34 @@ kostet keine Ressourcen und kein Geld aussagekräftige Variablen zu nutzen.
 
 Eine Variable `a` könnte alles sein, während die Variable `zinssatz` recht sicher ein Zinssatz darstellen wird.
 
+## Besonderheit bei Pythons `=`
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zNgZVTrWxng?si=BsjNS8CHHqBJ02KB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+In Python ist auch die folgende Syntax erlaubt, um mit weniger 
+Codezeilen mehrere Variablen zuzuordnen:
+
+```python
+a = b = c = 10  # a,b,c haben alle den Wert 10
+d, e = 15, 20   # d = 15 und e = 20 
+```
 ----
 
 # Datentypen
-[60min]
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z85rA3SxHls?si=t8TWYWv5EtwUZtnG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+[//]: # ([60min])
 In Python gibt es verschiedene Datentypen, aber hier konzentrieren wir uns auf die grundlegendsten.
 
 ## Primitive Datentypen
@@ -142,7 +183,8 @@ ist_sonnig = False
 Von Booleans werden wir um Laufe der Woche noch mehr hören und sie auch schon direkt in unserem eigenen Programm nutzen.
 
 ### Übungsaufgaben
-[35min]
+
+[//]: # ([35min])
 
 ### 1. **Integer Addition** 🌶️️: 
 Schreibe ein Programm, das zwei Integers addiert.
@@ -199,6 +241,14 @@ Kann man mit Fließkommazahlen jede Dezimalzahl darstellen? Begründet eure Antw
 Natürlich, hier ist die Erläuterung zur Verwendung der `type()`-Funktion in Python in Markdown-Format:
 
 ## Die `type()`-Funktion 
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pEWPaCG4dGI?si=gFzVAMYYYHuBSDJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Die `type()`-Funktion in Python sagt dir, was für eine Art
 von Sache eine Variable ist. Sie verrät dir, ob es sich um eine Zahl, einen Text oder etwas 
 ganz anderes handelt.
@@ -219,7 +269,7 @@ verrät dir, was es ist.
 **Wofür man die `type()`-Funktion verwenden kann:**
 Die Verwendung der `type()`-Funktion in Python kann sehr nützlich sein. Hier sind einige Anwendungsfälle:
 
-1. **Fehlervermeidung:** Wenn du sicherstellen möchtest, dass dein Code mit den richtigen Daten arbeitet, kannst
+* **Fehlervermeidung:** Wenn du sicherstellen möchtest, dass dein Code mit den richtigen Daten arbeitet, kannst
    du `type()` verwenden, um sicherzustellen, dass die erwarteten Datentypen vorliegen. Wenn du beispielsweise eine
    Funktion schreibst, die nur mit Ganzzahlen arbeitet, kannst du überprüfen, ob die eingegebene Variable wirklich eine
    Ganzzahl ist, bevor du weitermachst.
@@ -232,11 +282,10 @@ def verdopple(zahl):
         return "Ungültige Eingabe"
 ```
 
-2. **Debugging:** Wenn du einen Fehler in deinem Code findest und herausfinden möchtest, warum er auftritt, kann
+* **Debugging:** Wenn du einen Fehler in deinem Code findest und herausfinden möchtest, warum er auftritt, kann
    die `type()`-Funktion dir helfen. Du kannst sie verwenden, um die Datentypen von Variablen während der Ausführung
    deines Programms zu überprüfen und so eventuelle Inkonsistenzen zu erkennen.
-
-3. **Dynamisches Programmieren:** In Python können Variablen unterschiedliche Datentypen haben, da Python eine
+* **Dynamisches Programmieren:** In Python können Variablen unterschiedliche Datentypen haben, da Python eine
    dynamische Typisierung unterstützt. Manchmal ist es hilfreich, den aktuellen Typ einer Variable während der Laufzeit
    zu überprüfen und den Programmfluss entsprechend anzupassen.
 

@@ -7,7 +7,6 @@
 <summary>
 🎦 Video
 </summary>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NOahBOThdoA?si=5P1c772PP5lTsPtp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 Programmierung ist für uns der Prozess der Erstellung von Anweisungen, die von einem Computer ausgeführt werden, um
@@ -154,6 +153,12 @@ da dieses speziell auf dieses Dateiformat ausgelegt ist.
 
 ### 4. Python-Interpreter als interaktive Umgebung
 
+<details>
+<summary>
+🎦 Video
+</summary>
+</details>
+
 ![Python](../images/py_console.png)
 
 Auch den Python-Interpreter selbst kann man als interaktive Programmierumgebung verwenden. Dazu führt man lediglich
@@ -163,6 +168,7 @@ Hier lassen sich kleine Dinge sehr einfach ausprobieren, aber es ist nicht empfe
 verwenden.
 
 ### Aufgabe: Das erste Programm 🌶️
+
 
 [//]: # ([25min; bis es bei jedem klappt])
 
