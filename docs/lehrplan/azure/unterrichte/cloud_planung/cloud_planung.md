@@ -26,7 +26,7 @@ Leichtgewichtige, verpackte Softwareeinheiten, die alle erforderlichen Code- und
 Über Container können schnell einzelne Services konfiguriert und deployed werden. Hierbei ist die Reproduzierbarkeit elementar. Aus diesem Grund werden Anforderungen und Anweisungen über z.B. ein `Dockerfile` definiert.
 
 ```bash
-FROM python:3.8
+FROM python:3.12
 WORKDIR /app
 COPY . /app
 RUN pip install flask

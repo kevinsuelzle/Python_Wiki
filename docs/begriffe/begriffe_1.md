@@ -34,7 +34,7 @@
 | `int()`  | Funktion, um Strings, die nur Zahlen enthalten in Integer umzuwandlen | [Referenz](https://docs.python.org/3/library/functions.html?highlight=int#int)                      |
 
 
-# Mathemetische  Operationen
+# Mathematische Operationen
 
 | Begriff     | Kurzerklärung                       | Link zur Referenz                                                                       |
 |-------------|-------------------------------------|-----------------------------------------------------------------------------------------|

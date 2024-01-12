@@ -18,7 +18,7 @@
 - Ich weiß, wie ich Variablen ausgeben
 - Ich weiß, wie ich meine Ausgaben formatieren kann
 
-# Mathemetische  Operationen
+# Mathematische Operationen
 
 - Ich kenne die mathematischen Grundoperationen in Python
 - Ich weiß, in welcher Reihenfolge diese ausgewertet werden, wenn ich mit komplexeren Ausdrücken arbeite
