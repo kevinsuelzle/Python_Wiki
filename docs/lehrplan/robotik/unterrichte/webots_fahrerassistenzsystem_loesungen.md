@@ -2,6 +2,14 @@
 
 ### A1: Sequenzen aufnehmen können [120 min] 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SuDZetKPkLM?si=UOUTSCmGOgxeXRUz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erweitern Sie jetzt den Tastatur-Controller (der es einem Benutzer erlaubt das Fahrzeug über die Tastatur zu steuern) so, dass die aufgenommenen Steuersignale an das Auto (den "Roboter") mit einer zeitlichen Information in einer Pandas Tabelle gespeichert werden, wenn der Benutzer die Aufnahme mit "r" (record start) startet und mit "r" (record stop" wieder beendet.
 
 Die zeitliche Information / das Timing ist später sehr wichtig um die Sequenz auch zeitlich korrekt wieder zu geben!
@@ -25,6 +33,13 @@ Die erzeugte Pandas-Tabelle soll dann in einer Datei fahrsequenz1.csv gespeicher
 Lösung? Siehe bei Lösung für A2
 
 ### A2: Sequenzen abspielen können [120 min] 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IYVGXMK6edI?si=a6B2Fm3D2YI_lrKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 Das Ergebnis von Aufgabe 1 ist, dass der Benutzer nun ein Fahrzeug steuern kann und die Steuersequenz als Tabelle in einer Datei wie z.B. fahrsequenz1.csv speichern kann.
 
@@ -181,6 +196,14 @@ while driver.step() != -1:
 
 ### A3: Test des Fahrsequenz-Assistenten bei Einparkvorgang [60 min] 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LnjXPwlIZxo?si=JjewjTilWI6jmYfq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Erstellen Sie jetzt ein Webot Welt, in der Sie neue andere Fahrzeuge aus Webots, mit denen wir bisher nicht gearbeitet haben, an den Straßenrand stellen. Lassen Sie dabei eine gute Parklücke Platz!
 
 Stellen Sie "Ihr" Fahrzeug auf die Straße etwas vor die Parklücke.
@@ -308,4 +331,5 @@ sequence_table
 
 Und hier ein Video, was in etwa als finale Lösung herauskommen könnte:
 
-[Video: Fahrsequenz-Assistent Experiment fürs Einparken](http://www.juergenbrauer.org/demos/city_einparken_luecke.mp4)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZDcYn0_F6KE?si=bL3uIOjk-H4GcIrx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+

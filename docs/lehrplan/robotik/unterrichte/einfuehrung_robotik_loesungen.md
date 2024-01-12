@@ -2,6 +2,13 @@
 
 ### A1: Internetrecherche zu Robotersimulatoren (90min) 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MSPQDFibTd0?si=zJ8fEV4XdbK4HqZF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Die Auswahl eines Robotersimulators auf den man setzen möchte, ist ein entscheindender Schritt! Daher sollte die Auwahl wohlüberlegt erfolgen.
 
 Wir wollen einen aktuellen und State-of-the-Art Robotersimulator im Folgenden verwenden und die Roboter im Simulator in Python programmieren.
@@ -63,6 +70,14 @@ Referenzen Webots:
 
 ### A2: Installation von Webots und Überblick verschaffen (90 min) 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o56vxnH50ew?si=xDM8b1Lvq-t8y4oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Da bei der vorherigen Aufgabe Webots in allen Spalten ein "J" erhalten hat, ist es unser Robotersimulator in dem Python-Lernpfad!
 
 Installiere daher jetzt als nächstes Webots.
@@ -97,6 +112,14 @@ Colllage:
 ![Alle Roboter aus den ersten 19 Demos](images/webots_collage_roboter.png)
 
 ### A3: Bekannte Firmen und Forschungseinrichtungen die Webots verwenden (20 min) 🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9UzkR2qSfW8?si=jFZXeQW8A_zl38oV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Versuche herauszufinden, welche Firmen und Forschungsinstitutionen Webots verwenden? Gibt es bekannte große Player, die Webots einsetzen?
 

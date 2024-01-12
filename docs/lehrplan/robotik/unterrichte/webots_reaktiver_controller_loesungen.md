@@ -2,6 +2,14 @@
 
 ### A1: Einarbeitung in Braitenberg Vehikel [60 min] 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ETi3jQ2oeIc?si=OeEiBz450yook6lM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Braitenberg Vehikel sind ein historisch wichtiger Meilenstein in der Geschichte der Robotik. Für uns - so werden sie sehen - bieten sie eine tolle Möglichkeit einfache Roboterkontrollarchitekturen umzusetzen.
 
 Führen Sie nun eine Internet-Recherche durch:
@@ -57,6 +65,14 @@ Zusätzliche Überlegungen
 Ein einfaches Braitenberg-Vehikel kann also eine Verhaltensweise wie Hindernisvermeidung durch eine direkte und einfache Kopplung von Nähesensoren und Motoren erreichen.
 
 ### A2: Braitenberg Vehikel in Python/Webots programmieren [150 min] 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xePhTjYqXoE?si=OiQlNFmlH3nTKNoz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Sie sollen nun ein einfaches Braitenberg Vehikel in Webots mit Python umsetzen.
 

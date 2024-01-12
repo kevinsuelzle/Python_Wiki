@@ -2,6 +2,14 @@
 
 ### A1: Demo nachvollziehen und Kopie einer Webots Welt anlegen [15 min] 🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1McaumaFQ9c?si=v0mOappPduaciPOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Wir wollen es uns einfach machen: wir nehmen eines der bestehenden Demos aus Webots als Grundlage für das Folgende. Öffnen Sie dazu in Webots unter
 
     "Help --> Webots Guided Tour ..."
@@ -22,6 +30,14 @@ Erstellen Sie jetzt ein neues Projektverzeichnis und kopieren Sie die gps.wbt Da
 
 ### A2: C-Controller in Python umschreiben [45 min] 🌶️🌶️ 
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-HSsxj76l4c?si=WNFNYaaoZRovAWa1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Sie haben ja bereits einmal für den epuck-Roboter einen Python-Controller geschrieben. Der "myBot" ist aus dem vorherigen Demo hat allerdings etwas andere Distanzsensorbezeichnungen.
 
 Finden Sie durch "Blick auf den C Code" heraus welche es sind und erstellen Sie analog einen neuen Python-Controller für diese Welt und diesen Roboter "myBot", so dass die Hindernissvermeidung aus dem C-Demo genauso in Python abläuft!
@@ -29,6 +45,14 @@ Finden Sie durch "Blick auf den C Code" heraus welche es sind und erstellen Sie 
 Lösung für diese Aufgabe? Siehe Lösung bei A3!
 
 ### A3: GPS-Koordinaten in Python auslesen und als Pandas Tabelle wegschreiben [45 min] 🌶️🌶️🌶
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/paPfy0l0tb0?si=TMtaEs-skuUJxYNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Ergänzen Sie nun Ihren Webots Python Controllercode so, dass sie ...
 
@@ -146,6 +170,14 @@ while robot.step(TIME_STEP) != -1:
 ```
 
 ### A4: Analyse der vom Roboter besuchten Koordinaten [60 min] 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oxgND0waLDw?si=tED3ZjpAqrFtHNkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Wir haben jetzt eine tolle Datengrundlage (für Data Science!): in "koordinaten.csv" stehen alle Koordinaten drin, die der Roboter besucht hat. Vor lauter Zahlen sehen wir aber nichts. Es "schreit hier regelrecht" nach einer Visualisierung der vom Roboter besuchten Koordinaten / Stellen in der Welt.
 

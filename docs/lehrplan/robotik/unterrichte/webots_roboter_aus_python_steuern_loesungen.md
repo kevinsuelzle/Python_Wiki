@@ -2,6 +2,14 @@
 
 ### A1: Das erste Webots Tutorial durcharbeiten (90min) 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6m239dRzwaQ?si=KkJ1AhFg5I7Li0F_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Für Webots gibt es bereits eine eigene Dokumentation. Sie finden Sie unter
 
 [https://cyberbotics.com/doc/guide/index](https://cyberbotics.com/doc/guide/index)
@@ -13,6 +21,14 @@ Ein guter Einstieg in Webots bietet dabei das folgende Tutorial "Your First Simu
 Arbeiten Sie dieses Tutorial nun durch! Angeblich braucht man nur 30min. Der Ersteller dieses Skriptteils schätzt die Zeit für Anfänger aber deutlich höher ein, eher 90min!
 
 ### A2: Eine erste eigene Welt erstellen (30min) 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/23rw6g0iDc8?si=gpFvk4wXaSvuQm8L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie nun eine neue Webots Welt, die sie anders als im Tutorial zuvor selber gestalten.
 
@@ -43,6 +59,14 @@ Lösung:
 [Lösung .wbt-Datei](webots_loesungen/eigene_welt_viele_hindernisse/worlds/quadratische_welt_viele_hindernisse.wbt)
 
 ### A3: Den epuck-Roboter aus Python heraus steuern (90 min) 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Knayk-MdgtM?si=G65vBcLvMG4WlKFp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 In dem Tutorial, das Sie in Aufgabe 1 durchgearbeitet haben, wurde bereits ein Robotercontroller in Python geschrieben.
 

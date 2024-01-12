@@ -2,6 +2,14 @@
 
 ### A1: Webots und Fahrzeugsimulation [15 min] 🌶️🌶
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X7srKA2SlwM?si=vuMuGjCTjgzov1as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Vielleicht denken Sie: "Webots ist doch ein Robotersimulator? Kann man da wirklich auch Fahrzeuge mit simulieren?"
 
 - Versuchen Sie herauszufinden, ob Webots wirklich die Simulation von Fahrzeugen unterstützt!
@@ -24,6 +32,14 @@ Folgende Fahrzeuge sind bereits verfügbar:
 Quelle: [Link](https://cyberbotics.com/doc/automobile/proto-nodes)
 
 ### A2: Code-Snippet zur Steuerung eines Fahrzeugs [45 min] 🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VNoXohoSMVg?si=fjBRNrgaP9hcEeUe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Nutzen Sie die Webots-Dokumentation um herauszufinden wie man ein Fahrzeug aus Python heraus steuern kann! Suchen Sie nach solch einem Code-Snippet!
 
@@ -64,6 +80,14 @@ D.h., das Auto wird so in dem Code Snippet gesteuert, dass es mal nach links, ma
 
 ### A3: Stadt-Welt kopieren [20 min] 🌶️🌶️
 
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jZmjviWSZ_I?si=dPmbgpwsC9VWI-H2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 Wir wollen möglichst rasch eine Welt mit Straßen, Gebäuden, etc., ohne, dass wir diese selber aufbauen müssen.
 
 Daher: Starten Sie die "Help --> Webots Guided Tour" die Demos und wählen Sie das "city.wbt" Demo aus.
@@ -91,6 +115,14 @@ Unter Linux ist das beispielsweise:
 Dann unter "File --> New Project Directory" ein neues Projektverzeichnis machen und die Welt city.wbt dort unter worlds reinkopieren.
 
 ### A4: Fahrzeug mit Tastatur steuern [120 min] 🌶️🌶️🌶️
+
+<details>
+<summary>
+🎦 Lösungsvideo
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7C2OQeYpbPg?si=lXBEoMwxDvRZO1rR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Erstellen Sie nun einen neuen Python-Controller, so dass der Benutzer per Tastatur das Fahrzeug durch die simulierte Stadt fahren kann!
 

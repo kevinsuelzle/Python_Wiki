@@ -24,8 +24,6 @@ Solche Hindernisse können dynamischer Natur sein (eine Katze oder eine Person, 
 
 Wir konzentrieren uns hier der Einfachheit halber nur auf den Steueranteil, d.h. schreiben einen Controller, der Sequenzen aufnehmen und dann abspielen kann. Den Regelungsanteil, d.h. das Reagieren auf Objekte über Sensordaten blenden wir hier aus.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZDcYn0_F6KE?si=bL3uIOjk-H4GcIrx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ## Aufgaben [300 min]
 
 ### A1: Sequenzen aufnehmen können [120 min] 🌶️🌶️
