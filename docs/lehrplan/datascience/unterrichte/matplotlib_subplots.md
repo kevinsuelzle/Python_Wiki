@@ -1,5 +1,13 @@
 # Matplotlib: Subplots
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0QSRF4V0Oso?si=GfJetdIoc0MwoAKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einführung [10 min]
 
 Eine der nützlichsten Funktionen in Matplotlib ist die Erstellung von Subplots. Subplots ermöglichen es, mehrere Plots in einem einzigen Fenster oder einer Bildfläche zu organisieren, was für die Analyse und den Vergleich von Daten sehr hilfreich sein kann.

@@ -1,5 +1,13 @@
 # Exkurs: Zeitstempel und Pandas / Matplotlib / Seaborn
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CBZDkfi0O1c?si=5k_iHJHUHmckZchL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einführung [5 min]
 
 In der Welt der Datenanalyse spielen Zeitstempel eine wesentliche Rolle. Sie dienen als fundamentale Marker für Zeitreihendaten, die in vielen Bereichen wie Finanzen, Wissenschaft, Wirtschaft und Technologie unerlässlich sind. Die Bibliotheken Pandas, Matplotlib und Seaborn in Python bieten hierzu viele Werkzeuge zur Handhabung, Analyse und Visualisierung von Zeitstempeldaten.

@@ -1,5 +1,13 @@
 # Exkurs: Thema: Zeitreihenanalyse mit Pandas und Matplotib 
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cHjGHP3oshA?si=fc2Qy6y__POj2-m1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einführung [10 min]
 
 Zeitreihenanalysen spielen in vielen Anwendungsbereichen eine zentrale Rolle. Sie ermöglichen es, Muster, Trends und saisonale Schwankungen in Datensätzen über Zeit zu erkennen und zu analysieren. Die Bibliotheken Pandas und Matplotlib in Python sind dabei unverzichtbare Werkzeuge. Pandas bietet effiziente und intuitive Methoden zur Manipulation und Analyse von Zeitreihendaten, während Matplotlib leistungsstarke Visualisierungsfunktionen bietet.

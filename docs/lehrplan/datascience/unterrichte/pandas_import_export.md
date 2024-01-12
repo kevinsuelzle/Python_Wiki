@@ -1,5 +1,13 @@
 # Pandas für Datenimport und -export [10 min]
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B4b6tNP5_rE?si=rDhJMQ_Os-EayskJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einführung
 
 Pandas ist eine leistungsstarke Python-Bibliothek, die für die Datenmanipulation und -analyse verwendet wird. Sie bietet speziell für den Import und Export von Daten eine Vielzahl an Funktionen, die das Arbeiten mit verschiedenen Datenformaten wie CSV, Excel, JSON, HTML und SQL-Datenbanken erleichtern.

@@ -1,5 +1,13 @@
 # Pandas Einführung
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kX57CzbVNT4?si=s0iruimi_YRs0dv_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einleitung [5 min]
 
 Pandas ist eine leistungsstarke, flexible und einfach zu verwendende Open-Source-Bibliothek, die in Python für Datenmanipulation und -analyse entwickelt wurde. In dieser Einführung konzentrieren wir uns auf drei Hauptkomponenten von Pandas: DataFrames, Series und Index.

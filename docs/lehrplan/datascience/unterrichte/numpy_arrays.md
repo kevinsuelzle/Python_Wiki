@@ -1,5 +1,13 @@
 # NumPy: Einführung und NumPy Arrays
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c-u25uel9d0?si=Ld4LhIGjaH6v1bpb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einführung [15min]
 
 NumPy, ein Akronym für Numerical Python, ist eine wesentliche Bibliothek im Python-Ökosystem und dient als Grundlage für eine Vielzahl von wissenschaftlichen und numerischen Berechnungen. Entwickelt, um komplexe mathematische Operationen zu vereinfachen und zu beschleunigen, hat sich NumPy als unverzichtbares Werkzeug in den Bereichen Datenwissenschaft, Maschinelles Lernen, Ingenieurwesen und wissenschaftliche Forschung etabliert.

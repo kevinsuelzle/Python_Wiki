@@ -1,6 +1,14 @@
 # Matplotlib: Linienplots
 
-## Einführung [10min]
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qBlMqZiDjhM?si=24lT5tquXyOfcq_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
+## Einführung
 
 Matplotlib, eine der prominentesten Bibliotheken in der Python-Programmierwelt, bietet vielfältige Möglichkeiten zur Datenvisualisierung. Unter den verschiedenen Plot-Typen sind Linienplots besonders beliebt. Diese Darstellungsform ist nicht nur ästhetisch ansprechend, sondern auch ungemein informativ, um Trends und Muster in Daten sichtbar zu machen. Daher sind Linienplots ein wichtiges Werkzeug für Data Science.
 

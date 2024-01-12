@@ -1,4 +1,13 @@
-# Einführung in Data Science [10 min]
+# Einführung in Data Science 
+
+[//]: # ([10 min])
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8rGP5ErEKOU?si=thReMME17WkPEXzL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 Was ist Data Science?
 
@@ -15,7 +24,9 @@ graph LR;
     D(Daten) --> B["DATA SCIENCE"] --> W(Wissen)
 ```
 
-# Der Data Science Prozess [20 min]
+# Der Data Science Prozess 
+
+[//]: # ([20 min])
 
 Die Frage ist, ob man diesen Prozess ("mache aus Daten neues Wissen") irgendwie als einen Standardprozess formulieren kann. Hierzu gibt es verschiedene Data Science Prozess Modelle. Das vielleicht bekannteste Data Science Prozess Modell ist das *CRISP-DM* Prozess Modell.
 

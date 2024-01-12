@@ -1,5 +1,13 @@
 # NumPy: Slicing von Arrays
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oQnyM0iszDU?si=BOITXoB3MeDnmtXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einführung [15min]
 
 In der Welt der Datenverarbeitung und wissenschaftlichen Berechnungen ist NumPy eine unverzichtbare Bibliothek im Python-Ökosystem. Ein Kernkonzept von NumPy ist das 'Slicing' (Zuschneiden) von Arrays, eine Technik, die es ermöglicht, effizient auf Teile eines Arrays zuzugreifen und diese zu manipulieren.

@@ -1,5 +1,13 @@
 # Exkurs: Matplotlib: Ticks
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nGIULFlvms0?si=7YPUeZ2q21CwFg9X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einführung [10 min]
 
 Eines der Kernkonzepte in Matplotlib sind die "Ticks", kleine Markierungen auf den Achsen eines Diagramms, die den Maßstab und die Position von Datenpunkten kennzeichnen.

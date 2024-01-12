@@ -1,5 +1,13 @@
 # Pandas: Umgang mit fehlenden Daten in Tabellen mit Pandas
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kWOgUzCRFHU?si=ahSWXNBVHLQR5PeC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 ## Einführung [20min]
 
 In der Welt der Datenanalyse und des maschinellen Lernens ist der Umgang mit fehlenden Daten ein häufiges und herausforderndes Problem. Daten können aus vielen Gründen unvollständig sein, wie z.B. durch Fehler bei der Datenerfassung, fehlende Einträge in den Quelldaten oder durch die Art der Datensammlung selbst. Die Python-Bibliothek Pandas bietet uns hier viele Hilfestellungen für die Handhabung solcher unvollständigen Datensätze.
