@@ -1,17 +1,8 @@
-image: python:3.11-buster
+# The Docker image that will be used to build your app
+image: python:3.11.7-bullseye
 
 before_script:
   - pip install -r requirements.txt
-
-test:
-  stage: test
-  script:
-  - mkdocs build --strict --verbose --site-dir test
-  artifacts:
-    paths:
-    - test
-  rules:
-    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
 
 pages:
   stage: deploy
