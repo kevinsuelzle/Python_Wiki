@@ -295,8 +295,16 @@ in Python arbeitest.
 
 ## Strings, List, Tupel, Set, Dictionary
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FaXcBl25hFQ?si=OOKZKs3NAauT4MAz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 ### Strings (Zeichenketten):
-[45min]
+
+[//]: # ([45min])
 
 Strings werden verwendet, um Text zu speichern. In Python gibt es eine Vielzahl von Funktionen und Methoden, die es
 erlauben Strings zu verarbeiten. Strings in Python sind Unicode, das heißt so ziemlich jedes Zeichen, was es gibt kann
@@ -320,7 +328,8 @@ Strings sind für uns sehr wichtig. Der Datentyp ist sehr universell und typisch
 Ausgaben eine Art String sein.
 
 ### Listen
-[45min]
+
+[//]: # ([45min])
 
 Listen in Python sind eine der vielseitigsten Datenstrukturen und werden verwendet, um eine geordnete Sammlung von
 Elementen zu speichern.
@@ -388,7 +397,8 @@ Das sagt uns, dass wir "our of range" sind, also außerhalb der möglichen Eleme
 
 
 ### Aufgaben
-Zeit: 20min
+
+[//]: # (Zeit: 20min)
 
 ### 1. **Liste erstellen** 🌶️️:
 Erstelle eine Liste mit den Zahlen von 1 bis 10.
@@ -411,7 +421,8 @@ Erstelle eine neue Liste aus der Liste von Aufgabe 1, die nur gerade Zahlen enth
 [Lösungen](solution_3.md)
 
 ### Sets
-[45min]
+
+[//]: # ([45min])
 
 Sets in Python sind eine Datenstruktur, die für die Speicherung einer ungeordneten Sammlung von einzigartigen Elementen
 verwendet wird. Das heißt kein Element kann doppelt vorkommen.
@@ -427,7 +438,8 @@ print(buchstaben)
 ```
 
 ### Dictionaries
-[45min]
+
+[//]: # ([45min])
 
 Mit Dictionaries können wir Schlüssel-Wert-Paare speichern. Dies ist die vielleicht wichtigste Datenstruktur in Python
 und wird auch von der Sprache selbst in hohem Maße genutzt. Sehr viele Dinge in Python lassen sich im Grunde auf
@@ -445,7 +457,8 @@ print(name)  # Gibt "Max" aus
 ```
 
 # Aufgaben
-[20min]
+
+[//]: # ([20min])
 
 Wenn ihr bei einer Aufgabe nicht wisst, wie es geht oder euch nicht sicher seit, versucht zuerst bei einer Suchmaschine
 eurer Wahl nach einem Lösungsweg zu suchen. Das Finden von Informationen ist ein wichtiger Skill als Software-Entwickler.

@@ -3,8 +3,16 @@ In Python können wir alle einfachen mathematischen Operationen durchführen. Di
 von Algorithmen und der Lösung von Problemen. In diesem Abschnitt soll es nur um mathematische Operationen gehen,
 die wir mit Ganzzahlen und Fließkommazahlen verwenden können.
 
-## Abschnitt 1: Grundoperationen
-[30min]
+## Grundoperationen
+
+[//]: # ([30min])
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b62k5bR3fsY?si=zcEu6Ef2CEEP9jcS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 **Addition (`+`)**: Addiert zwei Zahlen.
 ```python
@@ -47,7 +55,15 @@ potenz = 2 ** 3  # Ergibt 8
 ```
 
 ## Erweiterte Operationen
-[30min]
+
+[//]: # ([30min])
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZntIVAUqqII?si=Aw37qj3b9AnxH67D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 Für komplexere mathematische Operationen wie Wurzeln oder trigonometrische Funktionen benötigst Du das `math`-Modul, 
 das viele nützliche Funktionen bietet. 
@@ -66,7 +82,7 @@ import math
 wurzel = math.sqrt(64)  # Ergibt 8
 ```
 
-**Exponentialfunktion (`math.exp(x)`)**: Berechnet $e^x$, wobei $e\approx 2,718282...$ die Eulersche Zahl ist.
+**Exponentialfunktion (`math.exp(x)`)**: Berechnet e^x, wobei e ~ 2,718282... die Eulersche Zahl ist.
 
 ```python
 import math
@@ -81,7 +97,15 @@ log_nat = math.log(8, 2)  # Berechnet den Logarithmus von 8 zur Basis 2
 ```
 
 ## Reihenfolge der Operationen
-[30min]
+
+[//]: # ([30min])
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dJh7L2rlYlE?si=jX4efDDlf8oEU1ST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 In Python, wie in den meisten Programmiersprachen, ist die Reihenfolge der mathematischen Operationen wichtig und folgt 
 etablierten mathematischen Konventionen. Diese Reihenfolge bestimmt, in welcher Reihenfolge die Operationen in einem 

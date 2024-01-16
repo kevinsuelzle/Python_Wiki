@@ -1,5 +1,12 @@
 # Listen in Python
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5jd6BQPjiUY?si=4B9fwr7e_X3XhoVm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Listen in Python sind eine der grundlegendsten und nützlichsten Datentypen. Sie ermöglichen es uns, mehrere Elemente in
 einer einzigen Struktur zu speichern, auf die wir dann über ihre Indizes zugreifen können.
 
@@ -9,7 +16,8 @@ Listen in Python sind eine der vielseitigsten Datenstrukturen und werden verwend
 um eine Sammlung von Elementen zu speichern. Hier sind einige Schlüsseleigenschaften:
 
 ## Eigenschaften von Listen
-[25min]
+
+[//]: # ([25min])
 
 1. **Geordnet**:
     - Listen speichern Elemente in einer festgelegten Reihenfolge.
@@ -31,7 +39,8 @@ um eine Sammlung von Elementen zu speichern. Hier sind einige Schlüsseleigensch
     - Listen können Duplikate von Elementen enthalten, d.h., ein Element kann mehrmals in einer Liste vorkommen.
 
 ## Mutabilität und Immunität
-[20min]
+
+[//]: # ([20min])
 
 - **Mutability** bedeutet, dass ein Objekt nach seiner Erstellung verändert werden kann, ohne dabei ein anderes Objekt 
   zu werden. Listen sind mutable; daher können wir Elemente hinzufügen, entfernen oder ändern.
@@ -39,7 +48,14 @@ um eine Sammlung von Elementen zu speichern. Hier sind einige Schlüsseleigensch
   für einen immutablen Datentyp in Python ist ein Tupel, welches wir auch bald kennenlernen.
 
 ## Listenoperationen
-[60min]
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AyTdReLQ1lo?si=HGM6HhJ-8BvUe1BN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+[//]: # ([60min])
 
 Schauen wir uns kurz ein paar Beispiele an wie man mit Listen arbeiten kann. Das wichtigste zuerst, nämlich die
 Erstellung von Listen.
@@ -71,7 +87,8 @@ Verwendung dieser Methoden können Listen effektiv zur Verarbeitung von Daten in
 genutzt werden.
 
 ### Beispiel
-[20min]
+
+[//]: # ([20min])
 
 Stellen wir uns vor, wir haben eine Aufgabe, bei der wir eine Liste von Zahlen verwalten und verschiedene Operationen
 darauf durchführen müssen. Wir werden:
@@ -112,7 +129,14 @@ In diesem Beispiel:
 - Und schließlich suchen wir nach spezifischen Elementen (z.B. der Position von 5 und der Anzahl der 4 in der Liste).
 
 ### Slicing
-[45min]
+
+[//]: # ([45min])
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ukChKexq_BM?si=2p-zvDYEzwwJBhYN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 Mit sogenannten Slices kann man auch direkt auf mehrere Elemente zugreifen:
 
@@ -144,7 +168,8 @@ print(finale_liste) # gibt [1,2,3,4,5,4,3,2,1] aus
 
 
 # Aufgaben
-[30min]
+
+[//]: # ([30min])
 
 ### 1. **Erstellen einer Liste:** 🌶️️
 Erstelle eine Liste mit den Zahlen 1 bis 5.

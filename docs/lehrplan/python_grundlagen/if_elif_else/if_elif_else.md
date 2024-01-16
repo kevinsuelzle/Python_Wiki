@@ -5,7 +5,14 @@ bestimmter Bedingungen zu treffen.
 In Python verwenden wir dafür `if`, `elif` (else if) und `else` zur Steuerung des Programmflusses:
 
 ## Grundstruktur
-[20min]
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GA8Oj97qUXM?si=Ne0kUbnFBrmg-w0a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+[//]: # ([20min])
 Die grundlegende Struktur einer `if-else`-Verzweigung in Python sieht folgendermaßen aus:
 
 ```python
@@ -18,7 +25,8 @@ else:
 Die `bedingung` ist ein Ausdruck, der entweder wahr (`True`) oder falsch (`False`) ergibt. Die Anweisungen müssen eingerückt sein! Dies ist ein fundamentales Prinzip in Python, mit dem wir sehr schnell vertraut sein werden.
 
 ### Bedingungen
-[50min]
+
+[//]: # ([50min])
 In Python werden Bedingungen in `if`-Abfragen verwendet, um zu bestimmen, ob bestimmte Anweisungen ausgeführt werden 
 sollen oder nicht. Diese Bedingungen können auf unterschiedliche Weise formuliert werden, um die Logik des Programms 
 zu steuern. 
@@ -59,7 +67,15 @@ else:
 ```
 
 ##  if-elif-else-Abfragen
-[30min]
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r-OHMDZNyzQ?si=2lp4Dxp_TS4immP2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+[//]: # ([30min])
 Oft benötigen wir mehr als zwei Zweige, zum Beispiel wenn wir für verschiedene Altersklassen andere Aktionen ausführen 
 müssen oder wollen.
 
@@ -95,7 +111,8 @@ einer oder mehrere Bedingungen ein zentraler Bestandteil der Softwareentwicklung
 
 
 # Aufgaben
-[70min]
+
+[//]: # ([70min])
 ### 1. **Einfache if-Abfrage**: 🌶️️
 Schreibe ein Programm, das überprüft, ob eine Variable `x` größer als 10 ist. Gib eine 
 entsprechende Nachricht aus.
@@ -144,7 +161,8 @@ Erstelle ein Programm, das unterschiedliche Eintrittspreise basierend auf dem Wo
 Schreibe ein Programm, das überprüft, ob ein gegebenes Jahr ein Schaltjahr ist oder nicht.
 
 # Anspruchsvolle Aufgaben
-[30min]
+
+[//]: # ([30min])
 ### **Benutzereingaben filtern und sortieren** 🌶️️🌶️️🌶️️
 
 Aufgabenstellung:
