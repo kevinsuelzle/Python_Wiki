@@ -28,8 +28,8 @@ nav:
               - Variable Datentypen: lehrplan/python_grundlagen/variables_types/variablen_datentypen.md
               - Input Output: lehrplan/python_grundlagen/input_output/input_output.md
               - Mathematische Operationen: lehrplan/python_grundlagen/math_operations/math_operations.md
-              - Debugging: lehrplan/python_grundlagen/debugging/debugging.md
               - Verzweigungen: lehrplan/python_grundlagen/if_elif_else/if_elif_else.md
+              - Debugging: lehrplan/python_grundlagen/debugging/debugging.md
               - Listen: lehrplan/python_grundlagen/lists/lists.md
               - Tupel: lehrplan/python_grundlagen/tupel/tupel.md
               - Strings: lehrplan/python_grundlagen/strings/strings.md
