@@ -21,7 +21,7 @@ pages:
   stage: deploy
   script:
     - git checkout deployment
-    - git merge main
+    - git merge origin/main
     - mkdocs build --site-dir public # --strict --verbose
     - git add .
     - git commit -m "Deployment commit"
