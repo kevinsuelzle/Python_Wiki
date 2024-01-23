@@ -1,4 +1,26 @@
 # Lösungen
+
+### Aufgabe: Von diesen sieben Tricks sollt ihr nichts wissen🌶
+
+**Gründe für Fehler:**
+
+* Eigener Code
+* Fremder Code im eigenen Projekt
+* Fehler in der genutzten Bibliothek
+* Compiler hat einen Fehler
+* Hardware hat einen Fehler
+
+**7 Tips:**
+
+* (Fremd-)Code und Fehlermeldungen lesen
+* Nach Fehlermeldung in Internet suchen
+* Logger nutzen
+* Debugger nutzen
+* Fehler repruduzieren
+* Tests schreiben
+* Statsiche Codechecker verwenden
+
+
 Die Lösungen beziehen sich auf die Aktionen, die ausgeführt werden sollen, um mit dem Debugger zu interagieren:
 
 

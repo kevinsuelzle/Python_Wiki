@@ -1,50 +1,28 @@
-# Wie gehen wir mit Fehlern beim Programmieren um?
+# Debugger
 
 Programmieren ist ein komplexer Prozess, der Präzision und Aufmerksamkeit erfordert. Trotzdem sind Fehler beim 
-Programmieren allgegenwärtig. Hier sind einige Gründe, warum Fehler entstehen, und die möglichen Auswirkungen, 
-die sie haben können.
+Programmieren allgegenwärtig. Um diese Fehler zu finden, hilft es oft, den Code Schritt für Schritt ablaufen zu lassen,
+sodass wir den Programmablauf als Menschen verstehen können. Ein **Debugger** erlaubt einem genau diese Art der 
+Codedurchführung. Wir werden in diesem Kapitel sehen, wie man den Debugger nutzen kann.
 
-## Gründe für Programmierfehler
-[20min]
-1. **Komplexität des Codes**: 
-   Je komplexer ein Programm ist, desto schwieriger ist es, alle Aspekte zu überblicken und Fehler zu vermeiden.
 
-2. **Menschliche Fehler**: 
-   Programmierer sind Menschen und können deswegen wie alle Menschen auch Fehler machen. Von simplen Übersehen 
-   bis zu Missverständnissen.
+### Aufgabe: Käferalarm🐞
+Schau dir deises [🎦Video](https://youtube.com/shorts/P9ZkTIgsByk?si=FtUJerw9KcRIy9Tx) an und erkläre,
+wie der Begriff "Bug" für Fehler in der Informatik entstanden ist. Warum heißt das Entfernen von Fehlern dann "Debugging"?
 
-3. **Zeitdruck und Arbeitsbelastung**: 
-   Unter Zeitdruck oder bei hoher Arbeitsbelastung können wichtige Details leicht übersehen werden.
 
-Fehler sind beim Programmieren unvermeidbar. Es gibt keine Software auf der Welt, die fehlerfrei ist. Dafür gibt es zu
-viele potentielle Fehlerquellen. 
+### Aufgabe: Von diesen sieben Tricks sollt ihr nichts wissen🌶
 
-### Aufgabe / Diskussion
-[30 min]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X3jw1JVNdPE?si=I_RzovjKKbkQVRkC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Aufgabenstellung:
-- Diskutiert in 2er Gruppen, welche weiteren Gründe zu Fehlern führen können.
-- Welche Auswirkungen können Fehler in Software haben? Geht sowohl auf technische als auch auf Auswirkungen für 
-die Firma ein.
-     
-## Debugging von Python Anwendungen
-[75min]
-Als Debugging bezeichnet man das Finden und Beseitigen von Fehlern.
+Schau dir das [Video von Fireship](https://youtu.be/X3jw1JVNdPE?si=qHCernkCvp5gb8dK) an und beantworte die folgenden
+Fragen:
 
-Wieso nennt sich das eigentlich Debugging? 
+* Welche Gründe werden am Anfang des Videos als Gründe für das Auftreten von Fehlern beim Programmieren genannt.
+  Sortiere diese Fehler nach der Häufigkeit.
+* Welche sieben Tipps gibt das Video, um Fehler zu vermeiden, finden und zu korrigieren?
 
-Früher, als Computer noch mit Röhren funktioniert haben, haben es sich wohl ab und an
-echte Käfer (engl. Bugs) in diesen Röhren gemütlich gemacht und zu Fehlern geführt. Dementsprechend hat man diese dann 
-'entkäfert'.
-
-Effizientes Debuggen besteht aus einer Mischung aus Erfahrung, systematischem Vorgehen und dem Nutzen der vorhandenen 
-Tools.
-
-### Nutzen der `print`-Funktion zum Debuggen
-
-Die einfachste Form des Debuggings kann durch das Einfügen von `print`-Anweisungen im Code erfolgen, um Werte von 
-Variablen zu einem bestimmten Zeitpunkt auszugeben. Dies wird sehr häufig verwendet, ist jedoch nicht optimal. Deswegen
-gehen wir hier auch nicht weiter darauf ein.
+[Lösung](solution.md#aufgabe-von-diesen-sieben-tricks-sollt-ihr-nichts-wissen)
 
 ### Der Debugger
 
@@ -54,19 +32,16 @@ Programms zu einem bestimmten Zeitpunkt zu überprüfen, Variablenwerte zu inspi
 kontrollieren. 
 
 Debugger haben alle ähnliche Funktionen:
+* **Haltepunkte setzen**: Erlaubt es dem Entwickler, die Ausführung des Programms an bestimmten Punkten anzuhalten.
+* **Schrittweise Ausführung**: Führt das Programm Zeile für Zeile aus, um die Auswirkungen jeder Anweisung zu beobachten.
+* **Variablen inspizieren**: Zeigt die aktuellen Werte von Variablen im Programm an.
+* **Programmfluss steuern**: Erlaubt es, den Ablauf des Programms zu steuern, beispielsweise durch Fortsetzen der Ausführung oder Rückkehr zu einem früheren Punkt.
 
-1. **Haltepunkte setzen**: 
-    Erlaubt es dem Entwickler, die Ausführung des Programms an bestimmten Punkten anzuhalten.
+Im Folgenden werden wir 3 Varianten den Debugger zu benutzen ansehen:
 
-2. **Schrittweise Ausführung**: 
-    Führt das Programm Zeile für Zeile aus, um die Auswirkungen jeder Anweisung zu beobachten.
-
-3. **Variablen inspizieren**: 
-    Zeigt die aktuellen Werte von Variablen im Programm an.
-
-4. **Programmfluss steuern**: 
-    Erlaubt es, den Ablauf des Programms zu steuern, beispielsweise durch Fortsetzen der Ausführung oder Rückkehr 
-   zu einem früheren Punkt.
+* Eingebauter Debugger von **VSCode**
+* Eingebauter Debugger von **PyCharm**
+* Konsolendebugger mit `pdb` 
 
 ### Verwendung von `pdb`
 
@@ -176,6 +151,8 @@ ergebnis = multipliziere(3, 3)
 print(ergebnis)
 ```
 [Lösungen](solution.md)
+
+
 
 ## Nutzen von Logs zur Fehlersuche
 [60min]
