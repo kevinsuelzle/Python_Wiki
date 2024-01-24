@@ -23,20 +23,20 @@
 - Ich kenne die mathematischen Grundoperationen in Python
 - Ich weiß, in welcher Reihenfolge diese ausgewertet werden, wenn ich mit komplexeren Ausdrücken arbeite
 
-# Debugging
-
-- Ich weiß, wieso Fehler passieren können
-- Ich kenne die Grundlagen wie ich den Python Debugger benutzen, inbesondere ..
-  - Haltepunkte
-  - Schrittweise Ausführung
-  - Inspektion von Variablen
-
 # Verzweigungen
 
 - Ich weiß, wieso Verzweigungen wichtig sind.
 - Ich weiß, wie ich einfache Verzweigungen mit `if`, `else` und `elif` programmiere.
 - Ich weiß, wie ich einfache und komplexer Bedingungen formulieren kann.
 - Ich weiß, wie ich Verzweigungen mit mehreren Optionen aufbaue.
+
+# Debugging
+
+- Ich weiß, wieso Fehler passieren können
+- Ich kann einen Debugger sicher nutzen, insbesondere um, ...
+  - Haltepunkte zu setzen,
+  - meinen Code schrittweise auszuführen,
+  - Variablen zu untersuchen und zu manipulieren.
 
 # Listen
 

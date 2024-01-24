@@ -21,21 +21,21 @@
 * Statsiche Codechecker verwenden
 
 
-Die Lösungen beziehen sich auf die Aktionen, die ausgeführt werden sollen, um mit dem Debugger zu interagieren:
+### Aufgabe: Debugger bei verschachtelten if-Bedingunen 🌶🌶
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-HcRBSCWV-I?si=FFRzMtc-c7l3hZjZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 
-### 1. **Grundlagen des Python-Interpreters**: 
-Füge `pdb.set_trace()` vor `return a + b` ein. Starte das Programm und verwende den Befehl `p a` und `p b`, 
-um die Werte zu überprüfen.
-### 2. **Bytecode in Python verstehen**: 
-Starte das Programm und verwende `n`, um jede Zeile auszuführen. Beobachte, wie die Variable `ergebnis` berechnet 
-wird.
-### 3. **Python und Plattformunabhängigkeit**: 
-Starte das Programm und benutze `s`, um in die Funktion `berechne_differenz` einzutreten. Verwende `p x` und `p y`, 
-um die Werte zu überprüfen.
-### 4. **Einführung in Python Virtual Machine (PVM)**: 
-Starte das Programm und verwende `p ergebnis`, um den Wert der Variable `ergebnis` auszugeben, dann `c`, um das 
-Programm zu beenden.
-### 5. **Python-Interpreter: CPython vs. PyPy**: 
-Starte das Programm im Debug-Modus mit `python -m pdb script.py`. Setze einen Haltepunkt mit `b multipliziere` und 
-überprüfe `x` und `y` mit `p x` und `p y`, bevor du `c` ausführst.
+Bei der Belegungen `a = 25` und `b = 10` werden die Zeilen
+4, 11, 12, 15 und 16 durchlaufen.
+
+Um alle Fälle mindestens einmal durchzugehen, kann zum Beispiel gewählt werden:
+
+* `a = 15` und `b = 10`: Zeilen 4, 11, 12, 13, 16
+* `a = 10` und `b = 15`: Zeilen 4, 5, 6, 9, 16
+* `a = 100` und `b = 150`: Zeilen 4, 5, 6, 7, 16

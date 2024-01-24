@@ -49,12 +49,6 @@
 | `math.exp`  | Exponentailfunktion                 | [Referenz](https://docs.python.org/3/library/math.html?highlight=math%20sqrt#math.exp)  |
 | `math.log`  | Logartihmus zur angegeben Basis     | [Referenz](https://docs.python.org/3/library/math.html?highlight=math%20sqrt#math.log)  |
 
-# Debugging
-
-| Begriff | Kurzerklärung                                        | Link zur Referenz                                                                           |
-|---------|------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| `pdb`   | Python Debugger                                      | [Referenz](https://docs.python.org/3/library/pdb.html?highlight=pdb)                        |
-| Logging | Ausgaben zur Nachvollziehbarkeit des Programmablaufs | [Referenz](https://docs.python.org/3/library/logging.html?highlight=logging#module-logging) |
 
 
 # Verzweigungen
@@ -63,6 +57,18 @@
 |--------------|----------------------------------------|----------------------------------------------------------------------------------------------|
 | `if`, `else` | Verzweigungen aufgrund von Bedingungen | [Referenz](https://docs.python.org/3/tutorial/controlflow.html?highlight=else#if-statements) |
 
+# Debugging
+
+| Begriff       | Kurzerklärung                                                                                                                                                                       |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Breakpoint    | Zeile im Code, bis zu der dieser vom Debugger ausgeführt wird. Diese Zeile wartet noch auf die Ausführung.                                                                          |
+| Continue      | Führt den Code weiter aus bis zum nächsten Breakpoint oder zum Programmende.                                                                                                        |
+| Step Over     | Führe die aktuelle Codezeile aus und gehe zur nächsten Codezeile, die ausgeführt werden soll.                                                                                       |
+| Step Into     | Wenn in der akutellen Zeile eine Funktion ausgeführt werden soll, wird in diese hineingesprungen, sodass die Ausführung der Funktion schritt für Schritt nachvollzogen werden kann. |
+| Step Out      | Wenn derzeit eine Funktion ausgeführt wird, wird die Ausführung so lange automatisch weitergeführt, bis die Funktionsausführung beendet ist und dann wieder unterbrochen.           |
+| Restart       | Beendet die Ausführung der Applikation und startet den Debugmodus erneut.                                                                                                           |
+| Stop          | Beendet die Ausführung der Applikation.                                                                                                                                             |
+| Debug Console | Erlaubt die Ausführung von Befehlen, während das Programm im Debugmodus pausiert. Funktionen können hier ausgeführt und Variablen gelesen und manipuliert werden.                   |
 
 # Listen
 
