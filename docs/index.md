@@ -14,3 +14,6 @@ Dein Python Team
 Du hast Feedback zum Skript? Dann sende es bitte an 
 <a href = "mailto: viktor.reichert@qualidy.de">viktor.reichert@qualidy.de</a>.
 
+⭐Marcel Peters (Lösungen bei "Variablen und Datentypen" nicht korrekt verlinkt.) 
+
+

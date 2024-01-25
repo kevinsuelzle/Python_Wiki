@@ -6,6 +6,8 @@
 ### 1. **Liste erstellen**
 
 ```python
+liste = [1,2,3,4,5,6,7,8,9,10]
+# or
 liste = [i for i in range(1, 11)]
 ```
 
@@ -42,14 +44,8 @@ liste_von_tupeln = [(i, i ** 2) for i in range(1, 6)]
 gerade_zahlen = [i for i in liste if i % 2 == 0]
 ```
 
-### 7. **Schlüssel aus Dictionary entfernen**
+### 7. **Element in Tupel überprüfen**
 
 ```python
-del dictionary["a"]
-```
-
-### 8. **Duplikate aus Liste entfernen**
-
-```python
-liste_ohne_duplikate = list(set([1, 2, 2, 3, 3, 4, 4, 5]))
+3 in gerade_zahlen
 ```

@@ -418,7 +418,7 @@ Erstelle eine neue Liste aus der Liste von Aufgabe 1, die nur gerade Zahlen enth
 ### 7. **Element in Tupel überprüfen** 🌶️️: 
 Überprüfe, ob die Zahl 3 im Tupel von Aufgabe 6 enthalten ist.
 
-[Lösungen](solution_3.md)
+[Lösungen](solution_2.md)
 
 ### Sets
 
@@ -484,4 +484,4 @@ Entferne den Schlüssel "a" aus dem Dictionary von Aufgabe 4.
 ### 8. **Duplikate aus Liste entfernen** 🌶️️: 
 Entferne alle Duplikate aus der Liste `[1, 2, 2, 3, 3, 4, 4, 5]`.
 
-[Lösungen](solution_2.md)
+[Lösungen](solution_3.md)

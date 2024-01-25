@@ -39,8 +39,14 @@ vereinigung = set1 | set2
 schnittmenge = set1 & set2
 ```
 
-### 7. **Element in Tupel überprüfen**
+### 7. **Schlüssel aus Dictionary entfernen**
 
 ```python
-enthalten = 3 in tupel
+del dictionary["a"]
+```
+
+### 8. **Duplikate aus Liste entfernen**
+
+```python
+liste_ohne_duplikate = list(set([1, 2, 2, 3, 3, 4, 4, 5]))
 ```

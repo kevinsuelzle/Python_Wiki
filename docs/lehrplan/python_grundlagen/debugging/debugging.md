@@ -37,7 +37,7 @@ Debugger haben alle ähnliche Funktionen:
 * **Variablen inspizieren**: Zeigt die aktuellen Werte von Variablen im Programm an.
 * **Programmfluss steuern**: Erlaubt es, den Ablauf des Programms zu steuern, beispielsweise durch Fortsetzen der Ausführung oder Rückkehr zu einem früheren Punkt.
 
-Im Folgenden werden wir 3 Varianten den Debugger zu benutzen ansehen:
+Im Folgenden werden wir 2 Varianten den Debugger zu benutzen ansehen:
 
 * Eingebauter Debugger von **VSCode**
 * Eingebauter Debugger von **PyCharm**
@@ -103,3 +103,5 @@ print(result)
 Sage zunächst voraus, durch welche Zeilen der Code geht. Überprüfe dies mit dem Debugger.
 
 Finde drei weitere belegungen von `a` und `b`, sodass insgesamt alle Zeilen mindestens ein Mal durchlaufen werden.
+
+[Lösung](solution.md#aufgabe-debugger-bei-verschachtelten-if-bedingunen-)
