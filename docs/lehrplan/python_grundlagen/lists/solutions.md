@@ -1,5 +1,7 @@
 # Lösungen
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vny_jAom4W4?si=l8S1NQLorUBlmkoC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### 1. **Erstellen einer Liste:** 
 
 ```python
@@ -46,6 +48,8 @@ anzahl_zwei = zahlen.count(2)
 
 ```python
 zahlen.reverse()
+# or
+zahlen = zahlen[::-1]
 ```
 
 ### 9. **Liste sortieren:**

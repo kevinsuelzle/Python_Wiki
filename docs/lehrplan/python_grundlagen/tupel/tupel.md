@@ -1,53 +1,71 @@
 # Tupel in Python
-[15min]
+
+[//]: # ([15min])
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Si2Rc2VeCDg?si=PhWoEfpzEclNC0Xx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 In Python ist ein Tupel eine grundlegende Datenstruktur, die einer Liste ähnlich ist, aber einen entscheidenden
 Unterschied aufweist: Sie ist **unveränderlich**. 
 
-Das bedeutet, dass der Inhalt eines Tupels, sobald es erstellt wurde,
-nicht mehr geändert werden kann. Dies ist nützlich, um die Integrität der Daten im gesamten Programm zu gewährleisten.
+Das bedeutet, dass die vom Tupel referenzierten Objekte nicht mehr geändert werden können.
+Dies ist nützlich, um die Integrität der Daten im gesamten Programm zu gewährleisten.
 
 Tupel werden definiert, indem Elemente in Klammern `( )` eingeschlossen werden, wobei die Elemente durch Kommas getrennt
 sind.
 
-## Grundlegende Verwendung
-[10min]
+[//]: # ([10min])
 Ein einfaches Beispiel für ein Tupel zum Beispiel die Definition von Koordinaten als ein Paar von zwei Fließkommazahlen:
 
 ```python
-koordinaten = (50.8215, -0.1372)
+treasure_coordinates = (50.8215, -0.1372)
 ```
 
-Dieses Tupel, `koordinaten`, enthält zwei Fließkommazahlen und stellt einen festen Punkt auf einer Fläche dar.
+Das Tupel `treasure_coordinates` enthält zwei Fließkommazahlen und stellt einen festen Punkt auf einer Fläche dar.
+Da dieser Punkt unveränderlich sein soll, entscheidet sich der Entwickler dazu, es als Tupel und nicht als Liste 
+zu speichern.
 
 ## Eigenschaften von Tupeln
-[30min]
-1. **Immutability:**
-   Einmal erstellt, können wir keine Elemente zu einem Tupel hinzufügen, entfernen oder ändern. 
 
-2. **Indizierung und Slicing:**
-   Ähnlich wie Listen unterstützen Tupel die Indizierung und das Slicing. `koordinaten[0]` würde in unserem
-   Beispiel `50.8215` zurückgeben.
+[//]: # ([30min])
+**Immutability:**
+Einmal erstellt, können wir keine Elemente zu einem Tupel hinzufügen, entfernen oder neu referenziert werden. 
 
-3. **Iterierbarkeit:**
-   Tupel können in Schleifen zur Iteration verwendet werden, genau wie Listen.
+**Indizierung und Slicing:**
+Ähnlich wie Listen unterstützen Tupel die Indizierung und das Slicing. Die nutzung ähnelt daher sehr der von Listen.
 
-4. **Gemischte Datentypen:**
-   Tupel können eine Mischung aus verschiedenen Datentypen enthalten: `('Hallo', 42, 3.14)` ist ein gültiges Tupel.
+**Iterierbarkeit:** Tupel können in Schleifen zur Iteration verwendet werden, genau wie Listen.
+
+**Gemischte Datentypen:**
+Tupel können eine Mischung aus verschiedenen Datentypen enthalten: `('Hallo', 42, 3.14)` ist ein gültiges Tupel.
 
 ## Vorteile der Verwendung von Tupeln
 
-- **Effizienz:** Tupel können hinsichtlich Speicherplatz und Leistung effizienter sein als Listen, besonders bei großen
-  Datensätzen.
-- **Sicherheit:** Da sie unveränderlich sind, können Tupel verwendet werden, um sicherzustellen, dass Daten im gesamten
-  Programm unverändert bleiben.
-- **Funktionalität:** Tupel können als Schlüssel in Dictionaries verwendet werden, Listen hingegen nicht.
+**Effizienz:** Tupel können hinsichtlich Speicherplatz und Leistung effizienter sein als Listen, besonders bei großen
+Datensätzen.
+
+**Sicherheit:** Da sie unveränderlich sind, können Tupel verwendet werden, um sicherzustellen, dass Daten im gesamten
+Programm unverändert bleiben.
+
+**Funktionalität:** Tupel können als Schlüssel in Dictionaries als Schlüssel verwendet werden, Listen hingegen nicht.
 
 Hier sehen wir einige Code-Beispiele, die verschiedene Aspekte von Tupeln in Python veranschaulichen:
 
 ## Arbeiten mit Tupels
-[60min]
+
+[//]: # ([60min])
 ### Erstellung und Zugriff auf Elemente:
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H9D9uD16QPk?si=9U1zMCWWd2bPoEFf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 ```python
 # Ein Tupel erstellen
@@ -64,33 +82,52 @@ Mit sogenannten Slices kann man auch direkt auf mehrere Elemente zugreifen:
 print(fruechte[0:2]) # gibt ('Apfel', 'Banane') aus
 ```
 
-Dies ist exakt identische zum Slicing bei Listen und Strings:
+Dies ist exakt identische zum [Slicing bei Listen](../lists/lists.md#slicing) und Strings.
+
+Um ein Einelementige Tupel zu erstellen, gibt es die folgende Syntax:
 
 ```python
-[startwert:stopwert+1:schrittweite]
+singleton = (9000,)
 ```
 
-Wenn wir also `[2:6:2]` schreiben, sagen wir, dass wir beim dritten Element starten wollen, dann jedes zweite Element 
-nehmen und bei fünf (stopwert + 1 = 6 => stopwert = 5) aufhören. Also erhalten wir das dritte und das fünfte Element. 
+Das `,` nach der `9000` ist nötig, da bei der Notation `(9000)` nicht klar wäre,
+ob es sich um die Erstellung eines Tupels handeln würde, oder um die priorisierenden Klammern in einer 
+mathematischen Rechnung.
 
 ### Unveränderlichkeit von Tupeln
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LpxtHaf41Yk?si=TiG5RpPwMryrQ66L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
-Versuch, ein Element zu ändern (führt zu einem Fehler):
+Versuch, ein Element zu auzutauschen (führt zu einem Fehler):
 
 ```python
 fruechte[0] = "Erdbeere"  # Dies verursacht einen TypeError
 ```
 
-### Tupel mit Gemischten Datentypen
+Unveränderlichkeit eines Tupels bedeutet, dass die Einträge eines Tupels nicht auf andere Objekte geändert werden können.
+Jedoch ist es durchaus möglich, die interne Struktur eines Elementes zu ändern, auf das ein Tupel verweist.
+Klicke im folgenden Beispiel auf "Next >", und achte dabei darauf, wie die Werte der Listen verändert werden.
 
-```python
-gemischtes_tupel = ("Max", 28, 1.75, True)
-print(gemischtes_tupel)
-```
+[💻Link zum Online Compiler](https://pythontutor.com/render.html#code=first_list%20%3D%20%5B'a',%20'b',%20'c'%5D%0Asecond_list%20%3D%20%5B1,2,3,4,5%5D%0A%0Amy_tuple%20%3D%20%28first_list,%20second_list%29%0A%0A%23%20Ver%C3%A4ndere%20Liste,%20NICHT%20das%20Tupel%3A%0Afirst_list%5B0%5D%20%3D%20'tada'%20%0Amy_tuple%5B1%5D%5B-1%5D%20%3D%201000&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=first_list%20%3D%20%5B'a',%20'b',%20'c'%5D%0Asecond_list%20%3D%20%5B1,2,3,4,5%5D%0A%0Amy_tuple%20%3D%20%28first_list,%20second_list%29%0A%0A%23%20Ver%C3%A4ndere%20Liste,%20NICHT%20das%20Tupel%3A%0Afirst_list%5B0%5D%20%3D%20'tada'%20%0Amy_tuple%5B1%5D%5B-1%5D%20%3D%201000&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+
 
 ### Tupel-Operationen
 
-Verkettung und Wiederholung:
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QIPpHCfMjwo?si=m41D25i7OucNyLYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
+Zur Verkettung und Wiederholung wird die selbe Syntax wie bei Listen verwendet:
 
 ```python
 # Tupel Verkettung
@@ -104,22 +141,55 @@ wiederholtes_tupel = tupel1 * 2
 print(wiederholtes_tupel)  # Gibt (1, 2, 3, 1, 2, 3) aus
 ```
 
-### Tupel-Packen und -Entpacken
+### Tupel mit gemischten Datentypen
+
+Die Einträge in Tupeln können von verschiedenen Typen sein. Der Fachbegriff für diese Eigenschaft ist übrigens
+**Polymorphismus**.
 
 ```python
+gemischtes_tupel = ("Max", 28, 1.75, True)
+print(gemischtes_tupel)
+```
+
+
+### Tupel-Packen und -Entpacken
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BE861o0r5yc?si=krZx0AiApreRet_J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+Im folgenden Beispiel wird jedes Element eines Tupels in eine Variable gespeichert. 
+Das nennt sich *entpacken*. Dabei müssen genau die richtige Anzahl an Variablen vorgegeben werden.
+Nämlich so viele, wie das Tupel lang ist.
+
+```python
+# Jedes Element in eine Variable speichern
+name, alter, groesse = ("Lisa", 30, 1.68)
+
+```
+
+Es ist möglich, über den Asterix-Operator `*` Tupel zu entpacken. Hiermit kann angezeigt werden, dass in der 
+Variablen nach dem `*` alle übrigen Variablen gespeichert werden sollen.
+```python
 # Tupel entpacken
-name, alter, groesse = "Lisa", 30, 1.68
+first, *rest = (1, 4, 9, 16, 25)
 
-# Tupel packen
-person_info = (name, alter, groesse)
-print(person_info)
-
-# Alternativ direkt beim Entpacken
-(name, alter, groesse) = "Tom", 25, 1.80
-print(name, alter, groesse)
+print(first) # 1
+print(rest) # (4, 9, 16, 25)
 ```
 
 ### Verwendung von Tupeln als Schlüssel in einem Dictionary
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ppSZtdwbIz8?si=XELGK8RvY9pDo6JI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+Tupel, deren Einträge unveränderlich sind, lassen sich als Schlüssel in Dictionaries verwenden.
 
 ```python
 # Koordinaten als Schlüssel für Orte
@@ -128,8 +198,16 @@ print(orte[(52.5200, 13.4050)])  # Gibt 'Berlin' aus
 ```
 
 ## Häufige Funktionen und Methoden für Tupel in Python
-[30min]
-Hier ist eine übersichtliche Tabelle, die einige der häufigsten Funktionen und Methoden für Tupel in Python
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fUT0hwVX0gw?si=JgjWKzozhR4mLXS5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+[//]: # ([30min])
+Hier ist eine Tabelle, die einige der häufigsten Funktionen und Methoden für Tupel in Python
 zusammenfasst. Für jede Funktion/Methode gibt es eine kurze Beschreibung und ein kleines Beispiel.
 
 | Funktionsname   | Kurzbeschreibung                                       | Beispiel                              |
@@ -147,11 +225,9 @@ zusammenfasst. Für jede Funktion/Methode gibt es eine kurze Beschreibung und ei
 - `tupel.index()` und `tupel.count()` sind Methoden, die spezifisch für Tupel-Objekte sind. Hierbei ist `tupel` ein
   Platzhalter für das jeweilige Tupel-Objekt.
 
-Diese Funktionen und Methoden sind grundlegend für die Arbeit mit Tupeln und ermöglichen es uns, grundlegende Abfragen
-und Operationen auf Tupel-Datenstrukturen durchzuführen.
-
 # Aufgaben
-[60min]
+
+[//]: # ([60min])
 
 ### 1. Tupel erstellen 🌶️️
 Erstelle ein Tupel mit den Namen von fünf verschiedenen Früchten.
@@ -184,41 +260,41 @@ gibt einen Workaround).
 Überprüfe, ob das Tupel von Aufgabe 1 ein Subtupel von dem in Aufgabe 10 erstellten verschachtelten Tupel ist.
 ### 15. Reingelegt 🌶️️
 Welchen Typ haben `a=(3,)` und `b=(3)`? 
-
-# Anspruchsvolle Aufgaben
-[60min]
-
-#### Aufgabe 1: Einkaufsliste Manager
-
-**Aufgabenstellung:** 🌶️️🌶️️🌶️️
-Schreibe ein Programm, das eine Einkaufsliste verwaltet. Der Benutzer kann folgende Aktionen durchführen:
-
-1. Ein neues Produkt zur Liste hinzufügen (mit Name und Menge als Tupel).
-2. Ein Produkt von der Liste entfernen.
-3. Die gesamte Liste anzeigen.
-4. Beenden des Programms.
-
-Die Einkaufsliste sollte eine Liste von Tupeln sein, wobei jedes Tupel aus einem Produktname und der dazugehörigen Menge
-besteht. 
-
-Hinweis:
-
-Mit folgendem Code kannst du Dinge unendlich oft wiederholen:
+### 16. Entpacken🌶🌶
+Was ist in den folgenden Fällen die Konsolenausgabe?
 
 ```python
-while True:
-    #... dein code ...
-
-    if aktion == "b":    # Die Nutzereingabe wurde in die Variable `aktion` eingelesen
-        break
+a, *b, c = ('first', 'second', 'third', 'forth')
+print(a)
+print(b)
+print(c)
+print(type(a))
+print(type(b))
+print(type(c))
 ```
 
+### 17. Entpacken bei Listen🌶🌶
+Ändere den Code aus Aufgabe 16 so, dass in der ersten Zeile eine Liste, statt eines Tupels erstellt wird.
+Was ändert sich nun an der Ausgabe?
 
-## Zusammenfassung
+### 18. Alles entpackbar?🌶🌶
+Welche der folgenden Zeilen sind erlaubt und welche führen zu einem Fehler? Was für ein Fehler tritt auf?
 
-Zusammenfassend sind Tupel eine einfache, aber mächtige Datenstruktur in Python. Ihre Unveränderlichkeit macht sie ideal
-für die Speicherung von Daten, die sich nicht ändern sollen, wie feste Konfigurationen oder Einstellungen. Das
-Verständnis, wann und wie man Tupel verwendet, ist eine grundlegende Fähigkeit in der Python-Programmierung und trägt zu
-robusterem und fehlerresistenterem Code bei.
+```python
+my_tuple = ('first', 'second', 'third', 'forth', 'fifth')
+a, b, c, d, e = my_tuple
 
+f, *g = my_tuple
 
+*h, i = my_tuple
+
+k, *l, m, *n = my_tuple
+
+p, q, *r = my_tuple
+
+*s, *t = my_tuple
+
+u, v = my_tuple[:2]
+```
+
+[Lösung](solution_1.md)

@@ -42,16 +42,19 @@
 
 - Ich weiß, was Listen sind und wofür ich sie verwende.
 - Ich weiß, wie ich Listen erstelle und sie in Programmen nutze
-- Ich kenne die häufigsten Listenmethoden und kann diese anwenden.
+- Ich kenne die häufigsten Listenmethoden (siehe [Checkliste](../checklists/checklist_1.md#listen)) und kann diese anwenden.
 - Ich weiß, wie Listen in Variablen gespeichert werden und wie sich das von anderen primitiven Datentypen (wie `int`) unterscheidet.
-- Ich kann slicing bei Listen sicher verwenden.
+- Ich kann Slicing bei Listen sicher verwenden.
 
 # Tupel
 
 - Ich weiß, dass Tupel unveränderlich sind und was das bedeutet
-- Ich weiß, wie ich Tupel definiere.
-- Ich kann erkennen, in welchen fällen Tupel, Listen oder Sets verwendet werden sollten.
-- Ich beherrsche slicing bei Tupeln.
+- Ich weiß, wie ich Tupel definiere (auch wenn diese nur ein Element enthalten).
+- Ich kann erkennen, in welchen Fällen Tupel oder Listen.
+- Ich beherrsche Slicing bei Tupeln.
+- Ich kann Tupel entpacken.
+- Ich kenne die häufigsten Tupelmethoden und kann diese anwenden.
+- Ich weiß, wann Tupel als Schlüssel in Dictionaries verwendet werden dürfen.
 
 # Strings
 

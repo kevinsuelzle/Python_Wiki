@@ -72,19 +72,42 @@
 
 # Listen
 
-| Begriff     | Link zur Referenz                                                                |
-|-------------|----------------------------------------------------------------------------------|
-| `list`      | [Referenz](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists) |
-| Mutability  | [Referenz](https://docs.python.org/3/glossary.html#term-mutable)                 |
-| Immutablity | [Referenz](https://docs.python.org/3/glossary.html#term-immutable)               |
+| Begriff                      |                                                                                                                                                                       | Link zur Referenz                                                                          |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| `list`                       | Datentyp in Python zur Sammlung mehrerer Daten. Listen sind mutable (veränderbar).                                                                                    | [Referenz](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)           |
+| Mutability                   | Einträge des Objekts können im Nachhinein verändert werden.                                                                                                           | [Referenz](https://docs.python.org/3/glossary.html#term-mutable)                           |
+| Immutablity                  | Einträge des Objekts können nicht mehr verändert werden.                                                                                                              | [Referenz](https://docs.python.org/3/glossary.html#term-immutable)                         |
+| Slicing                      | Wähle mit der Notation `sequence[i:j:s]` einen Teil einer Liste/Tupel/String aus. Nämlich den Teil vom Index `i` (inklusive) bis `j` (exklusive) in Schrittgrößen `s` | [Referenz](https://docs.python.org/3/reference/datamodel.html?highlight=slicing#sequences) |
+| `mylist.append(x)`           | Fügt ein Element am Ende der Liste hinzu                                                                                                                              | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
+| `mylist.extend([x, y, ...])` | Erweitert die Liste um die Elemente in der angegebenen Liste                                                                                                          | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
+| `mylist.insert(i, x)`        | Fügt an Position `i` das Element `x` ein                                                                                                                              | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
+| `mylist.remove(x)`           | Entfernt das erste Vorkommen von `x` aus der Liste                                                                                                                    | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
+| `mylist.pop(i)`              | Entfernt und gibt das Element an der Position `i` zurück                                                                                                              | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
+| `mylist.clear()`             | Entfernt alle Elemente aus der Liste                                                                                                                                  | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
+| `mylist.index(x)`            | Gibt den Index des ersten Vorkommens von `x` zurück                                                                                                                   | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
+| `mylist.count(x)`            | Zählt, wie oft `x` in der Liste vorkommt                                                                                                                              | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
+| `mylist.sort()`              | Sortiert die Elemente der Liste                                                                                                                                       | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
+| `mylist.reverse()`           | Kehrt die Reihenfolge der Elemente in der Liste um                                                                                                                    | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
+| `in`                         | Schlüsselwort, um zu überprüfen, ob ein Element in einer Liste ist.                                                                                                   | `1 in [3,2,1] # True`                                                                      |
+| `list1 + list2`              | Konkatination zweier Listen zu einem großen Liste                                                                                                                     |                                                                                            |
+| `list1 * zahl`               | Vervielfältigung eines Liste                                                                                                                                          |                                                                                            |
 
 
 # Tupel
 
-| Begriff | Link zur Referenz                                                                          |
-|---------|--------------------------------------------------------------------------------------------|
-| `Tupel` | [Referenz](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)    |
-| Slicing | [Referenz](https://docs.python.org/3/reference/datamodel.html?highlight=slicing#sequences) |
+| Begriff           | Kurzerklärung                                                                               | Link zur Referenz                                                                       |
+|-------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| Tupel             | Unveränderlicher Datentypen zur Sammlung von Daten                                          | [Referenz](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences) |
+| `tuple`           | Konstruktor der Klasse `tuple`, mit dem eine Liste uws. in ein Tupel übersetzt werden kann. |                                                                                         |
+| `len(tupel)`      | Gibt die Anzahl der Elemente im Tupel zurück.                                               | `len((1, 2, 3)) # Ergebnis: 3`                                                          |
+| `max(tupel)`      | Gibt das größte Element im Tupel zurück.                                                    | `max((1, 4, 2)) # Ergebnis: 4`                                                          |
+| `min(tupel)`      | Gibt das kleinste Element im Tupel zurück.                                                  | `min((1, 4, 2)) # Ergebnis: 1`                                                          |
+| `sum(tupel)`      | Berechnet die Summe der Elemente im Tupel.                                                  | `sum((1, 2, 3)) # Ergebnis: 6`                                                          |
+| `tupel.index()`   | Sucht nach einem Element und gibt dessen Index zurück.                                      | `(1, 2, 3).index(2) # Ergebnis: 1`                                                      |
+| `tupel.count()`   | Zählt, wie oft ein Element im Tupel vorkommt.                                               | `(1, 2, 2, 3).count(2) # Ergebnis: 2`                                                   |
+| `in`              | Schlüsselwort, um zu überprüfen, ob ein Element in eine Tupel ist.                          | `1 in (3,2,1) # True`                                                                   |
+| `tuple1 + tuple2` | Konkatination zweier Tupel zu einem großen Tupel                                            |                                                                                         |
+| `tuple1 * zahl`   | Vervielfältigung eines Tupels                                                               |                                                                                         |
 
 
 # Strings

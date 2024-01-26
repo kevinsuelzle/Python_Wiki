@@ -148,11 +148,11 @@ print(fruechte[0:2]) # gibt ('Apfel', 'Banane') aus
 Slices werden mit 3 Werten angegeben. Dem Startwert, dem nicht-inklusiven Endwert und der Schrittweite:
 
 ```python
-[startwert:stopwert+1:schrittweite]
+[inclusive_start_value:exclusive_stop_value:stepsize]
 ```
 
 Wenn wir also `[2:6:2]` schreiben, sagen wir, dass wir beim dritten Element starten wollen, dann jedes zweite Element 
-nehmen und bei fünf (stopwert + 1 = 6 => stopwert = 5) aufhören. Also erhalten wir das dritte und das fünfte Element. 
+nehmen und bei fünf (Stopwert ist _exklusiv_) aufhören. Also erhalten wir das dritte und das fünfte Element. 
 
 ### Verkettung von Listen
 

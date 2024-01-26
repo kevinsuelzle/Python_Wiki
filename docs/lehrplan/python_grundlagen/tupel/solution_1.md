@@ -1,5 +1,12 @@
 # Lösungen
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hKgXvQlLJlg?si=uZcmj-HEavDQpWNT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 ### Tupel erstellen
 ```python
 fruechte = ("Apfel", "Banane", "Kirsche", "Orange", "Mango")
@@ -59,29 +66,37 @@ print(fruechte in verschachtelt) # Gibt True aus, falls fruechte ein Subtupel is
 ### 15. Reingelegt
 Dies druckt jedes String-Element im Tupel in Großbuchstaben aus.
 
-### Komplex-Aufgabe: Einkaufslistenmanager
-
-**Lösung:**
+### 16. Entpacken
+Was ist in den folgenden Fällen die Konsolenausgabe?
 
 ```python
-einkaufsliste = []
+a, *b, c = ('first', 'second', 'third', 'forth')
+print(a) # first
+print(b) # ['second', 'third']
+print(c) # third
+print(type(a)) # <class 'str'>
+print(type(b)) # <class 'list'>
+print(type(c)) # <class 'str'>
+```
 
-while True:
-    aktion = input("Wähle eine Aktion: Hinzufügen (h), Entfernen (e), Anzeigen (a), Beenden (b): ")
+### 17. Entpacken bei Listen
+Die Konsolenausgabe ist exakt gleich wie in Aufgabe 16.
 
-    if aktion == "h":
-        produkt = input("Gib den Produktnamen ein: ")
-        menge = input("Gib die Menge ein: ")
-        einkaufsliste.append((produkt, menge))
-    elif aktion == "e":
-        produkt = input("Gib den Namen des zu entfernenden Produkts ein: ")
-        einkaufsliste = [item for item in einkaufsliste if item[0] != produkt]
-    elif aktion == "a":
-        for produkt, menge in einkaufsliste:
-            print(f"{produkt}: {menge}")
-    elif aktion == "b":
-        break
-    else:
-        print("Ungültige Eingabe.")
+### 18. Alles entpackbar?
+```python
+my_tuple = ('first', 'second', 'third', 'forth', 'fifth')
+a, b, c, d, e = my_tuple
+
+f, *g = my_tuple # ok
+
+*h, i = my_tuple # ok
+
+k, *l, m, *n = my_tuple # SyntaxError: multiple starred expressions in assignment
+
+p, q, *r = my_tuple # ok
+
+*s, *t = my_tuple # SyntaxError: multiple starred expressions in assignment
+
+u, v = my_tuple[:2] # ok
 ```
 
