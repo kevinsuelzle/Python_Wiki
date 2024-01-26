@@ -174,3 +174,20 @@ die Eingabe bei Eingabe von "fertig".
 
 
 [Lösungen](solutions.md)
+
+
+### **Entwickle ein textbasiertes Rollenspiel** 🌶️️🌶️️🌶️️
+
+Aufgabenstellung:
+
+- Du steuerst mit deiner Eingabe (input) einen Helden, der in einem Labyrinth gefangen ist.
+- Du beschreibst mit Texten was passiert.
+- Jede Runde kannst du eine Entscheidung treffenn zb vorwärst gehen... durch eine Tür gehen etc.
+- Du bestitzt 20 Trefferpunkte
+- Gelegentlich triffst du auf Feinde und musst Kämpfen.
+- Die Feinde besitzen ebenfalls Trefferpunkte und du kannst Attacken ausführen.
+- Eien Attacke ist erfolgreich, wenn du eine Quiz-Frage richtig beantwortest.
+- Erstelle dazu ein Dictionary für deine Quiz-Fragen und benutze idealerweise Fragen um die Themen aus diesem Kurs (also Python und Mathematik)
+- Überlege dir ein tolles End-Game mit einem Endboss.
+- Solltest du auf 0 Trefferpunkte fallen, hast du das Spiel verloren.
+- Tauscht später eure Fragen und Antworten aus und erstellt ein gemeinsames großes Deictionary, um euch mit dem Spiel auf die Prüfung vorzubereiten.
