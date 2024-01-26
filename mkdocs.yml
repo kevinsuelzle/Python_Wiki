@@ -33,6 +33,7 @@ nav:
               - Listen: lehrplan/python_grundlagen/lists/lists.md
               - Tupel: lehrplan/python_grundlagen/tupel/tupel.md
               - Strings: lehrplan/python_grundlagen/strings/strings.md
+              - Exkurs Regex: lehrplan/python_grundlagen/regex/regex.md
               - Schleifen: lehrplan/python_grundlagen/loops/loops.md
               - Sets: lehrplan/python_grundlagen/sets/sets.md
               - Dictionaries: lehrplan/python_grundlagen/dictionaries/dictionaries.md

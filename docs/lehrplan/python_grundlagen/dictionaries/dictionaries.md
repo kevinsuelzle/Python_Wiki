@@ -157,3 +157,13 @@ Bedingungsanweisungen. Sie sind darauf ausgelegt, das Verständnis und die Fähi
 Datenstrukturen im Allgemeinen zu verbessern.
 
 [Lösungen](solution.md#Anspruchsvolle Aufgaben)
+
+### 10. Häufigster Buchstabe in einem String finden: 🌶️️🌶️️
+Schreibe einen Python-Code, um den häufigsten Buchstaben in einem String zu finden.
+
+### 10. Häufigster Buchstabe in einem String finden:
+```python
+text = "Mississippi"
+haeufigster_buchstabe = max(set(text), key=text.count)
+print(haeufigster_buchstabe)
+```

@@ -1,85 +1,111 @@
-
 # Lösungen
 
-Selbstverständlich, hier sind Lösungen zu den Übungsaufgaben zu Strings in Python:
+### Aufgabe: Benutzernamen🌶🌶
+
+```python
+# Eingabe eines Benutzernamens
+benutzername = input("Bitte geben Sie Ihren Benutzernamen ein: ")
+
+# Überprüfung der Länge des Benutzernamens
+if len(benutzername) > 10:
+    print("Der Benutzername ist zu lang.")
+elif len(benutzername) < 3:
+    print("Der Benutzername ist zu kurz.")
+else:
+    print(f"Willkommen, {benutzername}!")
+
+# Überprüfung auf Großschreibung
+if benutzername.isupper():
+    print("Ihr Benutzername ist vollständig in Großbuchstaben geschrieben.")
+elif benutzername.islower():
+    print("Ihr Benutzername ist vollständig in Kleinbuchstaben geschrieben.")
+else:
+    print("Ihr Benutzername enthält sowohl Groß- als auch Kleinbuchstaben.")
+
+# Überprüfung auf das Vorhandensein eines bestimmten Zeichens
+if "!" in benutzername:
+    print("Ihr Benutzername enthält ein Ausrufezeichen!")
+
+# Konvertierung des Benutzernamens in Kleinbuchstaben
+kleinbuchstaben_benutzername = benutzername.lower()
+print(f"Ihr Benutzername in Kleinbuchstaben: {kleinbuchstaben_benutzername}")
+```
+
+1. Die Länge des Benutzernamens wird überprüft, und je nach Länge werden verschiedene Meldungen ausgegeben.
+
+2. Es wird überprüft, ob der Benutzername ausschließlich aus Groß- oder Kleinbuchstaben besteht, und entsprechende
+   Meldungen werden ausgegeben.
+
+3. Es wird überprüft, ob ein Ausrufezeichen im Benutzernamen vorhanden ist, und eine Meldung wird ausgegeben, wenn dies
+   der Fall ist.
+
+4. Schließlich wird der Benutzername in Kleinbuchstaben konvertiert und angezeigt.
+
 
 ### 1. Länge eines Strings ermitteln:
+
 ```python
 text = "Dies ist ein Beispiel"
-laenge = len(text)
-print(f"Länge des Strings: {laenge}")
+print(f"Länge des Strings: {len(text)}")
 ```
 
 ### 2. String rückwärts ausgeben:
+
 ```python
 text = "Python"
-rueckwaerts = text[::-1]
-print(rueckwaerts)
+print(text[::-1])
 ```
 
 ### 3. String in Großbuchstaben konvertieren:
+
 ```python
 text = "python"
-grossbuchstaben = text.upper()
-print(grossbuchstaben)
+print(text.upper())
 ```
 
-### 4. Anzahl der Vokale zählen:
+### 4. Anzahl der Vokale zählen: 
+Erstelle einen String und zähle die Anzahl der Vokale in ihm.
+
 ```python
-text = "Python ist großartig."
-anzahl_vokale = sum(1 for char in text if char.lower() in "aeiou")
-print(anzahl_vokale)
+text = "Ich bin ein Star, holt mich hier raus!"
+text = text.lower()
+vocals = text.count("a") + text.count("e") + text.count("i") + text.count("o") + text.count("u")
+print(f"Vokale in {text}: {vocals}")
 ```
 
 ### 5. Erster und letzter Buchstabe eines Strings:
+
 ```python
 text = "Python"
-erster_buchstabe = text[0]
-letzter_buchstabe = text[-1]
-print(f"Erster Buchstabe: {erster_buchstabe}, Letzter Buchstabe: {letzter_buchstabe}")
+print(f"Erster Buchstabe: {text[0]}, Letzter Buchstabe: {text[-1]}")
 ```
 
 ### 6. Zeichen ersetzen:
+
 ```python
 text = "Python ist großartig."
 neuer_text = text.replace("groß", "super")
 print(neuer_text)
 ```
 
-### 7. Funktion zur Überprüfung einer E-Mail-Adresse:
-```python
-import re
+### 7. Leerzeichen entfernen:
 
-def ist_gueltige_email(email):
-   pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
-   return re.match(pattern, email) is not None
-
-print(ist_gueltige_email("beispiel@email.com"))  # True
-print(ist_gueltige_email("keine-email"))  # False
-```
-
-### 8. Leerzeichen entfernen:
 ```python
 text = " Text mit Leerzeichen "
 ohne_leerzeichen = text.strip()
 print(ohne_leerzeichen)
 ```
 
-### 9. String in Wörter aufteilen:
+### 8. String in Wörter aufteilen:
+
 ```python
 text = "Dies ist ein Satz."
 woerter = text.split()
 print(woerter)
 ```
 
-### 10. Häufigster Buchstabe in einem String finden:
-```python
-text = "Mississippi"
-haeufigster_buchstabe = max(set(text), key=text.count)
-print(haeufigster_buchstabe)
-```
+### 9. Überprüfung, ob ein String nur aus Zahlen besteht:
 
-### 11. Überprüfung, ob ein String nur aus Zahlen besteht:
 ```python
 text = "12345"
 if text.isdigit():
@@ -88,16 +114,17 @@ else:
    print("Der String enthält andere Zeichen als Zahlen.")
 ```
 
-### 12. Funktion zur Überprüfung von Anagrammen:
-```python
-def sind_anagramme(s1, s2):
-    return sorted(s1.lower()) == sorted(s2.lower())
+### 10. Funktion zur Überprüfung von Anagrammen:
 
-print(sind_anagramme("listen", "silent"))  # True
-print(sind_anagramme("Python", "Java"))  # False
+```python
+s1, s2 = "listen", "silent" 
+if sorted(s1.lower()) == sorted(s2.lower()):
+    print(f"{s1} ist Anagramm von {s2}")
+else:
+    print("Kein Anagramm")
 ```
 
-### 13. Anzahl der Wörter in einem String zählen:
+### 11. Anzahl der Wörter in einem String zählen:
 ```python
 text = "Dies ist ein Beispiel Satz."
 woerter = text.split()
@@ -105,54 +132,30 @@ anzahl_woerter = len(woerter)
 print(f"Anzahl der Wörter: {anzahl_woerter}")
 ```
 
-### 14. Anzahl der Zeichen in einem String zählen:
-```python
-text = "Python ist großartig."
-anzahl_zeichen = sum(1 for char in text)
-print(f"Anzahl der Zeichen: {anzahl_zeichen}")
-```
+### 12. String in Titel-Case umwandeln:
 
-### 15. Überprüfung, ob ein String eine gültige URL ist (mithilfe einer regulären Ausdrucks):
-```python
-import re
-
-def ist_gueltige_url(url):
-    pattern = r'^(https?|ftp)://[^\s/$.?#].[^\s]*$'
-    return re.match(pattern, url) is not None
-
-print(ist_gueltige_url("https://www.example.com"))  # True
-print(ist_gueltige_url("www.invalid-url"))  # False
-```
-
-### 16. String in Titel-Case umwandeln:
 ```python
 text = "python ist großartig"
 titel_case = text.title()
 print(titel_case)
 ```
 
-### 17. Anzahl der Zeichen, die keine Buchstaben oder Zahlen sind, zählen:
+### 13. Funktion für Palindrom-Überprüfung:
+
 ```python
-text = "Python 123!?"
-anzahl_sonderzeichen = sum(1 for char in text if not char.isalnum())
-print(f"Anzahl der Sonderzeichen: {anzahl_sonderzeichen}")
+text = 'Anna'
+text = text.lower()  # Um Groß-/Kleinschreibung zu ignorieren
+if text == text[::-1]:
+   print(f"{text} ist ein Palindrom")
+else:
+   print(f"{text} ist KEIN Palindrom")
 ```
 
-### 18. Extrahieren von URLs aus einem Text (mithilfe einer regulären Ausdrucks):
+### 14. Funktion für Palindrom-Überprüfung:
+
 ```python
-import re
-
-text = "Besuchen Sie meine Website unter https://www.example.com. Weitere Informationen finden Sie unter www.invalid-url."
-urls = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
-print(urls)
-```
-
-### 19. Funktion für Palindrom-Überprüfung:
-```python
-def ist_palindrom(text):
-    text = text.lower()  # Um Groß-/Kleinschreibung zu ignorieren
-    return text == text[::-1]
-
-print(ist_palindrom("anna"))  # True
-print(ist_palindrom("Python"))  # False
+text = "Ich bin ein Star, holt mich hier raus!"
+replace_symbol = "*"
+text = text.lower().replace("a", replace_symbol).replace("e", replace_symbol).replace("i", replace_symbol).replace("o", replace_symbol).replace("u", replace_symbol)
+print(f"Text ohne Vokale: {text}")
 ```

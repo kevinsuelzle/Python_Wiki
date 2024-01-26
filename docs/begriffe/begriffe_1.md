@@ -88,9 +88,9 @@
 | `mylist.count(x)`            | Zählt, wie oft `x` in der Liste vorkommt                                                                                                                              | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
 | `mylist.sort()`              | Sortiert die Elemente der Liste                                                                                                                                       | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
 | `mylist.reverse()`           | Kehrt die Reihenfolge der Elemente in der Liste um                                                                                                                    | [Referenz](https://docs.python.org/3/tutorial/datastructures.html)                         |
-| `in`                         | Schlüsselwort, um zu überprüfen, ob ein Element in einer Liste ist.                                                                                                   | `1 in [3,2,1] # True`                                                                      |
-| `list1 + list2`              | Konkatination zweier Listen zu einem großen Liste                                                                                                                     |                                                                                            |
-| `list1 * zahl`               | Vervielfältigung eines Liste                                                                                                                                          |                                                                                            |
+| `in`                         | Schlüsselwort, um zu überprüfen, ob ein Element in einer Liste ist.                                                                                                   | [Referenz](https://docs.python.org/3/library/stdtypes.html#typesseq-common)                |
+| `list1 + list2`              | Konkatination zweier Listen zu einem großen Liste                                                                                                                     | [Referenz](https://docs.python.org/3/library/stdtypes.html#typesseq-common)                |
+| `list1 * zahl`               | Vervielfältigung eines Liste                                                                                                                                          | [Referenz](https://docs.python.org/3/library/stdtypes.html#typesseq-common)                |
 
 
 # Tupel
@@ -98,25 +98,41 @@
 | Begriff           | Kurzerklärung                                                                               | Link zur Referenz                                                                       |
 |-------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | Tupel             | Unveränderlicher Datentypen zur Sammlung von Daten                                          | [Referenz](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences) |
-| `tuple`           | Konstruktor der Klasse `tuple`, mit dem eine Liste uws. in ein Tupel übersetzt werden kann. |                                                                                         |
-| `len(tupel)`      | Gibt die Anzahl der Elemente im Tupel zurück.                                               | `len((1, 2, 3)) # Ergebnis: 3`                                                          |
-| `max(tupel)`      | Gibt das größte Element im Tupel zurück.                                                    | `max((1, 4, 2)) # Ergebnis: 4`                                                          |
-| `min(tupel)`      | Gibt das kleinste Element im Tupel zurück.                                                  | `min((1, 4, 2)) # Ergebnis: 1`                                                          |
-| `sum(tupel)`      | Berechnet die Summe der Elemente im Tupel.                                                  | `sum((1, 2, 3)) # Ergebnis: 6`                                                          |
-| `tupel.index()`   | Sucht nach einem Element und gibt dessen Index zurück.                                      | `(1, 2, 3).index(2) # Ergebnis: 1`                                                      |
-| `tupel.count()`   | Zählt, wie oft ein Element im Tupel vorkommt.                                               | `(1, 2, 2, 3).count(2) # Ergebnis: 2`                                                   |
-| `in`              | Schlüsselwort, um zu überprüfen, ob ein Element in eine Tupel ist.                          | `1 in (3,2,1) # True`                                                                   |
-| `tuple1 + tuple2` | Konkatination zweier Tupel zu einem großen Tupel                                            |                                                                                         |
-| `tuple1 * zahl`   | Vervielfältigung eines Tupels                                                               |                                                                                         |
+| `tuple`           | Konstruktor der Klasse `tuple`, mit dem eine Liste uws. in ein Tupel übersetzt werden kann. | [Referenz](https://docs.python.org/3/library/stdtypes.html#tuple)                       |
+| `len(tupel)`      | Gibt die Anzahl der Elemente im Tupel zurück.                                               | [Referenz](https://docs.python.org/3/library/functions.html#len)                        |
+| `max(tupel)`      | Gibt das größte Element im Tupel zurück.                                                    | [Referenz](https://docs.python.org/3/library/functions.html#max)                        |
+| `min(tupel)`      | Gibt das kleinste Element im Tupel zurück.                                                  | [Referenz](https://docs.python.org/3/library/functions.html#min)                        |
+| `sum(tupel)`      | Berechnet die Summe der Elemente im Tupel.                                                  | [Referenz](https://docs.python.org/3/library/functions.html#sum)                        |
+| `tupel.index()`   | Sucht nach einem Element und gibt dessen Index zurück.                                      | [Referenz](https://docs.python.org/3/library/stdtypes.html#typesseq-common)             |
+| `tupel.count()`   | Zählt, wie oft ein Element im Tupel vorkommt.                                               | [Referenz](https://docs.python.org/3/library/stdtypes.html#typesseq-common)             |
+| `tuple1 + tuple2` | Konkatination zweier Tupel zu einem großen Tupel                                            | [Referenz](https://docs.python.org/3/library/stdtypes.html#typesseq-common)             |
+| `tuple1 * zahl`   | Vervielfältigung eines Tupels                                                               | [Referenz](https://docs.python.org/3/library/stdtypes.html#typesseq-common)             |
+| `in`              | Schlüsselwort, um zu überprüfen, ob ein Element in einem Tupel ist.                         | [Referenz](https://docs.python.org/3/library/stdtypes.html#typesseq-common)             |
 
 
 # Strings
 
-| Begriff        | Link zur Referenz                                                   |
-|----------------|---------------------------------------------------------------------|
-| `str`          | [Referenz](https://docs.python.org/3/library/stdtypes.html#textseq) |
-| Escape Zeichen | [Referenz](https://de.wikipedia.org/wiki/Escape_(Steuerzeichen))    |
-| Unicode        | [Referenz](https://de.wikipedia.org/wiki/Unicode)                   |
+
+| Funktion                    | Kurzbeschreibung                                                                                                               | Beispiel                                                                   |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| `str`                       | Primitiver Datentyp zum Speichern von Zeichenketten in Python.                                                                 | [Referenz](https://docs.python.org/3/library/stdtypes.html#textseq)        |
+| Escape Zeichen              | Zeichen, wie `\n` für Absätze oder `\t` für Tabs.                                                                              | [Referenz](https://de.wikipedia.org/wiki/Escape_(Steuerzeichen))           |
+| Unicode                     | Der Unicode-Standard legt frest, wie Schrift elektronisch gespeichert wird.                                                    | [Referenz](https://de.wikipedia.org/wiki/Unicode)                          |
+| `len(string)`               | Gibt die Länge des Strings zurück.                                                                                             | [Referenz](https://docs.python.org/3/library/functions.html#len)           |
+| `string.upper()`            | Konvertiert den String in Großbuchstaben.                                                                                      | [Referenz](https://docs.python.org/3/library/stdtypes.html#str.upper)      |
+| `string.lower()`            | Konvertiert den String in Kleinbuchstaben.                                                                                     | [Referenz](https://docs.python.org/3/library/stdtypes.html#str.lower)      |
+| `string.strip()`            | Entfernt Leerzeichen am Anfang und Ende des Strings.                                                                           | [Referenz](https://docs.python.org/3/library/stdtypes.html#str.strip)      |
+| `string.replace(old, new)`  | Ersetzt Teilzeichenketten im String.                                                                                           | [Referenz](https://docs.python.org/3/library/stdtypes.html#str.replace)    |
+| `string.split(delimiter)`   | Teilt den String in Teile anhand eines Trennzeichen.                                                                           | [Referenz](https://docs.python.org/3/library/stdtypes.html#str.split)      |
+| `string.find(substring)`    | Sucht nach einer Teilzeichenkette und gibt den Index des ersten Vorkommens zurück. Wenn nicht gefunden, wird -1 zurückgegeben. | [Referenz](https://docs.python.org/3/library/stdtypes.html#str.find)       |
+| `string.startswith(prefix)` | Überprüft, ob der String mit einem bestimmten Präfix beginnt.                                                                  | [Referenz](https://docs.python.org/3/library/stdtypes.html#str.startswith) |
+| `string.endswith(suffix)`   | Überprüft, ob der String mit einem bestimmten Suffix endet.                                                                    | [Referenz](https://docs.python.org/3/library/stdtypes.html#str.endswith)   |
+| `string.count(substring)`   | Zählt die Anzahl der Vorkommnisse einer Teilzeichenkette im String.                                                            | [Referenz](https://docs.python.org/3/library/stdtypes.html#str.count)      |
+| `str1 + str2`               | Konkatination zweier Strings zu einem großen String                                                                            | [Referenz](https://docs.python.org/3/library/stdtypes.html#typesseq-common)             |
+| `str1 * zahl`               | Vervielfältigung eines String                                                                                                  | [Referenz](https://docs.python.org/3/library/stdtypes.html#typesseq-common)             |
+| `in`                        | Schlüsselwort, um zu überprüfen, ob ein String in einem anderen enthalten ist.                                                 | [Referenz](https://docs.python.org/3/library/stdtypes.html#typesseq-common)             |
+| f-String                    | Strings, die sich besonders leicht formatieren lassen.                                                                         | [PEP 498](https://peps.python.org/pep-0498/)                                                                           |
+
 
 # Schleifen
 
@@ -227,7 +243,7 @@
 | TDD        | Eine Entwicklungspraxis, bei der Tests vor dem eigentlichen Code geschrieben werden                              | [Referenz](https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung)                   |
 | Doctest    | Ein Modul welches das Schreiben von Tests innerhalb der Docstrings von Python-Modulen und -Funktionen ermöglicht | [Referenz](https://docs.python.org/3/library/doctest.html)                             |
 
- 
+
 # Dateioperationen
 
 | Begriff        | Kurzerklärung                                                        | Link zur Referenz                                                                |
@@ -362,3 +378,4 @@
 | Höhere Ordnung     | Funktionen, die andere Funktionen als Argumente akzeptieren oder Funktionen zurückgeben. | [Referenz](https://docs.python.org/3/howto/functional.html#higher-order-functions)     |
 | Rekursion          | Die Technik, bei der eine Funktion sich selbst aufruft.                                  | [Referenz](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)     |
 | Lambda-Funktionen  | Anonyme Funktionen, erstellt mit dem `lambda`-Schlüsselwort.                             | [Referenz](https://docs.python.org/3/reference/expressions.html#lambda)                |
+| `in`              | Schlüsselwort, um zu überprüfen, ob ein Element in eine Tupel ist.                          | `1 in (3,2,1) # True`                                                                   |

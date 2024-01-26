@@ -48,7 +48,7 @@
 
 # Tupel
 
-- Ich weiß, dass Tupel unveränderlich sind und was das bedeutet
+- Ich weiß, dass Tupel unveränderlich sind und was das bedeutet.
 - Ich weiß, wie ich Tupel definiere (auch wenn diese nur ein Element enthalten).
 - Ich kann erkennen, in welchen Fällen Tupel oder Listen.
 - Ich beherrsche Slicing bei Tupeln.
@@ -58,8 +58,9 @@
 
 # Strings
 
-- Ich weiß, wie man Zeichenketten in Python definiert
-- Ich kenne häufig verwendete Funktionen im Zusammenhang mit Strings in Python
+- Ich weiß, wie man Zeichenketten in Python definiert.
+- Ich kenne häufig verwendete Funktionen im Zusammenhang mit Strings in Python und kann diese verwenden.
+- Ich auf einzele
 
 # Schleifen
 

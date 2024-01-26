@@ -140,3 +140,10 @@ Berechne den Durchschnitt von jedem Paar aufeinanderfolgender Zahlen in einer Li
 Flache eine Liste von Listen zu einer einzigen Liste ab.
 
 [Lösungen](solutions.md)
+
+### 4. Anzahl der Vokale zählen:
+```python
+text = "Python ist großartig."
+anzahl_vokale = sum(1 for char in text if char.lower() in "aeiou")
+print(anzahl_vokale)
+```
