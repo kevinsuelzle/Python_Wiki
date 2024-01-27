@@ -26,7 +26,8 @@ Um Regex zu lernen, eignet sich am besten das [Onlinetutorial von regexone](http
 ## Reguläre Ausdrücke in Python
 
 Um reguläre Ausdrücke in Python zu verwendet, müssen wir das Modul `re` importieren. Wir können dann mit verschiedenen
-Methoden aus `re` prüfen, ob ein String den regulären Ausdruck erfüllt oder nicht
+Methoden aus `re` prüfen, ob ein String den regulären Ausdruck erfüllt oder nicht. Hier ist eine Auswahl von
+Funktionen aus dem `re` Modul. [Hier ist die Liste aller Funktionen](https://docs.python.org/3/library/re.html#functions).
 
 **Suchen mit `re.search()`:** Sucht nach einem Muster in einem String und gibt ein Match-Objekt zurück, wenn das Muster gefunden wird, sonst `None`.
 
