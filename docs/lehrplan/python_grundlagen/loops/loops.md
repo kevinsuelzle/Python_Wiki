@@ -1,47 +1,33 @@
 # Schleifen
-[10min]
+
+[//]: # ([10min])
+
 In der Programmierung sind **Schleifen** ein grundlegendes Konzept, welches verwendet wird, um einen bestimmten Block
 von
 Anweisungen wiederholt auszuführen. Man sagt auch, dass Schleifen über etwas iterieren. Dies kann zum Beispiel ein
 Zahlenbereich sein oder auch eine Menge an Elementen in einer Liste.
 
-## Die Bedeutung von Schleifen
-[15min]
-Schleifen sind ein wesentlicher Bestandteil der Programmierung und haben eine breite Anwendung in verschiedenen
-Situationen:
-
-1. **Wiederholung:** Schleifen ermöglichen es, einen Satz von Anweisungen mehrmals auszuführen, bis eine bestimmte
-   Bedingung erfüllt ist oder solange eine Bedingung wahr ist.
-
-2. **Datenverarbeitung:** In vielen Fällen müssen Sie alle Elemente einer Datenstruktur (wie eine Liste oder ein Array)
-   durchgehen und auf jedes Element eine bestimmte Operation anwenden. Schleifen erleichtern diese Iteration und
-   Verarbeitung.
-
-3. **Benutzereingabe:** Schleifen ermöglichen eine dauerhafte Interaktion mit Benutzern, indem sie auf Eingaben warten
-   und je nach Eingabe unterschiedliche Aktionen ausführen.
-
 ## Arten von Schleifen in Python
-[25min]
+
+[//]: # ([25min])
 In Python gibt es zwei Hauptarten von Schleifen:
 
-1. **`for`-Schleife:** Die `for`-Schleife wird verwendet, um über eine Sequenz (z. B. eine Liste, ein Tupel oder eine
-   Zeichenkette) zu iterieren und den Codeblock für jedes Element in der Sequenz auszuführen.
+**`for`-Schleife:** Die `for`-Schleife wird verwendet, um über eine Sequenz (z. B. eine Liste, ein Tupel oder eine
+Zeichenkette) zu iterieren und den Codeblock für jedes Element in der Sequenz auszuführen.
 
-2. **`while`-Schleife:** Die `while`-Schleife wird so lange ausgeführt, wie eine angegebene Bedingung wahr ist. Sie wird
-   verwendet, wenn die Anzahl der Schleifendurchläufe im Voraus nicht bekannt ist.
+**`while`-Schleife:** Die `while`-Schleife wird so lange ausgeführt, wie eine angegebene Bedingung wahr ist. Sie wird
+verwendet, wenn die Anzahl der Schleifendurchläufe im Voraus nicht bekannt ist.
 
 ## Beispiel einer `for`-Schleife
 
 Hier ist ein einfaches Beispiel für eine `for`-Schleife in Python:
 
-```python
-fruechte = ["Apfel", "Banane", "Kirsche"]
-for frucht in fruechte:
-    print(frucht)
-```
+[💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=fruechte%20%3D%20%5B%22Apfel%22,%20%22Banane%22,%20%22Kirsche%22%5D%0Afor%20frucht%20in%20fruechte%3A%0A%20%20%20%20print%28frucht%29%0Aprint%28%22fertig%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=fruechte%20%3D%20%5B%22Apfel%22,%20%22Banane%22,%20%22Kirsche%22%5D%0Afor%20frucht%20in%20fruechte%3A%0A%20%20%20%20print%28frucht%29%0Aprint%28%22fertig%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 Diese Schleife iteriert über die Liste `fruechte` und gibt jede Frucht nacheinander aus. Für jeden Durchlauf der
-Schleife nimmt `frucht` ein anderes Element der Liste an und steht im Schleifenkörper zur Verfügungn.
+Schleife nimmt `frucht` ein anderes Element der Liste an und steht im Schleifenkörper zur Verfügung.
 
 ## Beispiel einer `while`-Schleife
 
