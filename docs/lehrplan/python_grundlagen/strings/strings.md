@@ -1,5 +1,12 @@
 # Strings in Python
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EA_PBdovZBU?si=SCrNKqnhiAQVueYG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Um Zeichenketten in Python darzustellen, benötigt man sogenannte Strings. Strings werden in
 Python in einfachen oder doppelten Anführungszeichen eingeschlossen (`''` oder `""`). Mehrzeilige Strings können mit
 drei Anführungszeichen erstellt werden. (`''' ''' ` oder `""" """`). 
@@ -12,11 +19,24 @@ Mir geht es gut.
 
 Danke der Nachfrage
 """
+
+d = '''mir geht es super!
+Und bei dir so?
+'''
+e = "alles klar\nbis bald" # Absätze durch \n bei normalen Strings anzeigen
+
+f = '' # Leeres Wort
 ```
 
 ## Eigenschaften von Strings
 
 [//]: # ([60min])
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GPSkj72ziQI?si=B6ZZOH84q4qNLxcP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 **Sequenz von Zeichen:** Ein String ist eine geordnete Sequenz von Zeichen. Jedes Zeichen in einem String hat eine
 Position, die durch einen Index dargestellt wird.
@@ -94,7 +114,7 @@ print("Ma" + "ma")
 ```
 
 **Escape-Zeichen:** Strings können Escape-Zeichen wie `\n` (für Zeilenumbruch) und `\t` (für Tabulator) enthalten, um
-spezielle Zeichen darzustellen.
+spezielle Zeichen darzustellen. [Hier ist die Liste aller Excapezeichen](https://docs.python.org/3/reference/lexical_analysis.html#escape-sequences).
 
 ```python
 print("Hallo,\nWie geht es Ihnen?\n\tViele Grüße")
@@ -165,6 +185,14 @@ print(f"Ihr Benutzername in Kleinbuchstaben: {kleinbuchstaben_benutzername}")
 [Lösung](solutions.md#aufgabe-benutzernamen)
 
 ## f-Strings
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vQaCY_HT8mQ?si=4Nw7sjRehy9sd4PZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Um den Inhalt von Variablen einfach in Strings einzubetten, gibt es in Python sog. f-Strings
 (siehe [PEP 498](https://peps.python.org/pep-0498/).
 
