@@ -6,3 +6,4 @@ __pycache__
 .firebase
 .DS_Store
 *.db
+something.py

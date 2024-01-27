@@ -28,7 +28,7 @@ Um Regex zu lernen, eignet sich am besten das [Onlinetutorial von regexone](http
 Um reguläre Ausdrücke in Python zu verwendet, müssen wir das Modul `re` importieren. Wir können dann mit verschiedenen
 Methoden aus `re` prüfen, ob ein String den regulären Ausdruck erfüllt oder nicht
 
-- **Suchen mit `re.search()`:** Sucht nach einem Muster in einem String und gibt ein Match-Objekt zurück, wenn das Muster gefunden wird, sonst `None`.
+**Suchen mit `re.search()`:** Sucht nach einem Muster in einem String und gibt ein Match-Objekt zurück, wenn das Muster gefunden wird, sonst `None`.
 
 ```python
 import re
@@ -36,19 +36,19 @@ if re.search('pattern', 'string'):
     print('Muster gefunden')
 ```
 
-- **Finden aller Übereinstimmungen mit `re.findall()`:** Gibt eine Liste aller Vorkommen des Musters im String zurück.
+**Finden aller Übereinstimmungen mit `re.findall()`:** Gibt eine Liste aller Vorkommen des Musters im String zurück.
 
 ```python
 matches = re.findall('pattern', 'string')
 ```
 
-- **Ersetzen von Text mit `re.sub()`:** Ermöglicht das Ersetzen aller Vorkommen eines Musters in einem String.
+**Ersetzen von Text mit `re.sub()`:** Ermöglicht das Ersetzen aller Vorkommen eines Musters in einem String.
 
 ```python
 neuer_string = re.sub('pattern', 'replacement', 'string')
 ```
 
-- **Kompilieren von Mustern mit `re.compile()`:** Für die wiederholte Verwendung eines Musters kann es effizient sein, es zuerst zu kompilieren.
+**Kompilieren von Mustern mit `re.compile()`:** Für die wiederholte Verwendung eines Musters kann es effizient sein, es zuerst zu kompilieren.
 
 ```python
 compiled_pattern = re.compile('pattern')
@@ -59,19 +59,60 @@ if compiled_pattern.search('string'):
 Reguläre Ausdrücke sind extrem mächtig, können aber auch komplex und schwer lesbar sein. 
 Eine **gute Praxis ist, die Ausdrücke gut zu kommentieren** und, wo möglich, auf Klarheit zu achten.
 
-### Aufgabe: `re` nutzen🌶🌶🌶
-Baue explizite Codebeispiel für alle obigen Funktionen auf dem modul `re`.
+Außerdem kann man in Python spezielle **Regex-String** definieren, indem vor dem String ein `r` gesetzt wird. So müssen 
+bestimmte Zeichen, wie das `\` nicht extra escaped werden. Statt dem Pattern `"\\w+"` kann dann einfach `"\w+"`
+verwendet werden.
 
-### Aufgabe: Funktion zur Überprüfung einer E-Mail-Adresse 🌶️🌶️
-Schreibe eine Funktion, die prüft, ob ein gegebener String ein gültiger E-Mail-Adresse ist.
+### Aufgabe: Hashtags extrahieren🌶
 
-### 15. Überprüfung, ob ein String eine gültige URL ist: 🌶️️🌶️️
-Erstelle einen String und überprüfe, ob er eine gültige URL ist.
+Extrahiere alle Hashtags im folgenden Beispiel:
 
-### 18. Extrahieren von URLs aus einem Text: 🌶️️🌶️️
-Schreibe einen Python-Code, um alle URLs in einem gegebenen Text zu extrahieren.
+```python
+text = "Ein Text mit #Python und #Programmierung. #Regex Übungen sind auch dabei."
+```
+
+### Aufgabe: CSV-Zeile parsen🌶
+
+Schreibe einen regulären Ausdruck, um Daten aus einer CSV-Zeile zu extrahieren. Die `,`-separierten Einträge
+sollen dann in einer Liste erscheinen.
+
+```python
+csv_line = "Alice,25,Female,Engineer"
+```
 
 ### Aufgabe: Regex im Alltag nutzen🌶
 Finde heraus, wie du mit deiner favorisierten IDE mithilfe von regulären Ausdrücken suchen kannst.
 
+### Aufgabe: Datum filtern🌶🌶
 
+Finde alle Datums im folgenden Text:
+
+```python
+text = "Ein Beispieltext mit dem Datum 27.01.2024 und einem weiteren Datum 01.12.2023."
+```
+
+### Aufgabe: URLs unkenntlich machen🌶🌶
+
+Ersetze im folgenden Text alle URLs durch `***hidden URL***`:
+
+```python
+text = "Ein Text mit einer URL: https://www.example.com und eine weitere: http://test.org."
+```
+
+### Aufgabe: Farbcodes🌶🌶
+
+Filtere alle Hexadezimalen Farbcodes mit 6 Ziffern heraus:
+
+```python
+text = "Farbcodes: #FF0000, #00FF00, #0000FF."
+```
+
+### Aufgabe: HTML-Tags entfernen🌶🌶🌶
+
+Entferne aus dem folgenden Text die HTML-Tags:
+
+```python
+html_text = "<p>Dies ist ein <strong>Beispiel</strong> HTML-Text.</p>"
+```
+
+[Lösung](solution.md)
