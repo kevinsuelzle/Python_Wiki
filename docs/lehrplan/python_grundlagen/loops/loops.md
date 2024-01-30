@@ -16,6 +16,13 @@ verwendet, wenn die Anzahl der Schleifendurchläufe im Voraus nicht bekannt ist.
 
 # Einführung in `for`-Schleifen
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IZmCkNQb5v8?si=I4rS9cz-B1xrp0_6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 Hier ist ein einfaches Beispiel für eine `for`-Schleife in Python (drücke auf "Next >" um den Code schrittweise 
 durchzuführen):
 
@@ -39,7 +46,8 @@ for element in sequenz:
 - `sequenz`: Die Sequenz, über die iteriert wird (z. B. eine Liste, ein Tupel, eine Zeichenkette oder eine range, auf die wir gleich eingehen werden).
 
 ## Aufgaben
-[35min]
+
+[//]: # ([35min])
 
 ### 1. Zählen 🌶️
 Schreibe eine `for`-Schleife, die die Zahlen von 1 bis 10 ausgibt.
@@ -76,6 +84,14 @@ vorkommt.
 
 
 # Iteration über feste Zahlenbereiche mit `range`
+
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IQhjfZiCOro?si=47NPqX5Fn0SOri8G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
 
 Möchte man über einen bestimmten Zahlenraum iterieren, so verwendet man in Python die `range`-Funktion. Es gibt drei 
 Möglichkeiten `range` aufzurufen:
@@ -117,6 +133,14 @@ Wir können Ranges so einfach für Schleifeniterationen über einen Integer-Zahl
 
 # Einführung in While-Schleifen in Python
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nqMMCr3juCE?si=RpI4n9QONgTR_Qz7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 [//]: # ([120min])
 While-Schleifen ermöglichen es einen Block von Anweisungen
 wiederholt auszuführen, **solange eine bestimmte Bedingung erfüllt ist**.
@@ -126,9 +150,9 @@ Nutzer der Fall.
 
 Hier ist ein einfaches Beispiel für eine `while`-Schleife in Python:
 
-[💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=zaehler%20%3D%200%0Awhile%20zaehler%20%3C%205%3A%0A%20%20%20%20print%28%22Schleife%20Nr.%22,%20zaehler%29%0A%20%20%20%20zaehler%20%2B%3D%201%0Aprint%28%22fertig%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
+[💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=while%20True%3A%0A%20%20%20%20eingabe%20%3D%20input%28%22Bitte%20gib%20etwas%20ein%3A%22%29%0A%20%20%20%20print%28f%22Deine%20Eingabe%20ist%3A%20%7Beingabe%7D%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
 
-<iframe width="800" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=zaehler%20%3D%200%0Awhile%20zaehler%20%3C%205%3A%0A%20%20%20%20print%28%22Schleife%20Nr.%22,%20zaehler%29%0A%20%20%20%20zaehler%20%2B%3D%201%0Aprint%28%22fertig%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=while%20True%3A%0A%20%20%20%20eingabe%20%3D%20input%28%22Bitte%20gib%20etwas%20ein%3A%22%29%0A%20%20%20%20print%28f%22Deine%20Eingabe%20ist%3A%20%7Beingabe%7D%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 Hier sehen wir noch ein kompliziertes Beispiel, bei dem eine Zahl so lange von einer anderen Subtrahiert wird,
 bis eine Zahl negativ wird. Welcher Rechenoperation wird mit diesem Code umgesetzt?
@@ -176,12 +200,21 @@ der beiden vorherigen. Der Anfang der Fibonaccifolge sieht also wie folgt aus:
 
 # Vorzeitiges Abbrechen einer Schleife
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/suZrbAoSmr0?si=hloioyGs7h7phUNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 [//]: # ([60min])
 In vielen Fällen sucht man einfach einen Wert in einem Bereich oder ein bestimmtes Element in einer List. Sobald man
 dieses gefunden hat, kann man die Schleife eigentlich abbrechen. Dafür nutzt man das Keyword `break`:
 
 [💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=for%20i%20in%20range%280,%2010%29%3A%0A%20%20%20%20print%28i%29%0A%20%20%20%20if%20i%20%3D%3D%205%3A%0A%20%20%20%20%20%20%20%20break%0Aprint%28%22Ende%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
 
+<iframe width="800" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20i%20in%20range%280,%2010%29%3A%0A%20%20%20%20print%28i%29%0A%20%20%20%20if%20i%20%3D%3D%205%3A%0A%20%20%20%20%20%20%20%20break%0Aprint%28%22Ende%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 Sobald die Bedingung `i == 5` wahr wird, sorgt `break` dafür, dass wir die Schleifen verlassen. Damit sparen wir uns 5
 weitere Durchläufe. Bei komplexen Problemstellungen kann man damit sehr viel Zeit sparen.
@@ -191,7 +224,7 @@ aktuellen Durchlauf. Dafür nutzt man das Keyword `continue`.
 
 [💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=for%20i%20in%20range%280,%2010%29%3A%0A%20%20%20%20if%203%20%3C%3D%20i%20%3C%3D%205%3A%0A%20%20%20%20%20%20%20%20continue%0A%20%20%20%20print%28i%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
 
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20i%20in%20range%280,%2010%29%3A%0A%20%20%20%20if%203%20%3C%3D%20i%20%3C%3D%205%3A%0A%20%20%20%20%20%20%20%20continue%0A%20%20%20%20print%28i%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="800" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20i%20in%20range%280,%2010%29%3A%0A%20%20%20%20if%203%20%3C%3D%20i%20%3C%3D%205%3A%0A%20%20%20%20%20%20%20%20continue%0A%20%20%20%20print%28i%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 Wieso? Für jeder Zahl zwischen 0 und 10 wird überprüft, ob diese Zahl zwischen 3 und 5 liegt. Ist das der Fall, springt
 der Code direkt an den Schleifenanfang (wegen des `continue`), statt die Zeile 4 auszuführen.
@@ -219,6 +252,14 @@ den Befehl `break` verlassen und das Programm kann normal weiterlaufen.
 
 # Else-Zweig bei While- und For-Schleifen in Python
 
+<details>
+<summary>
+🎦 Video
+</summary>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_HQlJUAIuh8?si=N0iBJYNgI4g8MVpT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
+
+
 [//]: # ([30min])
 In Python können sowohl `while`- als auch `for`-Schleifen mit einem optionalen `else`-Zweig versehen werden. Dieser Teil
 der Schleife wird ausgeführt, wenn die Schleife auf normale Weise beendet wird, d.h., **nicht durch ein `break`-Statement
@@ -232,10 +273,11 @@ unterbrochen wird**.
 
 [//]: # ([60min])
 
-### Aufgabe 1: Filtern🌶
+### Aufgabe 1: Finden🌶
 
-Schreibe ien Programm, dass die Zahlen von 1 bis 100 durchgeht und diese ausgibt. Wenn die Zahl durch 5 oder 7 
-teilbar ist, soll sie stattdessen ein Smily gedruckt werden. Schreibe den Code zweimal: mit und ohne `continue`.
+Schreibe ien Programm, das in einem Text das erste Wort findet, länger als 8 Buchstaben ist und dieses zurückgibt.
+Schreibe eine Antwort mit und eine ohne die Verwendung von `continue`.
+
 
 ### Aufgabe 2: Benutzerdefinierte Passwortüberprüfung 🌶️🌶️🌶️
 
@@ -263,4 +305,4 @@ Bestellung an und fragt, ob der Benutzer bar oder mit Karte zahlen möchte.
 menu = {"Kaffee": 2.50, "Tee": 2.00, "Kuchen": 3.00}
 ```
 
-[Lösungen](solutions.md#Anspruchsvolle Aufgaben)
+[Lösungen](solutions.md#anspruchsvolle-aufgaben)

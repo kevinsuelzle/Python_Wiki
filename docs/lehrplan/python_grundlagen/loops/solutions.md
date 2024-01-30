@@ -170,33 +170,29 @@ while f_2 < at_least:
 print(f"Die Zahl {f_3} ist die erste Fibonaccizahl, die größer als  {at_least}")
 ```
 
-## Anspruchsvolle Aufgaben
+# Anspruchsvolle Aufgaben
 
-### Aufgabe 1: Filtern🌶
+### Aufgabe 1: Finden
 
 ```python
-for n in range(1,101):
-    if not n % 5 or not n % 7:
-        print('⭐')
-        continue
-    print(n)
-
-for n in range(1,101):
-    if not n % 5 or not n % 7:
-        print('⭐')
-    else:
-        print(n)
+text = "Schreibe ien Programm, das in einem Text das erste Wort findet, länger als 8 Buchstaben ist und dieses zurückgibt."
+for word in text.split():
+    if len(word) > 8:
+        break
+else:
+    word = ""
+print(f"Erstes Wort mit mehr als 8 Buchstaben: {word}")
 ```
-Code ohne 
+
+Code ohne  `continue`
 ```python
-numbers = [102, 101, 88, 75, -12, -99, 32, 15, 1, 3000, 2]
-new_list = []
-for number in numbers:
-    if number > 50:
-        pass
-    else:
-        new_list.append(number)
-print(f"Neue Liste: {new_list}")
+text = "Schreibe ien Programm, das in einem Text das erste Wort findet, länger als 8 Buchstaben ist und dieses zurückgibt."
+first_word = ""
+for word in text.split():
+    if not first_word and len(word) > 8:
+        first_word = word
+
+print(f"Erstes Wort mit mehr als 8 Buchstaben: {first_word}")
 ```
 
 ### Aufgabe 2: Benutzerdefinierte Passwortüberprüfung
