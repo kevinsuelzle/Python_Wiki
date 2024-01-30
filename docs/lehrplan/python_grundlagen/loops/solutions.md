@@ -1,13 +1,12 @@
-
 # Lösungen
 
-## for-Schleifen
+# for-Schleifen
 
 Natürlich, hier sind die Lösungen zu den Übungsaufgaben zu `for`-Schleifen:
 
 ### 1. Zählen
 ```python
-for zahl in range(1, 11):
+for zahl in [1,2,3,4,5,6,7,8,9,10]:
    print(zahl)
 ```
 
@@ -21,7 +20,7 @@ for stadt in staedte:
 ### 3. Summierung
 ```python
 summe = 0
-for zahl in range(1, 101):
+for zahl in [1,2,3,4,5,6,7,8,9,10]:
    summe += zahl
 print(summe)
 ```
@@ -43,27 +42,14 @@ for zahl in range(1, 11):
    print(quadrat)
 ```
 
-### 6. Suchen einer Frucht
-```python
-fruechte = ["Apfel", "Banane", "Kirsche", "Erdbeere"]
-gesuchte_frucht = "Banane"
-for frucht in fruechte:
-   if frucht == gesuchte_frucht:
-       print(f"{gesuchte_frucht} wurde gefunden!")
-       break
-else:
-   print(f"{gesuchte_frucht} wurde nicht gefunden.")
-```
-
-### 7. Verdreht
+### 6. Verdreht
 ```python
 wort = "Python"
-for buchstabe in reversed(wort):
+for buchstabe in wort[::-1]:
    print(buchstabe)
 ```
 
-
-### 8. Fakultät
+### 7. Fakultät
 ```python
 n = 5
 faktor = 1
@@ -72,7 +58,7 @@ for zahl in range(1, n + 1):
 print(f"Fakultät von {n} ist {faktor}")
 ```
 
-### 9. Thermometer für Amerikaner 
+### 8. Thermometer für Amerikaner 
 ```python
 temperaturen_celsius = [0, 10, 25, 32, 100]
 for celsius in temperaturen_celsius:
@@ -80,7 +66,7 @@ for celsius in temperaturen_celsius:
     print(f"{celsius}°C entspricht {fahrenheit}°F")
 ```
 
-### 10. Vokale
+### 9. Vokale
 ```python
 wort = "Python"
 anzahl_vokale = 0
@@ -90,7 +76,7 @@ for buchstabe in wort:
 print(f"Anzahl der Vokale im Wort '{wort}': {anzahl_vokale}")
 ```
 
-### 11. Häufigkeit
+### 10. Häufigkeit
 ```python
 text = "Python ist eine Programmiersprache, und Python ist großartig."
 gesuchtes_wort = "Python"
@@ -102,46 +88,25 @@ for wort in woerter:
 print(f"Anzahl von '{gesuchtes_wort}' im Text: {anzahl}")
 ```
 
-## while-Schleifen
+# Aufgaben Ranges
 
-### 1. Zählen
-
-```python
-i = 1
-while i <= 10:
-    print(i)
-    i += 1
-```
-
-### 2. Gerade Zahlen
+### Aufgabe: Ranges vorhersagen🌶
 
 ```python
-i = 2
-while i <= 20:
-    print(i)
-    i += 2
+list(range(10)) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+list(range(1, 11)) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list(range(0, 30, 5)) # [0, 5, 10, 15, 20, 25]
+list(range(0, 10, 3)) # [0, 3, 6, 9]
+list(range(0, -10, -1)) # [0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
+list(range(0)) # []
+list(range(1, 0)) # []
 ```
 
-### 3. Liste von hinten ausgeben
 
-```python
-i = 5
-while i > 0:
-    print(i)
-    i -= 1
-```
+# while-Schleifen
 
-### 4. Die ersten Fünf
 
-```python
-meine_liste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-i = 0
-while i < 5:
-    print(meine_liste[i])
-    i += 1
-```
-
-### 5. Summe von 1 bis 100
+### 1. Summe von 1 bis 100
 
 ```python
 summe = 0
@@ -149,10 +114,33 @@ i = 1
 while i <= 100:
     summe += i
     i += 1
-print(summe)
+print(f"Die Summe von 1 bis {i} ist {summe}")
 ```
 
-### 6. Fast endlose Schleife
+### 2. Input erfragen
+
+```python
+summe = 0
+while True:
+    next = input("Bitte gib eine Zahl ein: ")
+    summe += next
+    print(f"In der Summe bisher insgesamt: {summe}")
+```
+
+### 3. Fakultät
+
+```python
+at_least = 100_000
+fakultaet = 1
+i = 1
+while fakultaet <= at_least:
+    fakultaet *= i
+    i += 1
+    
+print(f"Das kleinste n, sodass n! > {at_least} ist {i} und zwar {i}! = {fakultaet}")
+```
+
+### 4. Fast endlose Schleife
 
 ```python
 import random
@@ -161,119 +149,119 @@ zahl = 0
 while zahl != 5:
     zahl = random.randint(1, 10)
     print(zahl)
+print("Das wars!")
 ```
 
-### 7. Fakultät
+### 5. Fibonacci
 
 ```python
-n = 5  # Beispielzahl
-fakultaet = 1
-i = 1
-while i <= n:
-    fakultaet *= i
-    i += 1
-print(fakultaet)
-```
+f_1 = 1
+f_2 = 1
+at_least = 100
 
-### 8. Wiederholung nach Länge
+while f_2 < at_least:
+    # Berechne die nächste Fibonaccizahl
+    f_3 = f_1 + f_2
 
-```python
-text = "Hallo"
-i = 0
-while i < len(text):
-    print(text)
-    i += 1
-```
+    # Setze die aktuelle und letzte Fibonaccizahl fest.
+    f_1 = f_2
+    f_2 = f_3
 
-### 9. Fibonacci
-
-```python
-a, b = 0, 1
-i = 0
-while i < 10:
-    print(a)
-    a, b = b, a + b
-    i += 1
-```
-
-### 10. Stopp-Bedingung
-
-```python
-liste = ["Hallo", "Welt", "Stopp", "Python"]
-i = 0
-while i < len(liste):
-    if liste[i] == "Stopp":
-        break
-    print(liste[i])
-    i += 1
+print(f"Die Zahl {f_3} ist die erste Fibonaccizahl, die größer als  {at_least}")
 ```
 
 ## Anspruchsvolle Aufgaben
 
-### Lösung zu Aufgabe 1: Benutzerdefinierte Passwortüberprüfung
+### Aufgabe 1: Filtern🌶
 
 ```python
+for n in range(1,101):
+    if not n % 5 or not n % 7:
+        print('⭐')
+        continue
+    print(n)
+
+for n in range(1,101):
+    if not n % 5 or not n % 7:
+        print('⭐')
+    else:
+        print(n)
+```
+Code ohne 
+```python
+numbers = [102, 101, 88, 75, -12, -99, 32, 15, 1, 3000, 2]
+new_list = []
+for number in numbers:
+    if number > 50:
+        pass
+    else:
+        new_list.append(number)
+print(f"Neue Liste: {new_list}")
+```
+
+### Aufgabe 2: Benutzerdefinierte Passwortüberprüfung
+
+```python
+
 password = input("Bitte gib ein Passwort ein: ")
 
-if len(password) < 8:
-    print("Das Passwort muss mindestens 8 Zeichen lang sein.")
-elif not any(char.isdigit() for char in password):
-    print("Das Passwort muss mindestens eine Zahl enthalten.")
-elif not any(char.isalpha() for char in password):
-    print("Das Passwort muss mindestens einen Buchstaben enthalten.")
+# Prüfe, ob String lang genug ist
+min_length_ok = len(password) >= 8
+
+# Prüfe, ob wenigstens eine Zahl enthalten ist
+digit_found = False
+for char in password:
+    if char.isdigit():
+        digit_found = True
+        break
+
+# Prüfe, ob wenigstens ein Buchstabe enthalten ist
+char_found = False
+for char in password:
+    if char.isalpha():
+        char_found = True
+        break
+        
+if min_length_ok and digit_found and char_found:
+    print("Password ok💚")
 else:
-    print("Das Passwort ist gültig.")
+    print("Password not ok😰")
+
+if not min_length_ok:
+    print("Es ist zu kurz.")
+if not digit_found:
+    print("Es fehlt mindestens eine Ziffer.")
+if not char_found:
+    print("Es fehlt mindestens ein Buchstabe.")
 ```
 
-### Lösung zu Aufgabe 2: Textbasierter Quiz
-
-```python
-fragen = ["Hauptstadt von Deutschland?", "2+2=?", "Name des aktuellen US-Präsidenten?", "7 * 8=?",
-          "Farbe des Himmels bei klarem Wetter?"]
-antworten = ["Berlin", "4", "Biden", "56", "Blau"]
-punkte = 0
-
-for i in range(len(fragen)):
-    antwort = input(fragen[i] + " ")
-    if antwort.lower() == antworten[i].lower():
-        punkte += 1
-
-print(f"Du hast {punkte} von 5 Punkten erreicht.")
-
-if punkte <= 2:
-    print("Anfänger")
-elif punkte <= 4:
-    print("Fortgeschritten")
-else:
-    print("Experte")
-```
-
-### Lösung zu Aufgabe 3: Einfacher Zahlenraten
+### Aufgabe 3: Einfacher Zahlenraten
 
 ```python
 import random
 
 zahl = random.randint(1, 100)
-versuche = 0
+
+versuch = 1
 max_versuche = 10
 
-while versuche < max_versuche:
+while versuch < max_versuche:
     raten = int(input("Rate die Zahl: "))
-    versuche += 1
 
     if raten == zahl:
-        print(f"Richtig! Du hast die Zahl in {versuche} Versuchen erraten.")
+        print(f"Richtig! Du hast die Zahl in {versuch} Versuchen erraten.")
         break
     elif raten < zahl:
-        print("Die Zahl ist höher.")
+        print("Die gesuchte Zahl ist höher.")
     else:
-        print("Die Zahl ist niedriger.")
-
-if raten != zahl:
+        print("Die gesuchte Zahl ist niedriger.")
+        
+    versuch += 1
+else:
     print(f"Leider falsch. Die gesuchte Zahl war {zahl}.")
 ```
 
-### Lösung zu Aufgabe 4: Bestellung in einem virtuellen Café
+### Aufgabe 4: Bestellung in einem virtuellen Café
 
 ```python
 menu = {"Kaffee": 2.50, "Tee": 2.00, "Kuchen": 3.00}

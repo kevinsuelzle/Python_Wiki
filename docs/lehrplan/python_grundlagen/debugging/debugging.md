@@ -32,6 +32,7 @@ Programms zu einem bestimmten Zeitpunkt zu überprüfen, Variablenwerte zu inspi
 kontrollieren. 
 
 Debugger haben alle ähnliche Funktionen:
+
 * **Haltepunkte setzen**: Erlaubt es dem Entwickler, die Ausführung des Programms an bestimmten Punkten anzuhalten.
 * **Schrittweise Ausführung**: Führt das Programm Zeile für Zeile aus, um die Auswirkungen jeder Anweisung zu beobachten.
 * **Variablen inspizieren**: Zeigt die aktuellen Werte von Variablen im Programm an.

@@ -3,13 +3,9 @@
 [//]: # ([10min])
 
 In der Programmierung sind **Schleifen** ein grundlegendes Konzept, welches verwendet wird, um einen bestimmten Block
-von
-Anweisungen wiederholt auszuführen. Man sagt auch, dass Schleifen über etwas iterieren. Dies kann zum Beispiel ein
+von Anweisungen wiederholt auszuführen. Man sagt auch, dass Schleifen über etwas iterieren. Dies kann zum Beispiel ein
 Zahlenbereich sein oder auch eine Menge an Elementen in einer Liste.
 
-## Arten von Schleifen in Python
-
-[//]: # ([25min])
 In Python gibt es zwei Hauptarten von Schleifen:
 
 **`for`-Schleife:** Die `for`-Schleife wird verwendet, um über eine Sequenz (z. B. eine Liste, ein Tupel oder eine
@@ -18,57 +14,17 @@ Zeichenkette) zu iterieren und den Codeblock für jedes Element in der Sequenz a
 **`while`-Schleife:** Die `while`-Schleife wird so lange ausgeführt, wie eine angegebene Bedingung wahr ist. Sie wird
 verwendet, wenn die Anzahl der Schleifendurchläufe im Voraus nicht bekannt ist.
 
-## Beispiel einer `for`-Schleife
+# Einführung in `for`-Schleifen
 
-Hier ist ein einfaches Beispiel für eine `for`-Schleife in Python:
+Hier ist ein einfaches Beispiel für eine `for`-Schleife in Python (drücke auf "Next >" um den Code schrittweise 
+durchzuführen):
 
 [💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=fruechte%20%3D%20%5B%22Apfel%22,%20%22Banane%22,%20%22Kirsche%22%5D%0Afor%20frucht%20in%20fruechte%3A%0A%20%20%20%20print%28frucht%29%0Aprint%28%22fertig%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
 
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=fruechte%20%3D%20%5B%22Apfel%22,%20%22Banane%22,%20%22Kirsche%22%5D%0Afor%20frucht%20in%20fruechte%3A%0A%20%20%20%20print%28frucht%29%0Aprint%28%22fertig%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="800" height="330" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=fruechte%20%3D%20%5B%22Apfel%22,%20%22Banane%22,%20%22Kirsche%22%5D%0Afor%20frucht%20in%20fruechte%3A%0A%20%20%20%20print%28frucht%29%0Aprint%28%22fertig%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 Diese Schleife iteriert über die Liste `fruechte` und gibt jede Frucht nacheinander aus. Für jeden Durchlauf der
 Schleife nimmt `frucht` ein anderes Element der Liste an und steht im Schleifenkörper zur Verfügung.
-
-## Beispiel einer `while`-Schleife
-
-Hier ist ein einfaches Beispiel für eine `while`-Schleife in Python:
-
-```python
-zaehler = 0
-while zaehler < 5:
-    print("Schleife Nr.", zaehler)
-    zaehler += 1
-```
-
-Diese Schleife wird so lange ausgeführt, wie `zaehler` kleiner als 5 ist, und gibt die Nachricht "Schleife Nr." gefolgt
-von der aktuellen Schleifennummer aus.
-
-Schleifen sind ein mächtiges Werkzeug in der Programmierung und ermöglichen die Automatisierung von Aufgaben und die
-effiziente Verarbeitung von Daten. Es ist wichtig, Schleifen mit Bedacht zu verwenden, um Endlosschleifen und
-unerwünschte Ergebnisse zu vermeiden.
-
-# Einführung in `for`-Schleifen
-[120min]
-Eine `for`-Schleife in Python ist eine Kontrollstruktur, die verwendet wird, um über eine Sequenz von Elementen (z. B.
-eine Liste, ein Tupel oder eine Zeichenkette) zu iterieren und eine Gruppe von Anweisungen für jedes Element in der
-Sequenz auszuführen. `for`-Schleifen sind sehr nützlich, um Aufgaben zu automatisieren, die eine wiederholte
-Verarbeitung von Daten erfordern.
-
-## Eigenschaften von `for`-Schleifen
-
-Hier sind einige wichtige Eigenschaften von `for`-Schleifen in Python:
-
-1. **Klare Struktur:** `for`-Schleifen haben eine klare und gut definierte Struktur, die die Wiederholung von Code
-   erleichtert.
-
-2. **Durchlaufen einer Sequenz:** Sie iterieren über eine Sequenz von Elementen, eins nach dem anderen, bis alle
-   Elemente durchlaufen wurden.
-
-3. **Feste Anzahl von Durchläufen:** Im Gegensatz zu `while`-Schleifen haben `for`-Schleifen eine feste Anzahl von
-   Durchläufen, die von der Länge der Sequenz bestimmt werden.
-
-4. **Automatische Aktualisierung:** Der Index oder das Element, über das iteriert wird, wird automatisch aktualisiert,
-   wodurch die Wahrscheinlichkeit von Endlosschleifen verringert wird.
 
 ## Syntax einer `for`-Schleife
 
@@ -80,28 +36,7 @@ for element in sequenz:
 ```
 
 - `element`: Eine Variable, die den aktuellen Wert aus der Sequenz repräsentiert.
-- `sequenz`: Die Sequenz, über die iteriert wird (z. B. eine Liste, ein Tupel, eine Zeichenkette).
-
-## Beispiel einer `for`-Schleife
-
-Hier ist ein einfaches Beispiel für eine `for`-Schleife, die über eine Liste von Zahlen iteriert und sie ausgibt:
-
-```python
-zahlen = [1, 2, 3, 4, 5]
-for zahl in zahlen:
-    print(zahl)
-```
-
-In diesem Beispiel durchläuft die `for`-Schleife die Liste `zahlen` und gibt jede Zahl nacheinander aus.
-
-## Anwendung von `for`-Schleifen
-
-`for`-Schleifen sind äußerst vielseitig und werden in verschiedenen Anwendungsfällen eingesetzt, wie:
-
-- Iteration über Daten in Listen, Tupeln oder Zeichenketten.
-- Verarbeitung von Elementen in Datenstrukturen wie Listen und Dictionaries.
-- Ausführung von Code für eine feste Anzahl von Durchläufen.
-- Automatisierung von Aufgaben, bei denen eine wiederholte Aktion erforderlich ist.
+- `sequenz`: Die Sequenz, über die iteriert wird (z. B. eine Liste, ein Tupel, eine Zeichenkette oder eine range, auf die wir gleich eingehen werden).
 
 ## Aufgaben
 [35min]
@@ -111,155 +46,159 @@ Schreibe eine `for`-Schleife, die die Zahlen von 1 bis 10 ausgibt.
 ### 2. Städtetrip 🌶️
 Erstelle eine Liste von Städten und verwenden Sie eine `for`-Schleife, um jede Stadt auszugeben.
 ### 3. Summierung 🌶️🌶️
-Schreibe eine `for`-Schleife, die die Summe aller Zahlen von 1 bis 100 berechnet.
+Schreibe eine `for`-Schleife, die die Summe aller Zahlen von 1 bis 10 berechnet.
 ### 4. Längster Name 🌶️🌶️🌶️
 Erstelle eine Liste von Namen und verwenden Sie eine `for`-Schleife, um den längsten Namen in der Liste zu finden.
 ### 5. Quadratzahlen 🌶️
 Schreibe eine `for`-Schleife, die die Quadratzahlen von 1 bis 10 ausgibt.
-### 6. Suchen einer Frucht 🌶️🌶️
-Erstelle eine Liste von Früchten und verwenden Sie eine `for`-Schleife, um nach einer bestimmten Frucht zu
-suchen und sie auszugeben, wenn sie gefunden wird.
-### 7. Verdreht 🌶️
+### 6. Verdreht 🌶️
 Schreibe eine `for`-Schleife, die die Buchstaben eines Wortes in umgekehrter Reihenfolge ausgibt.
-### 8. Fakultät 🌶️🌶️
-Schreibe eine `for`-Schleife, die die Fakultät (n!) einer gegebenen Zahl `n` berechnet.
-### 9. Thermometer für Amerikaner 🌶️🌶️🌶️
-Erstelle eine Liste von Temperaturen in Celsius und verwenden Sie eine `for`-Schleife, um sie in Fahrenheit
-umzuwandeln und auszugeben.
-### 10. Vokale 🌶️🌶️🌶️
+### 7. Fakultät 🌶️🌶️
+Schreibe eine `for`-Schleife, die die Fakultät (n!) einer gegebenen Zahl `n` berechnet. Zur Errinnerung:
+
+```commandline
+n! := n ⋅ (n-1) ⋅ (n-2) ⋅ ... ⋅ 2 ⋅ 1
+6! = 6⋅5⋅4⋅3⋅2⋅1 = 720 
+1! = 1
+0! = 1
+```
+
+### 8. Thermometer für Amerikaner 🌶️🌶️🌶️
+Erstelle eine Liste von Temperaturen in Celsius und verwenden Sie eine `for`-Schleife, um jede nacheinander in Fahrenheit
+umzuwandeln und auszugeben. Recherchiere die entsprechende Formel.
+### 9. Vokale 🌶️🌶️🌶️
 Schreibe eine `for`-Schleife, die die Anzahl der Vokale in einem gegebenen Wort zählt.
-### 11. Häufigkeit 🌶️🌶️🌶️
+### 10. Häufigkeit 🌶️🌶️🌶️
 Schreibe eine `for`-Schleife, die einen Text durchläuft und zählt, wie oft ein bestimmtes Wort in diesem Text
 vorkommt.
 
 [Lösungen](solutions.md#for-schleifen)
 
+
+# Iteration über feste Zahlenbereiche mit `range`
+
+Möchte man über einen bestimmten Zahlenraum iterieren, so verwendet man in Python die `range`-Funktion. Es gibt drei 
+Möglichkeiten `range` aufzurufen:
+
+| Anazahl Parameter | Aufruf                         | Bedeutung                                                                                                                | Beispiel          | Entsprechende Liste |
+|-------------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------|---------------------|
+| 1                 | `range(end)`                   | Die Range enthält die Integer von `0` bis _ausschließlich_ `end`.                                                        | `range(3)`        | `[0,1,2]`           |
+| 2                 | `range(start, end)`            | Die Range enthält die Integer von `start` bis _ausschließlich_ `end`.                                                    | `range(12, 15)`   | `[12,13,14]`        |
+| 3                 | `range(start, end, step_size)` | Die Range enthält die Integer von `start` bis _ausschließlich_ `end`. und geht dabei in Schritten der Größe `step_size`. | `range(3, 10, 2)` | `[3,5,7,9]`         |
+
+### Aufgabe: Ranges vorhersagen🌶
+
+Welche listen werden in jeder Zeile jeweils erzeugt?
+
+```python
+list(range(10)) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+list(range(1, 11)) # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list(range(0, 30, 5)) # [0, 5, 10, 15, 20, 25]
+list(range(0, 10, 3)) # [0, 3, 6, 9]
+list(range(0, -10, -1)) # [0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
+list(range(0)) # []
+list(range(1, 0)) # []
+```
+[Lösung](solutions.md#aufgabe-ranges-vorhersagen)
+
+## Nutzen von Ranges
+
+Ranges wirken auf den ersten Blick sehr ähnlich zu Listen. Schaut man sie sich genauer an, stellt man sogar fest,
+dass sie sogar Indizierung und Slicing erlauben. Es gibt zwei wichtige Vorteile:
+
+* Ranges können leicht instanziiert werden (wie würdest du eine Liste aller geraden Zahlen bis 1000 in Python sonst erstellen?),
+* Ranges sparen Speicherplatz. Denn die Zahlen, die in der Range sind, werden nicht alle zunächst im Speicher hinlegt, sondern erst bei Bedarf bereitgestellt (indem sie jeweils berechnet werden).
+
+Wir können Ranges so einfach für Schleifeniterationen über einen Integer-Zahlenraum nutzen:
+
+[💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=for%20i%20in%20range%285%29%3A%0A%20%20%20%20print%28i%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
+
+<iframe width="800" height="300" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20i%20in%20range%285%29%3A%0A%20%20%20%20print%28i%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
 # Einführung in While-Schleifen in Python
-[120min]
-While-Schleifen sind eine grundlegende Kontrollstruktur in Python, die es ermöglicht, einen Block von Anweisungen
-wiederholt auszuführen, solange eine bestimmte Bedingung erfüllt ist. Sie sind besonders nützlich, wenn die Anzahl der
-Wiederholungen nicht im Voraus bekannt ist. Dies ist zum Beispiel bei einer wiederholten Eingabeaufforderung an den
+
+[//]: # ([120min])
+While-Schleifen ermöglichen es einen Block von Anweisungen
+wiederholt auszuführen, **solange eine bestimmte Bedingung erfüllt ist**.
+Sie sind besonders nützlich, wenn die Anzahl der
+Wiederholungen **nicht im Voraus bekannt** ist. Dies ist zum Beispiel bei einer wiederholten Eingabeaufforderung an den
 Nutzer der Fall.
 
-## Eigenschaften von While-Schleifen
+Hier ist ein einfaches Beispiel für eine `while`-Schleife in Python:
 
-1. **Bedingungsabhängig**: Die Schleife wird fortgesetzt, solange die Bedingung wahr (`True`) ist.
+[💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=zaehler%20%3D%200%0Awhile%20zaehler%20%3C%205%3A%0A%20%20%20%20print%28%22Schleife%20Nr.%22,%20zaehler%29%0A%20%20%20%20zaehler%20%2B%3D%201%0Aprint%28%22fertig%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
 
-2. **Initialisierung notwendig**: Vor der Schleife sollte die Variable, die in der Bedingung verwendet wird,
-   initialisiert werden.
+<iframe width="800" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=zaehler%20%3D%200%0Awhile%20zaehler%20%3C%205%3A%0A%20%20%20%20print%28%22Schleife%20Nr.%22,%20zaehler%29%0A%20%20%20%20zaehler%20%2B%3D%201%0Aprint%28%22fertig%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
-3. **Aktualisierung innerhalb der Schleife**: Es ist wichtig, die Bedingungsvariable innerhalb der Schleife zu
-   aktualisieren, um eine endlose Schleife zu vermeiden.
+Hier sehen wir noch ein kompliziertes Beispiel, bei dem eine Zahl so lange von einer anderen Subtrahiert wird,
+bis eine Zahl negativ wird. Welcher Rechenoperation wird mit diesem Code umgesetzt?
 
-4. **Flexibilität**: While-Schleifen sind flexibel und können für eine Vielzahl von Situationen verwendet werden,
-   insbesondere wenn die Anzahl der Durchläufe nicht bekannt ist.
+[💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=zaehler%20%3D%2018%0Aoriginal_zaehler%20%3D%20zaehler%0Anenner%20%3D%205%0Aanzahl%20%3D%200%0Awhile%20zaehler%20-%20nenner%20%3E%200%3A%0A%20%20%20%20zaehler%20%3D%20zaehler%20-%20nenner%0A%20%20%20%20anzahl%20%3D%20anzahl%20%2B%201%0Aprint%28f%22%7Bnenner%7D%20passt%20%7Banzahl%7D%20mal%20in%20den%20%7Boriginal_zaehler%7D%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
 
-5. **Risiko endloser Schleifen**: Wenn die Bedingung nie falsch wird, entsteht eine endlose Schleife, was zu Problemen
-   führt (z.B. das Programm friert ein).
+<iframe width="800" height="450" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=zaehler%20%3D%2018%0Aoriginal_zaehler%20%3D%20zaehler%0Anenner%20%3D%205%0Aanzahl%20%3D%200%0Awhile%20zaehler%20-%20nenner%20%3E%200%3A%0A%20%20%20%20zaehler%20%3D%20zaehler%20-%20nenner%0A%20%20%20%20anzahl%20%3D%20anzahl%20%2B%201%0Aprint%28f%22%7Bnenner%7D%20passt%20%7Banzahl%7D%20mal%20in%20den%20%7Boriginal_zaehler%7D%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
-6. **Break-Statement**: Durch das `break`-Statement kann eine While-Schleife vorzeitig beendet werden, selbst wenn die
-   Bedingung noch wahr ist.
-
-7. **Continue-Statement**: Mit `continue` kann der aktuelle Durchlauf der Schleife übersprungen und zur
-   Bedingungsüberprüfung zurückgekehrt werden.
-
-## Beispiel
-
-```python
-# Zählt von 1 bis 5
-i = 1
-while i <= 5:
-    print(i)
-    i += 1  # Wichtig, um die Schleife zu beenden
-```
-
-Natürlich können wir auch sehr einfach Endlosschleifen erzeugen in dem wir die Bedingung einfach immer auf `True`
+Natürlich können wir auch sehr einfach **Endlosschleifen** erzeugen in dem wir die Bedingung einfach immer auf `True`
 lassen:
 
-```python
-# Frage endlos nach Nutzereingaben
-while True:
-    eingabe = input()
-    # Mache etwas mit der Nutzereingabe
-```
+[💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=while%20True%3A%0A%20%20%20%20eingabe%20%3D%20input%28%22Bitte%20gib%20etwas%20ein%3A%22%29%0A%20%20%20%20print%28f%22Deine%20Eingabe%20ist%3A%20%7Beingabe%7D%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%2212%22,%22asdfadsf%22%5D&textReferences=false)
+
+<iframe width="800" height="330" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=while%20True%3A%0A%20%20%20%20eingabe%20%3D%20input%28%22Bitte%20gib%20etwas%20ein%3A%22%29%0A%20%20%20%20print%28f%22Deine%20Eingabe%20ist%3A%20%7Beingabe%7D%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%2212%22,%22asdfadsf%22%5D&textReferences=false"> </iframe>
 
 Wie wir die Endlosschleife doch verlassen können, lernen wir dann gleich.
 
 ## Aufgaben
-[35min]
 
-### 1. Zählen 🌶️
-Schreibe eine While-Schleife, die Zahlen von 1 bis 10 ausgibt.
-### 2. Gerade Zahlen 🌶️🌶️
-Verwende eine While-Schleife, um alle geraden Zahlen zwischen 1 und 20 auszugeben.
-### 3. Liste von hinten ausgeben 🌶️
-Erstelle eine Schleife, die eine Liste von Zahlen rückwärts ausgibt (z.B. von 5 bis 1).
-### 4. Die ersten Fünf 🌶️
-Schreibe eine Schleife, die die ersten 5 Elemente einer gegebenen Liste ausgibt.
-### 5. Summe von 1 bis 100 🌶️🌶️
-Nutze eine While-Schleife, um die Summe der Zahlen von 1 bis 100 zu berechnen.
-### 6. Fast endlose Schleife 🌶️🌶️🌶️ 
-Erstelle eine Schleife, die solange Zufallszahlen zwischen 1 und 10 generiert und ausgibt, bis die Zahl 5 erscheint.
-### 7. Fakultät 🌶️🌶️
-Verwende eine While-Schleife, um die Fakultät einer gegebenen Zahl zu berechnen.
-### 8. Wiederholung nach Länge 🌶️🌶️
-Schreibe eine Schleife, die eine gegebene Zeichenkette so oft ausgibt, wie ihre Länge beträgt.
-### 9. Fibonacci 🌶️🌶️🌶️
-Nutze eine While-Schleife, um die Fibonacci-Reihe bis zum zehnten Element zu berechnen. Recherchiere, was die
-Fibonacci-Reihe ist.
-### 10. Stopp-Bedingung 🌶️🌶️🌶️
-Erstelle eine Schleife, die eine Liste durchläuft und bei Erreichen eines bestimmten Wortes (z.B. "Stopp") beendet wird.
+[//]: # ([35min])
+
+### 1. Summe von 1 bis 100 🌶️🌶️
+Nutze eine while-Schleife, die die Zahlen 1, 2, 3, ... usw. so lange addiert, bis die Summe größer als 100 ist.
+Bis zu welcher Zahl muss addiert werden? Wie groß ist die erste Summe über 100?
+
+### 2. Input erfragen🌶🌶
+Schreibe ein Programm, dass den Nutzer immer wieder nach Zahlen fragt. Es soll nach jeder Eingabe 
+die Summe aller bisher erfragen Zahlen zurückgeben.
+
+### 3. Fakultät 🌶️🌶️
+Verwende eine While-Schleife, um das kleinste `n` zu finden, sodass `n! > 100_000` ist.
+
+### 4. Fast endlose Schleife 🌶️🌶️🌶️ 
+Erstelle eine Schleife, die so lange Zufallszahlen zwischen 1 und 10 generiert und ausgibt, bis die Zahl 5 erscheint.
+Nutze dazu `random.randint(a,b)` ([Doku](https://docs.python.org/3/library/random.html#random.randint))
+
+### 5. Fibonacci 🌶️🌶️🌶️
+Nutze eine While-Schleife, um die erste Zahl in der Fibonaccifolge zu finden, die größer als 100 ist.
+Die Fibonaccifolge beginnt mit den beiden Zahlen `1` und `1`. Die nächste Zahl der Folge ist die Summe
+der beiden vorherigen. Der Anfang der Fibonaccifolge sieht also wie folgt aus:
+
+    1, 1, 2, 3, 5, 8, 13, 21, 34, ...
 
 [Lösungen](solutions.md#while-schleifen)
 
 # Vorzeitiges Abbrechen einer Schleife
-[60min]
+
+[//]: # ([60min])
 In vielen Fällen sucht man einfach einen Wert in einem Bereich oder ein bestimmtes Element in einer List. Sobald man
 dieses gefunden hat, kann man die Schleife eigentlich abbrechen. Dafür nutzt man das Keyword `break`:
 
-```python
-for i in range(0, 10):
-    if i == 5:
-        break
+[💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=for%20i%20in%20range%280,%2010%29%3A%0A%20%20%20%20print%28i%29%0A%20%20%20%20if%20i%20%3D%3D%205%3A%0A%20%20%20%20%20%20%20%20break%0Aprint%28%22Ende%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
 
-    print(i)
-```
-
-Dieser Code gibt folgendes aus:
-
-```bash
-0
-1
-2
-3
-4
-```
 
 Sobald die Bedingung `i == 5` wahr wird, sorgt `break` dafür, dass wir die Schleifen verlassen. Damit sparen wir uns 5
-weitere Durchläufe. Bei kompexen Problemstellungen kann man damit sehr viel Zeit und damit auch Energie sparen.
+weitere Durchläufe. Bei komplexen Problemstellungen kann man damit sehr viel Zeit sparen.
 
-Auf der anderen Seite gibt es aber auch Fälle in denen man nicht die ganze Schleife beenden will, sondern nur den
+Auf der anderen Seite gibt es aber auch Fälle, in denen man nicht die ganze Schleife beenden will, sondern nur den
 aktuellen Durchlauf. Dafür nutzt man das Keyword `continue`.
 
-```python
-for i in range(0, 10):
-    if i != 5:
-        continue
+[💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=for%20i%20in%20range%280,%2010%29%3A%0A%20%20%20%20if%203%20%3C%3D%20i%20%3C%3D%205%3A%0A%20%20%20%20%20%20%20%20continue%0A%20%20%20%20print%28i%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
 
-    print(i)
-```
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20i%20in%20range%280,%2010%29%3A%0A%20%20%20%20if%203%20%3C%3D%20i%20%3C%3D%205%3A%0A%20%20%20%20%20%20%20%20continue%0A%20%20%20%20print%28i%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
-Im Gegesatz dazu ist die Ausgabe hier:
+Wieso? Für jeder Zahl zwischen 0 und 10 wird überprüft, ob diese Zahl zwischen 3 und 5 liegt. Ist das der Fall, springt
+der Code direkt an den Schleifenanfang (wegen des `continue`), statt die Zeile 4 auszuführen.
+direkt zum nächsten Durchlauf. In allen anderen Fällen wird die Zahl auf der Konsole ausgegeben.
 
-```bash
-5
-```
-
-Wieso? Für jeder Zahl zwischen 0 und 10 wird überprüft, ob diese Zahl ungleich 5 ist. Ist sie ungleich 5, springen wir
-direkt zum nächsten Durchlauf. Nur für den Fall, das die Zahl gleich 5 ist, erreichen wir die print-Funktion überhaupt.
-
-Sehr häufig wird break in Kombination mit while-Schleifen verwendet. Wieso? Weil es sehr einach ist damit
-Endlosschleifen zu erzeugen, die man unter bestimmten Bedinungen beenden will.
+Sehr häufig wird break in Kombination mit while-Schleifen verwendet. Wieso? Weil es so einfach möglich ist,
+Endlosschleifen zu erzeugen, die unter bestimmten Bedingungen abbrechen, die nicht im Schleifenkopf überprüft werden.  
 
 Zum Beispiel:
 
@@ -269,97 +208,59 @@ while True:
     if eingabe == "C":
         break
 
-    # irgendwas mit der Eingabe machen
+    print(f"Deine Eingabe in groß: {eingabe.upper()}")
+
+print("Bye Bye")
 ```
 
 Durch `while True:` läuft diese Schleife theoretisch endlos lange, weil die Bedingung immer wahr ist. Bei jedem
-Schleifen durchlauf wird der Nutzer nach einer Eingabe gefragt. Sobald der Nutzer "C" eingibt, wird die Schleife durch
+Schleifendurchlauf wird der Nutzer nach einer Eingabe gefragt. Sobald der Nutzer "C" eingibt, wird die Schleife durch
 den Befehl `break` verlassen und das Programm kann normal weiterlaufen.
 
-## Else-Zweig bei While- und For-Schleifen in Python
-[30min]
+# Else-Zweig bei While- und For-Schleifen in Python
+
+[//]: # ([30min])
 In Python können sowohl `while`- als auch `for`-Schleifen mit einem optionalen `else`-Zweig versehen werden. Dieser Teil
-der Schleife wird ausgeführt, wenn die Schleife auf normale Weise beendet wird, d.h., nicht durch ein `break`-Statement
-unterbrochen wird.
+der Schleife wird ausgeführt, wenn die Schleife auf normale Weise beendet wird, d.h., **nicht durch ein `break`-Statement
+unterbrochen wird**.
 
-### Else-Zweig bei For-Schleifen
+[💻 Link zum Onlinecompiler](https://pythontutor.com/render.html#code=summe%20%3D%200%0Afor%20number%20in%20%5B%2243%22,%20%221234%22,%20%2233.4%22,%20%2210%22%5D%3A%0A%20%20%20%20if%20not%20number.isdigit%28%29%3A%0A%20%20%20%20%20%20%20%20print%28f%22%7Bnumber%7D%20is%20no%20integer!%20Abort%22%29%0A%20%20%20%20%20%20%20%20break%0A%20%20%20%20summe%20%2B%3D%20int%28number%29%0Aelse%3A%0A%20%20%20%20print%28f%22Die%20Summe%20aller%20Zahlen%20ist%20%7Bsumme%7D.%22%29%0Aprint%28%22Ende%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false)
 
-Ähnlich wie bei `while`-Schleifen wird der `else`-Zweig einer `for`-Schleife ausgeführt, wenn die Schleife alle Elemente
-der Sequenz durchlaufen hat, ohne durch ein `break`-Statement unterbrochen zu werden.
-
-**Beispiel:**
-
-```python
-for i in range(1, 5):
-    print(i)
-else:
-    print("Die Schleife ist regulär beendet worden")
-```
-
-Hier wird der `else`-Zweig ausgeführt, da die Schleife alle Elemente der Sequenz durchläuft.
-
-### Else-Zweig bei While-Schleifen
-
-Der `else`-Zweig einer `while`-Schleife wird ausgeführt, nachdem die Bedingung der Schleife zu `False` wird. Wenn die
-Schleife durch ein `break`-Statement verlassen wird, wird der `else`-Zweig nicht ausgeführt.
-
-**Beispiel:**
-
-```python
-i = 1
-while i < 5:
-    print(i)
-    i += 1
-else:
-    print("Die Schleife ist regulär beendet worden")
-```
-
-In diesem Beispiel wird der `else`-Zweig ausgeführt, da die Schleife durch das Erreichen des Endes der
-Schleifenbedingung beendet wird.
-
-## Anwendungsfälle
-
-- **Suchoperationen**: Der `else`-Zweig kann nützlich sein, um nach der Durchführung einer Suchoperation in einer
-  Schleife eine Meldung auszugeben, falls das gesuchte Element nicht gefunden wurde.
-- **Validierung**: Bei Validierungsprozessen kann der `else`-Zweig verwendet werden, um zu bestätigen, dass keine
-  Bedingungen verletzt wurden.
-
-## Wichtig zu wissen
-
-- Der `else`-Zweig wird nur dann ausgeführt, wenn die Schleife nicht durch ein `break`-Statement verlassen wird.
-- Er ist optional und wird nicht häufig verwendet, aber in bestimmten Situationen kann er den Code klarer und
-  verständlicher machen.
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=summe%20%3D%200%0Afor%20number%20in%20%5B%2243%22,%20%221234%22,%20%2233.4%22,%20%2210%22%5D%3A%0A%20%20%20%20if%20not%20number.isdigit%28%29%3A%0A%20%20%20%20%20%20%20%20print%28f%22%7Bnumber%7D%20is%20no%20integer!%20Abort%22%29%0A%20%20%20%20%20%20%20%20break%0A%20%20%20%20summe%20%2B%3D%20int%28number%29%0Aelse%3A%0A%20%20%20%20print%28f%22Die%20Summe%20aller%20Zahlen%20ist%20%7Bsumme%7D.%22%29%0Aprint%28%22Ende%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 # Anspruchsvolle Aufgaben
 
-[60min]
+[//]: # ([60min])
 
-## Aufgabe 1: Benutzerdefinierte Passwortüberprüfung 🌶️🌶️🌶️
+### Aufgabe 1: Filtern🌶
+
+Schreibe ien Programm, dass die Zahlen von 1 bis 100 durchgeht und diese ausgibt. Wenn die Zahl durch 5 oder 7 
+teilbar ist, soll sie stattdessen ein Smily gedruckt werden. Schreibe den Code zweimal: mit und ohne `continue`.
+
+### Aufgabe 2: Benutzerdefinierte Passwortüberprüfung 🌶️🌶️🌶️
 
 Schreibe ein Programm, das den Benutzer zur Eingabe eines Passworts auffordert. Das Passwort muss bestimmte Kriterien
 erfüllen (z.B. mindestens 8 Zeichen lang, enthält sowohl Zahlen als auch Buchstaben). Das Programm soll dem Benutzer
 mitteilen, ob das eingegebene Passwort gültig ist oder nicht. Wenn das Passwort nicht gültig ist, soll das Programm
 spezifizieren, welche Kriterien nicht erfüllt wurden.
 
-## Aufgabe 2: Textbasierter Quiz 🌶️🌶️🌶️
 
-Entwickle ein kleines Quizspiel. Das Programm stellt dem Benutzer fünf verschiedene Fragen, auf die er antworten muss.
-Für jede richtige Antwort erhält der Benutzer einen Punkt. Nachdem alle Fragen beantwortet wurden, zeigt das Programm
-die Gesamtpunktzahl und eine entsprechende Bewertung (z.B. "Anfänger", "Fortgeschritten", "Experte") basierend auf der
-erreichten Punktzahl.
-
-## Aufgabe 3: Einfacher Zahlenraten 🌶️🌶️
+### Aufgabe 3: Einfacher Zahlenraten 🌶️🌶️
 
 Erstelle ein Spiel, bei dem der Benutzer versuchen muss, eine zufällig generierte Zahl zwischen 1 und 100 zu erraten.
 Nach jeder Eingabe gibt das Programm an, ob die geratene Zahl zu hoch oder zu niedrig ist. Der Benutzer hat eine
 begrenzte Anzahl von Versuchen (z.B. 10). Nach dem Spiel gibt das Programm an, ob der Benutzer gewonnen hat und wie
 viele Versuche benötigt wurden.
 
-## Aufgabe 4: Bestellung in einem virtuellen Café 🌶️🌶️🌶️
+### Aufgabe 4: Bestellung in einem virtuellen Café 🌶️🌶️🌶️
 
 Simuliere ein einfaches Bestellsystem für ein Café. Das Programm listet verschiedene Getränke und Speisen mit ihren
 Preisen auf. Der Benutzer kann Artikel auswählen und die gewünschte Menge angeben. Das Programm führt eine laufende
 Summe der Bestellung. Nachdem der Benutzer seine Auswahl abgeschlossen hat, zeigt das Programm die Gesamtsumme der
 Bestellung an und fragt, ob der Benutzer bar oder mit Karte zahlen möchte.
+
+```python
+menu = {"Kaffee": 2.50, "Tee": 2.00, "Kuchen": 3.00}
+```
 
 [Lösungen](solutions.md#Anspruchsvolle Aufgaben)

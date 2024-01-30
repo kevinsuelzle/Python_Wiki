@@ -250,3 +250,11 @@ liegt. Verwende `zip`, um die Daten effizient zu verarbeiten.
 
 Diese komplexeren Aufgaben erfordern die Anwendung verschiedener Konzepte, die in den vorherigen Aufgaben behandelt
 wurden, und demonstrieren die Flexibilität und Leistungsfähigkeit der `zip`-Funktion in Python.
+
+## Aufgabe 2: Textbasierter Quiz 🌶️🌶️🌶️
+
+Entwickle ein kleines Quizspiel. Das Programm stellt dem Benutzer nacheinander
+fünf verschiedene Fragen, auf die er antworten muss.
+Für jede richtige Antwort erhält der Benutzer einen Punkt. Nachdem alle Fragen beantwortet wurden, zeigt das Programm
+die Gesamtpunktzahl und eine entsprechende Bewertung (z.B. "Anfänger", "Fortgeschritten", "Experte") basierend auf der
+erreichten Punktzahl.

@@ -262,3 +262,31 @@ schüler_unter_schwellenwert = [schüler["name"] for schüler in schüler if
 
 print(f"Schüler mit Durchschnittsnote unter {schwellenwert}: {', '.join(schüler_unter_schwellenwert)}")
 ```
+
+
+### Lösung zu Aufgabe 2: Textbasierter Quiz
+
+```python
+fragen = ["Hauptstadt von Deutschland?",
+          "2+2=?",
+          "Name des aktuellen US-Präsidenten?",
+          "7 * 8=?",
+          "Farbe des Himmels bei klarem Wetter?"]
+antworten = ["Berlin", "4", "Biden", "56", "Blau"]
+
+punkte = 0
+
+for frage in fragen:
+    antwort = input(f"{frage}\nWie lautet deine Antwort:")
+    if antwort.lower() == antworten[i].lower():
+        punkte += 1
+
+print(f"Du hast {punkte} von 5 Punkten erreicht.")
+
+if punkte <= 2:
+    print("Anfänger")
+elif punkte <= 4:
+    print("Fortgeschritten")
+else:
+    print("Experte")
+```
